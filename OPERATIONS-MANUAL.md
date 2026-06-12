@@ -79,6 +79,20 @@ was applied — nothing else. See `SOURCING-METHOD.md`.
 
 ## 4. Complete index — everything that's stored
 
+### Copy & Image Sciences — the Numini writing brain (primary source)
+> These files came from the Numini Research Elevator. They are the scientific foundation
+> for every writing rule, image decision, and trust signal in the engine.
+
+| File | What it holds |
+|---|---|
+| `skills/copy_and_image_sciences/MASTER_FRAMEWORK.md` | **3,800+ line master framework** — 8 sections: Science of Writing (cognitive load, dual coding, fluency→trust, working memory), Copywriting Strategy (AIDA/PAS, buyer types, JTBD, value prop), Psychology of Persuasion (Cialdini, loss aversion, risk perception, fear appeals), Blog Writing 2026, Sector Writing Styles, Regulatory Content, Image Strategy (Kindchenschema, gaze direction, dual coding) |
+| `skills/copy_and_image_sciences/THE_WRITING_SYSTEM.md` | 20 writing principles across 6 domains + 4 checklists (85 items) — the enforceable rules derived from the master framework; load into any AI writer session |
+| `skills/copy_and_image_sciences/PET-RELOCATION-WRITING-TRUST-SYSTEM.md` | Same principles formatted for direct AI skills/prompt use |
+| `skills/copy_and_image_sciences/claim_bank.csv` | 37 accepted claims (A1: 11, B2: 11, C1: 15) — Admiralty-graded, sourced; AI writer refuses unbanked facts |
+| `skills/copy_and_image_sciences/claim_bank_quarantine.csv` | 7 killed claims (D1) — do not use; shows what was rejected and why |
+| `skills/copy_and_image_sciences/Web_Persuasion_Knowledge_Base.md` | Synthesised knowledge base built from the claim bank; structured by chapter (reading psychology, persuasion, trust, CRO, SEO/GEO, blog, lead-gen) |
+| `skills/copy_and_image_sciences/Validation_Report.md` | Gate 3 validation results — T1/T2/T3 tier breakdown, pillar coverage, 2 pillars needing seeding |
+
 ### Documentation (the "why")
 | File | What it holds |
 |---|---|
@@ -87,10 +101,19 @@ was applied — nothing else. See `SOURCING-METHOD.md`.
 | `OPERATIONS-MANUAL.md` | *(this)* the operating system, human elements, QA, master index |
 | `skills/copywriting/KNOWLEDGE-BASE.md` | Validated, graded evidence book (10 pillars) |
 | `skills/copywriting/15-PRINCIPLES.md` | Logic & voice doctrine |
-| `skills/copywriting/HUMAN-WRITING-SYSTEM.md` | Elite-writer layers + masters |
+| `skills/copywriting/HUMAN-WRITING-SYSTEM.md` | Elite-writer layers + 7 masters (Schwartz, Ogilvy, Handley, Wiebe, Godin, Dean, Shleyner) |
 | `skills/copywriting/REGULATORY-PRINCIPLES.md` | Compliance governance (official-only, no guessing) |
 | `skills/copywriting/EEAT-AUTHORITY-CHECKLIST.md` | Off-page/trust gaps that drive results |
 | `skills/copywriting/BLOG-PLAYBOOK.md`, `SKILL.md`, `EVIDENCE.md` | Blog moves, 26-skill map, tiered claim bank |
+| `skills/copywriting/MASTER-MODEL-COPYWRITING.md` | Theo's synthesis — "the brain buys, writing is the delivery mechanism"; 10-question brain test; 4 buyer personality types |
+| `skills/copywriting/RESEARCH-METHODOLOGY.md` | Evidence methodology — source tier rules (T1–VENDOR), Admiralty coding, what we accept/reject |
+
+### Research artifacts (from Numini deep-research runs)
+| File | What it holds |
+|---|---|
+| `skills/copywriting/DEEP-RESEARCH-2026-06-11.md` | 108-agent deep research run — 122 claims extracted, 25 adversarially verified (11 confirmed 3-0, 7 killed, 7 pending); writing science, GEO, images, customer psychology |
+| `skills/copywriting/FRAMEWORKS-VERIFIED-2026-06-12.md` | 28 copywriting frameworks adversarially verified (3-vote) — Fogg BM, Curiosity Gap, ELM, loss aversion, etc. — with confidence grades and boundary conditions |
+| `skills/copywriting/BLOG-CHEATSHEET.md` | Quick-reference blog best practices (operational; use at publish) |
 
 ### The writer + QC
 | File | Role |
@@ -117,31 +140,48 @@ was applied — nothing else. See `SOURCING-METHOD.md`.
 | Location | Holds |
 |---|---|
 | `audit/evidence/<set>/*.png` + `CLAIMS-LEDGER.md` | Official-source screenshots per claim |
-| `sites/pawroute/content/REGULATORY-REGISTER.md` / `.csv` | The auditable register (source/date/reviewer/re-verify) |
-| `sites/pawroute/content/CLAIMS-AUDIT.md` | Per-content claim audit + action items |
-| `sites/pawroute/content/REGISTRY.md` / `.csv` / `.json` | Every asset: status, grade, page type, funnel |
-| `sites/pawroute/content/CONTENT-MAP.md` | Cluster plan: built vs planned |
+| `sites/numini_pet_relocation/content/REGULATORY-REGISTER.md` / `.csv` | The auditable register (source/date/reviewer/re-verify) |
+| `sites/numini_pet_relocation/content/CLAIMS-AUDIT.md` | Per-content claim audit + action items |
+| `sites/numini_pet_relocation/content/REGISTRY.md` / `.csv` / `.json` | Every asset: status, grade, page type, funnel |
+| `sites/numini_pet_relocation/content/CONTENT-MAP.md` | Cluster plan: built vs planned |
+| `trustengine/skills/skill-official-source-research/data/` | Source bank xlsx (153 claims) + 143 PNG screenshot proofs |
+| `trustengine/research/competitors/` | 21 confirmed competitors, trust scores, content-gap matrix |
+| `trustengine/research/community/` | 69 community screenshots (Reddit + Facebook) + VoC quotes |
 
 ### Content (the writing + briefs)
 | Location | Holds |
 |---|---|
-| `sites/pawroute/pages/**/*.yml` | Built pages (route, hub, blog, tools, about) |
-| `sites/pawroute/content/*.json` | Writing-asset deliverables (e.g. cost page, cost blog) |
-| `sites/pawroute/content/blogs-to-dubai/*.json` | The inbound (→ Dubai) blogs, with sourcing blocks |
-| `sites/pawroute/research/` | 598 keywords + page briefs |
-| `images/pawroute/**` | Rendered images |
+| `sites/numini_pet_relocation/pages/**/*.yml` | Built pages (route, hub, blog, tools, about, pricing) |
+| `sites/numini_pet_relocation/research/trustengine-keywords.csv` | 598 Trust Engine keywords (UAE; fear/intent classified) |
+| `sites/numini_pet_relocation/research/trustengine-page-briefs.csv` | 598 ready page briefs (keyword → fear → page type → CTA) |
+| `sites/numini_pet_relocation/prompts/` | Master, editor, QA, and research prompts |
+| `images/numini/**` | Rendered images for the numini site |
+| `sites/pawroute/` | Earlier PawRoute brand build (same structure; kept for reference) |
+
+### Trust Engine (the imported writing brain)
+| Location | Holds |
+|---|---|
+| `trustengine/README.md` | What's here, what's excluded, relationship to the engine |
+| `trustengine/skills/skill-customer-fear-intelligence/` | 12-fear DB + intent taxonomy + fear-classification prompt |
+| `trustengine/skills/skill-content-structure/` | 5-layer page model + worked examples |
+| `trustengine/skills/skill-trust-gap-analysis/` | Competitor master HTML + competitor evidence screenshots |
+| `trustengine/customer-profile/` | 7 personas + verified voice-of-customer language |
+| `trustengine/research/00-verdict.md` | Market-positioning verdict (uniqueness of the 5-method system) |
+| `trustengine/research/market-positioning/` | Full 2026 SEO market positioning research |
+| `trustengine/research/google-trends/` | Google Trends data for Dubai pet relocation keywords |
 
 ---
 
 ## 5. How to run it
 ```
-py engine/build.py sites/pawroute [--serve]      # render content + images + sitemap/robots
-py engine/render_images.py "<prompt>" --out ...  # render an image (low-res by default)
-py audit/audit.py <page-or-dist> [--site]        # score content (5 lenses)
-py audit/verify_claims.py audit/claims/<x>.json  # screenshot-verify official sources
-py audit/regulatory_register.py                  # rebuild the auditable register
-py audit/registry.py                             # rebuild the content memory
-py audit/ai_citation.py --domain <live-domain>   # measure AI-citation (needs key + live site)
+py engine/build.py sites/numini_pet_relocation [--serve]  # render Numini site (primary)
+py engine/build.py sites/pawroute [--serve]               # render PawRoute brand build
+py engine/render_images.py "<prompt>" --out ...           # render an image (low-res by default)
+py audit/audit.py <page-or-dist> [--site]                 # score content (5 lenses)
+py audit/verify_claims.py audit/claims/<x>.json           # screenshot-verify official sources
+py audit/regulatory_register.py                           # rebuild the auditable register
+py audit/registry.py                                      # rebuild the content memory
+py audit/ai_citation.py --domain <live-domain>            # measure AI-citation (needs key + live site)
 ```
 
 **Nothing here lives only in memory — it's all in the repo.** This manual is the map to it.

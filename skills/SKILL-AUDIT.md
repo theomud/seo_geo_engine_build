@@ -5,19 +5,25 @@
 > Result: **30/30 conformed · 22 pass adversarial verify · 8 flagged.** Each skill committed
 > separately. The 8 flags are almost all trivial section-ORDER nits (the content is present),
 > plus one genuine one-skill-two-jobs case (`marketingskills/image`).
+>
+> **Fix-pass 2 completed 2026-06-12 (commit 8aa9900) — all 8 flags resolved.**
 
-## Remaining 8 flags (all low-effort except where noted)
+## Fix-pass 2 — all 8 flags resolved
 
-| Skill | Flag | Fix |
-|-------|------|-----|
-| `claude-blog/blog-brief` | North Star + Freedom Dial sit BEFORE "How to use" (secs 1–2 inverted); 3 `references/*.md` pointers dangle | Move "How to use" to top; create the 3 ref files or inline |
-| `marketingskills/ai-seo` | No dedicated "Real examples" section; inline examples are `[placeholder]` templates | Add a Real-examples section with one concrete worked input/output |
-| `marketingskills/copy-editing` | "Anti-patterns" + "Real examples" exist as content but not as named headers | Rename "Common Copy Problems" → Anti-patterns; add Real-examples header |
-| `marketingskills/image` | Missing Real-examples header; "Common Mistakes" ≠ "Anti-patterns"; **does 2 jobs** (create + optimize) | Rename header; **split** image-optimization into its own skill |
-| `seo-geo-skills/content-quality-auditor` | Secs 4→5→6 inverted (Self-check before Examples before Anti-patterns); no North-Star header; dup pointer line | Reorder tail; add North Star; dedupe |
-| `seo-geo-skills/geo-content-optimizer` | "Example" sits before "Anti-patterns"; refs point to remote GitHub URLs not local siblings | Move Example after Anti-patterns; repoint refs to local `references/` (files exist!) |
-| `seo-geo-skills/meta-tags-optimizer` | "Real example" before "Anti-patterns"; refs point off-repo | Reorder; repoint refs |
-| `seo-geo-skills/seo-content-writer` | Example before Anti-patterns; 3 sections trail AFTER "Known gaps" | Reorder so Known gaps is last |
+| Skill | Original Flag | Resolution |
+|-------|---------------|------------|
+| `claude-blog/blog-brief` | North Star + Freedom Dial before "How to use"; 3 dangling ref pointers | "How to use" moved to top; 3 `references/*.md` files created ✅ |
+| `marketingskills/ai-seo` | No dedicated "Real examples" section; placeholders only | Real-examples section added with worked input/output ✅ |
+| `marketingskills/copy-editing` | "Common Copy Problems" ≠ Anti-patterns header; Real-examples unnamed | Headers renamed to standard; Real-examples header added ✅ |
+| `marketingskills/image` | Missing Real-examples; "Common Mistakes" ≠ Anti-patterns; **2 jobs** | Anti-patterns renamed; **`image-optimize` spun out as its own skill** ✅ |
+| `seo-geo-skills/content-quality-auditor` | Secs 4→5→6 inverted; no North-Star; dup pointer | Tail reordered (Anti-patterns → Examples → Self-check); North Star added; deduped; **690 → 419 lines** ✅ |
+| `seo-geo-skills/geo-content-optimizer` | Example before Anti-patterns; refs → remote GitHub URLs | Reordered; refs repointed to local `references/` siblings ✅ |
+| `seo-geo-skills/meta-tags-optimizer` | Real example before Anti-patterns; refs off-repo | Reordered; refs repointed locally ✅ |
+| `seo-geo-skills/seo-content-writer` | Example + 3 sections trail after Known gaps | Reordered so Known gaps is final section ✅ |
+
+> **Note on 3 genuinely external refs** in `geo-content-optimizer` and `meta-tags-optimizer`:
+> `entity-geo-handoff-schema.md`, `skill-contract.md`, and `CONNECTORS.md` have no local copies
+> and remain as external refs — not a conformance failure.
 
 **Pattern:** the imported `seo-geo-skills/*` pack consistently places its worked Example mid-body
 (before Anti-patterns) and links references to upstream `github.com/aaron-he-zhu` URLs even though
@@ -40,8 +46,8 @@ the files exist locally. A single sweep fixes all four.
 
 | # | Skill | Issue | Fix | Status |
 |---|-------|-------|-----|--------|
-| 1 | `seo-geo-skills/content-quality-auditor` | 690 lines — worst length violation | Push the long rubric/example blocks into a sibling `references/` Memory file; Brain points to it conditionally | ⚠️ open |
-| 2 | `claude-blog/blog-write` | 559 lines | Extract template/example detail to Memory files (already references a `references/` dir — move more there) | ⚠️ open |
+| 1 | `seo-geo-skills/content-quality-auditor` | 690 lines — worst length violation | Pushed long rubric/example blocks into `references/` Memory; Brain points to it | ✅ done 2026-06-12 (690 → 419 lines) |
+| 2 | `claude-blog/blog-write` | 559 lines | Extracted template/example detail to Memory files | ✅ done 2026-06-12 (559 → 432 lines) |
 | 3 | `copywriting/SKILL.md` | Face was a label, no triggers | Rewrote Face with when-to-load + trigger phrases | ✅ done 2026-06-12 |
 
 ## Spine skeleton — first-pass coverage

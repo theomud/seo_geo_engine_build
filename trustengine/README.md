@@ -30,7 +30,7 @@ trustengine/
 - This is the **raw imported brain**. The **compiled, evidence-tiered reference** lives in
   `skills/copywriting/` (SKILL.md + EVIDENCE.md), and the **curated execution playbooks** in
   `skills/marketingskills · seo-geo-skills · claude-blog`.
-- The keyword set we actually use is in `sites/pawroute/research/` (Trust Engine 598 + page briefs).
+- The keyword set we actually use is in `sites/numini_pet_relocation/research/` (Trust Engine 598 keywords + page briefs).
 
 ## Excluded (not for writing)
 `seo-geo-audit-tool/` app, `skill-engines/` (14× duplicated), `measurement-engine/`, `legacy/`,

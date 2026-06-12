@@ -18,8 +18,19 @@ images look the way they do. This is the operating manual behind every page the 
 People searching pet relocation are **not browsing — they're scared**. A wrong move can mean a
 delayed, refused or quarantined pet. So we don't write "content marketing." We build a **search-based
 trust machine**: understand the fear → answer it better than anyone → prove it with official sources →
-make the next step feel like help. (Sources: NN/G reading research, Schwartz, Cialdini, our validated
-`KNOWLEDGE-BASE.md`.)
+make the next step feel like help.
+
+The scientific basis for every writing rule in this engine lives in two places:
+- **`skills/copy_and_image_sciences/MASTER_FRAMEWORK.md`** — 3,800+ line framework covering
+  cognitive load theory (Sweller), dual coding, fluency→trust (Reber & Schwarz), Cialdini's
+  persuasion principles, loss aversion, fear appeals (Tannenbaum 2015 meta-analysis), image
+  psychology (Kindchenschema, gaze direction), and sector-specific writing styles.
+- **`skills/copy_and_image_sciences/THE_WRITING_SYSTEM.md`** — 20 enforceable writing principles
+  derived from that science (sentence caps, inverted pyramid, specificity, cognitive fluency, etc.)
+
+The claim bank (`skills/copy_and_image_sciences/claim_bank.csv`) is the live, Admiralty-graded
+source of every statistic the AI writer is allowed to use. (Sources: NN/G reading research,
+Schwartz, Cialdini, our validated `KNOWLEDGE-BASE.md`, and the Numini-verified frameworks.)
 
 ### The writing pipeline (every page)
 1. **Read the prospect's mind** — current state → desired state → obstacles → false beliefs →

@@ -18,7 +18,9 @@ is an Authority-tier playbook; 28–33 Proficient; 24–27 Competent; <24 = cut.
 
 ---
 
-## The 28 curated skills, ranked
+## The 29 curated skills, ranked
+
+> Updated 2026-06-12: `image-optimize` added (split from `marketingskills/image` in fix-pass 2).
 
 | # | Skill | Source | K | E | R | T | /40 | Tier |
 |---|---|---|:-:|:-:|:-:|:-:|:-:|---|
@@ -50,8 +52,9 @@ is an Authority-tier playbook; 28–33 Proficient; 24–27 Competent; <24 = cut.
 | 26 | content-refresher | seo-geo | 8 | 8 | 7 | 7 | **30** | Proficient |
 | 27 | product-marketing | mktg | 8 | 7 | 7 | 8 | **30** | Proficient |
 | 28 | image | mktg | 7 | 8 | 7 | 7 | **29** | Proficient |
+| 29 | image-optimize | mktg | 7 | 8 | 7 | 7 | **29** | Proficient |
 
-**Result of this pass:** all 28 score ≥29/40 — every one is at least Proficient,
+**Result of this pass:** all 29 score ≥29/40 — every one is at least Proficient,
 8 are Authority-tier. The cull held up under the harder, results-weighted standard.
 
 ---

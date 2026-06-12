@@ -8,8 +8,9 @@ folder under `sites/`. Swap the site folder, get a different business's site.
 ## Run it
 
 ```bash
-py engine/build.py sites/pawroute            # build -> dist/pawroute/
-py engine/build.py sites/pawroute --serve    # build + preview at http://localhost:8000
+py engine/build.py sites/numini_pet_relocation            # build primary site -> dist/numini-pet-relocation/
+py engine/build.py sites/numini_pet_relocation --serve    # build + preview at http://localhost:8000
+py engine/build.py sites/pawroute                         # build PawRoute brand -> dist/pawroute/
 ```
 
 Requires Python 3 with `jinja2` and `pyyaml` (already installed on this machine).
@@ -62,7 +63,7 @@ block type by dropping in a new partial — the engine includes it by name.
 
 ## Adding a new business
 
-1. Copy `sites/pawroute/` to `sites/<new>/`.
+1. Copy `sites/numini_pet_relocation/` to `sites/<new>/`.
 2. Edit `site.yml` (name, colours, contact, nav).
 3. Replace the page YAML with the new business's content (compose blocks).
 4. `py engine/build.py sites/<new>`.
