@@ -1,0 +1,42 @@
+{
+  "set": "travel-methods",
+  "checked": "2026-06-09",
+  "claims": [
+    {
+      "id": "emirates-animals-faq",
+      "claim": "Emirates: pets not in cabin (except falcons Dubai\u2013Pakistan + guide dogs); checked baggage if journey <17h; cargo if >17h or transit >6h or one-way into Dubai",
+      "authority": "Emirates",
+      "source_url": "https://www.emirates.com/english/help/faqs/what-are-the-rules-and-charges-for-travelling-with-animals/",
+      "official": true,
+      "host": "www.emirates.com",
+      "expect": "cabin|baggage|cargo|falcon|17",
+      "status": "VERIFIED",
+      "screenshot": "audit/evidence/travel-methods/emirates-animals-faq.png",
+      "bytes": 1685929,
+      "found": true,
+      "checked": "2026-06-09",
+      "kind": "fact",
+      "version": "2026",
+      "reviewer": "(pending human sign-off)",
+      "reverify_by": "2026-10-07"
+    },
+    {
+      "id": "skycargo-emirates-pets",
+      "claim": "Emirates Pets (SkyCargo): door-to-door live-animal transport, dedicated Dubai Pet Lounge with 24/7 care, IATA LAR compliant",
+      "authority": "Emirates SkyCargo",
+      "source_url": "https://www.skycargo.com/products/live/pets/",
+      "official": true,
+      "host": "www.skycargo.com",
+      "expect": "IATA|pet|animal|care",
+      "status": "VERIFIED",
+      "screenshot": "audit/evidence/travel-methods/skycargo-emirates-pets.png",
+      "bytes": 1711452,
+      "found": true,
+      "checked": "2026-06-09",
+      "kind": "fact",
+      "version": "2026",
+      "reviewer": "(pending human sign-off)",
+      "reverify_by": "2026-10-07"
+    }
+  ]
+}

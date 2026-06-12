@@ -1,0 +1,22 @@
+{
+  "set": "routes-batch2",
+  "_note": "Official sources behind the EU / Canada / India / South Africa route blogs — screenshot + text-verify to lift the hedges.",
+  "claims": [
+    { "id": "eu-bring-pet", "authority": "European Commission",
+      "claim": "EU: microchip + rabies vaccination + EU animal health certificate; titre test for non-listed origins",
+      "source_url": "https://food.ec.europa.eu/animals/live-animal-movements/dogs-cats-and-ferrets/bringing-pet-eu-non-eu-country_en",
+      "expect": "titration|antibody|microchip|listed", "timeout": 60000 },
+    { "id": "canada-cfia-pets", "authority": "Canada CFIA",
+      "claim": "Canada CFIA import requirements for pets; rabies vaccination; arrival inspection; no quarantine",
+      "source_url": "https://inspection.canada.ca/en/importing-food-plants-animals/pets",
+      "expect": "rabies|import|dog|pet", "timeout": 60000 },
+    { "id": "india-aqcs", "authority": "India AQCS",
+      "claim": "India: import permit / NOC from the Animal Quarantine and Certification Service",
+      "source_url": "https://aqcsindia.gov.in/",
+      "expect": "quarantine|import|permit|animal", "timeout": 70000 },
+    { "id": "south-africa-dalrrd", "authority": "South Africa DALRRD",
+      "claim": "South Africa: state veterinary import permit + rabies titre + disease tests",
+      "source_url": "https://www.dalrrd.gov.za/",
+      "expect": "import|veterinary|agriculture|permit", "timeout": 70000 }
+  ]
+}

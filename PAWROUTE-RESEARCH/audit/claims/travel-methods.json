@@ -1,0 +1,17 @@
+{
+  "set": "travel-methods",
+  "reverify_days": 120,
+  "_note": "Official airline sources for how a pet travels from Dubai (Principle 6 — airline verified separately).",
+  "claims": [
+    { "id": "emirates-animals-faq", "authority": "Emirates", "kind": "fact",
+      "version": "2026", "reviewer": "(pending human sign-off)",
+      "claim": "Emirates: pets not in cabin (except falcons Dubai–Pakistan + guide dogs); checked baggage if journey <17h; cargo if >17h or transit >6h or one-way into Dubai",
+      "source_url": "https://www.emirates.com/english/help/faqs/what-are-the-rules-and-charges-for-travelling-with-animals/",
+      "expect": "cabin|baggage|cargo|falcon|17", "timeout": 50000 },
+    { "id": "skycargo-emirates-pets", "authority": "Emirates SkyCargo", "kind": "fact",
+      "version": "2026", "reviewer": "(pending human sign-off)",
+      "claim": "Emirates Pets (SkyCargo): door-to-door live-animal transport, dedicated Dubai Pet Lounge with 24/7 care, IATA LAR compliant",
+      "source_url": "https://www.skycargo.com/products/live/pets/",
+      "expect": "IATA|pet|animal|care", "timeout": 50000 }
+  ]
+}
