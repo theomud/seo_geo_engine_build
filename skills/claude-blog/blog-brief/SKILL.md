@@ -19,6 +19,19 @@ license: MIT
 Generates comprehensive content briefs that guide blog writing for maximum
 impact on both Google rankings and AI citation platforms.
 
+## How to use this skill
+
+Run the **Workflow** below in order: intake the topic (Step 1), research keywords
+and competitors (Steps 2-4) at high freedom, then emit the brief in the fixed
+schema (Step 5) and save it (Step 6). Load a reference file **only when its
+condition is met** — they sit at zero token cost otherwise:
+
+- If recommending a template, see `references/content-templates.md` (selection criteria).
+- If building the distribution plan, see `references/distribution-playbook.md` (channel tactics).
+- If planning internal links, see `references/internal-linking.md` (link architecture patterns).
+- If a quality/freshness check is needed, see `skills/blog/references/research-quality.md` — 5-dim quality rubric, pre-flight trap classes, freshness floors (cross-skill ref in the orchestrator's references dir).
+- If shaping synthesis output, see `skills/blog/references/synthesis-contract.md` — 6 LAWs for synthesis output.
+
 ## North Star objective
 
 Produce one brief that lets a writer (human or `/blog write`) draft a citable,
@@ -36,19 +49,6 @@ decisions.
   schema. Emit every section in the order shown, with the exact table columns and
   headings. Variance in the output format = failure, because `/blog write`
   consumes it. Do not drop, rename, or reorder sections.
-
-## How to use this skill
-
-Run the **Workflow** below in order: intake the topic (Step 1), research keywords
-and competitors (Steps 2-4) at high freedom, then emit the brief in the fixed
-schema (Step 5) and save it (Step 6). Load a reference file **only when its
-condition is met** — they sit at zero token cost otherwise:
-
-- If recommending a template, see `references/content-templates.md` (selection criteria).
-- If building the distribution plan, see `references/distribution-playbook.md` (channel tactics).
-- If planning internal links, see `references/internal-linking.md` (link architecture patterns).
-- If a quality/freshness check is needed, see `skills/blog/references/research-quality.md` — 5-dim quality rubric, pre-flight trap classes, freshness floors (cross-skill ref in the orchestrator's references dir).
-- If shaping synthesis output, see `skills/blog/references/synthesis-contract.md` — 6 LAWs for synthesis output.
 
 ## Auto-loaded inputs (v1.8.0)
 

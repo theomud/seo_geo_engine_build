@@ -71,15 +71,15 @@ Ship a metadata package that wins the click in the SERP and renders cleanly when
 - **Writes**: a user-facing metadata deliverable and reusable summary.
 - **Promotes**: approved angles, messaging choices, missing evidence, and publish blockers to `memory/hot-cache.md` and `memory/open-loops.md`; propose durable decisions as pending-decision items.
 - **Done when**: three title and three description options are provided within the character limits with the keyword front-loaded; a complete OG/Twitter tag block is included; and C01 (Intent Alignment) and C02 (Direct Answer) pass.
-- **Primary next skill**: [schema-markup-generator](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/schema-markup-generator/SKILL.md) when the metadata package is ready for structured-data support.
+- **Primary next skill**: schema-markup-generator when the metadata package is ready for structured-data support.
 
 ### Handoff Summary
 
-> Emit the standard shape from [skill-contract.md §Handoff Summary Format](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/skill-contract.md).
+> Emit the standard shape from skill-contract.md §Handoff Summary Format.
 
 ## Data Sources
 
-Optional search console and SEO tool integrations pull CTR data and competitor patterns automatically; otherwise ask for current tags, keywords, and competitors. See [CONNECTORS.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/CONNECTORS.md).
+Optional search console and SEO tool integrations pull CTR data and competitor patterns automatically; otherwise ask for current tags, keywords, and competitors. See CONNECTORS.md.
 
 ## Instructions
 
@@ -94,7 +94,31 @@ When a user requests meta-tag optimization, run these six steps:
 
 Label every metric **Measured** (tool/export), **User-provided**, or **Estimated** (model inference); never present an estimate as measured; if a required metric is unavailable, mark it N/A — do not invent it.
 
-> **Reference**: See [Instructions Detail](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/meta-tags-optimizer/references/instructions-detail.md) for the compact workflow, formulas, alignment matrix, CTR analysis, and example. See [Meta Tag Code Templates](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/meta-tags-optimizer/references/meta-tag-code-templates.md) for HTML blocks.
+> **Reference**: See [Instructions Detail](references/instructions-detail.md) for the compact workflow, formulas, alignment matrix, CTR analysis, and example. See [Meta Tag Code Templates](references/meta-tag-code-templates.md) for HTML blocks.
+
+## Tips for Success
+
+Front-load keywords, match intent, be specific, test variations, and refresh tags when the SERP changes.
+
+### Save Results
+
+On user confirmation, save to `memory/content/YYYY-MM-DD-<topic>.md` — see skill-contract.md §Save Results Template.
+
+## Reference Materials
+
+- [Instructions Detail](references/instructions-detail.md) — Workflow, formulas, alignment matrix, example
+- [Meta Tag Formulas](references/meta-tag-formulas.md) — Title and description formulas
+- [Meta Tag Code Templates](references/meta-tag-code-templates.md) — HTML templates
+- [CTR and Social Reference](references/ctr-and-social-reference.md) — CTR patterns and social guidance
+
+## Anti-patterns (what NOT to do)
+
+- **Keyword stuffing the title** — repeating the keyword or chaining "| Brand | City | Service". Front-load once, then sell the click.
+- **Truncated tags** — a 75-character title or a 200-character description that the SERP cuts mid-word. Stay inside the limits in Step 2/3.
+- **Description that doesn't match the page** — promising "free quote" when the page has none. Mismatched intent fails C01 and tanks CTR.
+- **Inventing metrics** — presenting an Estimated CTR as Measured. Label every metric, or mark it N/A.
+- **Doing the neighbors' jobs** — emitting JSON-LD (that's schema-markup-generator) or rewriting body copy (that's seo-content-writer).
+- **One option only** — shipping a single title/description instead of the required three each.
 
 ## Real example
 
@@ -106,31 +130,7 @@ Label every metric **Measured** (tool/export), **User-provided**, or **Estimated
 - **Meta description (156 chars):** `Moving your dog from Dubai to the UK? See exact costs, the DEFRA rules that avoid quarantine, and a step-by-step timeline. Get a no-obligation quote today.`
 - **Tag block:** OG (`og:title`, `og:description`, `og:image`, `og:type=article`, `og:url`), Twitter Card (`summary_large_image`), `<link rel="canonical">`, `robots`, `viewport`.
 
-Keyword is front-loaded once, intent matches the page (C01 pass), the description answers the searcher's question directly (C02 pass), and both tags sit inside the character limits. See the full worked sample in [Instructions Detail — Example](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/meta-tags-optimizer/references/instructions-detail.md#example).
-
-## Tips for Success
-
-Front-load keywords, match intent, be specific, test variations, and refresh tags when the SERP changes.
-
-### Save Results
-
-On user confirmation, save to `memory/content/YYYY-MM-DD-<topic>.md` — see [Skill Contract](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/skill-contract.md) §Save Results Template.
-
-## Reference Materials
-
-- [Instructions Detail](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/meta-tags-optimizer/references/instructions-detail.md) — Workflow, formulas, alignment matrix, example
-- [Meta Tag Formulas](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/meta-tags-optimizer/references/meta-tag-formulas.md) — Title and description formulas
-- [Meta Tag Code Templates](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/meta-tags-optimizer/references/meta-tag-code-templates.md) — HTML templates
-- [CTR and Social Reference](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/meta-tags-optimizer/references/ctr-and-social-reference.md) — CTR patterns and social guidance
-
-## Anti-patterns (what NOT to do)
-
-- **Keyword stuffing the title** — repeating the keyword or chaining "| Brand | City | Service". Front-load once, then sell the click.
-- **Truncated tags** — a 75-character title or a 200-character description that the SERP cuts mid-word. Stay inside the limits in Step 2/3.
-- **Description that doesn't match the page** — promising "free quote" when the page has none. Mismatched intent fails C01 and tanks CTR.
-- **Inventing metrics** — presenting an Estimated CTR as Measured. Label every metric, or mark it N/A.
-- **Doing the neighbors' jobs** — emitting JSON-LD (that's schema-markup-generator) or rewriting body copy (that's seo-content-writer).
-- **One option only** — shipping a single title/description instead of the required three each.
+Keyword is front-loaded once, intent matches the page (C01 pass), the description answers the searcher's question directly (C02 pass), and both tags sit inside the character limits. See the full worked sample in [Instructions Detail — Example](references/instructions-detail.md#example).
 
 ## Self-check validation
 
@@ -146,8 +146,8 @@ On user confirmation, save to `memory/content/YYYY-MM-DD-<topic>.md` — see [Sk
 - **No live SERP/CTR data without a connector.** Absent Search Console or an SEO-tool integration, CTR figures are Estimated, not Measured — flag them as such.
 - **Character counts are guidance, not pixel-perfect.** Google truncates by pixel width, not character count; long-glyph titles can still clip inside the 60-char target.
 - **No structured data and no body copy.** This skill stops at the snippet — JSON-LD and on-page copy belong to the sibling skills.
-- **Reference files are linked, not local.** Formulas, code templates, and the worked example live in `references/`; deep workflow detail still points to the upstream repo URLs.
+- **Reference files are local.** Formulas, code templates, and the worked example live in `references/`; skill-contract.md and CONNECTORS.md are not bundled locally.
 
 ## Next Best Skill
 
-- **Primary**: [schema-markup-generator](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/schema-markup-generator/SKILL.md) — complete the SERP package with structured data.
+- **Primary**: schema-markup-generator — complete the SERP package with structured data.

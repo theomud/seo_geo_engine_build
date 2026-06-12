@@ -65,15 +65,15 @@ A reader who searched the target query gets their answer above the fold, the pri
 - **Writes**: a user-facing content deliverable and reusable summary.
 - **Promotes**: approved angles, messaging choices, missing evidence, and publish blockers to `memory/hot-cache.md` and `memory/open-loops.md`; propose durable decisions as pending-decision items.
 - **Done when**: the draft satisfies the target intent with the primary keyword placed naturally; H1/H2 structure, meta description, and at least one snippet-targetable block are present; and every claim needing a source is either cited or flagged.
-- **Primary next skill**: [content-quality-auditor](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/cross-cutting/content-quality-auditor/SKILL.md) when the draft is ready for gating.
+- **Primary next skill**: [content-quality-auditor](../content-quality-auditor/SKILL.md) when the draft is ready for gating.
 
 ### Handoff Summary
 
-> Emit the standard shape from [skill-contract.md §Handoff Summary Format](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/skill-contract.md).
+> Emit the standard shape from [skill-contract.md §Handoff Summary Format](references/instructions-detail.md).
 
 ## Data Sources
 
-Use `~~SEO tool` and `~~search console` when connected; otherwise ask for keywords, intent, and competitors. See [CONNECTORS.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/CONNECTORS.md).
+Use `~~SEO tool` and `~~search console` when connected; otherwise ask for keywords, intent, and competitors.
 
 ## Instructions
 
@@ -93,19 +93,30 @@ Any factual claim, statistic, or quote that requires a source must be cited or e
 
 **Quality bar**: before handing off, confirm the draft passes — (1) intent match: a reader with the target query gets their answer above the fold; (2) keyword placement reads naturally (no stuffing) in title, H1, first 100 words, and one H2; (3) structure is scannable (H2/H3, lists, one snippet-ready block); (4) zero fabricated facts — every source-needing claim is cited or `[needs source]`. If any item fails, fix it or report it in the handoff, do not ship silently.
 
-> **Reference**: See [Instructions Detail](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/seo-content-writer/references/instructions-detail.md) for the compact workflow, pre-write checklist, issue-classification rules, and self-check format.
-
-## Example
-
-Sample outcome: a keyword-led H1, optimized meta description, clear H2 structure, FAQ section, and a brief Changes Made block after the self-check. See [references/seo-writing-checklist.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/seo-content-writer/references/seo-writing-checklist.md) for the copy-start checklist and article template.
+> **Reference**: See [Instructions Detail](references/instructions-detail.md) for the compact workflow, pre-write checklist, issue-classification rules, and self-check format.
 
 ## Content Type Templates
 
-Quick-start patterns for how-to guides, comparisons, listicles, pillar pages, reviews, and FAQ pages live in [references/content-structure-templates.md](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/seo-content-writer/references/content-structure-templates.md).
+Quick-start patterns for how-to guides, comparisons, listicles, pillar pages, reviews, and FAQ pages live in [references/content-structure-templates.md](references/content-structure-templates.md).
 
 ## Tips for Success
 
 Match intent, front-load value, support claims with evidence, and write for humans before optimizing for the SERP.
+
+### Save Results
+
+On user confirmation, save to `memory/content/YYYY-MM-DD-<topic>.md` — see [Skill Contract](references/instructions-detail.md) §Save Results Template.
+
+## Reference Materials
+
+- [Instructions Detail](references/instructions-detail.md) — Workflow, CORE-EEAT constraints, issue handling, self-check
+- [SEO Writing Checklist](references/seo-writing-checklist.md) — On-page checklist, snippet patterns, and copy-start template
+- [Title Formulas](references/title-formulas.md) — Headline formulas and CTR patterns
+- [Content Structure Templates](references/content-structure-templates.md) — Compact content blueprints
+
+## Next Best Skill
+
+- **Primary**: [content-quality-auditor](../content-quality-auditor/SKILL.md) — gate the draft before publishing.
 
 ## Anti-patterns
 
@@ -114,6 +125,10 @@ Match intent, front-load value, support claims with evidence, and write for huma
 - **Wall of text** — no H2/H3, no lists, no snippet-ready block; fails scannability.
 - **Intent mismatch** — answering a different question than the query implies, or burying the answer below the fold.
 - **Job creep** — scoring AI-citation/GEO readiness (use geo-content-optimizer) or refreshing decaying live pages (use content-refresher). This skill drafts new content only.
+
+## Example
+
+Sample outcome: a keyword-led H1, optimized meta description, clear H2 structure, FAQ section, and a brief Changes Made block after the self-check. See [references/seo-writing-checklist.md](references/seo-writing-checklist.md) for the copy-start checklist and article template.
 
 ## Self-check validation
 
@@ -127,22 +142,6 @@ Before handoff, confirm every box; fix or report each failure in the handoff —
 
 ## Known gaps
 
-- **Reference links point to remote GitHub URLs**, but the same files also exist locally in `references/`. If offline or the repo is renamed, prefer the local sibling files (`references/instructions-detail.md`, `seo-writing-checklist.md`, `title-formulas.md`, `content-structure-templates.md`).
 - **Does not score AI-citation/GEO readiness** — that is geo-content-optimizer's job; this skill stops at SEO + CORE-EEAT.
 - **Does not refresh live/decaying pages** — that is content-refresher's job; this skill drafts new content only.
 - **No live SERP access without a connector** — if `~~SEO tool`/`~~search console` is not connected, the SERP analysis in step 3 relies on user-supplied keywords and competitors and may be incomplete.
-
-### Save Results
-
-On user confirmation, save to `memory/content/YYYY-MM-DD-<topic>.md` — see [Skill Contract](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/references/skill-contract.md) §Save Results Template.
-
-## Reference Materials
-
-- [Instructions Detail](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/seo-content-writer/references/instructions-detail.md) — Workflow, CORE-EEAT constraints, issue handling, self-check
-- [SEO Writing Checklist](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/seo-content-writer/references/seo-writing-checklist.md) — On-page checklist, snippet patterns, and copy-start template
-- [Title Formulas](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/seo-content-writer/references/title-formulas.md) — Headline formulas and CTR patterns
-- [Content Structure Templates](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/seo-content-writer/references/content-structure-templates.md) — Compact content blueprints
-
-## Next Best Skill
-
-- **Primary**: [content-quality-auditor](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/cross-cutting/content-quality-auditor/SKILL.md) — gate the draft before publishing.

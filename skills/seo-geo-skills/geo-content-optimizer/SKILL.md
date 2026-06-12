@@ -54,7 +54,7 @@ Audit this content for GEO readiness and suggest improvements
 AI Overview is eating clicks on 12 head queries — build a recovery plan
 ```
 
-Then walk the body in order: read the **North Star**, honour the **Freedom Dial**, run the 5-step **Instructions**, and clear the **Self-check** before handoff. See [AI Overview Recovery](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/geo-content-optimizer/references/ai-overview-recovery.md) for the 4-phase playbook (measure → diagnose → rewrite → monitor) tailored to recovery scenarios (as opposed to generic GEO optimization).
+Then walk the body in order: read the **North Star**, honour the **Freedom Dial**, run the 5-step **Instructions**, and clear the **Self-check** before handoff. See [AI Overview Recovery](references/ai-overview-recovery.md) for the 4-phase playbook (measure → diagnose → rewrite → monitor) tailored to recovery scenarios (as opposed to generic GEO optimization).
 
 ## North Star objective
 
@@ -95,21 +95,15 @@ When a user requests GEO optimization, run these five steps:
 
 Label every metric **Measured** (tool/export), **User-provided**, or **Estimated** (model inference); never present an estimate as measured; if a required metric is unavailable, mark it N/A — do not invent it.
 
-> **Reference**: See [Instructions Detail](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/geo-content-optimizer/references/instructions-detail.md) for the full CORE-EEAT GEO target tables, AI engine preferences, analysis templates, optimization report template, self-check matrix, and examples.
-
-## Example
-
-**User**: "Optimize this paragraph for GEO: 'Email marketing is a good way to reach customers. It's been around for a while and many businesses use it.'"
-
-**Output** adds a clear definition, dated/source-backed facts, structured list, quotable statements, and a before/after GEO score. See the full pattern in [Instructions Detail — Example](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/geo-content-optimizer/references/instructions-detail.md#example).
+> **Reference**: See [Instructions Detail](references/instructions-detail.md) for the full CORE-EEAT GEO target tables, AI engine preferences, analysis templates, optimization report template, self-check matrix, and examples.
 
 ## GEO Optimization Checklist
 
-> **Reference**: See the GEO Readiness Checklist in [GEO Optimization Techniques](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/geo-content-optimizer/references/geo-optimization-techniques.md) for the full checklist covering definitions, quotable content, authority, structure, and technical elements.
+> **Reference**: See the GEO Readiness Checklist in [GEO Optimization Techniques](references/geo-optimization-techniques.md) for the full checklist covering definitions, quotable content, authority, structure, and technical elements.
 
 ## Tips for Success
 
-Answer first, be specific, cite dated sources, stay current, match query format, and build authority. Full list in [Instructions Detail — Tips for Success](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/geo-content-optimizer/references/instructions-detail.md#tips-for-success).
+Answer first, be specific, cite dated sources, stay current, match query format, and build authority. Full list in [Instructions Detail — Tips for Success](references/instructions-detail.md#tips-for-success).
 
 ### Save Results
 
@@ -117,10 +111,10 @@ On user confirmation, save to `memory/content/YYYY-MM-DD-<topic>.md` — see [Sk
 
 ## Reference Materials
 
-- [Instructions Detail](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/geo-content-optimizer/references/instructions-detail.md) - Full 5-step workflow, CORE-EEAT GEO targets, self-check matrix, worked example, tips
-- [GEO Optimization Techniques](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/geo-content-optimizer/references/geo-optimization-techniques.md) - Detailed before/after examples, templates, and checklists for each technique
-- [AI Citation Patterns](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/geo-content-optimizer/references/ai-citation-patterns.md) - How Google AI Overviews, ChatGPT, Perplexity, and Claude select and cite sources
-- [Quotable Content Examples](https://github.com/aaron-he-zhu/seo-geo-claude-skills/blob/main/build/geo-content-optimizer/references/quotable-content-examples.md) - Before/after examples of content optimized for AI citation
+- [Instructions Detail](references/instructions-detail.md) - Full 5-step workflow, CORE-EEAT GEO targets, self-check matrix, worked example, tips
+- [GEO Optimization Techniques](references/geo-optimization-techniques.md) - Detailed before/after examples, templates, and checklists for each technique
+- [AI Citation Patterns](references/ai-citation-patterns.md) - How Google AI Overviews, ChatGPT, Perplexity, and Claude select and cite sources
+- [Quotable Content Examples](references/quotable-content-examples.md) - Before/after examples of content optimized for AI citation
 
 ## Anti-patterns (what NOT to do)
 
@@ -130,6 +124,12 @@ On user confirmation, save to `memory/content/YYYY-MM-DD-<topic>.md` — see [Sk
 - **Inventing a citation or a date to look authoritative** — if a sourced fact is unavailable, mark it N/A and flag it as an open loop.
 - **Keyword-stuffing the answer block** — the 25-50 word definition must read cleanly to a human; AI engines down-rank obviously templated filler.
 - **Skipping the entity profile** — if the content names a brand/person/product (e.g. a pet-relocation operator), consult `memory/entities/<slug>.md` first; do not guess `display_name` or resolution status.
+
+## Example
+
+**User**: "Optimize this paragraph for GEO: 'Email marketing is a good way to reach customers. It's been around for a while and many businesses use it.'"
+
+**Output** adds a clear definition, dated/source-backed facts, structured list, quotable statements, and a before/after GEO score. See the full pattern in [Instructions Detail — Example](references/instructions-detail.md#example).
 
 ## Self-check validation (run before handoff)
 

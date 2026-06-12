@@ -374,7 +374,7 @@ For a final QA pass before delivering edits, work through the full checklist in 
 
 ---
 
-## Common Copy Problems & Fixes
+## Anti-patterns
 
 ### Problem: Wall of Features
 **Symptom:** List of what the product does without why it matters
@@ -407,6 +407,27 @@ For a final QA pass before delivering edits, work through the full checklist in 
 ### Problem: Feature Overload
 **Symptom:** Listing every capability, overwhelming the reader
 **Fix:** Focus on 3-5 key benefits that matter most to the audience
+
+---
+
+## Real examples
+
+Two concrete before/after pairs from the Seven Sweeps — the patterns apply across copy types.
+
+**So What rewrite (Sweep 3):**
+
+❌ "Our platform uses AI-powered analytics"
+✅ "Our AI-powered analytics surface insights you'd miss manually—so you can make better decisions in half the time"
+
+**Vague → Specific upgrades (Sweep 5):**
+
+| Vague | Specific |
+|-------|----------|
+| Save time | Save 4 hours every week |
+| Many customers | 2,847 teams |
+| Fast results | Results in 14 days |
+| Improve your workflow | Cut your reporting time in half |
+| Great support | Response within 2 hours |
 
 ---
 

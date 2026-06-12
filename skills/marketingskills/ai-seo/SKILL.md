@@ -462,6 +462,38 @@ For implementation, see the [tools registry](../../tools/REGISTRY.md).
 
 ---
 
+## Real examples
+
+**Input:** "Optimise this page for AI citation: `/destinations/uae-to-uk/`"
+
+**Step 1 — AI Visibility Audit (run the audit table for this page's key queries)**
+
+| Query | Google AI Overview | ChatGPT | Perplexity | PawRoute cited? | Competitors cited? |
+|---|:---:|:---:|:---:|:---:|---|
+| moving a dog from Dubai to UK | Yes | No | Yes | No | PetAir UK, IPATA |
+| UAE to UK pet import requirements 2024 | Yes | Yes | Yes | No | APHA.gov.uk, PetAir UK |
+| rabies titre test Dubai dog | No | Yes | Yes | No | Vetwest Dubai |
+| cost of flying a dog from Dubai to London | No | Yes | No | No | PetAir UK |
+
+Result: PawRoute is not cited anywhere. APHA (UK government) and PetAir UK dominate.
+
+**Step 2 — Entity density check**
+
+The page mentions "pet passport" 3× but never defines it. "APHA-approved vet" appears once with no link. The UK's 4-month quarantine rule (abolished 1998) is not mentioned but Google fan-out queries still surface it — the page should proactively address and debunk it.
+
+Entities to add: APHA, AWC (Animal Welfare Certificate), Defra, PETS Travel Scheme, approved blood-testing laboratory, Leidos UK (authorised titer-test lab), rabies titre test (OIE-compliant), 21-day waiting period post-titer.
+
+**Step 3 — Concrete output actions**
+
+1. Add a 45-word definition block at page top: "Moving a dog from the UAE to the UK requires an EU-format pet passport or GB health certificate, a current rabies vaccination, a rabies neutralising antibody titre test (≥0.5 IU/ml) from an approved lab, and a 21-day wait. No quarantine applies if all steps are completed in order."
+2. Add `FAQPage` schema for: "Can I bring my dog from Dubai to the UK without quarantine?", "How long does UAE to UK pet relocation take?", "What is the cost of a rabies titre test in Dubai?"
+3. Add `HowTo` schema with 6 numbered steps (microchip → rabies vaccine → titre test → 21-day wait → health certificate → entry via approved port).
+4. Link to APHA and Defra official pages (authoritative source citation: Princeton GEO +40%).
+5. Add a comparison table: Dubai approved vets × titer test price × typical turnaround.
+6. Verify `robots.txt` allows `ClaudeBot`, `GPTBot`, `PerplexityBot`, and `Google-Extended`.
+
+---
+
 ## Self-check validation
 
 Before handing back an AI-SEO plan or edit, confirm:

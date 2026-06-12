@@ -1,6 +1,14 @@
 ---
 name: image
-description: "When the user wants to create, generate, edit, or optimize images for marketing — blog heroes, social graphics, product mockups, profile banners, listing visuals, or brand assets. Also use when the user mentions 'AI image generation,' 'generate an image,' 'create a graphic,' 'product mockup,' 'hero image,' 'social media graphic,' 'banner image,' 'cover photo,' 'profile banner,' 'listing screenshot,' 'Flux,' 'Flux Kontext,' 'Midjourney,' 'DALL-E,' 'GPT Image,' 'ChatGPT Images,' 'Ideogram,' 'Gemini image,' 'Nano Banana,' 'Recraft,' 'Stable Diffusion,' 'Canva,' 'Figma,' 'image optimization,' 'compress images,' 'WebP,' or 'OG image.' Use this for general-purpose marketing image creation and optimization. For paid ad image creative and platform-specific ad specs, see ad-creative. For video production, see video."
+description: >
+  Creates, generates, or edits marketing images — blog heroes, social graphics, product mockups,
+  profile banners, listing visuals, and brand assets. Load when the job is producing a new image.
+  Not for compressing, converting, or fixing existing images — use the image-optimize skill for that.
+  Triggers: "AI image generation", "generate an image", "create a graphic", "product mockup",
+  "hero image", "social media graphic", "banner image", "cover photo", "profile banner",
+  "listing screenshot", "Flux", "Flux Kontext", "Midjourney", "GPT Image", "ChatGPT Images",
+  "Ideogram", "Gemini image", "Nano Banana", "Recraft", "Stable Diffusion", "Canva", "Figma".
+  For paid ad creative and platform-specific ad specs, see ad-creative. For video, see video.
 metadata:
   version: 2.0.1
 ---
@@ -248,84 +256,31 @@ Logos, icons, and illustrations. AI generation has limits here.
 
 ---
 
-## Image Optimization
-
-Every image on your site affects page speed, which affects SEO and conversions.
-
-### Format Guide
-
-| Format | Best For | Compression | Browser Support |
-|--------|----------|-------------|:---:|
-| **WebP** | Photos, graphics — default choice | Lossy + lossless | ~96% |
-| **AVIF** | Highest compression, newest | Better than WebP | ~94% |
-| **JPEG** | Fallback for older browsers | Lossy only | Universal |
-| **PNG** | Transparency, screenshots | Lossless | Universal |
-| **SVG** | Logos, icons, illustrations | Vector (scales) | Universal |
-
-### Optimization Checklist
-
-- [ ] **Serve WebP** with JPEG/PNG fallback (`<picture>` element or CDN auto-format)
-- [ ] **Resize to display size** — don't serve 4000px images in 800px containers
-- [ ] **Compress** — target quality 75-85% for photos, near-lossless for screenshots
-- [ ] **Lazy load** below-the-fold images (`loading="lazy"`)
-- [ ] **Set explicit dimensions** — `width` and `height` attributes prevent layout shift (CLS)
-- [ ] **Use a CDN** with auto-optimization (Cloudflare, Vercel, Imgix, Cloudinary)
-- [ ] **Add alt text** — descriptive, keyword-relevant, not stuffed
-
-### Quick Optimization Commands
-
-```bash
-# Convert to WebP (using cwebp)
-cwebp -q 80 input.png -o output.webp
-
-# Batch convert with ImageMagick
-mogrify -format webp -quality 80 *.png
-
-# Optimize JPEG (using jpegoptim)
-jpegoptim --max=80 --strip-all *.jpg
-
-# Check image sizes on a page
-curl -s https://yoursite.com | grep -oP 'src="[^"]+\.(jpg|png|webp)"' | head -20
-```
-
----
-
-## OG & Social Preview Images
-
-The image that appears when your URL is shared on social media, Slack, Discord, etc.
-
-### Required Meta Tags
-
-```html
-<meta property="og:image" content="https://yoursite.com/og/page-name.jpg" />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://yoursite.com/og/page-name.jpg" />
-```
-
-### Dynamic OG Images
-
-Generate OG images programmatically for pages with dynamic content (blog posts, user profiles):
-
-- **Vercel OG** (`@vercel/og`) — generates images at the edge using JSX
-- **Satori** — converts HTML/CSS to SVG (powers Vercel OG)
-- **Cloudinary** — URL-based text overlay on template images
-
-**Best for programmatic SEO:** Generate unique OG images per page using templates + dynamic data.
-
----
-
-## Common Mistakes
+## Anti-patterns
 
 1. **Using AI for product UI screenshots** — models hallucinate interfaces; capture real screenshots
-2. **Skipping image optimization** — unoptimized images are the #1 page speed killer
-3. **No OG image** — shared links look broken without a preview image
-4. **Wrong aspect ratio** — always check platform specs before generating
-5. **Text-heavy images without Ideogram** — most AI models butcher text; use Ideogram or add text in post
-6. **Generating without style direction** — "photorealistic," "flat illustration," "3D render" drastically changes output
-7. **Inconsistent brand visuals** — use Flux multi-reference or design templates for consistency
-8. **Huge images on landing pages** — compress, resize, lazy load
+2. **Wrong aspect ratio** — always check platform specs before generating
+3. **Text-heavy images without Ideogram** — most AI models butcher text; use Ideogram or add text in post
+4. **Generating without style direction** — "photorealistic," "flat illustration," "3D render" drastically changes output
+5. **Inconsistent brand visuals** — use Flux multi-reference or design templates for consistency
+6. **Too vague a prompt** — "a business image" produces generic results; add subject, style, lighting, composition
+
+---
+
+## Real examples
+
+**Input:** "I need a hero image for a blog post about expats moving pets to the UAE. Calm, reassuring tone. 1200x630."
+
+**Tool chosen:** Flux Pro 1.1 (photorealistic, no text needed in image).
+
+**Prompt sent:**
+```
+A small terrier dog sitting calmly in a modern airport lounge beside a travel carrier,
+warm soft lighting, shallow depth of field, reassuring and peaceful mood,
+clean commercial photography style, 1200x630
+```
+
+**Expected output:** A Flux Pro 1.1 API call with the prompt above, aspect ratio 16:9 at 1200×630. The returned image is a photorealistic airport-lounge scene — no text embedded, no golden retriever default. Before spending a paid generation on PawRoute pages, confirm the prompt with the user.
 
 ---
 
@@ -356,8 +311,8 @@ Before delivering an image, confirm:
 - **Cannot generate images itself in this skill** — it directs tool choice, prompts, and specs; actual generation runs through external APIs/tools (Gemini, Flux, Ideogram) or human-in-the-loop design apps (Canva, Figma).
 - **No live pricing** — pricing changes constantly; cost columns point to vendor pricing pages rather than quoting figures that rot.
 - **Logos and vector brand identity** — AI generation is unreliable here; this skill defers to design/commission, not generation.
-- **Two jobs under one roof** — this skill covers both image *creation* and image *optimization*. They share a workflow so they stay together, but if optimization grows heavy it is a candidate to split out.
 - **PawRoute conventions** (approval-before-render, pet-image diversity) live in user memory, not inlined here — the model must already know them.
+- **Image optimization** (format conversion, compression, CDN, lazy-load, CLS, OG/social meta) is handled by the sibling `image-optimize` skill — see `marketingskills/image-optimize/SKILL.md`.
 
 ## Related Skills
 
