@@ -1,0 +1,184 @@
+{
+  "_meta": {
+    "produced_by": "Numini AI Writer — official sources + recurring research patterns (SOURCING-METHOD.md)",
+    "produced": "2026-06-09",
+    "content_format": "blog (inbound route, cluster under /moving-to-dubai/)",
+    "blog_objective": "lead_generation",
+    "funnel_stage": "TOFU→MOFU",
+    "target_keyword": "moving a pet from India to Dubai",
+    "secondary_keywords": [
+      "India to Dubai pet relocation",
+      "bring dog from India to UAE",
+      "AQCS export pet Dubai"
+    ],
+    "intent": "informational/commercial",
+    "primary_fear": "I'm afraid the export paperwork from India and the UAE permit won't line up in time",
+    "author_byline": "By the PawRoute relocation team · reviewed by our IPATA-certified specialists · updated June 2026"
+  },
+  "seo": {
+    "title": "Moving a Pet From India to Dubai: The Honest Guide",
+    "meta_description": "From India to Dubai you need an AQCS export NOC, ISO microchip, valid rabies vaccine and a MOCCAE import permit. No UAE quarantine when compliant. Here's the order.",
+    "og_title": "India to Dubai with a pet — the NOC + permit timing",
+    "canonical_path": "/blog/india-to-dubai-pet-relocation/"
+  },
+  "hero": {
+    "eyebrow": "Route guide · India → Dubai",
+    "h1": "Moving your pet from India to Dubai",
+    "standfirst": "A common, manageable corridor — but two permits (India's export NOC and the UAE import permit) have to line up. Here's the order that keeps them aligned.",
+    "image": "images/pawroute/to-dubai/india-to-dubai-hero.png",
+    "image_alt": "A pet ready to travel from India to Dubai beside a travel crate"
+  },
+  "byline": "By the PawRoute relocation team · reviewed by our IPATA-certified specialists · updated June 2026.",
+  "key_facts": {
+    "answer": "From India to the UAE you need an ISO microchip, a valid rabies vaccination, an export No-Objection Certificate (NOC) from India's Animal Quarantine & Certification Service (AQCS), and a MOCCAE import permit arranged before travel. Compliant pets are not quarantined in the UAE.",
+    "stats": [
+      {
+        "label": "India-side pivot",
+        "value": "AQCS export NOC"
+      },
+      {
+        "label": "UAE quarantine",
+        "value": "None (if compliant)"
+      },
+      {
+        "label": "Flight",
+        "value": "Short hop — cargo or baggage (Emirates)"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "type": "prose",
+      "heading": "The India side — the AQCS NOC",
+      "paragraphs": [
+        "Exporting a pet from India runs through the Animal Quarantine & Certification Service (AQCS), which issues the export NOC, alongside your pet's microchip and rabies records. The NOC has its own lead time — confirm the current AQCS process before booking."
+      ]
+    },
+    {
+      "type": "prose",
+      "heading": "The UAE side — the import permit",
+      "paragraphs": [
+        "The UAE requires a MOCCAE import permit (before travel), the microchip and a valid rabies vaccination; compliant pets aren't quarantined. Confirm permit timing and your breed against the UAE restricted list — full detail on the Moving to Dubai hub."
+      ]
+    }
+  ],
+  "story": {
+    "tag": "A common scenario",
+    "lead": "On India → Dubai, the trap is two permits with separate clocks.",
+    "problem": "An owner books a quick move assuming the documents are a formality.",
+    "mistake": "The AQCS export NOC and the MOCCAE import permit are started too late and don't align with the flight.",
+    "discovery": "Each permit has its own process and timing.",
+    "result": "The flight shifts while both permits catch up.",
+    "lesson": "Start both permits first; the paperwork sets the schedule, not the flight."
+  },
+  "faqs": [
+    {
+      "q": "What's the key document from India?",
+      "a": "The export NOC from AQCS, plus microchip and rabies records. Confirm the current AQCS process — it has its own lead time."
+    },
+    {
+      "q": "Will my pet be quarantined in the UAE?",
+      "a": "No — with a valid MOCCAE import permit, microchip and rabies vaccination, pets aren't quarantined on arrival. Confirm current MOCCAE rules."
+    },
+    {
+      "q": "Is India → Dubai quick?",
+      "a": "It's a short flight, so transit is brief, but the timeline is set by the two permits, not the flight time. Start them early."
+    }
+  ],
+  "sources": [
+    {
+      "authority": "India AQCS",
+      "title": "Animal Quarantine & Certification Service",
+      "url": "https://aqcsindia.gov.in/",
+      "note": "India export NOC"
+    },
+    {
+      "authority": "UAE MOCCAE",
+      "title": "Pet import permits",
+      "url": "https://www.moccae.gov.ae/en/services/import-permit-pets",
+      "note": "UAE import side"
+    },
+    {
+      "authority": "Emirates",
+      "title": "Travelling with animals",
+      "url": "https://www.emirates.com/english/help/faqs/what-are-the-rules-and-charges-for-travelling-with-animals/",
+      "note": "Cabin/baggage/cargo"
+    },
+    {
+      "authority": "IATA",
+      "title": "Live Animals Regulations",
+      "url": "https://www.iata.org/en/programs/cargo/live-animals/",
+      "note": "Crate + cargo"
+    }
+  ],
+  "cta": {
+    "heading": "Moving from India to Dubai?",
+    "body": "We line up the AQCS NOC and the MOCCAE permit in the right order so your pet travels on schedule.",
+    "primary": {
+      "label": "Get my India → Dubai quote",
+      "url": "/#quote"
+    }
+  },
+  "internal_links": [
+    {
+      "anchor": "Moving to Dubai — full UAE import guide",
+      "url": "/moving-to-dubai/"
+    },
+    {
+      "anchor": "How pets fly (cabin/baggage/cargo)",
+      "url": "/blog/how-pets-fly-from-dubai-cabin-baggage-cargo/"
+    }
+  ],
+  "images": [
+    {
+      "role": "hero",
+      "file": "images/pawroute/to-dubai/india-to-dubai-hero.png",
+      "alt": "A pet ready to travel from India to Dubai beside a travel crate",
+      "prompt": "A calm pet beside a labelled IATA crate at a bright Indian airport, warm reassuring light, photorealistic, no text",
+      "width": 768,
+      "height": 512,
+      "status": "to-render (low-res)"
+    }
+  ],
+  "sourcing": {
+    "how_we_derived_this": "Recurring research patterns (SOURCING-METHOD.md): fear-first/answer-first, official-only, route story, funnel link.",
+    "recurring_principles": [
+      "Answer the fear",
+      "Front-load the answer",
+      "Official sources only",
+      "Original story",
+      "Funnel link + single CTA"
+    ],
+    "verified_100pct": [
+      {
+        "fact": "Emirates pet travel methods + 17h rule",
+        "source": "emirates.com",
+        "evidence": "audit/evidence/travel-methods/emirates-animals-faq.png",
+        "as_of": "2026-06-09"
+      },
+      {
+        "fact": "IATA Live Animals Regulations",
+        "source": "iata.org",
+        "evidence": "audit/evidence/travel-methods/skycargo-emirates-pets.png",
+        "as_of": "2026-06-09"
+      },
+      {
+        "fact": "UAE import (MOCCAE): permit valid 90 days; permanent microchip matching the cert; rabies ≥21 days (first/lapsed dose, none for a valid booster); titre only from high-risk countries (≥0.5 IU/ml, valid 365d); min age 12wk (low-risk)/15wk (high-risk); internal+external parasite doses within 14 days; max 2 pets/person/year; fees AED 200 permit, AED 500/dog & AED 250/cat release; no quarantine if compliant",
+        "source": "moccae.gov.ae",
+        "evidence": "audit/evidence/uae-import-export/moccae-pets-full.png",
+        "as_of": "2026-06-09"
+      }
+    ],
+    "stated_but_unverified": [
+      {
+        "claim": "India AQCS export NOC process + lead time",
+        "action": "Confirm + screenshot on aqcsindia.gov.in (SOPs are PDFs)"
+      },
+      {
+        "claim": "UAE specific banned-breed list",
+        "action": "Confirm via Federal Law 22/2016 executive regulations + Dubai Municipality (legal basis named on MOCCAE; list not yet captured)"
+      }
+    ],
+    "confidence": "100% sure of: Emirates/IATA flight mechanics AND the UAE import requirements (MOCCAE, screenshot-verified 2026-06-09 — permit 90d, microchip, rabies 21d, titre high-risk only, fees, 2-pet limit, no quarantine). Still to confirm: the specific UAE banned-breed list + this route's origin-export specifics. NOT sure of: ranking/citation (unproven until the site is live, indexed and measured)."
+  }
+}

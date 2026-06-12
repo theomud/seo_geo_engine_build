@@ -1,0 +1,22 @@
+<section class="section {{ block.variant | default('section--surface') }}" id="{{ block.id | default('pricing') }}">
+  <div class="container">
+    {% if block.eyebrow %}<p class="eyebrow">{{ block.eyebrow }}</p>{% endif %}
+    <h2>{{ block.heading | default('Transparent pricing') }}</h2>
+    {% if block.body %}<p class="lead">{{ block.body }}</p>{% endif %}
+    <div class="pricing-grid">
+      {% for tier in block.tiers %}
+      <div class="tier {{ 'featured' if tier.featured else '' }}"{% if tier.featured %} data-badge="{{ tier.badge | default('Most popular') }}"{% endif %}>
+        <h3>{{ tier.name }}</h3>
+        <div class="price">{{ tier.price }}{% if tier.unit %} <small>{{ tier.unit }}</small>{% endif %}</div>
+        {% if tier.desc %}<p class="tier-desc">{{ tier.desc }}</p>{% endif %}
+        <ul>
+          {% for inc in tier.includes | default([]) %}<li>{{ inc }}</li>{% endfor %}
+          {% for ex in tier.excludes | default([]) %}<li class="off">{{ ex }}</li>{% endfor %}
+        </ul>
+        <a class="btn {{ 'btn-gold' if tier.featured else 'btn-ghost' }}" href="{{ tier.cta_url | default('#quote') }}">{{ tier.cta | default('Get this quote') }}</a>
+      </div>
+      {% endfor %}
+    </div>
+    {% if block.note %}<p class="price-note">{{ block.note }}</p>{% endif %}
+  </div>
+</section>

@@ -1,0 +1,18 @@
+{
+  "_meta": {
+    "produced_by": "gen_route_briefs.py (route money-page brief)",
+    "blog_objective": "lead_generation",
+    "funnel_stage": "MOFU→BOFU (commercial-investigation → transactional)",
+    "page_type": "service (route money page)",
+    "target_keyword": "pet relocation dubai to australia",
+    "intent": "commercial",
+    "primary_fear": "I'm afraid that the months-long titer + quarantine process is overwhelming and hugely expensive",
+    "monetization": "lead_generation (route enquiry → WhatsApp quote)"
+  },
+  "seo": {
+    "title": "Pet Relocation Dubai to Australia — Requirements, Pricing & Timeline | PawRoute",
+    "meta_description": "Move your pet from Dubai to Australia. The hardest route: rabies titer test, a long wait, then 10 days quarantine on arrival. Transparent pricing from AED 25,000.",
+    "canonical_path": "/destinations/uae-to-australia/"
+  },
+  "_note": "Route brief for Dubai → Australia. Content lives in the page YAML; this brief lets the registry track question/funnel/monetization."
+}

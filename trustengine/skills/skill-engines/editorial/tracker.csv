@@ -1,0 +1,5 @@
+timestamp,url,domain,score,grade,word_count,top_fix
+2026-06-08T10:02:37,https://www.airanimal.com/,www.airanimal.com,78,B,1440,Proof / trustworthy
+2026-06-08T10:02:41,https://example.com/,example.com,72,B,21,Clear & scannable
+2026-06-08T11:32:48,https://www.airanimal.com/,www.airanimal.com,78,B,1440,Proof / trustworthy
+2026-06-08T11:46:03,https://www.airanimal.com/,www.airanimal.com,78,B,1440,Proof / trustworthy

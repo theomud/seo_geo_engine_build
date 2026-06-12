@@ -1,0 +1,122 @@
+url: /blog/move-pet-from-dubai-fast/
+title: "Need to Move Your Pet From Dubai Fast? What's Possible"
+title_suffix: ""
+meta_description: "Can you relocate a pet from Dubai in a week? Honestly, it depends on one thing — whether the rabies vaccination is already valid. The official rules, and what's actually possible."
+og_title: "Move a pet from Dubai fast — what's actually possible (and what isn't)"
+updated: "2026-06-09"
+layout: article
+
+blocks:
+  - type: article_header
+    category: "Guide · Urgency"
+    category_url: "/blog/"
+    h1: "Need to move your pet from Dubai fast? Here's what's actually possible"
+    standfirst: "It depends on one thing — whether your pet's rabies vaccination is already valid. If it is, a move can take days; if not, the law sets a floor you can't skip."
+    author: "the PawRoute relocation team"
+    date: "9 June 2026"
+    reading_time: 6
+    reviewed: "reviewed by our IPATA-certified specialists"
+    image: /assets/blog/cost-2026-hero.png
+    image_alt: "A pet ready to travel urgently from Dubai"
+
+  - type: prose
+    id: answer
+    heading: "The honest answer"
+    paragraphs:
+      - "If your pet is <strong>already microchipped and the rabies vaccination is already valid</strong> (given at least 21 full days ago), the waiting period is behind you — a move can come together in <strong>days</strong>, limited only by the import permit, an airline cargo booking, and the destination's health certificate."
+      - "If your pet is <strong>not yet vaccinated</strong>, there's a floor you cannot skip: the UK (and most destinations) require the rabies vaccination at least <strong>21 full days before travel</strong>, and the microchip must come first. That makes <strong>~3 weeks the realistic minimum</strong> for an unvaccinated pet — and routes that need a rabies titre test (Australia, Singapore, non-listed EU) take <strong>months</strong>, not weeks."
+
+  - type: takeaways
+    heading: "Key takeaways"
+    items:
+      - "Already-vaccinated pet (rabies valid ≥21 days) → a move can take <strong>days</strong>."
+      - "Not yet vaccinated → <strong>~3-week floor</strong> (microchip → rabies → 21-day wait). You can't backdate it."
+      - "Australia / Singapore / non-listed EU → <strong>months</strong> (rabies titre test + waiting period)."
+      - "Pets leave Dubai as <strong>IATA-compliant airfreight</strong> (Emirates SkyCargo), with vet support at the Dubai Animal Care area."
+      - "Capacity can be tight (heat embargo, disrupted operations) — <strong>book early</strong>, and beware 'emergency pricing'."
+
+  - type: toc
+    heading: "In this article"
+    items:
+      - { label: "The rules vs our advice", anchor: "rules" }
+      - { label: "Can you move in a week?", anchor: "fast" }
+      - { label: "When flights are disrupted", anchor: "crisis" }
+      - { label: "Frequently asked questions", anchor: "faq" }
+
+  - type: compliance
+    id: rules
+    eyebrow: "Facts vs advice"
+    heading: "What the rules require — and what we'd do about it"
+    facts_label: "What the rules require (fact)"
+    advice_label: "What we'd do right now (advice)"
+    facts:
+      - { text: "A pet must be microchipped <em>before</em> its rabies vaccination, and wait at least <strong>21 full days</strong> after the vaccination before entering Great Britain.", authority: "UK GOV.UK" }
+      - { text: "For the EU from a non-listed country, a rabies titre test sample is taken ≥30 days after vaccination and ≥90 days before the certificate.", authority: "European Commission" }
+      - { text: "Pets leaving the UAE travel as live-animal airfreight, compliant with IATA Live Animals Regulations, with vet support at the Dubai Animal Care area.", authority: "Emirates SkyCargo" }
+      - { text: "A MOCCAE export permit and a health certificate are required to export a pet from the UAE.", authority: "UAE MOCCAE" }
+    advice:
+      - "Check your pet's rabies date first. If it's valid and ≥21 days old, you may be days away — gather the permit and book cargo now."
+      - "If unvaccinated, microchip and vaccinate <strong>today</strong>; the 21-day clock starts only after the jab."
+      - "Bound for Australia, Singapore or a non-listed EU country? Book the titre test immediately — it's the long pole (months)."
+      - "Get a full price breakdown in writing. Don't accept vague 'emergency' pricing under time pressure."
+    note: "Facts are quoted from the official sources listed below; the advice is our professional recommendation, not a regulation."
+
+  - type: flow
+    id: fast
+    heading: "Can you move in a week?"
+    body: "It comes down to your pet's vaccination status — the law won't bend for a deadline."
+    steps:
+      - "Rabies already valid (≥21 days old)? → a move in days is possible"
+      - "Not yet vaccinated? → ~3-week floor (microchip → rabies → 21-day wait)"
+      - "Australia / Singapore / non-listed EU? → months (titre test + waiting period)"
+      - "Then, for any route: import permit → airline cargo booking → health certificate"
+
+  - type: timeline_calc
+    eyebrow: "Plan it backward"
+    heading: "When do you need to start?"
+    body: "Enter your travel date and route to see the deadline for each step — the rabies clock can't be shortened."
+
+  - type: prose
+    id: crisis
+    eyebrow: "When things are disrupted"
+    heading: "Heat embargoes and disrupted operations"
+    paragraphs:
+      - "Capacity for pets is not unlimited, and it tightens in two predictable ways. From roughly May to September the UAE summer heat means airlines restrict or refuse pet cargo for safety; Emirates SkyCargo also publishes operational notices and a dedicated pet-transport support channel when flight operations are affected."
+      - "In a genuine crunch, the move isn't impossible — but the scarce resource is airline capacity, not paperwork. Acting early is what protects your options. We never guarantee an exact arrival date, because airlines change schedules — and anyone who promises one in a disruption is guessing."
+
+  - type: story
+    id: story
+    heading: "What going wrong actually looks like"
+    tag: "A common scenario"
+    lead: "The hardest conversations are the ones where the calendar has already decided."
+    problem: "An owner gets a one-week notice to leave and their dog has never had a rabies shot."
+    mistake: "They assume an expensive 'emergency' service can simply fast-track it."
+    discovery: "No service can shorten the 21-day rabies wait — it's a legal requirement, not a queue."
+    result: "The dog follows a few weeks later once the clock is satisfied, boarded safely in the meantime."
+    lesson: "Speed comes from vaccination status, not from paying more. The best emergency plan is keeping rabies current — always."
+
+  - type: faq
+    id: faq
+    heading: "Frequently asked questions"
+    items:
+      - { q: "Can I really move my pet in a week?", a: "Only if the rabies vaccination is already valid (given at least 21 full days ago) and any required titre test is done. Then it's permit + cargo booking + health certificate — possible in days. If not, the 21-day rabies rule sets the floor." }
+      - { q: "Can an emergency service skip the blood test or the rabies wait?", a: "No. The rabies waiting period and titre tests are legal requirements set by governments — no company can shorten or backdate them. Anyone who says otherwise is putting your pet's entry at risk." }
+      - { q: "Is emergency pricing fair?", a: "Get the full breakdown in writing. Urgency is the moment you're most likely to be overcharged, so transparency matters more, not less — the documents and waiting periods are the same whatever you pay." }
+      - { q: "What if flights are disrupted or capacity is tight?", a: "Airline cargo capacity is the scarce resource (especially in the summer heat embargo). Book as early as possible; Emirates SkyCargo runs a dedicated pet-transport support channel for affected operations." }
+      - { q: "What's the fastest route out of Dubai?", a: "For an already-vaccinated pet, listed destinations like the UK can be quick. Australia and Singapore are never fast because of the titre test and waiting period — plan months ahead." }
+
+  - type: sources
+    eyebrow: "Verified against the source"
+    heading: "Official sources"
+    items:
+      - { authority: "UK GOV.UK", title: "Bringing your pet to Great Britain (21-day rabies rule)", url: "https://www.gov.uk/bring-pet-to-great-britain", note: "Microchip-first + 21-day wait" }
+      - { authority: "Emirates SkyCargo", title: "Pets — live animal transport", url: "https://www.skycargo.com/products/live/pets/", note: "IATA-compliant airfreight + support" }
+      - { authority: "European Commission", title: "Bringing a pet to the EU from a non-EU country", url: "https://food.ec.europa.eu/animals/live-animal-movements/dogs-cats-and-ferrets/bringing-pet-eu-non-eu-country_en", note: "Titre timing" }
+      - { authority: "UAE MOCCAE", title: "Pet export permits", url: "https://www.moccae.gov.ae/en/services/import-permit-pets", note: "UAE export side" }
+
+  - type: cta
+    heading: "On a deadline to move your pet?"
+    body: "Tell us your pet's vaccination status and your date — we'll tell you honestly what's possible, book the cargo capacity early, and handle the paperwork. No false promises, no panic pricing."
+    ctas:
+      - { label: "Get my honest timeline", url: "/#quote", style: "btn-gold" }
+      - { label: "See all destinations & costs", url: "/destinations/", style: "btn-ghost" }

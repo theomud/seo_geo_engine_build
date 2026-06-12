@@ -1,0 +1,60 @@
+# ---------------------------------------------------------------------------
+# Northside Coffee Roasters — a second, ordinary business site.
+# Proves the engine is generic: different brand, different theme tokens,
+# same blocks. No code changes, no pet-relocation anything.
+# ---------------------------------------------------------------------------
+name: Northside Coffee Roasters
+lang: en
+url: https://northsidecoffee.example
+
+business:
+  name: Northside Coffee Roasters
+  mark: "☕"
+  schema_type: CafeOrCoffeeShop
+  tagline: Small-batch coffee, roasted on the Northside.
+  description: >
+    A neighbourhood coffee roastery and café. We source single-origin beans,
+    roast them in small batches, and pour them fresh — every day since 2014.
+  area_served: ["Manchester"]
+  address:
+    streetAddress: "14 Mill Lane"
+    addressLocality: Manchester
+    addressCountry: GB
+  price_range: "££"
+  knows_about: ["Coffee roasting", "Single-origin coffee", "Espresso", "Pour-over brewing"]
+
+theme:
+  primary: "#3b2a20"
+  primary_dark: "#271a13"
+  accent: "#c98a3a"
+  accent_dark: "#a96f27"
+  surface: "#f7f1e8"
+  text: "#2a2420"
+  muted: "#7a6f63"
+  border: "#e7ddcb"
+  success: "#5b7c4b"
+  font_body: "'Inter', system-ui, -apple-system, Segoe UI, Roboto, sans-serif"
+  font_head: "'Fraunces', Georgia, serif"
+
+fonts:
+  google: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap"
+
+contact:
+  email: "hello@northsidecoffee.example"
+  phone: "+44 161 000 0000"
+  cta_label: "Visit us"
+  cta_url: "/visit/"
+
+nav:
+  - { label: "Menu", url: "/menu/" }
+  - { label: "Our coffee", url: "/about/" }
+  - { label: "Visit", url: "/visit/" }
+
+footer:
+  legal: "Roasted with care in Manchester."
+  columns:
+    - heading: "Explore"
+      links:
+        - { label: "Menu", url: "/menu/" }
+        - { label: "Our coffee", url: "/about/" }
+        - { label: "Visit us", url: "/visit/" }

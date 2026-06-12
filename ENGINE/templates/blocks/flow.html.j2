@@ -1,0 +1,12 @@
+<section class="section--article" id="{{ block.id | default('') }}">
+  <div class="container container--article">
+    {% if block.heading %}<h2>{{ block.heading }}</h2>{% endif %}
+    {% if block.body %}<p>{{ block.body }}</p>{% endif %}
+    <div class="flow">
+      {% for s in block.steps %}
+      <span class="flow-step">{{ s }}</span>
+      {% if not loop.last %}<span class="flow-arrow" aria-hidden="true">↓</span>{% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>

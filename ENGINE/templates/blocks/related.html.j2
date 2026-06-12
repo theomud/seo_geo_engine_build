@@ -1,0 +1,12 @@
+<section class="section {{ block.variant | default('') }}" id="{{ block.id | default('') }}">
+  <div class="container">
+    <div class="related">
+      <span class="related-label">{{ block.label | default('📖 Further reading') }}</span>
+      <ul>
+        {% for i in block['items'] %}
+        <li><a href="{{ i.url }}">{{ i.title }}</a>{% if i.note %} <span class="related-note">— {{ i.note }}</span>{% endif %}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>

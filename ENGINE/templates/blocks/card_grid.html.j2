@@ -1,0 +1,18 @@
+<section class="section {{ block.variant | default('') }}" id="{{ block.id | default('') }}">
+  <div class="container">
+    {% if block.eyebrow %}<p class="eyebrow">{{ block.eyebrow }}</p>{% endif %}
+    {% if block.heading %}<h2>{{ block.heading }}</h2>{% endif %}
+    {% if block.body %}<p class="lead">{{ block.body }}</p>{% endif %}
+    <div class="card-grid">
+      {% for card in block.cards %}
+      <a class="card" href="{{ card.url | default('#') }}">
+        {% if card.flag %}<div class="card-flag">{{ card.flag }}</div>{% endif %}
+        <h3>{{ card.title }}</h3>
+        {% if card.meta %}<div class="card-meta">{{ card.meta }}</div>{% endif %}
+        {% if card.price %}<div class="card-price">{{ card.price }}</div>{% endif %}
+        {% if card.arrow %}<div class="card-arrow">{{ card.arrow }} →</div>{% endif %}
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,123 @@
+url: /blog/how-pets-fly-from-dubai-cabin-baggage-cargo/
+title: "How Pets Fly From Dubai: Cabin, Baggage, Cargo or Charter"
+title_suffix: ""
+meta_description: "Pets can't ride in the Emirates cabin. Here's how they actually fly from Dubai — checked baggage (journey under 17h) or manifest cargo (Emirates Pets) — and when charter makes sense."
+og_title: "The real ways a pet flies from Dubai (per Emirates' own rules)"
+updated: "2026-06-09"
+layout: article
+
+blocks:
+  - type: article_header
+    category: "Guide · Travel methods"
+    category_url: "/blog/"
+    h1: "How your pet actually flies from Dubai: cabin, baggage, cargo or charter"
+    standfirst: "Pets can't travel in the Emirates cabin — so it's checked baggage or manifest cargo, and which one depends on your journey length. Here's how each works, from the airline's own rules."
+    author: "the PawRoute relocation team"
+    date: "9 June 2026"
+    reading_time: 6
+    reviewed: "verified against Emirates' own policy"
+    image: /assets/blog/cost-2026-hero.png
+    image_alt: "The ways a pet can fly from Dubai — cabin, baggage or cargo"
+
+  - type: prose
+    id: answer
+    heading: "The short answer"
+    paragraphs:
+      - "On Emirates, <strong>animals are not permitted in the cabin</strong> — the only exceptions are falcons between Dubai and certain Pakistan destinations, and guide dogs for the visually impaired. So for a cat or dog leaving Dubai, there are really two methods: <strong>checked baggage</strong> or <strong>manifest cargo</strong>."
+      - "<strong>Checked baggage</strong> means your pet flies in the hold on your flight — allowed from Dubai to countries that permit it, as long as the total journey is <strong>under 17 hours</strong>. <strong>Cargo</strong> (Emirates Pets / SkyCargo) is required if the journey is over 17 hours, the Dubai transit is over 6 hours, or the trip ends in Dubai — which is why most international relocations go by cargo."
+
+  - type: takeaways
+    heading: "Key takeaways"
+    items:
+      - "<strong>No cabin travel</strong> for cats/dogs on Emirates (only falcons to Pakistan + guide dogs)."
+      - "<strong>Checked baggage</strong>: in the hold, on your flight, if total journey is <strong>under 17 hours</strong> and the destination allows it."
+      - "<strong>Cargo</strong> required if journey >17h, Dubai transit >6h, or the trip ends in Dubai."
+      - "<strong>Emirates Pets (SkyCargo)</strong>: door-to-door, a dedicated Dubai Pet Lounge with 24/7 care, IATA-compliant."
+      - "<strong>Charter</strong> is a niche fallback — confirm any 'pet in cabin' claim with the operator in writing."
+
+  - type: toc
+    heading: "In this article"
+    items:
+      - { label: "The methods, compared", anchor: "table" }
+      - { label: "What the airline actually requires", anchor: "rules" }
+      - { label: "Emirates Pets (cargo), explained", anchor: "cargo" }
+      - { label: "What about a private charter?", anchor: "charter" }
+      - { label: "Frequently asked questions", anchor: "faq" }
+
+  - type: table
+    id: table
+    eyebrow: "Side by side"
+    heading: "The ways a pet flies from Dubai"
+    columns: ["Method", "How it works", "Emirates rule", "Best for"]
+    rows:
+      - ["Cabin", "Pet with you in the cabin", "Not allowed (except falcons Dubai–Pakistan & guide dogs)", "Not an option for cats/dogs"]
+      - ["Checked baggage", "Pet in the hold on your flight", "Allowed from Dubai if total journey < 17h & destination permits", "Shorter routes, travelling together"]
+      - ["Manifest cargo (Emirates Pets)", "Pet flies as a live-animal shipment", "Required if journey > 17h, transit > 6h, or trip ends in Dubai", "Most international relocations (UK, US, AU…)"]
+
+  - type: compliance
+    id: rules
+    eyebrow: "Facts vs advice"
+    heading: "What the airline requires — and how we'd use it"
+    facts_label: "What Emirates' rules say (fact)"
+    advice_label: "What we'd do (advice)"
+    facts:
+      - { text: "\"Animals are not permitted in the cabin of Emirates flights, with the exception of falcons between Dubai and certain destinations in Pakistan, and Guide Dogs for the visually impaired.\"", authority: "Emirates" }
+      - { text: "Cats, dogs and birds can travel as checked baggage from Dubai if the total journey time is under 17 hours and the destination allows it.", authority: "Emirates" }
+      - { text: "Animals must travel as cargo if the journey is over 17 hours, the Dubai transit is over 6 hours, or the itinerary ends in Dubai.", authority: "Emirates" }
+      - { text: "Emirates Pets (SkyCargo) offers door-to-door transport, a dedicated Dubai Pet Lounge with 24/7 animal care, compliant with IATA Live Animals Regulations.", authority: "Emirates SkyCargo" }
+    advice:
+      - "For most relocations (UK, EU, USA, Australia) the journey length or rules push you to <strong>cargo</strong> — that's normal, and it's the most compliant, best-monitored option."
+      - "If you're flying a <strong>short route and travelling with your pet</strong>, checked baggage can work — confirm your destination permits it first."
+      - "Don't plan around <strong>cabin travel</strong> for a cat or dog from Dubai — it isn't available."
+      - "<strong>Snub-nosed breeds:</strong> plan around the summer; airlines restrict them in the heat."
+
+  - type: prose
+    id: cargo
+    eyebrow: "The main method"
+    heading: "Emirates Pets (cargo), explained"
+    paragraphs:
+      - "Because most relocations exceed the 17-hour or transit limits, they travel as cargo — and on Emirates that's the <strong>Emirates Pets</strong> service. Pets are hosted in a dedicated Dubai Pet Lounge with 24/7 animal-care specialists, chauffeured to the aircraft in temperature-controlled vehicles, and carried in compliance with IATA's Live Animals Regulations."
+      - "Cargo sounds clinical, but for a long-haul move it's the safest, most closely-monitored option — your pet is handled as a live animal, not luggage, with veterinary support on call."
+
+  - type: prose
+    id: charter
+    eyebrow: "The honest answer on charter"
+    heading: "What about a private charter?"
+    paragraphs:
+      - "Private charter (for example Emirates Executive) comes up when commercial capacity is tight or owners want their pet in the cabin with them. It can be a genuine fallback — but be careful: <strong>Emirates does not publish a pet-in-cabin policy for its private-jet service</strong>, so any 'pets fly in the cabin' claim must be confirmed in writing with the operator before you rely on it."
+      - "We treat charter as a case-by-case option, not a default — and we never promise a cabin seat for a pet we haven't had confirmed by the operator."
+
+  - type: story
+    id: story
+    heading: "What going wrong actually looks like"
+    tag: "A common scenario"
+    lead: "The usual mix-up is planning around the cabin, or assuming baggage works on a long haul."
+    problem: "An owner books a Dubai → Australia trip expecting their dog in checked baggage on their flight."
+    mistake: "The journey is well over 17 hours, so checked baggage isn't allowed — and they've planned the whole move around it."
+    discovery: "The dog has to travel as cargo (Emirates Pets), which is a different booking and timeline."
+    result: "A re-plan around the cargo schedule — avoidable by checking the method first."
+    lesson: "Pick the method before the flight: short hop with you = baggage; long haul = cargo. Cabin isn't on the table for cats and dogs."
+
+  - type: faq
+    id: faq
+    heading: "Frequently asked questions"
+    items:
+      - { q: "Can my dog or cat fly in the cabin from Dubai?", a: "Not on Emirates. Animals aren't permitted in the cabin except falcons (Dubai–Pakistan) and guide dogs for the visually impaired. Cats and dogs travel in the hold — as checked baggage or as cargo." }
+      - { q: "What's the difference between checked baggage and cargo?", a: "Both ride in a pressurised, temperature-controlled hold. Checked baggage is on your flight (allowed if the journey is under 17 hours and the destination permits). Cargo (Emirates Pets) is a separate live-animal shipment, required for longer journeys, long transits, or trips ending in Dubai." }
+      - { q: "Is cargo safe for my pet?", a: "On Emirates, cargo pets are hosted in a dedicated Pet Lounge with 24/7 animal-care specialists, moved in temperature-controlled vehicles, and carried under IATA Live Animals Regulations — it's closely monitored, not 'luggage'." }
+      - { q: "Can I charter a private jet so my pet flies in the cabin?", a: "Possibly, but Emirates doesn't publish a pet-in-cabin policy for its private-jet service, so it must be confirmed in writing with the operator. We never promise a cabin seat we haven't had confirmed." }
+
+  - type: sources
+    eyebrow: "Verified against the source"
+    heading: "Official sources"
+    items:
+      - { authority: "Emirates", title: "Rules & charges for travelling with animals", url: "https://www.emirates.com/english/help/faqs/what-are-the-rules-and-charges-for-travelling-with-animals/", note: "Cabin / baggage / cargo + 17h rule" }
+      - { authority: "Emirates SkyCargo", title: "Emirates Pets — live animal transport", url: "https://www.skycargo.com/products/live/pets/", note: "Pet Lounge, 24/7 care, IATA LAR" }
+      - { authority: "IATA", title: "Live Animals Regulations", url: "https://www.iata.org/en/programs/cargo/live-animals/", note: "Crate + welfare standards" }
+
+  - type: cta
+    heading: "Not sure which method your pet needs?"
+    body: "Tell us your route — we'll confirm whether it's checked baggage or cargo, book the right option, and handle the Emirates Pets process end to end."
+    ctas:
+      - { label: "Get my route's travel plan", url: "/#quote", style: "btn-gold" }
+      - { label: "See all destinations & costs", url: "/destinations/", style: "btn-ghost" }

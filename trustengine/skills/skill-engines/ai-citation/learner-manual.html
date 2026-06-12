@@ -1,0 +1,106 @@
+<!DOCTYPE html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>AI Citation Readiness — Learner Manual</title><style>body{font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:#1f2937;
+line-height:1.6;background:#f7f8fb;margin:0}.wrap{max-width:860px;margin:0 auto;padding:28px}
+h1{color:#1a3a5c}h2{color:#1a3a5c;border-top:2px solid #e5e7eb;padding-top:14px;margin-top:26px}
+h3{color:#2c5282}code{background:#f1f5f9;padding:1px 5px;border-radius:4px}
+table{border-collapse:collapse;width:100%}th,td{border:1px solid #e5e7eb;padding:7px 10px;text-align:left;vertical-align:top}
+th{background:#2c5282;color:#fff}tr:nth-child(even) td{background:#f9fafb}
+.hd{background:linear-gradient(135deg,#1a3a5c,#2c5282);color:#fff;padding:22px 28px;border-radius:0 0 14px 14px}
+.hd h1{color:#fff;margin:0}.hd p{color:#cfe0f5;margin:6px 0 0}</style></head><body><div class='hd'><h1>AI Citation Readiness — Learner Manual</h1><p>How likely AI answer engines are to quote this page — and exactly what to fix.</p></div><div class='wrap'><h1>AI Citation Readiness — Learner Manual</h1>
+<p>When someone asks ChatGPT, Google's AI Overview, Perplexity or Gemini a question, the engine writes one answer and quotes a few sources. Being one of those quoted sources is the whole game — research shows pages with statistics, cited sources and clean structure get cited up to 40% more. This tool measures the on-page signals that decide whether you are the page it quotes, or the page it ignores.</p>
+<h2>How to run the engine</h2>
+<ul>
+<li>Score a page: <code>python skill-engines/ai-citation/engine.py --url &lt;URL&gt; --report out.html</code></li>
+<li>Web checker: <code>python skill-engines/ai-citation/engine.py --serve 8090</code></li>
+<li>These docs: <code>python skill-engines/ai-citation/engine.py --docs</code></li>
+</ul>
+<h2>The measurements (each one, with why and how)</h2>
+<h2>1. Answer-first opening</h2>
+<p><strong>How we measure it:</strong> We read the first ~120 words and check whether the page answers the question immediately (a definition, a number, a direct statement) instead of warming up with an intro.</p>
+<p><strong>Why it works:</strong> AI engines lift the opening of a page. If your answer is buried under 'Welcome to our company', the engine lifts a competitor's answer instead. Answer-first = liftable.</p>
+<p><strong>What to do:</strong> Put a direct answer (a number or definition) in the first 100 words.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: Welcome to our pet relocation company.</li>
+<li>DO: A dog is held at Dubai airport when its rabies titer paperwork is incomplete; the release fee is 500 AED.</li>
+</ul>
+<h2>2. Statistics &amp; specific numbers</h2>
+<p><strong>How we measure it:</strong> We count the specific quantified facts on the page — percentages, prices, dates, counts, durations.</p>
+<p><strong>Why it works:</strong> Adding statistics is one of the strongest citation levers measured (~+24.9%). A concrete number ('500 AED', '90 days', '66%') is exactly the kind of fact an engine quotes verbatim.</p>
+<p><strong>What to do:</strong> Add specific numbers, %, prices and dated figures to the page.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: We move many pets safely.</li>
+<li>DO: 256,114 pets were transported in 2021, with an incident rate below 1 in 10,000.</li>
+</ul>
+<h2>3. Cited sources</h2>
+<p><strong>How we measure it:</strong> We look for citation phrases ('according to', 'source:', 'per …') and outbound links to authoritative domains (.gov, .edu, .org).</p>
+<p><strong>Why it works:</strong> Citing sources is the single biggest citation lever (~+27.8%). Engines prefer claims that are backed by an authority over claims that just assert themselves.</p>
+<p><strong>What to do:</strong> Cite authoritative sources (link .gov/.edu/official pages; use 'according to…').</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: Pets need vaccinations.</li>
+<li>DO: Per MOCCAE, pets need a microchip, rabies vaccination and import permit (moccae.gov.ae).</li>
+</ul>
+<h2>4. Direct quotations</h2>
+<p><strong>How we measure it:</strong> We detect quoted passages — direct quotes from named people or authorities.</p>
+<p><strong>Why it works:</strong> Quotation is a top lever (~+25.9%). A self-contained quote is easy for an engine to attribute and reuse, so quote-rich pages get pulled into answers more often.</p>
+<p><strong>What to do:</strong> Add a direct quote from a named authority.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: Our service is trusted.</li>
+<li>DO: “The route is the product,” says a relocation specialist quoted by Reuters (2025).</li>
+</ul>
+<h2>5. Quotable standalone facts</h2>
+<p><strong>How we measure it:</strong> We count short, self-contained factual sentences (a fact with a number or named entity, under ~30 words) that would still make sense lifted out of the page.</p>
+<p><strong>Why it works:</strong> Engines extract sentence-level chunks, not whole pages. A standalone, accurate sentence can be quoted as-is; a long marketing sentence cannot.</p>
+<p><strong>What to do:</strong> Write short, self-contained factual sentences that can be lifted verbatim.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: There are many requirements to consider.</li>
+<li>DO: The export health certificate is valid for 10 days from the date of issue.</li>
+</ul>
+<h2>6. Question-style headings</h2>
+<p><strong>How we measure it:</strong> We scan H2/H3 subheadings for question words (how, what, why, when, can, is …) followed by an answer.</p>
+<p><strong>Why it works:</strong> Question headings mirror how people prompt AI. A page structured as Q→A maps directly onto the engine's retrieval, so each section becomes a candidate answer.</p>
+<p><strong>What to do:</strong> Use question-style H2/H3 headings (How…/What…) with the answer underneath.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: Our Services</li>
+<li>DO: How much does the rabies titer test cost in Dubai?</li>
+</ul>
+<h2>7. Scannable lists &amp; tables</h2>
+<p><strong>How we measure it:</strong> We count lists and tables — structured data points an engine can lift cleanly.</p>
+<p><strong>Why it works:</strong> Lists and tables are the most extractable format on the web; a comparison table or step list is often quoted wholesale into an AI answer.</p>
+<p><strong>What to do:</strong> Add lists and a comparison table for the key facts.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: We cover the EU, Australia and more.</li>
+<li>DO: A table: EU — 30 days | Australia — 180 days.</li>
+</ul>
+<h2>8. FAQ structured data</h2>
+<p><strong>How we measure it:</strong> We check the page's machine-readable code for FAQPage / Question schema (the data engines read directly), and count the Q&amp;A pairs.</p>
+<p><strong>Why it works:</strong> FAQ schema hands the engine clean question→answer pairs in a format it parses natively — the easiest possible thing to cite.</p>
+<p><strong>What to do:</strong> Add 5+ FAQ Q&amp;A as FAQPage JSON-LD (validate with Rich Results Test).</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: (no FAQ on the page)</li>
+<li>DO: Add FAQPage schema with 5 Q&amp;A, e.g. “Can pets fly to Dubai in summer?”</li>
+</ul>
+<h2>9. Clear, consistent entity</h2>
+<p><strong>How we measure it:</strong> We look for Organization/Person schema and a 'sameAs' identity (links to verified profiles) that tell engines exactly who you are.</p>
+<p><strong>Why it works:</strong> Engines only cite sources they can identify and trust. One consistent identity lets them build a profile of you; a fragmented identity gets skipped.</p>
+<p><strong>What to do:</strong> Add Organization/Person schema with a sameAs to your verified profiles.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: Names vary: PetCo / Pet Co. / petco dubai</li>
+<li>DO: One Organization schema, one name, sameAs linking LinkedIn + IPATA profile.</li>
+</ul>
+<h2>10. Freshness &amp; dating</h2>
+<p><strong>How we measure it:</strong> We check for recent years and dating language ('updated', 'published', a visible date).</p>
+<p><strong>Why it works:</strong> On topics that change, engines favour current sources. A visible recent date signals the fact is still good; an undated page reads as possibly stale.</p>
+<p><strong>What to do:</strong> Add a visible published/updated date and a recent year.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: © 2019 (or no date)</li>
+<li>DO: Updated June 2026 — verified against current MOCCAE rules.</li>
+</ul></div></body></html>

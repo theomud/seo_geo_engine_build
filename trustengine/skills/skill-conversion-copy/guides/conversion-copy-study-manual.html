@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Conversion Copy — Study Manual | The Trust Engine</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#14110d;--panel:#1d1812;--ink:#f3ece0;--soft:#b9ab95;--line:#352c20;--gold:#d8a84b;--red:#e06a4e;--green:#7bbf6a;--accent:#c98a3a}
+  *{box-sizing:border-box}html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:'Crimson Pro',Georgia,serif;font-size:19px;line-height:1.6}
+  #bar{position:fixed;top:0;left:0;height:4px;width:0;background:linear-gradient(90deg,var(--gold),var(--accent));z-index:100;transition:width .1s}
+  .layout{display:flex;max-width:1180px;margin:0 auto}
+  nav.side{position:sticky;top:0;height:100vh;width:250px;flex-shrink:0;padding:30px 20px;background:var(--panel);border-right:1px solid var(--line);overflow-y:auto;font-family:'JetBrains Mono',monospace}
+  nav.side .brand{font-family:'Bebas Neue',sans-serif;letter-spacing:.08em;color:var(--gold);font-size:22px}
+  nav.side a{display:block;color:var(--soft);text-decoration:none;font-size:12px;padding:7px 9px;border-radius:6px;margin-bottom:2px}
+  nav.side a:hover{background:#251e16;color:var(--ink)}nav.side a.active{background:var(--gold);color:#14110d;font-weight:700}
+  main{flex:1;padding:46px 52px 120px;max-width:820px}
+  h1{font-family:'Bebas Neue',sans-serif;font-size:52px;line-height:1;margin:0 0 6px}
+  h2{font-family:'Bebas Neue',sans-serif;font-size:33px;letter-spacing:.02em;margin:50px 0 12px;color:var(--gold)}
+  h3{font-size:21px;margin:24px 0 6px;color:var(--accent)}
+  .lead{font-size:22px;color:var(--soft)}
+  .badge{font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:700;letter-spacing:.05em;color:var(--gold);text-transform:uppercase}
+  .ex{background:#251e16;border-radius:8px;padding:10px 14px;margin:8px 0;font-style:italic;color:var(--soft)}
+  .cite{font-family:'JetBrains Mono',monospace;font-size:12px;padding:1px 7px;border-radius:5px;background:#251e16}
+  .v{color:var(--green);font-weight:700}.u{color:var(--gold);font-weight:700}.c{color:var(--red);font-weight:700}
+  table{width:100%;border-collapse:collapse;margin:14px 0;font-family:'JetBrains Mono',monospace;font-size:13px}
+  th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{color:var(--gold);text-transform:uppercase;font-size:11px}
+  .warn{background:#2a1a14;border:1px solid #4a2c20;border-radius:10px;padding:13px 17px;margin:14px 0}
+  .good{background:#1a2417;border:1px solid #2f4327;border-radius:10px;padding:13px 17px;margin:14px 0}
+  .ba{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:10px 0}
+  .ba>div{border-radius:8px;padding:10px 13px;font-size:15px}
+  .bad{background:#2a1a14;border:1px solid #4a2c20}.goodc{background:#1a2417;border:1px solid #2f4327}
+  code{font-family:'JetBrains Mono',monospace;background:#251e16;padding:2px 6px;border-radius:5px;font-size:.82em;color:var(--gold)}
+  footer{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--soft);border-top:1px solid var(--line);margin-top:60px;padding-top:18px}
+  @media(max-width:880px){nav.side{display:none}main{padding:28px 20px 80px;font-size:18px}h1{font-size:40px}.ba{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+<div class="layout">
+  <nav class="side">
+    <div class="brand">Conversion Copy</div>
+    <div style="font-family:'Crimson Pro',serif;color:var(--soft);font-size:13px;margin:4px 0 16px">The words that convert · 21/25</div>
+    <a href="#why" class="active">Why this skill</a>
+    <a href="#moves">The three moves</a>
+    <a href="#move1">Move 1 · name the fear</a>
+    <a href="#move2">Move 2 · resolve it</a>
+    <a href="#move3">Move 3 · help-first CTA</a>
+    <a href="#scored">The 4 gap pages rewritten</a>
+    <a href="#catch">The catch that proves it</a>
+    <a href="#verify">Acknowledging, not exploiting</a>
+  </nav>
+  <main>
+    <span class="badge">Conversion Copy · 21/25</span>
+    <h1>Conversion Copy</h1>
+    <p class="lead">The actual words on the page — headline, opening, CTA — that turn a scared reader into an enquiry. Without exploiting the fear, because this buyer distrusts hype on sight.</p>
+
+    <section id="why">
+      <h2>Why this skill</h2>
+      <p>A page can be true, well-structured, and still convert nobody. The reader arrives <b>afraid</b> — they are about to move a living animal across a border where one paperwork error means refusal at the counter — and the page talks to them in the flat voice of a brochure. They leave and ask a Facebook group instead.</p>
+      <p>You can hear the fear in their own words from the Dubai research:</p>
+      <div class="ex">"without it your dog will be taken away in airport and never give back… Still when I remember I crying" — Muze Gu (Facebook, deepest fear in the dataset) &nbsp;·&nbsp; "being quoted endless amount" — 7Ssisi &nbsp;·&nbsp; "I felt like they took advantage of the desperate circumstances" — unnnabear (Reddit, 7↑)</div>
+      <p>Conversion Copy is the skill that writes the words that meet that fear and resolve it. It takes two inputs and nothing else: the <b>named fear in the customer's words</b>, and the <b>verified fact that answers it</b>.</p>
+      <div class="warn"><b>It is not "salesy" copywriting.</b> In a high-fear, regulated market, hype repels. The writing that converts is the writing that <b>acknowledges the fear and resolves it with a verified answer</b>, then offers help.</div>
+    </section>
+
+    <section id="moves">
+      <h2>The three moves</h2>
+      <p>Every page is built from the same three moves, in this order:</p>
+      <table>
+        <tr><th>Move</th><th>What it does</th><th>Governed by</th></tr>
+        <tr><td>1 · Name the fear</td><td>say the fear out loud, in the customer's own words</td><td>P-04, M-02 Fear Hierarchy</td></tr>
+        <tr><td>2 · Resolve it</td><td>answer it immediately with a verified fact or honest hedge</td><td>M-20 PMT, M-01 Verified Fact</td></tr>
+        <tr><td>3 · Help-first close</td><td>offer something useful <i>before</i> asking for the enquiry</td><td>P-13 Hormozi, M-21 Cialdini</td></tr>
+      </table>
+      <div class="good">The whole skill is scorable: every opening must hit <b>4+/5</b> on voice, every page must clear <b>40+/50</b> on the editorial rubric, and every CTA must pass the help-first test.</div>
+    </section>
+
+    <section id="move1">
+      <h2>Move 1 · name the fear</h2>
+      <p>Pull the exact phrasing from real community language — never invent the emotion. The deepest fear in the proof niche isn't "import compliance"; it's Muze Gu's "taken away… never give back." Score the opening on the <b>in-the-trenches voice</b> rubric:</p>
+      <table>
+        <tr><th>Voice</th><th>Means</th></tr>
+        <tr><td><span class="v">5</span></td><td>real customer language traceable to a named quote; specific; a person who lived it wrote it</td></tr>
+        <tr><td><span class="v">4</span></td><td>clearly customer-voiced and specific; minor polish would lift it</td></tr>
+        <tr><td><span class="u">3</span></td><td>generic-but-acceptable; no real language yet</td></tr>
+        <tr><td><span class="c">2</span></td><td>brochure voice — "navigating the complexities of…"</td></tr>
+        <tr><td><span class="c">1</span></td><td>pure AI filler; could front any company's page</td></tr>
+      </table>
+      <div class="ba">
+        <div class="bad"><b class="c">Voice 1 — brochure</b><br>"Navigating the complexities of international pet travel can be challenging."</div>
+        <div class="goodc"><b class="v">Voice 5 — real</b><br>"The fear that keeps you up isn't the paperwork — it's the thought of your dog being taken at the airport and not given back."</div>
+      </div>
+    </section>
+
+    <section id="move2">
+      <h2>Move 2 · resolve it</h2>
+      <p>This is the load-bearing move. <b>Protection Motivation Theory (M-20):</b> a fear raised without a credible, actionable answer produces <b>denial and avoidance — not action</b>. So every fear is resolved immediately, with a fact cited by C-ID or an honest hedge.</p>
+      <div class="warn"><b>The one unforgivable error:</b> agitating the fear without resolving it. "Your dog could be seized!" with no answer is <b>fear-exploiting</b> — it breaches P-04 and, in this market, does real harm. Cut it every time.</div>
+      <p>Where the Source Bank has no official figure, the honesty <i>is</i> the conversion move:</p>
+      <div class="ex">"There is no official published price for the rabies titer test. What owners actually pay runs roughly <b>700–1,300 AED</b>, and the difference is mostly lab turnaround." <span class="cite">C-001 · hedge</span></div>
+    </section>
+
+    <section id="move3">
+      <h2>Move 3 · help-first CTA</h2>
+      <p>Offer the thing the scared owner actually wants <i>before</i> asking for the enquiry (Cialdini reciprocity, M-21). The test: <b>"would you rather receive this, or get a quote?"</b> — they must genuinely prefer the offer.</p>
+      <div class="ba">
+        <div class="bad"><b class="c">Fails — Dead End</b><br>"Contact us for a quote"<br>"Request a callback"<br>"Get started today"</div>
+        <div class="goodc"><b class="v">Passes — help-first</b><br>"Get the one-page checklist that stops your dog being turned away"<br>"Download the summer-embargo calendar"<br>"See the real airport routing table before you book"</div>
+      </div>
+      <div class="warn">For this buyer, "get a quote" actively <b>raises</b> the fear it should lower — it reminds them of being "quoted endless amount." One primary CTA per page; the enquiry follows the help.</div>
+    </section>
+
+    <section id="scored">
+      <h2>The 4 gap pages rewritten</h2>
+      <p>The skill's real output — each gap page rewritten and scored (<code>data/conversion-copy-output.md</code>):</p>
+      <table>
+        <tr><th>Page</th><th>Voice</th><th>CTA</th><th>Editorial /50</th></tr>
+        <tr><td>Airport confiscation</td><td><span class="v">5</span></td><td><span class="v">PASS</span></td><td>48</td></tr>
+        <tr><td>Summer embargo</td><td><span class="v">5</span></td><td><span class="v">PASS</span></td><td>46</td></tr>
+        <tr><td>Titer cost</td><td><span class="v">5</span></td><td><span class="v">PASS</span></td><td>48</td></tr>
+        <tr><td>Sharjah vs Dubai vs Abu Dhabi</td><td><span class="v">5</span></td><td><span class="v">PASS</span></td><td>46</td></tr>
+        <tr><td><b>Average</b></td><td><b>5.0</b></td><td><b>4/4</b></td><td><b>47.0</b></td></tr>
+      </table>
+      <p>The confiscation page, end to end:</p>
+      <div class="good"><b>H1:</b> "What happens if your dog is taken at Dubai airport — and the one document that stops it."<br><br><b>Opening:</b> "The fear that keeps you up isn't the paperwork — it's the thought of standing at the airport and being told your dog can't enter… It almost always happens for one reason: a missing or invalid rabies titer test. <span class="cite">C-019</span> Here is exactly what that document must say…"<br><br><b>CTA:</b> "Get the one-page airport checklist — before you book the flight." <span class="v">→ 48/50, PUBLISH</span></div>
+    </section>
+
+    <section id="catch">
+      <h2>The catch that proves it</h2>
+      <p>The clearest proof is the titer-cost page. The market's default version — and what an unguarded AI writes — looks helpful but contains the dangerous error:</p>
+      <div class="ba">
+        <div class="bad"><b class="c">BEFORE — fabricated fact</b><br>"We provide competitive pricing… <b>The titer test costs 700 AED.</b> Contact us for a quote."<br><span style="font-size:12px">A single price <b>asserted as fact</b> with no source. In a market where wrong info gets a pet refused, this is harm, not a typo.</span></div>
+        <div class="goodc"><b class="v">AFTER — honest, converts harder</b><br>"There is no official published price… owners pay roughly <b>700–1,300 AED</b>… here's how to get it in writing." <span class="cite">C-001 hedge</span><br><span style="font-size:12px">Zero invented numbers. The refusal to fake a figure is the trust move.</span></div>
+      </div>
+      <div class="warn"><b>The surprise from the build:</b> we expected the honest version (no firm number) to convert <i>worse</i>. It scores <b>higher</b> — 48/50 — because for a reader who's been "quoted endless amount," honesty about the uncertainty is exactly what earns the click. <b>That is what conversion copy is for.</b></div>
+    </section>
+
+    <section id="verify">
+      <h2>Acknowledging, not exploiting</h2>
+      <p>The failure mode is copy that frightens without answering, or invents a number to force urgency. Three defences:</p>
+      <ul>
+        <li><b>Every fear traces to a named quote</b> or a Column K fear — no invented emotion.</li>
+        <li><b>Every number is cited (C-ID) or honestly hedged</b> — no fabricated figures.</li>
+        <li><b>An independent blind re-score</b> must agree the copy <i>resolves</i> the fear (acknowledging), not merely raises it (exploiting); voice within ±1; CTA pass/fail must match.</li>
+      </ul>
+      <p>The batch audit re-scores 20% blind; <b>≥90%</b> must agree, with <b>zero invented numbers</b> and <b>zero agitate-without-resolve</b> openings slipping through.</p>
+    </section>
+
+    <footer>The Trust Engine · Conversion Copy · Study Manual · real output from the 2026-05-30 Dubai proof run (4 pages rewritten, avg 47.0/50, voice 5.0/5, 4/4 help-first CTAs). Name the fear in their words · resolve it in the same breath · offer help before the ask · never invent a number.</footer>
+  </main>
+</div>
+<script>
+  const bar=document.getElementById('bar');
+  addEventListener('scroll',()=>{const h=document.documentElement;bar.style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%';});
+  const links=[...document.querySelectorAll('nav.side a')];const secs=links.map(a=>document.querySelector(a.getAttribute('href')));
+  addEventListener('scroll',()=>{let i=0;for(let k=0;k<secs.length;k++){if(secs[k]&&secs[k].getBoundingClientRect().top<140)i=k;}links.forEach(l=>l.classList.remove('active'));if(links[i])links[i].classList.add('active');});
+</script>
+</body>
+</html>

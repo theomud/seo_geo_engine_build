@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Trust Gap Analysis — Study Manual</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0e0e0f;--paper:#f5f2eb;--warm:#f0ead8;--gold:#c9a84c;--gold-dim:rgba(201,168,76,0.15);--gold-line:rgba(201,168,76,0.35);--red:#c0392b;--green:#1e7a4c;--blue:#1a3a6e;--muted:#7a7060;--border:rgba(14,14,15,0.12)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--paper);color:var(--ink);font-family:'Crimson Pro',Georgia,serif;font-size:18px;line-height:1.75;min-height:100vh}
+.progress-bar{position:fixed;top:0;left:0;height:3px;background:var(--gold);width:0%;transition:width .4s ease;z-index:100}
+.sidebar{position:fixed;top:0;left:0;width:260px;height:100vh;background:var(--ink);padding:40px 0;overflow-y:auto;z-index:50}
+.sidebar-brand{padding:0 24px 32px;border-bottom:1px solid rgba(255,255,255,0.08);margin-bottom:24px}
+.sidebar-brand h2{font-family:'Bebas Neue',sans-serif;font-size:18px;color:var(--gold);letter-spacing:2px;line-height:1.2}
+.sidebar-brand p{font-size:12px;color:rgba(255,255,255,0.4);margin-top:4px}
+.nav-section{padding:0 24px;margin-bottom:8px;font-size:11px;letter-spacing:2px;color:rgba(255,255,255,0.3);text-transform:uppercase;display:block}
+.nav-link{display:block;padding:8px 24px;font-family:'Crimson Pro',serif;font-size:15px;color:rgba(255,255,255,0.6);text-decoration:none;transition:all .2s;border-left:2px solid transparent}
+.nav-link:hover,.nav-link.active{color:#fff;border-left-color:var(--gold);background:rgba(255,255,255,0.04)}
+.main{margin-left:260px;padding:80px 64px;max-width:860px}
+.hero{margin-bottom:64px;padding-bottom:48px;border-bottom:1px solid var(--border)}
+.skill-badge{display:inline-block;background:var(--gold-dim);border:1px solid var(--gold-line);color:var(--gold);font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:2px;padding:4px 12px;border-radius:2px;margin-bottom:16px}
+.hero h1{font-family:'Bebas Neue',sans-serif;font-size:52px;letter-spacing:2px;line-height:1.1;margin-bottom:16px}
+.hero p{font-size:20px;color:var(--muted);max-width:600px}
+.score-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:32px}
+.score-item{background:var(--warm);border:1px solid var(--border);border-radius:4px;padding:12px;text-align:center}
+.score-num{font-family:'Bebas Neue',sans-serif;font-size:32px;color:var(--gold)}
+.score-label{font-size:11px;color:var(--muted);letter-spacing:1px;text-transform:uppercase;margin-top:2px}
+section{margin-bottom:56px}
+h2{font-family:'Bebas Neue',sans-serif;font-size:36px;letter-spacing:2px;margin-bottom:24px;padding-bottom:12px;border-bottom:1px solid var(--border)}
+h3{font-family:'Crimson Pro',serif;font-size:22px;font-weight:600;margin:32px 0 12px}
+p{margin-bottom:16px}
+.callout{background:var(--warm);border-left:3px solid var(--gold);padding:20px 24px;margin:24px 0;border-radius:0 4px 4px 0}
+.callout strong{color:var(--gold)}
+.risk-continuum{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:24px 0}
+.risk-level{border-radius:8px;padding:20px;text-align:center}
+.risk-low{background:rgba(30,122,76,0.1);border:2px solid rgba(30,122,76,0.3)}
+.risk-medlow{background:rgba(201,168,76,0.1);border:2px solid rgba(201,168,76,0.3)}
+.risk-medhigh{background:rgba(230,126,34,0.1);border:2px solid rgba(230,126,34,0.3)}
+.risk-high{background:rgba(192,57,43,0.1);border:2px solid rgba(192,57,43,0.3)}
+.risk-title{font-family:'Bebas Neue',sans-serif;font-size:18px;letter-spacing:1px;margin-bottom:8px}
+.risk-low .risk-title{color:var(--green)}
+.risk-medlow .risk-title{color:#c9a84c}
+.risk-medhigh .risk-title{color:#e67e22}
+.risk-high .risk-title{color:var(--red)}
+.risk-example{font-size:13px;color:var(--muted);margin-bottom:8px}
+.risk-proof{font-size:12px;font-family:'JetBrains Mono',monospace}
+.trust-score-grid{display:grid;grid-template-columns:1fr;gap:8px;margin:24px 0}
+.ts-item{display:grid;grid-template-columns:40px 1fr 1fr;gap:12px;align-items:start;background:var(--warm);padding:14px;border-radius:4px;border:1px solid var(--border)}
+.ts-num{font-family:'Bebas Neue',sans-serif;font-size:28px;color:var(--gold);line-height:1}
+.ts-q{font-weight:600;font-size:15px}
+.ts-yes{font-size:13px;color:var(--green)}
+.ts-no{font-size:13px;color:var(--red)}
+.gap-table{width:100%;border-collapse:collapse;margin:16px 0}
+.gap-table th{background:var(--ink);color:#fff;padding:10px 16px;text-align:left;font-family:'JetBrains Mono',monospace;font-size:12px}
+.gap-table td{padding:10px 16px;border-bottom:1px solid var(--border);font-size:15px}
+.gap-table tr:nth-child(even) td{background:var(--warm)}
+.badge{display:inline-block;padding:2px 8px;border-radius:3px;font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700}
+.badge-red{background:rgba(192,57,43,0.15);color:var(--red)}
+.badge-amber{background:rgba(201,168,76,0.15);color:var(--gold)}
+.proof-box{background:var(--warm);border:1px solid var(--border);border-radius:6px;padding:20px;margin:16px 0}
+.proof-box h4{font-size:16px;font-weight:600;margin-bottom:12px}
+.proof-box ul{list-style:none;padding:0}
+.proof-box li{padding:4px 0;font-size:15px}
+.proof-box li::before{content:"✓ ";color:var(--green)}
+.proof-box li.no::before{content:"✗ ";color:var(--red)}
+@media(max-width:900px){.sidebar{display:none}.main{margin-left:0;padding:40px 24px}.risk-continuum{grid-template-columns:1fr 1fr}.score-grid{grid-template-columns:repeat(3,1fr)}}
+</style>
+</head>
+<body>
+<div class="progress-bar" id="progress"></div>
+<nav class="sidebar">
+  <div class="sidebar-brand">
+    <h2>Trust Gap Analysis</h2>
+    <p>Competitor Research System</p>
+  </div>
+  <span class="nav-section">Contents</span>
+  <a href="#what" class="nav-link active">What This Skill Is</a>
+  <a href="#risk" class="nav-link">Risk Continuum</a>
+  <a href="#score" class="nav-link">10-Point Trust Score</a>
+  <a href="#gaps" class="nav-link">Content Gap Matrix</a>
+  <a href="#proof" class="nav-link">Proof Interstitial</a>
+  <a href="#process" class="nav-link">The 4 Steps</a>
+  <a href="#proof-niche" class="nav-link">Dubai Proof Results</a>
+</nav>
+
+<main class="main">
+  <div class="hero">
+    <div class="skill-badge">TRUST GAP ANALYSIS · PROVEN</div>
+    <h1>Find Every Gap. Build Every Opportunity.</h1>
+    <p>Score every competitor on 10 trust dimensions. Find what they all miss. Build those pages first.</p>
+    <div class="score-grid">
+      <div class="score-item"><div class="score-num">3</div><div class="score-label">Difficulty</div></div>
+      <div class="score-item"><div class="score-num">4</div><div class="score-label">Automation</div></div>
+      <div class="score-item"><div class="score-num">4</div><div class="score-label">Uniqueness</div></div>
+      <div class="score-item"><div class="score-num">5</div><div class="score-label">Commercial</div></div>
+      <div class="score-item"><div class="score-num">4</div><div class="score-label">Teachability</div></div>
+    </div>
+  </div>
+
+  <section id="what">
+    <h2>What This Skill Is</h2>
+    <p>Most competitor research tells you what competitors publish. This skill tells you what they fail to say — and why that gap is worth money.</p>
+    <div class="callout">
+      <strong>The core insight:</strong> In high-stakes markets, customers choose the provider they trust most — not the cheapest, not the one with the most pages. Trust is built by acknowledging fears and providing verified proof. The gaps where competitors fail to do this are your highest-value content opportunities.
+    </div>
+    <p>In the Dubai pet relocation proof run, 9 of 9 scored competitors failed to address the deepest fear in the market — a dog confiscated at the airport and never returned. That is not a coincidence. Most content teams write what sounds safe and professional. They do not write what customers are actually afraid of.</p>
+  </section>
+
+  <section id="risk">
+    <h2>Step 0 — The Risk Continuum</h2>
+    <p>Before scoring a single competitor, place the niche on the Risk Continuum. This determines the proof threshold for every page in the market.</p>
+    <div class="risk-continuum">
+      <div class="risk-level risk-low">
+        <div class="risk-title">Low Risk</div>
+        <div class="risk-example">Entertainment, memes, light lifestyle</div>
+        <div class="risk-proof">Proof threshold: Low</div>
+      </div>
+      <div class="risk-level risk-medlow">
+        <div class="risk-title">Medium-Low</div>
+        <div class="risk-example">Hair tutorials, fitness, basic cooking</div>
+        <div class="risk-proof">Proof threshold: Moderate</div>
+      </div>
+      <div class="risk-level risk-medhigh">
+        <div class="risk-title">Medium-High</div>
+        <div class="risk-example">Finance, investing, legal basics</div>
+        <div class="risk-proof">Proof threshold: High</div>
+      </div>
+      <div class="risk-level risk-high">
+        <div class="risk-title">High Risk</div>
+        <div class="risk-example">Medical, immigration, pet relocation</div>
+        <div class="risk-proof">Proof threshold: Maximum</div>
+      </div>
+    </div>
+    <div class="callout">
+      <strong>Dubai pet relocation = maximum risk.</strong> Wrong advice means a pet confiscated at the border. This means every page in this market must meet maximum proof standards. Most competitors score 3-5/10 because they provide zero proof their information is correct.
+    </div>
+    <p>The risk level also determines what gaps matter most. In a low-risk market, missing a comparison page is a missed opportunity. In a maximum-risk market, missing the airport confiscation fear page is a failure to serve the customer's most important need.</p>
+  </section>
+
+  <section id="score">
+    <h2>The 10-Point Trust Score</h2>
+    <p>One point for each. Score every competitor's main service page against all 10.</p>
+    <div class="trust-score-grid">
+      <div class="ts-item">
+        <div class="ts-num">1</div>
+        <div><div class="ts-q">Fear in first 100 words?</div><div class="ts-yes">✓ Opens with customer's specific fear</div><div class="ts-no">✗ "Professional Pet Relocation Services"</div></div>
+        <div style="font-size:13px;color:var(--muted)">Most critical point. Sets trust tone immediately.</div>
+      </div>
+      <div class="ts-item">
+        <div class="ts-num">2</div>
+        <div><div class="ts-q">Official source cited?</div><div class="ts-yes">✓ Links to MOCCAE, airline, government</div><div class="ts-no">✗ Claims without citations</div></div>
+        <div style="font-size:13px;color:var(--muted)">No citation = no verified claim.</div>
+      </div>
+      <div class="ts-item">
+        <div class="ts-num">3</div>
+        <div><div class="ts-q">Specific route named?</div><div class="ts-yes">✓ "Dubai to UK" with route details</div><div class="ts-no">✗ "All international routes"</div></div>
+        <div style="font-size:13px;color:var(--muted)">Generic coverage = no expertise signal.</div>
+      </div>
+      <div class="ts-item">
+        <div class="ts-num">4</div>
+        <div><div class="ts-q">Step-by-step process?</div><div class="ts-yes">✓ Numbered steps with timing</div><div class="ts-no">✗ Generic bullet points</div></div>
+        <div style="font-size:13px;color:var(--muted)">Process clarity resolves the overwhelm fear.</div>
+      </div>
+      <div class="ts-item">
+        <div class="ts-num">5</div>
+        <div><div class="ts-q">Timeline included?</div><div class="ts-yes">✓ "Titer test: 2-3 weeks"</div><div class="ts-no">✗ No time references</div></div>
+        <div style="font-size:13px;color:var(--muted)">Timeline is the #1 practical fear trigger.</div>
+      </div>
+      <div class="ts-item">
+        <div class="ts-num">6</div>
+        <div><div class="ts-q">Cost ranges shown?</div><div class="ts-yes">✓ "700-1,300 AED with honest caveat"</div><div class="ts-no">✗ "Contact us for a quote"</div></div>
+        <div style="font-size:13px;color:var(--muted)">Price transparency resolves the gouging fear.</div>
+      </div>
+      <div class="ts-item">
+        <div class="ts-num">7</div>
+        <div><div class="ts-q">Common mistakes section?</div><div class="ts-yes">✓ Edge cases addressed specifically</div><div class="ts-no">✗ No edge cases</div></div>
+        <div style="font-size:13px;color:var(--muted)">DKC scored here: "What if pet has tattoo not microchip?"</div>
+      </div>
+      <div class="ts-item">
+        <div class="ts-num">8</div>
+        <div><div class="ts-q">Original visuals?</div><div class="ts-yes">✓ Real photos, branded vehicles</div><div class="ts-no">✗ Stock photos only</div></div>
+        <div style="font-size:13px;color:var(--muted)">Sandy Paws scored here with reunion videos.</div>
+      </div>
+      <div class="ts-item">
+        <div class="ts-num">9</div>
+        <div><div class="ts-q">CTA feels like help?</div><div class="ts-yes">✓ "Download checklist" / "Check breed"</div><div class="ts-no">✗ "Get a Quote Now"</div></div>
+        <div style="font-size:13px;color:var(--muted)">Hard CTAs signal you care about the sale not the pet.</div>
+      </div>
+      <div class="ts-item">
+        <div class="ts-num">10</div>
+        <div><div class="ts-q">Proof throughout?</div><div class="ts-yes">✓ Evidence beside every major claim</div><div class="ts-no">✗ One testimonials section only</div></div>
+        <div style="font-size:13px;color:var(--muted)">Hormozi update: proof must be a thread, not a section.</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gaps">
+    <h2>The Content Gap Matrix</h2>
+    <p>After all competitors are scored, count how many fail each dimension. The most common failures are your highest-priority content opportunities.</p>
+    <table class="gap-table">
+      <tr><th>Gap</th><th>Dubai Proof Run</th><th>Priority</th></tr>
+      <tr><td>Airport confiscation fear addressed</td><td>9/9 missing</td><td><span class="badge badge-red">HIGHEST</span></td></tr>
+      <tr><td>Summer embargo warning</td><td>9/9 missing</td><td><span class="badge badge-red">HIGHEST</span></td></tr>
+      <tr><td>Titer test cost + timeline</td><td>9/9 missing</td><td><span class="badge badge-red">HIGHEST</span></td></tr>
+      <tr><td>Airport comparison guide</td><td>9/9 missing</td><td><span class="badge badge-red">HIGHEST</span></td></tr>
+      <tr><td>Proof throughout content</td><td>9/9 missing</td><td><span class="badge badge-red">HIGHEST</span></td></tr>
+      <tr><td>Official source citation</td><td>7/9 missing</td><td><span class="badge badge-amber">HIGH</span></td></tr>
+      <tr><td>Common mistakes section</td><td>8/9 missing</td><td><span class="badge badge-amber">HIGH</span></td></tr>
+    </table>
+    <p>Gaps where 15 or more competitors fail = build those pages before anything else. They represent the highest concentration of unmet customer need in the market.</p>
+  </section>
+
+  <section id="proof">
+    <h2>Point 10 — Proof Interstitial</h2>
+    <p>This scoring dimension was updated after Hormozi's analysis. Most competitors have testimonials somewhere. Almost none have proof embedded throughout their content.</p>
+    <div class="callout">
+      <strong>The distinction:</strong> Testimonial section at the bottom = weak. Official source screenshot beside the step that requires it = strong.
+    </div>
+    <div class="proof-box">
+      <h4>What passes Point 10</h4>
+      <ul>
+        <li>Screenshot of MOCCAE export page beside the export step</li>
+        <li>Airline policy screenshot beside the breed restriction warning</li>
+        <li>Real case date + route beside the timeline claim</li>
+        <li>Verbatim official quote beside the regulation claim</li>
+        <li>Documented failure beside the common mistakes section</li>
+      </ul>
+    </div>
+    <div class="proof-box">
+      <h4>What fails Point 10</h4>
+      <ul>
+        <li class="no">Generic testimonial: "Great service! Highly recommend!"</li>
+        <li class="no">Stock photo of a dog at an airport</li>
+        <li class="no">Testimonials section at page bottom only</li>
+        <li class="no">Third-party claims: "As featured in..." without link</li>
+        <li class="no">Statistics without sources</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="process">
+    <h2>The 4 Steps</h2>
+    <h3>Step 00 — Risk Continuum Placement</h3>
+    <p>Where does this niche sit? What proof threshold does that set? Do this before visiting a single competitor. Dubai pet relocation = maximum risk.</p>
+    <h3>Step 01 — Competitor Discovery</h3>
+    <p>Find every competitor using: Google autocomplete, Google page 1, Facebook groups, Reddit threads. Not just Google tools. In the Dubai proof run, 4 of 9 scored competitors were only discoverable through community research.</p>
+    <h3>Step 02 — Manual Scoring (top 3)</h3>
+    <p>Score the top 3 by hand first. This calibrates judgment before the automation runs. Screenshot every page. Score every dimension. Document every gap.</p>
+    <h3>Step 03 — Automated Scoring</h3>
+    <p>Playwright visits every remaining competitor. Extracts text. Anthropic API scores against all 10 dimensions. Saves JSON + screenshots automatically.</p>
+    <h3>Step 04 — Gap Matrix</h3>
+    <p>Count failures per dimension across all competitors. Sort by most failures. The top gaps are your content calendar for the next 6 months.</p>
+  </section>
+
+  <section id="proof-niche">
+    <h2>Dubai Proof Run Results</h2>
+    <p>These are the real results from the Dubai pet relocation proof niche, May 2026.</p>
+    <table class="gap-table">
+      <tr><th>Competitor</th><th>Score</th><th>Biggest Gap</th></tr>
+      <tr><td>DKC</td><td>8/10</td><td>Airport confiscation fear never addressed</td></tr>
+      <tr><td>Sandy Paws</td><td>5/10</td><td>No process, no official sources, no timeline</td></tr>
+      <tr><td>Pawsome Pets UAE</td><td>3/10</td><td>Best credentials in market — website communicates none</td></tr>
+      <tr><td>Average (9 scored)</td><td>3.9/10</td><td>4 universal gaps — all 9 competitors missing</td></tr>
+    </table>
+    <div class="callout">
+      <strong>The benchmark:</strong> DKC at 8/10 is the strongest competitor. To beat them: match their FAQ depth + add the deepest fears they avoid + cite official sources they do not + add proof interstitial throughout.
+    </div>
+    <h3>Why the gaps are worth money — in the customers' own words</h3>
+    <p>The trust gaps above are not abstract. They map directly to fears real customers posted during the Dubai proof research:</p>
+    <blockquote style="border-left:3px solid var(--gold);margin:16px 0;padding:6px 0 6px 16px;font-style:italic;color:var(--fg)">
+      "relocation companies are shamelessly charging an insane amount of money"
+      <span style="display:block;font-style:normal;font-size:13px;color:var(--muted);margin-top:4px">— IrbisKat, Reddit r/dubai (24 upvotes) — the price-gouging fear behind the 9/9 "titer cost + timeline" and cost-transparency gaps</span>
+    </blockquote>
+    <blockquote style="border-left:3px solid var(--gold);margin:16px 0;padding:6px 0 6px 16px;font-style:italic;color:var(--fg)">
+      "Please do proper research and read reviews before handing over your pet to them"
+      <span style="display:block;font-style:normal;font-size:13px;color:var(--muted)">— Curious_cat_2912, Reddit (16 upvotes) — the wrong-provider fear that makes the entire Trust Score matter</span>
+    </blockquote>
+    <p>A competitor who never answers these fears scores 0 on the dimensions that decide the sale — which is exactly why the market average is 3.9/10.</p>
+  </section>
+</main>
+
+<script>
+const progress = document.getElementById('progress');
+window.addEventListener('scroll', () => {
+  const doc = document.documentElement;
+  const pct = doc.scrollTop / (doc.scrollHeight - doc.clientHeight) * 100;
+  progress.style.width = pct + '%';
+});
+const links = document.querySelectorAll('.nav-link');
+const sections = document.querySelectorAll('section[id]');
+window.addEventListener('scroll', () => {
+  let cur = '';
+  sections.forEach(s => { if (window.scrollY >= s.offsetTop - 100) cur = s.id; });
+  links.forEach(l => { l.classList.remove('active'); if (l.getAttribute('href') === '#' + cur) l.classList.add('active'); });
+});
+</script>
+</body>
+</html>

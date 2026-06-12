@@ -1,0 +1,166 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Trust Engine — Competitor Intelligence</title>
+<style>
+ *{box-sizing:border-box;margin:0;padding:0}
+ body{background:#0a0a0a;color:#e0e0e0;font-family:-apple-system,'Segoe UI',sans-serif;padding:24px;max-width:1100px;margin:0 auto}
+ h1{font-size:22px;color:#fff} .subtitle{font-size:13px;color:#888;margin:4px 0 24px}
+ h2{font-size:16px;color:#fff;margin:34px 0 12px;border-bottom:1px solid #222;padding-bottom:6px}
+ .stats{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:20px}
+ .stat{background:#141414;border:1px solid #222;border-radius:8px;padding:12px 16px}
+ .stat-num{font-size:24px;font-weight:700} .stat-label{font-size:11px;color:#666;margin-top:2px}
+ .red{color:#ff4444} .amber{color:#f0a500} .green{color:#44cc77} .gold{color:#ffd24a}
+ .filters{display:flex;gap:8px;margin-bottom:18px;flex-wrap:wrap}
+ .filters button{background:#141414;border:1px solid #333;color:#bbb;border-radius:20px;padding:6px 14px;cursor:pointer;font-size:13px}
+ .filters button.active{background:#fff;color:#000;font-weight:600}
+ .competitor{background:#0f0f0f;border:1px solid #1d1d1d;border-radius:10px;padding:14px 16px;margin-bottom:14px}
+ .comp-header{display:flex;align-items:center;gap:14px}
+ .comp-name{font-size:17px;font-weight:700;color:#fff} .src{font-size:10px;color:#555;font-weight:400}
+ .comp-url{font-size:12px;color:#555;font-family:monospace}
+ .score-badge{margin-left:auto;padding:6px 14px;border-radius:20px;font-size:14px;font-weight:700}
+ .score-red{background:#2a0000;color:#ff4444} .score-amber{background:#2a2200;color:#f0a500}
+ .score-green{background:#002a15;color:#44cc77} .score-gold{background:#2a2400;color:#ffd24a} .score-na{background:#1a1a1a;color:#777}
+ .toggle{background:none;border:1px solid #333;color:#888;border-radius:6px;padding:4px 10px;cursor:pointer;font-size:11px}
+ .gap-box{background:#1a0a0a;border:1px solid #3a1a1a;border-radius:8px;padding:10px;margin-top:12px}
+ .gap-label{font-size:10px;color:#ff4444;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+ .opp-box{background:#0a1a0a;border:1px solid #1a3a1a;border-radius:8px;padding:10px;margin-top:8px}
+ .opp-label{font-size:10px;color:#44cc77;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+ .gap-text,.opp-text{font-size:13px;color:#e0e0e0}
+ .detail{display:none;margin-top:12px} .competitor.open .detail{display:block}
+ .trust-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
+ .trust-item{background:#141414;border-radius:6px;padding:8px} .trust-label{color:#666;font-size:11px;margin-bottom:4px}
+ .trust-val{font-weight:700;font-size:14px} .pass{color:#44cc77} .partial{color:#f0a500} .fail{color:#ff4444}
+ table{width:100%;border-collapse:collapse;font-size:13px;margin-top:8px}
+ th,td{text-align:left;padding:8px 10px;border-bottom:1px solid #1d1d1d} th{color:#777;font-size:11px;text-transform:uppercase}
+ .ctr{text-align:center;font-weight:700} .pri{padding:2px 10px;border-radius:12px;font-size:11px;font-weight:700}
+ .pri-high{background:#2a0000;color:#ff4444} .pri-medium{background:#2a2200;color:#f0a500} .pri-low{background:#10220f;color:#44cc77}
+ .note{font-size:12px;color:#777;margin-top:8px}
+</style></head><body>
+<h1>The Trust Engine — Competitor Intelligence</h1>
+<p class="subtitle">21 competitors · 9 with verifiable websites scored · 12 social-only/unverified · 2026-05-27</p>
+<div class="stats">
+ <div class="stat"><div class="stat-num" style="color:#fff">21</div><div class="stat-label">Total competitors</div></div>
+ <div class="stat"><div class="stat-num" style="color:#fff">9</div><div class="stat-label">Scored (have website)</div></div>
+ <div class="stat"><div class="stat-num" style="color:#fff">3.9</div><div class="stat-label">Avg score (of scored)</div></div>
+ <div class="stat"><div class="stat-num green">8.0</div><div class="stat-label">Highest — DKC (Dubai Kennels &amp; Cattery)</div></div>
+ <div class="stat"><div class="stat-num red">2.5</div><div class="stat-label">Lowest — Carry My Pet (India/UAE)</div></div>
+ <div class="stat"><div class="stat-num amber">12</div><div class="stat-label">Social-only / unverified</div></div>
+</div>
+<div class="filters">
+ <button class="active" onclick="flt(this,'all')">All</button>
+ <button onclick="flt(this,'0-3')">0-3</button>
+ <button onclick="flt(this,'4-6')">4-6</button>
+ <button onclick="flt(this,'7')">7+</button>
+</div>
+<h2>Scored competitors (9)</h2>
+
+  <div class="competitor" data-score="8.0">
+    <div class="comp-header">
+      <div><div class="comp-name">DKC (Dubai Kennels &amp; Cattery) <span class="src">[manual]</span></div>
+      <div class="comp-url">dkc.ae</div></div>
+      <div class="score-badge score-green">8.0/10</div>
+      <button class="toggle" onclick="this.closest('.competitor').classList.toggle('open')">details</button>
+    </div>
+    <div class="gap-box"><div class="gap-label">Biggest gap</div><div class="gap-text">Airport confiscation fear (Muze Gu scenario) never addressed — the deepest fear is missing</div></div>
+    <div class="opp-box"><div class="opp-label">Content opportunity</div><div class="opp-text">What happens if your pet is rejected at the Dubai border?</div></div>
+    <div class="detail"><div class="trust-grid"><div class="trust-item"><div class="trust-label">Fear in first 100w</div><div class="trust-val fail">0</div></div><div class="trust-item"><div class="trust-label">Official source</div><div class="trust-val pass">1</div></div><div class="trust-item"><div class="trust-label">Route named</div><div class="trust-val pass">1</div></div><div class="trust-item"><div class="trust-label">Step-by-step</div><div class="trust-val pass">1</div></div><div class="trust-item"><div class="trust-label">Timeline</div><div class="trust-val pass">1</div></div><div class="trust-item"><div class="trust-label">Cost ranges</div><div class="trust-val partial">0.5</div></div><div class="trust-item"><div class="trust-label">Common mistakes</div><div class="trust-val pass">1</div></div><div class="trust-item"><div class="trust-label">Original visuals</div><div class="trust-val pass">1</div></div><div class="trust-item"><div class="trust-label">CTA helps</div><div class="trust-val pass">1</div></div><div class="trust-item"><div class="trust-label">Trust it</div><div class="trust-val pass">1</div></div></div></div>
+  </div>
+  <div class="competitor" data-score="5.5">
+    <div class="comp-header">
+      <div><div class="comp-name">K9 Jets <span class="src">[auto]</span></div>
+      <div class="comp-url">https://k9jets.com</div></div>
+      <div class="score-badge score-amber">5.5/10</div>
+      <button class="toggle" onclick="this.closest('.competitor').classList.toggle('open')">details</button>
+    </div>
+    <div class="gap-box"><div class="gap-label">Biggest gap</div><div class="gap-text">Completely ignores the deepest fear in the market — pet confiscation or rejection at the airport — and provides zero Dubai-specific documentation guidance, timelines, or UAE regulatory citations</div></div>
+    <div class="opp-box"><div class="opp-label">Content opportunity</div><div class="opp-text">Flying Your Pet to Dubai: What Happens at the Airport If Your Documents Are Wrong (And How to Guarantee They&#x27;re Not)</div></div>
+    <div class="detail"><div class="trust-grid"><div class="trust-item"><div class="trust-label">Fear in first 100w</div><div class="trust-val fail">0.0</div></div><div class="trust-item"><div class="trust-label">Official source</div><div class="trust-val partial">0.5</div></div><div class="trust-item"><div class="trust-label">Route named</div><div class="trust-val pass">1.0</div></div><div class="trust-item"><div class="trust-label">Step-by-step</div><div class="trust-val partial">0.5</div></div><div class="trust-item"><div class="trust-label">Timeline</div><div class="trust-val fail">0.0</div></div><div class="trust-item"><div class="trust-label">Cost ranges</div><div class="trust-val pass">1.0</div></div><div class="trust-item"><div class="trust-label">Common mistakes</div><div class="trust-val fail">0.0</div></div><div class="trust-item"><div class="trust-label">Original visuals</div><div class="trust-val partial">0.5</div></div><div class="trust-item"><div class="trust-label">CTA helps</div><div class="trust-val pass">1.0</div></div><div class="trust-item"><div class="trust-label">Trust it</div><div class="trust-val pass">1.0</div></div></div></div>
+  </div>
+  <div class="competitor" data-score="5.0">
+    <div class="comp-header">
+      <div><div class="comp-name">Sandy Paws <span class="src">[manual]</span></div>
+      <div class="comp-url">sandypaws.ae</div></div>
+      <div class="score-badge score-amber">5.0/10</div>
+      <button class="toggle" onclick="this.closest('.competitor').classList.toggle('open')">details</button>
+    </div>
+    <div class="gap-box"><div class="gap-label">Biggest gap</div><div class="gap-text">No official sources, no step-by-step process, no timeline, no named routes</div></div>
+    <div class="opp-box"><div class="opp-label">Content opportunity</div><div class="opp-text">What documents do you need to move a pet from Dubai — verified</div></div>
+    <div class="detail"><div class="trust-grid"><div class="trust-item"><div class="trust-label">Fear in first 100w</div><div class="trust-val partial">0.5</div></div><div class="trust-item"><div class="trust-label">Official source</div><div class="trust-val fail">0</div></div><div class="trust-item"><div class="trust-label">Route named</div><div class="trust-val fail">0</div></div><div class="trust-item"><div class="trust-label">Step-by-step</div><div class="trust-val fail">0</div></div><div class="trust-item"><div class="trust-label">Timeline</div><div class="trust-val fail">0</div></div><div class="trust-item"><div class="trust-label">Cost ranges</div><div class="trust-val partial">0.5</div></div><div class="trust-item"><div class="trust-label">Common mistakes</div><div class="trust-val fail">0</div></div><div class="trust-item"><div class="trust-label">Original visuals</div><div class="trust-val pass">1</div></div><div class="trust-item"><div class="trust-label">CTA helps</div><div class="trust-val pass">1</div></div><div class="trust-item"><div class="trust-label">Trust it</div><div class="trust-val pass">1</div></div></div></div>
+  </div>
+  <div class="competitor" data-score="3.0">
+    <div class="comp-header">
+      <div><div class="comp-name">CarryMyPet.ae <span class="src">[auto]</span></div>
+      <div class="comp-url">https://carrymypet.ae</div></div>
+      <div class="score-badge score-red">3.0/10</div>
+      <button class="toggle" onclick="this.closest('.competitor').classList.toggle('open')">details</button>
+    </div>
+    <div class="gap-box"><div class="gap-label">Biggest gap</div><div class="gap-text">Zero information about pet detention/confiscation risk at airport, no official regulatory body cited, no timeline or cost transparency — the page generates anxiety rather than resolving it</div></div>
+    <div class="opp-box"><div class="opp-label">Content opportunity</div><div class="opp-text">What Happens If Your Pet Is Detained at Dubai Airport — and How to Make Sure It Never Happens</div></div>
+    <div class="detail"><div class="trust-grid"><div class="trust-item"><div class="trust-label">Fear in first 100w</div><div class="trust-val fail">0.0</div></div><div class="trust-item"><div class="trust-label">Official source</div><div class="trust-val fail">0.0</div></div><div class="trust-item"><div class="trust-label">Route named</div><div class="trust-val partial">0.5</div></div><div class="trust-item"><div class="trust-label">Step-by-step</div><div class="trust-val partial">0.5</div></div><div class="trust-item"><div class="trust-label">Timeline</div><div class="trust-val fail">0.0</div></div><div class="trust-item"><div class="trust-label">Cost ranges</div><div class="trust-val fail">0.0</div></div><div class="trust-item"><div class="trust-label">Common mistakes</div><div class="trust-val fail">0.0</div></div><div class="trust-item"><div class="trust-label">Original visuals</div><div class="trust-val partial">0.5</div></div><div class="trust-item"><div class="trust-label">CTA helps</div><div class="trust-val partial">0.5</div></div><div class="trust-item"><div class="trust-label">Trust it</div><div class="trust-val pass">1.0</div></div></div></div>
+  </div>
+  <div class="competitor" data-score="3.0">
+    <div class="comp-header">
+      <div><div class="comp-name">JetSet Pets Dubai <span class="src">[auto]</span></div>
+      <div class="comp-url">https://www.jetsetpets.ae</div></div>
+      <div class="score-badge score-red">3.0/10</div>
+      <button class="toggle" onclick="this.closest('.competitor').classList.toggle('open')">details</button>
+    </div>
+    <div class="gap-box"><div class="gap-label">Biggest gap</div><div class="gap-text">No address of the deepest fear — pet detained or rejected at Dubai airport — and zero official source citations or route-specific documentation guidance</div></div>
+    <div class="opp-box"><div class="opp-label">Content opportunity</div><div class="opp-text">What Happens If Your Pet Is Stopped at Dubai Airport — And How to Make Sure It Never Happens to You</div></div>
+    <div class="detail"><div class="trust-grid"><div class="trust-item"><div class="trust-label">Fear in first 100w</div><div class="trust-val fail">0.0</div></div><div class="trust-item"><div class="trust-label">Official source</div><div class="trust-val fail">0.0</div></div><div class="trust-item"><div class="trust-label">Route named</div><div class="trust-val fail">0.0</div></div><div class="trust-item"><div class="trust-label">Step-by-step</div><div class="trust-val partial">0.5</div></div><div class="trust-item"><div class="trust-label">Timeline</div><div class="trust-val fail">0.0</div></div><div class="trust-item"><div class="trust-label">Cost ranges</div><div class="trust-val partial">0.5</div></div><div class="trust-item"><div class="trust-label">Common mistakes</div><div class="trust-val fail">0.0</div></div><div class="trust-item"><div class="trust-label">Original visuals</div><div class="trust-val fail">0.0</div></div><div class="trust-item"><div class="trust-label">CTA helps</div><div class="trust-val pass">1.0</div></div><div class="trust-item"><div class="trust-label">Trust it</div><div class="trust-val pass">1.0</div></div></div></div>
+  </div>
+  <div class="competitor" data-score="3.0">
+    <div class="comp-header">
+      <div><div class="comp-name">Pawsome Pets UAE <span class="src">[manual]</span></div>
+      <div class="comp-url">pawsomepets.ae</div></div>
+      <div class="score-badge score-red">3.0/10</div>
+      <button class="toggle" onclick="this.closest('.competitor').classList.toggle('open')">details</button>
+    </div>
+    <div class="gap-box"><div class="gap-label">Biggest gap</div><div class="gap-text">Strongest credentials in market (MOCCAE/IPATA/PAN) but the site communicates nothing</div></div>
+    <div class="opp-box"><div class="opp-label">Content opportunity</div><div class="opp-text">What IPATA / MOCCAE / PAN credentials actually mean for your pet</div></div>
+    <div class="detail"><div class="trust-grid"><div class="trust-item"><div class="trust-label">Fear in first 100w</div><div class="trust-val fail">0</div></div><div class="trust-item"><div class="trust-label">Official source</div><div class="trust-val partial">0.5</div></div><div class="trust-item"><div class="trust-label">Route named</div><div class="trust-val fail">0</div></div><div class="trust-item"><div class="trust-label">Step-by-step</div><div class="trust-val fail">0</div></div><div class="trust-item"><div class="trust-label">Timeline</div><div class="trust-val fail">0</div></div><div class="trust-item"><div class="trust-label">Cost ranges</div><div class="trust-val partial">0.5</div></div><div class="trust-item"><div class="trust-label">Common mistakes</div><div class="trust-val fail">0</div></div><div class="trust-item"><div class="trust-label">Original visuals</div><div class="trust-val fail">0</div></div><div class="trust-item"><div class="trust-label">CTA helps</div><div class="trust-val fail">0</div></div><div class="trust-item"><div class="trust-label">Trust it</div><div class="trust-val pass">1</div></div></div></div>
+  </div>
+  <div class="competitor" data-score="2.5">
+    <div class="comp-header">
+      <div><div class="comp-name">Carry My Pet (India/UAE) <span class="src">[auto]</span></div>
+      <div class="comp-url">https://carrymypet.com</div></div>
+      <div class="score-badge score-red">2.5/10</div>
+      <button class="toggle" onclick="this.closest('.competitor').classList.toggle('open')">details</button>
+    </div>
+    <div class="gap-box"><div class="gap-label">Biggest gap</div><div class="gap-text">The deepest fear — pet detained or seized at the airport and not returned — is never addressed anywhere on the site</div></div>
+    <div class="opp-box"><div class="opp-label">Content opportunity</div><div class="opp-text">Dubai Pet Import: What Happens at the Airport and How to Make Sure Your Dog Comes Home With You</div></div>
+    <div class="detail"><div class="trust-grid"><div class="trust-item"><div class="trust-label">Fear in first 100w</div><div class="trust-val fail">0.0</div></div><div class="trust-item"><div class="trust-label">Official source</div><div class="trust-val fail">0.0</div></div><div class="trust-item"><div class="trust-label">Route named</div><div class="trust-val partial">0.5</div></div><div class="trust-item"><div class="trust-label">Step-by-step</div><div class="trust-val partial">0.5</div></div><div class="trust-item"><div class="trust-label">Timeline</div><div class="trust-val fail">0.0</div></div><div class="trust-item"><div class="trust-label">Cost ranges</div><div class="trust-val fail">0.0</div></div><div class="trust-item"><div class="trust-label">Common mistakes</div><div class="trust-val fail">0.0</div></div><div class="trust-item"><div class="trust-label">Original visuals</div><div class="trust-val fail">0.0</div></div><div class="trust-item"><div class="trust-label">CTA helps</div><div class="trust-val partial">0.5</div></div><div class="trust-item"><div class="trust-label">Trust it</div><div class="trust-val pass">1.0</div></div></div></div>
+  </div>
+  <div class="competitor" data-score="2.5">
+    <div class="comp-header">
+      <div><div class="comp-name">MovingBay <span class="src">[auto]</span></div>
+      <div class="comp-url">https://movingbay.com</div></div>
+      <div class="score-badge score-red">2.5/10</div>
+      <button class="toggle" onclick="this.closest('.competitor').classList.toggle('open')">details</button>
+    </div>
+    <div class="gap-box"><div class="gap-label">Biggest gap</div><div class="gap-text">No fear addressed around airport pet detention, zero cost transparency, no official UAE regulatory sources cited, and contradictory statistics destroy trust</div></div>
+    <div class="opp-box"><div class="opp-label">Content opportunity</div><div class="opp-text">Dubai Pet Import Guide: What Actually Happens at the Airport (and How to Make Sure Your Dog Comes Home With You)</div></div>
+    <div class="detail"><div class="trust-grid"><div class="trust-item"><div class="trust-label">Fear in first 100w</div><div class="trust-val fail">0.0</div></div><div class="trust-item"><div class="trust-label">Official source</div><div class="trust-val fail">0.0</div></div><div class="trust-item"><div class="trust-label">Route named</div><div class="trust-val partial">0.5</div></div><div class="trust-item"><div class="trust-label">Step-by-step</div><div class="trust-val partial">0.5</div></div><div class="trust-item"><div class="trust-label">Timeline</div><div class="trust-val fail">0.0</div></div><div class="trust-item"><div class="trust-label">Cost ranges</div><div class="trust-val fail">0.0</div></div><div class="trust-item"><div class="trust-label">Common mistakes</div><div class="trust-val fail">0.0</div></div><div class="trust-item"><div class="trust-label">Original visuals</div><div class="trust-val fail">0.0</div></div><div class="trust-item"><div class="trust-label">CTA helps</div><div class="trust-val pass">1.0</div></div><div class="trust-item"><div class="trust-label">Trust it</div><div class="trust-val partial">0.5</div></div></div></div>
+  </div>
+  <div class="competitor" data-score="2.5">
+    <div class="comp-header">
+      <div><div class="comp-name">Relocate MENA <span class="src">[auto]</span></div>
+      <div class="comp-url">https://relocatemena.com</div></div>
+      <div class="score-badge score-red">2.5/10</div>
+      <button class="toggle" onclick="this.closest('.competitor').classList.toggle('open')">details</button>
+    </div>
+    <div class="gap-box"><div class="gap-label">Biggest gap</div><div class="gap-text">Zero pet-specific content — no UAE import rules, no airport seizure risk addressed, no steps, no timeline, no costs, no official sources cited.</div></div>
+    <div class="opp-box"><div class="opp-label">Content opportunity</div><div class="opp-text">How to Move Your Pet to Dubai Without It Being Seized at the Airport: The Complete UAE Import Guide</div></div>
+    <div class="detail"><div class="trust-grid"><div class="trust-item"><div class="trust-label">Fear in first 100w</div><div class="trust-val fail">0.0</div></div><div class="trust-item"><div class="trust-label">Official source</div><div class="trust-val fail">0.0</div></div><div class="trust-item"><div class="trust-label">Route named</div><div class="trust-val fail">0.0</div></div><div class="trust-item"><div class="trust-label">Step-by-step</div><div class="trust-val fail">0.0</div></div><div class="trust-item"><div class="trust-label">Timeline</div><div class="trust-val fail">0.0</div></div><div class="trust-item"><div class="trust-label">Cost ranges</div><div class="trust-val partial">0.5</div></div><div class="trust-item"><div class="trust-label">Common mistakes</div><div class="trust-val fail">0.0</div></div><div class="trust-item"><div class="trust-label">Original visuals</div><div class="trust-val fail">0.0</div></div><div class="trust-item"><div class="trust-label">CTA helps</div><div class="trust-val pass">1.0</div></div><div class="trust-item"><div class="trust-label">Trust it</div><div class="trust-val pass">1.0</div></div></div></div>
+  </div>
+<h2>Social-only / unverified (12) — no website to score</h2>
+<p class="note">Found in Facebook/Reddit/Instagram community research, not via a verifiable website. Not scored — counting them as 0/10 would be dishonest.</p>
+<table><tr><th>Competitor</th><th>Where found / why unscored</th></tr><tr><td>9 Lives AE</td><td>Reddit — charity rates; no verifiable site</td></tr><tr><td>Pet Express UAE</td><td>Reddit — UAE→Spain; URL unverified</td></tr><tr><td>Blue Sky Pet Relocation Dubai</td><td>Google autocomplete; correct URL unverified</td></tr><tr><td>Global Paws</td><td>Facebook — SA→Dubai; no verifiable site</td></tr><tr><td>AirPaws Relocation</td><td>Facebook comments; no verifiable site</td></tr><tr><td>Snoopy Pets</td><td>Facebook — Jordan→Abu Dhabi; no verifiable site</td></tr><tr><td>C&amp;C Pawsome Place</td><td>Facebook — pet shop combo; no verifiable site</td></tr><tr><td>Fuzzy Friends Pets Services</td><td>Facebook; no verifiable site</td></tr><tr><td>Dagin Pets Relocation</td><td>Facebook comments; no verifiable site</td></tr><tr><td>Relocate Your Pet</td><td>Reddit — &#x27;proactive and reassuring&#x27;; URL not found</td></tr><tr><td>Furry Travel</td><td>Reddit — road options; no verifiable site</td></tr><tr><td>uaeanimalcommunity</td><td>Instagram only — community resource, not an agency</td></tr></table>
+<h2>Content Gap Matrix — over the 9 scored competitors</h2>
+<p class="note">Denominator is the 9 scored sites (the 12 social-only have no page to assess). Priority: HIGH ≥7 missing · MEDIUM 4–6 · LOW ≤3.</p>
+<table><tr><th>Content gap</th><th>Missing</th><th>Priority</th></tr><tr><td>Airport confiscation fear addressed</td><td class="ctr">9/9</td><td><span class="pri pri-high">HIGH</span></td></tr><tr><td>Summer embargo warning</td><td class="ctr">9/9</td><td><span class="pri pri-high">HIGH</span></td></tr><tr><td>Titer test cost + timeline</td><td class="ctr">9/9</td><td><span class="pri pri-high">HIGH</span></td></tr><tr><td>Breed restriction guide</td><td class="ctr">9/9</td><td><span class="pri pri-high">HIGH</span></td></tr><tr><td>Sharjah vs Dubai vs Abu Dhabi airport</td><td class="ctr">9/9</td><td><span class="pri pri-high">HIGH</span></td></tr><tr><td>Exotic pets (birds/turtles/rabbits)</td><td class="ctr">8/9</td><td><span class="pri pri-high">HIGH</span></td></tr><tr><td>Cost transparency with real numbers</td><td class="ctr">8/9</td><td><span class="pri pri-high">HIGH</span></td></tr><tr><td>Common mistakes section</td><td class="ctr">8/9</td><td><span class="pri pri-high">HIGH</span></td></tr><tr><td>MOCCAE process step-by-step</td><td class="ctr">7/9</td><td><span class="pri pri-high">HIGH</span></td></tr><tr><td>Airline comparison (Etihad/Turkish/Royal Jordanian)</td><td class="ctr">7/9</td><td><span class="pri pri-high">HIGH</span></td></tr><tr><td>Route-specific fears (India/UK/AUS/SA)</td><td class="ctr">7/9</td><td><span class="pri pri-high">HIGH</span></td></tr><tr><td>Original visuals (not stock)</td><td class="ctr">7/9</td><td><span class="pri pri-high">HIGH</span></td></tr></table>
+<script>
+ function flt(btn,band){document.querySelectorAll('.filters button').forEach(b=>b.classList.remove('active'));btn.classList.add('active');
+  document.querySelectorAll('.competitor').forEach(c=>{var s=parseFloat(c.dataset.score);var show=(band=='all')||(band=='0-3'&&s<=3)||(band=='4-6'&&s>3&&s<=6)||(band=='7'&&s>6);c.style.display=show?'block':'none';});}
+</script>
+</body></html>

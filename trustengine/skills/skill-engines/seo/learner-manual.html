@@ -1,0 +1,146 @@
+<!DOCTYPE html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>SEO Engine — Learner Manual</title><style>body{font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:#1f2937;
+line-height:1.6;background:#f7f8fb;margin:0}.wrap{max-width:860px;margin:0 auto;padding:28px}
+h1{color:#1a3a5c}h2{color:#1a3a5c;border-top:2px solid #e5e7eb;padding-top:14px;margin-top:26px}
+h3{color:#2c5282}code{background:#f1f5f9;padding:1px 5px;border-radius:4px}
+table{border-collapse:collapse;width:100%}th,td{border:1px solid #e5e7eb;padding:7px 10px;text-align:left;vertical-align:top}
+th{background:#2c5282;color:#fff}tr:nth-child(even) td{background:#f9fafb}
+.hd{background:linear-gradient(135deg,#1a3a5c,#2c5282);color:#fff;padding:22px 28px;border-radius:0 0 14px 14px}
+.hd h1{color:#fff;margin:0}.hd p{color:#cfe0f5;margin:6px 0 0}</style></head><body><div class='hd'><h1>SEO Engine — Learner Manual</h1><p>Organic-ranking readiness — Topicality, Quality/Authority, Technical (the Google axis).</p></div><div class='wrap'><h1>SEO Engine — Learner Manual</h1>
+<p>The SEO engine scores how Google's organic ranking machine sees a page: Topicality (T<em>), Quality/Authority (Q</em>) and Technical. It is deliberately SEPARATE from the GEO engine — ranking and AI-citation are decoupled. Live SERP (P4) and backlink signals need APIs and are shown as Not Measurable here.</p>
+<h2>How to run the engine</h2>
+<ul>
+<li>Score a page: <code>python skill-engines/seo/engine.py --url &lt;URL&gt; --report out.html</code></li>
+<li>Web checker: <code>python skill-engines/seo/engine.py --serve 8110</code></li>
+<li>These docs: <code>python skill-engines/seo/engine.py --docs</code></li>
+</ul>
+<h2>The measurements (each one, with why and how)</h2>
+<h2>1. Topicality (T*) · intent match</h2>
+<p><strong>How we measure it:</strong> Main content answers the target intent</p>
+<p><strong>Why it works:</strong> Maps to T* = ABC signals (Kim/Nayak, T1)</p>
+<p><strong>What to do:</strong> Make the page directly answer its target query.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: Page rambles off-topic.</li>
+<li>DO: Page directly answers its target query.</li>
+</ul>
+<h2>2. Topicality (T*) · body depth</h2>
+<p><strong>How we measure it:</strong> Depth, sub-topic &amp; entity coverage (BERT/RankEmbed)</p>
+<p><strong>Why it works:</strong> Maps to T* = ABC signals (Kim/Nayak, T1)</p>
+<p><strong>What to do:</strong> Add depth — entities and quantified facts, not fluff.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: 300 words of fluff.</li>
+<li>DO: Depth with entities + quantified facts.</li>
+</ul>
+<h2>3. Topicality (T*) · internal anchors</h2>
+<p><strong>How we measure it:</strong> Internal anchor text accurately describes targets</p>
+<p><strong>Why it works:</strong> Maps to T* = ABC signals (Kim/Nayak, T1)</p>
+<p><strong>What to do:</strong> Use descriptive internal anchor text.</p>
+<h2>4. Topicality (T*) · inbound anchors</h2>
+<p><strong>How we measure it:</strong> Inbound anchors topically coherent, not over-optimised</p>
+<p><strong>Why it works:</strong> Maps to T* = ABC signals (Kim/Nayak, T1)</p>
+<p><strong>What to do:</strong> (needs a backlink data source)</p>
+<h2>5. Topicality (T*) · title meta signal</h2>
+<p><strong>How we measure it:</strong> Compelling accurate title/meta (Navboost C proxy)</p>
+<p><strong>Why it works:</strong> Maps to T* = ABC signals (Kim/Nayak, T1)</p>
+<p><strong>What to do:</strong> Write a compelling, accurate title + meta description.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: Untitled / 'Home'.</li>
+<li>DO: Accurate, compelling title + meta description.</li>
+</ul>
+<h2>6. Topicality (T*) · topical focus</h2>
+<p><strong>How we measure it:</strong> Site focused on topic (siteFocusScore proxy)</p>
+<p><strong>Why it works:</strong> Maps to T* = ABC signals (Kim/Nayak, T1)</p>
+<p><strong>What to do:</strong> Keep the page and site focused on the topic.</p>
+<h2>7. Quality &amp; Authority (Q*) · eeat author</h2>
+<p><strong>How we measure it:</strong> Named, credentialed author / expertise</p>
+<p><strong>Why it works:</strong> Maps to Q* = siteAuthority + PageRank-distance + rater IS + spam (T1/T3)</p>
+<p><strong>What to do:</strong> Add a credentialed, named author.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: No author named.</li>
+<li>DO: By a named, credentialed author + Person schema.</li>
+</ul>
+<h2>8. Quality &amp; Authority (Q*) · trust signals</h2>
+<p><strong>How we measure it:</strong> HTTPS, privacy, terms, contact, transparency</p>
+<p><strong>Why it works:</strong> Maps to Q* = siteAuthority + PageRank-distance + rater IS + spam (T1/T3)</p>
+<p><strong>What to do:</strong> Add HTTPS, privacy, terms, contact and an about page.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: No HTTPS / no contact.</li>
+<li>DO: HTTPS, privacy, terms, contact, about.</li>
+</ul>
+<h2>9. Quality &amp; Authority (Q*) · business legit</h2>
+<p><strong>How we measure it:</strong> Verifiable entity, consistent NAP, schema-to-reality</p>
+<p><strong>Why it works:</strong> Maps to Q* = siteAuthority + PageRank-distance + rater IS + spam (T1/T3)</p>
+<p><strong>What to do:</strong> Add Organization schema + a consistent verifiable NAP.</p>
+<h2>10. Quality &amp; Authority (Q*) · inbound authority</h2>
+<p><strong>How we measure it:</strong> Quality/relevance of inbound links (not volume)</p>
+<p><strong>Why it works:</strong> Maps to Q* = siteAuthority + PageRank-distance + rater IS + spam (T1/T3)</p>
+<p><strong>What to do:</strong> (needs a backlink data source)</p>
+<h2>11. Quality &amp; Authority (Q*) · ymyl handling</h2>
+<p><strong>How we measure it:</strong> Appropriate caution/sourcing for YMYL topics</p>
+<p><strong>Why it works:</strong> Maps to Q* = siteAuthority + PageRank-distance + rater IS + spam (T1/T3)</p>
+<p><strong>What to do:</strong> Add sourcing and disclaimers for YMYL topics.</p>
+<h2>12. Quality &amp; Authority (Q*) · brand demand</h2>
+<p><strong>How we measure it:</strong> Branded search / direct / brand-mention signal</p>
+<p><strong>Why it works:</strong> Maps to Q* = siteAuthority + PageRank-distance + rater IS + spam (T1/T3)</p>
+<p><strong>What to do:</strong> (needs analytics/SERP data)</p>
+<h2>13. Technical &amp; Page Experience · indexability</h2>
+<p><strong>How we measure it:</strong> No accidental noindex/robots block; canonical ok</p>
+<p><strong>Why it works:</strong> Maps to Crawl, index, page experience, structured data (T2)</p>
+<p><strong>What to do:</strong> Ensure no accidental noindex; set the canonical correctly.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: Accidental noindex.</li>
+<li>DO: Indexable with a correct canonical.</li>
+</ul>
+<h2>14. Technical &amp; Page Experience · core web vitals</h2>
+<p><strong>How we measure it:</strong> LCP/CLS/INP proxies (weight, render-blocking)</p>
+<p><strong>Why it works:</strong> Maps to Crawl, index, page experience, structured data (T2)</p>
+<p><strong>What to do:</strong> Cut page weight and render-blocking scripts.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: 4MB of blocking scripts.</li>
+<li>DO: Lean page, no render-blocking.</li>
+</ul>
+<h2>15. Technical &amp; Page Experience · mobile friendly</h2>
+<p><strong>How we measure it:</strong> Responsive, viewport, tap targets</p>
+<p><strong>Why it works:</strong> Maps to Crawl, index, page experience, structured data (T2)</p>
+<p><strong>What to do:</strong> Add a responsive viewport meta.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: No viewport meta.</li>
+<li>DO: Responsive viewport + tap targets.</li>
+</ul>
+<h2>16. Technical &amp; Page Experience · structured data</h2>
+<p><strong>How we measure it:</strong> Valid schema present</p>
+<p><strong>Why it works:</strong> Maps to Crawl, index, page experience, structured data (T2)</p>
+<p><strong>What to do:</strong> Add valid schema (Organization/Article/FAQ).</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: No schema.</li>
+<li>DO: Valid Organization/Article schema.</li>
+</ul>
+<h2>17. Technical &amp; Page Experience · site architecture</h2>
+<p><strong>How we measure it:</strong> Logical URLs, internal linking, one-domain</p>
+<p><strong>Why it works:</strong> Maps to Crawl, index, page experience, structured data (T2)</p>
+<p><strong>What to do:</strong> Use shallow URLs and internal linking.</p>
+<h2>18. Technical &amp; Page Experience · crawl hygiene</h2>
+<p><strong>How we measure it:</strong> Sitemap, clean robots, no orphans</p>
+<p><strong>Why it works:</strong> Maps to Crawl, index, page experience, structured data (T2)</p>
+<p><strong>What to do:</strong> Add an XML sitemap and a clean robots.txt.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: No sitemap, messy robots.</li>
+<li>DO: XML sitemap + clean robots.txt.</li>
+</ul>
+<h2>P4 · ranks target (human-judged)</h2>
+<p>Live SERP ranking outcome — PRIMARY via SERP API.</p>
+<h2>P4 · ranking breadth (human-judged)</h2>
+<p>Live SERP ranking outcome — PRIMARY via SERP API.</p>
+<h2>P4 · serp features (human-judged)</h2>
+<p>Live SERP ranking outcome — PRIMARY via SERP API.</p>
+<h2>P4 · branded mix (human-judged)</h2>
+<p>Live SERP ranking outcome — PRIMARY via SERP API.</p></div></body></html>

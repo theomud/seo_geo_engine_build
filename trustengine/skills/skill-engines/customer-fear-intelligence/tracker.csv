@@ -1,0 +1,4 @@
+timestamp,url,domain,score,grade,word_count,top_fix
+2026-06-08T10:06:04,https://example.com/,example.com,0,F,21,Fear acknowledged first
+2026-06-08T11:11:49,https://www.airanimal.com/,www.airanimal.com,28,F,1446,Fear acknowledged first
+2026-06-08T11:46:20,https://www.airanimal.com/,www.airanimal.com,28,F,1111,Fear acknowledged first

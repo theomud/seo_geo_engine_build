@@ -1,0 +1,126 @@
+<!DOCTYPE html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>GEO Engine — Learner Manual</title><style>body{font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:#1f2937;
+line-height:1.6;background:#f7f8fb;margin:0}.wrap{max-width:860px;margin:0 auto;padding:28px}
+h1{color:#1a3a5c}h2{color:#1a3a5c;border-top:2px solid #e5e7eb;padding-top:14px;margin-top:26px}
+h3{color:#2c5282}code{background:#f1f5f9;padding:1px 5px;border-radius:4px}
+table{border-collapse:collapse;width:100%}th,td{border:1px solid #e5e7eb;padding:7px 10px;text-align:left;vertical-align:top}
+th{background:#2c5282;color:#fff}tr:nth-child(even) td{background:#f9fafb}
+.hd{background:linear-gradient(135deg,#1a3a5c,#2c5282);color:#fff;padding:22px 28px;border-radius:0 0 14px 14px}
+.hd h1{color:#fff;margin:0}.hd p{color:#cfe0f5;margin:6px 0 0}</style></head><body><div class='hd'><h1>GEO Engine — Learner Manual</h1><p>AI-citation readiness — Citation, Extractability, Entity corroboration (the AI-answer axis).</p></div><div class='wrap'><h1>GEO Engine — Learner Manual</h1>
+<p>The GEO engine scores how an AI answer engine decides to CITE a page: citation readiness (stats, quotes, sources), extractability (self-contained, answer-first passages) and entity corroboration. It is deliberately SEPARATE from the SEO engine — being cited is a different game from ranking. Live AI Overview presence (G4) needs an API and is Not Measurable here.</p>
+<h2>How to run the engine</h2>
+<ul>
+<li>Score a page: <code>python skill-engines/geo/engine.py --url &lt;URL&gt; --report out.html</code></li>
+<li>Web checker: <code>python skill-engines/geo/engine.py --serve 8111</code></li>
+<li>These docs: <code>python skill-engines/geo/engine.py --docs</code></li>
+</ul>
+<h2>The measurements (each one, with why and how)</h2>
+<h2>1. Citation Readiness · statistics</h2>
+<p><strong>How we measure it:</strong> Specific numbers, %, dated figures</p>
+<p><strong>Why it works:</strong> Maps to GEO paper v3 levers: Cite +27.8%, Quote +25.9%, Stats +24.9% (T4)</p>
+<p><strong>What to do:</strong> Add specific statistics (numbers, %, dated figures).</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: 'Many pets travel.'</li>
+<li>DO: '38,000 pets entered the UAE in 2025.'</li>
+</ul>
+<h2>2. Citation Readiness · source citations</h2>
+<p><strong>How we measure it:</strong> Inline citations to authoritative sources</p>
+<p><strong>Why it works:</strong> Maps to GEO paper v3 levers: Cite +27.8%, Quote +25.9%, Stats +24.9% (T4)</p>
+<p><strong>What to do:</strong> Cite authoritative sources inline.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: Unsourced claims.</li>
+<li>DO: Cited to MOCCAE / IATA inline.</li>
+</ul>
+<h2>3. Citation Readiness · quotations</h2>
+<p><strong>How we measure it:</strong> Direct quotes from named authorities</p>
+<p><strong>Why it works:</strong> Maps to GEO paper v3 levers: Cite +27.8%, Quote +25.9%, Stats +24.9% (T4)</p>
+<p><strong>What to do:</strong> Add direct quotes from named authorities.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: No quotes.</li>
+<li>DO: A direct quote from a named authority.</li>
+</ul>
+<h2>4. Citation Readiness · quotable facts</h2>
+<p><strong>How we measure it:</strong> Self-contained standalone factual sentences</p>
+<p><strong>Why it works:</strong> Maps to GEO paper v3 levers: Cite +27.8%, Quote +25.9%, Stats +24.9% (T4)</p>
+<p><strong>What to do:</strong> Write self-contained factual sentences AI can lift verbatim.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: Facts tangled in prose.</li>
+<li>DO: Self-contained sentences AI can lift verbatim.</li>
+</ul>
+<h2>5. Citation Readiness · freshness</h2>
+<p><strong>How we measure it:</strong> Dated / recently updated on volatile topics</p>
+<p><strong>Why it works:</strong> Maps to GEO paper v3 levers: Cite +27.8%, Quote +25.9%, Stats +24.9% (T4)</p>
+<p><strong>What to do:</strong> Add a date and refresh facts on volatile topics.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: (no date)</li>
+<li>DO: Updated June 2026, recent facts.</li>
+</ul>
+<h2>6. Extractability &amp; Structure · passage self contained</h2>
+<p><strong>How we measure it:</strong> Sections stand alone as extractable answers</p>
+<p><strong>Why it works:</strong> Maps to Chunk/passage extraction in RAG (T2)</p>
+<p><strong>What to do:</strong> Make each section stand alone as a complete answer.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: Sections depend on each other.</li>
+<li>DO: Each section answers fully on its own.</li>
+</ul>
+<h2>7. Extractability &amp; Structure · heading answer</h2>
+<p><strong>How we measure it:</strong> Clear H2/H3 questions with immediate answers</p>
+<p><strong>Why it works:</strong> Maps to Chunk/passage extraction in RAG (T2)</p>
+<p><strong>What to do:</strong> Use question headings with the answer immediately under them.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: Vague heading.</li>
+<li>DO: Question heading + answer right under it.</li>
+</ul>
+<h2>8. Extractability &amp; Structure · answer first</h2>
+<p><strong>How we measure it:</strong> Key answer in first 200-300 words</p>
+<p><strong>Why it works:</strong> Maps to Chunk/passage extraction in RAG (T2)</p>
+<p><strong>What to do:</strong> Put the direct answer in the first ~200 words.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: Answer buried at the bottom.</li>
+<li>DO: Answer in the first 200 words.</li>
+</ul>
+<h2>9. Extractability &amp; Structure · scannable facts</h2>
+<p><strong>How we measure it:</strong> Lists/tables of liftable data points</p>
+<p><strong>Why it works:</strong> Maps to Chunk/passage extraction in RAG (T2)</p>
+<p><strong>What to do:</strong> Add lists/tables of the key facts.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: Wall of prose.</li>
+<li>DO: A list/table of liftable data points.</li>
+</ul>
+<h2>10. Entity &amp; Corroboration · entity coverage</h2>
+<p><strong>How we measure it:</strong> Named entities/concepts a fan-out seeks</p>
+<p><strong>Why it works:</strong> Maps to Fan-out breadth + corroboration bias (T2/PRIMARY)</p>
+<p><strong>What to do:</strong> Cover the related entities and sub-topics.</p>
+<h2>11. Entity &amp; Corroboration · subquestion cover</h2>
+<p><strong>How we measure it:</strong> Answers the cluster of related sub-queries</p>
+<p><strong>Why it works:</strong> Maps to Fan-out breadth + corroboration bias (T2/PRIMARY)</p>
+<p><strong>What to do:</strong> Answer the related sub-questions on the page.</p>
+<h2>12. Entity &amp; Corroboration · external corrob</h2>
+<p><strong>How we measure it:</strong> Claim/brand corroborated across sources</p>
+<p><strong>Why it works:</strong> Maps to Fan-out breadth + corroboration bias (T2/PRIMARY)</p>
+<p><strong>What to do:</strong> (off-page — earn mentions on third-party sources)</p>
+<h2>13. Entity &amp; Corroboration · entity schema</h2>
+<p><strong>How we measure it:</strong> sameAs/Org/Person schema to verifiable profiles</p>
+<p><strong>Why it works:</strong> Maps to Fan-out breadth + corroboration bias (T2/PRIMARY)</p>
+<p><strong>What to do:</strong> Add sameAs / Organization / Person schema.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: No entity markup.</li>
+<li>DO: sameAs / Organization / Person schema.</li>
+</ul>
+<h2>G4 · cited in aio (human-judged)</h2>
+<p>Live AI-Overview citation outcome — PRIMARY via SerpApi AIO.</p>
+<h2>G4 · citation breadth (human-judged)</h2>
+<p>Live AI-Overview citation outcome — PRIMARY via SerpApi AIO.</p>
+<h2>G4 · ugc presence (human-judged)</h2>
+<p>Live AI-Overview citation outcome — PRIMARY via SerpApi AIO.</p>
+<h2>G4 · decoupling diag (human-judged)</h2>
+<p>Live AI-Overview citation outcome — PRIMARY via SerpApi AIO.</p></div></body></html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cheatsheet · File 05 — Volume Validation</title>
+<style>
+  :root{--bg:#16130f;--panel:#211c16;--line:#352c22;--ink:#f3e9da;--soft:#b6a892;--accent:#e08a4c;--accent2:#d8b46a;--good:#7fae6b;
+    --sans:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;--mono:"SFMono-Regular",Consolas,monospace;}
+  *{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.45;font-size:15px;padding:18px;max-width:520px;margin:0 auto}
+  header{border-bottom:2px solid var(--accent);padding-bottom:10px;margin-bottom:14px}
+  header .k{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:700}
+  header h1{font-size:20px;margin:4px 0 0}
+  h2{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--accent2);margin:18px 0 8px}
+  ol.steps{counter-reset:s;list-style:none;padding:0;margin:0}
+  ol.steps li{counter-increment:s;background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:8px 10px 8px 38px;margin:6px 0;position:relative;font-size:14px}
+  ol.steps li::before{content:counter(s);position:absolute;left:8px;top:8px;width:22px;height:22px;background:var(--accent);color:#16130f;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12px}
+  .keep{background:#22291d;border:1px solid #3c4a2e;border-radius:8px;padding:8px 10px;margin:6px 0;font-size:14px}
+  .keep b{color:var(--good)}
+  .rule{background:#2a2218;border:1px dashed var(--accent2);border-radius:8px;padding:8px 10px;margin:6px 0;font-size:13.5px;font-family:var(--mono)}
+  .season{display:flex;gap:8px;margin-top:6px}
+  .season div{flex:1;border-radius:8px;padding:8px;font-size:12.5px}
+  .season .a{background:#22291d;border:1px solid #3c4a2e} .season .e{background:#2a2218;border:1px solid #43361f}
+  .note{color:var(--soft);font-size:12.5px;margin-top:14px;border-top:1px solid var(--line);padding-top:10px}
+</style>
+</head>
+<body>
+<header><div class="k">Trust Engine · Cheatsheet</div><h1>Volume Validation</h1></header>
+<p style="color:var(--soft);margin-top:0">Volume = priority signal, NOT value signal. Fills Column G + H.</p>
+
+<h2>Keyword Planner — 6 steps</h2>
+<ol class="steps">
+  <li>Free Google Ads acct → <b>Discover new keywords</b></li>
+  <li>Paste <b>100-keyword</b> batches from Column A</li>
+  <li>Location: <b>United Arab Emirates</b></li>
+  <li>Language: <b>English</b></li>
+  <li>Export → match volume to <b>Column G</b></li>
+  <li>Status: pending-volume → validated / phase-2</li>
+</ol>
+
+<h2>Zero-volume rule — KEEP if…</h2>
+<div class="keep"><b>✓</b> Appeared in <b>3+ sources</b></div>
+<div class="keep"><b>✓</b> Specific <b>route / location / fear</b> combo</div>
+<div class="keep"><b>✓</b> Matches <b>community language</b> (FB / Reddit)</div>
+<div class="keep"><b>✓</b> Is a <b>question-format fear</b> keyword</div>
+<div class="rule">Record: exact # · "&lt; 10" · "not found". Never delete for low volume. Note the reason.</div>
+<div class="rule">Authority Hacker: #1 keyword underperformed Planner; a "zero-volume" term beat it.</div>
+
+<h2>Season → Column H</h2>
+<div class="season">
+  <div class="a"><b style="color:var(--good)">Oct–Apr</b><br>cargo / transport keywords</div>
+  <div class="e"><b style="color:var(--accent2)">Year-round</b><br>regulation / document keywords</div>
+</div>
+
+<div class="note">Phase 2: DataForSEO returns volume+difficulty+CPC in one call (~$0.001/kw). The Trust Engine · Skill 01 · File 05 · 2026-05-27.</div>
+</body>
+</html>

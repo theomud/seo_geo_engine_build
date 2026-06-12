@@ -1,0 +1,65 @@
+<!DOCTYPE html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Prompt Engineering (output clarity) — Learner Manual</title><style>body{font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:#1f2937;
+line-height:1.6;background:#f7f8fb;margin:0}.wrap{max-width:860px;margin:0 auto;padding:28px}
+h1{color:#1a3a5c}h2{color:#1a3a5c;border-top:2px solid #e5e7eb;padding-top:14px;margin-top:26px}
+h3{color:#2c5282}code{background:#f1f5f9;padding:1px 5px;border-radius:4px}
+table{border-collapse:collapse;width:100%}th,td{border:1px solid #e5e7eb;padding:7px 10px;text-align:left;vertical-align:top}
+th{background:#2c5282;color:#fff}tr:nth-child(even) td{background:#f9fafb}
+.hd{background:linear-gradient(135deg,#1a3a5c,#2c5282);color:#fff;padding:22px 28px;border-radius:0 0 14px 14px}
+.hd h1{color:#fff;margin:0}.hd p{color:#cfe0f5;margin:6px 0 0}</style></head><body><div class='hd'><h1>Prompt Engineering (output clarity) — Learner Manual</h1><p>Does the page read like a clear, well-briefed output — structured, specific, machine-readable?</p></div><div class='wrap'><h1>Prompt Engineering (output clarity) — Learner Manual</h1>
+<p>Prompt engineering is a creation-process skill — but its result shows on the page: content that is structured, answer-first, specific and machine-readable instead of vague AI mush. This engine scores those observable signals. The prompt/brief quality itself is off-page and shown as Not Measurable.</p>
+<h2>How to run the engine</h2>
+<ul>
+<li>Score a page: <code>python skill-engines/prompt-engineering/engine.py --url &lt;URL&gt; --report out.html</code></li>
+<li>Web checker: <code>python skill-engines/prompt-engineering/engine.py --serve 8100</code></li>
+<li>These docs: <code>python skill-engines/prompt-engineering/engine.py --docs</code></li>
+</ul>
+<h2>The measurements (each one, with why and how)</h2>
+<h2>1. Answer-first output</h2>
+<p><strong>How we measure it:</strong> We check the opening for a direct answer.</p>
+<p><strong>Why it works:</strong> Good prompting produces an answer up front; vague prompting produces a warm-up.</p>
+<p><strong>What to do:</strong> Open with the direct answer (re-prompt for answer-first).</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: A long preamble before the point.</li>
+<li>DO: The direct answer in the first sentence.</li>
+</ul>
+<h2>2. Clear structure</h2>
+<p><strong>How we measure it:</strong> We count sectioning headings.</p>
+<p><strong>Why it works:</strong> Structured output is the hallmark of a well-briefed generation.</p>
+<p><strong>What to do:</strong> Break the output into clear H2/H3 sections.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: One block of text.</li>
+<li>DO: H2 sections for each part.</li>
+</ul>
+<h2>3. Scannable formats</h2>
+<p><strong>How we measure it:</strong> We count lists and tables.</p>
+<p><strong>Why it works:</strong> Lists/tables show the content was shaped, not dumped.</p>
+<p><strong>What to do:</strong> Add lists/tables for key points.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: Prose only.</li>
+<li>DO: A bulleted list of the steps.</li>
+</ul>
+<h2>4. Specific, not generic</h2>
+<p><strong>How we measure it:</strong> We measure concrete-figure density.</p>
+<p><strong>Why it works:</strong> Specifics are what a good brief forces; generic mush is what a lazy prompt returns.</p>
+<p><strong>What to do:</strong> Re-prompt with required facts so the output is specific, not generic.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: Generic advice.</li>
+<li>DO: Specific figures and named examples.</li>
+</ul>
+<h2>5. Right length / focused</h2>
+<p><strong>How we measure it:</strong> We check word count against a focused range.</p>
+<p><strong>Why it works:</strong> Good prompting controls scope; bloat and thinness both signal a weak brief.</p>
+<p><strong>What to do:</strong> Tighten scope in the prompt — cut padding or thicken thin content.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: 3,000 words of padding.</li>
+<li>DO: ~800 focused words.</li>
+</ul>
+<h2>Prompt/brief quality (the 9 elements) (human-judged)</h2>
+<p>Off-page — the prompt itself isn't on the page; review the brief against the 9-element model.</p>
+<h2>Revision-loop discipline (human-judged)</h2>
+<p>Off-page — how the output was iterated isn't visible on the page.</p></div></body></html>

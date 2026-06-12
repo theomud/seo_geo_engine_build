@@ -1,0 +1,13 @@
+<section class="section {{ block.variant | default('section--surface') }}" style="padding-top:2.2rem;padding-bottom:2.2rem">
+  <div class="container">
+    {% if block.heading %}<p class="eyebrow center">{{ block.heading }}</p>{% endif %}
+    <div class="trust-bar">
+      {% for item in block['items'] %}
+      <div class="trust-item">
+        {% if item.num %}<span class="ti-num">{{ item.num }}</span>{% endif %}
+        <span>{{ item.label }}</span>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

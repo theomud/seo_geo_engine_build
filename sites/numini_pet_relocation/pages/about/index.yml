@@ -1,0 +1,73 @@
+url: /about/
+title: "About PawRoute — Transparent Pet Relocation From the UAE"
+title_suffix: ""
+breadcrumb: "About"
+meta_description: "Who we are: a Dubai-based pet relocation specialist that shows prices upfront, verifies every rule against official sources, and never promises what it can't deliver."
+og_title: "About PawRoute — pet relocation done honestly"
+updated: "2026-06-09"
+
+blocks:
+  - type: hero
+    eyebrow: "About us"
+    heading: "Pet relocation from the UAE, done honestly"
+    subheading: >
+      PawRoute is a Dubai-based pet relocation specialist. We handle the documents, vaccines,
+      permits, IATA crates, cargo flights and customs clearance — and we show the price upfront,
+      verify every rule against the official source, and never promise what we can't deliver.
+    ctas:
+      - { label: "Get a transparent quote", url: "/#quote", style: "btn-gold" }
+      - { label: "See destinations & pricing", url: "/destinations/", style: "btn-ghost" }
+
+  - type: trust_bar
+    heading: "What we stand for"
+    items:
+      - { num: "Upfront", label: "prices shown on every route — no 'get a quote' wall" }
+      - { num: "Official", label: "every rule verified against the source authority" }
+      - { num: "Honest", label: "no guaranteed dates, no veterinary advice" }
+      - { num: "IATA", label: "live-animal transport to IATA standards" }
+
+  - type: prose
+    heading: "Why we do it this way"
+    paragraphs:
+      - "Moving a pet is stressful and high-stakes — one wrong document can mean a delayed, refused or quarantined animal. Most of this market hides its pricing and copies requirements from blogs. We decided to do the opposite: publish the real costs, cite the official source for every rule, and tell you honestly when something isn't possible."
+      - "That's why every figure on this site is checked against the issuing authority (UK GOV.UK, the EU Commission, the US CDC, Australia's DAFF, the UAE's MOCCAE, and IATA), and why we keep a dated record of when each rule was last verified."
+
+  - type: prose
+    eyebrow: "Our promises"
+    heading: "What we will — and won't — do"
+    bullets:
+      - "<strong>We will</strong> show you a transparent price range before you ever call."
+      - "<strong>We will</strong> verify your exact route against official sources and confirm airline rules separately."
+      - "<strong>We won't</strong> guarantee an airline delivery date — airlines change schedules, and anyone who promises one is guessing."
+      - "<strong>We won't</strong> give veterinary medical advice — that's between you and your vet."
+      - "<strong>We won't</strong> cut corners on documents to save time — a rejected entry costs far more than it saves."
+
+  - type: prose
+    eyebrow: "Our team"
+    heading: "Who's behind PawRoute"
+    paragraphs:
+      - "PawRoute is run by pet-relocation specialists based in Dubai who follow the IPATA process for international moves."
+      - "<strong>[ Add your lead specialist here — real name, photo, role, and a short bio with verifiable credentials. ]</strong> A named, credentialed person is what earns trust with both customers and search engines — fill this in (and the `author.person` block in <code>site.yml</code>) with a real team member before launch. Do not invent a name or a certification."
+
+  - type: prose
+    eyebrow: "Credentials & memberships"
+    heading: "How we're accountable"
+    bullets:
+      - "Member of IPATA (International Pet and Animal Transportation Association) — <em>[add membership number / proof link]</em>."
+      - "Live-animal transport handled to IATA Live Animals Regulations."
+      - "UAE trade licence — <em>[add licence number]</em>."
+      - "Every regulatory claim on this site is logged with its source, date verified and review date."
+
+  - type: prose
+    eyebrow: "Talk to us"
+    heading: "Contact"
+    paragraphs:
+      - "Dubai, United Arab Emirates. Reach us on WhatsApp, by email, or by phone — details in the footer. We reply with a firm price range and the exact steps for your route, no obligation."
+      - "<em>[ Add your full street address, a map, and opening hours here once confirmed — these strengthen local trust and complete the LocalBusiness profile. ]</em>"
+
+  - type: cta
+    heading: "Ready to move your pet — the honest way?"
+    body: "Tell us your route and timeline. We'll show you what's actually possible, what it costs, and exactly how it works."
+    ctas:
+      - { label: "Get my quote", url: "/#quote", style: "btn-gold" }
+      - { label: "Use the free tools", url: "/tools/", style: "btn-ghost" }

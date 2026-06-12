@@ -1,0 +1,79 @@
+<!DOCTYPE html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Authority Asset Creation — Learner Manual</title><style>body{font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:#1f2937;
+line-height:1.6;background:#f7f8fb;margin:0}.wrap{max-width:860px;margin:0 auto;padding:28px}
+h1{color:#1a3a5c}h2{color:#1a3a5c;border-top:2px solid #e5e7eb;padding-top:14px;margin-top:26px}
+h3{color:#2c5282}code{background:#f1f5f9;padding:1px 5px;border-radius:4px}
+table{border-collapse:collapse;width:100%}th,td{border:1px solid #e5e7eb;padding:7px 10px;text-align:left;vertical-align:top}
+th{background:#2c5282;color:#fff}tr:nth-child(even) td{background:#f9fafb}
+.hd{background:linear-gradient(135deg,#1a3a5c,#2c5282);color:#fff;padding:22px 28px;border-radius:0 0 14px 14px}
+.hd h1{color:#fff;margin:0}.hd p{color:#cfe0f5;margin:6px 0 0}</style></head><body><div class='hd'><h1>Authority Asset Creation — Learner Manual</h1><p>Could only someone who did the real work have written this — or could any AI have?</p></div><div class='wrap'><h1>Authority Asset Creation — Learner Manual</h1>
+<p>The one thing AI cannot produce is a resource documented from real work — a real case, a real failure, real evidence. This engine scores whether a page reads as authored from experience: named credentialed author, dense verifiable proof, documented cases, original data, and cited sources — vs generic content any AI could generate.</p>
+<h2>How to run the engine</h2>
+<ul>
+<li>Score a page: <code>python skill-engines/authority-assets/engine.py --url &lt;URL&gt; --report out.html</code></li>
+<li>Web checker: <code>python skill-engines/authority-assets/engine.py --serve 8096</code></li>
+<li>These docs: <code>python skill-engines/authority-assets/engine.py --docs</code></li>
+</ul>
+<h2>The measurements (each one, with why and how)</h2>
+<h2>1. Named, credentialed author</h2>
+<p><strong>How we measure it:</strong> We look for a byline, Person schema, and credential language.</p>
+<p><strong>Why it works:</strong> AI content is anonymous; a verifiable expert author is exactly what E-E-A-T and readers trust.</p>
+<p><strong>What to do:</strong> Add a named author with real credentials (+ Person schema).</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: Anonymous page.</li>
+<li>DO: By Jane Doe, IPATA-certified, 8 years' experience.</li>
+</ul>
+<h2>2. Proof density</h2>
+<p><strong>How we measure it:</strong> We count verifiable proof items (numbers + citations) per 200 words.</p>
+<p><strong>Why it works:</strong> Authority is proof-dense; the Hormozi test — a basic AI prompt can't reproduce dense real evidence.</p>
+<p><strong>What to do:</strong> Add more verifiable proof (figures, citations) beside claims — aim ≥1 per 200 words.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: General claims throughout.</li>
+<li>DO: A figure or citation every couple of sentences.</li>
+</ul>
+<h2>3. Documented case / real example</h2>
+<p><strong>How we measure it:</strong> We detect case-study / 'we helped' / dated-real-event language.</p>
+<p><strong>Why it works:</strong> A real documented case (with what went wrong) is the un-fakeable core no AI could write.</p>
+<p><strong>What to do:</strong> Document one real case end-to-end, including what went wrong.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: We help many clients.</li>
+<li>DO: In 2025 we moved a French Bulldog London→Dubai; the titer nearly lapsed — here's what we did.</li>
+</ul>
+<h2>4. Original data / statistics</h2>
+<p><strong>How we measure it:</strong> We look for percentages and own-data language.</p>
+<p><strong>Why it works:</strong> Original statistics are the #1 citation lever and can only come from someone who did the work.</p>
+<p><strong>What to do:</strong> Publish an original statistic from your own data.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: (no data)</li>
+<li>DO: 74% of failed moves were due to incomplete titer docs, per our 450-move dataset.</li>
+</ul>
+<h2>5. Cited sources</h2>
+<p><strong>How we measure it:</strong> We count citation signals and authoritative references.</p>
+<p><strong>Why it works:</strong> Citing primary sources is what separates documented expertise from assertion.</p>
+<p><strong>What to do:</strong> Cite the primary/official source for each factual claim.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: Pets need vaccines.</li>
+<li>DO: Per MOCCAE (moccae.gov.ae).</li>
+</ul>
+<h2>6. Credentials / accreditation</h2>
+<p><strong>How we measure it:</strong> We look for licences/accreditations (IPATA/IATA/registered/insured).</p>
+<p><strong>Why it works:</strong> Third-party credentials are trust the reader can verify, not claim.</p>
+<p><strong>What to do:</strong> Show your licences/accreditations (IPATA, IATA, registration).</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: (none shown)</li>
+<li>DO: IPATA member #1234, IATA-certified.</li>
+</ul>
+<h2>7. Un-AI-able specificity</h2>
+<p><strong>How we measure it:</strong> We measure named-entity density (concrete, specific detail).</p>
+<p><strong>Why it works:</strong> Specifics a generic prompt can't produce are the signature of real, authored work.</p>
+<p><strong>What to do:</strong> Add specific names, places, figures only someone who did the work would know.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: We cover international routes.</li>
+<li>DO: Dubai→Heathrow via Emirates cargo; summer embargo Jun–Sep.</li>
+</ul></div></body></html>

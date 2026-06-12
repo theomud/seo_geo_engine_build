@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skill 01 · File 05 — Volume Validation | The Trust Engine</title>
+<style>
+  :root{
+    --paper:#faf6ef; --paper-2:#f3ecdf; --ink:#2b2620; --ink-soft:#5c5346;
+    --line:#e3d8c4; --accent:#b4582f; --accent-2:#c98a3a; --accent-soft:#f6e7d6;
+    --good:#5b7a4f; --warn:#b08400;
+    --serif:Georgia,"Iowan Old Style","Times New Roman",serif;
+    --sans:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box} html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--serif);line-height:1.65;font-size:18px}
+  #progress{position:fixed;top:0;left:0;height:4px;width:0;background:linear-gradient(90deg,var(--accent),var(--accent-2));z-index:100;transition:width .1s ease-out}
+  .layout{display:flex;max-width:1180px;margin:0 auto}
+  nav.side{position:sticky;top:0;align-self:flex-start;height:100vh;width:260px;padding:34px 22px;background:var(--paper-2);border-right:1px solid var(--line);overflow-y:auto;font-family:var(--sans)}
+  nav.side .brand{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:700}
+  nav.side h1{font-size:19px;margin:.4em 0 1.2em;font-family:var(--serif)}
+  nav.side a{display:block;color:var(--ink-soft);text-decoration:none;font-size:14px;padding:7px 10px;border-radius:7px;margin-bottom:2px}
+  nav.side a:hover{background:var(--accent-soft);color:var(--ink)} nav.side a.active{background:var(--accent);color:#fff}
+  main{flex:1;padding:54px 56px 120px;max-width:820px}
+  main header.doc{border-bottom:3px solid var(--accent);padding-bottom:22px;margin-bottom:34px}
+  main header.doc .kicker{font-family:var(--sans);font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);font-weight:700}
+  h2{font-size:28px;margin:48px 0 14px;padding-top:10px} h3{font-size:21px;margin:30px 0 8px;color:var(--accent)}
+  p{margin:.6em 0} .lead{font-size:20px;color:var(--ink-soft)}
+  .card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:20px 24px;margin:18px 0}
+  code,.mono{font-family:"SFMono-Regular",Consolas,monospace;background:var(--paper-2);padding:2px 6px;border-radius:5px;font-size:.86em}
+  table{width:100%;border-collapse:collapse;margin:18px 0;font-family:var(--sans);font-size:14px}
+  th,td{text-align:left;padding:9px 11px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{background:var(--paper-2);font-size:12px;text-transform:uppercase;letter-spacing:.05em;color:var(--ink-soft)}
+  .callout{background:var(--accent-soft);border-radius:12px;padding:18px 22px;margin:20px 0;border:1px solid #ecd8bf}
+  .callout.warn{background:#fbf3d6;border-color:#f0e2af}
+  .steps{counter-reset:s;list-style:none;padding:0}
+  .steps li{counter-increment:s;position:relative;padding:10px 0 10px 52px;border-bottom:1px dashed var(--line)}
+  .steps li::before{content:counter(s);position:absolute;left:0;top:8px;width:38px;height:38px;background:var(--accent);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--sans);font-weight:700;font-size:15px}
+  .crit{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .crit .c{background:#eef3ea;border:1px solid #cfe0c4;border-radius:10px;padding:14px;font-family:var(--sans);font-size:14px}
+  .season{display:flex;gap:12px;margin:16px 0}
+  .season .b{flex:1;border-radius:10px;padding:16px;font-family:var(--sans);font-size:14px}
+  .season .active{background:#eef3ea;border:1px solid #cfe0c4} .season .embargo{background:#f5ece0;border:1px solid #e7d3b6}
+  footer{font-family:var(--sans);font-size:13px;color:var(--ink-soft);border-top:1px solid var(--line);margin-top:60px;padding-top:20px}
+  @media(max-width:880px){nav.side{display:none}main{padding:30px 22px 80px}.crit,.season{grid-template-columns:1fr;flex-direction:column}}
+</style>
+</head>
+<body>
+<div id="progress"></div>
+<div class="layout">
+  <nav class="side">
+    <div class="brand">The Trust Engine</div>
+    <h1>File 05 · Volume Validation</h1>
+    <a href="#signal">Priority, not value</a>
+    <a href="#zero">The zero-volume rule</a>
+    <a href="#planner">Keyword Planner steps</a>
+    <a href="#ah">Authority Hacker case</a>
+    <a href="#dfs">Phase 2 — DataForSEO</a>
+    <a href="#season">Seasonal adjustment</a>
+    <a href="#checklist">6-step checklist</a>
+  </nav>
+  <main>
+    <header class="doc">
+      <div class="kicker">Skill 01 · File 05</div>
+      <h2 style="margin-top:6px">Volume Validation</h2>
+      <p class="lead">Checking real search volume for every validated keyword — and using it correctly.</p>
+    </header>
+
+    <section id="signal">
+      <h2>Volume is a priority signal, not a value signal</h2>
+      <p>The engine tells you <em>what</em> people search. Volume tells you <em>how often</em>. Crucially, that determines content <b>priority</b> — not content <b>value</b>.</p>
+      <div class="callout">A keyword with 10 monthly searches can be worth more than one with 1,000 — if those 10 are people with a confirmed move date and a dog that needs relocating. Never confuse frequency with worth.</div>
+    </section>
+
+    <section id="zero">
+      <h2>The zero-volume rule</h2>
+      <p>A keyword with zero Keyword Planner volume is <b>not</b> automatically rejected. Planner significantly undercounts niche markets. Keep a zero-volume keyword if <em>any</em> of these hold:</p>
+      <div class="crit">
+        <div class="c">Appeared in <b>3+ sources</b> during collection</div>
+        <div class="c">Contains a specific <b>route / location / fear</b> combination</div>
+        <div class="c">Matches real <b>community language</b> from Facebook or Reddit</div>
+        <div class="c">Is a <b>question-format fear</b> keyword</div>
+      </div>
+      <p>Always document the reasoning in the Notes column. Recording rules: exact number if available (e.g. 1,300), <code>&lt; 10</code> if very low, <code>not found</code> if no data — and never delete a keyword for low/zero volume.</p>
+    </section>
+
+    <section id="planner">
+      <h2>Google Keyword Planner — step by step (Phase 1)</h2>
+      <p>Setup: a free Google Ads account at <code>ads.google.com</code>. No spend required.</p>
+      <ol class="steps">
+        <li>Open <b>Keyword Planner → Discover new keywords</b>.</li>
+        <li>Paste batches of <b>100 keywords</b> from Column A.</li>
+        <li>Set <b>location: United Arab Emirates</b>.</li>
+        <li>Set <b>language: English</b>.</li>
+        <li>Export results; match volume back to <b>Column G</b>.</li>
+        <li>Update status: <code>pending-volume</code> → <code>collection-validated</code> or <code>phase-2</code>.</li>
+      </ol>
+    </section>
+
+    <section id="ah">
+      <h2>The Authority Hacker case study</h2>
+      <div class="card">
+        <p>Authority Hacker documented a case where their <b>#1 ranking</b> keyword delivered a fraction of the traffic Keyword Planner predicted — and a <b>"zero-volume" keyword outperformed it</b>.</p>
+        <p style="color:var(--ink-soft)">The lesson: Planner is an estimate built for big-budget advertisers, not niche regulated markets. Treat its numbers as a rough priority hint, never as a gate on whether a real customer exists.</p>
+      </div>
+    </section>
+
+    <section id="dfs">
+      <h2>Phase 2 — automated with DataForSEO</h2>
+      <p>When the system scales past manual checking, DataForSEO replaces this entire file. One API call returns <b>volume + difficulty + CPC</b> alongside suggestions, eliminating the manual Planner step.</p>
+      <table>
+        <tr><th>Item</th><th>Detail</th></tr>
+        <tr><td>Credentials</td><td><code>DATAFORSEO_LOGIN</code> + <code>DATAFORSEO_PASSWORD</code> in <code>.env</code></td></tr>
+        <tr><td>Cost</td><td>≈ $0.001 per keyword at scale</td></tr>
+      </table>
+    </section>
+
+    <section id="season">
+      <h2>Seasonal adjustment — Column H</h2>
+      <p>The Dubai summer cargo embargo splits the year into two content seasons:</p>
+      <div class="season">
+        <div class="b active"><b>Oct–Apr — active season</b><br>Cooler months, airlines carry pet cargo. <b>Cargo / transport keywords → "Oct–Apr".</b> Commercial and route pages convert now.</div>
+        <div class="b embargo"><b>Jun–Sep — embargo season</b><br>Most airlines suspend pet cargo. <b>Regulation / document keywords → "Year-round".</b> Publish evergreen guides that rank in time for the October surge.</div>
+      </div>
+      <p>Urgency keywords spike in April/May — the week before the embargo, people panic ("can I still move my dog before summer Dubai"). That deserves its own urgent-intent page.</p>
+    </section>
+
+    <section id="checklist">
+      <h2>Completion checklist</h2>
+      <ol class="steps">
+        <li>All <code>pending-volume</code> keywords checked in Keyword Planner.</li>
+        <li>Column G populated for all collection-validated keywords.</li>
+        <li>Column H updated — Oct–Apr for cargo, Year-round for regulation.</li>
+        <li>All zero-volume decisions documented in Notes.</li>
+        <li>Status column updated — nothing left as <code>pending-volume</code>.</li>
+        <li>Volume data handed to Skill 05 (Keyword Clustering) for prioritisation.</li>
+      </ol>
+    </section>
+
+    <footer>
+      The Trust Engine — Skill 01, File 05. Volume fills Column G and refines the priority scores from File 04. Runs in parallel with Files 02 and 03.<br>
+      Generated 2026-05-27. Warm-paper house style reproduced from the documented spec (template file not present in project).
+    </footer>
+  </main>
+</div>
+<script>
+  const prog=document.getElementById('progress');
+  addEventListener('scroll',()=>{const h=document.documentElement;prog.style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%';});
+  const links=[...document.querySelectorAll('nav.side a')];const secs=links.map(a=>document.querySelector(a.getAttribute('href')));
+  addEventListener('scroll',()=>{let i=secs.length-1;for(let k=0;k<secs.length;k++){if(secs[k].getBoundingClientRect().top<140)i=k;}links.forEach(l=>l.classList.remove('active'));if(links[i])links[i].classList.add('active');});
+</script>
+</body>
+</html>

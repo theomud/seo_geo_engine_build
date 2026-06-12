@@ -1,0 +1,153 @@
+{
+  "_meta": {
+    "content_format": "blog",
+    "direction": "outbound (Dubai -> destination)",
+    "target_keyword": "Dubai to India Pet Move",
+    "note": "De-branded content asset for site build. Render images from the images/ folder."
+  },
+  "seo": {
+    "title": "Dubai to India Pet Move: The NOC That Makes or Breaks It",
+    "meta_description": "Bringing a pet to India from Dubai needs an import permit / NOC from the Animal Quarantine service, plus microchip and rabies records. Here's the documentation that matters.",
+    "og_title": "Returning to India with your pet: the NOC that decides it",
+    "canonical_path": "/blog/dubai-to-india-pet-return/"
+  },
+  "hero": {
+    "eyebrow": "Route guide · India",
+    "h1": "Returning to India with your pet: the NOC that makes or breaks it",
+    "standfirst": "Moving a pet from Dubai to India needs an AQCS import permit (NOC), plus microchip and rabies records.",
+    "image": "images/dubai-to-india-hero.png",
+    "image_alt": "A pet ready to travel from Dubai to India"
+  },
+  "byline": "By our relocation specialists · 9 June 2026 · reviewed by our IPATA-certified specialists",
+  "key_facts": {},
+  "takeaways": [
+    "The pivotal document is the <strong>AQCS import permit / NOC</strong> — without it, your pet can be refused or held.",
+    "Core records: <strong>ISO microchip</strong> and a valid <strong>rabies vaccination</strong>.",
+    "<strong>Returning residents</strong> typically need to evidence their period abroad — keep documentation ready.",
+    "India applies <strong>limits on the number of pets</strong> per passenger — confirm the current rule.",
+    "Typical cost Dubai → India: roughly <strong>AED 8,000–14,000</strong>, about 3–5 weeks."
+  ],
+  "sections": [
+    {
+      "type": "prose",
+      "heading": "The short answer",
+      "paragraphs": [
+        "To bring a pet into India from Dubai you need an <strong>ISO microchip</strong>, a valid <strong>rabies vaccination</strong>, the standard UAE export documents, and — the pivotal piece — an <strong>import permit / NOC</strong> from India's Animal Quarantine and Certification Service (AQCS).",
+        "It's one of the cheaper routes (typically <strong>AED 8,000–14,000</strong>, around 3–5 weeks), but the paperwork is precise: returning residents must document their stay abroad, and the rules on how many pets you can import are specific. Confirm the current AQCS requirements before you travel."
+      ]
+    },
+    {
+      "type": "prose",
+      "eyebrow": "Where the route is won or lost",
+      "heading": "The documentation that matters",
+      "paragraphs": [
+        "India's process hinges on the import permit / NOC from the AQCS. Around it sit the microchip, the rabies record, and — for returning residents — evidence of your time abroad, which can affect what you're allowed to bring.",
+        "Because the specifics (permit timing, pet limits, any titre requirement) are set by the authorities and can change, confirm the current AQCS requirements before committing to a date. Getting the NOC right is the whole game on this route."
+      ]
+    }
+  ],
+  "story": {
+    "tag": "A common scenario",
+    "lead": "On the India route, the trap is treating the NOC as a formality.",
+    "problem": "A family returning to India books flights and gets the vet records done.",
+    "mistake": "They leave the AQCS import permit / NOC to the last week and don't have their residence documentation ready.",
+    "discovery": "The NOC has its own process and lead time, and the paperwork on time abroad is needed to support it.",
+    "result": "Travel slips while the permit is sorted, with the pet boarded in Dubai in the meantime.",
+    "lesson": "Start the AQCS NOC early and gather your residence documents up front — the permit, not the flight, sets the timeline."
+  },
+  "faqs": [
+    {
+      "q": "What's the most important document for India?",
+      "a": "The import permit / NOC from the Animal Quarantine and Certification Service (AQCS). It has its own lead time, so start it early."
+    },
+    {
+      "q": "How many pets can I bring to India?",
+      "a": "India applies limits on the number of pets a passenger can import, and rules differ for returning residents. Confirm the current rule with AQCS before booking."
+    },
+    {
+      "q": "Will my pet be quarantined in India?",
+      "a": "With the NOC and correct documentation in order, pets are typically not quarantined — but confirm current requirements, as they can change."
+    },
+    {
+      "q": "How much does Dubai → India cost?",
+      "a": "Typically AED 8,000–14,000 — one of the cheaper routes — over about 3–5 weeks, depending on your pet's size and the airline."
+    }
+  ],
+  "sources": [
+    {
+      "authority": "India AQCS",
+      "title": "Animal Quarantine and Certification Service",
+      "url": "https://aqcsindia.gov.in/",
+      "note": "Import permit / NOC"
+    },
+    {
+      "authority": "UAE MOCCAE",
+      "title": "Pet export permits",
+      "url": "https://www.moccae.gov.ae/en/services/import-permit-pets",
+      "note": "UAE export side"
+    },
+    {
+      "authority": "IATA",
+      "title": "Live Animals Regulations",
+      "url": "https://www.iata.org/en/programs/cargo/live-animals/",
+      "note": "Crate + cargo standards"
+    }
+  ],
+  "cta": {
+    "heading": "Returning to India with your pet?",
+    "body": "We start the AQCS NOC early and line up your documentation — so you can plan with confidence and bring your pet home without a last-minute scramble.",
+    "ctas": [
+      {
+        "label": "See Dubai → India cost & process",
+        "url": "/destinations/uae-to-india/",
+        "style": "btn-gold"
+      },
+      {
+        "label": "Compare all destinations",
+        "url": "/destinations/",
+        "style": "btn-ghost"
+      }
+    ],
+    "help_cta": "Not ready to enquire? Download the free pet-relocation checklist — every required document for your route, in order, so nothing is missed."
+  },
+  "images": [
+    {
+      "role": "hero",
+      "file": "images/dubai-to-india-hero.png",
+      "alt": "A pet ready to travel from Dubai to India",
+      "status": "rendered (low-res)"
+    }
+  ],
+  "method": {
+    "structure_logic": "2026 article anatomy: headline (curiosity/result) -> answer-first opening (the liftable answer in the first lines) -> key takeaways -> table of contents -> scannable H2/H3 -> a visual (data table or flow) -> original insight or a story -> FAQ -> official sources -> one help-first CTA. Why: web readers scan ~20-28% of words (Nielsen Norman Group), so the answer is front-loaded; a story is remembered where bare facts are forgotten; one page = one job + a single CTA converts. These choices recur across every source in our research (see SOURCING-METHOD.md).",
+    "geo_seo_rationale": "What we believe helps. GEO (being cited by AI answer engines): answer-first self-contained chunks, cited statistics, official-source citations, consistent entities, FAQ schema -- and citation is decoupled from ranking (~66% of AI-Overview citations come from outside the top-20), so strong content can be cited even before it ranks. SEO: intent-matched title+H1, topical depth, internal links into the money page, visible freshness dates, structured data (Article/FAQ/Breadcrumb/LocalBusiness). HONEST CAVEAT: these are evidence-based best practices, NOT guaranteed results -- ranking also needs off-page authority/backlinks/indexing not built here, and GEO citation is plausible but unproven until measured with a live AI-citation test.",
+    "how_and_why_we_audit": "Each page is scored by a 5-lens auditor -- Website, SEO, GEO, Lead-gen/Trust, Quality -- which together cover the 7-category QA (Helpful, Human, Original, Trustworthy, SEO, GEO, Conversion). Why this way: (1) page-type profiles judge a page against ITS job (a reassurance page is weighted differently from a money page); (2) every check carries an evidence tier (T1 sworn -> T6 practitioner) and a verified-vs-heuristic tag; (3) not-measurable checks are excluded, never zeroed (a coverage->confidence label); (4) risk caps catch keyword-stuffing, thin content, fake schema, no-CTA. The score is an on-page QUALITY PROXY, not a measured ranking/citation outcome.",
+    "what_we_are_sure_of": "100% sure = a fact screenshot-verified against its official source as of a date (see sourcing.verified_100pct) + that the method was applied. NOT sure = that it ranks or gets cited (unproven until the site is live, indexed and measured).",
+    "how_we_verify": "Every factual/regulatory claim is verified against an OFFICIAL source only -- government bodies, recognised standards bodies (IATA), or the operator's own site (e.g. the airline). Never blogs, forums, competitors, or AI. Each verified claim is captured as a full-page SCREENSHOT and logged in a regulatory register with: source, URL, date verified, version, reviewer, and a re-verify-by date (because regulations change). Anything we could not confirm from an official source is HEDGED or flagged 'confirm with [authority]', never asserted (see sourcing.stated_but_unverified). Tooling: a Playwright screenshot verifier with an official-domain allowlist + the regulatory register. Facts are kept separate from advice ('the authority requires X' vs 'we recommend X'). AI never makes the final call -- a human reviews and signs off before publish."
+  },
+  "sourcing": {
+    "how_we_derived_this": "Built from recurring patterns across our research corpus (SOURCING-METHOD.md): answer the fear not the keyword, front-load the answer, official sources only, a route-specific story, single help-first CTA into the money page.",
+    "verified_100pct": [
+      {
+        "fact": "Where this route's facts were screenshot-verified, the evidence is in audit/evidence/* and the regulatory register (e.g. UK tapeworm + XL Bully ban, US CDC dog rules, EU titre timing, IATA, Emirates travel methods).",
+        "source": "see regulatory register",
+        "as_of": "2026-06-09"
+      }
+    ],
+    "stated_but_unverified": [
+      {
+        "claim": "Route-specific cost ranges are a model estimate (stated as ranges)",
+        "action": "Re-validate quarterly vs live airline cargo quotes"
+      },
+      {
+        "claim": "Any specific not screenshot-verified (e.g. Australia DAFF, South Africa DALRRD, India AQCS detail)",
+        "action": "Confirm + screenshot the official source before publish"
+      }
+    ],
+    "confidence": "100% sure of: the screenshot-verified facts (regulatory register) + that the method was applied. NOT sure of: ranking/citation -- unproven until the site is live, indexed and measured."
+  },
+  "lead_magnet": {
+    "label": "Free pet-relocation checklist",
+    "description": "Every document + step for your route, in order, verified against official sources."
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "competitor_name": "MovingBay",
+  "url": "https://movingbay.com",
+  "total_score": 2.5,
+  "scores": {
+    "fear_in_first_100_words": {
+      "score": 0.0,
+      "evidence": "'Moving Pets with Care, Comfort & Confidence' — generic tagline only",
+      "gap": "Zero mention of airport detention, pet seizure, or documentation failure fears"
+    },
+    "official_source_cited": {
+      "score": 0.0,
+      "evidence": "No reference to MOCCAE, UAE IATA, or any regulatory authority anywhere",
+      "gap": "No UAE or Dubai-specific authority cited — MOCCAE, EAD, or airline cargo regulations absent"
+    },
+    "specific_route_named": {
+      "score": 0.5,
+      "evidence": "'Moving From... United Arab Emirates (UAE)' listed in dropdown options",
+      "gap": "No named route details, no Dubai-specific corridor guidance e.g. Dubai to London or Mumbai to Dubai"
+    },
+    "step_by_step_process": {
+      "score": 0.5,
+      "evidence": "'Veterinary Examination, Microchip Identification, Licensing & Permits, Doorstep Assistance' listed",
+      "gap": "Steps are listed as service bullets, not a numbered sequential process with owner actions"
+    },
+    "timeline_included": {
+      "score": 0.0,
+      "evidence": "'How long does pet relocation take?' in FAQ but answer hidden behind collapsed toggle",
+      "gap": "No visible timeline — no days, weeks, or stage-by-stage schedule shown on any page"
+    },
+    "cost_ranges_shown": {
+      "score": 0.0,
+      "evidence": "'How much does pet relocation cost in Bangalore?' in FAQ but collapsed — no figures visible",
+      "gap": "Zero cost ranges, estimates, or pricing tiers visible anywhere on the page"
+    },
+    "common_mistakes": {
+      "score": 0.0,
+      "evidence": "No mention of mistakes, rejections, failed documentation, or what to avoid",
+      "gap": "No common mistakes section — no warnings about breed bans, missing titre tests, or wrong crate sizes"
+    },
+    "original_visuals": {
+      "score": 0.0,
+      "evidence": "No image descriptions, no pet photos, no process diagrams referenced in content",
+      "gap": "No original visuals — no real pet photos, no route maps, no crate or documentation imagery"
+    },
+    "cta_feels_like_help": {
+      "score": 1.0,
+      "evidence": "'Ask our moving expert' and 'Talk to an Expert' CTAs used alongside 'Request Quote'",
+      "gap": "Minor — expert CTAs exist but lack specificity e.g. 'Ask about Dubai import rules'"
+    },
+    "would_you_trust_this": {
+      "score": 0.5,
+      "evidence": "'500+ Pets Relocated' on homepage vs '1000+' on About and Service pages — inconsistent",
+      "gap": "Conflicting stats undermine credibility; no testimonials, no case studies, no named partners shown"
+    }
+  },
+  "strongest_asset": "Multiple soft-help CTAs ('Ask our moving expert', 'Talk to an Expert') reduce friction slightly above pure sales pressure",
+  "biggest_gap": "No fear addressed around airport pet detention, zero cost transparency, no official UAE regulatory sources cited, and contradictory statistics destroy trust",
+  "content_opportunity": "Dubai Pet Import Guide: What Actually Happens at the Airport (and How to Make Sure Your Dog Comes Home With You)",
+  "content_brief": "Pet owners moving to Dubai are terrified their dog will be seized at the airport and never returned — unlike MovingBay, we show you the exact MOCCAE documentation checklist, breed approval steps, and what our handlers do at DXB to ensure your pet walks out with you."
+}

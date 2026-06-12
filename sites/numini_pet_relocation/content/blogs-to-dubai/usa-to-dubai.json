@@ -1,0 +1,191 @@
+{
+  "_meta": {
+    "produced_by": "Numini AI Writer — official sources + recurring research patterns (SOURCING-METHOD.md)",
+    "produced": "2026-06-09",
+    "content_format": "blog (inbound route, cluster under /moving-to-dubai/)",
+    "blog_objective": "lead_generation",
+    "funnel_stage": "TOFU→MOFU",
+    "target_keyword": "moving a pet from the USA to Dubai",
+    "secondary_keywords": [
+      "USA to Dubai pet relocation",
+      "ship dog from US to UAE",
+      "USDA export pet to Dubai"
+    ],
+    "intent": "informational/commercial",
+    "primary_fear": "I'm afraid I'll miss a US export endorsement and my pet won't be allowed to fly",
+    "author_byline": "By the PawRoute relocation team · reviewed by our IPATA-certified specialists · updated June 2026"
+  },
+  "seo": {
+    "title": "Moving a Pet From the USA to Dubai: The Honest Guide",
+    "meta_description": "From the USA to Dubai you need a USDA-endorsed export health certificate, ISO microchip, valid rabies vaccine and a MOCCAE import permit. No UAE quarantine when compliant.",
+    "og_title": "USA to Dubai with a pet — the USDA step people miss",
+    "canonical_path": "/blog/usa-to-dubai-pet-relocation/"
+  },
+  "hero": {
+    "eyebrow": "Route guide · USA → Dubai",
+    "h1": "Moving your pet from the USA to Dubai",
+    "standfirst": "The step Americans miss is the USDA endorsement on the health certificate. Get that and the UAE permit right and the rest is routine.",
+    "image": "images/pawroute/to-dubai/usa-to-dubai-hero.png",
+    "image_alt": "A dog ready to fly from the USA to Dubai beside a travel crate"
+  },
+  "byline": "By the PawRoute relocation team · reviewed by our IPATA-certified specialists · updated June 2026.",
+  "key_facts": {
+    "answer": "From the USA to the UAE you need an ISO microchip, a valid rabies vaccination, a health certificate endorsed by USDA APHIS, and a MOCCAE import permit arranged before travel. Compliant pets are not quarantined in the UAE.",
+    "stats": [
+      {
+        "label": "UAE quarantine",
+        "value": "None (if compliant)"
+      },
+      {
+        "label": "US-side step people miss",
+        "value": "USDA APHIS endorsement"
+      },
+      {
+        "label": "Flight",
+        "value": "Cargo or checked baggage (Emirates)"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "type": "prose",
+      "heading": "The US side — the USDA endorsement",
+      "paragraphs": [
+        "A US-issued pet health certificate usually has to be endorsed by USDA APHIS before it's valid for export. This is the step owners most often miss. Confirm the current process and your accredited vet via the USDA APHIS pet-travel pages before booking."
+      ]
+    },
+    {
+      "type": "prose",
+      "heading": "The UAE side — the import permit",
+      "paragraphs": [
+        "The UAE requires a MOCCAE import permit (before travel), the microchip and a valid rabies vaccination. Compliant pets aren't quarantined. Confirm permit timing and your breed against the UAE restricted list — full detail on the Moving to Dubai hub."
+      ]
+    },
+    {
+      "type": "prose",
+      "heading": "How your pet flies in",
+      "paragraphs": [
+        "A US→Dubai journey is long, so on Emirates your pet usually travels as manifest cargo (Emirates Pets) rather than checked baggage, because the total journey typically exceeds the 17-hour baggage limit."
+      ]
+    }
+  ],
+  "story": {
+    "tag": "A common scenario",
+    "lead": "On USA → Dubai, the endorsement is the trap.",
+    "problem": "An owner gets the health certificate from their vet and books the flight.",
+    "mistake": "They don't get it endorsed by USDA APHIS in the required window.",
+    "discovery": "An un-endorsed certificate isn't accepted for export.",
+    "result": "A scramble to endorse it in time, or a re-book.",
+    "lesson": "For the USA, build the USDA endorsement into the timeline — it's the step that catches people."
+  },
+  "faqs": [
+    {
+      "q": "Do I need a USDA endorsement?",
+      "a": "Typically yes — US export health certificates usually require USDA APHIS endorsement. Confirm the current requirement for the UAE with USDA APHIS before travel."
+    },
+    {
+      "q": "Will my pet be quarantined in the UAE?",
+      "a": "No — with a valid MOCCAE import permit, microchip and rabies vaccination, pets aren't quarantined on arrival. Confirm current MOCCAE rules."
+    },
+    {
+      "q": "Cabin or cargo?",
+      "a": "On Emirates pets travel in the hold; on a long US→Dubai routing that's usually manifest cargo (journey over 17 hours), not checked baggage."
+    }
+  ],
+  "sources": [
+    {
+      "authority": "USDA APHIS",
+      "title": "Pet travel from the US to another country",
+      "url": "https://www.aphis.usda.gov/pet-travel",
+      "note": "US export side"
+    },
+    {
+      "authority": "UAE MOCCAE",
+      "title": "Pet import permits",
+      "url": "https://www.moccae.gov.ae/en/services/import-permit-pets",
+      "note": "UAE import side"
+    },
+    {
+      "authority": "Emirates",
+      "title": "Travelling with animals",
+      "url": "https://www.emirates.com/english/help/faqs/what-are-the-rules-and-charges-for-travelling-with-animals/",
+      "note": "Cabin/baggage/cargo + 17h"
+    },
+    {
+      "authority": "IATA",
+      "title": "Live Animals Regulations",
+      "url": "https://www.iata.org/en/programs/cargo/live-animals/",
+      "note": "Crate + cargo"
+    }
+  ],
+  "cta": {
+    "heading": "Moving from the USA to Dubai?",
+    "body": "We handle the USDA endorsement timing, the MOCCAE permit and the cargo booking end to end.",
+    "primary": {
+      "label": "Get my USA → Dubai quote",
+      "url": "/#quote"
+    }
+  },
+  "internal_links": [
+    {
+      "anchor": "Moving to Dubai — full UAE import guide",
+      "url": "/moving-to-dubai/"
+    },
+    {
+      "anchor": "How pets fly (cabin/baggage/cargo)",
+      "url": "/blog/how-pets-fly-from-dubai-cabin-baggage-cargo/"
+    }
+  ],
+  "images": [
+    {
+      "role": "hero",
+      "file": "images/pawroute/to-dubai/usa-to-dubai-hero.png",
+      "alt": "A dog ready to fly from the USA to Dubai beside a travel crate",
+      "prompt": "A calm dog beside a labelled IATA crate at a bright US airport, warm reassuring light, photorealistic, no text",
+      "width": 768,
+      "height": 512,
+      "status": "to-render (low-res)"
+    }
+  ],
+  "sourcing": {
+    "how_we_derived_this": "Same recurring patterns (SOURCING-METHOD.md): fear-first/answer-first, official-sources-only, route-specific story, funnel link to /moving-to-dubai/.",
+    "recurring_principles": [
+      "Answer the fear",
+      "Front-load the answer",
+      "Official sources only",
+      "Original story",
+      "Funnel link + single CTA"
+    ],
+    "verified_100pct": [
+      {
+        "fact": "Emirates pet travel methods + 17h rule",
+        "source": "emirates.com",
+        "evidence": "audit/evidence/travel-methods/emirates-animals-faq.png",
+        "as_of": "2026-06-09"
+      },
+      {
+        "fact": "IATA Live Animals Regulations",
+        "source": "iata.org",
+        "evidence": "audit/evidence/travel-methods/skycargo-emirates-pets.png",
+        "as_of": "2026-06-09"
+      },
+      {
+        "fact": "UAE import (MOCCAE): permit valid 90 days; permanent microchip matching the cert; rabies ≥21 days (first/lapsed dose, none for a valid booster); titre only from high-risk countries (≥0.5 IU/ml, valid 365d); min age 12wk (low-risk)/15wk (high-risk); internal+external parasite doses within 14 days; max 2 pets/person/year; fees AED 200 permit, AED 500/dog & AED 250/cat release; no quarantine if compliant",
+        "source": "moccae.gov.ae",
+        "evidence": "audit/evidence/uae-import-export/moccae-pets-full.png",
+        "as_of": "2026-06-09"
+      }
+    ],
+    "stated_but_unverified": [
+      {
+        "claim": "USDA APHIS endorsement requirement for UAE export",
+        "action": "Confirm + screenshot on aphis.usda.gov"
+      },
+      {
+        "claim": "UAE specific banned-breed list",
+        "action": "Confirm via Federal Law 22/2016 executive regulations + Dubai Municipality (legal basis named on MOCCAE; list not yet captured)"
+      }
+    ],
+    "confidence": "100% sure of: Emirates/IATA flight mechanics AND the UAE import requirements (MOCCAE, screenshot-verified 2026-06-09 — permit 90d, microchip, rabies 21d, titre high-risk only, fees, 2-pet limit, no quarantine). Still to confirm: the specific UAE banned-breed list + this route's origin-export specifics. NOT sure of: ranking/citation (unproven until the site is live, indexed and measured)."
+  }
+}

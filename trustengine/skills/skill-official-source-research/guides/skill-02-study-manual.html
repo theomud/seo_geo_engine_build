@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skill 02 — Official Source Research | The Trust Engine</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#faf6ef; --paper-2:#f3ecdf; --ink:#2b2620; --ink-soft:#5c5346;
+    --line:#e3d8c4; --accent:#b4582f; --accent-2:#c98a3a; --accent-soft:#f6e7d6;
+    --good:#5b7a4f; --warn:#b08400; --bad:#aa3a2a;
+    --serif:'Crimson Pro',Georgia,"Times New Roman",serif;
+    --sans:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    --display:'Bebas Neue',Impact,sans-serif;
+    --mono:'JetBrains Mono',"SFMono-Regular",Consolas,monospace;
+  }
+  *{box-sizing:border-box} html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--serif);line-height:1.65;font-size:18px}
+  #progress{position:fixed;top:0;left:0;height:4px;width:0;background:linear-gradient(90deg,var(--accent),var(--accent-2));z-index:100;transition:width .1s ease-out}
+  .layout{display:flex;max-width:1180px;margin:0 auto}
+  nav.side{position:sticky;top:0;align-self:flex-start;height:100vh;width:260px;padding:34px 22px;background:var(--paper-2);border-right:1px solid var(--line);overflow-y:auto;font-family:var(--sans)}
+  nav.side .brand{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:700}
+  nav.side h1{font-size:23px;margin:.4em 0 1.2em;font-family:var(--display);letter-spacing:.03em}
+  nav.side a{display:block;color:var(--ink-soft);text-decoration:none;font-size:14px;padding:7px 10px;border-radius:7px;margin-bottom:2px}
+  nav.side a:hover{background:var(--accent-soft);color:var(--ink)} nav.side a.active{background:var(--accent);color:#fff}
+  main{flex:1;padding:54px 56px 120px;max-width:820px}
+  main header.doc{border-bottom:3px solid var(--accent);padding-bottom:22px;margin-bottom:34px}
+  main header.doc .kicker{font-family:var(--sans);font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);font-weight:700}
+  h1,h2{font-family:var(--display);letter-spacing:.02em}
+  h2{font-size:34px;margin:48px 0 14px;padding-top:10px} h3{font-size:21px;margin:30px 0 8px;color:var(--accent)}
+  p{margin:.6em 0} .lead{font-size:20px;color:var(--ink-soft)}
+  .card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:20px 24px;margin:18px 0;box-shadow:0 1px 0 rgba(0,0,0,.02)}
+  .pill{display:inline-block;font-family:var(--sans);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;padding:3px 10px;border-radius:20px;margin-right:6px}
+  .pill.verified{background:#e6efde;color:var(--good)} .pill.unver{background:#f5ece0;color:var(--warn)} .pill.conflict{background:#f6dccd;color:var(--accent)} .pill.pending{background:#eee0d2;color:var(--ink-soft)}
+  code,.mono{font-family:var(--mono);background:var(--paper-2);padding:2px 6px;border-radius:5px;font-size:.82em}
+  table{width:100%;border-collapse:collapse;margin:18px 0;font-family:var(--sans);font-size:14px}
+  th,td{text-align:left;padding:9px 11px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{background:var(--paper-2);font-size:12px;text-transform:uppercase;letter-spacing:.05em;color:var(--ink-soft)}
+  .callout{background:var(--accent-soft);border-radius:12px;padding:18px 22px;margin:20px 0;border:1px solid #ecd8bf}
+  .callout.warn{background:#fbf3d6;border-color:#f0e2af}
+  .gates{counter-reset:g;list-style:none;padding:0}
+  .gates li{counter-increment:g;position:relative;padding:14px 0 14px 60px;border-bottom:1px dashed var(--line)}
+  .gates li::before{content:counter(g);position:absolute;left:0;top:13px;width:42px;height:42px;background:var(--accent);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--sans);font-weight:700;font-size:16px}
+  .gates b{display:block;font-family:var(--sans);font-size:15px;margin-bottom:4px}
+  .hierarchy{counter-reset:h;list-style:none;padding:0}
+  .hierarchy li{counter-increment:h;position:relative;padding:10px 0 10px 38px}
+  .hierarchy li::before{content:counter(h);position:absolute;left:0;top:8px;width:28px;height:28px;background:var(--paper-2);color:var(--accent);border:1px solid var(--accent);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--sans);font-weight:700;font-size:13px}
+  .row{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 18px;margin:10px 0;font-size:16px}
+  .row .meta{font-family:var(--sans);font-size:12px;color:var(--ink-soft);margin-bottom:4px;text-transform:uppercase;letter-spacing:.05em}
+  .row .quote{font-style:italic;color:var(--ink-soft);margin:6px 0;padding-left:14px;border-left:3px solid var(--accent-2)}
+  .row .plain{font-weight:600}
+  /* interactive verifier */
+  .verifier{background:#fff;border:2px solid var(--accent);border-radius:14px;padding:24px;margin:24px 0;font-family:var(--sans)}
+  .verifier .step{padding:10px 0;border-bottom:1px dashed var(--line)}
+  .verifier .step:last-child{border-bottom:0}
+  .verifier label{display:block;font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-soft);font-weight:700;margin-bottom:4px}
+  .verifier input,.verifier textarea{width:100%;border:1px solid var(--line);border-radius:8px;padding:10px;font-size:15px;font-family:var(--serif)}
+  .verifier textarea{min-height:60px}
+  .verifier .row-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .verifier .actions{margin-top:14px}
+  .verifier button{background:var(--accent);color:#fff;border:0;padding:10px 16px;border-radius:9px;cursor:pointer;font-weight:600}
+  .verifier .out{margin-top:12px;background:var(--paper-2);border-radius:9px;padding:12px;font-size:14px;display:none}
+  /* source-evidence gallery */
+  .evidence{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:22px 0}
+  .ev{background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden;display:flex;flex-direction:column}
+  .ev .shot{width:100%;height:230px;object-fit:cover;object-position:top;border-bottom:1px solid var(--line);background:var(--paper-2);display:block}
+  .ev .shot.dead{height:230px;display:flex;align-items:center;justify-content:center;color:var(--bad);font-family:var(--sans);font-weight:700;font-size:15px;text-align:center;padding:20px;background:#f6dccd}
+  .ev .cap{padding:12px 16px;font-family:var(--sans);font-size:13px;color:var(--ink-soft)}
+  .ev .cap b{display:block;color:var(--ink);font-size:14px;margin-bottom:3px}
+  .ev .cap .fn{font-family:var(--mono);font-size:11px;color:var(--ink-soft);word-break:break-all;margin-top:6px;display:block}
+  footer{font-family:var(--sans);font-size:13px;color:var(--ink-soft);border-top:1px solid var(--line);margin-top:60px;padding-top:20px}
+  @media(max-width:880px){nav.side{display:none}main{padding:30px 22px 80px}.verifier .row-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div id="progress"></div>
+<div class="layout">
+  <nav class="side">
+    <div class="brand">The Trust Engine</div>
+    <h1>Skill 02 · Official Source Research</h1>
+    <a href="#purpose">Why this skill exists</a>
+    <a href="#fields">The 5 mandatory fields</a>
+    <a href="#statuses">Statuses · Verified / Unverifiable / Conflicting</a>
+    <a href="#hierarchy">The source-authority hierarchy</a>
+    <a href="#gates">The 5 gates of Verified</a>
+    <a href="#manual">The manual process</a>
+    <a href="#audit">The audit — verifying the verifier</a>
+    <a href="#maintenance">Keeping the Bank current</a>
+    <a href="#findings">Real findings — Dubai pet relocation</a>
+    <a href="#evidence">Source evidence — the screenshots</a>
+    <a href="#recipe">The manual verification recipe (File 05)</a>
+    <a href="#try">Walk one claim through yourself</a>
+  </nav>
+  <main>
+    <header class="doc">
+      <div class="kicker">Skill 02 · Official Source Research</div>
+      <h2 style="margin-top:6px">Build the Source Bank</h2>
+      <p class="lead">Every regulation claim verified against a named official source — URL, date, exact quote, plain English. The only approved source of truth for anyone publishing in a regulated market.</p>
+    </header>
+
+    <section id="purpose">
+      <h2>Why this skill exists</h2>
+      <p>In regulated service markets the cost of wrong information is not a lost sale — it is real harm. A pet owner who follows a confidently-written but incorrect page may have their dog confiscated at a border. A patient who reads bad procedure timing may miss a treatment window. The customer's dominant feeling on arrival at a page is the same in every regulated niche:</p>
+      <div class="callout" style="font-family:var(--serif);font-size:20px"><em>"Every website says something different — I don't know who to trust."</em></div>
+      <p>Most content operations skip the step that solves this. Writers paraphrase competitors, competitors paraphrase each other, and the conventional wisdom of a niche detaches from the actual regulations. The Source Bank is the discipline of breaking that loop. **The first provider to systematically prove every claim against an official source wins the market.**</p>
+    </section>
+
+    <section id="fields">
+      <h2>The 5 mandatory fields</h2>
+      <p>Every row in the Source Bank carries five fields. If any is missing, the row is not Verified.</p>
+      <table>
+        <tr><th>Field</th><th>What it is</th></tr>
+        <tr><td><b>Claim</b></td><td>The exact statement that will appear on a page (e.g. "rabies titer test results take 2–3 weeks").</td></tr>
+        <tr><td><b>Official URL</b></td><td>The government, airline, or industry-body page that confirms the claim.</td></tr>
+        <tr><td><b>Date checked</b></td><td>The date the URL was last visited and the quote re-verified.</td></tr>
+        <tr><td><b>Exact quote</b></td><td>The verbatim text from the official source — copy/paste, never paraphrased.</td></tr>
+        <tr><td><b>Plain English</b></td><td>The same fact written in a sentence a customer can understand.</td></tr>
+      </table>
+      <p>The <b>Plain English</b> line is what writers paste into pages. The <b>Quote</b> is what the audit checks against. Both must mean the same thing — if the regulator says "must," the plain English does not say "may."</p>
+    </section>
+
+    <section id="statuses">
+      <h2>Statuses — three outcomes plus their failure variants</h2>
+      <div class="card"><span class="pill verified">Verified</span><b>Official source visited, exact quote recorded, plain English written.</b> Content writers may use the plain-English sentence and link the official URL. This is the default published state.</div>
+      <div class="card"><span class="pill conflict">Conflicting</span><b>Community-stated value differs from the officially-published value.</b> The bank records both. Lead the page with the official value; address the discrepancy explicitly: <em>"You may see this quoted as 1,300 AED in online communities — the officially published rate is X, last verified on [date]."</em> These are some of the most valuable pages a writer can produce — they are where competitor pages are silently wrong and yours is loudly right.</div>
+      <div class="card"><span class="pill unver">Unverifiable</span><b>No official publication of the claim exists on the regulator, the destination authority, or an operator.</b> This is a real finding. Hedge the language: <em>"Community reports consistently put the cost in the 700–1,300 AED range. No officially published figure currently exists."</em> Re-check every 90 days.</div>
+      <div class="card"><span class="pill pending">Pending — variants</span><b>The engine couldn't reliably reach the source.</b> Either the URL didn't resolve / SSL was broken (<code>Pending — load failed</code> or <code>Pending — Manual</code>) or the parser couldn't extract enough text (<code>Manual review required</code>). All Pending variants <b>must</b> be resolved by a human in a real browser before the row can be Verified.</div>
+    </section>
+
+    <section id="hierarchy">
+      <h2>The source-authority hierarchy</h2>
+      <p>For every claim, walk this list and stop at the first authority that publishes the answer. If none publish it — the row is Unverifiable.</p>
+      <ol class="hierarchy">
+        <li><b>The regulating government body.</b> For UAE pet import/export: MOCCAE. For each destination country: that country's animal-health authority.</li>
+        <li><b>The destination country's authority.</b> UK: APHA / gov.uk. India: AQCS / DAHD. Australia: DAFF. Canada: CFIA. South Africa: DALRRD. US: USDA APHIS.</li>
+        <li><b>The airline operating the route.</b> Emirates / Etihad / Turkish / Royal Jordanian / Air Cairo — for fees, cabin/cargo rules, breed restrictions on that specific carrier.</li>
+        <li><b>A recognised industry body</b> — only when no government source exists. IPATA for relocation standards.</li>
+        <li><b>Mark Unverifiable.</b> Do not substitute a competitor or a forum post.</li>
+      </ol>
+      <div class="callout">If a claim falls between authorities, the regulator wins. An operator's published price is acceptable only if the operator is listed on the regulator's page.</div>
+    </section>
+
+    <section id="gates">
+      <h2>The 5 gates a row must pass to be marked Verified</h2>
+      <ol class="gates">
+        <li><b>Source-authority gate</b>A <code>.gov</code> site, the destination authority, the airline that operates the route, or a recognised industry body. A blog, agency, news outlet, or competitor does not pass.</li>
+        <li><b>Verbatim-quote gate</b>The Exact Quote field contains text copied directly from the page, with original punctuation. No paraphrase, no ellipsis hiding load-bearing words.</li>
+        <li><b>Plain-English fidelity gate</b>The Plain English sentence says the same thing as the quote. A claim cannot get easier than the source intended. If the regulator says "may," the Plain English does not say "will."</li>
+        <li><b>Date gate</b>Date checked is within the last <b>90 days</b> for active rows.</li>
+        <li><b>Screenshot gate</b>A full-page screenshot of the source page is saved to <code>skill-02/data/source-screenshots/[country]-[authority]-[claim-id]-[date].png</code> — the proof file naming.</li>
+      </ol>
+      <p>A row that fails any gate is downgraded to Pending and re-verified.</p>
+    </section>
+
+    <section id="manual">
+      <h2>The manual process — always do this first</h2>
+      <ol>
+        <li><b>List every claim.</b> Pull every regulation claim from community research, competitor research, and any conflict pairs already known.</li>
+        <li><b>Map each claim to a candidate URL.</b> Walk the authority hierarchy. URL discovery is manual — never trust a search engine's first result for a niche brand.</li>
+        <li><b>Visit the URL.</b> Open the page in a real browser. Find the exact phrase. Copy the quote verbatim. Take a screenshot.</li>
+        <li><b>Write the plain English.</b> One customer-readable sentence saying the same thing as the quote.</li>
+        <li><b>Record date checked + status</b> — Verified / Unverifiable / Conflicting.</li>
+        <li><b>Repeat</b> for every claim, working from the priority list.</li>
+      </ol>
+      <p>After at least five claims have been verified by hand, the automation spec in <code>files/04-automation-spec.md</code> can take over the bulk of repeated verifications. Manual never replaces automation entirely — interpretation of legal language, resolving conflicts between authorities, and deciding when to soften a claim from "must" to "may" remain human work.</p>
+    </section>
+
+    <section id="audit">
+      <h2>The audit — verifying the verifier</h2>
+      <p>After every automation run, a sub-agent samples <b>20%</b> of the rows (minimum 5) and re-verifies them independently. It reads only the Claim and Official URL — never the existing Quote or Plain English — re-fetches the page, extracts the relevant text itself, and compares.</p>
+      <p>Pass threshold: <b>90%</b> of sampled rows pass all four checks (URL still official · quote still present · plain English matches · status assignment correct). Below 90% → halt content writing on those categories until rows are re-verified.</p>
+    </section>
+
+    <section id="maintenance">
+      <h2>Keeping the Bank current</h2>
+      <table>
+        <tr><th>Trigger</th><th>Action</th></tr>
+        <tr><td>Date checked &gt; 90 days</td><td>Re-verify the row; refresh date if quote is unchanged; downgrade to Pending if changed.</td></tr>
+        <tr><td>Regulator publishes a rule change</td><td>Re-verify all rows in the affected category within 7 days.</td></tr>
+        <tr><td>Audit pass rate &lt; 90%</td><td>Halt content on affected categories; re-run manual verification on every failed row.</td></tr>
+        <tr><td>New niche launched</td><td>Run the full skill from scratch — authorities change per market.</td></tr>
+      </table>
+    </section>
+
+    <section id="findings">
+      <h2>Real findings — Dubai pet relocation, Phase 1 (2026-05-28)</h2>
+      <p>Out of 48 Phase 1 claims (23 UAE-side + 5 destinations × 5 facets), the engine produced:</p>
+      <table>
+        <tr><th>Outcome</th><th>Count</th><th>Meaning</th></tr>
+        <tr><td><span class="pill verified">Verified</span></td><td>6</td><td>5 of 5 UK facets via gov.uk · 1 Canada landing claim via CFIA</td></tr>
+        <tr><td><span class="pill unver">Unverifiable</span></td><td>20</td><td>MOCCAE homepage doesn't carry specific fee/timeline detail; partial Canada</td></tr>
+        <tr><td><span class="pill pending">Pending</span></td><td>22</td><td>Australia / India / South Africa government sites blocked headless; some MOCCAE deep pages cert-broken</td></tr>
+      </table>
+      <p><b>The clearest example of the Source Bank working as designed:</b></p>
+      <div class="row">
+        <div class="meta">C-026 · United Kingdom · APHA / gov.uk · Verified</div>
+        <div><b>Claim:</b> UK quarantine rules for incoming pets</div>
+        <div class="quote">"If you do not follow the required rules when bringing a pet into Great Britain, your pet may be placed in quarantine for up to 4 months, or refused entry."</div>
+        <div class="plain">Plain English: Follow the rules or your pet faces up to 4 months quarantine — or refusal at the border.</div>
+      </div>
+      <p><b>The clearest example of a Conflicting / pricing case the bank surfaces:</b></p>
+      <div class="row">
+        <div class="meta">C-001 · UAE · MOCCAE · Unverifiable (Pricing)</div>
+        <div><b>Claim:</b> Rabies titer test costs 700 AED in the UAE</div>
+        <div class="plain" style="color:var(--bad)">No official source publishes this cost. Community-sourced price range: 700 AED. Verify directly with MOCCAE or the testing laboratory before publishing. Conflicts with C-002 (~1,300 AED, IrbisKat).</div>
+      </div>
+      <p>This is the bank's most valuable kind of row — community gives a number, the regulator publishes none, and the content writer is given precise language to hedge with while still helping the reader.</p>
+    </section>
+
+    <section id="evidence">
+      <h2>Source evidence — the screenshots are the proof</h2>
+      <p>A quote typed into a spreadsheet is only an <em>assertion</em>. The thing that makes a Source Bank row trustworthy to an auditor — or to a customer's lawyer — is a dated, full-page screenshot of the actual page, captured the day it was read. Every reachable source in this skill has one, saved to <code>skill-02/data/source-screenshots/</code> under the naming convention <code>[country]-[authority]-[claim-id]-[date].png</code>.</p>
+      <p>On <b>2026-05-29</b> all 32 unique source URLs were re-opened in a real, headed browser (Playwright + Chromium 148, <code>ignore_https_errors=True</code>, waiting for <code>networkidle</code>) and captured full-page. <b>30 of 32 URLs captured cleanly (143 of 153 claim rows).</b> The two that failed — Belgium and Jordan — could not be reached even in a real browser, and that failure is itself recorded as evidence.</p>
+
+      <div class="callout">The key idea most teams miss: <b>a screenshot of an official page that does NOT contain the claim is still proof.</b> It proves the regulator is silent — which is exactly why a community-sourced number must be hedged, not asserted. The absence is the finding.</div>
+
+      <h3>What each status looks like as evidence</h3>
+      <div class="evidence">
+        <div class="ev">
+          <img class="shot" src="../data/source-screenshots/UK-gov-uk-C-024-2026-05-28.png" alt="GOV.UK bring a pet to Great Britain page">
+          <div class="cap"><b><span class="pill verified" style="margin:0 6px 0 0">Verified</span> C-024 · UK · gov.uk</b>The page loads and its text <em>explicitly</em> states the quarantine rule. The screenshot shows the claim on the official page — copy the verbatim quote, record the date, link the URL.<span class="fn">UK-gov-uk-C-024-2026-05-28.png · 589 KB</span></div>
+        </div>
+        <div class="ev">
+          <img class="shot" src="../data/source-screenshots/UAE-moccae-gov-C-001-2026-05-28.png" alt="MOCCAE import permit for pets page">
+          <div class="cap"><b><span class="pill unver" style="margin:0 6px 0 0">Unverifiable</span> C-001 · UAE · MOCCAE</b>The official page loads <em>perfectly</em> (1.18 MB capture) — but nowhere on it is the 700 AED titer-test cost. The screenshot proves the regulator publishes no such figure, so the community number must be hedged, never stated as fact.<span class="fn">UAE-moccae-gov-C-001-2026-05-28.png · 1.18 MB</span></div>
+        </div>
+        <div class="ev">
+          <img class="shot" src="../data/source-screenshots/UAE-etihad-com-C-015-2026-05-28.png" alt="Etihad travelling with pets page">
+          <div class="cap"><b><span class="pill conflict" style="margin:0 6px 0 0">Conflicting</span> C-015 · UAE · Etihad</b>The official page shows a current <b>USD 399</b> promotional cabin fee — the community claim said <b>USD 1,500</b>. The screenshot captures the official value so the page can lead with it and name the discrepancy out loud.<span class="fn">UAE-etihad-com-C-015-2026-05-28.png · 274 KB</span></div>
+        </div>
+        <div class="ev">
+          <div class="shot dead">❌ FAILED — net::ERR_HTTP2_PROTOCOL_ERROR<br>domain unreachable in a real browser</div>
+          <div class="cap"><b><span class="pill pending" style="margin:0 6px 0 0">FAILED</span> C-094 · Belgium · health.belgium.be</b>No screenshot exists because the domain itself will not load even in a real browser. The FAILED state is logged in <code>SOURCE-INDEX.md</code> — the honest record that this source could not be confirmed, which is why the row stays Unverifiable.<span class="fn">(no file — capture FAILED)</span></div>
+        </div>
+      </div>
+      <p>The two columns of the index that carry the proof are <b>Screenshot File</b> (the <code>.png</code> name) and <b>Screenshot Bytes</b> (its on-disk size). A real size means a real render. A <code>—</code> next to a FAILED note means the page could not be reached. Both are kept; neither is faked.</p>
+    </section>
+
+    <section id="recipe">
+      <h2>The manual verification recipe (File 05)</h2>
+      <p>Screenshots are only as good as the URLs behind them — and government URLs rot constantly. <code>files/05-manual-verification-recipe.md</code> is the method that turned 47 dead links into verified findings during the Dubai proof run. The core insight:</p>
+      <div class="callout"><b>A failed URL almost never means the information doesn't exist. It means you have the wrong address for it.</b> So throw the stored link away and re-derive the correct one from two things that never go stale — the name of the authority and what the page is about.</div>
+
+      <h3>The 4-slot search formula</h3>
+      <p>One query per authority, built from four slots plus a filter:</p>
+      <div class="card mono" style="font-family:'SFMono-Regular',Consolas,monospace;font-size:15px">[authority name] + [country] + [content type] + [local-language term] + site:[official domain]</div>
+      <table>
+        <tr><th>Slot</th><th>Worked example</th><th>Why it matters</th></tr>
+        <tr><td>Authority + country + content type</td><td><code>Germany BMEL bringing pet dog cat import</code></td><td>The authority name never goes stale even when the domain does</td></tr>
+        <tr><td>Local-language term</td><td><code>Reisen mit Heimtieren</code> · <code>εισαγωγή σκύλου γάτας</code></td><td>The real page is often only indexed under the native phrase — English misses it</td></tr>
+        <tr><td><code>site:</code> filter</td><td><code>site:bmel.de</code></td><td>Forces an official result above the relocation blogs</td></tr>
+      </table>
+      <p>The two slots most researchers skip — the <b>local-language term</b> and the <b>site: filter</b> — are the two that make the difference.</p>
+
+      <h3>The 3-outcome classify loop</h3>
+      <p>Run each candidate URL in a <b>real browser</b>, because a real browser separates three outcomes a headless script blurs into one "fail":</p>
+      <ol class="hierarchy">
+        <li><b>Loads with content</b> → the URL is correct → run the claim-matching test → Verified candidate.</li>
+        <li><b>Loads the wrong page</b> (404, homepage, generic ministry page) → wrong page, <em>not</em> wrong domain → modify the query and search again. <span style="color:var(--ink-soft)">(This is how the live Etihad and flydubai 404s were caught.)</span></li>
+        <li><b>Domain unreachable</b> (DNS failure, timeout, persistent SSL block) → mark Unverifiable, note the exact failure type. <span style="color:var(--ink-soft)">(Belgium, Jordan, the old South Africa domain.)</span></li>
+      </ol>
+
+      <h3>The claim-matching test</h3>
+      <p>Once the right page is open, every specific claim faces one question — <b>does the page text actually say this?</b></p>
+      <table>
+        <tr><th>What the page shows</th><th>Status</th></tr>
+        <tr><td>Says it explicitly</td><td><span class="pill verified">Verified</span> — copy the exact quote</td></tr>
+        <tr><td>Is silent on this claim</td><td><span class="pill unver">Unverifiable</span> — the source exists but doesn't address it</td></tr>
+        <tr><td>Says something different</td><td><span class="pill conflict">Conflicting</span> — flag it, lead with the official value</td></tr>
+      </table>
+      <div class="callout warn"><b>Why a real browser, not a script?</b> The original engine used a headless fetcher — that is why 47 rows came back "Pending — load failed." JavaScript-rendered pages (Greece looked empty), HTTP/2 quirks, SSL interstitials and cookie walls all defeat headless mode but render fine for a person. The fix is exactly what produced the screenshots above: <b>headed Playwright + <code>wait_for_load_state("networkidle")</code></b> — closing the one gap File 05 flagged as future tooling.</div>
+    </section>
+
+    <section id="try">
+      <h2>Walk one claim through yourself</h2>
+      <p>Type a claim and a candidate URL. The walk-through shows what each gate would check.</p>
+      <div class="verifier">
+        <div class="step">
+          <label>Claim</label>
+          <textarea id="vClaim" placeholder="e.g. UK quarantine rules for incoming pets"></textarea>
+        </div>
+        <div class="step">
+          <label>Candidate Official URL</label>
+          <input id="vUrl" placeholder="https://www.gov.uk/bring-pet-to-great-britain">
+        </div>
+        <div class="actions">
+          <button onclick="runVerifier()">Walk through the 5 gates →</button>
+        </div>
+        <div class="out" id="vOut"></div>
+      </div>
+    </section>
+
+    <footer>
+      The Trust Engine — Skill 02, Official Source Research. The Source Bank is the only approved source of truth for content writers. Nothing gets published without a Source Bank row.<br>
+      Generated 2026-05-28 · source-evidence gallery + manual-verification recipe added 2026-05-29. Warm-paper house style consistent with Skill 01 study manuals.
+    </footer>
+  </main>
+</div>
+<script>
+  const prog=document.getElementById('progress');
+  addEventListener('scroll',()=>{const h=document.documentElement;prog.style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%';});
+  const links=[...document.querySelectorAll('nav.side a')];const secs=links.map(a=>document.querySelector(a.getAttribute('href')));
+  addEventListener('scroll',()=>{let i=secs.length-1;for(let k=0;k<secs.length;k++){if(secs[k].getBoundingClientRect().top<140)i=k;}links.forEach(l=>l.classList.remove('active'));if(links[i])links[i].classList.add('active');});
+  function runVerifier(){
+    const c=document.getElementById('vClaim').value.trim();
+    const u=document.getElementById('vUrl').value.trim();
+    const out=document.getElementById('vOut');
+    if(!c||!u){out.innerHTML='<b>Both fields required.</b>';out.style.display='block';return;}
+    const isHttps=u.startsWith('https://')||u.startsWith('http://');
+    const isOfficial=/\.gov\.|\.gov$|\.gob\.|\.gouv\.|emirates\.com|etihad\.com|rj\.com|aphis\.usda\.gov|inspection\.canada\.ca/.test(u);
+    const today=new Date().toISOString().slice(0,10);
+    const lines=[
+      `<b>Gate 1 · Authority</b>: ${isOfficial?'<span style="color:#5b7a4f">PASS</span> — URL looks official.':'<span style="color:#aa3a2a">REVIEW</span> — URL does not look like a recognised regulator/airline/industry-body domain.'}`,
+      `<b>Gate 2 · Verbatim quote</b>: REVIEW — you must open the URL and copy the exact text supporting the claim. No paraphrase.`,
+      `<b>Gate 3 · Plain English fidelity</b>: REVIEW — write a single sentence with the same meaning as the quote. Don't soften "must" to "may."`,
+      `<b>Gate 4 · Date</b>: <span style="color:#5b7a4f">PASS</span> — today is ${today}, well inside the 90-day window.`,
+      `<b>Gate 5 · Screenshot</b>: REVIEW — save a full-page screenshot to <code>skill-02/data/source-screenshots/[country]-[authority]-[claim-id]-${today}.png</code>.`,
+      ``,
+      `<b>If all 5 pass → status = Verified.</b> If the page addresses the claim but states a different value → Conflicting. If the page does not address the claim at all → Unverifiable.`
+    ];
+    out.innerHTML=lines.join('<br>');out.style.display='block';
+  }
+</script>
+</body>
+</html>

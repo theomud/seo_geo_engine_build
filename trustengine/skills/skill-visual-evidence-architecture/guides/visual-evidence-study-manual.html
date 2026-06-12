@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Visual Evidence Architecture — Study Manual | The Trust Engine</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#14110d;--panel:#1d1812;--ink:#f3ece0;--soft:#b9ab95;--line:#352c20;--gold:#d8a84b;--red:#e06a4e;--green:#7bbf6a;--accent:#c98a3a}
+  *{box-sizing:border-box}html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:'Crimson Pro',Georgia,serif;font-size:19px;line-height:1.6}
+  #bar{position:fixed;top:0;left:0;height:4px;width:0;background:linear-gradient(90deg,var(--gold),var(--accent));z-index:100;transition:width .1s}
+  .layout{display:flex;max-width:1180px;margin:0 auto}
+  nav.side{position:sticky;top:0;height:100vh;width:250px;flex-shrink:0;padding:30px 20px;background:var(--panel);border-right:1px solid var(--line);overflow-y:auto;font-family:'JetBrains Mono',monospace}
+  nav.side .brand{font-family:'Bebas Neue',sans-serif;letter-spacing:.08em;color:var(--gold);font-size:22px}
+  nav.side a{display:block;color:var(--soft);text-decoration:none;font-size:12px;padding:7px 9px;border-radius:6px;margin-bottom:2px}
+  nav.side a:hover{background:#251e16;color:var(--ink)}nav.side a.active{background:var(--gold);color:#14110d;font-weight:700}
+  main{flex:1;min-width:0;padding:46px 52px 120px;max-width:820px}
+  h1{font-family:'Bebas Neue',sans-serif;font-size:52px;line-height:1;margin:0 0 6px}
+  h2{font-family:'Bebas Neue',sans-serif;font-size:33px;letter-spacing:.02em;margin:50px 0 12px;color:var(--gold)}
+  h3{font-size:21px;margin:24px 0 6px;color:var(--accent)}
+  .lead{font-size:22px;color:var(--soft)}
+  .badge{font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:700;letter-spacing:.05em;color:var(--gold);text-transform:uppercase}
+  .ex{background:#251e16;border-radius:8px;padding:10px 14px;margin:8px 0;font-style:italic;color:var(--soft)}
+  .cite{font-family:'JetBrains Mono',monospace;font-size:12px;padding:1px 7px;border-radius:5px;background:#251e16}
+  .v{color:var(--green);font-weight:700}.u{color:var(--gold);font-weight:700}.c{color:var(--red);font-weight:700}
+  table{width:100%;border-collapse:collapse;margin:14px 0;font-family:'JetBrains Mono',monospace;font-size:13px;table-layout:fixed}
+  th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top;word-break:break-word;overflow-wrap:anywhere}
+  th{color:var(--gold);text-transform:uppercase;font-size:11px}
+  .warn{background:#2a1a14;border:1px solid #4a2c20;border-radius:10px;padding:13px 17px;margin:14px 0}
+  .good{background:#1a2417;border:1px solid #2f4327;border-radius:10px;padding:13px 17px;margin:14px 0}
+  .ba{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:10px 0}
+  .ba>div{border-radius:8px;padding:10px 13px;font-size:15px}
+  .bad{background:#2a1a14;border:1px solid #4a2c20}.goodc{background:#1a2417;border:1px solid #2f4327}
+  code{font-family:'JetBrains Mono',monospace;background:#251e16;padding:2px 6px;border-radius:5px;font-size:.82em;color:var(--gold)}
+  .shot{max-width:300px;border:1px solid var(--line);border-radius:8px;margin:10px 0;display:block}
+  figcaption{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--soft);margin-top:-2px}
+  footer{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--soft);border-top:1px solid var(--line);margin-top:60px;padding-top:18px}
+  @media(max-width:880px){nav.side{display:none}main{padding:28px 20px 80px;font-size:18px}h1{font-size:40px}.ba{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+<div class="layout">
+  <nav class="side">
+    <div class="brand">Visual Evidence</div>
+    <div style="font-family:'Crimson Pro',serif;color:var(--soft);font-size:13px;margin:4px 0 16px">Architecture · 19/25</div>
+    <a href="#why" class="active">Why this skill</a>
+    <a href="#job">Evidence with a job</a>
+    <a href="#proof">Screenshots are proof</a>
+    <a href="#photos">Real photos beat stock</a>
+    <a href="#info">The infographics</a>
+    <a href="#briefs">The 4 page briefs</a>
+    <a href="#absence">The honest absence</a>
+    <a href="#verify">Keeping proof genuine</a>
+  </nav>
+  <main>
+    <span class="badge">Visual Evidence Architecture · 19/25</span>
+    <h1>Visual Evidence Architecture</h1>
+    <p class="lead">Proof you can see on the page, beside every claim. The dated official-source screenshot, the real process photo, the phone-rendered infographic — not stock decoration.</p>
+
+    <section id="why">
+      <h2>Why this skill</h2>
+      <p>A frightened reader does not trust words. They have read ten sites that all <i>say</i> "trusted", "experienced", "stress-free" — and one quoted them an outrageous price anyway. By the time they reach your page, a claim they cannot <b>see proven</b> is worth nothing.</p>
+      <div class="ex">"Every website says something different — I don't know who to trust." &nbsp;·&nbsp; "being quoted endless amount" — 7Ssisi &nbsp;·&nbsp; "without it your dog will be taken away in airport and never give back" — Muze Gu</div>
+      <p>Visual Evidence Architecture puts <b>visible proof beside every claim</b>: the regulator's own page shown as a dated screenshot, the real crate and handover instead of a stock dog, the data drawn as an infographic that works on a phone.</p>
+      <div class="warn"><b>It is the opposite of decoration.</b> Every visual has a job — it lowers a specific fear by <b>showing</b>, not telling. A visual that proves no claim is cut.</div>
+    </section>
+
+    <section id="job">
+      <h2>Evidence with a job</h2>
+      <p>Each visual must prove what the text can only assert:</p>
+      <table>
+        <tr><th>The text says (assertion)</th><th>The visual proves (evidence)</th></tr>
+        <tr><td>"We handle MOCCAE documentation"</td><td>a dated screenshot of the stamped MOCCAE certificate</td></tr>
+        <tr><td>"There's a release fee"</td><td>the official MOCCAE page showing <b>500 AED</b> <span class="cite">C-003</span></td></tr>
+        <tr><td>"Etihad's fee is disputed"</td><td>the official Etihad page (<b>USD 399</b>) beside the community USD 1,500 <span class="cite">C-015</span></td></tr>
+        <tr><td>"Your dog flies safely"</td><td>a real photo of <i>your</i> crate and handover — not stock</td></tr>
+      </table>
+    </section>
+
+    <section id="proof">
+      <h2>Screenshots are proof</h2>
+      <p>A screenshot is proof only with a <b>date</b>, an <b>official source URL</b>, and a <b>C-ID</b> — placed <b>beside</b> the claim (the proof interstitial). The date is the whole point: it shows the rule existed on that day. <i>(That is why capture stays manual — a bot fetch has no human-verifiable date.)</i></p>
+      <div class="ba">
+        <div class="bad"><b class="c">Not proof</b><br>an undated image, or a "view source" link the wary reader never clicks</div>
+        <div class="goodc"><b class="v">Proof</b><br>"MOCCAE's own page: 500 AED release fee — moccae.gov.ae · captured 2026-05-30 · C-003", beside the claim</div>
+      </div>
+    </section>
+
+    <section id="photos">
+      <h2>Real photos beat stock</h2>
+      <p>Stock "happy customer" photos are literally <b>ignored</b> — eye-tracking shows readers skip them as ad-like <span class="cite">P-39</span>. Real photos of the real process convert: 37signals' A/B test lifted paid signups <b class="v">+102.5%</b> by swapping a generic image for a real person <span class="cite">M-37</span>.</p>
+      <div class="ba">
+        <div class="bad"><b class="c">Ignored</b><br>a stock golden retriever on a white background</div>
+        <div class="goodc"><b class="v">Proof</b><br>this operator's real crate, vet titer check, and DXB handover</div>
+      </div>
+    </section>
+
+    <section id="info">
+      <h2>The infographics</h2>
+      <p>The reusable data visuals are built phone-first — they must render at <b>390px with no horizontal scroll</b>, every figure sourced (C-ID or honest hedge). Both were render-checked at 390px (real output):</p>
+      <figure>
+        <img class="shot" src="../data/screenshots/summer-embargo-calendar-390px.png" alt="Summer embargo calendar at 390px">
+        <figcaption>Summer-embargo calendar — Dubai climate normals (real) drive the embargo risk; per-airline dates hedged. 390px-verified.</figcaption>
+      </figure>
+      <figure>
+        <img class="shot" src="../data/screenshots/airport-comparison-table-390px.png" alt="Airport comparison table at 390px">
+        <figcaption>Airport comparison — Sharjah / Dubai / Abu Dhabi; Etihad fee USD 399 cited (C-015), community detail hedged. 390px-verified.</figcaption>
+      </figure>
+    </section>
+
+    <section id="briefs">
+      <h2>The 4 page briefs</h2>
+      <p>The skill's real output — each gap page's visual brief (<code>data/visual-brief-4-pages.md</code>), every page carrying ≥1 proof-visible screenshot:</p>
+      <table>
+        <tr><th>Page</th><th>Proof-visible screenshots</th><th>Infographic</th></tr>
+        <tr><td>Airport confiscation</td><td><span class="v">2</span> (C-019, C-003)</td><td>—</td></tr>
+        <tr><td>Summer embargo</td><td><span class="v">1</span> (airline policy)</td><td>embargo calendar</td></tr>
+        <tr><td>Titer cost</td><td><span class="v">1</span> (C-001, the absence)</td><td>cost-range bar</td></tr>
+        <tr><td>Airport comparison</td><td><span class="v">1</span> (C-015)</td><td>airport table</td></tr>
+        <tr><td><b>Total</b></td><td><b>5 · every page ≥1</b></td><td><b>2 built</b></td></tr>
+      </table>
+    </section>
+
+    <section id="absence">
+      <h2>The honest absence</h2>
+      <p>The hardest case is the titer-cost page, where the proof is that <b>no official price exists</b>. You don't invent a number — you <b>screenshot the official page showing the absence</b> and caption it honestly.</p>
+      <div class="good"><b>The surprise from the build:</b> we couldn't verify exact per-airline embargo dates, so instead of faking precise dates we anchored the calendar on <b>real Dubai climate normals</b> and hedged the airline specifics. The honest version is <b>more</b> credible, not less — and it's the same move as screenshotting "there is no official titer price." <b>Showing that you looked and found nothing official beats a confident fake.</b></div>
+    </section>
+
+    <section id="verify">
+      <h2>Keeping proof genuine</h2>
+      <p>The failure mode is a page that <i>looks</i> evidenced while proving nothing. Three defences:</p>
+      <ul>
+        <li><b>Every screenshot is dated and from the live official source</b> — undated or third-party = an image, not proof.</li>
+        <li><b>Every visual proves a specific claim</b> (with a C-ID) — decoration is cut.</li>
+        <li><b>Every infographic is render-checked at 390px</b> — a desktop-only graphic fails this phone-first market.</li>
+      </ul>
+      <p>The audit re-checks 20% blind; an undated screenshot or a stock photo passed as proof, or an infographic that breaks at 390px, is a <b>hard fail</b>.</p>
+    </section>
+
+    <footer>The Trust Engine · Visual Evidence Architecture · Study Manual · real output from the 2026-05-30 Dubai proof run (4 visual briefs, 5 proof-visible screenshots, 2 infographics 390px-verified). Proof beside every claim · dated official source · real photos not stock · show the honest absence.</footer>
+  </main>
+</div>
+<script>
+  const bar=document.getElementById('bar');
+  addEventListener('scroll',()=>{const h=document.documentElement;bar.style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%';});
+  const links=[...document.querySelectorAll('nav.side a')];const secs=links.map(a=>document.querySelector(a.getAttribute('href')));
+  addEventListener('scroll',()=>{let i=0;for(let k=0;k<secs.length;k++){if(secs[k]&&secs[k].getBoundingClientRect().top<140)i=k;}links.forEach(l=>l.classList.remove('active'));if(links[i])links[i].classList.add('active');});
+</script>
+</body>
+</html>

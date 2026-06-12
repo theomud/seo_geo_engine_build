@@ -1,0 +1,61 @@
+{
+  "competitor_name": "JetSet Pets Dubai",
+  "url": "https://www.jetsetpets.ae",
+  "total_score": 3.0,
+  "scores": {
+    "fear_in_first_100_words": {
+      "score": 0.0,
+      "evidence": "'zero hassle' — addresses convenience, not pet seizure or rejection at airport",
+      "gap": "No mention of pet being detained, rejected, or confiscated at Dubai airport — the deepest community fear is completely absent"
+    },
+    "official_source_cited": {
+      "score": 0.0,
+      "evidence": "No reference to MOCCAE, Dubai Municipality, UAE import regulations, or any government body by name",
+      "gap": "Zero citations of UAE official authorities — no MOCCAE, no specific import regulation numbers, no government portal links"
+    },
+    "specific_route_named": {
+      "score": 0.0,
+      "evidence": "'transported to numerous countries' — no specific origin or destination routes named",
+      "gap": "No specific routes mentioned — e.g. UK to Dubai, USA to Dubai, India to Dubai — making it impossible to assess route-specific expertise"
+    },
+    "step_by_step_process": {
+      "score": 0.5,
+      "evidence": "'we handle every step of the process' with a bulleted service list — but no numbered sequential steps",
+      "gap": "Service list exists but no ordered step-by-step process showing what happens first, second, third — no client journey map"
+    },
+    "timeline_included": {
+      "score": 0.0,
+      "evidence": "No timeline, lead time, or processing duration mentioned anywhere on the page",
+      "gap": "No timelines provided — missing how many weeks/months in advance to start, how long permits take, quarantine duration if applicable"
+    },
+    "cost_ranges_shown": {
+      "score": 0.5,
+      "evidence": "'pet travel services are expensive' and 'zero markups' — acknowledges cost but gives no figures",
+      "gap": "No price ranges, no example costs, no breakdown by pet size or route — 'no markups' claim is unverifiable without benchmark numbers"
+    },
+    "common_mistakes": {
+      "score": 0.0,
+      "evidence": "No mention of common mistakes, pitfalls, documentation errors, or what goes wrong",
+      "gap": "Zero coverage of common mistakes — missing wrong microchip timing, invalid health certificates, banned breed lists, titre test failures"
+    },
+    "original_visuals": {
+      "score": 0.0,
+      "evidence": "No images, photos, or visuals described or referenced in the provided page content",
+      "gap": "No original photos of actual pets transported, team members, crates, or process — no visual proof of real operations"
+    },
+    "cta_feels_like_help": {
+      "score": 1.0,
+      "evidence": "'REQUEST A FREE QUOTE' and 'Providing expert advice at every step of the journey'",
+      "gap": "CTA is functional but generic — no specific offer like a free checklist, document review, or route-specific consultation"
+    },
+    "would_you_trust_this": {
+      "score": 1.0,
+      "evidence": "'helped transport hundreds of pets' and 'background in working with rescue pets in the UAE'",
+      "gap": "No client testimonials, no case studies, no named staff, no accreditations, no photos — 'hundreds of pets' claim has zero supporting evidence"
+    }
+  },
+  "strongest_asset": "Transparency positioning on zero markups is differentiated and addresses a real pain point in the market",
+  "biggest_gap": "No address of the deepest fear — pet detained or rejected at Dubai airport — and zero official source citations or route-specific documentation guidance",
+  "content_opportunity": "What Happens If Your Pet Is Stopped at Dubai Airport — And How to Make Sure It Never Happens to You",
+  "content_brief": "Dubai pet owners fear their dog will be seized at the airport and never returned — this page names every MOCCAE requirement, banned breed rule, and document failure point that JetSet Pets does not mention, so your pet clears customs the first time."
+}

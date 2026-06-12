@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Content Structure for Trust — Study Manual | The Trust Engine</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#14110d;--panel:#1d1812;--ink:#f3ece0;--soft:#b9ab95;--line:#352c20;--gold:#d8a84b;--red:#e06a4e;--green:#7bbf6a;--accent:#c98a3a}
+  *{box-sizing:border-box}html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:'Crimson Pro',Georgia,serif;font-size:19px;line-height:1.6}
+  #bar{position:fixed;top:0;left:0;height:4px;width:0;background:linear-gradient(90deg,var(--gold),var(--accent));z-index:100;transition:width .1s}
+  .layout{display:flex;max-width:1180px;margin:0 auto}
+  nav.side{position:sticky;top:0;height:100vh;width:250px;flex-shrink:0;padding:30px 20px;background:var(--panel);border-right:1px solid var(--line);overflow-y:auto;font-family:'JetBrains Mono',monospace}
+  nav.side .brand{font-family:'Bebas Neue',sans-serif;letter-spacing:.08em;color:var(--gold);font-size:22px}
+  nav.side a{display:block;color:var(--soft);text-decoration:none;font-size:12px;padding:7px 9px;border-radius:6px;margin-bottom:2px}
+  nav.side a:hover{background:#251e16;color:var(--ink)}nav.side a.active{background:var(--gold);color:#14110d;font-weight:700}
+  main{flex:1;padding:46px 52px 120px;max-width:820px}
+  h1{font-family:'Bebas Neue',sans-serif;font-size:54px;letter-spacing:.01em;line-height:1;margin:0 0 6px;color:var(--ink)}
+  h2{font-family:'Bebas Neue',sans-serif;font-size:34px;letter-spacing:.02em;margin:52px 0 12px;color:var(--gold)}
+  h3{font-size:21px;margin:26px 0 6px;color:var(--accent)}
+  .lead{font-size:22px;color:var(--soft)}
+  .badge{font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:700;letter-spacing:.05em;color:var(--gold);text-transform:uppercase}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:16px 0}
+  .layer{border-left:4px solid var(--gold);padding-left:16px;margin:18px 0}
+  .layer .t{font-family:'JetBrains Mono',monospace;font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--gold)}
+  .ex{background:#251e16;border-radius:8px;padding:10px 14px;margin:8px 0;font-style:italic;color:var(--soft)}
+  .cite{font-family:'JetBrains Mono',monospace;font-size:12px;padding:2px 8px;border-radius:5px;background:#251e16}
+  .v{color:var(--green);font-weight:700}.u{color:var(--gold);font-weight:700}.c{color:var(--red);font-weight:700}
+  table{width:100%;border-collapse:collapse;margin:16px 0;font-family:'JetBrains Mono',monospace;font-size:13px}
+  th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{color:var(--gold);text-transform:uppercase;font-size:11px;letter-spacing:.05em}
+  .warn{background:#2a1a14;border:1px solid #4a2c20;border-radius:10px;padding:14px 18px;margin:16px 0}
+  .good{background:#1a2417;border:1px solid #2f4327;border-radius:10px;padding:14px 18px;margin:16px 0}
+  code{font-family:'JetBrains Mono',monospace;background:#251e16;padding:2px 6px;border-radius:5px;font-size:.82em;color:var(--gold)}
+  footer{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--soft);border-top:1px solid var(--line);margin-top:60px;padding-top:18px}
+  @media(max-width:880px){nav.side{display:none}main{padding:28px 20px 80px;font-size:18px}h1{font-size:40px}}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+<div class="layout">
+  <nav class="side">
+    <div class="brand">Content Structure</div>
+    <div style="font-family:'Crimson Pro',serif;color:var(--soft);font-size:13px;margin:4px 0 16px">for Trust · Study Manual</div>
+    <a href="#why" class="active">Why this skill</a>
+    <a href="#structure">The 5-layer structure</a>
+    <a href="#pagetypes">The 9 page types</a>
+    <a href="#matrix">Intent × Fear matrix</a>
+    <a href="#proof">Proof interstitial</a>
+    <a href="#sourcebank">Source Bank integration</a>
+    <a href="#hormozi">The Hormozi test</a>
+    <a href="#pages">The 4 proof pages</a>
+  </nav>
+  <main>
+    <span class="badge">Content Structure for Trust · PROVEN · 22/25</span>
+    <h1>Content Structure for Trust</h1>
+    <p class="lead">Page architecture that converts fear into action. Most frameworks organise around the topic. This one organises around the <b>fear behind the topic</b>.</p>
+
+    <section id="why">
+      <h2>Why this skill exists</h2>
+      <p>In regulated, high-stakes markets — pet relocation, immigration, medical, legal — customers do not arrive curious. They arrive <b>afraid</b>. A page that opens with "Welcome to our services" speaks past that fear and loses them in the first sentence. Content Structure is not a writing style; it is a <b>structural system</b> that decides what appears in the first 100 words, where the proof sits, and what the CTA asks for. The structure is fixed; the content inside it changes per niche.</p>
+      <div class="good"><b>The test of a good page:</b> the first sentence names the customer's real fear in their own words — and every claim after it is backed by a verified source.</div>
+    </section>
+
+    <section id="structure">
+      <h2>The 5-layer structure</h2>
+      <p>Every page is built in five layers, each earning a different kind of trust. Real examples below are from the four pages built in the Dubai proof run.</p>
+
+      <div class="layer"><div class="t">Layer 1 · Fear acknowledgement (first 100 words)</div>
+        <p>Name the customer's exact fear in their language. Builds <b>emotional</b> trust.</p>
+        <div class="ex">"without it your dog will be taken away in airport and never give back… Still when I remember I crying" — Muze Gu (used to open the airport-confiscation page)</div>
+      </div>
+      <div class="layer"><div class="t">Layer 2 · Verified answer</div>
+        <p>Answer the fear; every claim cites a Verified Source Bank row. Builds <b>informational</b> trust.</p>
+        <div class="ex">"You apply for the import permit online, before travel." <span class="v">Verified</span> <span class="cite">C-019 · MOCCAE</span> · "release fee 500 AED per dog." <span class="v">Verified</span> <span class="cite">C-003</span></div>
+      </div>
+      <div class="layer"><div class="t">Layer 3 · Process / evidence</div>
+        <p>Show the proof — an official-source screenshot beside the claim. Builds <b>credibility</b> trust.</p>
+        <div class="ex">The cost-transparency page embeds the MOCCAE page itself as proof it is <b>silent</b> on the titer cost — the absence is the evidence.</div>
+      </div>
+      <div class="layer"><div class="t">Layer 4 · Related fears</div>
+        <p>Link 2–3 neighbouring fears. Builds <b>completeness</b> trust.</p>
+        <div class="ex">The confiscation page links → document checklist, titer-cost page, summer-embargo page.</div>
+      </div>
+      <div class="layer"><div class="t">Layer 5 · Help-first CTA</div>
+        <p>Offer something useful, not a sales ask. Builds <b>relational</b> trust.</p>
+        <div class="ex"><span class="v">Good:</span> "Download the Dubai pet-import checklist — verified against MOCCAE." &nbsp; <span class="c">Bad:</span> "Get a Quote."</div>
+      </div>
+      <div class="warn"><b>Order is load-bearing:</b> you cannot earn informational trust (L2) from a reader whose fear you never acknowledged (L1).</div>
+    </section>
+
+    <section id="pagetypes">
+      <h2>The 9 page types</h2>
+      <p>Every page fits one type, selected by the Intent × Fear matrix. The proof run built one of each of the first four; the last three extend to the full search-intent surface.</p>
+      <table>
+        <tr><th>Type</th><th>Intent</th><th>Fear</th><th>Built in proof run?</th></tr>
+        <tr><td>Fear Resolution</td><td>Fear</td><td>Confiscation</td><td class="v">✓ page 1</td></tr>
+        <tr><td>Process Guide</td><td>Informational</td><td>Overwhelm / timeline</td><td class="v">✓ page 2</td></tr>
+        <tr><td>Cost Transparency</td><td>Commercial</td><td>Price gouging</td><td class="v">✓ page 3</td></tr>
+        <tr><td>Comparison</td><td>Research</td><td>Wrong provider/airport</td><td class="v">✓ page 4</td></tr>
+        <tr><td>Route/Variant</td><td>Commercial</td><td>Route doc mistake</td><td>—</td></tr>
+        <tr><td>Urgency</td><td>Urgency</td><td>Deadline approaching</td><td>—</td></tr>
+        <tr><td>Emergency</td><td>Emergency</td><td>Crisis now</td><td>—</td></tr>
+        <tr><td>Case Study</td><td>Problem</td><td>"Will it work for me?"</td><td>—</td></tr>
+        <tr><td>Trust Page</td><td>Research</td><td>"Can I trust them?"</td><td>—</td></tr>
+      </table>
+    </section>
+
+    <section id="matrix">
+      <h2>The Intent × Fear matrix</h2>
+      <p>Intent (Column J, 8 types) + fear (Column K) = page type, in four seconds. No deliberation — the matrix decides.</p>
+      <div class="card"><code>Fear + Confiscation → Fear Resolution</code> · <code>Informational + Overwhelm → Process Guide</code> · <code>Commercial + Price gouging → Cost Transparency</code> · <code>Research + Wrong provider → Comparison</code></div>
+      <p>The 8 intent types: Informational · Problem · Fear · Urgency · Emergency · Commercial · Transactional · Research.</p>
+    </section>
+
+    <section id="proof">
+      <h2>The Proof Interstitial framework</h2>
+      <p>Proof must sit <b>beside each claim</b>, woven through the page — not collected into one testimonials block at the bottom. This is the criterion Hormozi's analysis sharpened.</p>
+      <div class="good"><b>Passes:</b> the MOCCAE official-source screenshot embedded beside the 500 AED release-fee claim on the confiscation page (C-003).</div>
+      <div class="warn"><b>Fails:</b> a single "what our clients say" block and stock photos. Proof in one section ≠ proof interstitial.</div>
+      <p><b>Silence is also proof:</b> the cost-transparency page embeds the full MOCCAE page to show it says <i>nothing</i> about the titer cost — proving any "official price" quote is not official (C-001).</p>
+    </section>
+
+    <section id="sourcebank">
+      <h2>Source Bank integration — by C-ID</h2>
+      <p>Every factual claim traces to a row in the verified Source Bank, cited by its claim ID. Three outcomes the writer must handle differently:</p>
+      <h3>Verified → assert it (with the citation)</h3>
+      <div class="ex">"The import permit is valid for 90 days." <span class="v">Verified</span> <span class="cite">C-010</span> — state it plainly and link the source.</div>
+      <h3>Unverifiable → hedge it, never assert</h3>
+      <div class="ex">Titer-test cost: MOCCAE publishes <span class="u">no figure</span>. Write: "Community reports 700–1,300 AED; no official figure exists." <span class="cite">C-001</span></div>
+      <h3>Conflicting → lead with the official value, name the discrepancy</h3>
+      <div class="ex">Community said the Etihad cabin fee was USD 1,500; the official page shows <b>USD 399</b>. <span class="c">Conflict</span> <span class="cite">C-015</span> — a customer-protecting finding.</div>
+      <div class="warn"><b>Verified before published:</b> no factual claim ships without a Source Bank row whose status is Verified — not Unverifiable, not Pending.</div>
+    </section>
+
+    <section id="hormozi">
+      <h2>The Hormozi test</h2>
+      <p>Before a page ships, three questions decide it:</p>
+      <ol>
+        <li><b>Would you put your name on it?</b> If not — what specifically must change?</li>
+        <li><b>Is the proof undeniable and real-world?</b> A dated official-source screenshot beats any adjective.</li>
+        <li><b>Could AI alone have written it?</b> If yes, it lacks the in-the-trenches specifics (real C-IDs, real quotes, real conflicts) that build trust.</li>
+      </ol>
+      <p><b>Proof density rule:</b> higher risk demands more proof. Dubai pet relocation is maximum risk — every claim traces to an official source or is openly hedged.</p>
+    </section>
+
+    <section id="pages">
+      <h2>The 4 proof pages (real output, 2026-05-29)</h2>
+      <p>Built by hand against this structure, each citing real Source Bank rows:</p>
+      <table>
+        <tr><th>Page</th><th>Type</th><th>Real handling</th></tr>
+        <tr><td>Dog taken at Dubai airport</td><td>Fear Resolution</td><td>Verified C-003/007/010/019; C-001 hedged</td></tr>
+        <tr><td>Move pet to Dubai in summer</td><td>Process Guide</td><td>Verified C-010/019/022; embargo dates hedged</td></tr>
+        <tr><td>Rabies titer test cost</td><td>Cost Transparency</td><td>C-001 hedged + Etihad conflict C-015; MOCCAE silence as proof</td></tr>
+        <tr><td>Sharjah vs Dubai vs Abu Dhabi</td><td>Comparison</td><td>Verified C-019/022; Sharjah hack hedged</td></tr>
+      </table>
+      <div class="good"><b>What the run proved:</b> a fear-first opening + Verified-cited claims + honest hedging of the unpublished + proof beside each claim is exactly what competitors (avg 3.9/10) miss.</div>
+    </section>
+
+    <footer>The Trust Engine · Content Structure for Trust · Study Manual · built from the 2026-05-29 Dubai proof run · 8 intent types · 9 page types · Source Bank cited by C-ID.</footer>
+  </main>
+</div>
+<script>
+  const bar=document.getElementById('bar');
+  addEventListener('scroll',()=>{const h=document.documentElement;bar.style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%';});
+  const links=[...document.querySelectorAll('nav.side a')];const secs=links.map(a=>document.querySelector(a.getAttribute('href')));
+  addEventListener('scroll',()=>{let i=0;for(let k=0;k<secs.length;k++){if(secs[k]&&secs[k].getBoundingClientRect().top<140)i=k;}links.forEach(l=>l.classList.remove('active'));if(links[i])links[i].classList.add('active');});
+</script>
+</body>
+</html>

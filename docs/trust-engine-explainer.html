@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How the Trust Engine plugs into our Renderer — Explainer</title>
+<style>
+  :root{
+    --navy:#1a365d;--navy2:#11233f;--gold:#d4a853;--ink:#1f2733;--muted:#5b6776;
+    --up:#2e7d32;--upbg:#eaf6ee;--upbd:#bfe3c8;
+    --down:#1565c0;--downbg:#e8f1fb;--downbd:#c2d8f3;
+    --side:#5b6776;--sidebg:#eef1f4;--sidebd:#d8dee6;
+    --meta:#7b1fa2;--metabg:#f5ecfb;--metabd:#e3cdf0;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:linear-gradient(180deg,#f6f8fb,#eef2f7);color:var(--ink);
+    font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.5;}
+  .wrap{max-width:1180px;margin:0 auto;padding:30px 20px 70px;}
+  .kicker{text-transform:uppercase;letter-spacing:.14em;font-size:.72rem;font-weight:700;color:var(--gold);filter:brightness(.8);}
+  h1{font-family:'Plus Jakarta Sans',Inter,sans-serif;color:var(--navy);font-size:clamp(1.6rem,3.6vw,2.3rem);margin:.2rem 0 .3rem;letter-spacing:-.02em;}
+  .sub{color:var(--muted);max-width:78ch;margin:0 0 26px;font-size:1.02rem;}
+
+  .flow{display:grid;grid-template-columns:1fr auto 1.15fr auto 1fr;gap:0;align-items:stretch;}
+  .stage{background:#fff;border:1px solid #e3e8ef;border-radius:18px;padding:18px 18px 20px;
+    box-shadow:0 14px 34px -18px rgba(16,33,60,.3);display:flex;flex-direction:column;}
+  .stage.brain{border-top:5px solid var(--up);}
+  .stage.eyes{border-top:5px solid var(--down);}
+  .stage.render{background:linear-gradient(180deg,#1a365d,#11233f);border:none;color:#fff;
+    box-shadow:0 18px 40px -16px rgba(16,33,60,.55);position:relative;}
+  .stage .num{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-weight:800;
+    font-family:'Plus Jakarta Sans',Inter,sans-serif;color:#fff;font-size:.95rem;margin-bottom:8px;}
+  .brain .num{background:var(--up);} .render .num{background:var(--gold);color:#1a1a1a;} .eyes .num{background:var(--down);}
+  .stage h2{font-family:'Plus Jakarta Sans',Inter,sans-serif;font-size:1.18rem;margin:0 0 2px;color:var(--navy);}
+  .render h2{color:#fff;}
+  .stage .role{font-size:.82rem;color:var(--muted);margin:0 0 12px;}
+  .render .role{color:#cdd9e5;}
+  .stage .plain{font-size:.9rem;color:var(--ink);background:#f6f8fb;border-radius:10px;padding:9px 11px;margin:0 0 14px;}
+  .render .plain{color:#eaf0f7;background:rgba(255,255,255,.08);}
+
+  .chips{display:flex;flex-direction:column;gap:7px;margin-top:auto;}
+  .chip{display:flex;justify-content:space-between;gap:8px;align-items:baseline;
+    border:1px solid var(--upbd);background:var(--upbg);border-radius:9px;padding:7px 10px;font-size:.83rem;}
+  .chip b{font-weight:600;color:#16321f;}
+  .chip span{color:var(--up);font-size:.76rem;white-space:nowrap;font-style:italic;}
+  .chip.gate{border-color:#f3d9ad;background:#fff6e8;}
+  .chip.gate b{color:#7a4a00;} .chip.gate span{color:var(--gate);}
+  .chip.down{border-color:var(--downbd);background:var(--downbg);}
+  .chip.down b{color:#0f3c75;} .chip.down span{color:var(--down);}
+
+  .blocks{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;}
+  .blk{font-size:.74rem;background:rgba(212,168,83,.18);border:1px solid rgba(212,168,83,.5);
+    color:#ffe6b8;border-radius:7px;padding:4px 8px;font-family:'Cascadia Code',Consolas,monospace;}
+
+  .arrow{display:flex;align-items:center;justify-content:center;padding:0 6px;color:#9aa7b4;}
+  .arrow svg{width:48px;height:48px;}
+
+  .loop{margin:14px 0 0;display:flex;align-items:center;gap:10px;justify-content:center;
+    color:var(--down);font-size:.9rem;font-weight:600;}
+  .loop .line{flex:1;height:0;border-top:2.5px dashed var(--down);opacity:.5;max-width:520px;}
+
+  .extras{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:22px;}
+  .mini{border-radius:14px;padding:14px 16px;border:1px dashed;}
+  .mini.side{background:var(--sidebg);border-color:var(--sidebd);}
+  .mini.meta{background:var(--metabg);border-color:var(--metabd);}
+  .mini h3{margin:0 0 4px;font-size:.95rem;font-family:'Plus Jakarta Sans',Inter,sans-serif;}
+  .mini.side h3{color:var(--side);} .mini.meta h3{color:var(--meta);}
+  .mini p{margin:0;font-size:.85rem;color:var(--muted);}
+  .mini b{color:var(--ink);}
+
+  .foot{margin-top:22px;font-size:.82rem;color:var(--muted);border-top:1px solid #e3e8ef;padding-top:12px;}
+  .foot b{color:var(--navy);}
+
+  @media(max-width:920px){
+    .flow{grid-template-columns:1fr;gap:8px;}
+    .arrow{transform:rotate(90deg);padding:4px 0;}
+    .extras{grid-template-columns:1fr;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="kicker">How it fits together</p>
+  <h1>The Trust Engine is the brain. Our engine is the hands.</h1>
+  <p class="sub">The Trust Engine figures out <b>what to build and verifies every fact</b>. Our block renderer <b>turns that into real pages</b>. Then the measurement engines <b>grade the result and decide what's next</b> — a loop. Here's the whole pipeline in three steps.</p>
+
+  <div class="flow">
+
+    <!-- STAGE 1 -->
+    <section class="stage brain">
+      <div class="num">1</div>
+      <h2>The Brain</h2>
+      <p class="role">Decides &amp; verifies · 9 engines + 1 gate</p>
+      <p class="plain">Reads the customer's fear, picks the page, and proves every claim against an official source — before a word is written.</p>
+      <div class="chips">
+        <div class="chip"><b>Customer Fear Intelligence</b><span>→ page + hero</span></div>
+        <div class="chip"><b>Official Source Research</b><span>→ sources</span></div>
+        <div class="chip"><b>Content Structure</b><span>→ block order</span></div>
+        <div class="chip"><b>Conversion Copy</b><span>→ cta + form</span></div>
+        <div class="chip"><b>AI Citation (GEO)</b><span>→ key_facts</span></div>
+        <div class="chip"><b>Content Architecture</b><span>→ nav + links</span></div>
+        <div class="chip"><b>Trust Gap Analysis</b><span>→ comparison</span></div>
+        <div class="chip"><b>Authority Assets</b><span>→ case_study*</span></div>
+        <div class="chip"><b>Visual Evidence</b><span>→ figure*</span></div>
+        <div class="chip gate"><b>Editorial Judgment</b><span>✓ QC gate</span></div>
+      </div>
+    </section>
+
+    <div class="arrow" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+    </div>
+
+    <!-- STAGE 2 -->
+    <section class="stage render">
+      <div class="num">2</div>
+      <h2>The Renderer — our engine</h2>
+      <p class="role">Builds the actual website</p>
+      <p class="plain">Takes the verified page data and assembles it into a fast, SEO + GEO-ready page — automatically adding schema, sitemap and the trust elements.</p>
+      <p style="font:600 .8rem 'Cascadia Code',Consolas,monospace;color:#d4a853;margin:0 0 6px;">page YAML → blocks → HTML</p>
+      <div class="blocks">
+        <span class="blk">hero</span><span class="blk">key_facts</span><span class="blk">checklist</span>
+        <span class="blk">steps</span><span class="blk">pricing</span><span class="blk">sources</span>
+        <span class="blk">faq</span><span class="blk">cta</span><span class="blk">JSON-LD</span><span class="blk">sitemap</span>
+      </div>
+    </section>
+
+    <div class="arrow" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+    </div>
+
+    <!-- STAGE 3 -->
+    <section class="stage eyes">
+      <div class="num">3</div>
+      <h2>The Eyes</h2>
+      <p class="role">Measures &amp; improves · 2 engines</p>
+      <p class="plain">Grades the live pages, watches real traffic, and tells the brain which page to build or fix next.</p>
+      <div class="chips">
+        <div class="chip down"><b>Website Audit</b><span>→ grades pages</span></div>
+        <div class="chip down"><b>Content Intelligence Monitor</b><span>→ what's next</span></div>
+      </div>
+    </section>
+  </div>
+
+  <!-- feedback loop -->
+  <div class="loop">
+    <span class="line"></span>
+    ↩ feedback loop — what to build next goes back to the Brain
+    <span class="line"></span>
+  </div>
+
+  <!-- extras -->
+  <div class="extras">
+    <div class="mini side">
+      <h3>↔ Side branch — Email Nurture</h3>
+      <p>Fires <b>after</b> a lead fills the form. It's part of the funnel, but it isn't rendered into a page.</p>
+    </div>
+    <div class="mini meta">
+      <h3>🛠 Meta tooling — Prompt Engineering · Skill Auditor</h3>
+      <p>These build and quality-check <b>the engines themselves</b>, not the website. They keep the other 13 honest.</p>
+    </div>
+  </div>
+
+  <p class="foot"><b>The takeaway:</b> 10 engines feed <b>into</b> the renderer, 2 grade what comes <b>out</b>, 3 sit to the side — and the renderer (step 2) is the piece the Trust Engine never had. &nbsp; <b>*</b> <code>case_study</code> and <code>figure</code> are two small new blocks we'd add to absorb Authority Assets &amp; Visual Evidence.</p>
+</div>
+</body>
+</html>

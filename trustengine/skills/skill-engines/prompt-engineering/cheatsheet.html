@@ -1,0 +1,64 @@
+<!DOCTYPE html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Prompt Engineering (output clarity) — Cheatsheet</title><style>body{font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:#1f2937;
+line-height:1.6;background:#f7f8fb;margin:0}.wrap{max-width:860px;margin:0 auto;padding:28px}
+h1{color:#1a3a5c}h2{color:#1a3a5c;border-top:2px solid #e5e7eb;padding-top:14px;margin-top:26px}
+h3{color:#2c5282}code{background:#f1f5f9;padding:1px 5px;border-radius:4px}
+table{border-collapse:collapse;width:100%}th,td{border:1px solid #e5e7eb;padding:7px 10px;text-align:left;vertical-align:top}
+th{background:#2c5282;color:#fff}tr:nth-child(even) td{background:#f9fafb}
+.hd{background:linear-gradient(135deg,#1a3a5c,#2c5282);color:#fff;padding:22px 28px;border-radius:0 0 14px 14px}
+.hd h1{color:#fff;margin:0}.hd p{color:#cfe0f5;margin:6px 0 0}</style></head><body><div class='hd'><h1>Prompt Engineering (output clarity) — Cheatsheet</h1><p>Does the page read like a clear, well-briefed output — structured, specific, machine-readable?</p></div><div class='wrap'><h1>Prompt Engineering (output clarity) — Cheatsheet</h1>
+<p><em>Does the page read like a clear, well-briefed output — structured, specific, machine-readable?</em></p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Measurement</th>
+<th>What to do</th>
+<th>Example (don't &rarr; do)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Answer-first output</td>
+<td>Open with the direct answer (re-prompt for answer-first).</td>
+<td>DON'T: A long preamble before the point. &rarr; DO: The direct answer in the first sentence.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Clear structure</td>
+<td>Break the output into clear H2/H3 sections.</td>
+<td>DON'T: One block of text. &rarr; DO: H2 sections for each part.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Scannable formats</td>
+<td>Add lists/tables for key points.</td>
+<td>DON'T: Prose only. &rarr; DO: A bulleted list of the steps.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Specific, not generic</td>
+<td>Re-prompt with required facts so the output is specific, not generic.</td>
+<td>DON'T: Generic advice. &rarr; DO: Specific figures and named examples.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Right length / focused</td>
+<td>Tighten scope in the prompt — cut padding or thicken thin content.</td>
+<td>DON'T: 3,000 words of padding. &rarr; DO: ~800 focused words.</td>
+</tr>
+<tr>
+<td>–</td>
+<td>Prompt/brief quality (the 9 elements) (human-judged)</td>
+<td>reviewed by a person</td>
+<td>—</td>
+</tr>
+<tr>
+<td>–</td>
+<td>Revision-loop discipline (human-judged)</td>
+<td>reviewed by a person</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Run:</strong> <code>python skill-engines/prompt-engineering/engine.py --url &lt;URL&gt;</code> or <code>--serve 8100</code> (web checker).</p></div></body></html>

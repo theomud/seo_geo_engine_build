@@ -1,0 +1,134 @@
+{
+  "_meta": {
+    "title": "Pet breeds by country + travel-suitability — route markets",
+    "purpose": "For each route market: the most popular dog & cat breeds (a proxy for what gets relocated) cross-referenced with travel restrictions (snub-nosed/brachycephalic airline limits + banned-for-import breeds). Built for the relocation site.",
+    "compiled": "2026-06-09",
+    "honest_caveats": [
+      "There is NO official dataset of 'which breeds travel by country' — airlines/IATA do not publish breed-by-country travel stats. This uses POPULARITY as the proxy for what relocates.",
+      "Popularity = national kennel-club / cat-registry data where available (good), or consumer surveys / market blogs where not (weaker — flagged per country).",
+      "Registry data skews to PEDIGREE/purebred and UNDER-COUNTS mixed-breeds (often the largest real share — e.g. Cavoodles, Labradoodles, Indie/Pariah dogs).",
+      "UAE has no public breed-registration ranking; its list is expat-driven and anecdotal (flagged).",
+      "Cat lists are country-specific only where a registry was found (US CFA, UK GCCF); elsewhere they are a regional estimate (flagged)."
+    ],
+    "confidence_key": "good = national registry; medium = large survey/secondary; low = small survey or market blog / anecdotal"
+  },
+
+  "travel_restrictions_reference": {
+    "snub_nosed_caution": {
+      "what": "Brachycephalic (flat-faced) breeds are higher-risk in cargo and are restricted or embargoed by many airlines, especially in heat. Emirates/airline rules verified (see uae-import-reference.json).",
+      "dogs": ["French Bulldog", "English Bulldog", "Pug", "Boston Terrier", "Boxer", "Pekingese", "Shih Tzu", "Lhasa Apso", "Chow Chow", "Bullmastiff", "Dogue de Bordeaux (French Mastiff)", "Cavalier King Charles Spaniel (milder)"],
+      "cats": ["Persian", "Exotic Shorthair", "Himalayan", "British Shorthair (milder)", "Scottish Fold (milder)", "Burmese (milder)"],
+      "source": "IATA Live Animals Regulations + airline policy (Emirates verified)"
+    },
+    "banned_import_uae": {
+      "legal_basis": "UAE Federal Law 22/2016 + Min. Resolution 379/2022 (see uae-import-reference.json)",
+      "breeds": ["Staffordshire Bull Terrier", "American Pit Bull Terrier", "American Staffordshire Terrier", "American Bully", "Fila Brasileiro", "Dogo Argentino", "Tibetan Mastiff", "Neapolitan Mastiff", "Dogue de Bordeaux", "Boerboel", "Bullmastiff", "Cane Corso", "Bully Kutta", "Perro de Presa Canario"]
+    },
+    "banned_import_uk": {
+      "legal_basis": "UK Dangerous Dogs Act 1991 + XL Bully ban (2024)",
+      "breeds": ["Pit Bull Terrier", "Japanese Tosa", "Dogo Argentino", "Fila Brasileiro", "XL Bully"]
+    }
+  },
+
+  "countries": [
+    {
+      "country": "United Kingdom", "iso": "GB",
+      "registry": {"dogs": "The Kennel Club (2025)", "cats": "GCCF (2023)"},
+      "top_dog_breeds": ["Labrador Retriever", "Cocker Spaniel", "French Bulldog", "Miniature Dachshund", "Golden Retriever", "Bulldog", "German Shepherd", "Cavalier King Charles Spaniel"],
+      "top_cat_breeds": ["British Shorthair", "Ragdoll", "Maine Coon", "Siamese", "Burmese"],
+      "travel_flags": {"snub_nosed_in_top": ["French Bulldog", "Bulldog", "British Shorthair (cat)"], "note": "UK itself bans XL Bully/Pit Bull types for entry (Dangerous Dogs Act)."},
+      "confidence": "good (KC + GCCF registrations)",
+      "source": "https://www.thekennelclub.org.uk/media-centre/breed-registration-statistics/ ; https://www.gccfcats.org/breeding-cats/stats-and-policies/analysis-of-breeds-registered/"
+    },
+    {
+      "country": "United States", "iso": "US",
+      "registry": {"dogs": "AKC (2025)", "cats": "CFA (2025)"},
+      "top_dog_breeds": ["French Bulldog", "Labrador Retriever", "Golden Retriever", "German Shepherd", "Dachshund", "Poodle", "Bulldog", "Beagle", "German Shorthaired Pointer", "Rottweiler"],
+      "top_cat_breeds": ["Maine Coon", "Russian Blue", "Sphynx", "Siberian", "British Shorthair", "Abyssinian", "American Shorthair", "Scottish Fold"],
+      "travel_flags": {"snub_nosed_in_top": ["French Bulldog", "Bulldog"], "banned_for_uae": [], "note": "French Bulldog is #1 — the single most travel-restricted breed; expect cargo/heat limits."},
+      "confidence": "good (AKC + CFA registrations)",
+      "source": "https://www.akc.org/expert-advice/dog-breeds/most-popular-dog-breeds-2025/ ; https://cfa.org/cat-talk/most-popular-breeds-for-2024/"
+    },
+    {
+      "country": "Australia", "iso": "AU",
+      "registry": {"dogs": "Market data (Cavoodle #1 is a crossbreed, not ANKC-registered)", "cats": "regional estimate"},
+      "top_dog_breeds": ["Cavoodle (crossbreed)", "French Bulldog", "Golden Retriever", "Labrador Retriever", "Border Collie", "Spoodle (crossbreed)", "German Shepherd", "Staffordshire Bull Terrier"],
+      "top_cat_breeds": ["Domestic Shorthair", "Ragdoll", "British Shorthair", "Maine Coon", "Burmese"],
+      "travel_flags": {"snub_nosed_in_top": ["French Bulldog"], "note": "Crossbreeds (Cavoodle/Spoodle) dominate — registry data understates them. Australia has strict IMPORT rules but these are EXPORT-side breeds."},
+      "confidence": "medium (market/insurer data, not pure ANKC)",
+      "source": "https://www.canstar.com.au/pet-insurance/most-popular-dog-breeds-australia/ ; https://www.petinsuranceaustralia.com.au/australias-most-popular-dog-breeds-in-2025-a-state-by-state-look/"
+    },
+    {
+      "country": "Germany", "iso": "DE",
+      "registry": {"dogs": "VDH Welpenstatistik (2024)", "cats": "regional estimate (FIFe)"},
+      "top_dog_breeds": ["German Shepherd", "Dachshund (Teckel)", "Kleiner Münsterländer", "Labrador Retriever", "Poodle", "Golden Retriever", "Australian Shepherd", "Border Collie"],
+      "top_cat_breeds": ["British Shorthair", "Maine Coon", "Ragdoll", "Persian", "Siamese"],
+      "travel_flags": {"snub_nosed_in_top": ["Persian (cat)"], "note": "EU pet-passport origin; few brachycephalic dogs in the German top list."},
+      "confidence": "good (VDH registrations); cats = estimate",
+      "source": "https://de.statista.com/statistik/daten/studie/29273/umfrage/hundezucht-beliebteste-hunderassen-in-deutschland/"
+    },
+    {
+      "country": "France", "iso": "FR",
+      "registry": {"dogs": "I-CAD identifications (2024)", "cats": "regional estimate"},
+      "top_dog_breeds": ["Australian Shepherd", "Chihuahua", "Border Collie", "Golden Retriever", "Labrador Retriever", "Beagle", "Staffordshire Bull Terrier", "French Bulldog"],
+      "top_cat_breeds": ["Maine Coon", "British Shorthair", "Ragdoll", "Sphynx", "Persian"],
+      "travel_flags": {"snub_nosed_in_top": ["French Bulldog", "Persian (cat)"], "note": "EU pet-passport origin."},
+      "confidence": "medium (I-CAD identifications via secondary)",
+      "source": "https://www.connexionfrance.com/news/what-are-frances-top-10-favourite-dog-breeds-two-lists-disagree/703085"
+    },
+    {
+      "country": "Netherlands", "iso": "NL",
+      "registry": {"dogs": "Consumer survey 2024 (n≈169 — small)", "cats": "regional estimate"},
+      "top_dog_breeds": ["Golden Retriever", "Chihuahua", "Jack Russell Terrier", "Labrador Retriever", "Labradoodle (crossbreed)", "French Bulldog", "Bulldog", "Kooikerhondje"],
+      "top_cat_breeds": ["British Shorthair", "Maine Coon", "Ragdoll", "Persian", "Siamese"],
+      "travel_flags": {"snub_nosed_in_top": ["French Bulldog", "Bulldog", "Persian (cat)"], "note": "EU pet-passport origin. Dog data is a small survey — treat as indicative."},
+      "confidence": "low (small survey)",
+      "source": "https://tgmstatbox.com/stats/most-popular-dog-breeds-in-netherlands/"
+    },
+    {
+      "country": "Canada", "iso": "CA",
+      "registry": {"dogs": "Canadian Kennel Club (2025)", "cats": "regional estimate (≈US/CFA)"},
+      "top_dog_breeds": ["Labrador Retriever", "Golden Retriever", "German Shepherd", "Poodle", "French Bulldog", "Bernese Mountain Dog", "Dachshund", "Shetland Sheepdog"],
+      "top_cat_breeds": ["Maine Coon", "Ragdoll", "Sphynx", "British Shorthair", "Siberian"],
+      "travel_flags": {"snub_nosed_in_top": ["French Bulldog"], "note": "Labrador #1 for 32 straight years; few brachycephalic in the top list."},
+      "confidence": "good (CKC registrations); cats = estimate",
+      "source": "https://www.ckc.ca/en/News/2026/March/Canada%E2%80%99s-Top-10-Most-Popular-Breeds-of-2025"
+    },
+    {
+      "country": "India", "iso": "IN",
+      "registry": {"dogs": "Market/vet blogs (no robust KCI ranking)", "cats": "regional estimate"},
+      "top_dog_breeds": ["Labrador Retriever", "German Shepherd", "Golden Retriever", "Beagle", "Shih Tzu", "Pug", "Indian Pariah / Indie (native)", "Rottweiler"],
+      "top_cat_breeds": ["Persian", "Domestic Shorthair", "Siamese", "Maine Coon", "Bengal"],
+      "travel_flags": {"snub_nosed_in_top": ["Shih Tzu", "Pug", "Persian (cat)"], "note": "Pug/Shih Tzu common AND brachycephalic → frequent travel-restriction cases. Data is from market blogs (lower credibility)."},
+      "confidence": "low (market blogs; no official registry)",
+      "source": "https://petovac.com/blog/top-10-most-popular-dog-breeds-in-india-2025-edition"
+    },
+    {
+      "country": "Singapore", "iso": "SG",
+      "registry": {"dogs": "Market data (HDB-flat size rules shape choices)", "cats": "regional estimate"},
+      "top_dog_breeds": ["Shih Tzu", "Pomeranian", "Poodle / Toy Poodle", "Golden Retriever", "Maltese", "Jack Russell Terrier", "Silky Terrier", "Miniature Schnauzer"],
+      "top_cat_breeds": ["Domestic Shorthair", "British Shorthair", "Maine Coon", "Persian", "Ragdoll"],
+      "travel_flags": {"snub_nosed_in_top": ["Shih Tzu", "Persian (cat)"], "note": "HDB flats restrict certain/large breeds, skewing to small dogs. Singapore also has its own import breed bans."},
+      "confidence": "low (market data)",
+      "source": "https://www.ferndalekennels.com/en/blog/popular-dogs-in-singapore/"
+    },
+    {
+      "country": "South Africa", "iso": "ZA",
+      "registry": {"dogs": "Consumer survey 2024", "cats": "regional estimate"},
+      "top_dog_breeds": ["German Shepherd", "Pit Bull", "Bulldog", "Boerboel (native)", "Rhodesian Ridgeback", "Golden Retriever", "Yorkshire Terrier", "Labrador Retriever"],
+      "top_cat_breeds": ["Domestic Shorthair", "Persian", "British Shorthair", "Siamese", "Maine Coon"],
+      "travel_flags": {"snub_nosed_in_top": ["Bulldog", "Persian (cat)"], "banned_for_uae": ["Pit Bull", "Boerboel", "Bullmastiff"], "note": "Two of SA's most popular breeds (Pit Bull, Boerboel) are BANNED for UAE import — a key warning for SA→UAE moves."},
+      "confidence": "medium (survey)",
+      "source": "https://petsense.co.za/2024/10/03/top-10-most-popular-dog-breeds-in-south-africa/"
+    },
+    {
+      "country": "United Arab Emirates", "iso": "AE",
+      "registry": {"dogs": "No public registration ranking — expat-driven / anecdotal", "cats": "anecdotal + native breeds"},
+      "top_dog_breeds": ["Labrador Retriever", "Golden Retriever", "German Shepherd", "French Bulldog", "Siberian Husky", "Pomeranian", "Poodle"],
+      "top_cat_breeds": ["Persian", "Arabian Mau (native)", "British Shorthair", "Maine Coon", "Scottish Fold"],
+      "travel_flags": {"snub_nosed_in_top": ["French Bulldog", "Persian (cat)"], "note": "No official ranking exists; this is indicative of the expat market. Banned-breed list (Federal Law 22/2016) applies to anything imported INTO the UAE."},
+      "confidence": "low (anecdotal — no UAE registry publishes this)",
+      "source": "anecdotal/expat market; no official UAE breed-registration source exists"
+    }
+  ]
+}

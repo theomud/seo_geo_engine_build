@@ -1,0 +1,49 @@
+url: /blog/
+title: "Pet Relocation Guides — Dubai & the UAE | PawRoute"
+title_suffix: ""
+meta_description: "Route-by-route guides to relocating your pet from Dubai and the UAE — real costs, timelines, and the one detail that trips people up on each route. Verified against official sources."
+og_title: "PawRoute guides: pet relocation from Dubai, by route"
+updated: "2026-06-09"
+
+blocks:
+  - type: hero
+    eyebrow: "Guides"
+    heading: "Pet relocation guides, by route"
+    subheading: >
+      Straight answers to what it costs, how long it takes, and the one detail that trips
+      people up on each route out of Dubai — every figure checked against official sources.
+    ctas:
+      - { label: "Get my transparent quote", url: "/#quote", style: "btn-gold" }
+      - { label: "Compare destinations & pricing", url: "/destinations/", style: "btn-ghost" }
+
+  - type: card_grid
+    eyebrow: "Start here"
+    heading: "Cost & timing"
+    cards:
+      - { flag: "💰", title: "How much it costs to relocate a pet from Dubai (2026 data)", meta: "Real ranges across 10 routes + the 3 things that drive the price", url: "/blog/pet-relocation-cost-from-dubai-2026/", arrow: "Read" }
+      - { flag: "⏱️", title: "Need to move your pet from Dubai fast?", meta: "What's actually possible in a week — and the rule you can't skip", url: "/blog/move-pet-from-dubai-fast/", arrow: "Read" }
+      - { flag: "⚖️", title: "DIY vs a pet relocation company", meta: "The honest trade-off: money saved vs risk carried", url: "/blog/diy-vs-professional-pet-relocation-dubai/", arrow: "Read" }
+      - { flag: "🐕", title: "Which breeds can fly from Dubai?", meta: "Banned breeds + snub-nosed heat restrictions", url: "/blog/pet-breed-restrictions-flying-from-dubai/", arrow: "Read" }
+      - { flag: "✈️", title: "How your pet actually flies from Dubai", meta: "Cabin vs checked baggage vs cargo — per Emirates' rules", url: "/blog/how-pets-fly-from-dubai-cabin-baggage-cargo/", arrow: "Read" }
+
+  - type: card_grid
+    variant: section--surface
+    eyebrow: "By route"
+    heading: "Route-by-route guides"
+    body: "Each guide owns the one thing that actually decides that route."
+    cards:
+      - { flag: "🇬🇧", title: "Dubai → UK: the tapeworm window", meta: "The 24–120h timing rule that decides entry", url: "/blog/dubai-to-uk-pet-tapeworm-window/", arrow: "Read" }
+      - { flag: "🇺🇸", title: "Dubai → USA: the CDC dog rules (2026)", meta: "The import form + 6-month age rule", url: "/blog/dubai-to-usa-pet-cdc-rules-2026/", arrow: "Read" }
+      - { flag: "🇦🇺", title: "Dubai → Australia: why it takes 6 months", meta: "Titre test + 180-day wait + quarantine", url: "/blog/dubai-to-australia-pet-why-six-months/", arrow: "Read" }
+      - { flag: "🇸🇬", title: "Dubai → Singapore: licence, titre & quarantine", meta: "A licence-led process you plan backwards", url: "/blog/dubai-to-singapore-pet-quarantine/", arrow: "Read" }
+      - { flag: "🇪🇺", title: "Dubai → EU: the health certificate & titre question", meta: "Germany, France, Netherlands — one framework", url: "/blog/dubai-to-eu-pet-rules/", arrow: "Read" }
+      - { flag: "🇨🇦", title: "Dubai → Canada: no quarantine, exact certificate", meta: "CFIA rules and the detail that holds pets", url: "/blog/dubai-to-canada-pet-rules/", arrow: "Read" }
+      - { flag: "🇮🇳", title: "Returning to India: the NOC that decides it", meta: "AQCS permit + documentation + pet limits", url: "/blog/dubai-to-india-pet-return/", arrow: "Read" }
+      - { flag: "🇿🇦", title: "Dubai → South Africa: permit & the tests", meta: "Import permit + titre + disease testing", url: "/blog/dubai-to-south-africa-pet-permit/", arrow: "Read" }
+
+  - type: cta
+    heading: "Not sure where to start?"
+    body: "Tell us your destination and your pet's details — we'll reply on WhatsApp with a firm price range and the exact steps for your route. No 'get a quote' wall."
+    ctas:
+      - { label: "Get my quote", url: "/#quote", style: "btn-gold" }
+      - { label: "See all destinations", url: "/destinations/", style: "btn-ghost" }

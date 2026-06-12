@@ -1,0 +1,23 @@
+<section class="section {{ block.variant | default('') }}" id="{{ block.id | default('') }}">
+  <div class="container">
+    {% if block.eyebrow %}<p class="eyebrow">{{ block.eyebrow }}</p>{% endif %}
+    {% if block.heading %}<h2>{{ block.heading }}</h2>{% endif %}
+    <div class="fa-grid">
+      <div class="fa-col fa-facts">
+        <div class="fa-label">✅ {{ block.facts_label | default('What the rules require (fact)') }}</div>
+        <ul>
+          {% for f in block.facts %}
+          <li>{{ f.text | safe }}{% if f.authority %} <span class="fa-src">— {{ f.authority }}</span>{% endif %}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="fa-col fa-advice">
+        <div class="fa-label">💡 {{ block.advice_label | default('What we recommend (advice)') }}</div>
+        <ul>
+          {% for a in block.advice %}<li>{{ a | safe }}</li>{% endfor %}
+        </ul>
+      </div>
+    </div>
+    {% if block.note %}<p class="fa-note">{{ block.note }}</p>{% endif %}
+  </div>
+</section>

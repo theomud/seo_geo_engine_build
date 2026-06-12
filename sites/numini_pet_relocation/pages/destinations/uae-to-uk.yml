@@ -1,0 +1,201 @@
+title: "Pet Relocation Dubai to UK — Requirements, Pricing & Process | PawRoute"
+title_suffix: ""
+meta_description: "Move your pet from Dubai to the UK. Transparent pricing from AED 12,000, 4–8 week timeline, no quarantine if paperwork is perfect. APHA rules explained."
+og_title: "Moving your pet from Dubai to the UK?"
+in_nav: false
+schema: service
+service:
+  name: Pet relocation from the UAE to the United Kingdom
+  area_served: ["United Kingdom", "United Arab Emirates"]
+
+blocks:
+  - type: hero
+    eyebrow: "Route · UAE → United Kingdom"
+    heading: "Moving your pet from Dubai to the UK?"
+    subheading: >
+      One of the most popular routes — and one of the most unforgiving on timing.
+      Done right, there's no quarantine. Here's exactly what it costs, how long
+      it takes, and the one mistake that gets pets turned away at the border.
+    ctas:
+      - { label: "See UK pricing", url: "#pricing", style: "btn-gold" }
+      - { label: "Get my quote", url: "#quote", style: "btn-ghost" }
+    card:
+      heading: "Dubai → UK at a glance"
+      rows:
+        - { label: "Timeline", value: "4–8 weeks" }
+        - { label: "Cost (dog)", value: "AED 12,000–18,000" }
+        - { label: "Cost (cat)", value: "AED 8,000–14,000" }
+        - { label: "Quarantine", value: "None (if paperwork is perfect)" }
+        - { label: "Difficulty", value: "Easy–Medium" }
+      note: "No UK import permit needed. The catch is the dog tapeworm treatment window — see below."
+
+  - type: key_facts
+    heading: "Quick answer"
+    answer: "Moving a pet from Dubai to the UK takes about 4–8 weeks and costs roughly AED 12,000–18,000 for a dog (AED 8,000–14,000 for a cat). There is no quarantine when the paperwork is correct — but dogs must have a tapeworm treatment 1–5 days before arrival, and the health certificate must come from an APHA-approved vet."
+    stats:
+      - { label: "Timeline", value: "4–8 weeks" }
+      - { label: "Cost (dog)", value: "AED 12,000–18,000" }
+      - { label: "Quarantine", value: "None*" }
+      - { label: "Banned breeds", value: "Pit Bull, XL Bully + 3" }
+    verified: "June 2026"
+    source_authority: "UK APHA / GOV.UK"
+
+  - type: callout
+    style: warn
+    heading: "The #1 mistake on the UK route"
+    body: >
+      Dogs need a tapeworm treatment 1–5 days before arrival in the UK — not
+      earlier, not later. Too early and it's invalid; too late and your dog is
+      refused entry or quarantined. Cats don't need it. We schedule this around
+      your flight so the window is never missed.
+
+  - type: checklist
+    eyebrow: "What you'll need"
+    heading: "Requirements for the UK"
+    body: "Two sides to satisfy: the UAE export rules (MOCCAE) and the UK import rules (APHA). We handle both."
+    items:
+      - { title: "ISO microchip", text: "11784/11785, 15-digit — implanted before the rabies vaccine, or the vaccine is invalid." }
+      - { title: "Rabies vaccine", text: "At least 21 days before departure, with batch numbers on the certificate." }
+      - { title: "APHA-approved vet", text: "The UK health certificate must come from a vet on APHA's approved list. Most Dubai vets aren't — DKC and British Vet Hospital are. We verify before booking." }
+      - { title: "Export health certificate", text: "Issued by a government vet, valid 30 days — and it must still be valid at arrival, not just departure." }
+      - { title: "MOCCAE export clearance", text: "Online application plus an airport cargo-terminal inspection." }
+      - { title: "Tapeworm treatment (dogs only)", text: "1–5 days before UK arrival. Cats are exempt." }
+
+  - type: steps
+    eyebrow: "Step by step"
+    heading: "How the Dubai → UK move works"
+    body: "Most problems come from doing things out of order. This is the sequence that works."
+    items:
+      - { title: "Confirm UK address & date, find an APHA-approved vet", text: "Weeks 1–2. We line up a vet that's actually on the APHA list." }
+      - { title: "Microchip, then rabies vaccine", text: "Weeks 2–3. Order matters — chip first, always." }
+      - { title: "MOCCAE application & airport inspection", text: "Weeks 3–4. The export side of the paperwork." }
+      - { title: "Export health certificate", text: "Week 4, from the APHA-approved vet. Valid 30 days." }
+      - { title: "Book cargo space", text: "Weeks 4–5. Emirates, British Airways, Qatar Airways or Virgin Atlantic — cargo fills 30–60 days ahead, so book early." }
+      - { title: "Tapeworm treatment for dogs", text: "1–5 days before arrival. We schedule it precisely against your flight." }
+      - { title: "Fly & clear UK customs", text: "Departure day handover, then UK customs (usually 30–60 mins) and on to you." }
+
+  - type: table
+    eyebrow: "Getting there"
+    heading: "Airlines flying Dubai → UK"
+    columns: ["Airline", "Route", "Notes"]
+    rows:
+      - ["Emirates", "DXB → LHR, LGW, STN, LCY", "Most flights, most reliable, premium price"]
+      - ["British Airways", "DXB → LHR", "Direct, fewer pet slots"]
+      - ["Qatar Airways", "DXB → LHR via DOH", "Good alternative; Doha has a pet hotel"]
+      - ["Virgin Atlantic", "DXB → LHR", "Less frequent but reliable"]
+    note: "Cargo space fills 30–60 days ahead. We book straight after the vet inspection."
+
+  - type: pricing_tiers
+    id: pricing
+    eyebrow: "No hidden fees"
+    heading: "Dubai → UK pricing"
+    body: "The total below covers the full regulated move. Where you land in the range depends on your pet's size (volumetric crate weight) and airline."
+    tiers:
+      - name: "Essential"
+        price: "AED 12,000"
+        unit: "from"
+        desc: "The complete, correctly-sequenced UK move for confident owners."
+        includes:
+          - "Vet protocol + APHA-approved certificate"
+          - "MOCCAE export + airport inspection"
+          - "IATA crate + cargo booking"
+          - "UK customs clearance"
+        excludes:
+          - "Transit updates"
+          - "24/7 support"
+      - name: "Standard"
+        price: "AED 15,000"
+        unit: "from"
+        featured: true
+        badge: "Most popular"
+        desc: "Everything handled, with updates and tapeworm-window coordination managed for you."
+        includes:
+          - "Everything in Essential"
+          - "Tapeworm timing coordinated to your flight"
+          - "Transit updates + pre-arrival briefing"
+        excludes:
+          - "24/7 support"
+      - name: "Premium"
+        price: "AED 18,000"
+        unit: "from"
+        desc: "White-glove handling with insurance and a fallback plan if flights move."
+        includes:
+          - "Everything in Standard"
+          - "24/7 support line"
+          - "Transit insurance + pet-hotel fallback"
+    note: "Wrong paperwork at UK customs can add AED 5,000+ in delays and re-inspections — getting it right the first time is the whole point of the service."
+
+  - type: table
+    variant: section--surface
+    eyebrow: "Where the money goes"
+    heading: "Cost breakdown"
+    body: "Transparent, line by line — the part competitors hide behind a quote form."
+    columns: ["Component", "Cost (AED)"]
+    rows:
+      - ["UAE microchip", "200–400"]
+      - ["UAE rabies vaccine", "300–600"]
+      - ["UAE export health certificate", "200–400"]
+      - ["MOCCAE admin", "700"]
+      - ["IATA crate", "800–1,500"]
+      - ["Air freight (Emirates)", "6,000–10,000"]
+      - ["UK customs clearance", "500–1,000"]
+      - ["PawRoute service fee", "3,000–5,000"]
+      - ["Total", "12,000–18,000"]
+
+  - type: faq
+    heading: "Dubai → UK: your questions"
+    items:
+      - { q: "Do I need a UK import permit?", a: "No. The UK doesn't issue pre-import permits for pets. You just need the APHA health certificate." }
+      - { q: "Why can't I use my local Dubai vet?", a: "APHA keeps a whitelist of approved third-country vets, and most Dubai vets aren't on it. DKC is; British Vet Hospital is. We verify approval before any appointment." }
+      - { q: "What if I miss the tapeworm treatment timing?", a: "Entry is blocked and your dog is quarantined or returned. It's the most common UK-route mistake, which is why we schedule it precisely against your flight." }
+      - { q: "Does my cat need the tapeworm treatment?", a: "No. Cats are exempt for the UK. Only dogs need it." }
+      - { q: "What if the health certificate expires during transport?", a: "It must be valid at arrival, not just departure. The certificate lasts 30 days from issue, so we coordinate the issue date with your cargo booking." }
+      - { q: "Can my Pit Bull go to the UK?", a: "No. Pit Bull Terrier, Japanese Tosa, Dogo Argentino and Fila Brasileiro are banned under the Dangerous Dogs Act 1991 — and since 1 February 2024 the XL Bully is banned too (it can't be brought into the UK). Dogs are judged on physical type, not pedigree, so bully-type dogs can face extra scrutiny at entry. We confirm your breed before booking." }
+      - { q: "Will my pet be okay in cargo for 8+ hours?", a: "A healthy pet travels safely in modern pressurised, temperature-controlled cargo holds. For pets over 10 years old we recommend a fit-to-fly check first. We never give medical advice — that's between you and your vet." }
+      - { q: "Do I need pet insurance?", a: "It's not required, but recommended. Airline liability is limited (around AED 1,000)." }
+      - { q: "What's the arrival process in the UK?", a: "Your pet clears customs, usually within 30–60 minutes, then comes to you or a pet hotel. No quarantine when the paperwork is correct." }
+      - { q: "How much is UK customs clearance?", a: "Usually AED 500–1,000 with correct documents. It can exceed AED 5,000 if paperwork is wrong, because of delays and re-inspections." }
+
+  - type: sources
+    eyebrow: "Don't take our word for it"
+    heading: "Official sources"
+    items:
+      - { authority: "UK GOV.UK", title: "Bringing your pet to Great Britain", url: "https://www.gov.uk/bring-pet-to-great-britain", note: "APHA entry rules + health certificate" }
+      - { authority: "UK GOV.UK", title: "Tapeworm treatment for dogs", url: "https://www.gov.uk/bring-pet-to-great-britain/tapeworm-treatment-dogs", note: "The 24–120 hour window" }
+      - { authority: "UK GOV.UK", title: "Ban on XL Bully dogs", url: "https://www.gov.uk/guidance/ban-on-xl-bully-dogs", note: "Banned breeds / Dangerous Dogs Act" }
+      - { authority: "UAE MOCCAE", title: "Pet export & import permits", url: "https://www.moccae.gov.ae/en/services/import-permit-pets", note: "UAE export process" }
+      - { authority: "IATA", title: "Live Animals Regulations", url: "https://www.iata.org/en/programs/cargo/live-animals/", note: "Travel crate standards" }
+
+  - type: card_grid
+    variant: section--surface
+    eyebrow: "Related routes"
+    heading: "Comparing destinations?"
+    cards:
+      - { flag: "🇩🇪", title: "Dubai → Germany", meta: "EU rules · 4–6 weeks", url: "/destinations/uae-to-germany/", arrow: "View" }
+      - { flag: "🇺🇸", title: "Dubai → USA", meta: "4–12 weeks", url: "/destinations/uae-to-usa/", arrow: "View" }
+      - { flag: "🇨🇦", title: "Dubai → Canada", meta: "4–6 weeks", url: "/destinations/uae-to-canada/", arrow: "View" }
+      - { flag: "🌍", title: "All destinations", meta: "Every route + pricing", url: "/destinations/", arrow: "See all" }
+
+  - type: related
+    label: "📖 Read the guide"
+    items:
+      - { title: "Dubai → UK: the tapeworm window that decides if your dog flies", url: "/blog/dubai-to-uk-pet-tapeworm-window/", note: "the timing rule + APHA vet" }
+      - { title: "What it really costs to relocate a pet from Dubai (2026 data)", url: "/blog/pet-relocation-cost-from-dubai-2026/", note: "ranges across 10 routes" }
+
+  - type: quote_form
+    id: quote
+    eyebrow: "No obligation"
+    heading: "Get your Dubai → UK quote"
+    body: "Tell us about your pet and timing. We'll reply on WhatsApp with a price range and the exact first step."
+    destinations: ["UK"]
+    points:
+      - "A transparent UK price range for your pet's size"
+      - "Confirmation of an APHA-approved vet for you"
+      - "A timeline that protects the tapeworm window"
+
+  - type: cta
+    heading: "Ready to get your pet to the UK?"
+    body: "Transparent pricing. No quarantine when it's done right. We handle every step."
+    ctas:
+      - { label: "Get my quote", url: "#quote", style: "btn-gold" }
+      - { label: "See all destinations", url: "/destinations/", style: "btn-ghost" }

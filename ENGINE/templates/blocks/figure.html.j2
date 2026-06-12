@@ -1,0 +1,23 @@
+{# Visual evidence. Uses a real image if `src` is given, else a labelled
+   placeholder so the slot is honest and ready for a screenshot drop-in. #}
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <figure class="evidence">
+      {% if block.src %}
+      <img src="{{ block.src }}" alt="{{ block.alt | default(block.caption) }}" loading="lazy">
+      {% else %}
+      <div class="evidence-ph" role="img" aria-label="{{ block.alt | default(block.placeholder_label) | default('Evidence image') }}">
+        <span>📄 {{ block.placeholder_label | default('Official source screenshot') }}</span>
+      </div>
+      {% endif %}
+      {% if block.caption or block.source_label %}
+      <figcaption>
+        {{ block.caption }}
+        {% if block.source_label %}
+          <span class="src">— {% if block.source_url %}<a href="{{ block.source_url }}" target="_blank" rel="noopener">{{ block.source_label }}</a>{% else %}{{ block.source_label }}{% endif %}{% if block.captured %}, captured {{ block.captured }}{% endif %}</span>
+        {% endif %}
+      </figcaption>
+      {% endif %}
+    </figure>
+  </div>
+</section>

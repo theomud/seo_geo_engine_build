@@ -1,0 +1,45 @@
+url: /destinations/uk/
+title: "Moving a Pet to the UK from Dubai — Cost, Rules & Guides"
+title_suffix: ""
+breadcrumb: "United Kingdom"
+meta_description: "Everything for moving a pet from Dubai to the UK: cost (AED 12,000–18,000), 4–8 week timeline, no quarantine if done right, plus the tapeworm rule. Verified guides + tools."
+og_title: "Dubai → UK pet relocation hub"
+updated: "2026-06-09"
+
+blocks:
+  - type: hero
+    eyebrow: "Destination hub · United Kingdom"
+    heading: "Moving your pet to the UK from Dubai"
+    subheading: >
+      A pet move from Dubai to the UK costs roughly AED 12,000–18,000, takes 4–8 weeks, and needs
+      no quarantine — if the paperwork and the tapeworm timing are right. Start here.
+    ctas:
+      - { label: "Get my UK quote", url: "#quote", style: "btn-gold" }
+
+  - type: key_facts
+    heading: "Dubai → UK at a glance"
+    answer: "No quarantine if your dog is microchipped, rabies-vaccinated (≥21 days before travel), treated for tapeworm 24–120h before arrival, and certified by an APHA-approved vet. Cats skip the tapeworm step."
+    stats:
+      - { label: "Cost", value: "AED 12,000–18,000" }
+      - { label: "Timeline", value: "4–8 weeks" }
+      - { label: "Quarantine", value: "None*" }
+      - { label: "Verified", value: "June 2026" }
+
+  - type: card_grid
+    eyebrow: "Everything for this route"
+    heading: "UK pages & guides"
+    cards:
+      - { flag: "📋", title: "Full requirements & process", meta: "Documents, steps, timeline", url: "/destinations/uae-to-uk/", arrow: "Open" }
+      - { flag: "💰", title: "What it really costs", meta: "Line-by-line breakdown", url: "/destinations/uae-to-uk-cost/", arrow: "Open" }
+      - { flag: "🇬🇧", title: "The tapeworm-window guide", meta: "The timing rule + APHA vet", url: "/blog/dubai-to-uk-pet-tapeworm-window/", arrow: "Read" }
+      - { flag: "🧰", title: "Cost & timeline tools", meta: "Estimate + plan backward", url: "/tools/", arrow: "Use" }
+
+  - type: cost_calc
+    eyebrow: "Estimate it"
+    heading: "Estimate your Dubai → UK cost"
+
+  - type: lead_form
+    id: quote
+    eyebrow: "No obligation"
+    heading: "Get your exact UK quote"
+    body: "Tell us your pet's details and timing — we'll reply on WhatsApp with a firm range and the exact steps."

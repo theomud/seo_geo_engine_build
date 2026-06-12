@@ -1,0 +1,150 @@
+title: "Pet Relocation Dubai to South Africa — Requirements & Pricing | PawRoute"
+title_suffix: ""
+meta_description: "Move your pet from Dubai to South Africa. Transparent pricing from AED 14,000, 4–8 weeks, no quarantine when paperwork is correct. DALRRD permit and rabies explained."
+og_title: "Moving your pet from Dubai to South Africa?"
+schema: service
+service:
+  name: Pet relocation from the UAE to South Africa
+  area_served: ["South Africa", "United Arab Emirates"]
+
+blocks:
+  - type: hero
+    eyebrow: "Route · UAE → South Africa"
+    heading: "Moving your pet from Dubai to South Africa?"
+    subheading: >
+      South Africa is a medium-difficulty route with no quarantine when the
+      paperwork is correct. The key step is the DALRRD import permit. Here's the
+      cost, the timeline and the order to do things in.
+    ctas:
+      - { label: "See pricing", url: "#pricing", style: "btn-gold" }
+      - { label: "Get my quote", url: "#quote", style: "btn-ghost" }
+    card:
+      heading: "Dubai → South Africa at a glance"
+      rows:
+        - { label: "Timeline", value: "4–8 weeks" }
+        - { label: "Cost range", value: "AED 14,000–22,000" }
+        - { label: "Quarantine", value: "None (if paperwork correct)" }
+        - { label: "Difficulty", value: "Medium" }
+      note: "The import permit must be in place before travel — we arrange it early."
+
+  - type: key_facts
+    heading: "Quick answer"
+    answer: "Moving a pet from Dubai to South Africa takes about 4–8 weeks and costs roughly AED 14,000–22,000. It needs a DALRRD veterinary import permit (arranged before travel), a microchip, a current rabies vaccination, and a health certificate completed within 10 days of the flight. Dogs also need blood tests certifying them free of certain diseases, and a 14-day quarantine can apply depending on the country of origin — we confirm your status first."
+    stats:
+      - { label: "Timeline", value: "4–8 weeks" }
+      - { label: "Cost", value: "AED 14,000–22,000" }
+      - { label: "Quarantine", value: "Origin-dependent*" }
+      - { label: "Import permit", value: "DALRRD required" }
+    verified: "June 2026"
+    source_authority: "South Africa DALRRD"
+
+  - type: checklist
+    eyebrow: "What you'll need"
+    heading: "Requirements for South Africa"
+    body: "South Africa's import is handled through DALRRD (Department of Agriculture, Land Reform and Rural Development). We confirm the current detail before booking."
+    items:
+      - { title: "ISO microchip first", text: "15-digit chip, implanted before the rabies vaccine." }
+      - { title: "Current rabies vaccination", text: "Documented and current, with batch numbers on the certificate." }
+      - { title: "DALRRD import permit", text: "Required from the Department of Agriculture before travel." }
+      - { title: "Health certificate", text: "Completed within 10 days of the flight, on the form that comes with the import permit." }
+      - { title: "Dog disease blood tests", text: "Dogs must be certified free of certain diseases by blood test before import. We arrange these in the right window." }
+      - { title: "MOCCAE export + IATA crate", text: "UAE export process and a crate sized to your pet." }
+
+  - type: steps
+    eyebrow: "The right order"
+    heading: "How the Dubai → South Africa move works"
+    items:
+      - { title: "Apply for the DALRRD permit early", text: "It needs to be in place before travel, so we start it first." }
+      - { title: "Microchip, then rabies vaccine", text: "Chip first — order matters." }
+      - { title: "Health certificate + MOCCAE export", text: "Export health certificate plus the UAE export paperwork." }
+      - { title: "Book crate & flight", text: "IATA crate and cargo space, booked early." }
+      - { title: "Fly & clear customs", text: "Your pet clears on the permit and comes to you. No quarantine when documents are correct." }
+
+  - type: pricing_tiers
+    id: pricing
+    eyebrow: "No hidden fees"
+    heading: "Dubai → South Africa pricing"
+    body: "Where you land in the range depends on your pet's size and the airline. Full breakdown before you commit."
+    tiers:
+      - name: "Essential"
+        price: "AED 14,000"
+        unit: "from"
+        desc: "The full regulated move, handled correctly."
+        includes:
+          - "Vet protocol + health certificate"
+          - "DALRRD permit coordination"
+          - "MOCCAE export + IATA crate"
+          - "Cargo booking & clearance"
+        excludes:
+          - "Transit updates"
+          - "24/7 support"
+      - name: "Standard"
+        price: "AED 18,000"
+        unit: "from"
+        featured: true
+        badge: "Most popular"
+        desc: "Everything handled, with updates and a pre-arrival briefing."
+        includes:
+          - "Everything in Essential"
+          - "Transit updates + pre-arrival briefing"
+        excludes:
+          - "24/7 support"
+      - name: "Premium"
+        price: "AED 22,000"
+        unit: "from"
+        desc: "White-glove handling with insurance and a fallback plan."
+        includes:
+          - "Everything in Standard"
+          - "24/7 support line"
+          - "Transit insurance + pet-hotel fallback"
+    note: "Final price depends on your pet's size and routing. You'll see every line before you decide."
+
+  - type: faq
+    heading: "Dubai → South Africa: your questions"
+    items:
+      - { q: "Is there quarantine for South Africa?", a: "It depends on the country of origin — a 14-day quarantine applies to pets from some countries and not others. We confirm whether it applies to a pet travelling from the UAE before you book." }
+      - { q: "What's the DALRRD permit?", a: "An import permit from South Africa's Department of Agriculture that must be in place before travel. We start it early so it's never the bottleneck." }
+      - { q: "How long does it take?", a: "Usually 4–8 weeks, with the permit and rabies timing as the main drivers." }
+      - { q: "Can you guarantee the arrival date?", a: "No. Airlines change schedules. We give you a realistic timeline and keep you updated, but never guarantee a delivery date." }
+
+  - type: sources
+    eyebrow: "Don't take our word for it"
+    heading: "Official sources"
+    items:
+      - { authority: "South Africa DALRRD", title: "Import of dogs & cats to RSA — information document (PDF)", url: "https://www.dalrrd.gov.za/images/Branches/AgricProducHealthFoodSafety/animal-health/importexport/import/import-procedures/information-document-for-import-of-dogs-and-cats-to-rsa-06-2022.pdf", note: "Permit, disease tests, quarantine" }
+      - { authority: "South African Government", title: "Import animals and animal products", url: "https://www.gov.za/services/import/import-animals-and-animal-products", note: "Import permit service" }
+      - { authority: "UAE MOCCAE", title: "Pet export & import permits", url: "https://www.moccae.gov.ae/en/services/import-permit-pets", note: "UAE export process" }
+      - { authority: "IATA", title: "Live Animals Regulations", url: "https://www.iata.org/en/programs/cargo/live-animals/", note: "Travel crate standards" }
+
+  - type: card_grid
+    variant: section--surface
+    eyebrow: "Related routes"
+    heading: "Comparing destinations?"
+    cards:
+      - { flag: "🇬🇧", title: "Dubai → UK", meta: "4–8 weeks · no quarantine", url: "/destinations/uae-to-uk/", arrow: "View" }
+      - { flag: "🇦🇺", title: "Dubai → Australia", meta: "Up to 6 months", url: "/destinations/uae-to-australia/", arrow: "View" }
+      - { flag: "🇮🇳", title: "Dubai → India", meta: "3–5 weeks", url: "/destinations/uae-to-india/", arrow: "View" }
+      - { flag: "🌍", title: "All destinations", meta: "Every route + pricing", url: "/destinations/", arrow: "See all" }
+
+  - type: related
+    label: "📖 Read the guide"
+    items:
+      - { title: "Dubai → South Africa: the import permit and the tests that catch people", url: "/blog/dubai-to-south-africa-pet-permit/", note: "permit + titre + disease tests" }
+
+  - type: quote_form
+    id: quote
+    eyebrow: "No obligation"
+    heading: "Get your Dubai → South Africa quote"
+    body: "Tell us your destination and timing. We'll start the permit conversation and reply with a transparent price."
+    destinations: ["South Africa"]
+    points:
+      - "DALRRD permit guidance"
+      - "A transparent price range for your pet"
+      - "A deadline-safe timeline"
+
+  - type: cta
+    heading: "Ready to get your pet to South Africa?"
+    body: "We get the permit moving early so nothing stalls. Transparent pricing, every step handled."
+    ctas:
+      - { label: "Get my quote", url: "#quote", style: "btn-gold" }
+      - { label: "See all destinations", url: "/destinations/", style: "btn-ghost" }

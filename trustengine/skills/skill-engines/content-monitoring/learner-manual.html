@@ -1,0 +1,58 @@
+<!DOCTYPE html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Content Monitoring (freshness) — Learner Manual</title><style>body{font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:#1f2937;
+line-height:1.6;background:#f7f8fb;margin:0}.wrap{max-width:860px;margin:0 auto;padding:28px}
+h1{color:#1a3a5c}h2{color:#1a3a5c;border-top:2px solid #e5e7eb;padding-top:14px;margin-top:26px}
+h3{color:#2c5282}code{background:#f1f5f9;padding:1px 5px;border-radius:4px}
+table{border-collapse:collapse;width:100%}th,td{border:1px solid #e5e7eb;padding:7px 10px;text-align:left;vertical-align:top}
+th{background:#2c5282;color:#fff}tr:nth-child(even) td{background:#f9fafb}
+.hd{background:linear-gradient(135deg,#1a3a5c,#2c5282);color:#fff;padding:22px 28px;border-radius:0 0 14px 14px}
+.hd h1{color:#fff;margin:0}.hd p{color:#cfe0f5;margin:6px 0 0}</style></head><body><div class='hd'><h1>Content Monitoring (freshness) — Learner Manual</h1><p>Does the page show it's kept current — visible dates, recent facts, review markers?</p></div><div class='wrap'><h1>Content Monitoring (freshness) — Learner Manual</h1>
+<p>Every page is true the day it's published and decaying after. The monitoring SYSTEM (watching 12 streams, RICE-scoring changes) is off-page — but its result shows on the page as visible freshness. This engine scores those freshness signals; the monitoring cadence and drift detection are shown as Not Measurable.</p>
+<h2>How to run the engine</h2>
+<ul>
+<li>Score a page: <code>python skill-engines/content-monitoring/engine.py --url &lt;URL&gt; --report out.html</code></li>
+<li>Web checker: <code>python skill-engines/content-monitoring/engine.py --serve 8102</code></li>
+<li>These docs: <code>python skill-engines/content-monitoring/engine.py --docs</code></li>
+</ul>
+<h2>The measurements (each one, with why and how)</h2>
+<h2>1. Visible date</h2>
+<p><strong>How we measure it:</strong> We look for a published/updated date (text or schema).</p>
+<p><strong>Why it works:</strong> A visible recent date tells readers and engines the fact is current.</p>
+<p><strong>What to do:</strong> Add a visible 'last updated' date (and dateModified schema).</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: (no date)</li>
+<li>DO: Last updated: June 2026.</li>
+</ul>
+<h2>2. Recent-year reference</h2>
+<p><strong>How we measure it:</strong> We check for a recent year (≥2025).</p>
+<p><strong>Why it works:</strong> On volatile topics, recency is a ranking and trust signal.</p>
+<p><strong>What to do:</strong> Refresh facts and reference the current year.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: facts cite 2021</li>
+<li>DO: rules current for 2026.</li>
+</ul>
+<h2>3. Review / verification marker</h2>
+<p><strong>How we measure it:</strong> We look for 'reviewed/verified/current as of'.</p>
+<p><strong>Why it works:</strong> Showing the page is actively checked is what builds trust in YMYL topics.</p>
+<p><strong>What to do:</strong> Add 'reviewed/verified [date]' to show active checking.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: (none)</li>
+<li>DO: Verified against MOCCAE, reviewed monthly.</li>
+</ul>
+<h2>4. Tracks changes</h2>
+<p><strong>How we measure it:</strong> We look for changelog / 'what's new' / rule-change language.</p>
+<p><strong>Why it works:</strong> Surfacing updates proves the content is monitored, not abandoned.</p>
+<p><strong>What to do:</strong> Note recent rule changes / a short what's-new line.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: (none)</li>
+<li>DO: 2026 update: summer embargo dates changed.</li>
+</ul>
+<h2>Monitoring cadence (12 streams) (human-judged)</h2>
+<p>Off-page — whether you watch regulators/airlines/competitors isn't on the page.</p>
+<h2>RICE prioritisation of changes (human-judged)</h2>
+<p>Off-page — the scoring/queue lives in the monitoring system.</p>
+<h2>90-day re-verification (human-judged)</h2>
+<p>Off-page — the re-check schedule isn't observable here.</p></div></body></html>

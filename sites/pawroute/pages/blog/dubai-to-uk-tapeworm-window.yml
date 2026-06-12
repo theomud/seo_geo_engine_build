@@ -1,0 +1,96 @@
+url: /blog/dubai-to-uk-pet-tapeworm-window/
+title: "Dubai to UK Pet Move: The Tapeworm Window That Decides It"
+title_suffix: ""
+meta_description: "The single detail that gets dogs refused entry to the UK from Dubai: the tapeworm treatment must be given 24–120 hours before arrival. Here's how to get it right."
+og_title: "The one timing rule that decides if your dog enters the UK"
+updated: "2026-06-09"
+layout: article
+
+blocks:
+  - type: article_header
+    category: "Route guide · UK"
+    category_url: "/blog/"
+    h1: "Dubai to the UK: the tapeworm window that decides if your dog flies"
+    standfirst: "One mistimed treatment is the most common reason a Dubai → UK pet move fails. The fix is free — if you know the rule."
+    author: "the PawRoute relocation team"
+    date: "9 June 2026"
+    reading_time: 6
+    reviewed: "reviewed by our IPATA-certified specialists"
+    image: /assets/blog/cost-2026-hero.png
+    image_alt: "A dog ready to travel from Dubai to the UK"
+
+  - type: prose
+    id: answer
+    heading: "The short answer"
+    paragraphs:
+      - "To bring a dog into the UK from Dubai, a vet must treat it for tapeworm <strong>no less than 24 hours and no more than 120 hours (5 days) before arrival</strong> — not earlier, not later. Miss that window and your dog is refused entry or held. Cats are exempt."
+      - "Get the microchip, rabies vaccine, APHA-approved health certificate and that tapeworm window right, and there's <strong>no quarantine</strong> — your dog clears and comes home the same day."
+
+  - type: takeaways
+    heading: "Key takeaways"
+    items:
+      - "Tapeworm treatment for dogs: <strong>24–120 hours before arrival</strong>. Cats don't need it."
+      - "The UK health certificate must come from an <strong>APHA-approved</strong> vet — most Dubai vets aren't on that list."
+      - "Order matters: <strong>ISO microchip first, then the rabies vaccine</strong> (≥21 days before travel)."
+      - "Banned breeds can't enter: Pit Bull, <strong>XL Bully (since 1 Feb 2024)</strong>, Tosa, Dogo Argentino, Fila Brasileiro."
+      - "Do it right and there is <strong>no quarantine</strong> — the risk is paperwork, not quarantine."
+
+  - type: toc
+    heading: "In this article"
+    items:
+      - { label: "The tapeworm window, exactly", anchor: "window" }
+      - { label: "Why your normal vet may not work", anchor: "vet" }
+      - { label: "What going wrong looks like", anchor: "story" }
+      - { label: "Frequently asked questions", anchor: "faq" }
+
+  - type: prose
+    id: window
+    eyebrow: "The detail that matters most"
+    heading: "The tapeworm window, exactly"
+    paragraphs:
+      - "The UK requires a vet to treat your dog with an approved tapeworm product (containing praziquantel) and record it, <strong>no less than 24 hours and no more than 5 days before you enter Great Britain</strong>. Treat too early and the record is invalid; too late and your dog can't board or is held at the border."
+      - "Because the window is so tight, it has to be planned backwards from your exact flight — which is why the treatment is the last clinical step, not the first. Cats and ferrets are exempt; this is a dog-only rule."
+
+  - type: prose
+    id: vet
+    eyebrow: "The other thing people miss"
+    heading: "Why your normal Dubai vet may not work"
+    paragraphs:
+      - "The UK health certificate for a pet arriving from the UAE must be issued by an <strong>APHA-approved</strong> (official) veterinarian. Many Dubai clinics aren't on that list, and a certificate from the wrong vet is rejected at the UK border."
+      - "Confirm your vet's approval <strong>before</strong> you book any appointment. This one check — vet approval plus the tapeworm timing — is what separates a smooth arrival from an expensive hold."
+
+  - type: story
+    id: story
+    heading: "What going wrong actually looks like"
+    tag: "A common scenario"
+    lead: "The biggest cost on a Dubai → UK move is almost never the airline — it's one mistimed detail."
+    problem: "An owner takes the cheapest quote for their Labrador, flying in three weeks."
+    mistake: "The provider uses a vet who isn't APHA-approved and gives the tapeworm treatment a week early to 'be safe'."
+    discovery: "At check-in the UK health certificate is rejected and the 24–120 hour window has lapsed — the dog can't board."
+    result: "A rebooked flight, a fresh certificate and a few days of boarding add roughly AED 6,000 and over a week."
+    lesson: "The cheapest quote cost the most. The APHA vet and the tapeworm window aren't details — they decide whether your dog flies."
+
+  - type: faq
+    id: faq
+    heading: "Frequently asked questions"
+    items:
+      - { q: "Will my pet be quarantined when arriving in the UK?", a: "No — pets that arrive with correct paperwork are not quarantined. The risk is a documentation or timing error, not routine quarantine." }
+      - { q: "Do I need a rabies blood test (titre) for the UK?", a: "No. The UAE is a 'listed' country for the UK, so there's no rabies titre test or three-month wait — just a valid rabies vaccination at least 21 days before travel." }
+      - { q: "Does my cat need the tapeworm treatment?", a: "No. The tapeworm rule applies to dogs only." }
+      - { q: "Can my XL Bully come to the UK?", a: "No. The XL Bully has been banned since 1 February 2024, alongside Pit Bull, Japanese Tosa, Dogo Argentino and Fila Brasileiro. We verify your breed before booking." }
+
+  - type: sources
+    eyebrow: "Verified against the source"
+    heading: "Official sources"
+    items:
+      - { authority: "UK GOV.UK", title: "Tapeworm treatment for dogs (24–120h)", url: "https://www.gov.uk/bring-pet-to-great-britain/tapeworm-treatment-dogs", note: "The exact window" }
+      - { authority: "UK GOV.UK", title: "Bringing your pet to Great Britain", url: "https://www.gov.uk/bring-pet-to-great-britain", note: "Microchip, rabies, no quarantine" }
+      - { authority: "UK GOV.UK", title: "Ban on XL Bully dogs", url: "https://www.gov.uk/guidance/ban-on-xl-bully-dogs", note: "Banned breeds" }
+      - { authority: "UAE MOCCAE", title: "Pet export permits", url: "https://www.moccae.gov.ae/en/services/import-permit-pets", note: "UAE export side" }
+
+  - type: cta
+    heading: "Moving your pet from Dubai to the UK?"
+    body: "We schedule the tapeworm window to your flight, confirm an APHA-approved vet, and handle the paperwork — so your dog comes home safely, with no surprises at the border."
+    ctas:
+      - { label: "See Dubai → UK cost & process", url: "/destinations/uae-to-uk/", style: "btn-gold" }
+      - { label: "The full cost breakdown", url: "/destinations/uae-to-uk-cost/", style: "btn-ghost" }

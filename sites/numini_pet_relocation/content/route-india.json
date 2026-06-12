@@ -1,0 +1,18 @@
+{
+  "_meta": {
+    "produced_by": "gen_route_briefs.py (route money-page brief)",
+    "blog_objective": "lead_generation",
+    "funnel_stage": "MOFU→BOFU (commercial-investigation → transactional)",
+    "page_type": "service (route money page)",
+    "target_keyword": "pet relocation dubai to india",
+    "intent": "commercial",
+    "primary_fear": "I'm afraid that the documentation and customs will be chaotic",
+    "monetization": "lead_generation (route enquiry → WhatsApp quote)"
+  },
+  "seo": {
+    "title": "Pet Relocation Dubai to India — Requirements & Pricing | PawRoute",
+    "meta_description": "Move your pet from Dubai to India. Transparent pricing from AED 8,000, 3–5 weeks, no quarantine. AQCS NOC, rabies and health certificate explained.",
+    "canonical_path": "/destinations/uae-to-india/"
+  },
+  "_note": "Route brief for Dubai → India. Content lives in the page YAML; this brief lets the registry track question/funnel/monetization."
+}

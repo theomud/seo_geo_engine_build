@@ -1,0 +1,92 @@
+url: /moving-to-dubai/quarantine/
+title: "Will my pet be quarantined when arriving in Dubai? | PawRoute"
+title_suffix: ""
+meta_description: "Worried about quarantine in the UAE? With a valid MOCCAE import permit and correct vaccinations, cats and dogs are not quarantined on arrival. Here's what actually happens."
+og_title: "Will my pet be quarantined arriving in Dubai?"
+schema: service
+service:
+  name: Pet import to the UAE — arrival process
+  area_served: ["United Arab Emirates"]
+
+blocks:
+  - type: hero
+    eyebrow: "Moving to Dubai · import"
+    heading: "Will my pet be quarantined when we land in Dubai?"
+    subheading: >
+      It's one of the first things owners dread. The reassuring answer: with a valid
+      import permit and correct vaccinations, cats and dogs are not held in quarantine
+      on arrival in the UAE. Here's exactly what arrival looks like instead.
+    ctas:
+      - { label: "What you need", url: "#need", style: "btn-gold" }
+      - { label: "Ask us about your case", url: "#quote", style: "btn-ghost" }
+
+  - type: key_facts
+    heading: "Quick answer"
+    answer: >
+      The UAE does not quarantine cats and dogs on arrival when the paperwork is
+      correct — a valid MOCCAE import permit, an ISO microchip, and a rabies
+      vaccination at least 21 days old. Pets clear at the airport's animal terminal
+      and go home with you the same day. Problems only arise when documents are
+      missing or a breed is restricted.
+    stats:
+      - { label: "Quarantine", value: "None (if compliant)" }
+      - { label: "Import permit", value: "Required, valid 90 days" }
+      - { label: "Microchip", value: "ISO, before vaccine" }
+      - { label: "Max pets", value: "2 per person / year" }
+    verified: "June 2026"
+    source_authority: "UAE MOCCAE"
+
+  - type: checklist
+    id: need
+    eyebrow: "What you need for a clean arrival"
+    heading: "Get these right and there's no quarantine"
+    items:
+      - { title: "Valid MOCCAE import permit", text: "Applied for online before travel and still inside its 90-day window on arrival." }
+      - { title: "ISO microchip", text: "11784/11785, implanted before the rabies vaccine — or the vaccine record is invalid." }
+      - { title: "Rabies vaccination ≥21 days old", text: "Documented with batch numbers." }
+      - { title: "Breed check", text: "Some breeds (Pit Bull and mastiff types) are restricted. We confirm yours before you book." }
+
+  - type: callout
+    style: warn
+    heading: "When a hold *can* happen"
+    body: >
+      A pet is only held when paperwork is incomplete or a breed is restricted — not
+      as routine quarantine. If that risk applies to you, read “what happens if your
+      dog is taken at Dubai airport” for the exact prevention steps.
+
+  - type: sources
+    eyebrow: "Don't take our word for it"
+    heading: "Official sources"
+    items:
+      - { authority: "UAE MOCCAE", title: "Import permit for pets (cats / dogs)", url: "https://www.moccae.gov.ae/en/services/import-permit-pets", note: "Permit + entry requirements" }
+      - { authority: "IATA", title: "Live Animals Regulations", url: "https://www.iata.org/en/programs/cargo/live-animals/", note: "Travel crate standards" }
+
+  - type: card_grid
+    variant: section--surface
+    eyebrow: "Related worries"
+    heading: "Worried about something else?"
+    cards:
+      - { flag: "🛂", title: "Could my dog be held at the airport?", meta: "The 3 steps that prevent it", url: "/moving-to-dubai/dog-taken-at-airport/", arrow: "Read" }
+      - { flag: "☀️", title: "Can I fly my pet in summer?", meta: "The heat embargo", url: "/moving-to-dubai/summer-travel/", arrow: "Read" }
+      - { flag: "🌍", title: "Leaving the UAE?", meta: "Export routes + pricing", url: "/destinations/", arrow: "See routes" }
+
+  - type: faq
+    heading: "Quarantine: your questions"
+    items:
+      - { q: "Will my pet really skip quarantine?", a: "Yes, for cats and dogs entering the UAE with a valid MOCCAE import permit, an ISO microchip and a rabies vaccination at least 21 days old. They clear at the airport and go home the same day." }
+      - { q: "What if my paperwork is incomplete?", a: "That's the one thing that causes a hold — not routine quarantine. If anything's missing we flag it before you travel so it never happens." }
+      - { q: "What about restricted breeds?", a: "Some breeds are restricted for UAE entry. We confirm your breed before booking so there are no surprises at arrival." }
+
+  - type: quote_form
+    id: quote
+    eyebrow: "No obligation"
+    heading: "Tell us about your pet and arrival"
+    body: "We'll confirm whether anything in your situation needs extra attention — breed, documents or timing — before you travel."
+    destinations: ["Into the UAE (Dubai)", "Into the UAE (Abu Dhabi)", "Somewhere else"]
+
+  - type: cta
+    heading: "No surprises at arrivals."
+    body: "Get the documents right and your pet comes home with you the same day. We'll make sure they are."
+    ctas:
+      - { label: "Check my requirements", url: "#quote", style: "btn-gold" }
+      - { label: "Moving to Dubai — start here", url: "/moving-to-dubai/", style: "btn-ghost" }

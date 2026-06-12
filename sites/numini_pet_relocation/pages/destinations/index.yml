@@ -1,0 +1,88 @@
+url: /destinations/
+title: "Pet Relocation Destinations from the UAE — Routes & Pricing | PawRoute"
+title_suffix: ""
+meta_description: "Every pet relocation route from the UAE, with real requirements, timelines and transparent pricing. UK, Australia, USA, EU, India, Singapore, Canada and more."
+og_title: "Where is your pet going?"
+
+blocks:
+  - type: hero
+    eyebrow: "All routes from the UAE"
+    heading: "Where is your pet going?"
+    subheading: >
+      Pick your destination for the real requirements, an honest timeline and a
+      transparent price range — verified against each country's own authority.
+      No “get a quote to see the price.”
+    ctas:
+      - { label: "Get my quote", url: "#quote", style: "btn-gold" }
+    card:
+      heading: "How routes differ"
+      rows:
+        - { label: "Easiest", value: "India, EU (Germany, France, NL)" }
+        - { label: "Medium", value: "UK, USA, Canada, South Africa" }
+        - { label: "Hardest", value: "Australia, Singapore" }
+      note: "Difficulty is mostly about titer tests, waiting periods and quarantine."
+
+  - type: related
+    label: "🌍 Destination hubs (everything for one country)"
+    items:
+      - { title: "Moving a pet to the UK", url: "/destinations/uk/", note: "cost, rules, guide & tools" }
+      - { title: "Moving a pet to Australia", url: "/destinations/australia/", note: "the 6-month route, explained" }
+      - { title: "Moving a pet to the USA", url: "/destinations/usa/", note: "the 2026 CDC rules" }
+
+  - type: card_grid
+    id: routes
+    eyebrow: "Choose a destination"
+    heading: "Popular routes"
+    cards:
+      - { flag: "🇬🇧", title: "Dubai → UK", meta: "4–8 weeks · no quarantine", price: "AED 12,000–18,000", url: "/destinations/uae-to-uk/", arrow: "View route" }
+      - { flag: "🇦🇺", title: "Dubai → Australia", meta: "Up to 6 months · 10-day quarantine", price: "AED 25,000–35,000+", url: "/destinations/uae-to-australia/", arrow: "View route" }
+      - { flag: "🇺🇸", title: "Dubai → USA", meta: "4–12 weeks", price: "AED 13,800–22,000", url: "/destinations/uae-to-usa/", arrow: "View route" }
+      - { flag: "🇩🇪", title: "Dubai → Germany", meta: "EU rules · 4–6 weeks", price: "AED 13,800–18,000", url: "/destinations/uae-to-germany/", arrow: "View route" }
+      - { flag: "🇫🇷", title: "Dubai → France", meta: "EU rules · 4–6 weeks", price: "AED 13,800–18,000", url: "/destinations/uae-to-france/", arrow: "View route" }
+      - { flag: "🇳🇱", title: "Dubai → Netherlands", meta: "EU rules · 4–6 weeks", price: "AED 10,000–16,000", url: "/destinations/uae-to-netherlands/", arrow: "View route" }
+      - { flag: "🇮🇳", title: "Dubai → India", meta: "3–5 weeks · no quarantine", price: "AED 8,000–14,000", url: "/destinations/uae-to-india/", arrow: "View route" }
+      - { flag: "🇸🇬", title: "Dubai → Singapore", meta: "4–8 months · 30-day quarantine", price: "AED 18,000–28,000", url: "/destinations/uae-to-singapore/", arrow: "View route" }
+      - { flag: "🇨🇦", title: "Dubai → Canada", meta: "4–6 weeks", price: "AED 14,000–20,000", url: "/destinations/uae-to-canada/", arrow: "View route" }
+      - { flag: "🇿🇦", title: "Dubai → South Africa", meta: "4–8 weeks", price: "AED 14,000–22,000", url: "/destinations/uae-to-south-africa/", arrow: "View route" }
+
+  - type: callout
+    heading: "Don't see your country?"
+    body: >
+      We move pets to many destinations beyond the list above. Tell us where your
+      pet needs to go and we'll confirm the requirements and a price.
+
+  - type: faq
+    heading: "Common worries, answered"
+    items:
+      - { q: "What if my pet's breed is banned?", a: "Some breeds (Pit Bull and Mastiff types) can't be exported, and a few are banned at destinations. We verify your breed before you book — no nasty surprises." }
+      - { q: "What if I'm being overcharged?", a: "Every route page shows a transparent price range and the full breakdown. If a quote is wildly different, that's your signal to ask why." }
+      - { q: "Is it safe to fly my pet in cargo?", a: "A healthy pet travels safely in a pressurised, temperature-controlled hold. For older pets a fit-to-fly check is wise — we never give medical advice, that's between you and your vet." }
+
+  - type: trust_bar
+    heading: "Why owners trust the process"
+    items:
+      - { num: "200+", label: "pets relocate through Dubai daily" }
+      - { num: "MOCCAE", label: "export process, every move" }
+      - { num: "IATA", label: "live-animal crate standards" }
+      - { label: "Every claim cited to an official source" }
+
+  - type: sources
+    eyebrow: "Don't take our word for it"
+    heading: "Official sources"
+    items:
+      - { authority: "UAE MOCCAE", title: "Pet export & import permits", url: "https://www.moccae.gov.ae/en/services/import-permit-pets", note: "UAE export process" }
+      - { authority: "IATA", title: "Live Animals Regulations", url: "https://www.iata.org/en/programs/cargo/live-animals/", note: "Crate + welfare standards" }
+
+  - type: quote_form
+    id: quote
+    eyebrow: "No obligation"
+    heading: "Tell us where your pet needs to go"
+    body: "Send the basics and we'll reply on WhatsApp with a price range and the first step for your route."
+    destinations: ["UK", "Australia", "USA", "Germany", "France", "Netherlands", "Canada", "India", "Singapore", "South Africa", "Into the UAE", "Somewhere else"]
+
+  - type: cta
+    heading: "Transparent pricing on every route."
+    body: "Pick a destination or message us — we handle everything from here."
+    ctas:
+      - { label: "Get my quote", url: "#quote", style: "btn-gold" }
+      - { label: "How it works", url: "/how-it-works/", style: "btn-ghost" }

@@ -1,0 +1,55 @@
+url: /menu/
+title: "Menu — Northside Coffee Roasters"
+title_suffix: ""
+meta_description: "The Northside menu: espresso, filter and pour-over, cold brew, and toasties — plus retail beans roasted this week. Oat, soy and almond always available."
+og_title: "The Northside menu"
+
+blocks:
+  - type: hero
+    eyebrow: "Eat & drink"
+    heading: "The menu"
+    subheading: "Coffee dialled in daily, a short food list done well, and beans to take home. Non-dairy always on, no surcharge."
+    ctas:
+      - { label: "Visit us", url: "/visit/", style: "btn-gold" }
+
+  - type: table
+    eyebrow: "Coffee"
+    heading: "From the bar"
+    columns: ["Drink", "Small", "Large"]
+    rows:
+      - ["Espresso / Macchiato", "£2.60", "—"]
+      - ["Flat white", "£3.20", "—"]
+      - ["Latte / Cappuccino", "£3.20", "£3.70"]
+      - ["Filter / Pour-over (single origin)", "£3.40", "£3.90"]
+      - ["Cold brew", "£3.60", "£4.10"]
+      - ["Hot chocolate / Chai", "£3.30", "£3.80"]
+    note: "Oat, soy and almond milk free of charge. Decaf available on all drinks."
+
+  - type: table
+    variant: section--surface
+    eyebrow: "Food"
+    heading: "A little something"
+    columns: ["Item", "Price"]
+    rows:
+      - ["Pastry of the morning (from the bakery two doors down)", "£2.80"]
+      - ["Cheese & tomato toastie", "£5.50"]
+      - ["Ham & cheese toastie", "£6.00"]
+      - ["Banana bread, toasted with butter", "£3.50"]
+      - ["Granola, yoghurt & fruit", "£5.00"]
+    note: "Toasties served until 3pm. Vegan options marked in store."
+
+  - type: card_grid
+    eyebrow: "Take home"
+    heading: "Retail beans — roasted this week"
+    body: "Whatever's in the café hopper is on the shelf. Whole bean or ground to your kit."
+    cards:
+      - { flag: "🇧🇷", title: "Brazil · Cerrado", meta: "House espresso · chocolate, hazelnut", price: "£9 / 250g" }
+      - { flag: "🇪🇹", title: "Ethiopia · Yirgacheffe", meta: "Filter · floral, citrus", price: "£11 / 250g" }
+      - { flag: "🇨🇴", title: "Colombia · Huila", meta: "All-rounder · caramel, red apple", price: "£10 / 250g" }
+      - { flag: "🎁", title: "Subscription", meta: "Beans through your door, fortnightly", price: "from £9/mo", url: "/#subscriptions", arrow: "Set it up" }
+
+  - type: cta
+    heading: "All of it tastes better in person."
+    body: "Pop in on Mill Lane — open 7am to 5pm, seven days."
+    ctas:
+      - { label: "Find us", url: "/visit/", style: "btn-gold" }

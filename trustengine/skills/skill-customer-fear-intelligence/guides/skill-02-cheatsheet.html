@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cheatsheet · File 02 — Intent Decision Tree</title>
+<style>
+  :root{--bg:#16130f;--panel:#211c16;--line:#352c22;--ink:#f3e9da;--soft:#b6a892;--accent:#e08a4c;--accent2:#d8b46a;--good:#7fae6b;
+    --sans:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;--mono:"SFMono-Regular",Consolas,monospace;}
+  *{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.5;font-size:15px;padding:18px;max-width:520px;margin:0 auto}
+  header{border-bottom:2px solid var(--accent);padding-bottom:10px;margin-bottom:14px}
+  header .k{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:700}
+  header h1{font-size:20px;margin:4px 0 0}
+  h2{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--accent2);margin:18px 0 8px}
+  .q{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:9px;padding:10px 12px;margin:7px 0}
+  .q b{color:var(--accent)} .q .r{color:var(--good);font-weight:700}
+  .q .sig{color:var(--soft);font-size:13px;font-family:var(--mono)}
+  .def{background:#2a2218;border:1px dashed var(--accent2);border-radius:9px;padding:10px 12px;margin:8px 0;text-align:center;font-weight:700}
+  .note{color:var(--soft);font-size:12.5px;margin-top:14px;border-top:1px solid var(--line);padding-top:10px}
+  .pill{display:inline-block;background:#33291d;color:var(--accent2);border-radius:14px;padding:1px 9px;font-size:12px;font-family:var(--mono)}
+</style>
+</head>
+<body>
+<header><div class="k">Trust Engine · Cheatsheet</div><h1>Intent Decision Tree</h1></header>
+<p style="color:var(--soft);margin-top:0">Ask in order. First <span class="pill">YES</span> wins → stop. Fills Column J.</p>
+
+<h2>The 7 questions</h2>
+<div class="q"><b>Q1 · Emergency?</b> <span class="r">→ Emergency</span><br><span class="sig">stuck at airport · flight tomorrow/today · right now · stranded · pet held</span></div>
+<div class="q"><b>Q2 · Urgency?</b> <span class="r">→ Urgency</span><br><span class="sig">before summer · before the embargo · this month · by [date] · deadline</span></div>
+<div class="q"><b>Q3 · Fear?</b> <span class="r">→ Fear</span><br><span class="sig">safe · risk · can · will · what if · denied · quarantine · confiscated</span></div>
+<div class="q"><b>Q4 · Problem?</b> <span class="r">→ Problem</span><br><span class="sig">failed · rejected · not accepted · "what to do if" · "how to fix" · next steps</span></div>
+<div class="q"><b>Q5 · Brand / named resource?</b> <span class="r">→ Research</span><br><span class="sig">Blue Sky · DKC · Emirates · Etihad · MOCCAE · IPATA · a named form</span></div>
+<div class="q"><b>Q6 · Commercial?</b> <span class="r">→ Commercial</span><br><span class="sig">best · top · compare · vs · review · cost · price · quote · company</span></div>
+<div class="q"><b>Q7 · Transactional?</b> <span class="r">→ Transactional</span><br><span class="sig">book · hire · contact · get a quote · near me · company + location</span></div>
+<div class="def">No signal? → <span style="color:var(--accent2)">INFORMATIONAL</span></div>
+<div class="q" style="margin-top:6px"><b>Urgency vs Emergency:</b> deadline in days/weeks = Urgency; crisis in hours = Emergency</div>
+
+<h2>Edge-case rules</h2>
+<div class="q">"cost" w/o "quote/get" → <b>Informational</b>; with buy context → Commercial</div>
+<div class="q">Route, no question word → default <b>Commercial</b></div>
+<div class="q">Fear + commercial ("safest company") → <b>Fear wins</b></div>
+<div class="q">Brand + "reviews" → <b>Research</b> (evaluating, not deciding)</div>
+
+<div class="note">Always hand-review every Emergency, Urgency, Fear & Problem call and every brand keyword. ~80% auto-classify; 20% need eyes. The Trust Engine · Customer Fear Intelligence · File 02 · 8 intent types (updated 2026-05-29).</div>
+</body>
+</html>

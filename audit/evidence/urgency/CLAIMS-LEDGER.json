@@ -1,0 +1,42 @@
+{
+  "set": "urgency",
+  "checked": "2026-06-09",
+  "claims": [
+    {
+      "id": "gov-uk-rabies-21day",
+      "claim": "UK: microchip before rabies vaccination; wait at least 21 full days after vaccination before travel",
+      "authority": "UK GOV.UK / DEFRA",
+      "source_url": "https://www.gov.uk/bring-pet-to-great-britain",
+      "official": true,
+      "host": "www.gov.uk",
+      "expect": "21|rabies|microchip",
+      "status": "VERIFIED",
+      "screenshot": "audit/evidence/urgency/gov-uk-rabies-21day.png",
+      "bytes": 554883,
+      "found": true,
+      "checked": "2026-06-09",
+      "kind": "fact",
+      "version": "2026",
+      "reviewer": "(pending human sign-off)",
+      "reverify_by": "2026-10-07"
+    },
+    {
+      "id": "skycargo-pets",
+      "claim": "Pets leave the UAE as IATA-compliant live-animal airfreight, with vet support at the Dubai Animal Care area",
+      "authority": "Emirates SkyCargo",
+      "source_url": "https://www.skycargo.com/products/live/pets/",
+      "official": true,
+      "host": "www.skycargo.com",
+      "expect": "IATA|pet|animal|cargo",
+      "status": "VERIFIED",
+      "screenshot": "audit/evidence/urgency/skycargo-pets.png",
+      "bytes": 1517313,
+      "found": true,
+      "checked": "2026-06-09",
+      "kind": "fact",
+      "version": "2026",
+      "reviewer": "(pending human sign-off)",
+      "reverify_by": "2026-10-07"
+    }
+  ]
+}

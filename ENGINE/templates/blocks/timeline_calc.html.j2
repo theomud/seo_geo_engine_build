@@ -1,0 +1,66 @@
+<section class="section {{ block.variant | default('') }}" id="{{ block.id | default('timeline-calculator') }}">
+  <div class="container container--article">
+    {% if block.eyebrow %}<p class="eyebrow">{{ block.eyebrow }}</p>{% endif %}
+    <h2>{{ block.heading | default('Pet relocation timeline calculator') }}</h2>
+    {% if block.body %}<p>{{ block.body }}</p>{% endif %}
+    <div class="tool" data-tool="timeline">
+      <div class="tool-row">
+        <label>Your target travel date
+          <input type="date" id="tc-date">
+        </label>
+        <label>Route type
+          <select id="tc-route">
+            <option value="rabiesUK">UK (rabies + tapeworm)</option>
+            <option value="rabies">USA / Canada / EU-listed (rabies only)</option>
+            <option value="titre">EU non-listed / Singapore (rabies + titre test)</option>
+            <option value="australia">Australia (titre + 180-day wait + quarantine)</option>
+          </select>
+        </label>
+        <button type="button" class="btn btn-gold" id="tc-go">Show my timeline</button>
+      </div>
+      <div id="tc-out" class="tool-out" hidden></div>
+      <p class="tool-note">Indicative only, based on official waiting rules (UK GOV.UK 21-day rabies + 24–120h tapeworm; EU titre ≥30 days after vaccination &amp; ≥90 days before travel; Australia 180-day wait). Always confirm your exact dates with us before booking.</p>
+    </div>
+  </div>
+</section>
+<script>
+(function(){
+  var go=document.getElementById('tc-go'); if(!go) return;
+  function fmt(d){return d.toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'});}
+  function minus(date,days){var d=new Date(date.getTime());d.setDate(d.getDate()-days);return d;}
+  go.addEventListener('click',function(){
+    var v=document.getElementById('tc-date').value, route=document.getElementById('tc-route').value;
+    var out=document.getElementById('tc-out');
+    if(!v){out.hidden=false;out.innerHTML='<p class="tool-warn">Pick your travel date first.</p>';return;}
+    var T=new Date(v+'T00:00:00'), today=new Date(); today.setHours(0,0,0,0);
+    var steps=[], minLead;
+    if(route==='rabiesUK'||route==='rabies'){
+      minLead=21;
+      steps.push(['Microchip + rabies vaccination','by '+fmt(minus(T,21))+' (≥21 full days before travel; microchip first)']);
+      if(route==='rabiesUK') steps.push(['Tapeworm treatment (dogs)','between '+fmt(minus(T,5))+' and '+fmt(minus(T,1))+' (24–120h window — dogs only)']);
+      steps.push(['MOCCAE export permit + health certificate','in the final days before travel']);
+    } else if(route==='titre'){
+      minLead=120;
+      steps.push(['Microchip + rabies vaccination','by '+fmt(minus(T,120))+' (before the titre test)']);
+      steps.push(['Rabies titre blood test','by '+fmt(minus(T,90))+' (≥30 days after vaccination, ≥90 days before travel)']);
+      steps.push(['Import permit + health certificate','in the weeks before travel']);
+    } else { // australia
+      minLead=210;
+      steps.push(['Microchip + rabies vaccination','by '+fmt(minus(T,210))+' (well before the titre test)']);
+      steps.push(['Rabies titre (RNAT) test','by '+fmt(minus(T,180))+' — starts the 180-day clock']);
+      steps.push(['180-day waiting period','runs until ~'+fmt(T)]);
+      steps.push(['Import permit + government quarantine booking','before travel; quarantine on arrival']);
+    }
+    var daysLeft=Math.round((T-today)/86400000);
+    var tight = daysLeft < minLead;
+    var html='<table class="tool-table"><tbody>';
+    steps.forEach(function(s){html+='<tr><th>'+s[0]+'</th><td>'+s[1]+'</td></tr>';});
+    html+='</tbody></table>';
+    html+='<p class="'+(tight?'tool-warn':'tool-ok')+'">'+
+      (tight
+        ? '⚠ That date is tight: this route needs about '+minLead+' days from an unvaccinated start, and you have '+daysLeft+'. If your pet is <strong>already vaccinated</strong> (rabies valid ≥21 days, titre done) you may still make it — talk to us today.'
+        : '✓ You have '+daysLeft+' days — enough lead time if you start now. Earliest steps first; the rabies clock can\'t be shortened.')+'</p>';
+    out.hidden=false; out.innerHTML=html;
+  });
+})();
+</script>

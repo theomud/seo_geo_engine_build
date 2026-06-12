@@ -1,0 +1,157 @@
+title: "Pet Relocation Dubai to USA — Requirements, Pricing & Process | PawRoute"
+title_suffix: ""
+meta_description: "Move your pet from Dubai to the USA. Transparent pricing from AED 13,800, 4–12 week timeline. UAE export handled; current US/CDC rules confirmed for your route."
+og_title: "Moving your pet from Dubai to the USA?"
+schema: service
+service:
+  name: Pet relocation from the UAE to the United States
+  area_served: ["United States", "United Arab Emirates"]
+
+blocks:
+  - type: hero
+    eyebrow: "Route · UAE → United States"
+    heading: "Moving your pet from Dubai to the USA?"
+    subheading: >
+      A popular route with a moving target: US entry rules (CDC, plus the airport
+      and state you land in) have changed in recent years. We confirm the current
+      requirements for your exact route before anything is booked.
+    ctas:
+      - { label: "See pricing", url: "#pricing", style: "btn-gold" }
+      - { label: "Get my quote", url: "#quote", style: "btn-ghost" }
+    card:
+      heading: "Dubai → USA at a glance"
+      rows:
+        - { label: "Timeline", value: "4–12 weeks" }
+        - { label: "Cost range", value: "AED 13,800–22,000" }
+        - { label: "Quarantine", value: "Generally none" }
+        - { label: "Difficulty", value: "Medium" }
+      note: "Requirements depend on your pet, the entry airport and the destination state — we verify the current rules per case."
+
+  - type: key_facts
+    heading: "Quick answer"
+    answer: "Moving a pet from Dubai to the USA takes about 4–12 weeks and costs roughly AED 13,800–22,000, with generally no quarantine. Since 1 August 2024 every dog entering the US needs a CDC Dog Import Form receipt, must be at least 6 months old, and must be microchipped — and exact rules can vary by entry airport and state, so we confirm them for your route."
+    stats:
+      - { label: "Timeline", value: "4–12 weeks" }
+      - { label: "Cost", value: "AED 13,800–22,000" }
+      - { label: "Quarantine", value: "Generally none" }
+      - { label: "Dogs", value: "CDC form · 6+ months" }
+    verified: "June 2026"
+    source_authority: "US CDC"
+
+  - type: callout
+    heading: "The CDC Dog Import Form is now mandatory"
+    body: >
+      Since 1 August 2024, every dog entering the US must have a CDC Dog Import
+      Form receipt, be at least 6 months old and be microchipped. Other details
+      can vary by entry airport and state. We confirm the current requirements
+      against the official CDC guidance for your specific route before booking.
+
+  - type: checklist
+    eyebrow: "The UAE side (always required)"
+    heading: "What you'll need to leave the UAE"
+    body: "Whatever your US destination, the export side is the same — and it's the part we control tightly."
+    items:
+      - { title: "ISO microchip first", text: "15-digit 11784/11785 chip, before any vaccination." }
+      - { title: "Rabies vaccine", text: "At least 21 days before departure, with batch numbers documented." }
+      - { title: "Export health certificate", text: "From a government vet, valid 30 days, exam within 10 days of departure." }
+      - { title: "MOCCAE export clearance", text: "Online application plus airport cargo-terminal inspection." }
+      - { title: "IATA crate", text: "Rigid, ventilated, sized to your pet by the IATA formula." }
+
+  - type: steps
+    eyebrow: "The right order"
+    heading: "How the Dubai → USA move works"
+    items:
+      - { title: "Confirm destination, date & live US rules", text: "We check current CDC/state requirements for your entry airport." }
+      - { title: "Microchip, then rabies vaccine", text: "Chip first — order matters." }
+      - { title: "Export paperwork + MOCCAE", text: "Export health certificate and the UAE export process." }
+      - { title: "Book crate & flight", text: "IATA crate and cargo space — booked early, it fills 30–60 days ahead." }
+      - { title: "Fly & clear US customs", text: "Your pet clears at the US entry airport and comes to you." }
+
+  - type: pricing_tiers
+    id: pricing
+    eyebrow: "No hidden fees"
+    heading: "Dubai → USA pricing"
+    body: "Where you land in the range depends on your pet's size, the airline and the entry city. Full breakdown before you commit."
+    tiers:
+      - name: "Essential"
+        price: "AED 13,800"
+        unit: "from"
+        desc: "The full regulated move, handled correctly."
+        includes:
+          - "Vet protocol + MOCCAE export"
+          - "Current US-rule verification"
+          - "IATA crate + cargo booking"
+          - "US customs clearance"
+        excludes:
+          - "Transit updates"
+          - "24/7 support"
+      - name: "Standard"
+        price: "AED 18,000"
+        unit: "from"
+        featured: true
+        badge: "Most popular"
+        desc: "Everything handled, with updates and a pre-arrival briefing."
+        includes:
+          - "Everything in Essential"
+          - "Transit updates + pre-arrival briefing"
+        excludes:
+          - "24/7 support"
+      - name: "Premium"
+        price: "AED 22,000"
+        unit: "from"
+        desc: "White-glove handling with insurance and a fallback plan."
+        includes:
+          - "Everything in Standard"
+          - "24/7 support line"
+          - "Transit insurance + pet-hotel fallback"
+    note: "Some US routes and pet sizes push higher. You'll always see the full breakdown first."
+
+  - type: faq
+    heading: "Dubai → USA: your questions"
+    items:
+      - { q: "Is there quarantine for the USA?", a: "Generally no quarantine for pets entering the US with correct documentation, but requirements depend on your pet and entry point. We confirm the current rules for your route." }
+      - { q: "Why don't you just list the exact US requirements?", a: "Because they've changed in recent years and can vary by entry airport and state. We verify the live requirements with official sources for your specific case rather than risk printing something outdated." }
+      - { q: "How far ahead should I book?", a: "Start 4–12 weeks out. Cargo space fills 30–60 days ahead, and the vaccine timing needs at least 21 days before departure." }
+      - { q: "Can you guarantee the arrival date?", a: "No. Airlines change schedules. We give you a realistic timeline and keep you updated, but never guarantee a delivery date." }
+
+  - type: sources
+    eyebrow: "Don't take our word for it"
+    heading: "Official sources"
+    items:
+      - { authority: "US CDC", title: "Bringing a dog into the United States (FAQ)", url: "https://www.cdc.gov/importation/dogs/faqs.html", note: "Current dog-entry rules" }
+      - { authority: "US CDC", title: "CDC Dog Import Form & instructions", url: "https://www.cdc.gov/importation/dogs/dog-import-form-instructions.html", note: "Mandatory since 1 Aug 2024" }
+      - { authority: "UAE MOCCAE", title: "Pet export & import permits", url: "https://www.moccae.gov.ae/en/services/import-permit-pets", note: "UAE export process" }
+      - { authority: "IATA", title: "Live Animals Regulations", url: "https://www.iata.org/en/programs/cargo/live-animals/", note: "Travel crate standards" }
+
+  - type: card_grid
+    variant: section--surface
+    eyebrow: "Related routes"
+    heading: "Comparing destinations?"
+    cards:
+      - { flag: "🇨🇦", title: "Dubai → Canada", meta: "4–6 weeks", url: "/destinations/uae-to-canada/", arrow: "View" }
+      - { flag: "🇬🇧", title: "Dubai → UK", meta: "4–8 weeks · no quarantine", url: "/destinations/uae-to-uk/", arrow: "View" }
+      - { flag: "🇩🇪", title: "Dubai → Germany", meta: "EU rules · 4–6 weeks", url: "/destinations/uae-to-germany/", arrow: "View" }
+      - { flag: "🌍", title: "All destinations", meta: "Every route + pricing", url: "/destinations/", arrow: "See all" }
+
+  - type: related
+    label: "📖 Read the guide"
+    items:
+      - { title: "Dubai → USA: the CDC dog rules that trip people up (2026)", url: "/blog/dubai-to-usa-pet-cdc-rules-2026/", note: "the import form + 6-month rule" }
+
+  - type: quote_form
+    id: quote
+    eyebrow: "No obligation"
+    heading: "Get your Dubai → USA quote"
+    body: "Tell us your destination city and timing. We'll confirm the current rules and reply with a transparent price."
+    destinations: ["USA"]
+    points:
+      - "Current US requirements for your entry city"
+      - "A transparent price range for your pet"
+      - "A realistic, deadline-safe timeline"
+
+  - type: cta
+    heading: "Ready to get your pet to the USA?"
+    body: "We track the rules so you don't have to. Transparent pricing, every step handled."
+    ctas:
+      - { label: "Get my quote", url: "#quote", style: "btn-gold" }
+      - { label: "See all destinations", url: "/destinations/", style: "btn-ghost" }

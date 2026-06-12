@@ -1,0 +1,168 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mission Control — Trust Engine Universe</title><style>
+ html,body{margin:0;height:100%;background:#05070f;color:#e6ecff;overflow:hidden;
+   font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+ #sky{display:block;position:fixed;inset:0}
+ .panel{position:fixed;background:rgba(12,18,40,.72);border:1px solid #243154;border-radius:14px;
+   backdrop-filter:blur(6px);padding:12px 16px}
+ #hud{top:16px;left:16px;max-width:380px}
+ #hud h1{margin:0;font-size:17px} #hud p{margin:5px 0 10px;color:#90a0c8;font-size:12px}
+ .tiles{display:flex;gap:8px;flex-wrap:wrap}
+ .tile{background:#101a32;border:1px solid #243154;border-radius:10px;padding:7px 11px;min-width:62px}
+ .tile b{font-size:19px;display:block} .tile span{color:#90a0c8;font-size:10px;text-transform:uppercase;letter-spacing:.5px}
+ .views{margin-top:9px;display:flex;gap:6px}
+ .vb{background:#101a32;border:1px solid #243154;color:#bcd;border-radius:8px;padding:5px 11px;font-size:12px;cursor:pointer}
+ .vb.on{background:#1d2b52;color:#fff;border-color:#3a4f86}
+ #legend{bottom:16px;left:16px;font-size:12px;color:#bcd}
+ #legend .k{display:inline-flex;align-items:center;gap:6px;margin-right:14px}
+ .dot{width:11px;height:11px;border-radius:50%;display:inline-block}
+ #fly{bottom:16px;right:16px;font-size:11px;color:#cfe0ff;max-width:340px;text-align:right}
+ .fl{display:inline-block;background:#1c2747;border:1px solid #243154;border-radius:20px;padding:3px 9px;margin:2px}
+ #back{top:16px;left:50%;transform:translateX(-50%);display:none;cursor:pointer;font-size:13px;font-weight:600}
+ #back b{color:#7aa2ff}
+ #tip{position:fixed;pointer-events:none;display:none;background:rgba(8,12,26,.95);border:1px solid #2c3c66;
+   border-radius:10px;padding:10px 12px;font-size:12px;max-width:280px;z-index:9;box-shadow:0 10px 30px rgba(0,0,0,.5)}
+ #tip b{font-size:13px} #tip .s{font-size:22px;font-weight:800} #tip .dim{color:#90a0c8}
+ #tip .next{color:#cfe0ff;margin-top:5px} #tip .vbar{background:#0c1430;border:1px solid #243154;border-radius:6px;height:7px;margin:5px 0 2px;overflow:hidden}
+ #tip .vbar>div{height:100%;background:#3b82f6} #empty{color:#90a0c8;font-size:13px;margin-top:6px}
+</style></head><body>
+<canvas id="sky"></canvas>
+<div class="panel" id="hud"><h1>🛰️ Mission Control — Trust Engine Universe</h1>
+  <p>Each star is an engine run. Click a star to zoom into its measurements. Updated 2026-06-08T12:38:55.</p>
+  <div class="tiles"><div class="tile"><b>7</b><span>nodes</span></div><div class="tile"><b>39</b><span>avg score</span></div><div class="tile"><b>0</b><span>in line</span></div><div class="tile"><b>40%</b><span>verified</span></div><div class="tile"><b>4</b><span>black holes</span></div></div>
+  <div class="views"><button class="vb on" id="vGal" onclick="setView('galaxy')">🌌 Galaxy</button>
+    <button class="vb" id="vKno" onclick="setView('knowledge')">🧠 Knowledge</button></div>
+  <div id="empty"></div></div>
+<div class="panel" id="back" onclick="zoomOut()"><b>← back to galaxy</b></div>
+<div class="panel" id="legend">
+  <span class="k"><span class="dot" style="background:#46e0a0"></span>healthy ≥90 / pass</span>
+  <span class="k"><span class="dot" style="background:#f4b740"></span>warning / partial</span>
+  <span class="k"><span class="dot" style="background:#ff5566"></span>problem / fail</span>
+  <span class="k"><span class="dot" style="background:#000;border:1px solid #ff7a3c"></span>black hole</span>
+</div>
+<div class="panel" id="fly"><b>The flywheel</b><br><span class="fl">Research</span> <span class="fl">Knowledge</span> <span class="fl">Content</span> <span class="fl">Traffic</span> <span class="fl">Leads</span> <span class="fl">Revenue</span> <span class="fl">↻</span></div>
+<div id="tip"></div>
+<script>
+var NODES=[{"ts": "2026-06-08T11:46:03", "skill": "editorial", "skill_name": "Editorial Quality", "url": "https://www.airanimal.com/", "domain": "www.airanimal.com", "score": 78, "grade": "B", "in_line": false, "gap": 12, "verified_coverage": 25, "health": "yellow", "checks_passed": 7, "checks_total": 9, "checks": [{"label": "Specific (real numbers & names)", "status": "pass", "score": 15, "max": 15, "method": "heuristic", "found": "36 numbers + 265 named entities (105/500 words)"}, {"label": "Clear & scannable", "status": "pass", "score": 15, "max": 15, "method": "verified", "found": "21 subheadings, 18 lists/tables"}, {"label": "Proof / trustworthy", "status": "fail", "score": 0, "max": 10, "method": "heuristic", "found": "0 proof phrases, 0 authoritative links"}, {"label": "Clear call-to-action", "status": "pass", "score": 10, "max": 10, "method": "verified", "found": "Call-to-action present (contact, get, book)"}, {"label": "No filler opening", "status": "pass", "score": 10, "max": 10, "method": "heuristic", "found": "Opens without filler"}, {"label": "No unsupported superlatives", "status": "pass", "score": 7, "max": 10, "method": "heuristic", "found": "Superlatives present (best, trusted) but some proof exists"}, {"label": "No vague jargon", "status": "pass", "score": 7, "max": 10, "method": "heuristic", "found": "Vague/jargon phrases: seamless"}, {"label": "No fake enthusiasm", "status": "partial", "score": 4, "max": 10, "method": "heuristic", "found": "Fake enthusiasm: 8 exclamation marks"}, {"label": "Strong ending (no dead end)", "status": "pass", "score": 10, "max": 10, "method": "heuristic", "found": "Ends with a clear next step"}, {"label": "Factually true", "status": "na", "score": null, "max": null, "method": "na", "found": "Not Measurable"}, {"label": "On-brand voice", "status": "na", "score": null, "max": null, "method": "na", "found": "Not Measurable"}, {"label": "Speaks to the right buyer", "status": "na", "score": null, "max": null, "method": "na", "found": "Not Measurable"}, {"label": "Better than competitors", "status": "na", "score": null, "max": null, "method": "na", "found": "Not Measurable"}], "next_action": "Proof / trustworthy \u2014 Back each claim with a number, source, or citation.", "report": "editorial-www.airanimal.com-2026-06-08T114603.html"}, {"ts": "2026-06-08T11:45:54", "skill": "seo", "skill_name": "SEO Engine", "url": "https://www.airanimal.com/", "domain": "www.airanimal.com", "score": 65, "grade": "B", "in_line": false, "gap": 25, "verified_coverage": 51, "health": "red", "checks_passed": 9, "checks_total": 15, "checks": [{"label": "Topicality (T*) \u00b7 intent match", "status": "pass", "score": 14, "max": 20, "method": "heuristic", "found": "Intent inferred from title/H1 (no explicit queries)"}, {"label": "Topicality (T*) \u00b7 body depth", "status": "pass", "score": 20, "max": 20, "method": "heuristic", "found": "~1440 words, 265 distinct entities, 5 quantified facts, 21 sub-headings (density 94.6/500w)"}, {"label": "Topicality (T*) \u00b7 internal anchors", "status": "fail", "score": 4, "max": 15, "method": "verified", "found": "No internal links found"}, {"label": "Topicality (T*) \u00b7 inbound anchors", "status": "na", "score": null, "max": 15, "method": "na", "found": "Not Measurable"}, {"label": "Topicality (T*) \u00b7 title meta signal", "status": "pass", "score": 12, "max": 15, "method": "verified", "found": "title length ok (62); meta description present, size off"}, {"label": "Topicality (T*) \u00b7 topical focus", "status": "partial", "score": 9, "max": 15, "method": "heuristic", "found": "Internal-link ratio 0%; crawl found 18 unique internal URLs (3 sampled)"}, {"label": "Quality & Authority (Q*) \u00b7 eeat author", "status": "partial", "score": 10, "max": 20, "method": "heuristic", "found": "Author/expertise: credential language"}, {"label": "Quality & Authority (Q*) \u00b7 trust signals", "status": "pass", "score": 15, "max": 15, "method": "verified", "found": "Trust: HTTPS, privacy, terms, contact, about"}, {"label": "Quality & Authority (Q*) \u00b7 business legit", "status": "fail", "score": 6, "max": 20, "method": "heuristic", "found": "Legitimacy: verifiable contact"}, {"label": "Quality & Authority (Q*) \u00b7 inbound authority", "status": "na", "score": null, "max": 20, "method": "na", "found": "Not Measurable"}, {"label": "Quality & Authority (Q*) \u00b7 ymyl handling", "status": "partial", "score": 5, "max": 15, "method": "heuristic", "found": "YMYL topic \u2014 sourcing:False, disclaimers:False"}, {"label": "Quality & Authority (Q*) \u00b7 brand demand", "status": "na", "score": null, "max": 10, "method": "na", "found": "Not Measurable"}, {"label": "Technical & Page Experience \u00b7 indexability", "status": "pass", "score": 16, "max": 20, "method": "verified", "found": "indexable"}, {"label": "Technical & Page Experience \u00b7 core web vitals", "status": "pass", "score": 14, "max": 20, "method": "verified", "found": "~517KB HTML, 17 scripts, heavy HTML"}, {"label": "Technical & Page Experience \u00b7 mobile friendly", "status": "pass", "score": 13, "max": 15, "method": "verified", "found": "Viewport meta present (responsive-capable)"}, {"label": "Technical & Page Experience \u00b7 structured data", "status": "fail", "score": 3, "max": 15, "method": "verified", "found": "No structured data found"}, {"label": "Technical & Page Experience \u00b7 site architecture", "status": "pass", "score": 14, "max": 15, "method": "heuristic", "found": "URL depth 0, crawl avg depth 1.0 over 3 pages"}, {"label": "Technical & Page Experience \u00b7 crawl hygiene", "status": "pass", "score": 10, "max": 15, "method": "verified", "found": "On-page crawl signals ok; verify sitemap.xml & robots.txt at site level"}, {"label": "Live SERP Performance \u00b7 ranks target", "status": "na", "score": null, "max": null, "method": "na", "found": "Not Measurable (needs live SERP API)"}, {"label": "Live SERP Performance \u00b7 ranking breadth", "status": "na", "score": null, "max": null, "method": "na", "found": "Not Measurable (needs live SERP API)"}, {"label": "Live SERP Performance \u00b7 serp features", "status": "na", "score": null, "max": null, "method": "na", "found": "Not Measurable (needs live SERP API)"}, {"label": "Live SERP Performance \u00b7 branded mix", "status": "na", "score": null, "max": null, "method": "na", "found": "Not Measurable (needs live SERP API)"}], "next_action": "Quality & Authority (Q*) \u00b7 business legit \u2014 Add Organization schema + a consistent verifiable NAP.", "report": "seo-www.airanimal.com-2026-06-08T114554.html"}, {"ts": "2026-06-08T11:32:31", "skill": "geo", "skill_name": "GEO Engine", "url": "https://www.airanimal.com/", "domain": "www.airanimal.com", "score": 60, "grade": "C", "in_line": false, "gap": 30, "verified_coverage": 44, "health": "red", "checks_passed": 6, "checks_total": 12, "next_action": "Citation Readiness \u00b7 source citations \u2014 Cite authoritative sources inline.", "report": "geo-www.airanimal.com-2026-06-08T113231.html"}, {"ts": "2026-06-08T12:38:17", "skill": "page:landing_pages", "skill_name": "Landing Pages (landing_pages)", "url": "https://www.airanimal.com/", "domain": "www.airanimal.com", "score": 41, "grade": "F", "in_line": false, "gap": 49, "verified_coverage": 42, "health": "red", "checks_passed": 0, "checks_total": 4, "checks": [{"label": "conversion_copy", "status": "partial", "score": 52, "max": 100, "method": "weight 0.3158", "found": "52/100 (weight 0.3158)"}, {"label": "customer_fear_intelligence", "status": "fail", "score": 28, "max": 100, "method": "weight 0.2632", "found": "28/100 (weight 0.2632)"}, {"label": "visual_evidence", "status": "partial", "score": 82, "max": 100, "method": "weight 0.2105", "found": "82/100 (weight 0.2105)"}, {"label": "trust_gap", "status": "fail", "score": 2, "max": 100, "method": "weight 0.2105", "found": "2/100 (weight 0.2105)"}], "next_action": "trust_gap (2/100) \u2014 Name the customer's real fear in the first 100 words.", "report": "", "page_type": "landing_pages"}, {"ts": "2026-06-08T11:46:20", "skill": "customer_fear_intelligence", "skill_name": "Customer Fear Intelligence", "url": "https://www.airanimal.com/", "domain": "www.airanimal.com", "score": 28, "grade": "F", "in_line": false, "gap": 62, "verified_coverage": 0, "health": "red", "checks_passed": 1, "checks_total": 6, "checks": [{"label": "Fear acknowledged first", "status": "fail", "score": 0, "max": 20, "method": "heuristic", "found": "opens without acknowledging any fear"}, {"label": "Range of fears covered", "status": "fail", "score": 2, "max": 15, "method": "heuristic", "found": "1 distinct fear/concern terms across the page"}, {"label": "Real questions answered", "status": "partial", "score": 6, "max": 15, "method": "heuristic", "found": "2 real questions answered"}, {"label": "Objections / FAQ", "status": "pass", "score": 20, "max": 20, "method": "heuristic", "found": "covers objections / FAQ"}, {"label": "Real customer voice", "status": "fail", "score": 0, "max": 15, "method": "heuristic", "found": "no real customer voice"}, {"label": "Reassurance", "status": "fail", "score": 0, "max": 15, "method": "heuristic", "found": "no reassurance language"}], "next_action": "Fear acknowledged first \u2014 Open by naming the customer's real fear in their words.", "report": "customer_fear_intelligence-www.airanimal.com-2026-06-08T114620.html"}, {"ts": "2026-06-08T11:32:57", "skill": "conversion_copy", "skill_name": "Conversion Copy", "url": "https://www.airanimal.com/", "domain": "www.airanimal.com", "score": 1, "grade": "F", "in_line": false, "gap": 89, "verified_coverage": 35, "health": "red", "checks_passed": 0, "checks_total": 6, "next_action": "Fear-acknowledging opening \u2014 Open with the customer's real fear in their words, then resolve it.", "report": "conversion_copy-www.airanimal.com-2026-06-08T113257.html"}, {"ts": "2026-06-08T11:33:02", "skill": "visual_evidence", "skill_name": "Visual Evidence Architecture", "url": "https://www.airanimal.com/", "domain": "www.airanimal.com", "score": 0, "grade": "F", "in_line": false, "gap": 90, "verified_coverage": 85, "health": "red", "checks_passed": 0, "checks_total": 7, "next_action": "Visual density \u2014 Add a proof image beside each major claim, not just one at the top.", "report": "visual_evidence-www.airanimal.com-2026-06-08T113302.html"}], GRAPH={"nodes": [{"id": "c:Evidence & Citation", "label": "Evidence & Citation", "type": "concept", "color": "#6ea8ff"}, {"id": "e:ai_citation", "label": "AI Citation", "type": "engine", "skill": "ai_citation"}, {"id": "e:geo", "label": "GEO", "type": "engine", "skill": "geo"}, {"id": "e:official_source_research", "label": "Official Sources", "type": "engine", "skill": "official_source_research"}, {"id": "e:authority_assets", "label": "Authority Assets", "type": "engine", "skill": "authority_assets"}, {"id": "e:trust_gap", "label": "Trust Gap", "type": "engine", "skill": "trust_gap"}, {"id": "c:Answer-first", "label": "Answer-first", "type": "concept", "color": "#b794f6"}, {"id": "e:prompt_engineering", "label": "Prompt Engineering", "type": "engine", "skill": "prompt_engineering"}, {"id": "e:content_structure", "label": "Content Structure", "type": "engine", "skill": "content_structure"}, {"id": "e:editorial", "label": "Editorial", "type": "engine", "skill": "editorial"}, {"id": "c:Trust & Fear", "label": "Trust & Fear", "type": "concept", "color": "#f6948c"}, {"id": "e:customer_fear_intelligence", "label": "Customer Fear", "type": "engine", "skill": "customer_fear_intelligence"}, {"id": "e:conversion_copy", "label": "Conversion Copy", "type": "engine", "skill": "conversion_copy"}, {"id": "e:seo", "label": "SEO", "type": "engine", "skill": "seo"}, {"id": "c:Structure", "label": "Structure", "type": "concept", "color": "#f4b740"}, {"id": "e:content_architecture", "label": "Content Architecture", "type": "engine", "skill": "content_architecture"}, {"id": "c:Conversion", "label": "Conversion", "type": "concept", "color": "#4fd1c5"}, {"id": "e:email_nurture", "label": "Email Nurture", "type": "engine", "skill": "email_nurture"}, {"id": "c:Authority / E-E-A-T", "label": "Authority / E-E-A-T", "type": "concept", "color": "#f6c177"}, {"id": "c:Freshness", "label": "Freshness", "type": "concept", "color": "#7ee787"}, {"id": "e:content_monitoring", "label": "Content Monitoring", "type": "engine", "skill": "content_monitoring"}, {"id": "c:Schema & Entity", "label": "Schema & Entity", "type": "concept", "color": "#c0a3ff"}, {"id": "c:Technical", "label": "Technical", "type": "concept", "color": "#8aa0c8"}, {"id": "c:Visual proof", "label": "Visual proof", "type": "concept", "color": "#ff9ec4"}, {"id": "e:visual_evidence", "label": "Visual Evidence", "type": "engine", "skill": "visual_evidence"}], "edges": [{"a": "c:Evidence & Citation", "b": "e:ai_citation"}, {"a": "c:Evidence & Citation", "b": "e:geo"}, {"a": "c:Evidence & Citation", "b": "e:official_source_research"}, {"a": "c:Evidence & Citation", "b": "e:authority_assets"}, {"a": "c:Evidence & Citation", "b": "e:trust_gap"}, {"a": "c:Answer-first", "b": "e:ai_citation"}, {"a": "c:Answer-first", "b": "e:geo"}, {"a": "c:Answer-first", "b": "e:prompt_engineering"}, {"a": "c:Answer-first", "b": "e:content_structure"}, {"a": "c:Answer-first", "b": "e:editorial"}, {"a": "c:Trust & Fear", "b": "e:customer_fear_intelligence"}, {"a": "c:Trust & Fear", "b": "e:trust_gap"}, {"a": "c:Trust & Fear", "b": "e:conversion_copy"}, {"a": "c:Trust & Fear", "b": "e:content_structure"}, {"a": "c:Trust & Fear", "b": "e:seo"}, {"a": "c:Structure", "b": "e:content_architecture"}, {"a": "c:Structure", "b": "e:seo"}, {"a": "c:Structure", "b": "e:content_structure"}, {"a": "c:Structure", "b": "e:editorial"}, {"a": "c:Conversion", "b": "e:conversion_copy"}, {"a": "c:Conversion", "b": "e:email_nurture"}, {"a": "c:Conversion", "b": "e:content_structure"}, {"a": "c:Authority / E-E-A-T", "b": "e:authority_assets"}, {"a": "c:Authority / E-E-A-T", "b": "e:seo"}, {"a": "c:Authority / E-E-A-T", "b": "e:official_source_research"}, {"a": "c:Freshness", "b": "e:content_monitoring"}, {"a": "c:Freshness", "b": "e:geo"}, {"a": "c:Freshness", "b": "e:ai_citation"}, {"a": "c:Schema & Entity", "b": "e:seo"}, {"a": "c:Schema & Entity", "b": "e:geo"}, {"a": "c:Schema & Entity", "b": "e:ai_citation"}, {"a": "c:Technical", "b": "e:seo"}, {"a": "c:Technical", "b": "e:content_architecture"}, {"a": "c:Visual proof", "b": "e:visual_evidence"}, {"a": "c:Visual proof", "b": "e:trust_gap"}]};
+var cv=document.getElementById('sky'), ctx=cv.getContext('2d'), tip=document.getElementById('tip'),
+    backBtn=document.getElementById('back');
+var W,H,cx,cy,bg=[];
+var view='galaxy', focus=null, zoom=0, GINIT=false;
+var NID={}; GRAPH.nodes.forEach(function(n){NID[n.id]=n;});
+var RUN_BY_SKILL={}; NODES.forEach(function(n){if(!(n.skill in RUN_BY_SKILL))RUN_BY_SKILL[n.skill]=n;});
+function size(){W=cv.width=innerWidth;H=cv.height=innerHeight;cx=W/2;cy=H/2;bg=[];
+  for(var i=0;i<260;i++)bg.push({x:Math.random()*W,y:Math.random()*H,r:Math.random()*1.3+0.2,t:Math.random()*6.28});}
+addEventListener('resize',size);size();
+var GA=2.399963267;
+NODES.forEach(function(n,i){n._a=GA*i;n._r=46+Math.sqrt(i+1)*52;
+  n.size=6+(n.score/100)*18;
+  n.color=n.health==='green'?'#46e0a0':n.health==='yellow'?'#f4b740':'#ff5566';
+  n.black=(n.health==='red'&&n.score<50);
+  var mx=0;(n.checks||[]).forEach(function(c){if(c.max)mx=Math.max(mx,c.max);});n._maxpts=mx||20;});
+function scol(s){return s==='pass'?'#46e0a0':s==='partial'?'#f4b740':s==='fail'?'#ff5566':'#6b7280';}
+function hex(c,a){var n=parseInt(c.slice(1),16);return'rgba('+(n>>16&255)+','+(n>>8&255)+','+(n&255)+','+a+')';}
+function glow(x,y,r,c){var g=ctx.createRadialGradient(x,y,0,x,y,r);g.addColorStop(0,c);g.addColorStop(1,'rgba(0,0,0,0)');
+  ctx.fillStyle=g;ctx.beginPath();ctx.arc(x,y,r,0,6.2832);ctx.fill();}
+function star(x,y,r,c,p,ring){glow(x,y,r*2.6,hex(c,0.16+0.12*p));
+  ctx.fillStyle=c;ctx.beginPath();ctx.arc(x,y,r*0.5,0,6.2832);ctx.fill();
+  ctx.fillStyle='rgba(255,255,255,'+(0.5+0.4*p)+')';ctx.beginPath();ctx.arc(x,y,r*0.2,0,6.2832);ctx.fill();
+  if(ring){ctx.strokeStyle='rgba(180,230,255,.85)';ctx.lineWidth=1.4;ctx.beginPath();ctx.arc(x,y,r*0.78,0,6.2832);ctx.stroke();}}
+function blackhole(x,y,r,rot){ctx.save();ctx.translate(x,y);ctx.rotate(rot*3);
+  var g=ctx.createRadialGradient(0,0,r*0.5,0,0,r*2.4);g.addColorStop(0,'rgba(255,140,60,0)');
+  g.addColorStop(0.55,'rgba(255,120,50,.55)');g.addColorStop(0.8,'rgba(255,60,40,.35)');g.addColorStop(1,'rgba(0,0,0,0)');
+  ctx.fillStyle=g;ctx.beginPath();ctx.ellipse(0,0,r*2.4,r*0.9,0,0,6.2832);ctx.fill();
+  ctx.fillStyle='#05070f';ctx.beginPath();ctx.arc(0,0,r*0.9,0,6.2832);ctx.fill();
+  ctx.strokeStyle='rgba(255,170,90,.9)';ctx.lineWidth=1.5;ctx.beginPath();ctx.arc(0,0,r*0.9,0,6.2832);ctx.stroke();ctx.restore();}
+var rot=0,tk=0;
+function bgdraw(){ctx.fillStyle='#05070f';ctx.fillRect(0,0,W,H);
+  glow(cx-W*0.18,cy-H*0.16,Math.max(W,H)*0.34,'rgba(40,30,90,.20)');
+  glow(cx+W*0.22,cy+H*0.2,Math.max(W,H)*0.3,'rgba(20,60,90,.18)');
+  for(var i=0;i<bg.length;i++){var s=bg[i],a=0.4+0.45*Math.sin(tk+s.t);
+    ctx.fillStyle='rgba(255,255,255,'+a+')';ctx.beginPath();ctx.arc(s.x,s.y,s.r,0,6.2832);ctx.fill();}}
+function galaxy(al){ctx.save();ctx.globalAlpha=al;
+  glow(cx,cy,46,'rgba(255,210,130,.5)');glow(cx,cy,16,'rgba(255,240,200,.95)');
+  for(var k=0;k<NODES.length;k++){var n=NODES[k],a=n._a+rot;
+    n._x=cx+Math.cos(a)*n._r;n._y=cy+Math.sin(a)*n._r*0.6;
+    if(n.black)blackhole(n._x,n._y,n.size,rot+k);
+    else star(n._x,n._y,n.size,n.color,0.5+0.5*Math.sin(tk*1.6+k));}
+  ctx.restore();}
+function system(n,al){ctx.save();ctx.globalAlpha=al;var chk=n.checks||[];
+  glow(cx,cy,70,hex(n.color,.45));glow(cx,cy,26,'rgba(255,245,220,.95)');
+  ctx.fillStyle='#e6ecff';ctx.textAlign='center';ctx.font='600 15px -apple-system,Segoe UI,Arial';
+  ctx.fillText((n.skill_name||n.skill)+'  ·  '+n.score+'/100',cx,cy-92);
+  ctx.fillStyle='#90a0c8';ctx.font='12px -apple-system,Segoe UI,Arial';
+  ctx.fillText((n.domain||'')+'   ·   '+(n.verified_coverage||0)+'% verified',cx,cy-76);
+  for(var i=0;i<chk.length;i++){var c=chk[i];c._r=96+i*30;c._a=GA*i+rot*1.6;
+    ctx.strokeStyle='rgba(120,150,210,.10)';ctx.lineWidth=1;ctx.beginPath();ctx.ellipse(cx,cy,c._r,c._r*0.62,0,0,6.2832);ctx.stroke();
+    var x=cx+Math.cos(c._a)*c._r,y=cy+Math.sin(c._a)*c._r*0.62;c._x=x;c._y=y;
+    var size=6+(c.max?(c.max/n._maxpts)*12:5);
+    star(x,y,size,scol(c.status),0.45+0.45*Math.sin(tk*1.5+i),c.method==='verified');}
+  ctx.restore();}
+function ginit(){GRAPH.nodes.forEach(function(n){n.x=cx+(Math.random()-0.5)*W*0.55;n.y=cy+(Math.random()-0.5)*H*0.55;n.vx=0;n.vy=0;});GINIT=true;}
+function kstep(){var ns=GRAPH.nodes,i,j;
+  for(i=0;i<ns.length;i++){var a=ns[i];for(j=i+1;j<ns.length;j++){var b=ns[j];
+    var dx=a.x-b.x,dy=a.y-b.y,d2=dx*dx+dy*dy+0.01,d=Math.sqrt(d2),f=2600/d2;
+    a.vx+=dx/d*f;a.vy+=dy/d*f;b.vx-=dx/d*f;b.vy-=dy/d*f;}}
+  GRAPH.edges.forEach(function(e){var a=NID[e.a],b=NID[e.b];if(!a||!b)return;
+    var dx=b.x-a.x,dy=b.y-a.y,d=Math.hypot(dx,dy)+0.01,f=(d-128)*0.02;
+    a.vx+=dx/d*f;a.vy+=dy/d*f;b.vx-=dx/d*f;b.vy-=dy/d*f;});
+  ns.forEach(function(n){n.vx+=(cx-n.x)*0.0010;n.vy+=(cy-n.y)*0.0010;n.vx*=0.86;n.vy*=0.86;n.x+=n.vx;n.y+=n.vy;});}
+function knowledge(){if(!GINIT)ginit();kstep();
+  GRAPH.edges.forEach(function(e){var a=NID[e.a],b=NID[e.b];if(!a||!b)return;
+    ctx.strokeStyle='rgba(120,150,210,.14)';ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(a.x,a.y);ctx.lineTo(b.x,b.y);ctx.stroke();});
+  GRAPH.nodes.forEach(function(n){var eng=n.type==='engine',r=eng?9:7,col=eng?'#7aa2ff':(n.color||'#b794f6');
+    glow(n.x,n.y,r*2.3,hex(col,.5));ctx.fillStyle=col;ctx.beginPath();ctx.arc(n.x,n.y,r,0,6.2832);ctx.fill();
+    ctx.fillStyle=eng?'#dfe8ff':'#cbd5f0';ctx.textAlign='left';
+    ctx.font=(eng?'600 12px':'11px')+' -apple-system,Segoe UI,Arial';ctx.fillText(n.label,n.x+r+5,n.y+4);});}
+function frame(){tk+=0.016;rot+=0.0009;bgdraw();
+  if(view==='knowledge'){knowledge();}
+  else{if(view==='system'){zoom=Math.min(1,zoom+0.07);}else{zoom=Math.max(0,zoom-0.07);}
+    if(zoom<1)galaxy(1-zoom);if(zoom>0&&focus)system(focus,zoom);}
+  requestAnimationFrame(frame);}
+frame();
+function nearestStar(mx,my){var best=null,bd=1e9;for(var k=0;k<NODES.length;k++){var n=NODES[k];
+  var d=Math.hypot(n._x-mx,n._y-my);if(d<Math.max(16,n.size*1.6)&&d<bd){bd=d;best=n;}}return best;}
+function nearestPlanet(mx,my){if(!focus)return null;var chk=focus.checks||[],best=null,bd=1e9;
+  for(var i=0;i<chk.length;i++){var c=chk[i];if(c._x==null)continue;var d=Math.hypot(c._x-mx,c._y-my);
+    if(d<16&&d<bd){bd=d;best=c;}}return best;}
+function nearestGraph(mx,my){var best=null,bd=1e9;GRAPH.nodes.forEach(function(n){if(n.x==null)return;
+  var d=Math.hypot(n.x-mx,n.y-my);if(d<16&&d<bd){bd=d;best=n;}});return best;}
+function zoomIn(n){focus=n;view='system';backBtn.style.display='block';toggle();}
+function zoomOut(){view='galaxy';focus=null;backBtn.style.display='none';tip.style.display='none';toggle();}
+function setView(v){if(v==='knowledge'){view='knowledge';focus=null;backBtn.style.display='none';if(!GINIT)ginit();}
+  else{view='galaxy';focus=null;backBtn.style.display='none';}tip.style.display='none';toggle();}
+function toggle(){document.getElementById('vGal').classList.toggle('on',view!=='knowledge');
+  document.getElementById('vKno').classList.toggle('on',view==='knowledge');}
+addEventListener('keydown',function(e){if(e.key==='Escape')zoomOut();});
+cv.addEventListener('mousemove',function(e){var h;
+  if(view==='knowledge'){h=nearestGraph(e.clientX,e.clientY);if(h){cv.style.cursor=h.type==='engine'?'pointer':'default';showTip(e,graphTip(h));}else{tip.style.display='none';cv.style.cursor='default';}}
+  else if(view==='galaxy'){h=nearestStar(e.clientX,e.clientY);if(h){cv.style.cursor='pointer';showTip(e,galaxyTip(h));}else{tip.style.display='none';cv.style.cursor='default';}}
+  else{h=nearestPlanet(e.clientX,e.clientY);if(h){cv.style.cursor='pointer';showTip(e,planetTip(h));}else{tip.style.display='none';cv.style.cursor='default';}}});
+cv.addEventListener('click',function(e){
+  if(view==='knowledge'){var g=nearestGraph(e.clientX,e.clientY);
+    if(g&&g.type==='engine'&&RUN_BY_SKILL[g.skill]){zoomIn(RUN_BY_SKILL[g.skill]);}return;}
+  if(view==='galaxy'){var n=nearestStar(e.clientX,e.clientY);if(n)zoomIn(n);return;}
+  var d=Math.hypot(e.clientX-cx,e.clientY-cy);
+  if(d<40&&focus&&focus.report){window.open('reports/'+focus.report,'_blank');}
+  else if(d>Math.min(W,H)*0.46){zoomOut();}});
+function showTip(e,html){tip.style.display='block';tip.innerHTML=html;
+  tip.style.left=Math.min(e.clientX+14,W-292)+'px';tip.style.top=(e.clientY+14)+'px';}
+function galaxyTip(n){var badge=n.in_line?'<span style="color:#46e0a0">✓ IN LINE</span>':'<span style="color:'+n.color+'">'+n.gap+' to 90</span>';
+  return '<b>'+esc(n.skill_name||n.skill)+'</b><div class="dim">'+esc(n.domain||'')+'</div>'+
+    '<div class="s" style="color:'+n.color+'">'+n.score+'<span class="dim" style="font-size:12px"> /100 · '+esc(n.grade||'')+'</span></div>'+
+    badge+(n.black?' · <b style="color:#ff7a3c">BLACK HOLE</b>':'')+
+    '<div class="vbar"><div style="width:'+(n.verified_coverage||0)+'%"></div></div>'+
+    '<div class="dim">'+(n.verified_coverage||0)+'% verified methods</div>'+
+    '<div class="next"><b>Next:</b> '+esc(n.next_action||'')+'</div>'+
+    '<div class="dim" style="margin-top:4px">click to zoom into its measurements</div>';}
+function planetTip(c){var pts=(c.status==='na')?'n/a':(c.score+'/'+c.max);
+  var meth=c.method==='verified'?'<span style="color:#46e0a0">✓ verified</span>':'<span style="color:#f4b740">~ heuristic</span>';
+  return '<b>'+esc(c.label)+'</b><div class="s" style="color:'+scol(c.status)+';font-size:18px">'+pts+
+    ' <span class="dim" style="font-size:12px">'+esc((c.status||'').toUpperCase())+'</span></div>'+
+    meth+'<div class="next">'+esc(c.found||'')+'</div>';}
+function graphTip(n){if(n.type==='engine'){var run=RUN_BY_SKILL[n.skill];
+  return '<b>'+esc(n.label)+'</b><div class="dim">engine</div>'+(run?'<div class="s" style="color:'+run.color+';font-size:18px">'+run.score+'<span class="dim" style="font-size:12px"> /100</span></div><div class="dim">click to open its system</div>':'<div class="dim">no run yet — run it with --url</div>');}
+  return '<b>'+esc(n.label)+'</b><div class="dim">shared concept · '+GRAPH.edges.filter(function(e){return e.a===n.id;}).length+' engines</div>';}
+function esc(s){var d=document.createElement('div');d.textContent=s==null?'':String(s);return d.innerHTML;}
+</script></body></html>

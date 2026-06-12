@@ -1,0 +1,21 @@
+{# Official references. Citing primary regulatory sources builds trust + E-E-A-T
+   and makes the page itself more citable. Links are dofollow (authoritative). #}
+<section class="section {{ block.variant | default('section--surface') }}">
+  <div class="container">
+    {% if block.eyebrow %}<p class="eyebrow">{{ block.eyebrow }}</p>{% endif %}
+    <h2>{{ block.heading | default('Official sources') }}</h2>
+    {% if block.body %}<p class="lead">{{ block.body }}</p>{% endif %}
+    <ul class="sources-list">
+      {% for s in block['items'] %}
+      <li>
+        <span class="src-auth">{{ s.authority }}</span>
+        <span>
+          <a href="{{ s.url }}" target="_blank" rel="noopener">{{ s.title | default(s.url) }}</a>
+          {% if s.note %}<span class="src-note"> — {{ s.note }}</span>{% endif %}
+        </span>
+      </li>
+      {% endfor %}
+    </ul>
+    <p class="sources-note">{{ block.note | default('We verify every regulatory requirement against the official source for your pet and route before booking. Rules can change — last checked on the date shown above.') }}</p>
+  </div>
+</section>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Prompt Engineering — Study Manual | The Trust Engine</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#14110d;--panel:#1d1812;--ink:#f3ece0;--soft:#b9ab95;--line:#352c20;--gold:#d8a84b;--red:#e06a4e;--green:#7bbf6a;--accent:#c98a3a}
+  *{box-sizing:border-box}html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:'Crimson Pro',Georgia,serif;font-size:19px;line-height:1.6}
+  #bar{position:fixed;top:0;left:0;height:4px;width:0;background:linear-gradient(90deg,var(--gold),var(--accent));z-index:100;transition:width .1s}
+  .layout{display:flex;max-width:1180px;margin:0 auto}
+  nav.side{position:sticky;top:0;height:100vh;width:250px;flex-shrink:0;padding:30px 20px;background:var(--panel);border-right:1px solid var(--line);overflow-y:auto;font-family:'JetBrains Mono',monospace}
+  nav.side .brand{font-family:'Bebas Neue',sans-serif;letter-spacing:.08em;color:var(--gold);font-size:22px}
+  nav.side a{display:block;color:var(--soft);text-decoration:none;font-size:12px;padding:7px 9px;border-radius:6px;margin-bottom:2px}
+  nav.side a:hover{background:#251e16;color:var(--ink)}nav.side a.active{background:var(--gold);color:#14110d;font-weight:700}
+  main{flex:1;padding:46px 52px 120px;max-width:820px}
+  h1{font-family:'Bebas Neue',sans-serif;font-size:54px;line-height:1;margin:0 0 6px}
+  h2{font-family:'Bebas Neue',sans-serif;font-size:34px;letter-spacing:.02em;margin:52px 0 12px;color:var(--gold)}
+  h3{font-size:21px;margin:24px 0 6px;color:var(--accent)}
+  .lead{font-size:22px;color:var(--soft)}
+  .badge{font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:700;letter-spacing:.05em;color:var(--gold);text-transform:uppercase}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin:14px 0}
+  .el{border-left:4px solid var(--gold);padding:4px 0 4px 14px;margin:10px 0}
+  .el b{font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--gold);text-transform:uppercase;letter-spacing:.05em}
+  .ex{background:#251e16;border-radius:8px;padding:10px 14px;margin:8px 0;font-style:italic;color:var(--soft)}
+  .cite{font-family:'JetBrains Mono',monospace;font-size:12px;padding:1px 7px;border-radius:5px;background:#251e16}
+  .v{color:var(--green);font-weight:700}.u{color:var(--gold);font-weight:700}.c{color:var(--red);font-weight:700}
+  table{width:100%;border-collapse:collapse;margin:14px 0;font-family:'JetBrains Mono',monospace;font-size:13px}
+  th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{color:var(--gold);text-transform:uppercase;font-size:11px}
+  .warn{background:#2a1a14;border:1px solid #4a2c20;border-radius:10px;padding:13px 17px;margin:14px 0}
+  .good{background:#1a2417;border:1px solid #2f4327;border-radius:10px;padding:13px 17px;margin:14px 0}
+  code{font-family:'JetBrains Mono',monospace;background:#251e16;padding:2px 6px;border-radius:5px;font-size:.82em;color:var(--gold)}
+  footer{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--soft);border-top:1px solid var(--line);margin-top:60px;padding-top:18px}
+  @media(max-width:880px){nav.side{display:none}main{padding:28px 20px 80px;font-size:18px}h1{font-size:40px}}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+<div class="layout">
+  <nav class="side">
+    <div class="brand">Prompt Engineering</div>
+    <div style="font-family:'Crimson Pro',serif;color:var(--soft);font-size:13px;margin:4px 0 16px">Study Manual · 23/25</div>
+    <a href="#why" class="active">Why this skill</a>
+    <a href="#elements">The 9 elements</a>
+    <a href="#mvp">Minimum Viable Prompt</a>
+    <a href="#worked">9 elements on the 4 gap pages</a>
+    <a href="#revision">The revision loop</a>
+    <a href="#mistakes">The 10 mistakes</a>
+    <a href="#verify">The 70%-usable test</a>
+    <a href="#library">The template library</a>
+  </nav>
+  <main>
+    <span class="badge">Prompt Engineering · 23/25 · highest teachability</span>
+    <h1>Prompt Engineering</h1>
+    <p class="lead">The 9-element system that turns a vague AI request into a 70%+-usable first draft. The prompt is not a question — it is a creative brief.</p>
+
+    <section id="why">
+      <h2>Why this skill exists</h2>
+      <p>Most people use AI like a search engine: a vague question, a generic answer, every time. Prompt Engineering treats the model like a skilled team member who needs a brief — who they are, who they're writing for, what to produce, with what facts, under what constraints, to what standard. Do that and the first draft is <b>70%+ usable</b>. It is the input multiplier for every content skill downstream.</p>
+      <div class="good"><b>The shift:</b> stop asking "write a page about pet relocation to Dubai" (mush) and start briefing all 9 elements (a usable draft of a real page).</div>
+    </section>
+
+    <section id="elements">
+      <h2>The 9 elements</h2>
+      <p>Every strong prompt contains all nine. Each example below is from the Dubai proof niche.</p>
+      <div class="el"><b>1 · Context</b> — the situation. <span class="ex">"Dubai pet relocation, a maximum-risk regulated market; customers arrive afraid."</span></div>
+      <div class="el"><b>2 · Role</b> — who the AI is. <span class="ex">"A relocation specialist who has cleared pets through MOCCAE."</span></div>
+      <div class="el"><b>3 · Objective</b> — exactly what to produce. <span class="ex">"A 700-word Fear Resolution page on airport confiscation."</span></div>
+      <div class="el"><b>4 · Audience</b> — the reader's state. <span class="ex">"An owner who read their dog could be taken at the airport."</span></div>
+      <div class="el"><b>5 · Inputs</b> — the facts to use. <span class="ex">Verified <span class="cite">C-019 permit online · C-010 90-day validity · C-003 500 AED release</span></span></div>
+      <div class="el"><b>6 · Constraints</b> — avoid/include. <span class="ex">"Open with the fear in the owner's words; hedge C-001 (titer cost); no 'Get a Quote'."</span></div>
+      <div class="el"><b>7 · Examples</b> — show good output. <span class="ex">"The 5-layer structure; embed the MOCCAE screenshot as proof."</span></div>
+      <div class="el"><b>8 · Output Format</b> — how to structure it. <span class="ex">"The 5 layers, markdown, each fact tagged with its C-ID."</span></div>
+      <div class="el"><b>9 · Quality Criteria</b> — how it's judged. <span class="ex">"Every claim cited or hedged; passes the Hormozi name-on-it test."</span></div>
+      <div class="warn"><b>The two everyone skips</b> — Constraints and Quality Criteria — are the two that decide whether the draft is usable.</div>
+    </section>
+
+    <section id="mvp">
+      <h2>The Minimum Viable Prompt</h2>
+      <p>For quick tasks, the floor is four elements: <b>Context + Role + Objective + Output Format</b>. Never fewer.</p>
+      <div class="card"><code>"Dubai pet relocation, maximum-risk niche (context). You are a relocation specialist (role). Write 3 FAQ answers on the summer heat embargo, hedging anything MOCCAE doesn't publish (objective). Markdown Q&A (format)."</code></div>
+      <div class="ex">In the proof run this minimum-viable prompt produced usable summer-embargo FAQ answers — the embargo dates correctly hedged ("not published by MOCCAE", an Unverifiable input) rather than asserted.</div>
+    </section>
+
+    <section id="worked">
+      <h2>The 9-element system applied to the 4 universal-gap pages</h2>
+      <p>The four pages every competitor missed — each as a real engineered prompt. (These prompts produced the pages in the proof run.)</p>
+
+      <h3>Page 1 — Fear Resolution · airport confiscation</h3>
+      <table>
+        <tr><th>Element</th><th>Filled (real)</th></tr>
+        <tr><td>Audience</td><td>Import-to-Dubai owner, confiscation fear (Muze Gu)</td></tr>
+        <tr><td>Inputs</td><td><span class="v">Verified</span> C-019, C-010, C-007, C-003 · <span class="u">Unverifiable</span> C-001 (titer)</td></tr>
+        <tr><td>Constraints</td><td>open with Muze Gu's words; hedge C-001; cite by C-ID; no "Get a Quote"</td></tr>
+        <tr><td>Quality Criteria</td><td>every claim cited or hedged; 3 prevention steps</td></tr>
+      </table>
+
+      <h3>Page 2 — Process Guide · summer embargo</h3>
+      <table>
+        <tr><th>Element</th><th>Filled (real)</th></tr>
+        <tr><td>Objective</td><td>1,200–1,800w guide: "can I move my pet to Dubai in summer?"</td></tr>
+        <tr><td>Inputs</td><td><span class="v">Verified</span> C-022 (cargo-only), C-019/C-010 · <span class="u">embargo dates</span> (no official source)</td></tr>
+        <tr><td>Constraints</td><td>split regulator rules from airline heat rules; hedge embargo dates; numbered steps + timing</td></tr>
+      </table>
+
+      <h3>Page 3 — Cost Transparency · titer cost</h3>
+      <table>
+        <tr><th>Element</th><th>Filled (real)</th></tr>
+        <tr><td>Audience</td><td>owner mid-quote ("insane amount, no way to know if fair" — IrbisKat)</td></tr>
+        <tr><td>Inputs</td><td><span class="v">Verified</span> C-003 · <span class="u">Unverifiable</span> C-001 (700–1,300 AED) · <span class="c">Conflict</span> C-015 (Etihad $399 vs $1,500)</td></tr>
+        <tr><td>Constraints</td><td>hedge every unpublished number; lead Etihad with $399 then name $1,500; ban "competitive pricing"</td></tr>
+      </table>
+
+      <h3>Page 4 — Comparison · Sharjah vs Dubai vs Abu Dhabi</h3>
+      <table>
+        <tr><th>Element</th><th>Filled (real)</th></tr>
+        <tr><td>Objective</td><td>1,000–1,500w comparison of the three entry airports</td></tr>
+        <tr><td>Inputs</td><td><span class="v">Verified</span> C-019 (permit, all entry points), C-022 · <span class="u">Sharjah hack</span> (community-sourced)</td></tr>
+        <tr><td>Constraints</td><td>state what's identical (MOCCAE) vs what differs; hedge the hack; fair table</td></tr>
+      </table>
+      <div class="good">Full 9-element templates for all 9 page types live in <code>data/prompt-template-library.md</code>.</div>
+    </section>
+
+    <section id="revision">
+      <h2>The revision loop</h2>
+      <p>First prompts rarely produce final output. Plan for <b>2–3 rounds</b>, and always say <b>what to change AND what to keep</b>.</p>
+      <div class="card"><code>"Good start. Revise: (1) hedge the 700–1,300 AED line — it reads as official; (2) move the Etihad $399 fact up and name the $1,500 discrepancy. KEEP: the opening fear sentence and the MOCCAE-silence paragraph."</code></div>
+      <div class="warn">Saying only what's wrong lets the model fix the problem while breaking what was working.</div>
+    </section>
+
+    <section id="mistakes">
+      <h2>The 10 common mistakes</h2>
+      <table>
+        <tr><td>1 Vague objective</td><td>2 No audience</td><td>3 Information overload</td></tr>
+        <tr><td>4 Conflicting constraints</td><td>5 No quality criteria</td><td>6 One-shot expectation</td></tr>
+        <tr><td>7 Not saving good prompts</td><td>8 Ignoring output format</td><td>9 Wrong role</td></tr>
+        <tr><td>10 Not comparing models</td><td></td><td></td></tr>
+      </table>
+      <p>Run these as a pre-flight checklist. A vague prompt produces generic output — every time.</p>
+      <div class="ex">Real from the proof run: mistake #1 showed up live — <i>"write a page about pet relocation to Dubai"</i> returned generic mush. Adding Objective + Audience + Inputs (<span class="cite">C-019, C-003</span>) turned it into a usable Fear-Resolution draft.</div>
+    </section>
+
+    <section id="verify">
+      <h2>The 70%-usable test</h2>
+      <p>"Usable" is measured, not felt: count the edits to publish-ready.</p>
+      <div class="good"><b>70%+ usable</b> = only light edits (tighten, reorder, one word). Ship after the revision loop.</div>
+      <div class="warn"><b>Below 70%</b> = structural rewrites or wrong/missing facts → the <b>prompt</b> is the problem. Fix an element (usually Constraints or Quality Criteria) and regenerate; don't hand-rewrite the output and call the prompt good.</div>
+      <p>Hard rule for a regulated niche: <span class="c">no Unverifiable claim may be asserted as fact</span> — it is hedged or it is blocked.</p>
+      <p>Measured on the run: the titer-cost first draft came in ~70% usable; the single structural fix was adding the C-001 hedge to Constraints — after that, only light edits remained.</p>
+      <div class="warn"><b>Real surprise from the proof run:</b> the first titer-cost draft asserted <i>"the titer test costs 700 AED"</i> as fact. The miss was in the <b>prompt</b>, not the output — Constraints lacked the hedge rule for the Unverifiable C-001. We added the hedge clause and regenerated; we did <b>not</b> hand-edit the draft. That is the discipline: below-70% means fix the brief, not the page.</div>
+    </section>
+
+    <section id="library">
+      <h2>The template library (the real output)</h2>
+      <p>The skill's deliverable is a reusable library: a complete 9-element template for all 9 page types, filled with real Dubai data — <code>data/prompt-template-library.md</code>. Pick the page type, swap the keyword, run it. The library compounds: each new page starts from a working prompt, not a blank box.</p>
+      <div class="good"><b>What the proof run showed:</b> the 9-element prompts produced usable first drafts of all four universal-gap pages, each citing real Source Bank rows and hedging every unpublished number.</div>
+    </section>
+
+    <footer>The Trust Engine · Prompt Engineering · Study Manual · real examples from the 2026-05-29 Dubai proof run · 9 elements · 9 page-type templates · cite by C-ID, hedge the unpublished.</footer>
+  </main>
+</div>
+<script>
+  const bar=document.getElementById('bar');
+  addEventListener('scroll',()=>{const h=document.documentElement;bar.style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%';});
+  const links=[...document.querySelectorAll('nav.side a')];const secs=links.map(a=>document.querySelector(a.getAttribute('href')));
+  addEventListener('scroll',()=>{let i=0;for(let k=0;k<secs.length;k++){if(secs[k]&&secs[k].getBoundingClientRect().top<140)i=k;}links.forEach(l=>l.classList.remove('active'));if(links[i])links[i].classList.add('active');});
+</script>
+</body>
+</html>

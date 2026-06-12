@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Website Audit — Cheatsheet</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#14110d;--panel:#1d1812;--ink:#f3ece0;--soft:#b9ab95;--line:#352c20;--gold:#d8a84b;--red:#e06a4e;--green:#7bbf6a}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--ink);font-family:'JetBrains Mono',monospace;font-size:13px;line-height:1.5;padding:16px;max-width:540px;margin:0 auto}
+  header{border-bottom:2px solid var(--gold);padding-bottom:10px;margin-bottom:14px}
+  .k{color:var(--gold);font-size:12px;letter-spacing:.1em}
+  h1{font-family:'Bebas Neue',sans-serif;font-size:30px;letter-spacing:.02em;line-height:1}
+  h2{font-family:'Bebas Neue',sans-serif;font-size:19px;color:var(--gold);letter-spacing:.03em;margin:18px 0 7px;border-bottom:1px solid var(--line);padding-bottom:3px}
+  .row{background:var(--panel);border:1px solid var(--line);border-radius:7px;padding:8px 11px;margin:6px 0}
+  .row b{color:var(--gold)}
+  .ex{color:var(--soft);font-size:12px;display:block;margin-top:3px}
+  .v{color:var(--green);font-weight:700}.c{color:var(--red);font-weight:700}
+  .ba{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:6px 0}
+  .ba div{border-radius:7px;padding:8px 10px;font-size:12px;word-break:break-word}
+  .bad{background:#2a1a14;border:1px solid #4a2c20}.good{background:#1a2417;border:1px solid #2f4327}
+  ol{margin:0 0 0 18px}li{margin:2px 0}
+  code{background:#251e16;padding:1px 5px;border-radius:4px;color:var(--gold);font-size:12px}
+  table{width:100%;border-collapse:collapse;margin:6px 0;font-size:12px;table-layout:fixed}
+  th,td{text-align:left;padding:4px 6px;border-bottom:1px solid var(--line);word-break:break-word}
+  th{color:var(--gold);text-transform:uppercase;font-size:12px}
+  .sc{color:var(--soft);text-align:right;width:54px}
+  .note{color:var(--soft);font-size:12px;border-top:1px solid var(--line);margin-top:16px;padding-top:10px}
+  @media(max-width:560px){body{max-width:360px;margin:0;font-size:12.5px}.ba{grid-template-columns:1fr}h1{font-size:27px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="k">THE TRUST ENGINE · CHEATSHEET</div>
+  <h1>Website Audit</h1>
+  <div class="k" style="color:var(--soft)">13 skills · 130 points · evidence not opinion</div>
+</header>
+
+<h2>The rule</h2>
+<div class="row"><b>Score trust, with evidence, then prioritise.</b> 13 dimensions × /10 = /130. Every score needs a quote from the live site. No quote → no score. <span class="ex">F-11 audit discipline · M-24 / P-22 trust at the centre</span></div>
+
+<h2>The 13 dimensions (/10 each)</h2>
+<table>
+<tr><th>#</th><th>Dimension</th><th class="sc">DKC</th></tr>
+<tr><td>1</td><td>Fear Intelligence — names the real fears?</td><td class="sc"><span class="c">3</span></td></tr>
+<tr><td>2</td><td>Trust Gap Score — clears the 10-pt page score?</td><td class="sc">5</td></tr>
+<tr><td>3</td><td>Source Verification — every claim sourced?</td><td class="sc"><span class="v">7</span></td></tr>
+<tr><td>4</td><td>Content Structure — fear→answer→proof→CTA?</td><td class="sc">5</td></tr>
+<tr><td>5</td><td>Editorial Quality — clears 10 criteria?</td><td class="sc"><span class="v">7</span></td></tr>
+<tr><td>6</td><td>Conversion Copy — acknowledge not exploit?</td><td class="sc">6</td></tr>
+<tr><td>7</td><td>Visual Evidence — real photos/screenshots?</td><td class="sc">6</td></tr>
+<tr><td>8</td><td>Site Architecture — ≤3 clicks, clean URLs?</td><td class="sc"><span class="v">8</span></td></tr>
+<tr><td>9</td><td>Authority Assets — pass the Hormozi test?</td><td class="sc"><span class="c">3</span></td></tr>
+<tr><td>10</td><td>Email Nurture — capture + fear-first sequence?</td><td class="sc"><span class="c">2</span></td></tr>
+<tr><td>11</td><td>AI Citation — answer-first + schema?</td><td class="sc">5</td></tr>
+<tr><td>12</td><td>Monitoring — freshness / accuracy signals?</td><td class="sc"><span class="c">3</span></td></tr>
+<tr><td>13</td><td>Market Position — differentiated, AI-visible?</td><td class="sc"><span class="v">7</span></td></tr>
+<tr><td></td><td><b>TOTAL</b></td><td class="sc"><b class="u">67</b></td></tr>
+</table>
+
+<h2>Dimension 2 — the 10 points (1 each)</h2>
+<div class="row">fear in first 100w · official source cited · specific route · step-by-step · timeline · cost ranges · common mistakes · original visuals · CTA = help · proof throughout <span class="ex">M-05 · F-03</span></div>
+
+<h2>The proof bar (set FIRST)</h2>
+<div class="row"><b>Calibrate risk before scoring.</b> Maximum (health/money/pet) → official source for <b>every</b> claim; wrong info = real harm. Med/Low → design-trust weighs more. <span class="ex">M-04 · P-02 · score against the wrong bar and the whole audit is off</span></div>
+
+<h2>Evidence not opinion</h2>
+<div class="ba">
+  <div class="bad"><span class="c">OPINION</span><br>"D1: 3/10 — could name fears better" (a vibe)</div>
+  <div class="good"><span class="v">EVIDENCE</span><br>"D1: 3/10 — opens 'By Animal People', confiscation NONE FOUND" (a finding)</div>
+</div>
+
+<h2>Action plan = RICE</h2>
+<div class="row"><b>RICE = (Reach × Impact × Confidence) ÷ Effort.</b> Rank every gap; name the #1. End in actions, not observations. <span class="ex">M-27 · F-05 · DKC #1 = confiscation page (9×3×0.9)/2 = 12.15</span></div>
+
+<h2>Never</h2>
+<div class="row"><span class="c">✗</span> score without a quote · <span class="c">✗</span> invent a score or quote · <span class="c">✗</span> score a page you couldn't fetch · <span class="c">✗</span> miscalibrate the proof bar · <span class="c">✗</span> flatter ("clean & professional" ≠ a finding) · <span class="c">✗</span> ship a summary only you can act on</div>
+
+<h2>Real result (DKC, dkc.ae)</h2>
+<div class="row"><b class="u">67/130</b> — "market leader by brand, mid-tier on trust-content." Reconciles with the 8.0/10 Trust Score: best in a weak market (avg 3.9), real gaps. Strength: <b class="v">real MOCCAE/DEFRA links + 90-day rule correct (C-010)</b>. Hole: <b class="c">confiscation fear NONE FOUND — missing on 9/9 competitors</b>. <span class="ex">Top fix: build the confiscation page. FAQ schema flagged "needs Rich Results Test" — not asserted.</span></div>
+
+<div class="note">The Trust Engine · Website Audit · cheatsheet · real output from the 2026-06-01 live DKC audit. Score trust with evidence · calibrate the bar · rank by RICE · pass the client-ready test.</div>
+</body>
+</html>

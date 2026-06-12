@@ -1,0 +1,15 @@
+<section class="section {{ block.variant | default('') }}" id="{{ block.id | default('faq') }}">
+  <div class="container">
+    {% if block.eyebrow %}<p class="eyebrow">{{ block.eyebrow }}</p>{% endif %}
+    <h2>{{ block.heading | default('Frequently asked questions') }}</h2>
+    {% if block.body %}<p class="lead">{{ block.body }}</p>{% endif %}
+    <div class="faq-list">
+      {% for item in block['items'] %}
+      <details class="faq-item">
+        <summary>{{ item.q }}</summary>
+        <div class="faq-a">{{ item.a }}</div>
+      </details>
+      {% endfor %}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,8 @@
+{# Shared open/close is handled per-block; this is a standalone heading band. #}
+<section class="section {{ block.variant | default('') }}">
+  <div class="container {{ 'center' if block.center else '' }}">
+    {% if block.eyebrow %}<p class="eyebrow">{{ block.eyebrow }}</p>{% endif %}
+    {% if block.heading %}<h2>{{ block.heading }}</h2>{% endif %}
+    {% if block.body %}<p class="lead {{ 'center' if block.center else '' }}">{{ block.body }}</p>{% endif %}
+  </div>
+</section>

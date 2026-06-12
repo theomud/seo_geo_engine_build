@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Trust Gap Analysis — Cheatsheet</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Crimson+Pro:wght@400;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0e0e0f;--paper:#f5f2eb;--warm:#f0ead8;--gold:#c9a84c;--red:#c0392b;--green:#1e7a4c;--muted:#7a7060;--border:rgba(14,14,15,0.12)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--ink);color:#fff;font-family:'Crimson Pro',serif;font-size:14px;line-height:1.5;padding:16px;max-width:420px;margin:0 auto}
+h1{font-family:'Bebas Neue',sans-serif;font-size:28px;letter-spacing:2px;color:var(--gold);margin-bottom:4px}
+.sub{font-size:12px;color:rgba(255,255,255,0.4);margin-bottom:16px;font-family:'JetBrains Mono',monospace;letter-spacing:1px}
+.block{background:#1a1a1a;border-radius:6px;padding:14px;margin-bottom:12px;border-left:3px solid var(--gold)}
+.block-title{font-family:'Bebas Neue',sans-serif;font-size:16px;letter-spacing:2px;color:var(--gold);margin-bottom:8px}
+.risk-row{display:flex;gap:8px;margin-bottom:6px;align-items:center}
+.risk-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0}
+.dot-low{background:#1e7a4c}.dot-medlow{background:#c9a84c}.dot-medhigh{background:#e67e22}.dot-high{background:#c0392b}
+.score-row{display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid rgba(255,255,255,0.06);font-size:13px;gap:8px}
+.score-row:last-child{border:none}
+.score-row .num{font-family:'JetBrains Mono',monospace;color:var(--gold);flex-shrink:0;width:20px}
+.score-row .q{flex:1}
+.score-row .pts{color:rgba(255,255,255,0.4);font-size:12px;flex-shrink:0}
+.badge{display:inline-block;padding:1px 6px;border-radius:2px;font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:700}
+.badge-red{background:rgba(192,57,43,0.3);color:#e74c3c}
+.badge-amber{background:rgba(201,168,76,0.3);color:var(--gold)}
+.gap-row{display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid rgba(255,255,255,0.06);font-size:12px}
+.gap-row:last-child{border:none}
+.step-row{display:flex;gap:10px;margin-bottom:8px;align-items:flex-start}
+.step-num{font-family:'Bebas Neue',sans-serif;font-size:24px;color:var(--gold);line-height:1;flex-shrink:0;width:28px}
+.step-text{font-size:13px;padding-top:4px}
+</style>
+</head>
+<body>
+<h1>Trust Gap Analysis</h1>
+<div class="sub">COMPETITOR RESEARCH CHEATSHEET · 20/25</div>
+
+<div class="block">
+  <div class="block-title">Step 0 — Risk Continuum First</div>
+  <div class="risk-row"><div class="risk-dot dot-low"></div><span style="font-size:12px">Low: Entertainment — proof threshold minimal</span></div>
+  <div class="risk-row"><div class="risk-dot dot-medlow"></div><span style="font-size:12px">Med-Low: B2C tutorial — live demo beats text</span></div>
+  <div class="risk-row"><div class="risk-dot dot-medhigh"></div><span style="font-size:12px">Med-High: Finance/legal — credentials required</span></div>
+  <div class="risk-row"><div class="risk-dot dot-high"></div><span style="font-size:12px">High: Medical/immigration/regulated — MAXIMUM PROOF</span></div>
+</div>
+
+<div class="block">
+  <div class="block-title">10-Point Trust Score</div>
+  <div class="score-row"><span class="num">1</span><span class="q">Fear in first 100 words?</span><span class="pts">/1</span></div>
+  <div class="score-row"><span class="num">2</span><span class="q">Official source cited?</span><span class="pts">/1</span></div>
+  <div class="score-row"><span class="num">3</span><span class="q">Specific route named?</span><span class="pts">/1</span></div>
+  <div class="score-row"><span class="num">4</span><span class="q">Step-by-step process?</span><span class="pts">/1</span></div>
+  <div class="score-row"><span class="num">5</span><span class="q">Timeline included?</span><span class="pts">/1</span></div>
+  <div class="score-row"><span class="num">6</span><span class="q">Cost ranges shown?</span><span class="pts">/1</span></div>
+  <div class="score-row"><span class="num">7</span><span class="q">Common mistakes?</span><span class="pts">/1</span></div>
+  <div class="score-row"><span class="num">8</span><span class="q">Original visuals?</span><span class="pts">/1</span></div>
+  <div class="score-row"><span class="num">9</span><span class="q">CTA = help not sell?</span><span class="pts">/1</span></div>
+  <div class="score-row"><span class="num">10</span><span class="q">Proof throughout?</span><span class="pts">/1</span></div>
+</div>
+
+<div class="block">
+  <div class="block-title">Dubai Proof Run — Universal Gaps</div>
+  <div class="gap-row"><span>Airport confiscation fear</span><span><span class="badge badge-red">9/9 MISSING</span></span></div>
+  <div class="gap-row"><span>Summer embargo guide</span><span><span class="badge badge-red">9/9 MISSING</span></span></div>
+  <div class="gap-row"><span>Titer test cost + timeline</span><span><span class="badge badge-red">9/9 MISSING</span></span></div>
+  <div class="gap-row"><span>Airport comparison</span><span><span class="badge badge-red">9/9 MISSING</span></span></div>
+  <div class="gap-row"><span>Official source citations</span><span><span class="badge badge-amber">7/9 MISSING</span></span></div>
+</div>
+
+<div class="block">
+  <div class="block-title">Score Bands</div>
+  <div class="gap-row"><span>0-2</span><span>Displace immediately</span></div>
+  <div class="gap-row"><span>3-4</span><span>Weak — exploit every gap</span></div>
+  <div class="gap-row"><span>5-6</span><span>Decent — targeted gaps</span></div>
+  <div class="gap-row"><span>7-8</span><span>Strong — study and surpass</span></div>
+  <div class="gap-row"><span>9-10</span><span>Excellent — learn from</span></div>
+</div>
+
+<div class="block">
+  <div class="block-title">The 4 Steps</div>
+  <div class="step-row"><div class="step-num">00</div><div class="step-text">Risk Continuum — where does this niche sit?</div></div>
+  <div class="step-row"><div class="step-num">01</div><div class="step-text">Discover all competitors including community sources</div></div>
+  <div class="step-row"><div class="step-num">02</div><div class="step-text">Score top 3 manually to calibrate judgment</div></div>
+  <div class="step-row"><div class="step-num">03</div><div class="step-text">Automate remaining with Playwright + Anthropic</div></div>
+  <div class="step-row"><div class="step-num">04</div><div class="step-text">Build gap matrix — most failures = first pages to build</div></div>
+</div>
+</body>
+</html>

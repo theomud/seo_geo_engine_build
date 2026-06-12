@@ -1,0 +1,61 @@
+{
+  "competitor_name": "Relocate MENA",
+  "url": "https://relocatemena.com",
+  "total_score": 2.5,
+  "scores": {
+    "fear_in_first_100_words": {
+      "score": 0.0,
+      "evidence": "Relocating shouldn't be overwhelming. We manage everything... ensuring a stress-free move.",
+      "gap": "No mention of pet seizure at airport, customs rejection, or any animal-specific fear. General stress acknowledged only."
+    },
+    "official_source_cited": {
+      "score": 0.0,
+      "evidence": "No reference to MAFRA, UAE Ministry of Climate Change, or any regulatory body.",
+      "gap": "Zero citation of UAE pet import authority, CITES, or official permit requirements."
+    },
+    "specific_route_named": {
+      "score": 0.0,
+      "evidence": "No specific routes such as UK to Dubai, USA to Dubai, or India to Dubai mentioned anywhere.",
+      "gap": "No origin-destination route called out; no country-specific import rule differences addressed."
+    },
+    "step_by_step_process": {
+      "score": 0.0,
+      "evidence": "Services listed as 'Door-to-door, all-inclusive pricing' with no process breakdown.",
+      "gap": "No numbered steps for pet relocation: health cert, microchip, titer test, airline approval, customs clearance."
+    },
+    "timeline_included": {
+      "score": 0.0,
+      "evidence": "No timelines referenced anywhere on homepage, service page, or about page.",
+      "gap": "No indication of how many weeks/months UAE pet import preparation takes."
+    },
+    "cost_ranges_shown": {
+      "score": 0.5,
+      "evidence": "'Door-to-door, all-inclusive pricing' and FAQ: 'How much does it cost to use our services?'",
+      "gap": "FAQ exists but answer is not visible in scraped text; no actual cost ranges or starting prices shown."
+    },
+    "common_mistakes": {
+      "score": 0.0,
+      "evidence": "No mention of mistakes, pitfalls, rejected documents, or failed pet imports anywhere.",
+      "gap": "No warnings about banned breeds, incorrect health certificates, or missing import permits for UAE."
+    },
+    "original_visuals": {
+      "score": 0.0,
+      "evidence": "No images, infographics, or visual content described or referenced in any page text.",
+      "gap": "No original photos of pets in transit, process diagrams, or route maps evident."
+    },
+    "cta_feels_like_help": {
+      "score": 1.0,
+      "evidence": "'Contact us on WhatsApp at any time' — accessible, low-friction channel offered.",
+      "gap": "CTA is generic relocation; no pet-specific help offer or free pet import consultation framing."
+    },
+    "would_you_trust_this": {
+      "score": 1.0,
+      "evidence": "Four named Google reviews praising Deborah/Debs/Meenu team by name with specific outcomes.",
+      "gap": "No pet relocation testimonials specifically; no credentials, accreditations, or case study depth shown."
+    }
+  },
+  "strongest_asset": "Named, specific Google reviews with real outcomes (Saudi to Scotland) and responsive WhatsApp CTA build basic human credibility.",
+  "biggest_gap": "Zero pet-specific content — no UAE import rules, no airport seizure risk addressed, no steps, no timeline, no costs, no official sources cited.",
+  "content_opportunity": "How to Move Your Pet to Dubai Without It Being Seized at the Airport: The Complete UAE Import Guide",
+  "content_brief": "Dubai pet owners fear their dog will be taken at the airport and never returned — this page names every UAE authority, banned breed, and document deadline they don't."
+}

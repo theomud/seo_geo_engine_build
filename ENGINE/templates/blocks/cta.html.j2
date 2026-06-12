@@ -1,0 +1,11 @@
+<section class="section {{ block.variant | default('section--primary') }}" id="{{ block.id | default('') }}">
+  <div class="container center">
+    <h2>{{ block.heading }}</h2>
+    {% if block.body %}<p class="lead center">{{ block.body }}</p>{% endif %}
+    <div class="hero-cta" style="justify-content:center">
+      {% for c in block.ctas %}
+      <a class="btn {{ c.style | default('btn-gold') }} btn-lg" href="{{ c.url }}">{{ c.label }}</a>
+      {% endfor %}
+    </div>
+  </div>
+</section>

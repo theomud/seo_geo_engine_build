@@ -1,0 +1,15 @@
+<section class="section {{ block.variant | default('') }}">
+  <div class="container">
+    {% if block.eyebrow %}<p class="eyebrow">{{ block.eyebrow }}</p>{% endif %}
+    {% if block.heading %}<h2>{{ block.heading }}</h2>{% endif %}
+    {% if block.body %}<p class="lead">{{ block.body }}</p>{% endif %}
+    <div class="steps">
+      {% for s in block['items'] %}
+      <div class="step">
+        <h3>{{ s.title }}</h3>
+        {% if s.text %}<p>{{ s.text }}</p>{% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,96 @@
+url: /destinations/pakistan-to-dubai/
+title: "Pakistan to Dubai Pet Relocation — Requirements & Steps | PawRoute"
+title_suffix: ""
+meta_description: "Bring your dog or cat from Pakistan to the UAE: ISO microchip, rabies vaccine, a Pakistani export health certificate and a MOCCAE import permit. No quarantine when compliant. The short answer, fast."
+og_title: "Pakistan → Dubai with a pet: the short, correct answer"
+schema: service
+published: "2026-06-09"
+updated: "2026-06-09"
+service:
+  name: Pet relocation from Pakistan to the UAE
+  area_served: ["United Arab Emirates", "Pakistan"]
+
+# FRAMEWORK A — Concise Answer-First / Extractive (GEO-minimal). Every block is a
+# self-contained, quotable unit; no long prose. Test specimen for B07-Variant-C + G03.
+
+blocks:
+  - type: hero
+    eyebrow: "Route · Pakistan → UAE (import)"
+    heading: "Moving your pet from Pakistan to Dubai?"
+    subheading: >
+      A short, common corridor. Get the UAE import permit arranged first and the
+      documents in the right order — no quarantine when it's done correctly.
+    ctas:
+      - { label: "Get my quote", url: "#quote", style: "btn-gold" }
+    card:
+      heading: "Pakistan → Dubai at a glance"
+      rows:
+        - { label: "Quarantine", value: "None (if compliant)" }
+        - { label: "Permit", value: "MOCCAE, before travel" }
+        - { label: "Flight", value: "Baggage (<17h) or cargo" }
+        - { label: "Do first", value: "The UAE import permit" }
+      note: "Pakistan is a rabies high-risk origin, so a rabies titre test usually applies — we confirm your status first."
+
+  - type: key_facts
+    heading: "Quick answer"
+    answer: "To bring a pet from Pakistan to the UAE you need an ISO microchip, a valid rabies vaccination given at least 21 days before travel, a government export/veterinary health certificate from Pakistan, and a MOCCAE import permit arranged before travel. Because Pakistan is a rabies high-risk origin, a rabies antibody (titre) test (≥0.5 IU/ml, valid 365 days) usually applies and the minimum travel age is 15 weeks. Compliant pets are not quarantined in the UAE."
+    stats:
+      - { label: "MOCCAE permit", value: "AED 200, valid 90 days" }
+      - { label: "Quarantine", value: "None" }
+      - { label: "Titre", value: "Usually (high-risk origin)" }
+      - { label: "Min age", value: "15 weeks" }
+    verified: "June 2026"
+    source_authority: "UAE MOCCAE"
+
+  - type: checklist
+    eyebrow: "What you need"
+    heading: "Requirements — in order"
+    body: "The UAE import side is the part we can anchor exactly; the Pakistan export side we confirm per case before booking."
+    items:
+      - { title: "ISO microchip (first)", text: "15-digit chip, implanted before the rabies vaccine and matching every document." }
+      - { title: "Rabies vaccine", text: "At least 21 days before travel; minimum travel age 15 weeks for a high-risk origin." }
+      - { title: "Rabies titre test", text: "Usually required from Pakistan: ≥0.5 IU/ml, valid 365 days. We confirm whether yours needs it." }
+      - { title: "MOCCAE import permit", text: "AED 200, valid 90 days, arranged before travel — the controlling document." }
+      - { title: "Pakistan export health certificate", text: "Government/veterinary export certificate; we confirm the current authority and process per case." }
+
+  - type: steps
+    eyebrow: "The right order"
+    heading: "How the move runs"
+    items:
+      - { title: "Confirm titre + permit timing", text: "We check whether a titre is needed and line the 90-day permit window up with your date." }
+      - { title: "Microchip, then rabies, then titre", text: "Sequence matters — chip before vaccine; titre after." }
+      - { title: "Pakistan export certificate + MOCCAE permit", text: "Both confirmed before any flight is booked." }
+      - { title: "Fly & clear", text: "Checked baggage (journey under 17h) or cargo on Emirates; cleared in the UAE with no quarantine when compliant." }
+
+  - type: faq
+    heading: "Pakistan → Dubai: quick questions"
+    items:
+      - { q: "Will my pet be quarantined in the UAE?", a: "No — with a valid MOCCAE import permit, microchip and rabies vaccination (plus a titre if your origin is high-risk), pets are not quarantined on arrival." }
+      - { q: "Does my pet need a rabies titre test?", a: "Usually, yes — Pakistan is a rabies high-risk origin, so the UAE requires a rabies antibody test (≥0.5 IU/ml, valid 365 days). We confirm your exact status before you commit, because it affects timing." }
+      - { q: "Can my pet travel in the cabin?", a: "Not on Emirates — pets travel as checked baggage (journey under 17 hours) or as cargo. Only guide dogs and falcons are allowed in the cabin." }
+
+  - type: sources
+    eyebrow: "Don't take our word for it"
+    heading: "Official sources"
+    items:
+      - { authority: "UAE MOCCAE", title: "Pet import permits", url: "https://www.moccae.gov.ae/en/services/import-permit-pets", note: "The controlling permit + import rules" }
+      - { authority: "Emirates", title: "Travelling with animals", url: "https://www.emirates.com/english/help/faqs/what-are-the-rules-and-charges-for-travelling-with-animals/", note: "Cabin/baggage/cargo + 17h rule" }
+      - { authority: "IATA", title: "Live Animals Regulations", url: "https://www.iata.org/en/programs/cargo/live-animals/", note: "Travel crate standards" }
+
+  - type: quote_form
+    id: quote
+    eyebrow: "No obligation"
+    heading: "Get your Pakistan → Dubai quote"
+    body: "Tell us your pet and timing. We'll confirm whether a titre is needed and reply on WhatsApp with the first step."
+    destinations: ["Into the UAE"]
+    points:
+      - "Whether your pet needs a rabies titre test"
+      - "The correct document sequence"
+      - "A permit-safe timeline"
+
+  - type: cta
+    heading: "Moving from Pakistan to Dubai?"
+    body: "We confirm the Pakistan export requirements and arrange the MOCCAE permit — no guesswork on a busy route."
+    ctas:
+      - { label: "Get my quote", url: "#quote", style: "btn-gold" }
+      - { label: "See all routes", url: "/destinations/", style: "btn-ghost" }

@@ -1,0 +1,54 @@
+<section class="section {{ block.variant | default('') }}" id="{{ block.id | default('cost-calculator') }}">
+  <div class="container container--article">
+    {% if block.eyebrow %}<p class="eyebrow">{{ block.eyebrow }}</p>{% endif %}
+    <h2>{{ block.heading | default('Pet relocation cost estimator') }}</h2>
+    {% if block.body %}<p>{{ block.body }}</p>{% endif %}
+    <div class="tool" data-tool="cost">
+      <div class="tool-row">
+        <label>Destination
+          <select id="cc-dest">
+            <option value="india">Dubai → India</option>
+            <option value="netherlands">Dubai → Netherlands</option>
+            <option value="uk" selected>Dubai → UK</option>
+            <option value="germany">Dubai → Germany / France</option>
+            <option value="usa">Dubai → USA</option>
+            <option value="canada">Dubai → Canada</option>
+            <option value="southafrica">Dubai → South Africa</option>
+            <option value="singapore">Dubai → Singapore</option>
+            <option value="australia">Dubai → Australia</option>
+          </select>
+        </label>
+        <label>Pet size
+          <select id="cc-size">
+            <option value="cat">Cat</option>
+            <option value="small">Small dog (&lt;10kg)</option>
+            <option value="medium" selected>Medium dog (10–25kg)</option>
+            <option value="large">Large dog (&gt;25kg)</option>
+          </select>
+        </label>
+        <button type="button" class="btn btn-gold" id="cc-go">Estimate cost</button>
+      </div>
+      <div id="cc-out" class="tool-out" hidden></div>
+      <p class="tool-note">Indicative ranges from the PawRoute cost model (verified June 2026), not a quote. Airline, season and exact crate size move the final figure — we give a firm breakdown before you commit.</p>
+    </div>
+  </div>
+</section>
+<script>
+(function(){
+  var go=document.getElementById('cc-go'); if(!go) return;
+  var R={india:[8000,14000],netherlands:[10000,16000],uk:[12000,18000],germany:[13800,18000],
+         usa:[13800,22000],canada:[14000,20000],southafrica:[14000,22000],singapore:[18000,28000],australia:[25000,35000]};
+  var F={cat:[0.7,0.95],small:[0.8,1.0],medium:[0.95,1.12],large:[1.05,1.25]};
+  function r500(n){return Math.round(n/500)*500;}
+  go.addEventListener('click',function(){
+    var d=document.getElementById('cc-dest').value, s=document.getElementById('cc-size').value;
+    var base=R[d], f=F[s];
+    var lo=r500(base[0]*f[0]), hi=r500(base[1]*f[1]);
+    var out=document.getElementById('cc-out'); out.hidden=false;
+    out.innerHTML='<div class="cc-figure">AED '+lo.toLocaleString()+' – '+hi.toLocaleString()+'</div>'+
+      '<p class="tool-note">Typical all-in range for that route and pet size. '+
+      (d==='australia'||d==='singapore' ? 'Higher because of the titre test and quarantine.' : 'Includes UAE vet/microchip, MOCCAE export, IATA crate, air freight and clearance.')+'</p>'+
+      '<p class="tool-ok">Want the exact figure? Send your pet\'s details for a firm breakdown — no ‘get a quote’ wall.</p>';
+  });
+})();
+</script>

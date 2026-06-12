@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Trust Engine — Screenshot Evidence Gallery</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #0a0a0a; color: #e0e0e0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; padding: 24px; }
+  h1 { font-size: 22px; font-weight: 700; color: #fff; margin-bottom: 4px; }
+  .subtitle { font-size: 13px; color: #888; margin-bottom: 32px; }
+  .batch { margin-bottom: 48px; }
+  .batch-title { font-size: 15px; font-weight: 700; color: #f0a500; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px; padding-bottom: 6px; border-bottom: 1px solid #222; }
+  .batch-meta { font-size: 12px; color: #666; margin-bottom: 16px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+  .card { background: #141414; border: 1px solid #222; border-radius: 10px; overflow: hidden; }
+  .card img { width: 100%; display: block; cursor: zoom-in; transition: opacity 0.2s; }
+  .card img:hover { opacity: 0.9; }
+  .card-body { padding: 10px 12px; }
+  .card-num { font-size: 10px; color: #555; font-weight: 600; letter-spacing: 1px; margin-bottom: 4px; }
+  .card-file { font-size: 11px; color: #444; font-family: monospace; margin-bottom: 6px; }
+  .card-platform { display: inline-block; font-size: 10px; padding: 2px 8px; border-radius: 20px; margin-bottom: 6px; font-weight: 600; }
+  .platform-google { background: #1a3a2a; color: #4caf6e; }
+  .platform-facebook { background: #1a2a3a; color: #5b8def; }
+  .platform-reddit { background: #2a1a1a; color: #ff6b35; }
+  .platform-system { background: #2a2a1a; color: #c9a84c; }
+  .card-desc { font-size: 12px; color: #aaa; line-height: 1.5; }
+  .card-finding { font-size: 11px; color: #f0a500; margin-top: 6px; font-style: italic; }
+  .lightbox { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.95); z-index: 1000; justify-content: center; align-items: center; cursor: zoom-out; }
+  .lightbox.active { display: flex; }
+  .lightbox img { max-width: 90vw; max-height: 90vh; object-fit: contain; border-radius: 4px; }
+  .stats { display: flex; gap: 24px; margin-bottom: 32px; flex-wrap: wrap; }
+  .stat { background: #141414; border: 1px solid #222; border-radius: 8px; padding: 12px 16px; }
+  .stat-num { font-size: 28px; font-weight: 700; color: #f0a500; }
+  .stat-label { font-size: 11px; color: #666; margin-top: 2px; }
+</style>
+</head>
+<body>
+
+<h1>The Trust Engine — Screenshot Evidence Gallery</h1>
+<p class="subtitle">69 screenshots across 6 research batches · Open images in browser from the screenshots/ folder</p>
+
+<div class="stats">
+  <div class="stat"><div class="stat-num">69</div><div class="stat-label">Total Screenshots</div></div>
+  <div class="stat"><div class="stat-num">21+</div><div class="stat-label">Competitors Found</div></div>
+  <div class="stat"><div class="stat-num">6</div><div class="stat-label">Platforms Researched</div></div>
+  <div class="stat"><div class="stat-num">15+</div><div class="stat-label">Real Price Data Points</div></div>
+</div>
+
+<!-- BATCH 0 -->
+<div class="batch">
+  <div class="batch-title">Batch 0 — Original Research Sessions</div>
+  <div class="batch-meta">Google Autocomplete · Google Trends · Facebook "Pet Moving and Relocation" · 2026-05-26 · 21 screenshots</div>
+  <div class="grid">
+    <div class="card"><img src="1000305030.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#01</div><div class="card-file">1000305030.jpg</div><span class="card-platform platform-system">System</span><div class="card-desc">Original system design concept</div></div></div>
+    <div class="card"><img src="1000305211.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#02</div><div class="card-file">1000305211.jpg</div><span class="card-platform platform-google">Google Autocomplete</span><div class="card-desc">pet relocation Dubai — base seed</div><div class="card-finding">India, UK, Philippines, costs confirmed</div></div></div>
+    <div class="card"><img src="1000305212.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#03</div><div class="card-file">1000305212.jpg</div><span class="card-platform platform-google">Google Autocomplete</span><div class="card-desc">pet relocation Dubai b</div><div class="card-finding">Blue Sky competitor found</div></div></div>
+    <div class="card"><img src="1000305213.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#04</div><div class="card-file">1000305213.jpg</div><span class="card-platform platform-google">Google Autocomplete</span><div class="card-desc">pet relocation Dubai b (consistency check)</div></div></div>
+    <div class="card"><img src="1000305214.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#05</div><div class="card-file">1000305214.jpg</div><span class="card-platform platform-google">Google Autocomplete</span><div class="card-desc">pet relocation Dubai c</div><div class="card-finding">Canada route, cost keywords</div></div></div>
+    <div class="card"><img src="1000305215.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#06</div><div class="card-file">1000305215.jpg</div><span class="card-platform platform-google">Google Autocomplete</span><div class="card-desc">pet relocation Dubai d</div><div class="card-finding">DKC competitor found</div></div></div>
+    <div class="card"><img src="1000305216.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#07</div><div class="card-file">1000305216.jpg</div><span class="card-platform platform-google">Google Autocomplete</span><div class="card-desc">pet relocation Dubai e</div><div class="card-finding">Emirates + Etihad + South Africa import</div></div></div>
+    <div class="card"><img src="1000305217.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#08</div><div class="card-file">1000305217.jpg</div><span class="card-platform platform-google">Google Autocomplete</span><div class="card-desc">pet relocation Dubai f</div><div class="card-finding">Export cluster — 8 destinations confirmed</div></div></div>
+    <div class="card"><img src="1000305218.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#09</div><div class="card-file">1000305218.jpg</div><span class="card-platform platform-google">Google Autocomplete</span><div class="card-desc">pet relocation Dubai g</div><div class="card-finding">Germany route, guide intent</div></div></div>
+    <div class="card"><img src="1000305219.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#10</div><div class="card-file">1000305219.jpg</div><span class="card-platform platform-google">Google Autocomplete</span><div class="card-desc">pet relocation Dubai e (alt)</div><div class="card-finding">South Africa standalone market</div></div></div>
+    <div class="card"><img src="1000305220.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#11</div><div class="card-file">1000305220.jpg</div><span class="card-platform platform-google">Google Autocomplete</span><div class="card-desc">pet relocation Dubai f (alt)</div><div class="card-finding">Export cluster consistency confirmed</div></div></div>
+    <div class="card"><img src="Screenshot_20260526_154909_Chrome.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#12</div><div class="card-file">Screenshot_20260526_154909_Chrome.jpg</div><span class="card-platform platform-google">Google Autocomplete</span><div class="card-desc">pet relocation Dubai h</div><div class="card-finding">How much, how long, pet worldwide relocations</div></div></div>
+    <div class="card"><img src="Screenshot_20260526_180157_Chrome.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#13</div><div class="card-file">Screenshot_20260526_180157_Chrome.jpg</div><span class="card-platform platform-google">Google SERP + PAA</span><div class="card-desc">Organic results + People Also Ask</div><div class="card-finding">CarryMyPet.ae ranking, 4 PAA questions confirmed</div></div></div>
+    <div class="card"><img src="Screenshot_20260526_180633_Chrome.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#14</div><div class="card-file">Screenshot_20260526_180633_Chrome.jpg</div><span class="card-platform platform-google">Google Related Searches</span><div class="card-desc">Related Searches section</div><div class="card-finding">JetSet Pets competitor, careers = negative keyword</div></div></div>
+    <div class="card"><img src="1000305262.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#15</div><div class="card-file">1000305262.jpg</div><span class="card-platform platform-google">Google Trends</span><div class="card-desc">UAE — past 5 years</div><div class="card-finding">Market growing 3-4x. Next surge Sep/Oct 2026. Build now.</div></div></div>
+    <div class="card"><img src="1000305296.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#16</div><div class="card-file">1000305296.jpg</div><span class="card-platform platform-facebook">Facebook</span><div class="card-desc">Pet Moving and Relocation group</div><div class="card-finding">UAE→Oman car route + Philippines route discovered</div></div></div>
+    <div class="card"><img src="1000305297.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#17</div><div class="card-file">1000305297.jpg</div><span class="card-platform platform-facebook">Facebook</span><div class="card-desc">Pet Moving and Relocation — Oman comments</div><div class="card-finding">AirPaws competitor found, quarantine info</div></div></div>
+    <div class="card"><img src="1000305298.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#18</div><div class="card-file">1000305298.jpg</div><span class="card-platform platform-facebook">Facebook</span><div class="card-desc">Philippines + Etihad carrier size</div><div class="card-finding">Carrier measurement fear confirmed (40x40x22cm)</div></div></div>
+    <div class="card"><img src="1000305300.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#19</div><div class="card-file">1000305300.jpg</div><span class="card-platform platform-facebook">Facebook</span><div class="card-desc">Oman road travel + Philippines</div><div class="card-finding">MovingBay.com competitor found</div></div></div>
+    <div class="card"><img src="1000305302.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#20</div><div class="card-file">1000305302.jpg</div><span class="card-platform platform-facebook">Facebook</span><div class="card-desc">UAE→USA cat + Emirates BSH rejection</div><div class="card-finding">Breed restriction fear confirmed</div></div></div>
+    <div class="card"><img src="1000305304.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#21</div><div class="card-file">1000305304.jpg</div><span class="card-platform platform-facebook">Facebook</span><div class="card-desc">Cost breakdown + comments</div><div class="card-finding">Pawsome Pets UAE + Relocate MENA found. Real price data.</div></div></div>
+  </div>
+</div>
+
+<!-- BATCH 1 -->
+<div class="batch">
+  <div class="batch-title">Batch 1 — Reddit r/dubai Export Thread</div>
+  <div class="batch-meta">"Pet Relocation from the UAE" · 30 upvotes · 41 comments · 9 screenshots</div>
+  <div class="grid">
+    <div class="card"><img src="1000305380.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#22</div><div class="card-file">1000305380.jpg</div><span class="card-platform platform-reddit">Reddit r/dubai</span><div class="card-desc">Main post — UAE export process</div><div class="card-finding">30 upvotes, 41 comments — highest demand topic confirmed</div></div></div>
+    <div class="card"><img src="1000305381.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#23</div><div class="card-file">1000305381.jpg</div><span class="card-platform platform-reddit">Reddit r/dubai</span><div class="card-desc">Cockatiels gap + large breeds India</div><div class="card-finding">6 upvotes: birds gap. 5 upvotes: large breeds India gap.</div></div></div>
+    <div class="card"><img src="1000305382.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#24</div><div class="card-file">1000305382.jpg</div><span class="card-platform platform-reddit">Reddit r/dubai</span><div class="card-desc">Curious_cat_2912 — 16 upvotes</div><div class="card-finding">9 Lives AE + JetSet Pets + Sandy Paws confirmed</div></div></div>
+    <div class="card"><img src="1000305383.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#25</div><div class="card-file">1000305383.jpg</div><span class="card-platform platform-reddit">Reddit r/dubai</span><div class="card-desc">Pet Express UAE→Spain</div><div class="card-finding">Under 1 month, highly rated. Pet relocation guide 2026 link.</div></div></div>
+    <div class="card"><img src="1000305384.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#26</div><div class="card-file">1000305384.jpg</div><span class="card-platform platform-reddit">Reddit r/dubai</span><div class="card-desc">Carrier rules + airline fee + Istanbul total</div><div class="card-finding">900 AED airline add. 4K AED Dubai→Istanbul Turkish Airlines.</div></div></div>
+    <div class="card"><img src="1000305385.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#27</div><div class="card-file">1000305385.jpg</div><span class="card-platform platform-reddit">Reddit r/dubai</span><div class="card-desc">Sammy12xyz — full DIY process</div><div class="card-finding">700 AED titer test. 1 week results. Cargo Village process.</div></div></div>
+    <div class="card"><img src="1000305386.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#28</div><div class="card-file">1000305386.jpg</div><span class="card-platform platform-reddit">Reddit r/dubai</span><div class="card-desc">Australia 8 months + DKC + Turkish Airlines</div><div class="card-finding">Dubai→Turkey→Serbia cabin route confirmed</div></div></div>
+    <div class="card"><img src="1000305387.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#29</div><div class="card-file">1000305387.jpg</div><span class="card-platform platform-reddit">Reddit r/dubai</span><div class="card-desc">Netherlands cat stress + Oman drive</div><div class="card-finding">"Just the thought she's gonna be so stressed out breaks my heart"</div></div></div>
+    <div class="card"><img src="1000305388.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#30</div><div class="card-file">1000305388.jpg</div><span class="card-platform platform-reddit">Reddit r/dubai</span><div class="card-desc">Carry My Pet — large dogs + India</div><div class="card-finding">Indian company HQ in UAE. 2 large dogs + cat in cabin.</div></div></div>
+  </div>
+</div>
+
+<!-- BATCH 2 -->
+<div class="batch">
+  <div class="batch-title">Batch 2 — Facebook "Dog Lovers In UAE" + Reddit r/UAE</div>
+  <div class="batch-meta">Egypt→UAE post · SA→UAE post · Etihad export thread · 10 screenshots</div>
+  <div class="grid">
+    <div class="card"><img src="1000305427.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#31</div><div class="card-file">1000305427.jpg</div><span class="card-platform platform-facebook">Facebook Dog Lovers UAE</span><div class="card-desc">Egypt→UAE post (7 likes, 30 comments)</div><div class="card-finding">Sandy Paws recommended. New route confirmed.</div></div></div>
+    <div class="card"><img src="1000305428.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#32</div><div class="card-file">1000305428.jpg</div><span class="card-platform platform-facebook">Facebook Dog Lovers UAE</span><div class="card-desc">Sandy Paws + process steps</div><div class="card-finding">Sandy Paws confirmed as PRO. Process steps listed.</div></div></div>
+    <div class="card"><img src="1000305429.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#33</div><div class="card-file">1000305429.jpg</div><span class="card-platform platform-facebook">Facebook Dog Lovers UAE</span><div class="card-desc">Amany Elgammal — MOCCAE link</div><div class="card-finding">moccae.gov.ae official source linked directly in community</div></div></div>
+    <div class="card"><img src="1000305430.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#34</div><div class="card-file">1000305430.jpg</div><span class="card-platform platform-facebook">Facebook Dog Lovers UAE</span><div class="card-desc">Dagin Pets + MUZE GU FEAR QUOTE</div><div class="card-finding">⚠️ HIGHEST PRIORITY: "dog taken away at airport and never given back"</div></div></div>
+    <div class="card"><img src="1000305431.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#35</div><div class="card-file">1000305431.jpg</div><span class="card-platform platform-facebook">Facebook Dog Lovers UAE</span><div class="card-desc">SA→UAE post + Snoopy Pets Jordan→Abu Dhabi</div><div class="card-finding">C&C Pawsome Place found. Snoopy Pets Jordan→Abu Dhabi.</div></div></div>
+    <div class="card"><img src="1000305432.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#36</div><div class="card-file">1000305432.jpg</div><span class="card-platform platform-facebook">Facebook Dog Lovers UAE</span><div class="card-desc">Global Paws SA→Dubai</div><div class="card-finding">"Handled ALL the paperwork and always kept me in the loop"</div></div></div>
+    <div class="card"><img src="1000305433.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#37</div><div class="card-file">1000305433.jpg</div><span class="card-platform platform-facebook">Facebook Dog Lovers UAE</span><div class="card-desc">Linda Tedd + Fuzzy Friends Pets Services</div><div class="card-finding">SA route needs professional help. Fuzzy Friends competitor.</div></div></div>
+    <div class="card"><img src="1000305434.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#38</div><div class="card-file">1000305434.jpg</div><span class="card-platform platform-facebook">Facebook Dog Lovers UAE</span><div class="card-desc">Egypt→UAE duplicate angle</div></div></div>
+    <div class="card"><img src="1000305435.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#39</div><div class="card-file">1000305435.jpg</div><span class="card-platform platform-facebook">Facebook Dog Lovers UAE</span><div class="card-desc">Egypt→UAE continuation</div></div></div>
+    <div class="card"><img src="1000305492.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#40</div><div class="card-file">1000305492.jpg</div><span class="card-platform platform-reddit">Reddit r/UAE</span><div class="card-desc">MOCCAE export + process details</div><div class="card-finding">Cargo Village cert valid 10 days. Fit to fly limited validity. 30 day vaccine rule.</div></div></div>
+  </div>
+</div>
+
+<!-- BATCH 3 -->
+<div class="batch">
+  <div class="batch-title">Batch 3 — r/UAE Etihad Nightmare Thread</div>
+  <div class="batch-meta">"Traveling with Cat Etihad Abu Dhabi to Canada in Cabin" · 7 upvotes · 10 screenshots</div>
+  <div class="grid">
+    <div class="card"><img src="1000305417.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#41</div><div class="card-file">1000305417.jpg</div><span class="card-platform platform-reddit">Reddit r/dubai</span><div class="card-desc">Search results — related pet threads</div><div class="card-finding">r/TravelWithPets found. r/dubai has 550K members.</div></div></div>
+    <div class="card"><img src="1000305418.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#42</div><div class="card-file">1000305418.jpg</div><span class="card-platform platform-reddit">Reddit r/UAE</span><div class="card-desc">Etihad nightmare — March 8 email for April 3 flight</div><div class="card-finding">Booked 4 weeks early. Still no approval until 4.5 hrs before.</div></div></div>
+    <div class="card"><img src="1000305419.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#43</div><div class="card-file">1000305419.jpg</div><span class="card-platform platform-reddit">Reddit r/UAE</span><div class="card-desc">~5,000 AED seat + 5,500 AED pet fee</div><div class="card-finding">EU health cert demanded for Canada route (Canada doesn't need it)</div></div></div>
+    <div class="card"><img src="1000305420.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#44</div><div class="card-file">1000305420.jpg</div><span class="card-platform platform-reddit">Reddit r/UAE</span><div class="card-desc">Approval 4.5 hours before. Crying at check-in.</div><div class="card-finding">Cat slightly over 8kg. "I was literally crying at this point."</div></div></div>
+    <div class="card"><img src="1000305421.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#45</div><div class="card-file">1000305421.jpg</div><span class="card-platform platform-reddit">Reddit r/UAE</span><div class="card-desc">Seat switched to aisle. Homeopet drops.</div><div class="card-finding">Test pet anxiety meds 1 week before flying. Pearl lounge $35.</div></div></div>
+    <div class="card"><img src="1000305422.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#46</div><div class="card-file">1000305422.jpg</div><span class="card-platform platform-reddit">Reddit r/UAE</span><div class="card-desc">"I WOULD NEVER FLY EITHAD"</div><div class="card-finding">Canadian customs only checked vaccine cert. Relatively simple.</div></div></div>
+    <div class="card"><img src="1000305423.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#47</div><div class="card-file">1000305423.jpg</div><span class="card-platform platform-reddit">Reddit r/UAE</span><div class="card-desc">"terrible experience" — full conclusion</div><div class="card-finding">"took advantage of desperate circumstances and squeezed money"</div></div></div>
+    <div class="card"><img src="1000305424.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#48</div><div class="card-file">1000305424.jpg</div><span class="card-platform platform-reddit">Reddit r/UAE</span><div class="card-desc">Comments — airline recommendations</div><div class="card-finding">ciceroblues: "Turkish airlines or Lufthansa way more accommodating"</div></div></div>
+    <div class="card"><img src="1000305425.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#49</div><div class="card-file">1000305425.jpg</div><span class="card-platform platform-reddit">Reddit r/UAE</span><div class="card-desc">MOCCAE export process details</div><div class="card-finding">30-day vaccine rule. Cargo Village cert 10 days.</div></div></div>
+    <div class="card"><img src="1000305426.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#50</div><div class="card-file">1000305426.jpg</div><span class="card-platform platform-reddit">Reddit r/dubai</span><div class="card-desc">KLM/Lufthansa Dubai debate</div><div class="card-finding">Related: "airlines allowing small dogs in cabin"</div></div></div>
+  </div>
+</div>
+
+<!-- BATCH 4 -->
+<div class="batch">
+  <div class="batch-title">Batch 4 — r/dubai Sharjah Airport Thread</div>
+  <div class="batch-meta">juvegy · 22 upvotes · 30 comments · 10 screenshots · BIGGEST PRACTICAL FINDING</div>
+  <div class="grid">
+    <div class="card"><img src="1000305403.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#51</div><div class="card-file">1000305403.jpg</div><span class="card-platform platform-reddit">Reddit r/dubai</span><div class="card-desc">TLDR: Fly Sharjah — 22 upvotes</div><div class="card-finding">⚠️ BIGGEST HACK: Sharjah = cheaper, simpler, no pre-comms needed</div></div></div>
+    <div class="card"><img src="1000305408.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#52</div><div class="card-file">1000305408.jpg</div><span class="card-platform platform-reddit">Reddit r/dubai</span><div class="card-desc">tantawi — Stockholm→Dubai covid cat trauma</div><div class="card-finding">"4 years old trauma" — covid test, cat could be kept for research</div></div></div>
+    <div class="card"><img src="1000305409.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#53</div><div class="card-file">1000305409.jpg</div><span class="card-platform platform-reddit">Reddit r/dubai</span><div class="card-desc">tantawi trauma + Royal Jordanian $100</div><div class="card-finding">Royal Jordanian: $100 cabin vs Etihad $1,500</div></div></div>
+    <div class="card"><img src="1000305410.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#54</div><div class="card-file">1000305410.jpg</div><span class="card-platform platform-reddit">Reddit r/dubai</span><div class="card-desc">Etihad $1,500 fee exposed</div><div class="card-finding">Funny_Dot: "Wish I knew this before I paid $1500 for Etihad"</div></div></div>
+    <div class="card"><img src="1000305411.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#55</div><div class="card-file">1000305411.jpg</div><span class="card-platform platform-reddit">Reddit r/dubai</span><div class="card-desc">Sharjah no pre-communication needed</div><div class="card-finding">Can't buy extra seat for larger dogs on most airlines</div></div></div>
+    <div class="card"><img src="1000305412.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#56</div><div class="card-file">1000305412.jpg</div><span class="card-platform platform-reddit">Reddit r/dubai</span><div class="card-desc">Etihad price history $200→$1,500</div><div class="card-finding">Dogs AND cats confirmed for Sharjah cabin option</div></div></div>
+    <div class="card"><img src="1000305413.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#57</div><div class="card-file">1000305413.jpg</div><span class="card-platform platform-reddit">Reddit r/dubai</span><div class="card-desc">Sharjah process = 20 MINUTES</div><div class="card-finding">Pay 500 AED MOCCAE vet release online. Then just show up.</div></div></div>
+    <div class="card"><img src="1000305414.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#58</div><div class="card-file">1000305414.jpg</div><span class="card-platform platform-reddit">Reddit r/dubai</span><div class="card-desc">MOCCAE 500 AED vet release process</div><div class="card-finding">Upload documents online. No need to call ahead.</div></div></div>
+    <div class="card"><img src="1000305415.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#59</div><div class="card-file">1000305415.jpg</div><span class="card-platform platform-reddit">Reddit r/dubai</span><div class="card-desc">Community import + export checklists</div><div class="card-finding">Rabies vaccine 30+ days before flight. Community-verified steps.</div></div></div>
+    <div class="card"><img src="1000305416.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#60</div><div class="card-file">1000305416.jpg</div><span class="card-platform platform-reddit">Reddit r/dubai</span><div class="card-desc">Export steps + 500 AED MOCCAE fee</div><div class="card-finding">Vet cert must be government authorized + stamped. KLM debate.</div></div></div>
+  </div>
+</div>
+
+<!-- BATCH 5 -->
+<div class="batch">
+  <div class="batch-title">Batch 5 — r/dubai IrbisKat Export Guide</div>
+  <div class="batch-meta">IrbisKat · 24 upvotes · 17 comments · 8 screenshots · Highest engagement export guide</div>
+  <div class="grid">
+    <div class="card"><img src="1000305390.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#61</div><div class="card-file">1000305390.jpg</div><span class="card-platform platform-reddit">Reddit r/dubai</span><div class="card-desc">Relocate Your Pet + K9 Jets + Furry Travel</div><div class="card-finding">Hi Fly = does NOT accept pets. K9 Jets = private jet option.</div></div></div>
+    <div class="card"><img src="1000305391.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#62</div><div class="card-file">1000305391.jpg</div><span class="card-platform platform-reddit">Reddit r/dubai</span><div class="card-desc">IrbisKat post start — Steps to traveling</div><div class="card-finding">"relocation companies shamelessly charging insane amounts"</div></div></div>
+    <div class="card"><img src="1000305392.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#63</div><div class="card-file">1000305392.jpg</div><span class="card-platform platform-reddit">Reddit r/dubai</span><div class="card-desc">Steps 1-4: vaccine rules + Flydubai</div><div class="card-finding">Flydubai = cargo only, no cabin. UAE export: vaccine 21 days min.</div></div></div>
+    <div class="card"><img src="1000305393.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#64</div><div class="card-file">1000305393.jpg</div><span class="card-platform platform-reddit">Reddit r/dubai</span><div class="card-desc">Step 5 MOCCAE + official URL</div><div class="card-finding">Titer test: 2-3 weeks, ONLY ONE LAB IN UAE, ~1,300 AED</div></div></div>
+    <div class="card"><img src="1000305394.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#65</div><div class="card-file">1000305394.jpg</div><span class="card-platform platform-reddit">Reddit r/dubai</span><div class="card-desc">24 upvotes conclusion</div><div class="card-finding">⚠️ "UAE has huge problem with abandoned pets that has skyrocketed"</div></div></div>
+    <div class="card"><img src="1000305395.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#66</div><div class="card-file">1000305395.jpg</div><span class="card-platform platform-reddit">Reddit r/dubai</span><div class="card-desc">Exotic pets — turtle, parrots, 4 cats India</div><div class="card-finding">"My turtle makes everyone confused" — exotic pet gap confirmed</div></div></div>
+    <div class="card"><img src="1000305398.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#67</div><div class="card-file">1000305398.jpg</div><span class="card-platform platform-reddit">Reddit r/dubai</span><div class="card-desc">Turtle confusion + MOCCAE visit question</div><div class="card-finding">Titer test prices: "quoted endless amounts" — price transparency needed</div></div></div>
+    <div class="card"><img src="1000305399.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#68</div><div class="card-file">1000305399.jpg</div><span class="card-platform platform-reddit">Reddit r/dubai</span><div class="card-desc">MOCCAE visit + titer price gouging</div><div class="card-finding">MOCCAE physical visit may not be required — needs verification</div></div></div>
+  </div>
+</div>
+
+<!-- BATCH 6 -->
+<div class="batch">
+  <div class="batch-title">Batch 6 — System Documentation</div>
+  <div class="batch-meta">1 screenshot</div>
+  <div class="grid">
+    <div class="card"><img src="1000305503.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#69</div><div class="card-file">1000305503.jpg</div><span class="card-platform platform-system">System</span><div class="card-desc">community-research-update-prompt.md open on phone</div><div class="card-finding">Shows "29" count — prompted correction to 69 total screenshots</div></div></div>
+  </div>
+</div>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" onclick="this.classList.remove('active')">
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<script>
+function zoom(img) {
+  document.getElementById('lightbox-img').src = img.src;
+  document.getElementById('lightbox').classList.add('active');
+}
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') document.getElementById('lightbox').classList.remove('active');
+});
+</script>
+</body>
+</html>

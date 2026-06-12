@@ -1,0 +1,43 @@
+<section class="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        {% if block.eyebrow %}<p class="eyebrow">{{ block.eyebrow }}</p>{% endif %}
+        <h1>{{ block.heading }}</h1>
+        {% if block.subheading %}<p class="lead">{{ block.subheading }}</p>{% endif %}
+        {% if block.ctas %}
+        <div class="hero-cta">
+          {% for c in block.ctas %}
+          <a class="btn {{ c.style | default('btn-gold') }} btn-lg" href="{{ c.url }}">{{ c.label }}</a>
+          {% endfor %}
+        </div>
+        {% endif %}
+        {% if block.trust %}
+        <div class="hero-trust">
+          {% for t in block.trust %}<span>✓ {{ t }}</span>{% endfor %}
+        </div>
+        {% endif %}
+      </div>
+      <div class="hero-aside">
+        {% if block.image %}
+        <img class="hero-img" src="{{ block.image }}" alt="{{ block.image_alt | default(block.heading) }}" loading="eager">
+        {% elif block.card %}
+        <div class="hero-card">
+          <h3>{{ block.card.heading }}</h3>
+          {% if block.card.rows %}
+          <table class="data" style="background:transparent;color:#fff">
+            {% for r in block.card.rows %}
+            <tr><th style="background:transparent;color:rgba(255,255,255,.7);border-color:rgba(255,255,255,.15)">{{ r.label }}</th>
+                <td style="border-color:rgba(255,255,255,.15);color:#fff">{{ r.value }}</td></tr>
+            {% endfor %}
+          </table>
+          {% endif %}
+          {% if block.card.note %}<p style="color:rgba(255,255,255,.8);font-size:.88rem;margin:.8rem 0 0">{{ block.card.note }}</p>{% endif %}
+        </div>
+        {% else %}
+        <div class="hero-figure" aria-hidden="true">{{ block.figure_emoji | default('🐾✈️') }}</div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>

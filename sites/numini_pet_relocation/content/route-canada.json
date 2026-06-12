@@ -1,0 +1,18 @@
+{
+  "_meta": {
+    "produced_by": "gen_route_briefs.py (route money-page brief)",
+    "blog_objective": "lead_generation",
+    "funnel_stage": "MOFU→BOFU (commercial-investigation → transactional)",
+    "page_type": "service (route money page)",
+    "target_keyword": "pet relocation dubai to canada",
+    "intent": "commercial",
+    "primary_fear": "I'm afraid that I'll misread the CFIA rules and my pet gets held",
+    "monetization": "lead_generation (route enquiry → WhatsApp quote)"
+  },
+  "seo": {
+    "title": "Pet Relocation Dubai to Canada — Requirements & Pricing | PawRoute",
+    "meta_description": "Move your pet from Dubai to Canada. Transparent pricing from AED 14,000, 4–6 weeks, no quarantine when CFIA rules are met. Microchip, rabies and health certificate explained.",
+    "canonical_path": "/destinations/uae-to-canada/"
+  },
+  "_note": "Route brief for Dubai → Canada. Content lives in the page YAML; this brief lets the registry track question/funnel/monetization."
+}

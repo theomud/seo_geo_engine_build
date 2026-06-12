@@ -1,0 +1,104 @@
+url: /blog/pet-breed-restrictions-flying-from-dubai/
+title: "Breed Restrictions: Which Pets Can Fly From Dubai?"
+title_suffix: ""
+meta_description: "Two breed issues when flying a pet from Dubai: banned breeds that can't enter (UK XL Bully, Pit Bull) and snub-nosed breeds that face airline + summer heat limits. Here's the detail."
+og_title: "Banned breeds & snub-nosed pets: what can fly from Dubai?"
+updated: "2026-06-09"
+layout: article
+
+blocks:
+  - type: article_header
+    category: "Guide · Breeds"
+    category_url: "/blog/"
+    h1: "Which breeds can fly from Dubai — and which can't"
+    standfirst: "There are two separate breed issues: some breeds are banned from entering certain countries, and snub-nosed breeds face airline and summer heat restrictions. Know which applies to your pet before you plan."
+    author: "the PawRoute relocation team"
+    date: "9 June 2026"
+    reading_time: 5
+    reviewed: "reviewed by our IPATA-certified specialists"
+    image: /assets/blog/cost-2026-hero.png
+    image_alt: "Different dog breeds and the rules for flying them from Dubai"
+
+  - type: prose
+    id: answer
+    heading: "The short answer"
+    paragraphs:
+      - "<strong>Banned breeds can't enter some countries at all.</strong> The UK bans the Pit Bull Terrier, XL Bully (since 1 February 2024), Japanese Tosa, Dogo Argentino and Fila Brasileiro under the Dangerous Dogs Act — no import, whatever the paperwork."
+      - "<strong>Snub-nosed (brachycephalic) breeds can usually travel, but with limits.</strong> Bulldogs, Pugs, Boxers, Persians and similar flat-faced breeds face airline restrictions and the UAE summer heat embargo, because they're more prone to breathing and heat stress. It's about <em>how</em> and <em>when</em> they fly, not whether they can."
+
+  - type: takeaways
+    heading: "Key takeaways"
+    items:
+      - "<strong>Banned (UK):</strong> Pit Bull, XL Bully, Japanese Tosa, Dogo Argentino, Fila Brasileiro — cannot enter."
+      - "Breed bans are <strong>destination-specific</strong> — always verify your exact destination."
+      - "<strong>Snub-nosed breeds</strong> face airline limits + the UAE summer heat embargo (≈May–Sep)."
+      - "Snub-nosed pets often need a <strong>larger crate</strong> for airflow and careful airline/route choice."
+      - "We verify breed eligibility <strong>before</strong> anything else — no surprises at booking."
+
+  - type: toc
+    heading: "In this article"
+    items:
+      - { label: "Banned vs restricted — the two issues", anchor: "table" }
+      - { label: "Check your pet", anchor: "can-my-pet-fly" }
+      - { label: "Snub-nosed breeds & the heat embargo", anchor: "snub" }
+      - { label: "Frequently asked questions", anchor: "faq" }
+
+  - type: table
+    id: table
+    eyebrow: "The two issues"
+    heading: "Banned vs restricted breeds"
+    body: "Two very different problems — one is a hard 'no', the other is a 'yes, with care'."
+    columns: ["Breed type", "Issue", "What it means"]
+    rows:
+      - ["Pit Bull / XL Bully / Tosa / Dogo / Fila", "Banned (UK)", "Cannot enter the UK under the Dangerous Dogs Act; check each destination"]
+      - ["Snub-nosed (Bulldog, Pug, Boxer, Persian…)", "Restricted", "Can usually fly, but airline + summer heat-embargo limits apply"]
+      - ["Standard breeds", "No breed barrier", "Normal route rules (microchip, rabies, etc.) apply"]
+
+  - type: decision_tree
+    id: can-my-pet-fly
+    eyebrow: "10-second check"
+    heading: "Can my pet fly?"
+    body: "Pick your destination, breed type and vaccination status for an instant read on the blockers."
+
+  - type: prose
+    id: snub
+    eyebrow: "Why flat-faced breeds need extra care"
+    heading: "Snub-nosed breeds & the heat embargo"
+    paragraphs:
+      - "Brachycephalic (snub-nosed) breeds have shortened airways, which makes them more vulnerable to heat and breathing stress in transit. Airlines apply extra restrictions for them, and during the UAE summer heat embargo (roughly May to September) pet cargo is restricted or refused when ground temperatures are unsafe."
+      - "It rarely means your pet can't go — it means timing, airline choice and a correctly-sized crate matter even more. Emirates SkyCargo, for example, publishes specific snub-nosed uplift guidance. We plan these moves around cooler windows and suitable carriers."
+
+  - type: story
+    id: story
+    heading: "What going wrong actually looks like"
+    tag: "A common scenario"
+    lead: "With breeds, the trap is assuming 'allowed' means 'any flight, any time'."
+    problem: "An owner books a July flight for their French Bulldog, a snub-nosed breed."
+    mistake: "They pick the cheapest airline without checking its snub-nosed and summer-heat rules."
+    discovery: "In peak summer, the carrier won't accept the breed — the heat embargo and brachycephalic limits both apply."
+    result: "The move shifts to a cooler month on a suitable airline, with a larger crate for airflow."
+    lesson: "For snub-nosed breeds, the breed isn't the blocker — timing and airline choice are. Plan around the heat from the start."
+
+  - type: faq
+    id: faq
+    heading: "Frequently asked questions"
+    items:
+      - { q: "Can my XL Bully or Pit Bull go to the UK?", a: "No. The XL Bully (banned since 1 February 2024), Pit Bull Terrier, Japanese Tosa, Dogo Argentino and Fila Brasileiro are prohibited from entering the UK under the Dangerous Dogs Act — regardless of paperwork. Other destinations have their own lists." }
+      - { q: "Can Pugs, Bulldogs or Persian cats fly?", a: "Usually yes, but as snub-nosed breeds they face airline restrictions and the UAE summer heat embargo. Route, timing and crate size are critical, and some airlines limit them in hot months." }
+      - { q: "Are breed rules the same for every country?", a: "No — breed bans are destination-specific. A breed allowed in one country may be banned in another, so we verify against your exact destination before booking." }
+      - { q: "Will summer affect my snub-nosed dog's travel?", a: "It can. From about May to September the heat embargo restricts pet cargo when it's too hot; snub-nosed breeds are affected first. We plan around cooler windows." }
+
+  - type: sources
+    eyebrow: "Verified against the source"
+    heading: "Official sources"
+    items:
+      - { authority: "UK GOV.UK", title: "Ban on XL Bully dogs / Dangerous Dogs Act", url: "https://www.gov.uk/guidance/ban-on-xl-bully-dogs", note: "Banned breeds" }
+      - { authority: "Emirates SkyCargo", title: "Pets — snub-nosed uplift guidance", url: "https://www.skycargo.com/products/live/pets/", note: "Brachycephalic restrictions" }
+      - { authority: "IATA", title: "Live Animals Regulations", url: "https://www.iata.org/en/programs/cargo/live-animals/", note: "Crate + welfare standards" }
+
+  - type: cta
+    heading: "Not sure if your breed can fly?"
+    body: "Tell us your pet's breed and destination — we'll confirm eligibility against the official rules before you commit to anything. No surprises."
+    ctas:
+      - { label: "Check my pet's eligibility", url: "/#quote", style: "btn-gold" }
+      - { label: "Use the eligibility tool", url: "/tools/", style: "btn-ghost" }

@@ -1,0 +1,18 @@
+{
+  "_meta": {
+    "produced_by": "gen_route_briefs.py (route money-page brief)",
+    "blog_objective": "lead_generation",
+    "funnel_stage": "MOFU→BOFU (commercial-investigation → transactional)",
+    "page_type": "service (route money page)",
+    "target_keyword": "pet relocation dubai to germany",
+    "intent": "commercial",
+    "primary_fear": "I'm afraid that the EU paperwork is confusing and I'll miss a step",
+    "monetization": "lead_generation (route enquiry → WhatsApp quote)"
+  },
+  "seo": {
+    "title": "Pet Relocation Dubai to Germany — Requirements & Pricing | PawRoute",
+    "meta_description": "Move your pet from Dubai to Germany under EU rules. Transparent pricing from AED 13,800, 4–6 weeks, no quarantine. Microchip, rabies, EU health certificate explained.",
+    "canonical_path": "/destinations/uae-to-germany/"
+  },
+  "_note": "Route brief for Dubai → Germany. Content lives in the page YAML; this brief lets the registry track question/funnel/monetization."
+}

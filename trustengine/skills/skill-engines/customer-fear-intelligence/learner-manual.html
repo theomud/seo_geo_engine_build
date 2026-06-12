@@ -1,0 +1,70 @@
+<!DOCTYPE html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Customer Fear Intelligence — Learner Manual</title><style>body{font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:#1f2937;
+line-height:1.6;background:#f7f8fb;margin:0}.wrap{max-width:860px;margin:0 auto;padding:28px}
+h1{color:#1a3a5c}h2{color:#1a3a5c;border-top:2px solid #e5e7eb;padding-top:14px;margin-top:26px}
+h3{color:#2c5282}code{background:#f1f5f9;padding:1px 5px;border-radius:4px}
+table{border-collapse:collapse;width:100%}th,td{border:1px solid #e5e7eb;padding:7px 10px;text-align:left;vertical-align:top}
+th{background:#2c5282;color:#fff}tr:nth-child(even) td{background:#f9fafb}
+.hd{background:linear-gradient(135deg,#1a3a5c,#2c5282);color:#fff;padding:22px 28px;border-radius:0 0 14px 14px}
+.hd h1{color:#fff;margin:0}.hd p{color:#cfe0f5;margin:6px 0 0}</style></head><body><div class='hd'><h1>Customer Fear Intelligence — Learner Manual</h1><p>Does the page speak to the customer's real fears and the questions they actually ask?</p></div><div class='wrap'><h1>Customer Fear Intelligence — Learner Manual</h1>
+<p>Customers in high-stakes markets search from fear and confusion. This engine scores whether a page reflects real customer fear-intelligence: it names the fears, answers the real questions people ask, covers objections, uses real customer language, and reassures — instead of talking about the company.</p>
+<h2>How to run the engine</h2>
+<ul>
+<li>Score a page: <code>python skill-engines/customer-fear-intelligence/engine.py --url &lt;URL&gt; --report out.html</code></li>
+<li>Web checker: <code>python skill-engines/customer-fear-intelligence/engine.py --serve 8099</code></li>
+<li>These docs: <code>python skill-engines/customer-fear-intelligence/engine.py --docs</code></li>
+</ul>
+<h2>The measurements (each one, with why and how)</h2>
+<h2>1. Fear acknowledged first</h2>
+<p><strong>How we measure it:</strong> We scan the first ~120 words for the customer's fear.</p>
+<p><strong>Why it works:</strong> A frightened customer needs to feel understood immediately, or they leave.</p>
+<p><strong>What to do:</strong> Open by naming the customer's real fear in their words.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: We are a pet relocation company.</li>
+<li>DO: Worried your dog won't be allowed in? Here's what actually happens.</li>
+</ul>
+<h2>2. Range of fears covered</h2>
+<p><strong>How we measure it:</strong> We count distinct fear/concern terms across the page.</p>
+<p><strong>Why it works:</strong> Customers carry several fears; covering the cluster keeps them engaged and builds trust.</p>
+<p><strong>What to do:</strong> Address the other fears this customer has, not just one.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: Only mentions cost.</li>
+<li>DO: Covers confiscation, documents, timeline and the summer embargo.</li>
+</ul>
+<h2>3. Real questions answered</h2>
+<p><strong>How we measure it:</strong> We count question-form content (the queries people actually type).</p>
+<p><strong>Why it works:</strong> Answering the real questions matches search intent and AI retrieval.</p>
+<p><strong>What to do:</strong> Turn the real questions people ask into on-page Q&amp;A.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: (no questions)</li>
+<li>DO: How much does the titer test cost? Can pets fly in summer?</li>
+</ul>
+<h2>4. Objections / FAQ</h2>
+<p><strong>How we measure it:</strong> We look for FAQ/objection-handling.</p>
+<p><strong>Why it works:</strong> An unanswered objection is a silent exit; addressing it removes the reason to leave.</p>
+<p><strong>What to do:</strong> Add an FAQ that answers the top objections.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: (no FAQ)</li>
+<li>DO: FAQ: "Is cargo safe for my dog?"</li>
+</ul>
+<h2>5. Real customer voice</h2>
+<p><strong>How we measure it:</strong> We look for quotes / 'owners say' real language.</p>
+<p><strong>Why it works:</strong> Real customer words resonate; brochure language reads as out-of-touch.</p>
+<p><strong>What to do:</strong> Use a real customer quote / the words customers actually use.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: Brochure copy.</li>
+<li>DO: Owners say: "I was terrified it would be taken at the airport."</li>
+</ul>
+<h2>6. Reassurance</h2>
+<p><strong>How we measure it:</strong> We look for reassurance phrasing.</p>
+<p><strong>Why it works:</strong> Naming a fear without reassurance creates avoidance; reassurance turns fear into action.</p>
+<p><strong>What to do:</strong> Add reassurance ('here's exactly what to do') alongside each fear.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: (none)</li>
+<li>DO: You're not alone — here's exactly what to do, step by step.</li>
+</ul></div></body></html>

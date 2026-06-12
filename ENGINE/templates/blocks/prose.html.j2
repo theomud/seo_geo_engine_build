@@ -1,0 +1,15 @@
+<section class="section {{ block.variant | default('') }}"{% if block.id %} id="{{ block.id }}"{% endif %}>
+  <div class="container">
+    {% if block.eyebrow %}<p class="eyebrow">{{ block.eyebrow }}</p>{% endif %}
+    {% if block.heading %}<h2>{{ block.heading }}</h2>{% endif %}
+    <div class="prose">
+      {% if block.lead %}<p class="lead">{{ block.lead | safe }}</p>{% endif %}
+      {% for para in block.paragraphs | default([]) %}<p>{{ para | safe }}</p>{% endfor %}
+      {% if block.bullets %}
+      <ul>
+        {% for b in block.bullets %}<li>{{ b | safe }}</li>{% endfor %}
+      </ul>
+      {% endif %}
+    </div>
+  </div>
+</section>

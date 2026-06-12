@@ -1,0 +1,15 @@
+<section class="section {{ block.variant | default('') }}">
+  <div class="container">
+    {% if block.eyebrow %}<p class="eyebrow">{{ block.eyebrow }}</p>{% endif %}
+    {% if block.heading %}<h2>{{ block.heading }}</h2>{% endif %}
+    {% if block.body %}<p class="lead">{{ block.body }}</p>{% endif %}
+    <div class="checklist">
+      {% for item in block['items'] %}
+      <div class="ck-item">
+        {% if item.title %}<strong>{{ item.title }}</strong>{% endif %}
+        <span>{{ item.text | default(item) }}</span>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

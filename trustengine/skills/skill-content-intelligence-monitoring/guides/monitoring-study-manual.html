@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Content Intelligence Monitoring — Study Manual | The Trust Engine</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#14110d;--panel:#1d1812;--ink:#f3ece0;--soft:#b9ab95;--line:#352c20;--gold:#d8a84b;--red:#e06a4e;--green:#7bbf6a;--accent:#c98a3a}
+  *{box-sizing:border-box}html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:'Crimson Pro',Georgia,serif;font-size:19px;line-height:1.6}
+  #bar{position:fixed;top:0;left:0;height:4px;width:0;background:linear-gradient(90deg,var(--gold),var(--accent));z-index:100;transition:width .1s}
+  .layout{display:flex;max-width:1180px;margin:0 auto}
+  nav.side{position:sticky;top:0;height:100vh;width:250px;flex-shrink:0;padding:30px 20px;background:var(--panel);border-right:1px solid var(--line);overflow-y:auto;font-family:'JetBrains Mono',monospace}
+  nav.side .brand{font-family:'Bebas Neue',sans-serif;letter-spacing:.08em;color:var(--gold);font-size:22px}
+  nav.side a{display:block;color:var(--soft);text-decoration:none;font-size:12px;padding:7px 9px;border-radius:6px;margin-bottom:2px}
+  nav.side a:hover{background:#251e16;color:var(--ink)}nav.side a.active{background:var(--gold);color:#14110d;font-weight:700}
+  main{flex:1;min-width:0;padding:46px 52px 120px;max-width:820px}
+  h1{font-family:'Bebas Neue',sans-serif;font-size:52px;line-height:1;margin:0 0 6px}
+  h2{font-family:'Bebas Neue',sans-serif;font-size:33px;letter-spacing:.02em;margin:50px 0 12px;color:var(--gold)}
+  h3{font-size:21px;margin:24px 0 6px;color:var(--accent)}
+  .lead{font-size:22px;color:var(--soft)}
+  .badge{font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:700;letter-spacing:.05em;color:var(--gold);text-transform:uppercase}
+  .ex{background:#251e16;border-radius:8px;padding:10px 14px;margin:8px 0;font-style:italic;color:var(--soft)}
+  .cite{font-family:'JetBrains Mono',monospace;font-size:12px;padding:1px 7px;border-radius:5px;background:#251e16}
+  .v{color:var(--green);font-weight:700}.u{color:var(--gold);font-weight:700}.c{color:var(--red);font-weight:700}
+  table{width:100%;border-collapse:collapse;margin:14px 0;font-family:'JetBrains Mono',monospace;font-size:13px;table-layout:fixed}
+  th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top;word-break:break-word;overflow-wrap:anywhere}
+  th{color:var(--gold);text-transform:uppercase;font-size:11px}
+  pre{background:#251e16;border:1px solid var(--line);border-radius:8px;padding:12px 14px;overflow-x:auto;font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--soft)}
+  .warn{background:#2a1a14;border:1px solid #4a2c20;border-radius:10px;padding:13px 17px;margin:14px 0}
+  .good{background:#1a2417;border:1px solid #2f4327;border-radius:10px;padding:13px 17px;margin:14px 0}
+  .ba{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:10px 0}
+  .ba>div{border-radius:8px;padding:10px 13px;font-size:15px}
+  .bad{background:#2a1a14;border:1px solid #4a2c20}.goodc{background:#1a2417;border:1px solid #2f4327}
+  code{font-family:'JetBrains Mono',monospace;background:#251e16;padding:2px 6px;border-radius:5px;font-size:.82em;color:var(--gold);word-break:break-word}
+  footer{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--soft);border-top:1px solid var(--line);margin-top:60px;padding-top:18px}
+  @media(max-width:880px){nav.side{display:none}main{padding:28px 20px 80px;font-size:18px}h1{font-size:40px}.ba{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+<div class="layout">
+  <nav class="side">
+    <div class="brand">Monitoring</div>
+    <div style="font-family:'Crimson Pro',serif;color:var(--soft);font-size:13px;margin:4px 0 16px">Score by consequence, not volume · 20/25</div>
+    <a href="#why" class="active">Why this skill</a>
+    <a href="#consequence">Score by consequence not volume</a>
+    <a href="#rice">The RICE formula</a>
+    <a href="#bands">The action bands</a>
+    <a href="#streams">The 12 streams</a>
+    <a href="#report">The weekly report</a>
+    <a href="#verify">Keeping it honest</a>
+  </nav>
+  <main>
+    <span class="badge">Content Intelligence Monitoring · 20/25</span>
+    <h1>Content Intelligence Monitoring</h1>
+    <p class="lead">Watch everything that can change the truth, score every signal by consequence, and act on the few that matter. A page that's quietly wrong is the most dangerous state there is — because someone trusts it.</p>
+
+    <section id="why">
+      <h2>Why this skill</h2>
+      <p>Every page is true the day you publish it and decaying from the next. The regulation gets amended, the airline rewrites its cargo rule, the fee goes up, a competitor fills the gap, a community thread surfaces a fear nobody answered. None of it announces itself — the page keeps looking authoritative while it slowly stops being correct.</p>
+      <div class="ex">"Every website says something different — I don't know who to trust." — the customer who is now trusting a page that was right last quarter and is wrong this one.</div>
+      <p>Monitoring <b>nothing</b> means you learn a regulation changed when a pet is already stuck. Monitoring <b>everything and reacting to all of it</b> means you drown, and the quiet regulatory change is lost under the loud competitor noise. This skill does both right: <b class="u">watch broadly across 12 streams, score every signal by consequence, act on the few that matter.</b></p>
+    </section>
+
+    <section id="consequence">
+      <h2>Score by consequence not volume</h2>
+      <p>A monitor that surfaces signals without ranking them just relocates the overwhelm. The breakthrough is one scoring rule applied to everything, so the queue is sorted by <i>consequence</i> — and in this niche the most important signal is often the quietest. <span class="cite">M-27</span> <span class="cite">F-05</span></p>
+      <div class="ba">
+        <div class="bad"><b class="c">Volume wins (the trap)</b><br>Act on the loudest alert → a competitor's price grumble jumps the queue → the quiet MOCCAE change is missed → a pet is denied entry.</div>
+        <div class="goodc"><b class="v">Consequence wins</b><br>RICE scores both: re-verification clock 24.3 → today; price grumble 9.6 → this week. The number decides, not the volume.</div>
+      </div>
+    </section>
+
+    <section id="rice">
+      <h2>The RICE formula</h2>
+      <p>Every signal — regulatory alert or community grumble — passes through the same rule. <span class="cite">M-27</span></p>
+      <pre>RICE = (Reach × Impact × Confidence) ÷ Effort</pre>
+      <table>
+        <tr><th>Factor</th><th>Scale</th><th>What it means here</th></tr>
+        <tr><td>Reach</td><td>1–10</td><td>customers / pages affected (10 = every import customer)</td></tr>
+        <tr><td>Impact</td><td>0.25–3</td><td><b class="c">3 = massive</b> — wrong info → a pet denied entry (the YMYL bar)</td></tr>
+        <tr><td>Confidence</td><td>0.5–1.0</td><td>1.0 = official source; ~0.8 = community pattern; 0.5 = single report</td></tr>
+        <tr><td>Effort</td><td>1–5</td><td>days to act (1 = same-day edit; 5 = new asset)</td></tr>
+      </table>
+      <div class="good"><b>Why the shape matters:</b> Reach, Impact and Confidence push a signal up; Effort pushes it down. A cheap, certain, high-consequence fix outranks an expensive, speculative one — automatically. <span class="cite">P-02</span> Impact 3 is reserved for real harm; <span class="cite">P-07</span> Confidence is capped by the source — community-only can't exceed ~0.8, however loud.</div>
+    </section>
+
+    <section id="bands">
+      <h2>The action bands</h2>
+      <p><code>route(score)</code> maps the number to a service level. Don't argue the band — let the number decide. That discipline is the product. <span class="cite">F-12</span></p>
+      <table>
+        <tr><th>RICE</th><th>Band</th><th>Act</th></tr>
+        <tr><td>≥ 20</td><td><b class="c">TODAY</b></td><td>same-day — regulatory / time-critical</td></tr>
+        <tr><td>15–19.99</td><td><b class="u">48HR</b></td><td>within 48 hours</td></tr>
+        <tr><td>8–14.99</td><td>THIS WEEK</td><td>within the week</td></tr>
+        <tr><td>&lt; 8</td><td>MONTHLY</td><td>enters the monthly content cycle <span class="cite">F-10</span></td></tr>
+      </table>
+    </section>
+
+    <section id="streams">
+      <h2>The 12 streams</h2>
+      <p>Watch broadly, but weight by harm: the four regulatory streams run fastest because that's where being wrong = a pet denied entry. <span class="cite">P-02</span> <span class="cite">F-10</span> <span class="cite">F-39</span></p>
+      <table>
+        <tr><th>#</th><th>Category</th><th>Stream · cadence</th></tr>
+        <tr><td>1–4</td><td>Regulatory</td><td>MOCCAE (48h) · destinations · airlines · UAE-gov (weekly)</td></tr>
+        <tr><td>5–7</td><td>Competitor</td><td>content changes · Trust-Score re-audit (monthly) · pricing</td></tr>
+        <tr><td>8–9</td><td>Search/AI</td><td>GSC daily performance · AI-citation tracking (weekly)</td></tr>
+        <tr><td>10–12</td><td>Community/market</td><td>Reddit fear signals · reviews · industry signals</td></tr>
+      </table>
+      <p>Each stream has a collector (Visualping, SerpApi, Reddit PRAW, GSC API, Perplexity, GBP API, Google Alerts). The live collectors are real in shape but <b>honestly gated on keys</b>: no key → <i>awaiting connection</i>, contributing no signal. The engine never fabricates a reading. <span class="cite">P-07</span></p>
+    </section>
+
+    <section id="report">
+      <h2>The weekly report</h2>
+      <p>The real output (<code>data/weekly-intelligence-report.md</code>) is <b>generated by the engine</b>, not written by hand — re-running it reproduces the file exactly. The first cycle scored 7 verified signals:</p>
+      <pre>FUNCTIONAL QUALITY THRESHOLD (the deterministic core)
+every signal RICE-scored & routed by the engine:  7/7  PASS
+every signal traceable to a verified in-repo source: 7/7  PASS
+all 12 streams shown at honest connection status:  12/12 PASS
+report reproduces byte-for-byte on re-run:          PASS
+band counts -> TODAY:1 · 48HR:1 · THIS WEEK:4 · MONTHLY:1
+LIVE STREAMS: NOT YET CONFIRMED -> requires API keys (0/10 connected this cycle)</pre>
+      <p>The maximum-risk regulatory signal — the 90-day re-verification clock on C-019/C-003/C-010 — tops the queue at <b class="u">24.3</b> (TODAY); the genuine but lower-urgency breed-restriction content gap correctly drops to <b>3.15</b> (MONTHLY). The engine, not a person's mood, decided every placement.</p>
+      <div class="warn"><b>The gap is evidenced, not guessed:</b> the content-gap matrix shows <b>9/9 scored competitors</b> omit the confiscation page — <i>including the market leader DKC (Trust Score 8.0/10)</i> — which is what gives the content signals real Reach and Confidence rather than a hunch.</div>
+    </section>
+
+    <section id="verify">
+      <h2>Keeping it honest</h2>
+      <p>A monitoring system fails in ways that look like success. Four defences catch them:</p>
+      <ul>
+        <li><b>Engine-scored</b> — re-compute every RICE from its R/I/C/E; a score that doesn't reproduce was typed, not computed.</li>
+        <li><b>Routed by band</b> — re-derive every band from the score; a band that doesn't match <code>route()</code> was chosen, not routed.</li>
+        <li><b>Sourced</b> — re-trace every signal to a C-ID, the gap matrix, a named quote, or the profile; a sourceless signal is a rumour in the queue.</li>
+        <li><b>Honest coverage</b> — a live reading from an unconnected stream is a fabrication; no key means <i>awaiting connection</i>, and the report says so.</li>
+      </ul>
+      <p>A typed score, a chosen band, a sourceless signal, a fabricated reading, or a report that drifts between runs is a <b>hard fail</b>. And the live monitor only counts once the keys are set and a real detected change flows through the same RICE engine — flagged <b>NOT YET CONFIRMED</b> until then. <span class="cite">P-07</span> <span class="cite">P-08</span></p>
+    </section>
+
+    <footer>The Trust Engine · Content Intelligence Monitoring · Study Manual · real output from the 2026-06-01 Dubai proof run (engine-generated report; 7/7 signals scored & sourced; 12/12 streams honest; reproducible; C-019/C-003/C-010/C-022/C-015/C-001 + gap matrix 9/9). Watch broadly · score by (R×I×C)÷E · route by band · re-verify every 90 days · never act on volume.</footer>
+  </main>
+</div>
+<script>
+  const bar=document.getElementById('bar');
+  addEventListener('scroll',()=>{const h=document.documentElement;bar.style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%';});
+  const links=[...document.querySelectorAll('nav.side a')];const secs=links.map(a=>document.querySelector(a.getAttribute('href')));
+  addEventListener('scroll',()=>{let i=0;for(let k=0;k<secs.length;k++){if(secs[k]&&secs[k].getBoundingClientRect().top<140)i=k;}links.forEach(l=>l.classList.remove('active'));if(links[i])links[i].classList.add('active');});
+</script>
+</body>
+</html>

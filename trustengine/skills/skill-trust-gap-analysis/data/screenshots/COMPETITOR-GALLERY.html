@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Competitor Research — Screenshot Evidence</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #0a0a0a; color: #e0e0e0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; padding: 24px; }
+  h1 { font-size: 20px; font-weight: 700; color: #fff; margin-bottom: 4px; }
+  .subtitle { font-size: 13px; color: #888; margin-bottom: 32px; }
+  .stats { display: flex; gap: 16px; margin-bottom: 32px; flex-wrap: wrap; }
+  .stat { background: #141414; border: 1px solid #222; border-radius: 8px; padding: 12px 16px; }
+  .stat-num { font-size: 24px; font-weight: 700; }
+  .stat-label { font-size: 11px; color: #666; margin-top: 2px; }
+  .red { color: #ff4444; }
+  .amber { color: #f0a500; }
+  .green { color: #44cc77; }
+  .competitor { margin-bottom: 48px; }
+  .comp-header { display: flex; align-items: center; gap: 16px; margin-bottom: 16px; padding-bottom: 12px; border-bottom: 1px solid #222; }
+  .comp-name { font-size: 18px; font-weight: 700; color: #fff; }
+  .comp-url { font-size: 12px; color: #555; font-family: monospace; }
+  .score-badge { padding: 6px 14px; border-radius: 20px; font-size: 14px; font-weight: 700; }
+  .score-5 { background: #2a2a00; color: #f0a500; }
+  .score-8 { background: #002a15; color: #44cc77; }
+  .score-3 { background: #2a0000; color: #ff4444; }
+  .trust-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; margin-bottom: 16px; }
+  .trust-item { background: #141414; border-radius: 6px; padding: 8px; font-size: 11px; }
+  .trust-label { color: #666; margin-bottom: 4px; }
+  .trust-val { font-weight: 600; }
+  .pass { color: #44cc77; }
+  .fail { color: #ff4444; }
+  .partial { color: #f0a500; }
+  .gap-box { background: #1a0a0a; border: 1px solid #3a1a1a; border-radius: 8px; padding: 12px; margin-bottom: 12px; }
+  .gap-label { font-size: 10px; color: #ff4444; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 6px; }
+  .gap-text { font-size: 13px; color: #e0e0e0; }
+  .opp-box { background: #0a1a0a; border: 1px solid #1a3a1a; border-radius: 8px; padding: 12px; margin-bottom: 16px; }
+  .opp-label { font-size: 10px; color: #44cc77; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 6px; }
+  .opp-text { font-size: 13px; color: #e0e0e0; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }
+  .card { background: #141414; border: 1px solid #222; border-radius: 8px; overflow: hidden; }
+  .card img { width: 100%; display: block; cursor: zoom-in; }
+  .card-body { padding: 8px 10px; }
+  .card-num { font-size: 10px; color: #555; margin-bottom: 3px; }
+  .card-desc { font-size: 11px; color: #aaa; line-height: 1.4; }
+  .card-impact { font-size: 11px; color: #f0a500; margin-top: 4px; font-style: italic; }
+  .lightbox { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.95); z-index: 1000; justify-content: center; align-items: center; cursor: zoom-out; }
+  .lightbox.active { display: flex; }
+  .lightbox img { max-width: 90vw; max-height: 90vh; object-fit: contain; }
+</style>
+</head>
+<body>
+
+<h1>Competitor Research — Screenshot Evidence</h1>
+<p class="subtitle">31 screenshots · 3 competitors manually scored · 2026-05-27 · trust-engine project</p>
+
+<div class="stats">
+  <div class="stat"><div class="stat-num amber">5/10</div><div class="stat-label">Sandy Paws</div></div>
+  <div class="stat"><div class="stat-num green">8/10</div><div class="stat-label">DKC</div></div>
+  <div class="stat"><div class="stat-num red">3/10</div><div class="stat-label">Pawsome Pets</div></div>
+  <div class="stat"><div class="stat-num" style="color:#fff">5.3</div><div class="stat-label">Average Score</div></div>
+  <div class="stat"><div class="stat-num" style="color:#fff">31</div><div class="stat-label">Screenshots</div></div>
+</div>
+
+<!-- SANDY PAWS -->
+<div class="competitor">
+  <div class="comp-header">
+    <div>
+      <div class="comp-name">Sandy Paws</div>
+      <div class="comp-url">sandypaws.ae</div>
+    </div>
+    <div class="score-badge score-5">5/10</div>
+  </div>
+
+  <div class="trust-grid">
+    <div class="trust-item"><div class="trust-label">1. Fear in 100 words</div><div class="trust-val partial">⚠️ Partial</div></div>
+    <div class="trust-item"><div class="trust-label">2. Official source</div><div class="trust-val fail">❌ None</div></div>
+    <div class="trust-item"><div class="trust-label">3. Route named</div><div class="trust-val fail">❌ Generic</div></div>
+    <div class="trust-item"><div class="trust-label">4. Step-by-step</div><div class="trust-val fail">❌ None</div></div>
+    <div class="trust-item"><div class="trust-label">5. Timeline</div><div class="trust-val fail">❌ None</div></div>
+    <div class="trust-item"><div class="trust-label">6. Cost ranges</div><div class="trust-val pass">✅ Cost page</div></div>
+    <div class="trust-item"><div class="trust-label">7. Common mistakes</div><div class="trust-val fail">❌ None</div></div>
+    <div class="trust-item"><div class="trust-label">8. Original visuals</div><div class="trust-val pass">✅ Yes</div></div>
+    <div class="trust-item"><div class="trust-label">9. CTA = help</div><div class="trust-val pass">✅ Soft CTA</div></div>
+    <div class="trust-item"><div class="trust-label">10. Would you trust</div><div class="trust-val partial">⚠️ Partly</div></div>
+  </div>
+
+  <div class="gap-box">
+    <div class="gap-label">Biggest Gap</div>
+    <div class="gap-text">Emotional trust exists (videos, real photos) but zero informational trust. No MOCCAE, no process, no timeline. Customers watch the videos and feel good — then ask "what exactly do I need?" and leave.</div>
+  </div>
+  <div class="opp-box">
+    <div class="opp-label">Your Content Opportunity</div>
+    <div class="opp-text">Build the guide Sandy Paws cannot answer: "What documents do you actually need to bring a dog to Dubai — verified against MOCCAE 2026"</div>
+  </div>
+
+  <div class="grid">
+    <div class="card"><img src="Screenshot_20260527_104712_Chrome.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#1 sandypaws.ae/con</div><div class="card-desc">"Moving is stressful as it is, so pet relocations should not be stressful"</div><div class="card-impact">⚠️ Soft fear acknowledgement — stress not specific fear</div></div></div>
+    <div class="card"><img src="Screenshot_20260527_104717_Chrome.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#2 sandypaws.ae/con</div><div class="card-desc">Real customer photo with dog — owner reunion shot</div><div class="card-impact">✅ Original visuals confirmed</div></div></div>
+    <div class="card"><img src="Screenshot_20260527_104729_Chrome.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#3 sandypaws.ae/con</div><div class="card-desc">Branded van, Careers section — growing business</div><div class="card-impact">✅ Real operation confirmed</div></div></div>
+    <div class="card"><img src="Screenshot_20260527_104846_Chrome.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#4 sandypaws.ae/revi</div><div class="card-desc">YouTube video — Rosie Gabrielle @rosiegabielle — Dubai's Best badge</div><div class="card-impact">✅ Named real person, dated testimonial</div></div></div>
+    <div class="card"><img src="Screenshot_20260527_104851_Chrome.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#5 sandypaws.ae/revi</div><div class="card-desc">Video caption: "Especially traveling abroad, often turns into a nightmare"</div><div class="card-impact">✅ Fear language in video — not in text</div></div></div>
+    <div class="card"><img src="Screenshot_20260527_104856_Chrome.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#6 sandypaws.ae/revi</div><div class="card-desc">Camilla Mafra — pet crate at airport arrival</div><div class="card-impact">✅ Process proof in visual form</div></div></div>
+    <div class="card"><img src="Screenshot_20260527_104948_Chrome.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#7 Google Ad</div><div class="card-desc">Running paid ads — sitelinks: UAE Pet Import Cost, Pet Export Import Services</div><div class="card-impact">✅ Cost page exists — spending on ads</div></div></div>
+  </div>
+</div>
+
+<!-- DKC -->
+<div class="competitor">
+  <div class="comp-header">
+    <div>
+      <div class="comp-name">DKC — Dubai Kennels & Cattery</div>
+      <div class="comp-url">dkc.ae</div>
+    </div>
+    <div class="score-badge score-8">8/10</div>
+  </div>
+
+  <div class="trust-grid">
+    <div class="trust-item"><div class="trust-label">1. Fear in 100 words</div><div class="trust-val pass">✅ FAQ = fears</div></div>
+    <div class="trust-item"><div class="trust-label">2. Official source</div><div class="trust-val pass">✅ Import permit</div></div>
+    <div class="trust-item"><div class="trust-label">3. Route named</div><div class="trust-val pass">✅ GCC, transit</div></div>
+    <div class="trust-item"><div class="trust-label">4. Step-by-step</div><div class="trust-val pass">✅ Via FAQ</div></div>
+    <div class="trust-item"><div class="trust-label">5. Timeline</div><div class="trust-val pass">✅ 90 days permit</div></div>
+    <div class="trust-item"><div class="trust-label">6. Cost ranges</div><div class="trust-val pass">✅ FAQ exists</div></div>
+    <div class="trust-item"><div class="trust-label">7. Common mistakes</div><div class="trust-val pass">✅ Tattoo/chip</div></div>
+    <div class="trust-item"><div class="trust-label">8. Original visuals</div><div class="trust-val pass">✅ Van + staff</div></div>
+    <div class="trust-item"><div class="trust-label">9. CTA = help</div><div class="trust-val pass">✅ Hippo mascot</div></div>
+    <div class="trust-item"><div class="trust-label">10. Would you trust</div><div class="trust-val fail">❌ Missing deepest fear</div></div>
+  </div>
+
+  <div class="gap-box">
+    <div class="gap-label">Biggest Gap</div>
+    <div class="gap-text">The deepest fear in the market — dog confiscated at airport and never returned (Muze Gu's quote) — does not exist anywhere on their site. They have the process but not the worst-case scenario.</div>
+  </div>
+  <div class="opp-box">
+    <div class="opp-label">Your Content Opportunity</div>
+    <div class="opp-text">"What happens if your pet is rejected at the Dubai border?" — DKC does not have this page. This is the highest-fear search in the market. Build it first.</div>
+  </div>
+
+  <div class="grid">
+    <div class="card"><img src="Screenshot_20260527_115222_Chrome.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#1 dkc.ae/what-we-d</div><div class="card-desc">FAQ: airport meeting, appointment questions</div><div class="card-impact">✅ Fear-structured FAQ format</div></div></div>
+    <div class="card"><img src="Screenshot_20260527_115226_Chrome.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#2</div><div class="card-desc">"Is it safe to bring my pet into the heat of the UAE?" "Customs clearance time?"</div><div class="card-impact">✅ Real customer fears as FAQ questions</div></div></div>
+    <div class="card"><img src="Screenshot_20260527_115229_Chrome.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#3</div><div class="card-desc">"What if my pet has a tattoo and not a microchip?"</div><div class="card-impact">✅ Common mistakes addressed</div></div></div>
+    <div class="card"><img src="Screenshot_20260527_115232_Chrome.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#4</div><div class="card-desc">Birds, rabbits, ferrets, cheetahs, penguins — exotic pets covered</div><div class="card-impact">✅ Covers gap competitors miss</div></div></div>
+    <div class="card"><img src="Screenshot_20260527_115239_Chrome.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#5</div><div class="card-desc">"Transit Care" and "Airport Oversight" defined</div><div class="card-impact">✅ Jargon explained in plain language</div></div></div>
+    <div class="card"><img src="Screenshot_20260527_115243_Chrome.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#6</div><div class="card-desc">"How do I export from UAE and how much lead time?" "Where can I get import permit?"</div><div class="card-impact">✅ Official source question answered</div></div></div>
+    <div class="card"><img src="Screenshot_20260527_115259_Chrome.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#7</div><div class="card-desc">"Import permit valid for 90 days — There, wasn't that easy? ;-)"</div><div class="card-impact">✅ Specific timeline + reassuring tone</div></div></div>
+    <div class="card"><img src="Screenshot_20260527_115307_Chrome.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#8</div><div class="card-desc">"Accompanied Baggage vs In-Cabin vs Manifest Cargo — What does it all mean? Good question."</div><div class="card-impact">✅ Jargon fear resolved with humour</div></div></div>
+    <div class="card"><img src="Screenshot_20260527_115311_Chrome.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#9</div><div class="card-desc">DKC branded van with real staff + dog</div><div class="card-impact">✅ Original visuals confirmed</div></div></div>
+    <div class="card"><img src="Screenshot_20260527_115323_Chrome.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#10</div><div class="card-desc">"Can I bring my pet into UAE as accompanied baggage?" — "Definitely not. (Uh... sort of!)"</div><div class="card-impact">✅ Honest nuanced answer — builds trust</div></div></div>
+    <div class="card"><img src="Screenshot_20260527_115327_Chrome.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#11</div><div class="card-desc">"Animal Care. Animal Relocations. By Animal People. Love... and other stuff too"</div><div class="card-impact">✅ Human brand voice — not corporate</div></div></div>
+    <div class="card"><img src="Screenshot_20260527_115331_Chrome.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#12</div><div class="card-desc">Footer: Dubai Kennels & Cattery + DKC Veterinary Clinic — legal entity</div><div class="card-impact">✅ Legitimate business confirmed</div></div></div>
+  </div>
+</div>
+
+<!-- PAWSOME PETS -->
+<div class="competitor">
+  <div class="comp-header">
+    <div>
+      <div class="comp-name">Pawsome Pets UAE</div>
+      <div class="comp-url">pawsomepets.ae</div>
+    </div>
+    <div class="score-badge score-3">3/10</div>
+  </div>
+
+  <div class="trust-grid">
+    <div class="trust-item"><div class="trust-label">1. Fear in 100 words</div><div class="trust-val fail">❌ "Request A Quote"</div></div>
+    <div class="trust-item"><div class="trust-label">2. Official source</div><div class="trust-val pass">✅ MOCCAE license</div></div>
+    <div class="trust-item"><div class="trust-label">3. Route named</div><div class="trust-val fail">❌ "All around world"</div></div>
+    <div class="trust-item"><div class="trust-label">4. Step-by-step</div><div class="trust-val fail">❌ None</div></div>
+    <div class="trust-item"><div class="trust-label">5. Timeline</div><div class="trust-val fail">❌ None</div></div>
+    <div class="trust-item"><div class="trust-label">6. Cost ranges</div><div class="trust-val partial">⚠️ "Your pocket"</div></div>
+    <div class="trust-item"><div class="trust-label">7. Common mistakes</div><div class="trust-val fail">❌ None</div></div>
+    <div class="trust-item"><div class="trust-label">8. Original visuals</div><div class="trust-val partial">⚠️ Illustrations only</div></div>
+    <div class="trust-item"><div class="trust-label">9. CTA = help</div><div class="trust-val fail">❌ Sales push</div></div>
+    <div class="trust-item"><div class="trust-label">10. Would you trust</div><div class="trust-val partial">⚠️ Credentials yes, site no</div></div>
+  </div>
+
+  <div class="gap-box">
+    <div class="gap-label">Biggest Gap</div>
+    <div class="gap-text">The most credentialed competitor in the market — MOCCAE license, IPATA, PAN, ATA, 283 Google reviews at 4.8 — but their website communicates none of it. Opens with a quote request. Ten years of trust, zero seconds to communicate it.</div>
+  </div>
+  <div class="opp-box">
+    <div class="opp-label">Your Content Opportunity</div>
+    <div class="opp-text">Explain what their credentials mean before they do: "What does IPATA certification mean for Dubai pet relocation?" and "What is a MOCCAE license and why does it matter for your pet?"</div>
+  </div>
+
+  <div class="grid">
+    <div class="card"><img src="Screenshot_20260527_115359_Chrome.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#1 Google Business Profile</div><div class="card-desc">4.8 stars, 283 reviews — "Pet moving service in Dubai"</div><div class="card-impact">✅ Highest review count in market — external trust</div></div></div>
+    <div class="card"><img src="Screenshot_20260527_115429_Chrome.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#2 pawsomepets.ae homepage</div><div class="card-desc">"Ready to relocate your pet? Request A Quote"</div><div class="card-impact">❌ Pure transactional — zero fear acknowledgement</div></div></div>
+    <div class="card"><img src="Screenshot_20260527_115435_Chrome.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#3 About section</div><div class="card-desc">"Family of experienced, IPATA pet relocation professionals, door to door"</div><div class="card-impact">⚠️ Credentials mentioned but not explained</div></div></div>
+    <div class="card"><img src="Screenshot_20260527_115439_Chrome.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#4 What We Do</div><div class="card-desc">"stress-free as possible, whilst looking after your pocket"</div><div class="card-impact">⚠️ Acknowledges cost concern — no numbers</div></div></div>
+    <div class="card"><img src="Screenshot_20260527_115442_Chrome.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#5 Doing Our Bit</div><div class="card-desc">"Donate percentage of fees to animal welfare, pre-loved crates, relocate rescues free"</div><div class="card-impact">✅ Strong ethical signal — underused</div></div></div>
+    <div class="card"><img src="Screenshot_20260527_115449_Chrome.jpg" onclick="zoom(this)" loading="lazy"><div class="card-body"><div class="card-num">#6 Footer</div><div class="card-desc">MOCCAE license DXB-AWD-04-1625641, DED 912211, IPATA, PAN, ATA member</div><div class="card-impact">✅ Strongest credentials in market — buried in footer</div></div></div>
+  </div>
+</div>
+
+<div class="lightbox" id="lightbox" onclick="this.classList.remove('active')">
+  <img id="lightbox-img" src="" alt="">
+</div>
+<script>
+function zoom(img) {
+  document.getElementById('lightbox-img').src = img.src;
+  document.getElementById('lightbox').classList.add('active');
+}
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') document.getElementById('lightbox').classList.remove('active');
+});
+</script>
+</body>
+</html>

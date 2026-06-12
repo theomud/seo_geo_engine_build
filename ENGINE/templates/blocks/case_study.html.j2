@@ -1,0 +1,14 @@
+<section class="section--article" id="{{ block.id | default('example') }}">
+  <div class="container container--article">
+    {% if block.heading %}<h2>{{ block.heading }}</h2>{% endif %}
+    <div class="case">
+      <div class="case-tag">{{ block.tag | default('Worked example') }}</div>
+      {% if block.subheading %}<h3>{{ block.subheading }}</h3>{% endif %}
+      <table class="case-rows">
+        {% for r in block.rows %}<tr><th>{{ r.label }}</th><td>{{ r.value }}</td></tr>{% endfor %}
+      </table>
+      {% if block.result %}<div class="case-result">{{ block.result }}</div>{% endif %}
+      {% if block.note %}<p class="case-note">{{ block.note }}</p>{% endif %}
+    </div>
+  </div>
+</section>

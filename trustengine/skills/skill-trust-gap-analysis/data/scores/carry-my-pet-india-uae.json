@@ -1,0 +1,61 @@
+{
+  "competitor_name": "Carry My Pet (India/UAE)",
+  "url": "https://carrymypet.com",
+  "total_score": 2.5,
+  "scores": {
+    "fear_in_first_100_words": {
+      "score": 0.0,
+      "evidence": "'Making your pet's relocation as smooth as possible' — general reassurance only",
+      "gap": "No mention of pet being seized, detained, or not returned at airport — the deepest market fear is completely absent"
+    },
+    "official_source_cited": {
+      "score": 0.0,
+      "evidence": "'coordinating with multiple government agencies for the necessary paperwork formalities'",
+      "gap": "No citation of UAE MOCCAE, Dubai Municipality, IATA Live Animals Regulations, or any named regulatory body"
+    },
+    "specific_route_named": {
+      "score": 0.5,
+      "evidence": "'Qatar to Doha' mentioned in testimonial; Delhi, Bangalore, Mumbai listed as destinations",
+      "gap": "No dedicated India-to-Dubai or UAE route page with route-specific requirements, timelines, or restrictions"
+    },
+    "step_by_step_process": {
+      "score": 0.5,
+      "evidence": "'HOW WE DO IT — FULFILLING YOUR NEEDS EVERY STEP OF THE WAY' section listed but content not shown",
+      "gap": "No numbered, named steps with owner actions vs. company actions clearly separated for international moves"
+    },
+    "timeline_included": {
+      "score": 0.0,
+      "evidence": "'time consuming and can be a hassle' — vague acknowledgment only",
+      "gap": "No specific timeline given — no weeks-out preparation schedule, no processing windows for UAE import permits"
+    },
+    "cost_ranges_shown": {
+      "score": 0.0,
+      "evidence": "'HOW MUCH DOES IT COST TO RELOCATE YOUR PET INTERNATIONALLY?' listed as FAQ only",
+      "gap": "No cost ranges, price factors, or even ballpark figures shown — FAQ is collapsed with no visible answer"
+    },
+    "common_mistakes": {
+      "score": 0.0,
+      "evidence": "No section addressing mistakes, errors, or what can go wrong during international pet relocation",
+      "gap": "No mention of wrong crate sizing, missing microchip ISO standard, titre test timing errors, or airline breed bans"
+    },
+    "original_visuals": {
+      "score": 0.0,
+      "evidence": "No image descriptions, infographics, or proprietary visuals referenced in provided content",
+      "gap": "No original process diagrams, route maps, document checklists, or real pet journey photos described"
+    },
+    "cta_feels_like_help": {
+      "score": 0.5,
+      "evidence": "'GET QUOTE' repeated five times on homepage above the fold",
+      "gap": "CTA is transactional and repeated to the point of pressure — no free guide, checklist, or consultation offer that feels helpful first"
+    },
+    "would_you_trust_this": {
+      "score": 1.0,
+      "evidence": "'100% pet safety record' and named staff (Kaushal, Dhruv, Shariq) in detailed testimonials add credibility",
+      "gap": "Countered by zero statistics shown, no license numbers, no IPATA membership mentioned, and placeholder '0 Pets Reunited' counter"
+    }
+  },
+  "strongest_asset": "Named staff in detailed testimonials (Kaushal, Shariq, Dhruv) create rare human-level trust in an otherwise generic site",
+  "biggest_gap": "The deepest fear — pet detained or seized at the airport and not returned — is never addressed anywhere on the site",
+  "content_opportunity": "Dubai Pet Import: What Happens at the Airport and How to Make Sure Your Dog Comes Home With You",
+  "content_brief": "Dubai pet owners fear their dog will be taken at the airport and never returned — unlike Carry My Pet, we name every UAE inspection checkpoint, the exact MOCCAE permit required before landing, and the three documentation errors that cause same-day confiscation."
+}

@@ -1,0 +1,38 @@
+<section class="section {{ block.variant | default('') }}" id="{{ block.id | default('crate-calculator') }}">
+  <div class="container container--article">
+    {% if block.eyebrow %}<p class="eyebrow">{{ block.eyebrow }}</p>{% endif %}
+    <h2>{{ block.heading | default('IATA crate size calculator') }}</h2>
+    {% if block.body %}<p>{{ block.body }}</p>{% endif %}
+    <div class="tool" data-tool="crate">
+      <p class="tool-note" style="margin:0 0 .8rem">Measure your pet (in cm) — standing naturally:
+        <strong>A</strong> nose to base of tail · <strong>B</strong> floor to elbow · <strong>C</strong> width across shoulders · <strong>D</strong> floor to top of head/ears.</p>
+      <div class="tool-row">
+        <label>A — length (cm)<input type="number" id="cr-a" min="1" placeholder="e.g. 70"></label>
+        <label>B — elbow height (cm)<input type="number" id="cr-b" min="1" placeholder="e.g. 30"></label>
+        <label>C — shoulder width (cm)<input type="number" id="cr-c" min="1" placeholder="e.g. 22"></label>
+        <label>D — standing height (cm)<input type="number" id="cr-d" min="1" placeholder="e.g. 55"></label>
+        <button type="button" class="btn btn-gold" id="cr-go">Calculate crate</button>
+      </div>
+      <div id="cr-out" class="tool-out" hidden></div>
+      <p class="tool-note">Uses the IATA Live Animals Regulations formula (Length = A + ½B, Width = 2 × C, Height = D). The pet must be able to stand, turn around and lie down naturally. Always confirm the exact container with your airline before booking.</p>
+    </div>
+  </div>
+</section>
+<script>
+(function(){
+  var go=document.getElementById('cr-go'); if(!go) return;
+  go.addEventListener('click',function(){
+    function n(id){return parseFloat((document.getElementById(id)||{}).value)||0;}
+    var A=n('cr-a'),B=n('cr-b'),C=n('cr-c'),D=n('cr-d'), out=document.getElementById('cr-out');
+    if(!(A&&B&&C&&D)){out.hidden=false;out.innerHTML='<p class="tool-warn">Enter all four measurements (A, B, C, D) in cm.</p>';return;}
+    var L=Math.ceil(A+B/2), W=Math.ceil(C*2), H=Math.ceil(D);
+    out.hidden=false;
+    out.innerHTML='<table class="tool-table"><tbody>'+
+      '<tr><th>Minimum internal length</th><td>'+L+' cm <span class="tool-note">(A + ½B)</span></td></tr>'+
+      '<tr><th>Minimum internal width</th><td>'+W+' cm <span class="tool-note">(2 × C)</span></td></tr>'+
+      '<tr><th>Minimum internal height</th><td>'+H+' cm <span class="tool-note">(D, ears up)</span></td></tr>'+
+      '</tbody></table>'+
+      '<p class="tool-ok">Choose the next standard IATA crate size <strong>up</strong> from these — never smaller. Snub-nosed breeds often need a size larger again for airflow.</p>';
+  });
+})();
+</script>

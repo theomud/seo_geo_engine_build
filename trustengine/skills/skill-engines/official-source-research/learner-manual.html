@@ -1,0 +1,70 @@
+<!DOCTYPE html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Official Source Research — Learner Manual</title><style>body{font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:#1f2937;
+line-height:1.6;background:#f7f8fb;margin:0}.wrap{max-width:860px;margin:0 auto;padding:28px}
+h1{color:#1a3a5c}h2{color:#1a3a5c;border-top:2px solid #e5e7eb;padding-top:14px;margin-top:26px}
+h3{color:#2c5282}code{background:#f1f5f9;padding:1px 5px;border-radius:4px}
+table{border-collapse:collapse;width:100%}th,td{border:1px solid #e5e7eb;padding:7px 10px;text-align:left;vertical-align:top}
+th{background:#2c5282;color:#fff}tr:nth-child(even) td{background:#f9fafb}
+.hd{background:linear-gradient(135deg,#1a3a5c,#2c5282);color:#fff;padding:22px 28px;border-radius:0 0 14px 14px}
+.hd h1{color:#fff;margin:0}.hd p{color:#cfe0f5;margin:6px 0 0}</style></head><body><div class='hd'><h1>Official Source Research — Learner Manual</h1><p>Is every claim traced to a named, dated, official source — or just asserted?</p></div><div class='wrap'><h1>Official Source Research — Learner Manual</h1>
+<p>In regulated markets, wrong information causes real harm. This engine scores whether a page backs claims with official sources: links to government/authority sites, named regulators, exact quotes, dates, and provenance for figures — instead of unsourced assertions.</p>
+<h2>How to run the engine</h2>
+<ul>
+<li>Score a page: <code>python skill-engines/official-source-research/engine.py --url &lt;URL&gt; --report out.html</code></li>
+<li>Web checker: <code>python skill-engines/official-source-research/engine.py --serve 8098</code></li>
+<li>These docs: <code>python skill-engines/official-source-research/engine.py --docs</code></li>
+</ul>
+<h2>The measurements (each one, with why and how)</h2>
+<h2>1. Official sources linked</h2>
+<p><strong>How we measure it:</strong> We count outbound links to government/authority domains.</p>
+<p><strong>Why it works:</strong> A claim with a link to the regulator is provable; an unsourced claim is just an assertion.</p>
+<p><strong>What to do:</strong> Link the official government/authority page for each regulation/fee.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: Dubai requires documents.</li>
+<li>DO: Dubai requires an import permit — see MOCCAE (moccae.gov.ae).</li>
+</ul>
+<h2>2. Authorities named</h2>
+<p><strong>How we measure it:</strong> We detect named regulators/bodies (MOCCAE, DEFRA, IATA…).</p>
+<p><strong>Why it works:</strong> Naming the actual authority signals the writer went to the source, not a competitor's blog.</p>
+<p><strong>What to do:</strong> Name the actual regulator (e.g. MOCCAE, DEFRA) for each rule.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: the government says…</li>
+<li>DO: MOCCAE (UAE) and DEFRA (UK) require…</li>
+</ul>
+<h2>3. Citation phrasing</h2>
+<p><strong>How we measure it:</strong> We look for 'according to / per the / states that' phrasing.</p>
+<p><strong>Why it works:</strong> Explicit attribution makes claims checkable and is what AI engines reward when citing.</p>
+<p><strong>What to do:</strong> Attribute claims explicitly ('according to MOCCAE…').</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: Pets need a titer test.</li>
+<li>DO: According to MOCCAE, pets need a titer test.</li>
+</ul>
+<h2>4. Exact quotes</h2>
+<p><strong>How we measure it:</strong> We detect verbatim quoted passages.</p>
+<p><strong>Why it works:</strong> An exact quote of the regulation is the strongest, most-liftable proof.</p>
+<p><strong>What to do:</strong> Quote the exact regulatory wording, then translate it to plain English.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: valid for about 10 days</li>
+<li>DO: "valid for ten (10) days from the date of issue" (MOCCAE).</li>
+</ul>
+<h2>5. Dates / verification</h2>
+<p><strong>How we measure it:</strong> We look for years and 'updated/verified/as of' markers.</p>
+<p><strong>Why it works:</strong> Regulations change; a date tells the reader the fact is current, not stale.</p>
+<p><strong>What to do:</strong> Add the date each fact was verified; re-check every 90 days.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: (undated claim)</li>
+<li>DO: Verified against MOCCAE, June 2026.</li>
+</ul>
+<h2>6. Figure provenance</h2>
+<p><strong>How we measure it:</strong> We compare citation count to the number of figures.</p>
+<p><strong>Why it works:</strong> Every number should trace to a source; lots of figures with no citations is a red flag.</p>
+<p><strong>What to do:</strong> Give every figure a source, or hedge it honestly if none is published.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: A fee figure with no source.</li>
+<li>DO: 500 AED release fee (MOCCAE, 2026).</li>
+</ul></div></body></html>

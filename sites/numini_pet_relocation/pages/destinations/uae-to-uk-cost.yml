@@ -1,0 +1,150 @@
+url: /destinations/uae-to-uk-cost/
+title: "Pet Relocation Dubai to UK: Real Cost & Process (2026)"
+title_suffix: ""
+meta_description: "What it really costs to move your pet from Dubai to the UK — AED 12,000–18,000 for a dog, 4–8 weeks, no quarantine if done right. Transparent breakdown, no hidden fees."
+og_title: "Dubai → UK pet relocation: the real cost, with no surprises"
+updated: "2026-06-09"
+schema: service
+service:
+  name: Pet relocation from the UAE to the United Kingdom — cost
+  area_served: ["United Kingdom", "United Arab Emirates"]
+
+blocks:
+  - type: hero
+    eyebrow: "Dubai → United Kingdom · cost"
+    heading: "Pet relocation Dubai to UK: what it really costs"
+    subheading: >
+      Worried you're being overcharged — or that the UK's strict rules mean you'll get it wrong?
+      Both fears are fair. Here's the real price, line by line, and the one timing mistake that
+      costs people their pet's entry.
+    image: /assets/uae-to-uk/hero.png
+    image_alt: "A relieved owner hugging a golden retriever beside a labelled IATA pet travel crate at a bright airport, ready to fly from Dubai to the UK"
+    ctas:
+      - { label: "Get my transparent quote", url: "#quote", style: "btn-gold" }
+      - { label: "Full UK requirements", url: "/destinations/uae-to-uk/", style: "btn-ghost" }
+
+  - type: key_facts
+    heading: "Quick answer"
+    answer: >
+      Relocating a pet from Dubai to the UK costs roughly AED 12,000–18,000 for a dog and
+      AED 8,000–14,000 for a cat, takes about 4–8 weeks, and involves no quarantine — provided
+      the paperwork is correct and (for dogs) the tapeworm treatment is given 1–5 days before arrival.
+    stats:
+      - { label: "Cost — dog", value: "AED 12,000–18,000" }
+      - { label: "Cost — cat", value: "AED 8,000–14,000" }
+      - { label: "Timeline", value: "4–8 weeks" }
+      - { label: "Quarantine", value: "None*" }
+    verified: "June 2026"
+    source_authority: "UK APHA / GOV.UK + UAE MOCCAE"
+
+  - type: table
+    variant: section--surface
+    eyebrow: "No hidden fees"
+    heading: "The cost, line by line"
+    body: "No “contact us for a quote” wall — here's where every dirham goes for a standard Dubai → UK move."
+    columns: ["Component", "Cost (AED)"]
+    rows:
+      - ["UAE microchip", "200–400"]
+      - ["UAE rabies vaccine", "300–600"]
+      - ["UAE export health certificate", "200–400"]
+      - ["MOCCAE export admin", "700"]
+      - ["IATA travel crate", "800–1,500"]
+      - ["Air freight (Emirates / British Airways)", "6,000–10,000"]
+      - ["UK customs clearance", "500–1,000"]
+      - ["PawRoute service fee", "3,000–5,000"]
+      - ["Total", "12,000–18,000"]
+    note: "Where you land depends on your pet's size (airlines charge by crate volume, not just weight) and the airline. Wrong paperwork at UK customs can add AED 5,000+ in delays — which is the whole reason the service fee exists."
+
+  - type: callout
+    style: warn
+    heading: "The timing trap that costs people their pet's entry"
+    body: >
+      For dogs, the UK requires a tapeworm treatment 1–5 days before arrival — not earlier, not
+      later. Too early and it's invalid; too late and your dog is refused entry or held. Cats don't
+      need it. It's the most common reason a Dubai → UK move goes wrong, and it's free to get right.
+
+  - type: figure
+    src: /assets/uae-to-uk/vet-microchip.png
+    alt: "A vet in Dubai gently scanning the microchip of a calm cat during the pre-export health check"
+    caption: "The first verified step: an ISO microchip and rabies record from a vet — before the export certificate."
+    source_label: "Pre-export health check"
+
+  - type: prose
+    eyebrow: "Why the price varies"
+    heading: "Why cheapest isn't safest"
+    paragraphs:
+      - "Two pets, same route, can cost very differently. A small cat in a compact crate sits at the bottom of the range; a large dog whose crate measures big on volumetric weight sits at the top — sometimes AED 1,500+ more in air freight alone."
+      - "The other variable is who does the paperwork. The UK health certificate must come from an APHA-approved vet — most Dubai vets aren't on that list (DKC and British Vet Hospital are). Use the wrong vet and the certificate is rejected at the border. The cheapest quote that skips this check isn't cheap; it's a risk to your pet's entry."
+
+  - type: comparison
+    eyebrow: "Why owners trust a transparent price"
+    heading: "Most providers make you ask. We just tell you."
+    body: "Most UAE pet-relocation providers still hide pricing behind a 'get a quote' form. Here's how we're different."
+    us_label: "PawRoute"
+    them_label: "Typical provider"
+    rows:
+      - { feature: "Price shown upfront", us_yes: true, us: "Full breakdown on this page", them_no: true, them: "“Get a quote” only" }
+      - { feature: "APHA-vet check", us_yes: true, us: "Verified before you book", them_no: true, them: "Often assumed" }
+      - { feature: "Tapeworm timing", us_yes: true, us: "Scheduled to your flight", them_no: true, them: "Your responsibility" }
+      - { feature: "Delivery-date promise", us: "Never — airlines change", them: "Sometimes promised" }
+
+  - type: story
+    id: story
+    heading: "Where the money usually leaks"
+    tag: "A common scenario"
+    lead: "The biggest cost on a Dubai → UK move is almost never the airline — it's one mistimed detail."
+    problem: "An owner takes the cheapest quote for their Labrador, flying in three weeks."
+    mistake: "The provider uses a vet who isn't APHA-approved and gives the tapeworm treatment a week early to 'be safe'."
+    discovery: "At check-in the UK health certificate is rejected and the 24–120 hour tapeworm window has lapsed — the dog can't board."
+    result: "A rebooked flight, a fresh certificate and a few days of boarding add roughly AED 6,000 and over a week."
+    lesson: "The cheapest quote cost the most. An APHA-approved vet and the tapeworm window aren't details — they decide whether your dog flies."
+
+  - type: faq
+    heading: "Dubai → UK cost: your questions"
+    items:
+      - { q: "How much does it cost to move a dog from Dubai to the UK?", a: "Roughly AED 12,000–18,000 all-in for a standard route, depending on your dog's size (which sets the air-freight cost) and the airline. The full line-by-line breakdown is above — no hidden fees." }
+      - { q: "Is it cheaper for a cat?", a: "Usually — about AED 8,000–14,000, because cats travel in smaller crates and (unlike dogs) don't need the UK tapeworm treatment." }
+      - { q: "Will my pet go into quarantine in the UK?", a: "No — the UK doesn't quarantine pets that arrive with correct paperwork. The risk isn't quarantine; it's a documentation error, which is exactly what we prevent." }
+      - { q: "Why can't I use my normal Dubai vet?", a: "The UK health certificate must come from an APHA-approved third-country vet. Most Dubai vets aren't on that list — DKC and British Vet Hospital are. We confirm approval before any appointment." }
+      - { q: "Can my XL Bully or Pit Bull come to the UK?", a: "No. Pit Bull, XL Bully (banned since 1 February 2024), Japanese Tosa, Dogo Argentino and Fila Brasileiro are banned under the Dangerous Dogs Act. We verify your breed before booking." }
+      - { q: "Can you guarantee the arrival date?", a: "No — and be wary of anyone who does. Airlines change cargo schedules, especially in the UAE summer heat. We give a realistic timeline and keep you updated, but never promise an exact arrival." }
+
+  - type: sources
+    eyebrow: "Don't take our word for it"
+    heading: "Official sources"
+    items:
+      - { authority: "UK GOV.UK / APHA", title: "Bringing your pet to Great Britain", url: "https://www.gov.uk/bring-pet-to-great-britain", note: "Entry rules + health certificate" }
+      - { authority: "UK GOV.UK", title: "Tapeworm treatment for dogs", url: "https://www.gov.uk/bring-pet-to-great-britain/tapeworm-treatment-dogs", note: "The 24–120 hour window" }
+      - { authority: "UK GOV.UK", title: "Ban on XL Bully dogs", url: "https://www.gov.uk/guidance/ban-on-xl-bully-dogs", note: "Banned breeds" }
+      - { authority: "UAE MOCCAE", title: "Pet export & import permits", url: "https://www.moccae.gov.ae/en/services/import-permit-pets", note: "UAE export process + fees" }
+      - { authority: "IATA", title: "Live Animals Regulations", url: "https://www.iata.org/en/programs/cargo/live-animals/", note: "Crate sizing → air-freight cost" }
+
+  - type: cost_calc
+    eyebrow: "Estimate it yourself"
+    heading: "Estimate your Dubai → UK cost"
+    body: "Pick your pet's size for an instant range — then get the exact figure from us below."
+
+  - type: related
+    label: "📖 Read the guide"
+    items:
+      - { title: "The tapeworm window that decides if your dog flies", url: "/blog/dubai-to-uk-pet-tapeworm-window/", note: "the UK timing rule" }
+      - { title: "What it really costs to relocate a pet from Dubai (2026 data)", url: "/blog/pet-relocation-cost-from-dubai-2026/", note: "all 10 routes compared" }
+
+  - type: quote_form
+    id: quote
+    eyebrow: "No obligation"
+    heading: "See your exact Dubai → UK price"
+    body: "Tell us your pet's size and timing. We'll reply on WhatsApp with a firm range, the full breakdown, and confirmation of an APHA-approved vet."
+    destinations: ["UK"]
+    help_cta: "Not ready to enquire? Download the free Dubai → UK pet checklist — every document in order, with the tapeworm-timing rule that prevents a hold (verified against APHA & MOCCAE)."
+    points:
+      - "A firm price range for your pet's exact size"
+      - "Confirmation of an APHA-approved vet for you"
+      - "A timeline that protects the tapeworm window"
+
+  - type: cta
+    heading: "No surprises on price. None at the border."
+    body: "Transparent cost, APHA-verified paperwork, the tapeworm window handled — so you can budget with confidence and get your dog or cat home safely, with no hidden fees and no surprises at the border."
+    ctas:
+      - { label: "Get my quote", url: "#quote", style: "btn-gold" }
+      - { label: "Full UK requirements & process", url: "/destinations/uae-to-uk/", style: "btn-ghost" }

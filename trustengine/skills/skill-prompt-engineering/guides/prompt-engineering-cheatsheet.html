@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Prompt Engineering — Cheatsheet</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#14110d;--panel:#1d1812;--ink:#f3ece0;--soft:#b9ab95;--line:#352c20;--gold:#d8a84b;--red:#e06a4e;--green:#7bbf6a}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--ink);font-family:'JetBrains Mono',monospace;font-size:13px;line-height:1.5;padding:16px;max-width:540px;margin:0 auto}
+  header{border-bottom:2px solid var(--gold);padding-bottom:10px;margin-bottom:14px}
+  .k{color:var(--gold);font-size:12px;letter-spacing:.1em}
+  h1{font-family:'Bebas Neue',sans-serif;font-size:30px;letter-spacing:.02em;line-height:1}
+  h2{font-family:'Bebas Neue',sans-serif;font-size:19px;color:var(--gold);letter-spacing:.03em;margin:18px 0 7px;border-bottom:1px solid var(--line);padding-bottom:3px}
+  .row{background:var(--panel);border:1px solid var(--line);border-radius:7px;padding:8px 11px;margin:6px 0}
+  .row b{color:var(--gold)}
+  .ex{color:var(--soft);font-size:12px;font-style:italic;display:block;margin-top:3px}
+  .v{color:var(--green);font-weight:700}.u{color:var(--gold);font-weight:700}.c{color:var(--red);font-weight:700}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+  .ba{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:6px 0}
+  .ba div{border-radius:7px;padding:8px 10px;font-size:12px}
+  .bad{background:#2a1a14;border:1px solid #4a2c20}.good{background:#1a2417;border:1px solid #2f4327}
+  .note{color:var(--soft);font-size:12px;border-top:1px solid var(--line);margin-top:16px;padding-top:10px}
+  ol{margin:0 0 0 18px}li{margin:2px 0}
+</style>
+</head>
+<body>
+<header>
+  <div class="k">THE TRUST ENGINE · CHEATSHEET</div>
+  <h1>Prompt Engineering</h1>
+  <div class="k" style="color:var(--soft)">the prompt is a creative brief · aim for 70%+ usable</div>
+</header>
+
+<h2>The 9 elements</h2>
+<div class="grid">
+  <div class="row"><b>1 Context</b><span class="ex">the situation</span></div>
+  <div class="row"><b>2 Role</b><span class="ex">who the AI is</span></div>
+  <div class="row"><b>3 Objective</b><span class="ex">what to produce</span></div>
+  <div class="row"><b>4 Audience</b><span class="ex">the reader's state</span></div>
+  <div class="row"><b>5 Inputs</b><span class="ex">facts (cite by C-ID)</span></div>
+  <div class="row"><b>6 Constraints</b><span class="ex">avoid / include + hedge</span></div>
+  <div class="row"><b>7 Examples</b><span class="ex">show good output</span></div>
+  <div class="row"><b>8 Output Format</b><span class="ex">structure</span></div>
+  <div class="row"><b>9 Quality Criteria</b><span class="ex">how it's judged</span></div>
+</div>
+<div class="row" style="margin-top:6px">⚑ The two everyone skips — <b>Constraints</b> + <b>Quality Criteria</b> — decide if it's usable.</div>
+
+<h2>Minimum Viable Prompt</h2>
+<div class="row"><b>Context + Role + Objective + Output Format</b> — never fewer.<span class="ex">"Dubai pet relocation (ctx). Relocation specialist (role). 3 FAQ answers on the summer embargo, hedge what MOCCAE doesn't publish (obj). Markdown Q&A (format)."</span></div>
+
+<h2>Real before / after</h2>
+<div class="ba">
+  <div class="bad"><span class="c">BEFORE</span><br>"write a page about pet relocation to Dubai"<br><span class="ex">→ generic mush</span></div>
+  <div class="good"><span class="v">AFTER</span><br>9 elements: confiscation fear (Muze Gu) + Verified C-019/010/003 + hedge C-001 + 5-layer format<br><span class="ex">→ usable Fear-Resolution draft</span></div>
+</div>
+
+<h2>The revision loop (2–3 rounds)</h2>
+<div class="row">Always say <b>what to change AND what to keep</b>.<span class="ex">"Revise: hedge the 700–1,300 AED line. KEEP: the opening fear sentence + the MOCCAE-silence paragraph."</span></div>
+
+<h2>The 10 mistakes</h2>
+<div class="row"><ol><li>Vague objective</li><li>No audience</li><li>Information overload</li><li>Conflicting constraints</li><li>No quality criteria</li><li>One-shot expectation</li><li>Not saving good prompts</li><li>Ignoring output format</li><li>Wrong role</li><li>Not comparing models</li></ol></div>
+
+<h2>The 70%-usable rule</h2>
+<div class="row"><b>Measured, not felt</b> — count edits to publish.<br>Below 70% → fix the <b>prompt</b> (an element), not the output.<br><span class="c">Never assert an Unverifiable claim</span> — hedge it or block it.</div>
+
+<div class="note">The Trust Engine · Prompt Engineering · cheatsheet · real examples from the 2026-05-29 Dubai proof run. Cite Verified by C-ID · hedge the unpublished · save what works to the library.</div>
+</body>
+</html>

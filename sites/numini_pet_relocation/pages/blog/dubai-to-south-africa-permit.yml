@@ -1,0 +1,86 @@
+url: /blog/dubai-to-south-africa-pet-permit/
+title: "Dubai to South Africa Pet Move: Permit + the Tests"
+title_suffix: ""
+meta_description: "Moving a pet from Dubai to South Africa needs a state veterinary import permit, a rabies titre test and disease testing. Here's what sets the timeline."
+og_title: "Dubai → South Africa: the import permit and tests that catch people"
+updated: "2026-06-09"
+layout: article
+
+blocks:
+  - type: article_header
+    category: "Route guide · South Africa"
+    category_url: "/blog/"
+    h1: "Dubai to South Africa: the import permit and the tests that catch people"
+    standfirst: "South Africa needs a state veterinary import permit, a rabies titre test and disease testing before your pet can travel — and the permit and titre are what set the timeline."
+    author: "the PawRoute relocation team"
+    date: "9 June 2026"
+    reading_time: 5
+    reviewed: "reviewed by our IPATA-certified specialists"
+    image: /assets/blog/cost-2026-hero.png
+    image_alt: "A pet ready to travel from Dubai to South Africa"
+
+  - type: prose
+    id: answer
+    heading: "The short answer"
+    paragraphs:
+      - "To bring a pet into South Africa from Dubai you need a <strong>state veterinary import permit</strong>, a <strong>rabies titre test</strong>, a veterinary health certificate, and (for dogs) <strong>additional disease testing</strong> — plus the usual ISO microchip and rabies vaccination."
+      - "It typically costs <strong>AED 14,000–22,000</strong>, and the timeline is driven by the permit and the titre/test results, which take weeks. Confirm the current test list with the South African authority before you start."
+
+  - type: takeaways
+    heading: "Key takeaways"
+    items:
+      - "A <strong>state veterinary import permit</strong> is mandatory and time-limited — apply in the right window."
+      - "A <strong>rabies titre test</strong> is required; results take weeks, so book it early."
+      - "Dogs face <strong>additional disease tests</strong> — confirm the current list, as it can change."
+      - "Core records: <strong>ISO microchip</strong> and valid <strong>rabies vaccination</strong>."
+      - "Typical cost Dubai → South Africa: roughly <strong>AED 14,000–22,000</strong>."
+
+  - type: toc
+    heading: "In this article"
+    items:
+      - { label: "What sets the timeline", anchor: "timeline" }
+      - { label: "What going wrong looks like", anchor: "story" }
+      - { label: "Frequently asked questions", anchor: "faq" }
+
+  - type: prose
+    id: timeline
+    eyebrow: "Why it isn't quick"
+    heading: "What sets the timeline"
+    paragraphs:
+      - "Two things drive the South Africa timeline: the <strong>import permit</strong>, which is time-limited and must align with your travel window, and the <strong>titre test plus any disease tests</strong>, whose lab results take weeks."
+      - "Because the permit is dated, the sequence has to be planned backwards from the flight — apply too early and it can lapse; too late and you can't travel. Confirm the exact, current test requirements with the official source first."
+
+  - type: story
+    id: story
+    heading: "What going wrong actually looks like"
+    tag: "A common scenario"
+    lead: "On the South Africa route, the trap is mistiming the permit and the lab work."
+    problem: "An owner relocating home wants their dog in South Africa within a few weeks."
+    mistake: "They book the rabies titre and disease tests late and apply for the permit out of sync with the flight."
+    discovery: "The lab results take weeks and the permit is time-limited — the dates don't line up."
+    result: "Travel slips while the tests clear and a fresh permit is issued, with boarding in the meantime."
+    lesson: "South Africa rewards sequencing: confirm the test list, book the labs early, and time the permit to the flight — not the other way round."
+
+  - type: faq
+    id: faq
+    heading: "Frequently asked questions"
+    items:
+      - { q: "Do I need a rabies titre test for South Africa?", a: "Yes — a rabies titre test is part of the requirements, and results take weeks, so book it early. Confirm the full current test list with the South African authority." }
+      - { q: "What's the pivotal document?", a: "The state veterinary import permit. It's time-limited, so it must be timed to your flight — apply too early and it can lapse." }
+      - { q: "Will my pet be quarantined in South Africa?", a: "With the permit, titre and tests in order, the focus is documentation and testing rather than a long quarantine — but confirm current requirements, as they can change." }
+      - { q: "How much does Dubai → South Africa cost?", a: "Typically AED 14,000–22,000, depending on your pet's size, the tests required and the airline." }
+
+  - type: sources
+    eyebrow: "Verified against the source"
+    heading: "Official sources"
+    items:
+      - { authority: "South Africa DALRRD", title: "Dept. of Agriculture, Land Reform & Rural Development", url: "https://www.dalrrd.gov.za/", note: "Veterinary import permit + tests" }
+      - { authority: "UAE MOCCAE", title: "Pet export permits", url: "https://www.moccae.gov.ae/en/services/import-permit-pets", note: "UAE export side" }
+      - { authority: "IATA", title: "Live Animals Regulations", url: "https://www.iata.org/en/programs/cargo/live-animals/", note: "Crate + cargo standards" }
+
+  - type: cta
+    heading: "Planning a Dubai → South Africa move?"
+    body: "We confirm the current test list, book the labs early and time the permit to your flight — so you can plan with confidence and your pet travels on schedule."
+    ctas:
+      - { label: "See Dubai → South Africa cost & process", url: "/destinations/uae-to-south-africa/", style: "btn-gold" }
+      - { label: "Compare all destinations", url: "/destinations/", style: "btn-ghost" }

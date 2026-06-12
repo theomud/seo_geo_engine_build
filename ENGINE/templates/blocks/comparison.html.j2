@@ -1,0 +1,29 @@
+{# Trust-gap comparison — us vs a typical competitor. Honest, claim-level. #}
+<section class="section {{ block.variant | default('section--surface') }}" id="{{ block.id | default('') }}">
+  <div class="container">
+    {% if block.eyebrow %}<p class="eyebrow">{{ block.eyebrow }}</p>{% endif %}
+    {% if block.heading %}<h2>{{ block.heading }}</h2>{% endif %}
+    {% if block.body %}<p class="lead">{{ block.body }}</p>{% endif %}
+    <div class="cmp-wrap">
+      <table class="cmp">
+        <thead>
+          <tr>
+            <th>{{ block.feature_label | default('What matters to you') }}</th>
+            <th class="us">{{ block.us_label | default('PawRoute') }}</th>
+            <th>{{ block.them_label | default('Typical provider') }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for r in block['rows'] %}
+          <tr>
+            <td class="feat">{{ r.feature }}</td>
+            <td class="us">{% if r.us_yes %}<span class="yes">✓</span> {% endif %}{{ r.us }}</td>
+            <td class="them">{% if r.them_no %}<span class="no">✕</span> {% endif %}{{ r.them }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    {% if block.note %}<p class="price-note">{{ block.note }}</p>{% endif %}
+  </div>
+</section>

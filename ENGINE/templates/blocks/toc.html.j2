@@ -1,0 +1,10 @@
+<section class="section--article" id="{{ block.id | default('contents') }}">
+  <div class="container container--article">
+    <nav class="toc" aria-label="In this article">
+      <h2>{{ block.heading | default('In this article') }}</h2>
+      <ol>
+        {% for i in block['items'] %}<li><a href="#{{ i.anchor }}">{{ i.label }}</a></li>{% endfor %}
+      </ol>
+    </nav>
+  </div>
+</section>

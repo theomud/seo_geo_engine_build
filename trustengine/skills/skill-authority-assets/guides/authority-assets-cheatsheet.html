@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Authority Asset Creation — Cheatsheet</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#14110d;--panel:#1d1812;--ink:#f3ece0;--soft:#b9ab95;--line:#352c20;--gold:#d8a84b;--red:#e06a4e;--green:#7bbf6a}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--ink);font-family:'JetBrains Mono',monospace;font-size:13px;line-height:1.5;padding:16px;max-width:540px;margin:0 auto}
+  header{border-bottom:2px solid var(--gold);padding-bottom:10px;margin-bottom:14px}
+  .k{color:var(--gold);font-size:12px;letter-spacing:.1em}
+  h1{font-family:'Bebas Neue',sans-serif;font-size:30px;letter-spacing:.02em;line-height:1}
+  h2{font-family:'Bebas Neue',sans-serif;font-size:19px;color:var(--gold);letter-spacing:.03em;margin:18px 0 7px;border-bottom:1px solid var(--line);padding-bottom:3px}
+  .row{background:var(--panel);border:1px solid var(--line);border-radius:7px;padding:8px 11px;margin:6px 0}
+  .row b{color:var(--gold)}
+  .ex{color:var(--soft);font-size:12px;display:block;margin-top:3px}
+  .v{color:var(--green);font-weight:700}.c{color:var(--red);font-weight:700}
+  .ba{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:6px 0}
+  .ba div{border-radius:7px;padding:8px 10px;font-size:12px;word-break:break-word}
+  .bad{background:#2a1a14;border:1px solid #4a2c20}.good{background:#1a2417;border:1px solid #2f4327}
+  ol{margin:0 0 0 18px}li{margin:2px 0}
+  code{background:#251e16;padding:1px 5px;border-radius:4px;color:var(--gold);font-size:11px}
+  .note{color:var(--soft);font-size:12px;border-top:1px solid var(--line);margin-top:16px;padding-top:10px}
+</style>
+</head>
+<body>
+<header>
+  <div class="k">THE TRUST ENGINE · CHEATSHEET</div>
+  <h1>Authority Assets</h1>
+  <div class="k" style="color:var(--soft)">document don't create · the failure is the asset · run the AI against it</div>
+</header>
+
+<h2>The rule</h2>
+<div class="row"><b>Don't write a guide — document real work.</b> Real case, real failure, real proof. The asset AI can't fake and competitors can't copy, because they didn't do the work. <span class="ex">F-07 documentation loop · P-15 deliver then document</span></div>
+
+<h2>The Hormozi test</h2>
+<div class="row">Could a basic AI prompt reproduce this? <b>Run the prompt</b> and list what your case has that it can't.</div>
+<div class="ba">
+  <div class="bad"><span class="c">AI FOIL</span><br>"ensure documentation is in order to avoid delays"</div>
+  <div class="good"><span class="v">THE ASSET</span><br>C-019/C-003/C-010 · the turnaround that wasn't real · 1 day to spare</div>
+</div>
+<div class="row"><span class="ex">If the AI's generic version covers everything you wrote = <span class="c">mush</span>. Add the un-fakeable detail.</span></div>
+
+<h2>Proof density (countable)</h2>
+<div class="row"><b>≥1 verifiable item per 200 words</b> — C-ID · named figure · dated fact · documented failure. Counted by regex, not by eye. Under it = too much prose.</div>
+
+<h2>The 5 beats</h2>
+<div class="row"><ol>
+  <li>The fear (real words)</li>
+  <li>What happened (dated, specific)</li>
+  <li>The proof (cited by C-ID)</li>
+  <li><b>The failure</b> — the surprise no AI can fake</li>
+  <li>The outcome (real, not hypothetical)</li>
+</ol></div>
+
+<h2>Never</h2>
+<div class="row"><span class="c">✗</span> invent the case · <span class="c">✗</span> let a claim float (cite or hedge) · <span class="c">✗</span> pad to length · <span class="c">✗</span> skip the failure</div>
+
+<h2>Real result (Dubai proof run)</h2>
+<div class="row">One documented case study ("The Titer That Nearly Cost a Dog Its Flight"): <b class="v">5.12</b> proof items per 200w (engine-counted, floor is 1) · Hormozi test <b class="v">PASS</b> (5 specifics the AI foil can't produce) · 1 documented failure (the lab turnaround that wasn't real).</div>
+
+<div class="note">The Trust Engine · Authority Asset Creation · cheatsheet · real output from the 2026-05-30 Dubai proof run. Document don't create · proof beside every claim · the failure is the asset · run the generic AI prompt against it and win.</div>
+</body>
+</html>

@@ -1,0 +1,108 @@
+# ---------------------------------------------------------------------------
+# PawRoute — first test site for the SEO+GEO engine.
+# Everything brand-specific lives here. Swap this folder for a different
+# business and the engine produces a different site with no code changes.
+# ---------------------------------------------------------------------------
+name: PawRoute
+lang: en
+url: https://pawroute.ae
+
+business:
+  name: PawRoute
+  mark: "🐾"
+  schema_type: LocalBusiness
+  tagline: Transparent pet relocation from the UAE.
+  description: >
+    Specialist pet relocation from the UAE. We handle documents, vaccines,
+    permits, IATA crates, cargo flights and customs clearance — with the price
+    shown upfront on every route.
+  area_served: ["United Arab Emirates", "United Kingdom", "Australia", "United States", "Germany", "France", "Canada", "India", "Singapore", "South Africa", "Netherlands"]
+  address:
+    addressLocality: Dubai
+    addressRegion: Dubai
+    addressCountry: AE
+  # GEO/structured-data enrichment (all honest, no invented data)
+  price_range: "AED 8,000–35,000+"
+  knows_about:
+    - "International pet relocation"
+    - "Pet import and export regulations"
+    - "IATA Live Animals Regulations"
+    - "MOCCAE pet export process"
+    - "Pet travel crates and cargo"
+  same_as: []   # add real social/profile URLs when live (LinkedIn, Instagram, Google Business)
+  # reviews: leave unset until real reviews exist. When you have them, add:
+  #   aggregate_rating: { rating: 4.9, count: 128 }
+  #   review_samples: [ { author: "...", rating: 5, text: "..." } ]
+  disclaimer: >
+    PawRoute coordinates regulated pet relocation. We never guarantee airline
+    delivery dates and never give veterinary medical advice. All regulatory
+    requirements are verified against official sources (MOCCAE, IATA, and each
+    destination authority).
+
+theme:
+  primary: "#1a365d"
+  primary_dark: "#11233f"
+  accent: "#d4a853"
+  accent_dark: "#b8893a"
+  surface: "#f6f8fb"
+  text: "#1f2733"
+  muted: "#5b6776"
+  success: "#1f8a5b"
+  font_body: "'Inter', system-ui, -apple-system, Segoe UI, Roboto, sans-serif"
+  font_head: "'Plus Jakarta Sans', 'Inter', system-ui, sans-serif"
+
+fonts:
+  google: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
+
+assets:
+  favicon: ""
+
+contact:
+  whatsapp: "971500000000"        # placeholder — replace with real WhatsApp number
+  telegram: "https://t.me/pawroute_bot"
+  email: "hello@pawroute.ae"
+  phone: "+971 50 000 0000"
+  cta_label: "Get a quote"
+  cta_url: "#quote"
+
+# Author / E-E-A-T. Default byline = the team (honest). To activate NAMED-AUTHOR E-E-A-T,
+# fill `person` with a REAL named specialist + verifiable credentials. Do NOT invent a person
+# or a certification — Google penalises fake authorship and it breaks our truth policy.
+author:
+  name: "the PawRoute relocation team"
+  role: "IPATA-process specialists, Dubai"
+  url: "/about/"
+  # person:                       # <- uncomment + fill with a REAL person to upgrade to named-author
+  #   name: "Real Specialist Name"
+  #   job_title: "Lead pet relocation specialist"
+  #   credentials: "IPATA-certified"
+  #   same_as: ["https://www.linkedin.com/in/REAL-PROFILE"]
+
+analytics:
+  ga_measurement_id: ""           # add GA4 ID at launch
+
+nav:
+  - { label: "Moving to Dubai", url: "/moving-to-dubai/" }
+  - { label: "Destinations", url: "/destinations/" }
+  - { label: "How it works", url: "/how-it-works/" }
+  - { label: "Guides", url: "/blog/" }
+  - { label: "Tools", url: "/tools/" }
+  - { label: "Pricing", url: "/pricing/" }
+  - { label: "FAQ", url: "/faq/" }
+
+footer:
+  legal: "PawRoute is a pet relocation coordinator. Regulations verified against official sources; subject to change."
+  columns:
+    - heading: "Popular routes"
+      links:
+        - { label: "Dubai to UK", url: "/destinations/uae-to-uk/" }
+        - { label: "Dubai to Australia", url: "/destinations/uae-to-australia/" }
+        - { label: "Dubai to USA", url: "/destinations/uae-to-usa/" }
+        - { label: "Dubai to India", url: "/destinations/uae-to-india/" }
+    - heading: "Company"
+      links:
+        - { label: "About us", url: "/about/" }
+        - { label: "How it works", url: "/how-it-works/" }
+        - { label: "Guides", url: "/blog/" }
+        - { label: "Tools", url: "/tools/" }
+        - { label: "FAQ", url: "/faq/" }

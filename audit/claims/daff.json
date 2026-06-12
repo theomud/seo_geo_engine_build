@@ -1,0 +1,10 @@
+{
+  "set": "uae-cost",
+  "_note": "Retry of the slow Australia DAFF source into the same evidence set.",
+  "claims": [
+    { "id": "au-rabies-180day", "authority": "Australia DAFF",
+      "claim": "Australia: rabies (RNAT) titre test then a 180-day wait before export",
+      "source_url": "https://www.agriculture.gov.au/biosecurity-trade/cats-dogs/step-by-step-guides/group-3-countries",
+      "expect": "180|rabies", "timeout": 70000 }
+  ]
+}

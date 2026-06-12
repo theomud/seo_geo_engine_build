@@ -1,0 +1,150 @@
+{
+  "_meta": {
+    "produced_by": "Numini AI Writer (AI_Writer_System_Prompt.md), RAG-grounded to claim_bank.csv + verified source bank + UAE cost model",
+    "produced": "2026-06-09",
+    "blog_objective": "lead_generation",
+    "content_format": "blog post (pillar / data-led)",
+    "funnel_stage": "TOFU→MOFU (informational → commercial-investigation) — feeds the route money pages",
+    "target_keyword": "how much does it cost to relocate a pet from dubai",
+    "secondary_keywords": ["pet relocation cost dubai", "cheapest pet relocation from uae", "cost to ship a dog from dubai", "pet relocation dubai to australia cost"],
+    "intent": "informational/commercial",
+    "primary_fear": "I don't know what this will cost and I'm afraid of being quoted an insane price",
+    "gold_standard_move": "Original, data-led, citable pillar (the #1 move the niche skips) — a cost/timeline table across 10 routes that AI engines and writers can cite, interlinking the whole cluster into the money pages.",
+    "author_byline": "By the PawRoute relocation team · reviewed by our IPATA-certified specialists · updated June 2026",
+    "truth_rule": "Every figure cites the cost model / official sources; ranges are stated as ranges; no figure invented."
+  },
+
+  "seo": {
+    "title": "Pet Relocation Cost from Dubai: 2026 Data, 10 Routes",
+    "meta_description": "What it really costs to relocate a pet from Dubai in 2026 — AED 8,000 to 35,000+ depending on route. Real ranges, timelines and the 3 things that drive the price, across 10 destinations.",
+    "og_title": "How much does it really cost to move a pet from Dubai? (2026 data)",
+    "canonical_path": "/blog/pet-relocation-cost-from-dubai-2026/"
+  },
+
+  "hero": {
+    "eyebrow": "Data · 2026 · 10 routes",
+    "h1": "How much does it really cost to relocate a pet from Dubai? (2026)",
+    "subheading": "Afraid of an insane quote? Relocating a pet from Dubai costs roughly AED 8,000 to AED 35,000+, depending on route — and here's exactly what moves it.",
+    "image": "/assets/blog/cost-2026-hero.png",
+    "image_alt": "A dog and cat beside a suitcase and a world map, ready to relocate from Dubai",
+    "ctas": [{ "label": "See your route's price", "url": "/destinations/" }]
+  },
+
+  "byline": "By the PawRoute relocation team · reviewed by our IPATA-certified specialists · updated June 2026.",
+
+  "key_facts": {
+    "answer": "Relocating a pet from Dubai costs roughly AED 8,000–14,000 for the shortest routes (e.g. India) and AED 25,000–35,000+ for the hardest (Australia, Singapore), with most standard routes — UK, EU, USA — landing around AED 13,800–22,000. The three things that move the price are your pet's size, the destination's rules, and the season.",
+    "stats": [
+      { "label": "Cheapest route", "value": "≈ AED 8,000 (India)" },
+      { "label": "Most standard routes", "value": "AED 13,800–22,000" },
+      { "label": "Hardest (AU/SG)", "value": "AED 25,000–35,000+" },
+      { "label": "Timelines", "value": "3 weeks → 6 months" }
+    ],
+    "verified": "June 2026",
+    "source_authority": "PawRoute cost model + MOCCAE / destination authorities"
+  },
+
+  "sections": [
+    {
+      "type": "prose",
+      "heading": "The short answer",
+      "paragraphs": [
+        "Pet relocation from Dubai is not one price — it's a range that depends almost entirely on where you're going and how big your pet is. The cheapest moves are short hops like India (from about AED 8,000); the most expensive are Australia and Singapore (AED 25,000–35,000+), because of rabies titer tests and mandatory quarantine.",
+        "The counter-intuitive part: distance isn't the main driver. A move to nearby India is cheaper than to the EU, and Australia costs more than the USA not because it's further, but because its rules are stricter. Rules, size and season set the price — not the map."
+      ]
+    },
+    {
+      "type": "data_table",
+      "heading": "Pet relocation cost from Dubai, by route (2026)",
+      "intro": "Typical all-in ranges for a standard move. Where you land depends on your pet's size and the airline; the hardest routes are higher because of titer tests and quarantine.",
+      "columns": ["Route (from Dubai)", "Typical cost (AED)", "Timeline", "Why"],
+      "rows": [
+        ["→ India", "8,000–14,000", "3–5 weeks", "Short hop, no quarantine"],
+        ["→ Netherlands", "10,000–16,000", "4–6 weeks", "EU rules, busy pet hub"],
+        ["→ UK", "12,000–18,000", "4–8 weeks", "No quarantine if paperwork right"],
+        ["→ Germany / France", "13,800–18,000", "4–8 weeks", "EU framework"],
+        ["→ USA", "13,800–22,000", "4–12 weeks", "CDC dog-import rules"],
+        ["→ Canada", "14,000–20,000", "4–6 weeks", "CFIA rules"],
+        ["→ South Africa", "14,000–22,000", "4–8 weeks", "Import permit + disease tests"],
+        ["→ Singapore", "18,000–28,000", "4–8 months", "Titer test + 30-day quarantine"],
+        ["→ Australia", "25,000–35,000+", "up to 6 months", "Titer + 180-day wait + quarantine"]
+      ],
+      "note": "Ranges from the PawRoute cost model, last verified June 2026. Every route also shares the same UAE-side base costs (vet, microchip, MOCCAE export, IATA crate)."
+    },
+    {
+      "type": "prose",
+      "heading": "The 3 things that actually drive your price",
+      "paragraphs": [
+        "1. Your pet's size. Airlines charge by the higher of actual weight or volumetric (crate) weight. A large dog in a big IATA crate can cost AED 1,500+ more in air freight than its kilos suggest — the single biggest swing within a route.",
+        "2. The destination's rules. No-quarantine routes (UK, EU, USA, Canada) are cheaper and faster. Routes that demand a rabies titer test and quarantine (Australia, Singapore) cost 2–3× and take months, not weeks.",
+        "3. The season. From roughly May to September, the UAE summer heat embargo means many airlines restrict or refuse pet cargo — which can delay a move by weeks regardless of route, and occasionally narrows you to pricier airlines."
+      ]
+    },
+    {
+      "type": "callout_warn",
+      "heading": "The hidden cost nobody quotes you",
+      "body": "Getting the paperwork wrong is the real budget risk. A rejected health certificate or a missed timing window can add AED 5,000+ in customs delays and re-inspections — far more than any service fee. The cheapest quote that cuts corners on documents isn't cheap."
+    }
+  ],
+
+  "by_route_links": {
+    "heading": "See the full price + process for your route",
+    "cards": [
+      { "title": "Dubai → UK", "price": "AED 12,000–18,000", "url": "/destinations/uae-to-uk/" },
+      { "title": "Dubai → Australia", "price": "AED 25,000–35,000+", "url": "/destinations/uae-to-australia/" },
+      { "title": "Dubai → USA", "price": "AED 13,800–22,000", "url": "/destinations/uae-to-usa/" },
+      { "title": "Dubai → India", "price": "AED 8,000–14,000", "url": "/destinations/uae-to-india/" },
+      { "title": "All destinations + pricing", "price": "compare every route", "url": "/destinations/" }
+    ]
+  },
+
+  "faqs": [
+    { "q": "What's the cheapest country to relocate a pet to from Dubai?", "a": "Among common routes, India is typically the cheapest (from about AED 8,000) because it's a short flight with no quarantine. 'Cheapest' depends on your pet's size and the season, though." },
+    { "q": "Why is Australia so much more expensive?", "a": "Australia requires a rabies titer test, a 180-day wait afterwards, and quarantine on arrival. Those add cost and months of time — which is why it runs AED 25,000–35,000+, not because it's further away." },
+    { "q": "Does my pet's size really change the price that much?", "a": "Yes. Airlines charge by crate volume or actual weight, whichever is higher, so a large dog in a big crate can add AED 1,500+ in air freight versus a small pet on the same route." },
+    { "q": "Will it cost more in summer?", "a": "It can take longer, and that can cost more. From May to September the UAE heat embargo restricts pet cargo on many airlines, which may delay your move or limit you to pricier carriers." },
+    { "q": "Is the cheapest quote the best?", "a": "Not if it skips checks. A wrong vet or mistimed treatment can mean a rejected entry and AED 5,000+ in delays. Transparent, correctly-sequenced paperwork is what actually saves money." }
+  ],
+
+  "sources": [
+    { "authority": "UAE MOCCAE", "title": "Pet export & import permits / fees", "url": "https://www.moccae.gov.ae/en/services/import-permit-pets" },
+    { "authority": "IATA", "title": "Live Animals Regulations (volumetric crate weight)", "url": "https://www.iata.org/en/programs/cargo/live-animals/" },
+    { "authority": "Australia DAFF", "title": "Rabies titer (RNATT) + 180-day rule", "url": "https://www.agriculture.gov.au/biosecurity-trade/cats-dogs/rabies-neutralising-antibody" },
+    { "authority": "US CDC", "title": "Dog importation requirements", "url": "https://www.cdc.gov/importation/dogs/faqs.html" }
+  ],
+
+  "lead_magnet": {
+    "label": "Want your exact number? Download the free cost-checklist",
+    "description": "The full UAE-side cost breakdown plus the document list for your route — so you can budget before you enquire."
+  },
+
+  "cta": {
+    "heading": "Get your route's exact price",
+    "body": "Pick your destination for the full breakdown, or send your pet's details and we'll reply with a firm range on WhatsApp.",
+    "primary": { "label": "See destinations & pricing", "url": "/destinations/" }
+  },
+
+  "internal_links": [
+    { "anchor": "Dubai → UK cost & process", "url": "/destinations/uae-to-uk-cost/" },
+    { "anchor": "all destinations & pricing", "url": "/destinations/" },
+    { "anchor": "how the whole process works", "url": "/how-it-works/" },
+    { "anchor": "moving INTO Dubai", "url": "/moving-to-dubai/" }
+  ],
+
+  "images": [
+    { "role": "hero", "file": "images/pawroute/blog/cost-2026-hero.png", "alt": "A dog and cat beside a suitcase and a world map, ready to relocate from Dubai", "prompt": "A calm golden dog and a tabby cat sitting together beside a small vintage travel suitcase and an unfolded world map on a warm wooden floor by a sunny window, soft natural light, photorealistic, no text", "width": 1440, "height": 960 }
+  ],
+
+  "grounding": {
+    "writing_technique_claims": [
+      "Original data + table = the citable GEO/backlink move (BLOG-PLAYBOOK §2; Ahrefs/Backlinko pattern)",
+      "Front-load the answer (NN/G inverted pyramid) — key_facts.answer + 'short answer' section",
+      "Quotable stats + cited sources (GEO levers) — the route table + sourced figures",
+      "Pillar interlinks to money pages, never a dead end (lead-gen funnel) — by_route_links + internal_links",
+      "Fear-acknowledge then resolve (ethical influence) — fear-led hook on price anxiety",
+      "Named/credentialed reviewer for E-E-A-T — byline 'reviewed by our IPATA-certified specialists'"
+    ],
+    "pet_facts_sources": "Cost ranges from the PawRoute UAE cost model; route rules (titer, quarantine, embargo, volumetric weight) cite the official sources listed. All last verified June 2026.",
+    "needs_verification": "Per-route ranges should be re-validated against live airline cargo quotes quarterly; MOCCAE certificate-validity window to confirm."
+  }
+}

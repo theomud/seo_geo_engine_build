@@ -1,0 +1,20 @@
+<section class="section {{ block.variant | default('') }}">
+  <div class="container">
+    {% if block.eyebrow %}<p class="eyebrow">{{ block.eyebrow }}</p>{% endif %}
+    {% if block.heading %}<h2>{{ block.heading }}</h2>{% endif %}
+    {% if block.body %}<p class="lead">{{ block.body }}</p>{% endif %}
+    <div class="table-wrap">
+      <table class="data">
+        {% if block.columns %}
+        <thead><tr>{% for c in block.columns %}<th>{{ c }}</th>{% endfor %}</tr></thead>
+        {% endif %}
+        <tbody>
+          {% for row in block.rows %}
+          <tr>{% for cell in row %}<td>{{ cell }}</td>{% endfor %}</tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    {% if block.note %}<p class="price-note">{{ block.note }}</p>{% endif %}
+  </div>
+</section>

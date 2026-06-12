@@ -1,0 +1,99 @@
+url: /blog/dubai-to-australia-pet-why-six-months/
+title: "Dubai to Australia Pet Move: Why It Takes ~6 Months"
+title_suffix: ""
+meta_description: "Moving a pet from Dubai to Australia takes around six months — because of the rabies titre test, the 180-day wait, and mandatory quarantine. Here's the timeline."
+og_title: "Why moving your pet to Australia takes six months (not weeks)"
+updated: "2026-06-09"
+layout: article
+
+blocks:
+  - type: article_header
+    category: "Route guide · Australia"
+    category_url: "/blog/"
+    h1: "Dubai to Australia: why it takes six months, not six weeks"
+    standfirst: "Australia is the strictest common route — and the cost is the calendar. Start late and your pet follows you months later."
+    author: "the PawRoute relocation team"
+    date: "9 June 2026"
+    reading_time: 7
+    reviewed: "reviewed by our IPATA-certified specialists"
+    image: /assets/blog/cost-2026-hero.png
+    image_alt: "A pet ready to travel from Dubai to Australia"
+
+  - type: prose
+    id: answer
+    heading: "The short answer"
+    paragraphs:
+      - "Moving a pet from Dubai to Australia takes <strong>around six months</strong> and costs roughly <strong>AED 25,000–35,000+</strong> — not because Australia is far, but because of three non-negotiable steps: a rabies titre (RNAT) test, a <strong>180-day wait</strong> after it, and <strong>mandatory government quarantine</strong> on arrival."
+      - "There is no shortcut. The single most important decision is <strong>starting the titre test as early as possible</strong>, because every other date depends on it."
+
+  - type: takeaways
+    heading: "Key takeaways"
+    items:
+      - "Plan for <strong>~6 months</strong> end to end — Australia is timeline-driven, not distance-driven."
+      - "A <strong>rabies titre (RNAT) test</strong> is required, followed by a <strong>180-day waiting period</strong>."
+      - "An <strong>import permit</strong> from Australian authorities is mandatory."
+      - "Pets enter <strong>government quarantine on arrival</strong> (the Mickleham facility)."
+      - "Typical cost: <strong>AED 25,000–35,000+</strong>. The titre test is the step to book first."
+
+  - type: toc
+    heading: "In this article"
+    items:
+      - { label: "The six-month timeline", anchor: "timeline" }
+      - { label: "Why it costs more", anchor: "cost" }
+      - { label: "What going wrong looks like", anchor: "story" }
+      - { label: "Frequently asked questions", anchor: "faq" }
+
+  - type: flow
+    id: timeline
+    heading: "The six-month timeline"
+    body: "Each step gates the next — which is why starting early is the whole game."
+    steps:
+      - "ISO microchip + rabies vaccination"
+      - "Rabies titre (RNAT) blood test"
+      - "180-day waiting period begins"
+      - "Apply for the Australian import permit"
+      - "Book the flight + government quarantine"
+      - "Arrival + minimum quarantine, then home"
+
+  - type: prose
+    id: cost
+    eyebrow: "Where the money goes"
+    heading: "Why Australia costs more"
+    paragraphs:
+      - "The higher cost isn't the airfare — it's the extra steps. The titre test, the import permit, and the mandatory quarantine stay all add fees that other routes simply don't have, which is why Australia runs AED 25,000–35,000+ versus AED 12,000–18,000 for the UK."
+      - "Because the 180-day clock can't be compressed, an attempt to rush usually just adds boarding costs while you wait. Time spent planning early is the cheapest part of the whole move."
+
+  - type: story
+    id: story
+    heading: "Why starting early is everything"
+    tag: "A common scenario"
+    lead: "Australia's cost is the calendar — and that catches people who treat it like the UK."
+    problem: "A family gets an Australian job offer and wants their dog over within six weeks."
+    mistake: "They book the rabies titre test late, assuming the rest can be rushed."
+    discovery: "The 180-day wait after the titre test can't be shortened, and quarantine must be booked on top."
+    result: "The dog can't travel with them; it follows months later, with extra boarding and a second set of flights."
+    lesson: "For Australia, start the titre test the day the move is even possible. Everything else waits on that one clock."
+
+  - type: faq
+    id: faq
+    heading: "Frequently asked questions"
+    items:
+      - { q: "Why is Australia so much more expensive?", a: "The rabies titre test, the import permit and the mandatory quarantine all add cost and months of time. It's the rules, not the distance, that make it AED 25,000–35,000+." }
+      - { q: "How long does the whole process take?", a: "Plan for around six months, driven by the 180-day waiting period after the rabies titre test plus quarantine on arrival." }
+      - { q: "Can I avoid the quarantine?", a: "No. Quarantine on arrival is a mandatory part of Australia's biosecurity system for cats and dogs." }
+      - { q: "What should I do first?", a: "Get the ISO microchip and rabies vaccination sorted, then book the titre test as early as possible — it starts the 180-day clock that everything else depends on." }
+
+  - type: sources
+    eyebrow: "Verified against the source"
+    heading: "Official sources"
+    items:
+      - { authority: "Australia DAFF", title: "Rabies (RNAT) test + 180-day rule", url: "https://www.agriculture.gov.au/biosecurity-trade/cats-dogs/rabies-neutralising-antibody", note: "Titre + waiting period" }
+      - { authority: "Australia DAFF", title: "Step-by-step: bringing cats and dogs", url: "https://www.agriculture.gov.au/biosecurity-trade/cats-dogs", note: "Permit + quarantine" }
+      - { authority: "UAE MOCCAE", title: "Pet export permits", url: "https://www.moccae.gov.ae/en/services/import-permit-pets", note: "UAE export side" }
+
+  - type: cta
+    heading: "Planning a Dubai → Australia move?"
+    body: "The earlier we start the titre clock, the smoother — and cheaper — it is. We map the full six-month timeline to your dates so nothing slips."
+    ctas:
+      - { label: "See Dubai → Australia cost & process", url: "/destinations/uae-to-australia/", style: "btn-gold" }
+      - { label: "Compare all destinations", url: "/destinations/", style: "btn-ghost" }

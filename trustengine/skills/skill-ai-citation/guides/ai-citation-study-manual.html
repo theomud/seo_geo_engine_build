@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>AI Citation &amp; GEO — Study Manual | The Trust Engine</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#14110d;--panel:#1d1812;--ink:#f3ece0;--soft:#b9ab95;--line:#352c20;--gold:#d8a84b;--red:#e06a4e;--green:#7bbf6a;--accent:#c98a3a}
+  *{box-sizing:border-box}html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:'Crimson Pro',Georgia,serif;font-size:19px;line-height:1.6}
+  #bar{position:fixed;top:0;left:0;height:4px;width:0;background:linear-gradient(90deg,var(--gold),var(--accent));z-index:100;transition:width .1s}
+  .layout{display:flex;max-width:1180px;margin:0 auto}
+  nav.side{position:sticky;top:0;height:100vh;width:250px;flex-shrink:0;padding:30px 20px;background:var(--panel);border-right:1px solid var(--line);overflow-y:auto;font-family:'JetBrains Mono',monospace}
+  nav.side .brand{font-family:'Bebas Neue',sans-serif;letter-spacing:.08em;color:var(--gold);font-size:22px}
+  nav.side a{display:block;color:var(--soft);text-decoration:none;font-size:12px;padding:7px 9px;border-radius:6px;margin-bottom:2px}
+  nav.side a:hover{background:#251e16;color:var(--ink)}nav.side a.active{background:var(--gold);color:#14110d;font-weight:700}
+  main{flex:1;min-width:0;padding:46px 52px 120px;max-width:820px}
+  h1{font-family:'Bebas Neue',sans-serif;font-size:52px;line-height:1;margin:0 0 6px}
+  h2{font-family:'Bebas Neue',sans-serif;font-size:33px;letter-spacing:.02em;margin:50px 0 12px;color:var(--gold)}
+  h3{font-size:21px;margin:24px 0 6px;color:var(--accent)}
+  .lead{font-size:22px;color:var(--soft)}
+  .badge{font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:700;letter-spacing:.05em;color:var(--gold);text-transform:uppercase}
+  .ex{background:#251e16;border-radius:8px;padding:10px 14px;margin:8px 0;font-style:italic;color:var(--soft)}
+  .cite{font-family:'JetBrains Mono',monospace;font-size:12px;padding:1px 7px;border-radius:5px;background:#251e16}
+  .v{color:var(--green);font-weight:700}.u{color:var(--gold);font-weight:700}.c{color:var(--red);font-weight:700}
+  table{width:100%;border-collapse:collapse;margin:14px 0;font-family:'JetBrains Mono',monospace;font-size:13px;table-layout:fixed}
+  th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top;word-break:break-word;overflow-wrap:anywhere}
+  th{color:var(--gold);text-transform:uppercase;font-size:11px}
+  pre{background:#251e16;border:1px solid var(--line);border-radius:8px;padding:12px 14px;overflow-x:auto;font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--soft)}
+  .warn{background:#2a1a14;border:1px solid #4a2c20;border-radius:10px;padding:13px 17px;margin:14px 0}
+  .good{background:#1a2417;border:1px solid #2f4327;border-radius:10px;padding:13px 17px;margin:14px 0}
+  .ba{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:10px 0}
+  .ba>div{border-radius:8px;padding:10px 13px;font-size:15px}
+  .bad{background:#2a1a14;border:1px solid #4a2c20}.goodc{background:#1a2417;border:1px solid #2f4327}
+  code{font-family:'JetBrains Mono',monospace;background:#251e16;padding:2px 6px;border-radius:5px;font-size:.82em;color:var(--gold);word-break:break-word}
+  footer{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--soft);border-top:1px solid var(--line);margin-top:60px;padding-top:18px}
+  @media(max-width:880px){nav.side{display:none}main{padding:28px 20px 80px;font-size:18px}h1{font-size:40px}.ba{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+<div class="layout">
+  <nav class="side">
+    <div class="brand">AI Citation</div>
+    <div style="font-family:'Crimson Pro',serif;color:var(--soft);font-size:13px;margin:4px 0 16px">Be cited, not just ranked · 21/25</div>
+    <a href="#why" class="active">Why this skill</a>
+    <a href="#geo">Citation, not ranking</a>
+    <a href="#trifecta">The 40% trifecta</a>
+    <a href="#answer">Direct-answer-first</a>
+    <a href="#entity">The entity home</a>
+    <a href="#pages">The optimised pages</a>
+    <a href="#monitor">Citation monitoring</a>
+    <a href="#verify">Keeping it honest</a>
+  </nav>
+  <main>
+    <span class="badge">AI Citation &amp; GEO · 21/25</span>
+    <h1>AI Citation &amp; GEO</h1>
+    <p class="lead">Make the page the AI quotes. Answer first, a statistic and a source in every claim, schema the machine can lift, and one entity it can trust. Ranking #1 is worth nothing if the AI cites the page above you.</p>
+
+    <section id="why">
+      <h2>Why this skill</h2>
+      <p>Half your buyers no longer click ten blue links — they ask ChatGPT or Perplexity, or read Google's AI Overview, and trust the synthesised answer. That answer cites a few sources and drops the rest. If the engine lifts your facts but credits a competitor — or no one — you did the work and lost the visitor before they appeared.</p>
+      <div class="ex">"Every website says something different — I don't know who to trust." — the researcher who now asks an AI instead, and reads whatever it cites.</div>
+      <p>This skill makes a page <b>citeable</b>, not just rank-able. And it's research-backed: the peer-reviewed GEO study (Aggarwal et al., KDD 2024) found content with <b class="u">statistics + source citations + structured formatting</b> is cited up to <b class="u">40% more often</b> by generative engines.</p>
+    </section>
+
+    <section id="geo">
+      <h2>Citation, not ranking</h2>
+      <p>Generative engines don't rank ten links — they assemble one answer and attribute it to a handful of sources. <span class="cite">M-22</span> So the unit of victory changes from <i>position</i> to <i>citation</i>.</p>
+      <div class="ba">
+        <div class="bad"><b class="c">Indexed (old goal)</b><br>Page ranks #1 → the AI summarises its facts → cites the brand on page two instead → your visitor never arrives.</div>
+        <div class="goodc"><b class="v">Cited (new goal)</b><br>Page leads with a quotable, sourced answer → the AI lifts it and names you → you're the answer, not a link below it.</div>
+      </div>
+    </section>
+
+    <section id="trifecta">
+      <h2>The 40% trifecta</h2>
+      <p>The KDD 2024 study measured what actually gets cited. Three attributes, together, lift citation up to 40%: <b>statistics + source citations + structured formatting</b>. <span class="cite">P-18</span> This skill puts all three on every page — a named figure, a verified C-ID, and FAQ schema.</p>
+      <div class="good"><b>The counter-intuitive part:</b> an <b class="u">honest "no official figure" out-cites a confident number</b>. The titer-cost answer leads with "there is no official published price (C-001); the community reports 700–1,300 AED" — an engine prefers a source that discloses what is and isn't official over one asserting a number it can't support. Honesty is a citation advantage, not a weakness.</div>
+    </section>
+
+    <section id="answer">
+      <h2>Direct-answer-first</h2>
+      <p>An engine lifts the opening. So every page answers its target query in the <b>first 100 words</b>, in sentence one, with a statistic and a cited source inside. <span class="cite">P-17</span> Bury the answer and the engine quotes whoever answered first.</p>
+      <div class="ba">
+        <div class="bad"><b class="c">Buried</b><br>"Relocating a pet is an emotional journey. In this guide we'll explore everything you need to know…" (no answer for 400 words)</div>
+        <div class="goodc"><b class="v">Answer-first</b><br>"A pet is held at Dubai airport only when its paperwork is incomplete. Release fee 500 AED/dog (C-003); permit valid 90 days (C-010)." (answer + stat + cite, sentence one)</div>
+      </div>
+    </section>
+
+    <section id="entity">
+      <h2>The entity home</h2>
+      <p>An engine won't cite an entity it can't identify. So you designate <b>one canonical Entity Home</b> — a dedicated page, not the scattered homepage <span class="cite">P-29</span> — with one name and description used <i>identically everywhere</i> <span class="cite">P-30</span>, tied to verified profiles via a <code>sameAs</code> array <span class="cite">F-28</span>, in Organization/LocalBusiness schema. <span class="cite">M-23</span></p>
+      <div class="ba">
+        <div class="bad"><b class="c">Fragmented</b><br>"PetMove", "Pet Move Dubai", "PMD Relocation" across pages → the engines can't consolidate → no entity → no citation.</div>
+        <div class="goodc"><b class="v">One entity home</b><br>One exact name + one description + sameAs profiles + LocalBusiness schema → the engines corroborate one trusted entity.</div>
+      </div>
+    </section>
+
+    <section id="pages">
+      <h2>The optimised pages</h2>
+      <p>The real output (<code>data/ai-citation-optimisation-output.md</code>) — the four universal HIGH-priority gap pages (confiscation, titer cost, which airport, summer embargo), each given a first-100-words answer box, FAQ schema (5 Q&A), and an Entity-Home link. The on-page GEO gates were checked across all four:</p>
+      <pre>FUNCTIONAL QUALITY THRESHOLD (4 on-page GEO gates, all 4 pages)
+G1 · direct-answer box in first 100 words (answers the query): 4/4  PASS
+G2 · >=1 statistic AND >=1 verified C-ID inside the answer:    4/4  PASS
+G3 · valid FAQPage schema, >=5 Q&A:                            4/4  PASS  (20 Q&A)
+G4 · link to the single Entity Home, consistent naming:        4/4  PASS
+C-IDs used: C-019, C-010, C-007, C-003, C-022, C-015, C-001 (hedged)
+LIVE CITATION: NOT YET CONFIRMED -> requires publication (the monitor's job)</pre>
+      <div class="warn"><b>The gap is wide open:</b> the content-gap matrix shows <b>9/9 scored competitors</b> omit these exact answers. The engines currently answer these questions generically or from no clear source — which is precisely the citation opportunity these four pages are built to capture.</div>
+    </section>
+
+    <section id="monitor">
+      <h2>Citation monitoring</h2>
+      <p>Citeability is verified after publication, weekly: run <b>10 target queries</b> across ChatGPT, Perplexity, Google AI Overview and Gemini; record who's cited; act on what you lose. <span class="cite">P-48</span> <span class="cite">F-21</span></p>
+      <pre>weekly: for each of 10 target queries, for each engine:
+          record  cited(our page)?  + which source was cited instead
+action loop: a query we lose where our answer is stronger
+          -> strengthen the answer box + FAQ -> re-submit -> re-check</pre>
+      <p>Record a <b>pre-publication baseline</b> first — for this niche it's generic/uncited (the gap), which is the opportunity the loop then converts into citations.</p>
+    </section>
+
+    <section id="verify">
+      <h2>Keeping it honest</h2>
+      <p>AI-citation work fails in ways that look like success. Four defences catch them:</p>
+      <ul>
+        <li><b>Answer-first</b> — read only the first 100 words; if the query isn't answered there, the engine lifts a competitor.</li>
+        <li><b>Stat + source in the answer</b> — every figure carries a C-ID or an honest hedge; a floating number won't be trusted to cite.</li>
+        <li><b>Valid schema, ≥5 Q&A</b> — invalid FAQPage JSON-LD is ignored by the engine; validate it (Rich Results Test, <span class="cite">P-47</span>).</li>
+        <li><b>One consistent entity</b> — the exact same name everywhere, or the entity fragments and the citation goes elsewhere.</li>
+      </ul>
+      <p>A buried answer, a floating figure, invalid schema, or an inconsistently-named entity is a <b>hard fail</b> for that page — and the live citation only counts once the page is published and the monitor confirms it.</p>
+    </section>
+
+    <footer>The Trust Engine · AI Citation &amp; GEO · Study Manual · real output from the 2026-06-01 Dubai proof run (4 gap pages optimised; 4/4 on all four GEO gates; 20 FAQ Q&A; C-019/C-010/C-007/C-003/C-022/C-015/C-001). Optimise for citation not ranking · answer first · stats + sources + structure · one entity · monitor weekly.</footer>
+  </main>
+</div>
+<script>
+  const bar=document.getElementById('bar');
+  addEventListener('scroll',()=>{const h=document.documentElement;bar.style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%';});
+  const links=[...document.querySelectorAll('nav.side a')];const secs=links.map(a=>document.querySelector(a.getAttribute('href')));
+  addEventListener('scroll',()=>{let i=0;for(let k=0;k<secs.length;k++){if(secs[k]&&secs[k].getBoundingClientRect().top<140)i=k;}links.forEach(l=>l.classList.remove('active'));if(links[i])links[i].classList.add('active');});
+</script>
+</body>
+</html>

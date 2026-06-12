@@ -1,0 +1,162 @@
+{
+  "_meta": {
+    "content_format": "blog",
+    "direction": "outbound (Dubai -> destination)",
+    "target_keyword": "Dubai to the EU Pet Move",
+    "note": "De-branded content asset for site build. Render images from the images/ folder."
+  },
+  "seo": {
+    "title": "Dubai to the EU Pet Move: Health Certificate & Titre Test",
+    "meta_description": "Bringing a pet into the EU from Dubai needs a microchip, rabies vaccination and an EU animal health certificate — and possibly a rabies titre test. Here's the framework.",
+    "og_title": "The EU pet rules from Dubai — and the titre-test question",
+    "canonical_path": "/blog/dubai-to-eu-pet-rules/"
+  },
+  "hero": {
+    "eyebrow": "Route guide · EU (Germany, France, Netherlands)",
+    "h1": "Dubai to the EU: the health certificate and the titre-test question",
+    "standfirst": "Bringing a pet into the EU from Dubai needs a microchip, a rabies vaccination and an EU animal health certificate.",
+    "image": "images/dubai-to-eu-hero.png",
+    "image_alt": "A pet ready to travel from Dubai to the EU"
+  },
+  "byline": "By our relocation specialists · 9 June 2026 · reviewed by our IPATA-certified specialists",
+  "key_facts": {},
+  "takeaways": [
+    "Core requirements: <strong>ISO microchip</strong>, <strong>rabies vaccine ≥21 days</strong> before travel, <strong>EU animal health certificate</strong>.",
+    "The EU certificate is issued close to travel and is <strong>time-limited</strong> for entry and onward movement.",
+    "A <strong>rabies titre test</strong> applies for non-listed origins and adds a waiting period — confirm whether it applies to the UAE.",
+    "No quarantine when fully compliant; the risk is paperwork and timing.",
+    "Typical cost Dubai → EU: roughly <strong>AED 10,000–18,000</strong>, about 4–8 weeks (longer if a titre test is required)."
+  ],
+  "sections": [
+    {
+      "type": "prose",
+      "heading": "The short answer",
+      "paragraphs": [
+        "To bring a cat or dog into the EU from Dubai you need an <strong>ISO microchip</strong>, a <strong>rabies vaccination given at least 21 days before travel</strong>, and an <strong>EU animal health certificate</strong> issued close to your travel date by an authorised vet.",
+        "The one thing that changes the timeline is the <strong>rabies titre (antibody) test</strong>: the EU requires it for pets arriving from <em>non-listed</em> third countries, with a waiting period after the blood draw. Whether it applies to you depends on the UAE's current EU listing status — so confirm that first, because it can add months."
+      ]
+    },
+    {
+      "type": "prose",
+      "eyebrow": "What's the same everywhere in the EU",
+      "heading": "The EU framework",
+      "paragraphs": [
+        "The EU runs a single framework for pet entry, so Germany, France and the Netherlands share the same backbone: microchip, valid rabies vaccination, and an EU animal health certificate completed by an authorised vet shortly before travel.",
+        "Because that certificate has a tight validity window for entry, it's one of the last steps — planned backwards from your flight, not done early."
+      ]
+    },
+    {
+      "type": "prose",
+      "eyebrow": "The part that changes the timeline",
+      "heading": "The titre-test variable",
+      "paragraphs": [
+        "For pets coming from countries the EU classifies as <em>non-listed</em>, a rabies antibody (titre) test is required. The blood sample must be taken <strong>at least 30 days after the rabies vaccination</strong>, and <strong>at least 90 days (three months) before</strong> the EU animal health certificate is issued — so for a non-listed origin it adds roughly three months. For <em>listed</em> origins the test isn't needed at all.",
+        "The EU animal health certificate itself is <strong>valid for 10 days to enter the EU</strong>, then up to <strong>6 months for onward travel</strong> within the EU. The one fact that decides which path you're on — listed or non-listed — is the UAE's classification in Annex I to the EU's pet-movement regulation, so confirm that with the official source below before you commit to dates."
+      ]
+    }
+  ],
+  "story": {
+    "tag": "A common scenario",
+    "lead": "On the EU route, the trap is the certificate's tight validity window.",
+    "problem": "An owner gets the EU animal health certificate done weeks ahead, to feel organised.",
+    "mistake": "By the travel date the certificate's entry-validity window has passed.",
+    "discovery": "The certificate has to be issued close to travel — too early is as bad as missing it.",
+    "result": "A repeat vet visit and a re-issued certificate, plus a rushed re-book around the new dates.",
+    "lesson": "On the EU route, sequence beats speed: confirm the titre question first, then time the certificate to the flight — last, not first."
+  },
+  "faqs": [
+    {
+      "q": "Do I need a rabies titre test for the EU from Dubai?",
+      "a": "It depends on the UAE's EU listing. For non-listed third countries the EU requires a titre test — sample taken at least 30 days after vaccination and at least 90 days before the health certificate, adding about three months. For listed origins it isn't needed. Confirm the UAE's current status (Annex I) before booking — it's the biggest timeline variable."
+    },
+    {
+      "q": "Is the process the same for Germany, France and the Netherlands?",
+      "a": "Largely yes — they share the EU framework (microchip, rabies, EU animal health certificate). Local entry-point details can differ, so we confirm per country."
+    },
+    {
+      "q": "Will my pet be quarantined in the EU?",
+      "a": "No quarantine when you're fully compliant. The real risk is a documentation or certificate-timing error."
+    },
+    {
+      "q": "How much does Dubai → EU cost?",
+      "a": "Typically AED 10,000–18,000 depending on your pet's size and the country, and longer/dearer if a titre test is required."
+    }
+  ],
+  "sources": [
+    {
+      "authority": "European Commission",
+      "title": "Bringing a pet to the EU from a non-EU country",
+      "url": "https://food.ec.europa.eu/animals/live-animal-movements/dogs-cats-and-ferrets/bringing-pet-eu-non-eu-country_en",
+      "note": "EU framework + titre rule"
+    },
+    {
+      "authority": "UAE MOCCAE",
+      "title": "Pet export permits",
+      "url": "https://www.moccae.gov.ae/en/services/import-permit-pets",
+      "note": "UAE export side"
+    },
+    {
+      "authority": "IATA",
+      "title": "Live Animals Regulations",
+      "url": "https://www.iata.org/en/programs/cargo/live-animals/",
+      "note": "Crate + cargo standards"
+    }
+  ],
+  "cta": {
+    "heading": "Planning a Dubai → EU move?",
+    "body": "We confirm the titre question for your destination, time the EU certificate to your flight, and handle the export side — so you can plan with confidence and get your pet home safely, no surprises.",
+    "ctas": [
+      {
+        "label": "See Dubai → Germany cost & process",
+        "url": "/destinations/uae-to-germany/",
+        "style": "btn-gold"
+      },
+      {
+        "label": "Compare all destinations",
+        "url": "/destinations/",
+        "style": "btn-ghost"
+      }
+    ],
+    "help_cta": "Not ready to enquire? Download the free pet-relocation checklist — every required document for your route, in order, so nothing is missed."
+  },
+  "images": [
+    {
+      "role": "hero",
+      "file": "images/dubai-to-eu-hero.png",
+      "alt": "A pet ready to travel from Dubai to the EU",
+      "status": "rendered (low-res)"
+    }
+  ],
+  "method": {
+    "structure_logic": "2026 article anatomy: headline (curiosity/result) -> answer-first opening (the liftable answer in the first lines) -> key takeaways -> table of contents -> scannable H2/H3 -> a visual (data table or flow) -> original insight or a story -> FAQ -> official sources -> one help-first CTA. Why: web readers scan ~20-28% of words (Nielsen Norman Group), so the answer is front-loaded; a story is remembered where bare facts are forgotten; one page = one job + a single CTA converts. These choices recur across every source in our research (see SOURCING-METHOD.md).",
+    "geo_seo_rationale": "What we believe helps. GEO (being cited by AI answer engines): answer-first self-contained chunks, cited statistics, official-source citations, consistent entities, FAQ schema -- and citation is decoupled from ranking (~66% of AI-Overview citations come from outside the top-20), so strong content can be cited even before it ranks. SEO: intent-matched title+H1, topical depth, internal links into the money page, visible freshness dates, structured data (Article/FAQ/Breadcrumb/LocalBusiness). HONEST CAVEAT: these are evidence-based best practices, NOT guaranteed results -- ranking also needs off-page authority/backlinks/indexing not built here, and GEO citation is plausible but unproven until measured with a live AI-citation test.",
+    "how_and_why_we_audit": "Each page is scored by a 5-lens auditor -- Website, SEO, GEO, Lead-gen/Trust, Quality -- which together cover the 7-category QA (Helpful, Human, Original, Trustworthy, SEO, GEO, Conversion). Why this way: (1) page-type profiles judge a page against ITS job (a reassurance page is weighted differently from a money page); (2) every check carries an evidence tier (T1 sworn -> T6 practitioner) and a verified-vs-heuristic tag; (3) not-measurable checks are excluded, never zeroed (a coverage->confidence label); (4) risk caps catch keyword-stuffing, thin content, fake schema, no-CTA. The score is an on-page QUALITY PROXY, not a measured ranking/citation outcome.",
+    "what_we_are_sure_of": "100% sure = a fact screenshot-verified against its official source as of a date (see sourcing.verified_100pct) + that the method was applied. NOT sure = that it ranks or gets cited (unproven until the site is live, indexed and measured).",
+    "how_we_verify": "Every factual/regulatory claim is verified against an OFFICIAL source only -- government bodies, recognised standards bodies (IATA), or the operator's own site (e.g. the airline). Never blogs, forums, competitors, or AI. Each verified claim is captured as a full-page SCREENSHOT and logged in a regulatory register with: source, URL, date verified, version, reviewer, and a re-verify-by date (because regulations change). Anything we could not confirm from an official source is HEDGED or flagged 'confirm with [authority]', never asserted (see sourcing.stated_but_unverified). Tooling: a Playwright screenshot verifier with an official-domain allowlist + the regulatory register. Facts are kept separate from advice ('the authority requires X' vs 'we recommend X'). AI never makes the final call -- a human reviews and signs off before publish."
+  },
+  "sourcing": {
+    "how_we_derived_this": "Built from recurring patterns across our research corpus (SOURCING-METHOD.md): answer the fear not the keyword, front-load the answer, official sources only, a route-specific story, single help-first CTA into the money page.",
+    "verified_100pct": [
+      {
+        "fact": "Where this route's facts were screenshot-verified, the evidence is in audit/evidence/* and the regulatory register (e.g. UK tapeworm + XL Bully ban, US CDC dog rules, EU titre timing, IATA, Emirates travel methods).",
+        "source": "see regulatory register",
+        "as_of": "2026-06-09"
+      }
+    ],
+    "stated_but_unverified": [
+      {
+        "claim": "Route-specific cost ranges are a model estimate (stated as ranges)",
+        "action": "Re-validate quarterly vs live airline cargo quotes"
+      },
+      {
+        "claim": "Any specific not screenshot-verified (e.g. Australia DAFF, South Africa DALRRD, India AQCS detail)",
+        "action": "Confirm + screenshot the official source before publish"
+      }
+    ],
+    "confidence": "100% sure of: the screenshot-verified facts (regulatory register) + that the method was applied. NOT sure of: ranking/citation -- unproven until the site is live, indexed and measured."
+  },
+  "lead_magnet": {
+    "label": "Free pet-relocation checklist",
+    "description": "Every document + step for your route, in order, verified against official sources."
+  }
+}

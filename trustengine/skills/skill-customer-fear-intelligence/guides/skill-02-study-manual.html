@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skill 01 · File 02 — Intent Classification | The Trust Engine</title>
+<style>
+  :root{
+    --paper:#faf6ef; --paper-2:#f3ecdf; --ink:#2b2620; --ink-soft:#5c5346;
+    --line:#e3d8c4; --accent:#b4582f; --accent-2:#c98a3a; --accent-soft:#f6e7d6;
+    --good:#5b7a4f; --warn:#b08400;
+    --serif:Georgia,"Iowan Old Style","Times New Roman",serif;
+    --sans:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--serif);line-height:1.65;font-size:18px}
+  /* scroll progress bar */
+  #progress{position:fixed;top:0;left:0;height:4px;width:0;background:linear-gradient(90deg,var(--accent),var(--accent-2));z-index:100;transition:width .1s ease-out}
+  .layout{display:flex;max-width:1180px;margin:0 auto}
+  /* sidebar */
+  nav.side{position:sticky;top:0;align-self:flex-start;height:100vh;width:260px;padding:34px 22px;background:var(--paper-2);border-right:1px solid var(--line);overflow-y:auto;font-family:var(--sans)}
+  nav.side .brand{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:700}
+  nav.side h1{font-size:19px;margin:.4em 0 1.2em;font-family:var(--serif)}
+  nav.side a{display:block;color:var(--ink-soft);text-decoration:none;font-size:14px;padding:7px 10px;border-radius:7px;margin-bottom:2px}
+  nav.side a:hover{background:var(--accent-soft);color:var(--ink)}
+  nav.side a.active{background:var(--accent);color:#fff}
+  /* content */
+  main{flex:1;padding:54px 56px 120px;max-width:820px}
+  main header.doc{border-bottom:3px solid var(--accent);padding-bottom:22px;margin-bottom:34px}
+  main header.doc .kicker{font-family:var(--sans);font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);font-weight:700}
+  h2{font-size:28px;margin:48px 0 14px;padding-top:10px}
+  h3{font-size:21px;margin:30px 0 8px;color:var(--accent)}
+  p{margin:.6em 0}
+  .lead{font-size:20px;color:var(--ink-soft)}
+  .card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:20px 24px;margin:18px 0;box-shadow:0 1px 0 rgba(0,0,0,.02)}
+  .intent-card{border-left:5px solid var(--accent)}
+  .intent-card .tag{display:inline-block;font-family:var(--sans);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;background:var(--accent-soft);color:var(--accent);padding:3px 10px;border-radius:20px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:.4em 0}
+  .grid2 div{font-size:15px;font-family:var(--sans)}
+  .grid2 b{color:var(--ink)}
+  code,.mono{font-family:"SFMono-Regular",Consolas,monospace;background:var(--paper-2);padding:2px 6px;border-radius:5px;font-size:.86em}
+  table{width:100%;border-collapse:collapse;margin:18px 0;font-family:var(--sans);font-size:14px}
+  th,td{text-align:left;padding:9px 11px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{background:var(--paper-2);font-size:12px;text-transform:uppercase;letter-spacing:.05em;color:var(--ink-soft)}
+  .steps{counter-reset:s;list-style:none;padding:0}
+  .steps li{counter-increment:s;position:relative;padding:10px 0 10px 52px;border-bottom:1px dashed var(--line)}
+  .steps li::before{content:"Q"counter(s);position:absolute;left:0;top:8px;width:38px;height:38px;background:var(--accent);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--sans);font-weight:700;font-size:14px}
+  .callout{background:var(--accent-soft);border-radius:12px;padding:18px 22px;margin:20px 0;border:1px solid #ecd8bf}
+  .callout.warn{background:#fbf3d6;border-color:#f0e2af}
+  /* quiz */
+  .quiz{background:#fff;border:2px solid var(--accent);border-radius:14px;padding:24px;margin:24px 0}
+  .quiz .kw{font-size:24px;font-weight:700;margin:6px 0 16px}
+  .quiz .opts{display:grid;grid-template-columns:1fr 1fr;gap:10px;font-family:var(--sans)}
+  .quiz button.opt{padding:12px;border:1px solid var(--line);background:var(--paper);border-radius:9px;cursor:pointer;font-size:14px;font-weight:600;color:var(--ink)}
+  .quiz button.opt:hover{border-color:var(--accent)}
+  .quiz button.opt.correct{background:var(--good);color:#fff;border-color:var(--good)}
+  .quiz button.opt.wrong{background:#c0492f;color:#fff;border-color:#c0492f}
+  .quiz .explain{margin-top:14px;font-family:var(--sans);font-size:14px;background:var(--paper-2);border-radius:9px;padding:12px 14px;display:none}
+  .quiz .controls{margin-top:16px;font-family:var(--sans)}
+  .quiz .controls button{background:var(--accent);color:#fff;border:0;padding:10px 18px;border-radius:9px;cursor:pointer;font-weight:600}
+  .quiz .score{font-family:var(--sans);font-size:14px;color:var(--ink-soft);margin-left:12px}
+  footer{font-family:var(--sans);font-size:13px;color:var(--ink-soft);border-top:1px solid var(--line);margin-top:60px;padding-top:20px}
+  @media(max-width:880px){nav.side{display:none}main{padding:30px 22px 80px}.grid2,.quiz .opts{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div id="progress"></div>
+<div class="layout">
+  <nav class="side">
+    <div class="brand">The Trust Engine</div>
+    <h1>File 02 · Intent Classification</h1>
+    <a href="#purpose">Why intent matters</a>
+    <a href="#types">The 8 intent types</a>
+    <a href="#decision">The Q1–Q7 decision</a>
+    <a href="#edge">Edge cases</a>
+    <a href="#automate">Automate 80% with Claude</a>
+    <a href="#live">Live data examples</a>
+    <a href="#quiz">Test yourself</a>
+  </nav>
+  <main>
+    <header class="doc">
+      <div class="kicker">Skill 01 · File 02</div>
+      <h2 style="margin-top:6px">Intent Classification</h2>
+      <p class="lead">Assigning the 8 intent types to every validated keyword — Column J of the spreadsheet.</p>
+    </header>
+
+    <section id="purpose">
+      <h2>Why intent matters</h2>
+      <p>Every keyword in Column A represents a person at a specific moment in their journey — researching, comparing, panicking, ready to buy. Intent classification records that moment so you build the <em>right page</em> for the right keyword.</p>
+      <p>Get it wrong and you build a polished service page for someone who only wanted to understand the process — they bounce because they were never ready to buy. Intent fills <b>Column J</b>, and it must be done <b>before</b> fear mapping (File 03), because the fear statement depends on knowing what stage the person is in.</p>
+    </section>
+
+    <section id="types">
+      <h2>The 8 intent types</h2>
+      <p>Not the standard four Broder buckets — these are adapted for high-stakes, regulated service markets where the usual taxonomy loses the nuance that converts.</p>
+
+      <div class="card intent-card"><span class="tag">1 · Informational</span>
+        <p>Wants to understand something. Not ready to buy — needs education.</p>
+        <div class="grid2">
+          <div><b>Signals:</b> how, what, why, guide, checklist, steps, requirements, rules</div>
+          <div><b>Dubai example:</b> "how to move a dog to Dubai"</div>
+          <div><b>Page type:</b> comprehensive guide — steps, timelines, document list</div>
+          <div><b>CTA:</b> download checklist / subscribe — <em>not</em> "get a quote" yet</div>
+        </div>
+      </div>
+
+      <div class="card intent-card"><span class="tag">2 · Problem</span>
+        <p>Has a concrete obstacle to fix — something went wrong, or a specific task must be done. Not general learning (Informational), not yet an emotional worry (Fear).</p>
+        <div class="grid2">
+          <div><b>Signals:</b> failed, rejected, not accepted, "what to do if", "how to fix", next steps</div>
+          <div><b>Dubai example:</b> "dog failed rabies titer test what next"</div>
+          <div><b>Page type:</b> case study / problem-solution guide — document how the exact problem was solved</div>
+          <div><b>CTA:</b> see how we solved this / talk to someone who has fixed this</div>
+        </div>
+      </div>
+
+      <div class="card intent-card"><span class="tag">3 · Fear</span>
+        <p>Has a specific worry that blocks progress. The <b>highest-converting</b> intent in regulated markets.</p>
+        <div class="grid2">
+          <div><b>Signals:</b> safe, risk, can, will, what if, denied, quarantine, confiscated</div>
+          <div><b>Dubai example:</b> "is it safe to fly a dog to Dubai"</div>
+          <div><b>Page type:</b> reassurance — acknowledge fear, verified answer, social proof</div>
+          <div><b>CTA:</b> talk to an expert / free consultation</div>
+        </div>
+      </div>
+
+      <div class="card intent-card"><span class="tag">4 · Urgency</span>
+        <p>A real deadline approaching — days or weeks, still plannable. Time is a primary constraint, not yet a crisis.</p>
+        <div class="grid2">
+          <div><b>Signals:</b> before summer, before the embargo, this month, by [date], deadline</div>
+          <div><b>Dubai example:</b> "move pet to Dubai before summer embargo"</div>
+          <div><b>Page type:</b> clear action path + timeline, decisive CTA</div>
+          <div><b>CTA:</b> see the timeline / book your slot now</div>
+        </div>
+      </div>
+
+      <div class="card intent-card"><span class="tag">5 · Emergency</span>
+        <p>A crisis happening <b>now</b> — hours, not weeks. The pet is stuck, the flight is imminent. They cannot read a long page.</p>
+        <div class="grid2">
+          <div><b>Signals:</b> stuck at airport, flight tomorrow/today, right now, stranded, asap, pet held</div>
+          <div><b>Dubai example:</b> "pet stuck at Dubai airport help"</div>
+          <div><b>Page type:</b> Emergency — one-line acknowledgement, immediate contact above the fold</div>
+          <div><b>CTA:</b> call now / WhatsApp now — speak to someone immediately</div>
+        </div>
+      </div>
+
+      <div class="card intent-card"><span class="tag">6 · Commercial</span>
+        <p>Comparing options, moving toward a decision. Knows services exist.</p>
+        <div class="grid2">
+          <div><b>Signals:</b> best, top, compare, vs, review, cost, price, quote, company</div>
+          <div><b>Dubai example:</b> "best pet relocation company Dubai"</div>
+          <div><b>Page type:</b> trust-building — credentials, testimonials, pricing framework</div>
+          <div><b>CTA:</b> get a quote / book a consultation</div>
+        </div>
+      </div>
+
+      <div class="card intent-card"><span class="tag">7 · Transactional</span>
+        <p>Decision made — wants to act now.</p>
+        <div class="grid2">
+          <div><b>Signals:</b> book, hire, contact, get a quote, company + location, near me</div>
+          <div><b>Dubai example:</b> "pet relocation company Dubai" (no question words)</div>
+          <div><b>Page type:</b> service page — clear offer, process, trust signals</div>
+          <div><b>CTA:</b> get started / book now</div>
+        </div>
+      </div>
+
+      <div class="card intent-card"><span class="tag">8 · Research / Navigational</span>
+        <p>Looking for a specific brand, tool, or resource.</p>
+        <div class="grid2">
+          <div><b>Signals:</b> brand names, IPATA, specific airline, MOCCAE, a named form</div>
+          <div><b>Dubai example:</b> "Blue Sky pet relocation Dubai"</div>
+          <div><b>Page type:</b> comparison / alternative — be the better option, don't impersonate</div>
+          <div><b>CTA:</b> why choose us instead / see how we compare</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="decision">
+      <h2>The decision process — ask in order</h2>
+      <p>Run every keyword through these seven questions <b>in sequence</b> (most acute first). The first "yes" wins and you stop.</p>
+      <ol class="steps">
+        <li><b>Crisis now?</b> (stuck at airport, flight tomorrow/today, right now, stranded) → <b>Emergency</b>. Stop.</li>
+        <li><b>Deadline approaching?</b> (before summer, before the embargo, this month, by [date]) → <b>Urgency</b>. Stop.</li>
+        <li><b>Fear signals?</b> (safe, risk, will, can, what if) → <b>Fear</b>. Stop.</li>
+        <li><b>Concrete problem to fix?</b> (failed, rejected, "what to do if", "how to fix", next steps) → <b>Problem</b>. Stop.</li>
+        <li><b>Brand or named resource?</b> (Blue Sky, Emirates, MOCCAE) → <b>Research</b>. Stop.</li>
+        <li><b>Commercial signals?</b> (best, compare, cost, price, review) → <b>Commercial</b>. Stop.</li>
+        <li><b>Transactional signals?</b> (book, hire, contact, get a quote) → <b>Transactional</b>. Stop.</li>
+      </ol>
+      <div class="callout"><b>Default → Informational.</b> If none of Q1–Q7 fire, the person is still learning. <b>Urgency vs Emergency:</b> Urgency is a deadline in days/weeks (still plannable); Emergency is a crisis in progress measured in hours.</div>
+    </section>
+
+    <section id="edge">
+      <h2>Edge cases — where human judgment is required</h2>
+      <p>These are the keywords the automated classifier gets wrong. Review them manually.</p>
+      <table>
+        <tr><th>Ambiguous keyword</th><th>The rule</th></tr>
+        <tr><td>"pet relocation Dubai cost"</td><td>"cost" without "quote"/"get" → <b>Informational</b>. With commercial context → Commercial.</td></tr>
+        <tr><td>"pet relocation Dubai to India" (no question word)</td><td>No other signal → default <b>Commercial</b>. A specific route is usually past the education phase.</td></tr>
+        <tr><td>"safest pet relocation company Dubai"</td><td>Fear + commercial → <b>Fear wins</b>. Address safety first, then the offer.</td></tr>
+        <tr><td>"Blue Sky pet relocation Dubai reviews"</td><td>"reviews" → <b>Research</b>. They're evaluating, not deciding.</td></tr>
+      </table>
+    </section>
+
+    <section id="automate">
+      <h2>Automate 80% with Claude Code</h2>
+      <p>Roughly 80% of keywords classify automatically; the remaining 20% need human review. The classification prompt:</p>
+      <div class="card"><code>You are classifying pet relocation search keywords by intent type.<br>
+      The 8 types: Informational, Problem, Fear, Urgency, Emergency, Commercial, Transactional, Research/Navigational.<br>
+      For each keyword output ONLY the intent type. No explanation unless it is an edge case.</code></div>
+      <p><b>Always review by hand:</b></p>
+      <ul>
+        <li>Every <b>Fear</b> classification — highest-value pages.</li>
+        <li>Every <b>Emergency</b> and <b>Urgency</b> classification — confirm crisis-now vs deadline-approaching; these need the fastest, most decisive pages.</li>
+        <li>Every <b>Problem</b> classification — confirm it is a concrete fix-needed keyword, not general Informational.</li>
+        <li>Every keyword containing a brand name.</li>
+        <li>Anything you personally feel uncertain about.</li>
+      </ul>
+    </section>
+
+    <section id="live">
+      <h2>Live data examples</h2>
+      <p>From the populated spreadsheet (Column J was filled by the fear-classification engine). Real keywords, real classifications:</p>
+      <table>
+        <tr><th>Keyword</th><th>Intent</th><th>Why</th></tr>
+        <tr><td>pet relocation dubai to india</td><td>Commercial</td><td>Specific route, no question word → past education</td></tr>
+        <tr><td>pet relocation dubai to india price</td><td>Commercial</td><td>"price" + route → comparing toward decision</td></tr>
+        <tr><td>pet relocation dubai reddit</td><td>Research</td><td>Seeking a specific resource / real voices</td></tr>
+        <tr><td>pet stuck at Dubai airport help</td><td>Emergency</td><td>crisis-now signal fires Q1 immediately</td></tr>
+        <tr><td>is it safe to fly a dog to Dubai</td><td>Fear</td><td>"safe" fires Q2</td></tr>
+      </table>
+    </section>
+
+    <section id="quiz">
+      <h2>Test yourself</h2>
+      <p>Read the keyword, pick the intent, reveal the answer. Five questions.</p>
+      <div class="quiz" id="quizBox">
+        <div class="kw" id="qKw"></div>
+        <div class="opts" id="qOpts"></div>
+        <div class="explain" id="qExplain"></div>
+        <div class="controls">
+          <button id="qNext">Next keyword →</button>
+          <span class="score" id="qScore">Score: 0 / 0</span>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      The Trust Engine — Skill 01, File 02. Intent fills Column J and feeds File 03 (Fear) and File 04 (Sorting Funnel).<br>
+      Generated 2026-05-27. Built to the warm-paper house style (template <code>skill-01-study-manual.html</code> was not present in the project; styling reproduced from its documented spec).
+    </footer>
+  </main>
+</div>
+<script>
+  // progress bar
+  const prog=document.getElementById('progress');
+  addEventListener('scroll',()=>{const h=document.documentElement;const p=h.scrollTop/(h.scrollHeight-h.clientHeight)*100;prog.style.width=p+'%';});
+  // active nav
+  const links=[...document.querySelectorAll('nav.side a')];
+  const secs=links.map(a=>document.querySelector(a.getAttribute('href')));
+  addEventListener('scroll',()=>{let i=secs.length-1;for(let k=0;k<secs.length;k++){if(secs[k].getBoundingClientRect().top<140)i=k;}links.forEach(l=>l.classList.remove('active'));if(links[i])links[i].classList.add('active');});
+  // quiz
+  const Q=[
+    {kw:"can my dog die on a plane to Dubai",a:"Fear",e:"Fear signal ('can ... die') fires Q2. Acknowledge the worry, then the verified safety answer."},
+    {kw:"book pet relocation company Dubai",a:"Transactional",e:"'book' fires Q5 — decision made, wants to act."},
+    {kw:"Emirates pet policy",a:"Research",e:"Named brand/resource fires Q3 — looking up a specific airline's rules."},
+    {kw:"last minute pet relocation before summer Dubai",a:"Urgency",e:"'last minute' + 'before summer' fire Q1 — a hard deadline."},
+    {kw:"how much does pet relocation cost in Dubai",a:"Informational",e:"'how much ... cost' with no quote/buy context → Informational by the edge-case rule."}
+  ];
+  const intents=["Informational","Problem","Fear","Urgency","Emergency","Commercial","Transactional","Research"];
+  let idx=0,score=0,answered=0;
+  const kwEl=document.getElementById('qKw'),optsEl=document.getElementById('qOpts'),expEl=document.getElementById('qExplain'),scoreEl=document.getElementById('qScore');
+  function render(){
+    const q=Q[idx];kwEl.textContent='“'+q.kw+'”';expEl.style.display='none';optsEl.innerHTML='';
+    intents.forEach(it=>{const b=document.createElement('button');b.className='opt';b.textContent=it;b.onclick=()=>pick(b,it,q);optsEl.appendChild(b);});
+  }
+  function pick(btn,choice,q){
+    [...optsEl.children].forEach(b=>b.disabled=true);
+    answered++;
+    if(choice===q.a){btn.classList.add('correct');score++;}
+    else{btn.classList.add('wrong');[...optsEl.children].find(b=>b.textContent===q.a).classList.add('correct');}
+    expEl.textContent=q.e;expEl.style.display='block';
+    scoreEl.textContent='Score: '+score+' / '+answered;
+  }
+  document.getElementById('qNext').onclick=()=>{idx=(idx+1)%Q.length;render();};
+  render();
+</script>
+</body>
+</html>

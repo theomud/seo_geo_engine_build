@@ -1,0 +1,50 @@
+<section class="section {{ block.variant | default('') }}" id="{{ block.id | default('quote') }}">
+  <div class="container">
+    <div class="two-col">
+      <div>
+        {% if block.eyebrow %}<p class="eyebrow">{{ block.eyebrow }}</p>{% endif %}
+        <h2>{{ block.heading | default('Get your transparent quote') }}</h2>
+        {% if block.body %}<p class="lead">{{ block.body }}</p>{% endif %}
+        {% if block.points %}
+        <ul class="prose">
+          {% for p in block.points %}<li>{{ p }}</li>{% endfor %}
+        </ul>
+        {% endif %}
+        <p class="help-cta">{{ block.help_cta | default('Not ready to enquire? Download our free, MOCCAE-verified pet-relocation checklist — every document, in order, so nothing gets missed.') }}</p>
+      </div>
+      <form class="quote-form" data-quote
+            {% if site.contact.whatsapp %}data-whatsapp="{{ site.contact.whatsapp }}"{% endif %}
+            {% if site.contact.email %}data-email="{{ site.contact.email }}"{% endif %}>
+        <div>
+          <label for="qf-name">Your name</label>
+          <input id="qf-name" name="name" type="text" required>
+        </div>
+        <div>
+          <label for="qf-phone">WhatsApp number</label>
+          <input id="qf-phone" name="whatsapp" type="tel" required>
+        </div>
+        <div>
+          <label for="qf-pet">Pet type</label>
+          <select id="qf-pet" name="pet_type">
+            {% for opt in block.pet_types | default(['Dog', 'Cat', 'Other']) %}<option>{{ opt }}</option>{% endfor %}
+          </select>
+        </div>
+        <div>
+          <label for="qf-dest">Destination</label>
+          <select id="qf-dest" name="destination">
+            {% for opt in block.destinations | default(['Tell us where']) %}<option>{{ opt }}</option>{% endfor %}
+          </select>
+        </div>
+        <div class="full">
+          <label for="qf-date">Planned travel date (approx.)</label>
+          <input id="qf-date" name="travel_date" type="text" placeholder="e.g. September 2026">
+        </div>
+        <div class="full">
+          <button class="btn btn-gold btn-lg" type="submit" style="width:100%;justify-content:center">{{ block.submit | default('Get my quote') }}</button>
+          <p class="form-note">{{ block.note | default('We will reply on WhatsApp with a price range and the exact next step. No spam, no obligation.') }}</p>
+          <p class="form-note" data-ok hidden style="color:var(--color-success)">Thanks — your message is ready to send. Confirm it in WhatsApp/email to reach us.</p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

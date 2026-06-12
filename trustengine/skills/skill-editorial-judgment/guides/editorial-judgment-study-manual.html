@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Editorial Judgment & Quality Control — Study Manual | The Trust Engine</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#14110d;--panel:#1d1812;--ink:#f3ece0;--soft:#b9ab95;--line:#352c20;--gold:#d8a84b;--red:#e06a4e;--green:#7bbf6a;--accent:#c98a3a}
+  *{box-sizing:border-box}html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:'Crimson Pro',Georgia,serif;font-size:19px;line-height:1.6}
+  #bar{position:fixed;top:0;left:0;height:4px;width:0;background:linear-gradient(90deg,var(--gold),var(--accent));z-index:100;transition:width .1s}
+  .layout{display:flex;max-width:1180px;margin:0 auto}
+  nav.side{position:sticky;top:0;height:100vh;width:250px;flex-shrink:0;padding:30px 20px;background:var(--panel);border-right:1px solid var(--line);overflow-y:auto;font-family:'JetBrains Mono',monospace}
+  nav.side .brand{font-family:'Bebas Neue',sans-serif;letter-spacing:.08em;color:var(--gold);font-size:22px}
+  nav.side a{display:block;color:var(--soft);text-decoration:none;font-size:12px;padding:7px 9px;border-radius:6px;margin-bottom:2px}
+  nav.side a:hover{background:#251e16;color:var(--ink)}nav.side a.active{background:var(--gold);color:#14110d;font-weight:700}
+  main{flex:1;padding:46px 52px 120px;max-width:820px}
+  h1{font-family:'Bebas Neue',sans-serif;font-size:52px;line-height:1;margin:0 0 6px}
+  h2{font-family:'Bebas Neue',sans-serif;font-size:33px;letter-spacing:.02em;margin:50px 0 12px;color:var(--gold)}
+  h3{font-size:21px;margin:24px 0 6px;color:var(--accent)}
+  .lead{font-size:22px;color:var(--soft)}
+  .badge{font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:700;letter-spacing:.05em;color:var(--gold);text-transform:uppercase}
+  .ex{background:#251e16;border-radius:8px;padding:10px 14px;margin:8px 0;font-style:italic;color:var(--soft)}
+  .cite{font-family:'JetBrains Mono',monospace;font-size:12px;padding:1px 7px;border-radius:5px;background:#251e16}
+  .v{color:var(--green);font-weight:700}.u{color:var(--gold);font-weight:700}.c{color:var(--red);font-weight:700}
+  table{width:100%;border-collapse:collapse;margin:14px 0;font-family:'JetBrains Mono',monospace;font-size:13px}
+  th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{color:var(--gold);text-transform:uppercase;font-size:11px}
+  .warn{background:#2a1a14;border:1px solid #4a2c20;border-radius:10px;padding:13px 17px;margin:14px 0}
+  .good{background:#1a2417;border:1px solid #2f4327;border-radius:10px;padding:13px 17px;margin:14px 0}
+  .ba{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:10px 0}
+  .ba>div{border-radius:8px;padding:10px 13px;font-size:15px}
+  .bad{background:#2a1a14;border:1px solid #4a2c20}.goodc{background:#1a2417;border:1px solid #2f4327}
+  code{font-family:'JetBrains Mono',monospace;background:#251e16;padding:2px 6px;border-radius:5px;font-size:.82em;color:var(--gold)}
+  footer{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--soft);border-top:1px solid var(--line);margin-top:60px;padding-top:18px}
+  @media(max-width:880px){nav.side{display:none}main{padding:28px 20px 80px;font-size:18px}h1{font-size:40px}.ba{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+<div class="layout">
+  <nav class="side">
+    <div class="brand">Editorial Judgment</div>
+    <div style="font-family:'Crimson Pro',serif;color:var(--soft);font-size:13px;margin:4px 0 16px">& Quality Control · 21/25</div>
+    <a href="#why" class="active">Why this skill</a>
+    <a href="#criteria">The 10-criteria /50</a>
+    <a href="#patterns">The 7 weak patterns</a>
+    <a href="#process">The editing process</a>
+    <a href="#checklist">The publishing checklist</a>
+    <a href="#hormozi">The Hormozi test</a>
+    <a href="#scored">The 4 gap pages scored</a>
+    <a href="#verify">Keeping the score honest</a>
+  </nav>
+  <main>
+    <span class="badge">Editorial Judgment · 21/25</span>
+    <h1>Editorial Judgment &amp; Quality Control</h1>
+    <p class="lead">The quality gate that takes AI content from ~60% to 90%+ before it ships. Not proofreading — this decides whether content will rank, convert, and build trust.</p>
+
+    <section id="why">
+      <h2>Why this skill exists</h2>
+      <p>AI produces text fast, but most AI content fails: generic, fake-sounding, doesn't convert. Publishing it spends budget on pages that earn no trust and no ranking — in a regulated market, worse than nothing. Editorial Judgment is the gate between a fast first draft and a page you would put your name on.</p>
+      <p>The reader already feels this. In the Dubai research they said it plainly:</p>
+      <div class="ex">"Every website says something different — I don't know who to trust." &nbsp;·&nbsp; "relocation companies are shamelessly charging an insane amount of money" — IrbisKat (24 upvotes) &nbsp;·&nbsp; "without it your dog will be taken away in airport and never give back" — Muze Gu</div>
+      <p>Generic, uncited AI content is exactly what makes a reader feel that distrust. The editorial gate exists to make sure the page they land on is specific, proven, and trustworthy instead.</p>
+      <div class="warn"><b>It is not proofreading.</b> Proofreading fixes grammar. This decides rank, conversion, and trust — and produces a <b>/50 score</b> and a publish/hold verdict.</div>
+    </section>
+
+    <section id="criteria">
+      <h2>The 10-criteria framework (score /50)</h2>
+      <p>Score each criterion /5 against the page. <b>Publish gate: 40+/50, nothing below 3.</b></p>
+      <table>
+        <tr><th>#</th><th>Criterion</th><th>Scores 5 when…</th></tr>
+        <tr><td>1</td><td>True</td><td>every fact verified or hedged; no hallucination</td></tr>
+        <tr><td>2</td><td>Specific</td><td>real numbers/names — could not apply to any business</td></tr>
+        <tr><td>3</td><td>Useful</td><td>answers the reader's actual question</td></tr>
+        <tr><td>4</td><td>Clear</td><td>scannable; main point obvious in 10 seconds</td></tr>
+        <tr><td>5</td><td>Commercial</td><td>supports a goal; one clear next step</td></tr>
+        <tr><td>6</td><td>Trustworthy</td><td>proof for every claim; honest not hyped</td></tr>
+        <tr><td>7</td><td>Better than competitors</td><td>more specific/credible than the top page</td></tr>
+        <tr><td>8</td><td>Brand-aligned</td><td>the owner would recognise their voice</td></tr>
+        <tr><td>9</td><td>Right buyer</td><td>speaks their situation + decision stage</td></tr>
+        <tr><td>10</td><td>Strong enough to publish</td><td>you would put your name on it</td></tr>
+      </table>
+      <div class="good"><b>The two that catch the most AI failures:</b> <b>Specific</b> — <span class="c">"we have many happy customers"</span> fails, <span class="v">"4.8 stars from 283 Google reviews"</span> passes — and <b>Strong-enough-to-publish</b>.</div>
+    </section>
+
+    <section id="patterns">
+      <h2>The 7 weak patterns — remove every time</h2>
+      <table>
+        <tr><th>Pattern</th><th>Example (real competitor language)</th><th>Fix</th></tr>
+        <tr><td>1 Filler Opening</td><td>"In today's fast-paced world…"</td><td>open with the reader's problem</td></tr>
+        <tr><td>2 Laundry List</td><td>"services include A, B, C and much more"</td><td>prioritise & describe</td></tr>
+        <tr><td>3 Unsupported Claim</td><td>"the leading pet relocation provider in Dubai"</td><td>show it — 4.8★/283 reviews</td></tr>
+        <tr><td>4 Circular Definition</td><td>"quality ensures excellence"</td><td>delete or make specific</td></tr>
+        <tr><td>5 Vague Benefit</td><td>"innovative solutions for your needs"</td><td>which solution? which result?</td></tr>
+        <tr><td>6 Fake Enthusiasm</td><td>"passionate about exceptional results!"</td><td>show passion via specifics</td></tr>
+        <tr><td>7 Dead End</td><td>"contact us for a quote"</td><td>a help-first next step</td></tr>
+      </table>
+    </section>
+
+    <section id="process">
+      <h2>The editing process</h2>
+      <p>Five steps: <b>score → remove the 7 patterns → add the strengtheners → re-score → record edit notes.</b></p>
+      <p><b>Add what's missing:</b> specifics, proof, a clear offer, buyer objections, local details, concrete examples, a stronger CTA.</p>
+      <div class="ex">Edit-note example: "removed Pattern 3 unsupported 'best in Dubai'; added 4.8★/283 reviews; CTA changed from 'Get a Quote' to 'Download the MOCCAE checklist'." The notes make the /50 reproducible.</div>
+    </section>
+
+    <section id="checklist">
+      <h2>The publishing checklist</h2>
+      <p>Nothing ships without all three blocks:</p>
+      <table>
+        <tr><th>Content</th><th>SEO</th><th>Conversion</th></tr>
+        <tr><td>the 10 criteria (40+/50)</td><td>title 50–60 + keyword · meta 150–160 · H1 keyword · keyword in first para · internal links</td><td>clear CTA · correct contact · trust signals visible · objections addressed</td></tr>
+      </table>
+    </section>
+
+    <section id="hormozi">
+      <h2>The Hormozi test (criterion 10)</h2>
+      <p>Three questions decide publish:</p>
+      <ol>
+        <li><b>Would you put your name on it?</b></li>
+        <li><b>Would you show it to a client?</b></li>
+        <li>If not — <b>what specifically</b> needs to change?</li>
+      </ol>
+      <div class="warn">Higher risk = more proof required. Dubai pet relocation is maximum risk, so an uncited claim caps <b>True</b> at 2 and a could-apply-to-anyone sentence caps <b>Specific</b> at 2 — these are the anti-leniency gates.</div>
+    </section>
+
+    <section id="scored">
+      <h2>The 4 universal-gap pages, scored (real output)</h2>
+      <p>The skill's real output — each gap page scored end-to-end (<code>data/editorial-scorecards.md</code>):</p>
+      <table>
+        <tr><th>Page</th><th>Score</th><th>Decision</th></tr>
+        <tr><td>Airport confiscation (Fear Resolution)</td><td>47/50</td><td><span class="v">PUBLISH</span></td></tr>
+        <tr><td>Summer embargo (Process Guide)</td><td>43/50</td><td><span class="v">PUBLISH</span> (after timeline table)</td></tr>
+        <tr><td>Titer cost (Cost Transparency)</td><td>47/50</td><td><span class="v">PUBLISH</span></td></tr>
+        <tr><td>Sharjah vs Dubai vs Abu Dhabi (Comparison)</td><td>45/50</td><td><span class="v">PUBLISH</span> (after fix)</td></tr>
+        <tr><td><b>Average</b></td><td><b>45.5/50</b></td><td></td></tr>
+      </table>
+      <div class="good"><b>The pass earned its keep — a real catch:</b> Page 4 first scored <b>Clear 3/5</b> because the draft contained a broken phrase — <span class="c">"the cheapest, simplest cabin-... cargo route"</span>. A vibe-read ships it; the rubric held it. The defect was then fixed in the source page (<span class="v">"the cheapest, simplest cargo route"</span>), re-scored to 45/50 → PUBLISH. <b>That is what editorial judgment is for.</b></div>
+    </section>
+
+    <section id="verify">
+      <h2>Keeping the score honest</h2>
+      <p>The failure mode is a lenient or gamed score. Two defences:</p>
+      <ul>
+        <li><b>Every criterion has a written reason</b> in the edit notes — no bare numbers, no vibe.</li>
+        <li><b>An independent blind re-score</b> must reach the same publish/hold decision and land within ±4 points; a split = re-examine, never average-and-ship.</li>
+      </ul>
+      <p>The batch audit re-scores 20% blind; <b>≥90%</b> must agree on the decision. Below that → recalibrate, usually on leniency in <b>True</b> or <b>Specific</b>.</p>
+    </section>
+
+    <footer>The Trust Engine · Editorial Judgment &amp; Quality Control · Study Manual · real scores from the 2026-05-29 Dubai proof run (4 pages, avg 45.5/50; one real defect caught &amp; fixed). 40+/50 to publish · cite or hedge every claim · would you put your name on it?</footer>
+  </main>
+</div>
+<script>
+  const bar=document.getElementById('bar');
+  addEventListener('scroll',()=>{const h=document.documentElement;bar.style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%';});
+  const links=[...document.querySelectorAll('nav.side a')];const secs=links.map(a=>document.querySelector(a.getAttribute('href')));
+  addEventListener('scroll',()=>{let i=0;for(let k=0;k<secs.length;k++){if(secs[k]&&secs[k].getBoundingClientRect().top<140)i=k;}links.forEach(l=>l.classList.remove('active'));if(links[i])links[i].classList.add('active');});
+</script>
+</body>
+</html>

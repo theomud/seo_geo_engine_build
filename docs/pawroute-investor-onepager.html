@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PawRoute — Investor One-Pager</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{--navy:#16335c;--navy2:#0e2240;--gold:#d9a94e;--gold2:#b8893a;--ink:#1f2733;--muted:#5d6a78;--paper:#fbf8f2;--line:#e7ddcb;--up:#2e8b57;--down:#2563c4;}
+  *{box-sizing:border-box}
+  body{margin:0;background:#eef1f5;color:var(--ink);font-family:'Inter',system-ui,Segoe UI,Roboto,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased;}
+  .sheet{max-width:920px;margin:24px auto;background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 30px 70px -34px rgba(16,33,60,.5);}
+
+  /* header band */
+  .head{background:radial-gradient(700px 280px at 88% -20%,rgba(217,169,78,.32),transparent 60%),linear-gradient(155deg,var(--navy),var(--navy2));color:#fff;padding:30px 38px 26px;}
+  .brandrow{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+  .brand{display:flex;align-items:center;gap:10px;font-family:'Plus Jakarta Sans';font-weight:800;font-size:1.5rem}
+  .brand .mk{font-size:1.7rem}
+  .doctag{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:700}
+  .head h1{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:clamp(1.6rem,3.6vw,2.3rem);line-height:1.15;margin:16px 0 6px;max-width:24ch}
+  .head p{color:rgba(255,255,255,.85);margin:0;max-width:62ch;font-size:1.04rem}
+
+  .body{padding:30px 38px 34px}
+  section{margin:0 0 26px}
+  .eyebrow{font:700 .72rem 'Plus Jakarta Sans';letter-spacing:.13em;text-transform:uppercase;color:var(--gold2);margin:0 0 6px}
+  h2{font-family:'Fraunces',Georgia,serif;font-weight:600;color:var(--navy);font-size:1.35rem;margin:0 0 8px}
+  p{margin:0 0 10px}
+  .lead{font-size:1.05rem}
+
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:6px 0 4px}
+  .stat{background:var(--paper);border:1px solid var(--line);border-radius:13px;padding:14px}
+  .stat .n{font-family:'Plus Jakarta Sans';font-weight:800;color:var(--navy);font-size:1.5rem;line-height:1}
+  .stat .l{font-size:.8rem;color:var(--muted);margin-top:5px}
+
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+  ul.tick{list-style:none;padding:0;margin:8px 0 0;display:grid;gap:7px}
+  ul.tick li{position:relative;padding-left:24px;font-size:.96rem}
+  ul.tick li::before{content:"✓";position:absolute;left:0;color:var(--up);font-weight:700}
+
+  /* engine strip */
+  .engine{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;align-items:stretch;gap:0;margin-top:10px}
+  .estage{background:var(--paper);border:1px solid var(--line);border-radius:13px;padding:13px 15px}
+  .estage.mid{background:linear-gradient(160deg,var(--navy),var(--navy2));color:#fff;border:none}
+  .estage h3{font-family:'Plus Jakarta Sans';font-size:.95rem;margin:0 0 3px;color:var(--navy)}
+  .estage.mid h3{color:#fff}
+  .estage small{font-size:.8rem;color:var(--muted)}.estage.mid small{color:#d9e2ee}
+  .earr{display:flex;align-items:center;color:#c7bda6;font-size:1.3rem;padding:0 8px}
+
+  .model{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+  .party{border:1px solid var(--line);border-radius:13px;padding:14px;background:#fff}
+  .party h3{font-family:'Plus Jakarta Sans';font-size:.98rem;margin:0 0 4px;color:var(--navy)}
+  .party p{font-size:.88rem;color:var(--muted);margin:0}
+  .party .tag{display:inline-block;font-size:.7rem;font-weight:700;color:var(--gold2);text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}
+
+  .ask{background:var(--paper);border:1px dashed var(--gold);border-radius:14px;padding:18px 20px}
+  .ask .fill{background:#fff5e0;border-bottom:2px solid var(--gold);padding:0 6px;font-weight:600;color:#7a5300}
+  .editnote{font-size:.76rem;color:var(--muted);margin-top:8px;font-style:italic}
+
+  .foot{border-top:1px solid var(--line);padding:16px 38px 26px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:.84rem;color:var(--muted)}
+  .foot b{color:var(--navy)}
+  .status{display:inline-flex;align-items:center;gap:7px;background:#eef6f0;border:1px solid #cfe6d8;color:var(--up);border-radius:999px;padding:5px 12px;font-size:.78rem;font-weight:600}
+
+  .disc{font-size:.72rem;color:#9aa5b1;margin-top:14px}
+
+  @media(max-width:720px){
+    .stats{grid-template-columns:1fr 1fr}.two,.model{grid-template-columns:1fr}
+    .engine{grid-template-columns:1fr}.earr{justify-content:center;transform:rotate(90deg)}
+    .head,.body,.foot{padding-left:22px;padding-right:22px}
+  }
+  @media print{body{background:#fff}.sheet{box-shadow:none;margin:0;max-width:none}}
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <div class="head">
+    <div class="brandrow">
+      <span class="brand"><span class="mk">🐾</span> PawRoute</span>
+      <span class="doctag">Investor one-pager · confidential</span>
+    </div>
+    <h1>The trusted front door to international pet relocation — starting in Dubai.</h1>
+    <p>We build the most trustworthy, transparent pet-relocation content in the market, capture the demand through organic search, and sell qualified leads to vetted relocation providers. Everyone wins — the owner, the provider, and us.</p>
+  </div>
+
+  <div class="body">
+
+    <!-- MARKET -->
+    <section>
+      <p class="eyebrow">The market &amp; the gap</p>
+      <h2>A high-intent, high-value market that nobody serves with the truth.</h2>
+      <p class="lead">Every relocation is an urgent, emotional, AED 13,800–35,000+ decision — and the incumbents hide the one thing buyers want: a straight answer and a price.</p>
+      <div class="stats">
+        <div class="stat"><div class="n">200–250</div><div class="l">pets relocate through Dubai <b>every day</b></div></div>
+        <div class="stat"><div class="n">2 / 20</div><div class="l">competitors that publish any pricing</div></div>
+        <div class="stat"><div class="n">~$44M</div><div class="l">market size by 2030 <span style="opacity:.7">(our research, est.)</span></div></div>
+        <div class="stat"><div class="n">Sep–Oct</div><div class="l">next demand surge — 2026 (Google Trends)</div></div>
+      </div>
+    </section>
+
+    <!-- WEDGE -->
+    <section>
+      <p class="eyebrow">The wedge — why we win</p>
+      <h2>We name the customer's fear, then answer it with verified facts.</h2>
+      <div class="two">
+        <div>
+          <p>Every competitor starts with a keyword. We start with the <b>human behind it</b> — their fear (“will my dog be taken at the airport?”) — and pair that fear with an answer <b>verified against the official regulator</b>, sources cited.</p>
+          <p>It's the most effective trust mechanism there is — and it's a defensible position no one else holds.</p>
+        </div>
+        <ul class="tick">
+          <li><b>Fear-acknowledging</b>, not fear-exploiting — backed by the Tannenbaum 2015 meta-analysis (127 studies, 27,372 people)</li>
+          <li><b>Source-verified</b> — every regulatory claim cites MOCCAE / APHA / CDC / DAFF; unknowns are hedged, never invented</li>
+          <li><b>Transparent pricing</b> on every page — the gap 18 of 20 competitors leave wide open</li>
+          <li><b>Novel synthesis</b> — our research found no enterprise tool or agency combining these as one system</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ENGINE / MOAT -->
+    <section>
+      <p class="eyebrow">The moat — an engine, not an agency</p>
+      <h2>A repeatable system that researches, verifies, builds and improves — at scale.</h2>
+      <div class="engine">
+        <div class="estage"><h3>🧠 Brain</h3><small>Classifies fear &amp; intent, verifies every fact against official sources.</small></div>
+        <div class="earr">→</div>
+        <div class="estage mid"><h3>🏗️ Renderer</h3><small>Turns verified briefs into fast, SEO + GEO-optimised pages — automatically.</small></div>
+        <div class="earr">→</div>
+        <div class="estage"><h3>🔁 Eyes</h3><small>Grades live pages &amp; traffic, then tells the Brain what to build next.</small></div>
+      </div>
+      <p style="margin-top:12px">15 specialised engines feed this loop. The result: trustworthy, rankable pages produced faster and more credibly than any founder-bottlenecked agency — and the same system drops onto the next city or vertical by swapping the inputs.</p>
+    </section>
+
+    <!-- MODEL -->
+    <section>
+      <p class="eyebrow">The model</p>
+      <h2>Lead generation — paid for the connection.</h2>
+      <div class="model">
+        <div class="party"><span class="tag">Customer</span><h3>Gets clarity &amp; a trusted provider</h3><p>Verified answers, transparent pricing, a safe move.</p></div>
+        <div class="party"><span class="tag">Provider</span><h3>Gets a qualified lead</h3><p>High-intent, pre-informed — without spending on acquisition.</p></div>
+        <div class="party"><span class="tag">PawRoute</span><h3>Gets paid to connect them</h3><p>Per-lead or revenue-share. Asset-light, high-margin.</p></div>
+      </div>
+    </section>
+
+    <!-- TRACTION -->
+    <section>
+      <p class="eyebrow">Where we are</p>
+      <h2>Built &amp; verified — pre-launch.</h2>
+      <p><span class="status">● Content engine built · ranking phase next</span></p>
+      <div class="two" style="margin-top:12px">
+        <ul class="tick">
+          <li><b>19 pages built</b> — 10 export routes + a Dubai-import section + pricing/process/FAQ</li>
+          <li><b>153 regulatory claims verified</b> with official-source screenshots</li>
+          <li><b>598 keywords</b> classified by intent &amp; fear; <b>21 competitors</b> scored</li>
+        </ul>
+        <ul class="tick">
+          <li><b>Targets:</b> 10 qualified leads / week by month 3</li>
+          <li><b>Targets:</b> lead → booking conversion &gt; 15%</li>
+          <li><b>Launch:</b> H2 2026, ahead of the Sept–Oct demand surge</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ASK -->
+    <section>
+      <p class="eyebrow">The ask</p>
+      <div class="ask">
+        <p style="margin:0 0 8px">We're raising <span class="fill">[ amount ]</span> to <span class="fill">[ goal — e.g. launch, rank the priority routes, and prove lead economics ]</span>.</p>
+        <p style="margin:0;font-size:.92rem;color:var(--muted)">Use of funds: <span class="fill">[ content scale ]</span> · <span class="fill">[ provider partnerships ]</span> · <span class="fill">[ a 6-month runway to first revenue ]</span>.</p>
+        <p class="editnote">↳ Edit the highlighted fields before sending — left blank intentionally.</p>
+      </div>
+    </section>
+
+    <p class="disc">Figures marked “target”, “est.” or in [brackets] are projections or placeholders, not results. Market sizing reflects internal research. Regulatory facts on PawRoute pages are verified against official sources and reviewed before publication.</p>
+  </div>
+
+  <div class="foot">
+    <div><b>PawRoute</b> · Pet relocation, anchored in Dubai · <span style="color:var(--gold2)">pawroute.ae</span> (launching H2 2026)</div>
+    <div><b>Contact:</b> Theo · <span class="fill" style="background:#fff5e0;padding:0 6px;border-bottom:2px solid var(--gold)">[ email / phone ]</span></div>
+  </div>
+</div>
+</body>
+</html>

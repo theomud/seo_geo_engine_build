@@ -1,0 +1,52 @@
+url: /visit/
+title: "Visit Us — Northside Coffee Roasters, Manchester"
+title_suffix: ""
+meta_description: "Find Northside Coffee Roasters at 14 Mill Lane, Manchester. Open 7am–5pm daily. Free wifi, non-dairy milks, beans to take home. Call or drop in."
+og_title: "Visit Northside Coffee Roasters"
+
+blocks:
+  - type: hero
+    eyebrow: "Find us"
+    heading: "14 Mill Lane, Manchester"
+    subheading: "Five minutes from the tram, plenty of seats, and a couple of laptop-free tables for good measure. Come in."
+    ctas:
+      - { label: "Call us", url: "tel:+441610000000", style: "btn-gold" }
+      - { label: "Email", url: "mailto:hello@northsidecoffee.example", style: "btn-ghost" }
+    card:
+      heading: "Opening hours"
+      rows:
+        - { label: "Mon – Fri", value: "7am – 5pm" }
+        - { label: "Saturday", value: "8am – 5pm" }
+        - { label: "Sunday", value: "8am – 4pm" }
+      note: "Kitchen (toasties) until 3pm daily."
+
+  - type: checklist
+    eyebrow: "While you're here"
+    heading: "What to expect"
+    items:
+      - { title: "Free wifi & power", text: "Plenty of sockets — plus a few laptop-free tables for the regulars." }
+      - { title: "Non-dairy, no surcharge", text: "Oat, soy and almond on every drink." }
+      - { title: "Beans to take home", text: "This week's roast on the shelf, whole or ground." }
+      - { title: "Dog-friendly", text: "Water bowls by the door and a biscuit on the house." }
+
+  - type: table
+    variant: section--surface
+    eyebrow: "Getting here"
+    heading: "Find your way in"
+    columns: ["By", "Details"]
+    rows:
+      - ["Tram", "5-minute walk from Mill Lane stop"]
+      - ["Bus", "Routes 42 & 142 stop on the corner"]
+      - ["Car", "Pay & display on Mill Lane; free after 6pm"]
+      - ["Bike", "Racks right outside the door"]
+
+  - type: callout
+    heading: "Booking a table or a group?"
+    body: "For groups of six or more, give us a ring on +44 161 000 0000 or email hello@northsidecoffee.example and we'll save you a corner."
+
+  - type: cta
+    heading: "Put the kettle on — actually, we'll do that."
+    body: "Open 7 till 5. We'll have the espresso dialled in."
+    ctas:
+      - { label: "Call the café", url: "tel:+441610000000", style: "btn-gold" }
+      - { label: "See the menu", url: "/menu/", style: "btn-ghost" }

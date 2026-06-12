@@ -1,0 +1,20 @@
+# Evidence registry
+
+# Evidence tiers:
+# PRIMARY = own measurement or first-party data
+# T1 = sworn testimony, legal evidence, official regulatory/legal record
+# T2 = official documentation
+# T3 = verified leak or confirmed field existence, not confirmed weight
+# T4 = peer-reviewed paper or academic source
+# T5 = patent
+# T6 = practitioner consensus or market observation
+# UNKNOWN = not acceptable for factual publication without review
+
+claims:
+  - id: EXAMPLE-001
+    claim: "Replace this with a real claim."
+    source: "Replace this with source URL or document reference."
+    evidence_tier: UNKNOWN
+    confidence: low
+    last_verified:
+    used_on_pages: []

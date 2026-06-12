@@ -1,0 +1,153 @@
+{
+  "_meta": {
+    "content_format": "blog",
+    "direction": "outbound (Dubai -> destination)",
+    "target_keyword": "Dubai to Canada Pet Move",
+    "note": "De-branded content asset for site build. Render images from the images/ folder."
+  },
+  "seo": {
+    "title": "Dubai to Canada Pet Move: CFIA Rules, No Quarantine",
+    "meta_description": "Moving a pet from Dubai to Canada means CFIA import requirements and a valid rabies vaccination certificate — and no quarantine. Here's what to get exactly right.",
+    "og_title": "Dubai → Canada pet rules: no quarantine, but get the certificate exact",
+    "canonical_path": "/blog/dubai-to-canada-pet-rules/"
+  },
+  "hero": {
+    "eyebrow": "Route guide · Canada",
+    "h1": "Dubai to Canada: no quarantine, but the rabies certificate must be exact",
+    "standfirst": "Canada needs a valid rabies vaccination certificate and a CFIA import check — there's no quarantine, but an inexact certificate is what causes problems at the border.",
+    "image": "images/dubai-to-canada-hero.png",
+    "image_alt": "A pet ready to travel from Dubai to Canada"
+  },
+  "byline": "By our relocation specialists · 9 June 2026 · reviewed by our IPATA-certified specialists",
+  "key_facts": {},
+  "takeaways": [
+    "Meet the <strong>CFIA import requirements</strong>; for dogs the key document is a <strong>valid rabies vaccination certificate</strong>.",
+    "<strong>No quarantine</strong> — the risk is an inexact certificate, not a holding period.",
+    "An <strong>ISO microchip</strong> ties the records together; record it before the vaccination certificate.",
+    "Requirements differ for <strong>cats vs dogs</strong> and personal vs commercial import — confirm your category.",
+    "Typical cost Dubai → Canada: roughly <strong>AED 14,000–20,000</strong>, about 4–6 weeks."
+  ],
+  "sections": [
+    {
+      "type": "prose",
+      "heading": "The short answer",
+      "paragraphs": [
+        "To bring a pet into Canada from Dubai you need to meet the <strong>CFIA import requirements</strong> — for dogs, the central one is a <strong>valid rabies vaccination certificate</strong> with the right detail, plus the standard UAE export documents. There is <strong>no quarantine</strong>.",
+        "Canada's process is lighter than Australia's, but it's exacting: a rabies certificate missing a detail (dates, microchip number, vet signature) can hold your pet at inspection. Confirm the current CFIA requirements for your pet type before you travel."
+      ]
+    },
+    {
+      "type": "prose",
+      "eyebrow": "The Canadian requirements",
+      "heading": "What CFIA requires",
+      "paragraphs": [
+        "The Canadian Food Inspection Agency (CFIA) sets the import requirements, and an inspection happens on arrival. For dogs from the UAE, the central requirement is a valid rabies vaccination certificate that matches your pet's microchip and shows the right dates and vet details.",
+        "Because requirements vary by pet type and by whether the move is personal or commercial, confirm your exact category with CFIA before booking — that one check prevents almost every Canada-route problem."
+      ]
+    }
+  ],
+  "story": {
+    "tag": "A common scenario",
+    "lead": "On the Canada route, problems are almost never quarantine — they're a certificate detail.",
+    "problem": "An owner has their dog fully vaccinated and books the flight to Canada.",
+    "mistake": "The rabies certificate lists a vaccination date that doesn't line up, and the microchip number isn't on it.",
+    "discovery": "At the CFIA inspection the mismatch is flagged, and the dog is held while it's sorted.",
+    "result": "Hours of stress at arrival and a re-issued certificate — avoidable with one document check beforehand.",
+    "lesson": "Canada doesn't quarantine — but it does check carefully. Get the rabies certificate exact and matched to the microchip, and arrival is simple."
+  },
+  "faqs": [
+    {
+      "q": "Will my pet be quarantined in Canada?",
+      "a": "No. Canada doesn't quarantine pets that meet CFIA import requirements; there's an inspection on arrival instead."
+    },
+    {
+      "q": "Do I need a rabies titre test for Canada?",
+      "a": "For personal pets from the UAE the central requirement is a valid rabies vaccination certificate rather than a titre test — but confirm your exact category with CFIA, as rules differ for cats, dogs and commercial imports."
+    },
+    {
+      "q": "What's the most common Canada-route mistake?",
+      "a": "An inexact rabies certificate — wrong dates, or a missing microchip number — flagged at the CFIA inspection. A document check beforehand prevents it."
+    },
+    {
+      "q": "How much does Dubai → Canada cost?",
+      "a": "Typically AED 14,000–20,000 depending on your pet's size and the airline, over about 4–6 weeks."
+    }
+  ],
+  "sources": [
+    {
+      "authority": "Canada CFIA",
+      "title": "Importing or travelling with pets",
+      "url": "https://inspection.canada.ca/en/importing-food-plants-animals/pets",
+      "note": "Canadian import requirements"
+    },
+    {
+      "authority": "UAE MOCCAE",
+      "title": "Pet export permits",
+      "url": "https://www.moccae.gov.ae/en/services/import-permit-pets",
+      "note": "UAE export side"
+    },
+    {
+      "authority": "IATA",
+      "title": "Live Animals Regulations",
+      "url": "https://www.iata.org/en/programs/cargo/live-animals/",
+      "note": "Crate + cargo standards"
+    }
+  ],
+  "cta": {
+    "heading": "Planning a Dubai → Canada move?",
+    "body": "We confirm your CFIA category and make sure the rabies certificate is exact and matched to the microchip — so you can plan with confidence and your pet clears inspection without a hitch.",
+    "ctas": [
+      {
+        "label": "See Dubai → Canada cost & process",
+        "url": "/destinations/uae-to-canada/",
+        "style": "btn-gold"
+      },
+      {
+        "label": "Compare all destinations",
+        "url": "/destinations/",
+        "style": "btn-ghost"
+      }
+    ],
+    "help_cta": "Not ready to enquire? Download the free pet-relocation checklist — every required document for your route, in order, so nothing is missed."
+  },
+  "images": [
+    {
+      "role": "hero",
+      "file": "images/dubai-to-canada-hero.png",
+      "alt": "A pet ready to travel from Dubai to Canada",
+      "status": "rendered (low-res)"
+    }
+  ],
+  "method": {
+    "structure_logic": "2026 article anatomy: headline (curiosity/result) -> answer-first opening (the liftable answer in the first lines) -> key takeaways -> table of contents -> scannable H2/H3 -> a visual (data table or flow) -> original insight or a story -> FAQ -> official sources -> one help-first CTA. Why: web readers scan ~20-28% of words (Nielsen Norman Group), so the answer is front-loaded; a story is remembered where bare facts are forgotten; one page = one job + a single CTA converts. These choices recur across every source in our research (see SOURCING-METHOD.md).",
+    "geo_seo_rationale": "What we believe helps. GEO (being cited by AI answer engines): answer-first self-contained chunks, cited statistics, official-source citations, consistent entities, FAQ schema -- and citation is decoupled from ranking (~66% of AI-Overview citations come from outside the top-20), so strong content can be cited even before it ranks. SEO: intent-matched title+H1, topical depth, internal links into the money page, visible freshness dates, structured data (Article/FAQ/Breadcrumb/LocalBusiness). HONEST CAVEAT: these are evidence-based best practices, NOT guaranteed results -- ranking also needs off-page authority/backlinks/indexing not built here, and GEO citation is plausible but unproven until measured with a live AI-citation test.",
+    "how_and_why_we_audit": "Each page is scored by a 5-lens auditor -- Website, SEO, GEO, Lead-gen/Trust, Quality -- which together cover the 7-category QA (Helpful, Human, Original, Trustworthy, SEO, GEO, Conversion). Why this way: (1) page-type profiles judge a page against ITS job (a reassurance page is weighted differently from a money page); (2) every check carries an evidence tier (T1 sworn -> T6 practitioner) and a verified-vs-heuristic tag; (3) not-measurable checks are excluded, never zeroed (a coverage->confidence label); (4) risk caps catch keyword-stuffing, thin content, fake schema, no-CTA. The score is an on-page QUALITY PROXY, not a measured ranking/citation outcome.",
+    "what_we_are_sure_of": "100% sure = a fact screenshot-verified against its official source as of a date (see sourcing.verified_100pct) + that the method was applied. NOT sure = that it ranks or gets cited (unproven until the site is live, indexed and measured).",
+    "how_we_verify": "Every factual/regulatory claim is verified against an OFFICIAL source only -- government bodies, recognised standards bodies (IATA), or the operator's own site (e.g. the airline). Never blogs, forums, competitors, or AI. Each verified claim is captured as a full-page SCREENSHOT and logged in a regulatory register with: source, URL, date verified, version, reviewer, and a re-verify-by date (because regulations change). Anything we could not confirm from an official source is HEDGED or flagged 'confirm with [authority]', never asserted (see sourcing.stated_but_unverified). Tooling: a Playwright screenshot verifier with an official-domain allowlist + the regulatory register. Facts are kept separate from advice ('the authority requires X' vs 'we recommend X'). AI never makes the final call -- a human reviews and signs off before publish."
+  },
+  "sourcing": {
+    "how_we_derived_this": "Built from recurring patterns across our research corpus (SOURCING-METHOD.md): answer the fear not the keyword, front-load the answer, official sources only, a route-specific story, single help-first CTA into the money page.",
+    "verified_100pct": [
+      {
+        "fact": "Where this route's facts were screenshot-verified, the evidence is in audit/evidence/* and the regulatory register (e.g. UK tapeworm + XL Bully ban, US CDC dog rules, EU titre timing, IATA, Emirates travel methods).",
+        "source": "see regulatory register",
+        "as_of": "2026-06-09"
+      }
+    ],
+    "stated_but_unverified": [
+      {
+        "claim": "Route-specific cost ranges are a model estimate (stated as ranges)",
+        "action": "Re-validate quarterly vs live airline cargo quotes"
+      },
+      {
+        "claim": "Any specific not screenshot-verified (e.g. Australia DAFF, South Africa DALRRD, India AQCS detail)",
+        "action": "Confirm + screenshot the official source before publish"
+      }
+    ],
+    "confidence": "100% sure of: the screenshot-verified facts (regulatory register) + that the method was applied. NOT sure of: ranking/citation -- unproven until the site is live, indexed and measured."
+  },
+  "lead_magnet": {
+    "label": "Free pet-relocation checklist",
+    "description": "Every document + step for your route, in order, verified against official sources."
+  }
+}

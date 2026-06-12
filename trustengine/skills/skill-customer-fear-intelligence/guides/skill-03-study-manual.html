@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skill 01 · File 03 — The Fear Formula | The Trust Engine</title>
+<style>
+  :root{
+    --paper:#faf6ef; --paper-2:#f3ecdf; --ink:#2b2620; --ink-soft:#5c5346;
+    --line:#e3d8c4; --accent:#b4582f; --accent-2:#c98a3a; --accent-soft:#f6e7d6;
+    --good:#5b7a4f; --warn:#b08400;
+    --serif:Georgia,"Iowan Old Style","Times New Roman",serif;
+    --sans:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box} html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--serif);line-height:1.65;font-size:18px}
+  #progress{position:fixed;top:0;left:0;height:4px;width:0;background:linear-gradient(90deg,var(--accent),var(--accent-2));z-index:100;transition:width .1s ease-out}
+  .layout{display:flex;max-width:1180px;margin:0 auto}
+  nav.side{position:sticky;top:0;align-self:flex-start;height:100vh;width:260px;padding:34px 22px;background:var(--paper-2);border-right:1px solid var(--line);overflow-y:auto;font-family:var(--sans)}
+  nav.side .brand{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:700}
+  nav.side h1{font-size:19px;margin:.4em 0 1.2em;font-family:var(--serif)}
+  nav.side a{display:block;color:var(--ink-soft);text-decoration:none;font-size:14px;padding:7px 10px;border-radius:7px;margin-bottom:2px}
+  nav.side a:hover{background:var(--accent-soft);color:var(--ink)} nav.side a.active{background:var(--accent);color:#fff}
+  main{flex:1;padding:54px 56px 120px;max-width:820px}
+  main header.doc{border-bottom:3px solid var(--accent);padding-bottom:22px;margin-bottom:34px}
+  main header.doc .kicker{font-family:var(--sans);font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);font-weight:700}
+  h2{font-size:28px;margin:48px 0 14px;padding-top:10px} h3{font-size:21px;margin:30px 0 8px;color:var(--accent)}
+  p{margin:.6em 0} .lead{font-size:20px;color:var(--ink-soft)}
+  .card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:20px 24px;margin:18px 0}
+  .fear{border-left:5px solid var(--accent)}
+  .fear .rank{font-family:var(--sans);font-weight:700;color:var(--accent);font-size:13px;text-transform:uppercase;letter-spacing:.06em}
+  .fear blockquote{margin:10px 0;padding:10px 16px;border-left:3px solid var(--accent-2);background:var(--paper-2);font-style:italic;font-size:16px}
+  .fear .use{font-family:var(--sans);font-size:14px;color:var(--ink-soft)}
+  code,.mono{font-family:"SFMono-Regular",Consolas,monospace;background:var(--paper-2);padding:2px 6px;border-radius:5px;font-size:.86em}
+  table{width:100%;border-collapse:collapse;margin:18px 0;font-family:var(--sans);font-size:14px}
+  th,td{text-align:left;padding:9px 11px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{background:var(--paper-2);font-size:12px;text-transform:uppercase;letter-spacing:.05em;color:var(--ink-soft)}
+  .callout{background:var(--accent-soft);border-radius:12px;padding:18px 22px;margin:20px 0;border:1px solid #ecd8bf}
+  .ba{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:16px 0}
+  .ba .col{border-radius:12px;padding:16px 18px;font-size:16px}
+  .ba .before{background:#f1ece4;border:1px solid var(--line)} .ba .after{background:#eef3ea;border:1px solid #cfe0c4}
+  .ba h4{margin:0 0 8px;font-family:var(--sans);font-size:12px;text-transform:uppercase;letter-spacing:.08em}
+  .ba .before h4{color:#9a8c78} .ba .after h4{color:var(--good)}
+  .builder{background:#fff;border:2px solid var(--accent);border-radius:14px;padding:24px;margin:24px 0;font-family:var(--sans)}
+  .builder .kw{font-size:22px;font-weight:700;font-family:var(--serif);margin:6px 0 14px}
+  .builder textarea{width:100%;min-height:70px;border:1px solid var(--line);border-radius:9px;padding:12px;font-size:15px;font-family:var(--serif)}
+  .builder button{margin-top:12px;background:var(--accent);color:#fff;border:0;padding:10px 18px;border-radius:9px;cursor:pointer;font-weight:600}
+  .builder .reveal{margin-top:14px;background:var(--paper-2);border-radius:9px;padding:14px;display:none;font-size:15px}
+  .builder .reveal b{color:var(--accent)}
+  footer{font-family:var(--sans);font-size:13px;color:var(--ink-soft);border-top:1px solid var(--line);margin-top:60px;padding-top:20px}
+  @media(max-width:880px){nav.side{display:none}main{padding:30px 22px 80px}.ba{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div id="progress"></div>
+<div class="layout">
+  <nav class="side">
+    <div class="brand">The Trust Engine</div>
+    <h1>File 03 · The Fear Formula</h1>
+    <a href="#what">What fear mapping is</a>
+    <a href="#ten">The confirmed fears</a>
+    <a href="#formula">Writing a fear statement</a>
+    <a href="#phases">Phase 1 vs Phase 2</a>
+    <a href="#ba">Before / after openings</a>
+    <a href="#build">Write one yourself</a>
+  </nav>
+  <main>
+    <header class="doc">
+      <div class="kicker">Skill 01 · File 03</div>
+      <h2 style="margin-top:6px">The Fear Formula</h2>
+      <p class="lead">Mapping the human fear behind every keyword — Column K, built from real community language.</p>
+    </header>
+
+    <section id="what">
+      <h2>What fear mapping is — and why no competitor does it</h2>
+      <p>Intent tells you what someone wants to <em>find</em>. Fear tells you what they're afraid <em>of</em>. They're different things. Someone searching "pet relocation Dubai to India" wants a service — but they're afraid their dog will be denied entry at the Indian border over a paperwork mistake they didn't catch.</p>
+      <div class="ba">
+        <div class="col before"><h4>Generic page (loses)</h4>"Professional pet relocation from Dubai to India."</div>
+        <div class="col after"><h4>Fear-acknowledging page (wins)</h4>"We handle every document so your dog arrives in India legally and safely — nothing rejected at the border."</div>
+      </div>
+      <p>This is the step nobody else does. The fear database below is built <b>entirely from real quotes</b> across 69 screenshots of Facebook groups and Reddit threads. We do not invent fear — we acknowledge a documented one and pair it with a verified solution.</p>
+    </section>
+
+    <section id="ten">
+      <h2>The confirmed fears — ranked by evidence strength</h2>
+      <p>Twelve fear categories, each anchored to verbatim community language. Rank reflects how strongly the dataset evidences each one (upvotes, repetition, emotional intensity).</p>
+
+      <div class="card fear"><div class="rank">#1 · Confiscation — deepest fear in the dataset</div>
+        <blockquote>"without it your dog will be taken away in airport and never give back from you my friends had the worst experience. Still when I remember I crying" — Muze Gu</blockquote>
+        <div class="use"><b>Use for:</b> documents, certificates, MOCCAE, airport process, titer tests. <b>Language:</b> taken at airport / never given back / confiscated.</div></div>
+
+      <div class="card fear"><div class="rank">#2 · Price gouging</div>
+        <blockquote>"relocation companies are shamelessly charging an insane amount of money right now" — IrbisKat (24 upvotes) · "Wish I knew this before I paid the $1500 for etihad" — Funny_Dot</blockquote>
+        <div class="use"><b>Use for:</b> cost, price, quote, fee, expensive. <b>Language:</b> overcharged / no way to know if fair / insane amount.</div></div>
+
+      <div class="card fear"><div class="rank">#3 · Timeline — most common practical fear</div>
+        <blockquote>"it takes 2-3 weeks ... only one lab in UAE" · "the health certificate ... only valid for 10 days" · "Flying our cat to Australia took around 8 months"</blockquote>
+        <div class="use"><b>Use for:</b> how long, timeline, process, steps, plan. <b>Language:</b> too late / certificate expires / 8 months separated / missed the window.</div></div>
+
+      <div class="card fear"><div class="rank">#4 · Abandonment</div>
+        <blockquote>"uae already has a huge problem with abandoned pets that has skyrocketed" — IrbisKat (24) · "I would never want to leave a pet behind"</blockquote>
+        <div class="use"><b>Use for:</b> leaving pet behind, abandonment, "are people leaving pets behind in Dubai". <b>Language:</b> no choice / impossible choice / separation.</div></div>
+
+      <div class="card fear"><div class="rank">#5 · Airline disaster</div>
+        <blockquote>"I did not receive the approval until 9:56 PM ... only 4.5 hours prior to take off" · "I WOULD NEVER FLY EITHAD" — unnnabear</blockquote>
+        <div class="use"><b>Use for:</b> airline keywords, Etihad, Emirates, booking. <b>Language:</b> approval too late / refused last minute / no response from pets dept.</div></div>
+
+      <div class="card fear"><div class="rank">#6 · Documentation mistake</div>
+        <blockquote>"each country has unique import export certificates and permits" — Curious_cat_2912 (16) · "triple check every piece of information"</blockquote>
+        <div class="use"><b>Use for:</b> paperwork, requirements, permits, certificates, health checks. <b>Language:</b> wrong paperwork / rejected at border / missing document.</div></div>
+
+      <div class="card fear"><div class="rank">#7 · Pet suffering</div>
+        <blockquote>"Just the thought she's gonna be so stressed out breaks my heart" — Ornery-Pay7395 · "my cat was way too anxious"</blockquote>
+        <div class="use"><b>Use for:</b> safe, stress, anxiety, cargo, cabin, sedation. <b>Language:</b> suffering in cargo / traumatised / breaks my heart.</div></div>
+
+      <div class="card fear"><div class="rank">#8 · Complete overwhelm</div>
+        <blockquote>"I don't know what I should do? and where I should start? ... no one knows" — Bothaina Mo'nes · "i never even knew such organisations existed"</blockquote>
+        <div class="use"><b>Use for:</b> how to, guide, steps, checklist, what do I need. <b>Language:</b> nobody knows / don't know where to start / every source says something different.</div></div>
+
+      <div class="card fear"><div class="rank">#9 · Wrong provider / scam</div>
+        <blockquote>"Please do proper research and read reviews before handing over your pet to them" — Curious_cat_2912</blockquote>
+        <div class="use"><b>Use for:</b> best, top, reviews, trusted, compare, IPATA. <b>Language:</b> wrong company / handed pet to strangers / lost control.</div></div>
+
+      <div class="card fear"><div class="rank">#10 · Breed / weight rejection</div>
+        <blockquote>"Emirates is allowing dogs in the cabin only if it's a service dog" — kiloofalpha · "dogs under 5kg can now be in cabin, but what about larger" — Kind-Ad2650</blockquote>
+        <div class="use"><b>Use for:</b> breed, weight, size, carrier, cabin, large dog. <b>Language:</b> breed rejected / too heavy / no option for large breeds.</div></div>
+
+      <div class="card fear"><div class="rank">#11 · Remote management <span style="font-weight:400;text-transform:none">(discovered batch 2)</span></div>
+        <blockquote>"She is now too old to handle the paperwork ... we're looking for an agency here that works with a vet or partner agency in South Africa" — Henessy Van Niekerk</blockquote>
+        <div class="use"><b>Use for:</b> remote relocation, pet in another country, third-party management. <b>Language:</b> can't be there / no one to manage it.</div></div>
+
+      <div class="card fear"><div class="rank">#12 · Exotic pet exclusion</div>
+        <blockquote>"My turtle makes everyone confused ... oh, there more to pets beside cats and dogs?" — dredeth · "All online info only talks about cats and dogs" — curly_and_curvy</blockquote>
+        <div class="use"><b>Use for:</b> bird, parrot, turtle, rabbit, exotic. <b>Language:</b> no information exists / invisible to the system.</div></div>
+    </section>
+
+    <section id="formula">
+      <h2>How to write a fear statement</h2>
+      <p>For every keyword in Column K, complete one sentence:</p>
+      <div class="callout" style="font-size:22px;font-family:var(--serif)"><b>"I'm afraid that…"</b></div>
+      <p>It must be:</p>
+      <ul>
+        <li><b>Specific</b> — not "I'm worried about the process" but "I'm afraid the rabies titre timeline means my dog gets stuck in quarantine for 6 months."</li>
+        <li><b>Visceral</b> — it should feel like something real could go wrong.</li>
+        <li><b>Tied to a real outcome</b> — rejection at customs, separation, financial loss, pet injury, wasted time.</li>
+        <li><b>In the customer's exact words</b> — the language from Facebook and Reddit, not formal copy.</li>
+        <li>Max <b>25 words</b> after "I'm afraid that".</li>
+      </ul>
+    </section>
+
+    <section id="phases">
+      <h2>Phase 1 vs Phase 2 — multi-community expansion</h2>
+      <p><b>Phase 1 (now):</b> one fear statement per keyword in Column K, drawn from Dubai community data.</p>
+      <p><b>Phase 2:</b> the same keyword has <em>different</em> fears depending on which community searches it. That's the long-term moat.</p>
+      <table>
+        <tr><th>Keyword</th><th>Community</th><th>Primary fear</th></tr>
+        <tr><td rowspan="3">pet relocation Dubai to India</td><td>Indian expat leaving Dubai</td><td>Denied at Indian customs → have to leave him</td></tr>
+        <tr><td>Indian family planning the move</td><td>Cost forces a choice between pet and the move</td></tr>
+        <tr><td>UK expat with India connection</td><td>Transit through a third country adds unknown quarantine</td></tr>
+      </table>
+      <p>Phase 2 expands Column K into a profile: <code>K</code> primary fear, <code>L</code> secondary fear, <code>M</code> community source, <code>N</code> route context. <b>Do not build Phase 2 yet</b> — it needs the origin-country engine runs and country-specific Reddit/Facebook data.</p>
+    </section>
+
+    <section id="ba">
+      <h2>Before / after openings</h2>
+      <div class="ba">
+        <div class="col before"><h4>Before — generic</h4>"Pet relocation services from Dubai. Get a quote today."</div>
+        <div class="col after"><h4>After — fear-acknowledging</h4>"Afraid your dog will be denied entry over a paperwork mistake? Here's exactly what to prepare — and we check every document before travel."</div>
+      </div>
+      <div class="ba">
+        <div class="col before"><h4>Before — generic</h4>"We offer competitive pricing on pet transport."</div>
+        <div class="col after"><h4>After — fear-acknowledging</h4>"Been quoted an insane amount with no breakdown? Here's what each step actually costs in the UAE — and why."</div>
+      </div>
+    </section>
+
+    <section id="build">
+      <h2>Write one yourself</h2>
+      <p>Read the keyword, write your "I'm afraid that…" statement, then reveal the community-sourced version.</p>
+      <div class="builder" id="builder">
+        <div class="kw" id="bKw"></div>
+        <textarea id="bInput" placeholder="I'm afraid that..."></textarea>
+        <div><button id="bReveal">Reveal community-sourced fear →</button> <button id="bNext" style="background:#7a6c58">Next keyword</button></div>
+        <div class="reveal" id="bOut"></div>
+      </div>
+    </section>
+
+    <footer>
+      The Trust Engine — Skill 01, File 03. Fear fills Column K; with intent (Column J) it feeds File 04 (Sorting Funnel).<br>
+      Generated 2026-05-27. Warm-paper house style reproduced from the documented spec (template file not present in project).
+    </footer>
+  </main>
+</div>
+<script>
+  const prog=document.getElementById('progress');
+  addEventListener('scroll',()=>{const h=document.documentElement;prog.style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%';});
+  const links=[...document.querySelectorAll('nav.side a')];const secs=links.map(a=>document.querySelector(a.getAttribute('href')));
+  addEventListener('scroll',()=>{let i=secs.length-1;for(let k=0;k<secs.length;k++){if(secs[k].getBoundingClientRect().top<140)i=k;}links.forEach(l=>l.classList.remove('active'));if(links[i])links[i].classList.add('active');});
+  const B=[
+    {kw:"rabies titer test Dubai",f:"I'm afraid the titer test will take longer than expected and I'll miss my move date.",src:"Timeline fear — IrbisKat: results take 2-3 weeks, only one lab in the UAE."},
+    {kw:"Emirates pet policy",f:"I'm afraid Emirates will reject my breed and I'll find out too late to change plans.",src:"Breed/weight rejection — community confirmed BSH rejected; cabin = service dogs only."},
+    {kw:"pet relocation Dubai cost",f:"I'm afraid I'm being charged an insane amount and have no way to know if the price is fair.",src:"Price gouging — IrbisKat (24 upvotes): 'shamelessly charging an insane amount'."},
+    {kw:"bring cat to Dubai",f:"I'm afraid my cat will suffer in cargo and I won't be there to help her.",src:"Pet suffering — 'Just the thought she's gonna be so stressed out breaks my heart'."},
+    {kw:"pet quarantine Dubai",f:"I'm afraid my pet will be taken away when we land and I won't see them for weeks.",src:"Confiscation/separation — Muze Gu: 'taken away in airport and never give back'."}
+  ];
+  let i=0;const kwEl=document.getElementById('bKw'),out=document.getElementById('bOut'),inp=document.getElementById('bInput');
+  function render(){kwEl.textContent='“'+B[i].kw+'”';out.style.display='none';inp.value='';}
+  document.getElementById('bReveal').onclick=()=>{out.innerHTML='<b>Community-sourced fear:</b> “'+B[i].f+'”<br><span style="color:#5c5346">'+B[i].src+'</span>';out.style.display='block';};
+  document.getElementById('bNext').onclick=()=>{i=(i+1)%B.length;render();};
+  render();
+</script>
+</body>
+</html>

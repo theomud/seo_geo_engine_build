@@ -1,0 +1,18 @@
+# Score before creating a page.
+
+opportunity:
+  keyword:
+  page_type:
+  audience:
+  business_goal:
+  search_intent:
+  commercial_value: 0 # 1-10
+  traffic_potential: 0 # 1-10
+  ranking_difficulty: 0 # 1-10, higher means harder
+  topical_authority_fit: 0 # 1-10
+  evidence_available: 0 # 1-10
+  geo_citation_potential: 0 # 1-10
+  conversion_potential: 0 # 1-10
+  priority_score: 0
+  decision: "build / update / merge / reject"
+  reason:

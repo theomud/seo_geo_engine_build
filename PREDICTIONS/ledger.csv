@@ -1,0 +1,25 @@
+id,layer,date_filed,claim,gemini_p,claude_p,success_metric,measurement,resolve_by,status,outcome,brier_gemini,brier_claude
+F01,fact,2026-06-09,"Import permit 200 AED/head",NA,NA,"matches official MOCCAE source","screenshot verify",2026-06-09,resolved,CORRECT,NA,NA
+F02,fact,2026-06-09,"Permit valid 90 days, precedes travel",NA,NA,"matches verified data","screenshot verify",2026-06-09,resolved,CORRECT,NA,NA
+F03,fact,2026-06-09,"Titer >=0.5 IU/ml valid 365 days",NA,NA,"matches verified data","screenshot verify",2026-06-09,resolved,CORRECT,NA,NA
+F04,fact,2026-06-09,"Rabies >=21 days before travel",NA,NA,"matches verified data","screenshot verify",2026-06-09,resolved,CORRECT,NA,NA
+F05,fact,2026-06-09,"Max 2 pets per person per year",NA,NA,"matches verified data","screenshot verify",2026-06-09,resolved,CORRECT,NA,NA
+F06,fact,2026-06-09,"Min age >=12 weeks",NA,NA,"matches verified data","screenshot verify",2026-06-09,resolved,INCORRECT (Pakistan high-risk = 15wk),NA,NA
+F07,fact,2026-06-09,"Manifested cargo only; no checked baggage",NA,NA,"matches verified data","screenshot verify",2026-06-09,resolved,INCORRECT (Emirates checked baggage <17h),NA,NA
+F08,fact,2026-06-09,"Titer release fee 500 AED",NA,NA,"matches verified data","screenshot verify",2026-06-09,resolved,PARTIAL (500/dog 250/cat),NA,NA
+F09,fact,2026-06-09,"No valid titer = immediate deportation",NA,NA,"official source","claim-audit queue",NA,unverified,PENDING (do not publish),NA,NA
+F10,fact,2026-06-09,"Banned breeds via Federal Law 22/2016 (specific list)",NA,NA,"official source","claim-audit queue",NA,unverified,PENDING (promising lead),NA,NA
+B01,strategy,2026-06-09,"Summer heat-embargo content captures missing intent",0.85,0.80,"ranks/cites for heat queries","live_tracker+geo_visibility",2026-12-09,open,TBD,NA,NA
+B02,strategy,2026-06-09,"Operational-friction keywords (airlines+cost) win intent",0.80,0.75,"ranks/cites for cost+airline queries","live_tracker+geo_visibility",2026-12-09,open,TBD,NA,NA
+B03,strategy,2026-06-09,"Deepening one-sentence FAQs improves ranking/PAA",0.80,0.55,"deepened variant beats concise on query set","experiments+probes",2026-12-09,open,TBD,NA,NA
+B04,strategy,2026-06-09,"Bolded direct FAQ answers win snippets/PAA",0.75,0.65,"wins >=1 snippet/PAA","live_tracker",2026-12-09,open,TBD,NA,NA
+B05,strategy,2026-06-09,"Named-author trust architecture lifts E-E-A-T ranking",0.70,0.60,"named-author pages outrank team-bylined","experiments",2027-03-09,blocked (needs real specialist),TBD,NA,NA
+B06,strategy,2026-06-09,"Current-year freshness marker improves ranking",0.65,0.35,"date-only change moves rankings","experiments",2026-12-09,open,TBD,NA,NA
+B07,strategy,2026-06-09,"Comprehensive long guide out-ranks concise answer-first",0.80,0.45,"long variant beats concise on rank AND conversion","experiments+live_tracker+conversions",2027-01-09,open (flagship),TBD,NA,NA
+G01,strategy,2026-06-09,"Experience/proprietary-data content gets cited more than regulations-only",0.85,0.68,"experience variant cited at higher rate than regulations-only control across >=2 engines","geo_visibility",2027-01-09,open,TBD,NA,NA
+G02,strategy,2026-06-09,"High entity density lifts AI citation",0.80,0.62,"high-entity variant cited more than low-density variant across >=2 engines","geo_visibility",2027-01-09,open,TBD,NA,NA
+G03,strategy,2026-06-09,"Answer-first extractable blocks get cited more than narrative",0.82,0.72,"answer-first/block variant cited more than narrative variant across >=2 engines","geo_visibility",2027-01-09,open,TBD,NA,NA
+G04,strategy,2026-06-09,"The expertise layer (what the company knows beyond the govt source) is the deciding GEO factor",0.80,0.55,"expertise variant out-cites repackaged-official control across >=2 engines with structure held constant","geo_visibility",2027-01-09,open,TBD,NA,NA
+G05,strategy,2026-06-09,"Case-studies/outcomes content gets cited for how/what-happens queries",0.78,0.60,"case-study page out-cites overview page on how/what-happens prompt set across >=2 engines","geo_visibility",2027-01-09,open,TBD,NA,NA
+G06,strategy,2026-06-09,"A dated official-source-cited page correcting an error AI currently gets wrong (90-day permit; no CDC permit) gets AI-cited",0.82,0.70,"corrective page cited for the query within probe window across >=2 engines","geo_visibility",2027-01-09,open,TBD,NA,NA
+G07,strategy,2026-06-09,"On queries with no authority cited (cost, Dubai-USA), a sourced answer-first page earns AI citation faster than on gov-contested queries",0.80,0.72,"sourced page cited on >=2 open-field queries before any gov-contested query","geo_visibility",2027-01-09,open,TBD,NA,NA

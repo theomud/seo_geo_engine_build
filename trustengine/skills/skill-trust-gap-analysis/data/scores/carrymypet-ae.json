@@ -1,0 +1,61 @@
+{
+  "competitor_name": "CarryMyPet.ae",
+  "url": "https://carrymypet.ae",
+  "total_score": 3.0,
+  "scores": {
+    "fear_in_first_100_words": {
+      "score": 0.0,
+      "evidence": "the worry of making sure your pet is safe, comfortable, and cared for",
+      "gap": "No mention of pet being detained, confiscated, or refused at airport — the deepest fear is entirely absent"
+    },
+    "official_source_cited": {
+      "score": 0.0,
+      "evidence": "From regulatory approvals and airline handling to customs clearance",
+      "gap": "No citation of MOCCAE, UAE Ministry of Climate Change, IATA Live Animals Regulations, or any named authority"
+    },
+    "specific_route_named": {
+      "score": 0.5,
+      "evidence": "USA, INDIA, EUROPE, CANADA, UNITED KINGDOM, SINGAPORE",
+      "gap": "Destinations listed but no route-specific requirements, documentation, or process details given for any single route"
+    },
+    "step_by_step_process": {
+      "score": 0.5,
+      "evidence": "OUR PROCESS — HOW WE DO IT",
+      "gap": "Process section heading exists but no actual steps, numbered sequence, or detail visible in provided content"
+    },
+    "timeline_included": {
+      "score": 0.0,
+      "evidence": "We plan every journey with patience and care",
+      "gap": "No timeline mentioned — no weeks, days, lead times, or processing windows for any route or document type"
+    },
+    "cost_ranges_shown": {
+      "score": 0.0,
+      "evidence": "Safe, secure, and economic pet relocation services from Dubai",
+      "gap": "No price ranges, starting fees, or cost factors listed anywhere on the page — only a 'Get Quote' CTA"
+    },
+    "common_mistakes": {
+      "score": 0.0,
+      "evidence": "No rushed processes. No uncertainty.",
+      "gap": "No mention of common owner mistakes, documentation errors, breed restrictions, or reasons pets get turned away"
+    },
+    "original_visuals": {
+      "score": 0.5,
+      "evidence": "OUR PREFERRED AIRLINES — section present",
+      "gap": "No evidence of original photography, infographics, or process diagrams — no visuals described in content beyond implied airline logos"
+    },
+    "cta_feels_like_help": {
+      "score": 0.5,
+      "evidence": "GET QUOTE appears five times on homepage alone",
+      "gap": "CTA is purely transactional and repeated excessively — no 'free consultation', 'check your route', or low-commitment help-first offer"
+    },
+    "would_you_trust_this": {
+      "score": 1.0,
+      "evidence": "13,500+ pet relocations… 40+ countries… transparent coordination and proven expertise",
+      "gap": "Social proof exists but testimonials lack specifics — no dates, no route details, no photos; stat counters show '0' (JS not loaded)"
+    }
+  },
+  "strongest_asset": "Volume of relocations claim (13,500+) and multi-continent destination coverage creates baseline credibility",
+  "biggest_gap": "Zero information about pet detention/confiscation risk at airport, no official regulatory body cited, no timeline or cost transparency — the page generates anxiety rather than resolving it",
+  "content_opportunity": "What Happens If Your Pet Is Detained at Dubai Airport — and How to Make Sure It Never Happens",
+  "content_brief": "Dubai pet owners fear their dog will be taken at the airport and never returned — unlike CarryMyPet, we name the exact MOCCAE documents, breed restrictions, and pre-clearance steps that prevent detention before you ever reach the terminal."
+}

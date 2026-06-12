@@ -1,0 +1,239 @@
+{
+  "_meta": {
+    "produced_by": "AI-assisted writing (official-source verified) — official sources + recurring research patterns (SOURCING-METHOD.md)",
+    "produced": "2026-06-09",
+    "content_format": "blog (inbound route, cluster under /moving-to-dubai/)",
+    "blog_objective": "lead_generation",
+    "funnel_stage": "TOFU→MOFU",
+    "target_keyword": "moving a pet from the USA to Dubai",
+    "secondary_keywords": [
+      "USA to Dubai pet relocation",
+      "ship dog from US to UAE",
+      "USDA export pet to Dubai"
+    ],
+    "intent": "informational/commercial",
+    "primary_fear": "I'm afraid I'll miss a US export endorsement and my pet won't be allowed to fly",
+    "author_byline": "By our relocation specialists · reviewed by our IPATA-certified specialists · updated June 2026"
+  },
+  "seo": {
+    "title": "Moving a Pet From the USA to Dubai: The Honest Guide",
+    "meta_description": "From the USA to Dubai you need a USDA-endorsed export health certificate, ISO microchip, valid rabies vaccine and a MOCCAE import permit. No UAE quarantine when compliant.",
+    "og_title": "USA to Dubai with a pet — the USDA step people miss",
+    "canonical_path": "/blog/usa-to-dubai-pet-relocation/"
+  },
+  "hero": {
+    "eyebrow": "Route guide · USA → Dubai",
+    "h1": "Moving your pet from the USA to Dubai",
+    "standfirst": "Moving a pet from the USA to Dubai needs a USDA-endorsed export health certificate, microchip, rabies and a MOCCAE import permit.",
+    "image": "images/usa-to-dubai-hero.png",
+    "image_alt": "A dog ready to fly from the USA to Dubai beside a travel crate"
+  },
+  "byline": "By our relocation specialists · reviewed by our IPATA-certified specialists · updated June 2026.",
+  "key_facts": {
+    "answer": "From the USA to the UAE you need an ISO microchip, a valid rabies vaccination, a health certificate endorsed by USDA APHIS, and a MOCCAE import permit arranged before travel. Compliant pets are not quarantined in the UAE.",
+    "stats": [
+      {
+        "label": "UAE quarantine",
+        "value": "None (if compliant)"
+      },
+      {
+        "label": "US-side step people miss",
+        "value": "USDA APHIS endorsement"
+      },
+      {
+        "label": "Flight",
+        "value": "Cargo or checked baggage (Emirates)"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "type": "prose",
+      "heading": "The US side — the USDA endorsement",
+      "paragraphs": [
+        "A US-issued pet health certificate usually has to be endorsed by USDA APHIS before it's valid for export. This is the step owners most often miss. Confirm the current process and your accredited vet via the USDA APHIS pet-travel pages before booking."
+      ]
+    },
+    {
+      "type": "table",
+      "heading": "UAE requirements at a glance (verified)",
+      "columns": [
+        "Requirement",
+        "Detail"
+      ],
+      "rows": [
+        [
+          "Import permit",
+          "MOCCAE, before travel — valid 90 days"
+        ],
+        [
+          "Microchip",
+          "Permanent ISO chip; number must match the health certificate"
+        ],
+        [
+          "Rabies",
+          "Vaccinate at ≥12 weeks; ≥21 days before travel (first/lapsed dose)"
+        ],
+        [
+          "Rabies titre",
+          "High-risk origins only (≥0.5 IU/ml, valid 365 days)"
+        ],
+        [
+          "Quarantine",
+          "None on arrival if compliant"
+        ],
+        [
+          "Max pets",
+          "2 per person per year (resident pets exempt)"
+        ],
+        [
+          "Fees",
+          "Permit AED 200/head; release AED 500/dog, AED 250/cat"
+        ]
+      ],
+      "note": "Verified against MOCCAE (June 2026). Restricted breeds under UAE Federal Law 22/2016 include Pit Bull, American Staffordshire Terrier, Fila Brasileiro, Dogo Argentino and Mastiff types — confirm your breed."
+    },
+    {
+      "type": "prose",
+      "heading": "The UAE side — the import permit",
+      "paragraphs": [
+        "The UAE requires a MOCCAE import permit (before travel), the microchip and a valid rabies vaccination. Compliant pets aren't quarantined. Confirm permit timing and your breed against the UAE restricted list — full detail on the Moving to Dubai hub."
+      ]
+    },
+    {
+      "type": "prose",
+      "heading": "How your pet flies in",
+      "paragraphs": [
+        "A US→Dubai journey is long, so on Emirates your pet usually travels as manifest cargo (Emirates Pets) rather than checked baggage, because the total journey typically exceeds the 17-hour baggage limit."
+      ]
+    }
+  ],
+  "story": {
+    "tag": "A common scenario",
+    "lead": "On USA → Dubai, the endorsement is the trap.",
+    "problem": "An owner gets the health certificate from their vet and books the flight.",
+    "mistake": "They don't get it endorsed by USDA APHIS in the required window.",
+    "discovery": "An un-endorsed certificate isn't accepted for export.",
+    "result": "A scramble to endorse it in time, or a re-book.",
+    "lesson": "For the USA, build the USDA endorsement into the timeline — it's the step that catches people."
+  },
+  "faqs": [
+    {
+      "q": "Do I need a USDA endorsement?",
+      "a": "Typically yes — US export health certificates usually require USDA APHIS endorsement. Confirm the current requirement for the UAE with USDA APHIS before travel."
+    },
+    {
+      "q": "Will my pet be quarantined in the UAE?",
+      "a": "No — with a valid MOCCAE import permit, microchip and rabies vaccination, pets aren't quarantined on arrival. Confirm current MOCCAE rules."
+    },
+    {
+      "q": "Cabin or cargo?",
+      "a": "On Emirates pets travel in the hold; on a long US→Dubai routing that's usually manifest cargo (journey over 17 hours), not checked baggage."
+    }
+  ],
+  "sources": [
+    {
+      "authority": "USDA APHIS",
+      "title": "Pet travel from the US to another country",
+      "url": "https://www.aphis.usda.gov/pet-travel",
+      "note": "US export side"
+    },
+    {
+      "authority": "UAE MOCCAE",
+      "title": "Pet import permits",
+      "url": "https://www.moccae.gov.ae/en/services/import-permit-pets",
+      "note": "UAE import side"
+    },
+    {
+      "authority": "Emirates",
+      "title": "Travelling with animals",
+      "url": "https://www.emirates.com/english/help/faqs/what-are-the-rules-and-charges-for-travelling-with-animals/",
+      "note": "Cabin/baggage/cargo + 17h"
+    },
+    {
+      "authority": "IATA",
+      "title": "Live Animals Regulations",
+      "url": "https://www.iata.org/en/programs/cargo/live-animals/",
+      "note": "Crate + cargo"
+    }
+  ],
+  "cta": {
+    "heading": "Moving from the USA to Dubai?",
+    "body": "We handle the USDA endorsement timing, the MOCCAE permit and the cargo booking end to end.",
+    "primary": {
+      "label": "Get my USA → Dubai quote",
+      "url": "/#quote"
+    },
+    "help_cta": "Not ready to enquire? Download the free pet-relocation checklist — every required document for your route, in order, so nothing is missed."
+  },
+  "internal_links": [
+    {
+      "anchor": "Moving to Dubai — full UAE import guide",
+      "url": "/moving-to-dubai/"
+    },
+    {
+      "anchor": "How pets fly (cabin/baggage/cargo)",
+      "url": "/blog/how-pets-fly-from-dubai-cabin-baggage-cargo/"
+    }
+  ],
+  "images": [
+    {
+      "role": "hero",
+      "file": "images/usa-to-dubai-hero.png",
+      "alt": "A dog ready to fly from the USA to Dubai beside a travel crate",
+      "status": "rendered (low-res)"
+    }
+  ],
+  "sourcing": {
+    "how_we_derived_this": "Same recurring patterns (SOURCING-METHOD.md): fear-first/answer-first, official-sources-only, route-specific story, funnel link to /moving-to-dubai/.",
+    "recurring_principles": [
+      "Answer the fear",
+      "Front-load the answer",
+      "Official sources only",
+      "Original story",
+      "Funnel link + single CTA"
+    ],
+    "verified_100pct": [
+      {
+        "fact": "Emirates pet travel methods + 17h rule",
+        "source": "emirates.com",
+        "evidence": "audit/evidence/travel-methods/emirates-animals-faq.png",
+        "as_of": "2026-06-09"
+      },
+      {
+        "fact": "IATA Live Animals Regulations",
+        "source": "iata.org",
+        "evidence": "audit/evidence/travel-methods/skycargo-emirates-pets.png",
+        "as_of": "2026-06-09"
+      },
+      {
+        "fact": "UAE import (MOCCAE): permit valid 90 days; permanent microchip matching the cert; rabies ≥21 days (first/lapsed dose, none for a valid booster); titre only from high-risk countries (≥0.5 IU/ml, valid 365d); min age 12wk (low-risk)/15wk (high-risk); internal+external parasite doses within 14 days; max 2 pets/person/year; fees AED 200 permit, AED 500/dog & AED 250/cat release; no quarantine if compliant",
+        "source": "moccae.gov.ae",
+        "evidence": "audit/evidence/uae-import-export/moccae-pets-full.png",
+        "as_of": "2026-06-09"
+      }
+    ],
+    "stated_but_unverified": [
+      {
+        "claim": "USDA APHIS endorsement requirement for UAE export",
+        "action": "Confirm + screenshot on aphis.usda.gov"
+      },
+      {
+        "claim": "UAE specific banned-breed list",
+        "action": "Confirm via Federal Law 22/2016 executive regulations + Dubai Municipality (legal basis named on MOCCAE; list not yet captured)"
+      }
+    ],
+    "confidence": "100% sure of: Emirates/IATA flight mechanics AND the UAE import requirements (MOCCAE, screenshot-verified 2026-06-09 — permit 90d, microchip, rabies 21d, titre high-risk only, fees, 2-pet limit, no quarantine). Still to confirm: the specific UAE banned-breed list + this route's origin-export specifics. NOT sure of: ranking/citation (unproven until the site is live, indexed and measured)."
+  },
+  "method": {
+    "structure_logic": "2026 article anatomy: headline (curiosity/result) -> answer-first opening (the liftable answer in the first lines) -> key takeaways -> table of contents -> scannable H2/H3 -> a visual (data table or flow) -> original insight or a story -> FAQ -> official sources -> one help-first CTA. Why: web readers scan ~20-28% of words (Nielsen Norman Group), so the answer is front-loaded; a story is remembered where bare facts are forgotten; one page = one job + a single CTA converts. These choices recur across every source in our research (see SOURCING-METHOD.md).",
+    "geo_seo_rationale": "What we believe helps. GEO (being cited by AI answer engines): answer-first self-contained chunks, cited statistics, official-source citations, consistent entities, FAQ schema -- and citation is decoupled from ranking (~66% of AI-Overview citations come from outside the top-20), so strong content can be cited even before it ranks. SEO: intent-matched title+H1, topical depth, internal links into the money page, visible freshness dates, structured data (Article/FAQ/Breadcrumb/LocalBusiness). HONEST CAVEAT: these are evidence-based best practices, NOT guaranteed results -- ranking also needs off-page authority/backlinks/indexing not built here, and GEO citation is plausible but unproven until measured with a live AI-citation test.",
+    "how_and_why_we_audit": "Each page is scored by a 5-lens auditor -- Website, SEO, GEO, Lead-gen/Trust, Quality -- which together cover the 7-category QA (Helpful, Human, Original, Trustworthy, SEO, GEO, Conversion). Why this way: (1) page-type profiles judge a page against ITS job (a reassurance page is weighted differently from a money page); (2) every check carries an evidence tier (T1 sworn -> T6 practitioner) and a verified-vs-heuristic tag; (3) not-measurable checks are excluded, never zeroed (a coverage->confidence label); (4) risk caps catch keyword-stuffing, thin content, fake schema, no-CTA. The score is an on-page QUALITY PROXY, not a measured ranking/citation outcome.",
+    "what_we_are_sure_of": "100% sure = a fact screenshot-verified against its official source as of a date (see sourcing.verified_100pct) + that the method was applied. NOT sure = that it ranks or gets cited (unproven until the site is live, indexed and measured).",
+    "how_we_verify": "Every factual/regulatory claim is verified against an OFFICIAL source only -- government bodies, recognised standards bodies (IATA), or the operator's own site (e.g. the airline). Never blogs, forums, competitors, or AI. Each verified claim is captured as a full-page SCREENSHOT and logged in a regulatory register with: source, URL, date verified, version, reviewer, and a re-verify-by date (because regulations change). Anything we could not confirm from an official source is HEDGED or flagged 'confirm with [authority]', never asserted (see sourcing.stated_but_unverified). Tooling: a Playwright screenshot verifier with an official-domain allowlist + the regulatory register. Facts are kept separate from advice ('the authority requires X' vs 'we recommend X'). AI never makes the final call -- a human reviews and signs off before publish."
+  },
+  "lead_magnet": {
+    "label": "Free pet-relocation checklist",
+    "description": "Every document + step for your route, in order, verified against official sources."
+  }
+}

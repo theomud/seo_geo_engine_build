@@ -1,0 +1,142 @@
+title: "Pet Relocation from Dubai & the UAE — Transparent Pricing | PawRoute"
+title_suffix: ""
+meta_description: "Move your pet from the UAE with prices shown upfront. Documents, vaccines, permits, IATA crates, cargo flights and customs — all handled. No hidden fees."
+og_title: "Moving your pet? We handle everything."
+schema: service
+service:
+  name: International pet relocation from the UAE
+  area_served: ["United Arab Emirates"]
+
+blocks:
+  - type: hero
+    eyebrow: "Dubai · Abu Dhabi · all 7 emirates"
+    heading: "Moving your pet? We handle everything."
+    subheading: >
+      Worried about getting your pet's move wrong? You're not alone — and it's fixable.
+      We handle documents, vaccines, permits, IATA crates, flights and customs clearance —
+      done right, in the right order. And unlike everyone else, we show you the price before you call.
+    ctas:
+      - { label: "See pricing", url: "#pricing", style: "btn-gold" }
+      - { label: "Pick your destination", url: "/destinations/", style: "btn-ghost" }
+    trust:
+      - "Prices shown upfront"
+      - "MOCCAE export process"
+      - "IATA crate standards"
+      - "No delivery-date guesswork"
+    card:
+      heading: "Typical cost from the UAE"
+      rows:
+        - { label: "Cat (standard route)", value: "AED 8,000–14,000" }
+        - { label: "Dog (standard route)", value: "AED 13,800–18,000" }
+        - { label: "Australia / Singapore", value: "AED 25,000–35,000+" }
+      note: "Exact price depends on your pet's size and destination. We show the full breakdown — no “get quote to see price.”"
+
+  - type: trust_bar
+    heading: "Why owners trust the process"
+    items:
+      - { num: "200+", label: "pets relocate through Dubai every day" }
+      - { num: "3-tier", label: "transparent pricing on every route" }
+      - { label: "MOCCAE export process" }
+      - { label: "IATA live-animal crate standards" }
+
+  - type: card_grid
+    id: destinations
+    eyebrow: "Where is your pet going?"
+    heading: "Popular routes from the UAE"
+    body: "Every route page shows the real requirements, timeline, airlines and price range — verified against the destination's own authority."
+    cards:
+      - { flag: "🇬🇧", title: "Dubai → UK", meta: "4–8 weeks · no quarantine", price: "AED 12,000–18,000", url: "/destinations/uae-to-uk/", arrow: "View route" }
+      - { flag: "🇦🇺", title: "Dubai → Australia", meta: "Up to 6 months · 10-day quarantine", price: "AED 25,000–35,000+", url: "/destinations/uae-to-australia/", arrow: "View route" }
+      - { flag: "🇺🇸", title: "Dubai → USA", meta: "4–12 weeks", price: "AED 13,800–22,000", url: "/destinations/uae-to-usa/", arrow: "View route" }
+      - { flag: "🇩🇪", title: "Dubai → Germany", meta: "EU rules · 4–6 weeks", price: "AED 13,800–18,000", url: "/destinations/uae-to-germany/", arrow: "View route" }
+      - { flag: "🇮🇳", title: "Dubai → India", meta: "3–5 weeks · no quarantine", price: "AED 8,000–14,000", url: "/destinations/uae-to-india/", arrow: "View route" }
+      - { flag: "🇸🇬", title: "Dubai → Singapore", meta: "4–8 months · 30-day quarantine", price: "AED 18,000–28,000", url: "/destinations/uae-to-singapore/", arrow: "View route" }
+      - { flag: "🇨🇦", title: "Dubai → Canada", meta: "4–6 weeks", price: "AED 14,000–20,000", url: "/destinations/uae-to-canada/", arrow: "View route" }
+      - { flag: "🇿🇦", title: "Dubai → South Africa", meta: "4–8 weeks", price: "AED 14,000–22,000", url: "/destinations/uae-to-south-africa/", arrow: "View route" }
+      - { flag: "🌍", title: "All destinations", meta: "France, Netherlands & more", price: "", url: "/destinations/", arrow: "See all" }
+
+  - type: steps
+    eyebrow: "Simple, in the right order"
+    heading: "How your pet's relocation works"
+    body: "Most mistakes happen because steps are done out of order. Here's the sequence that works."
+    items:
+      - { title: "Tell us the destination & date", text: "We confirm what your specific route needs and flag anything urgent — like summer heat embargoes or long titer-test waits." }
+      - { title: "Microchip, then vaccinate", text: "ISO microchip first, then the rabies vaccine. Order matters — vaccinating before microchipping makes it invalid." }
+      - { title: "Paperwork & MOCCAE export", text: "Export health certificate (valid 30 days) plus the MOCCAE application and airport inspection." }
+      - { title: "Book the right crate & flight", text: "IATA-compliant crate sized to your pet, and cargo space booked early — it fills 30–60 days ahead." }
+      - { title: "Fly & clear customs", text: "Your pet travels in a temperature-controlled hold and clears customs at the other end. We coordinate the handover." }
+
+  - type: pricing_tiers
+    id: pricing
+    eyebrow: "No hidden fees"
+    heading: "Three packages. Price shown upfront."
+    body: "Pick the level of support you want. Every package includes the full regulated process — the difference is how much we hold your hand along the way."
+    tiers:
+      - name: "Essential"
+        price: "AED 12,500"
+        unit: "from"
+        desc: "The complete regulated move, handled correctly. For confident owners on a budget."
+        includes:
+          - "Vet protocol + MOCCAE export"
+          - "IATA crate sourcing"
+          - "Cargo booking & customs clearance"
+        excludes:
+          - "Live transit updates"
+          - "24/7 support line"
+      - name: "Standard"
+        price: "AED 18,000"
+        unit: "from"
+        featured: true
+        badge: "Most popular"
+        desc: "Everything in Essential, plus updates and a pre-arrival briefing. What most families choose."
+        includes:
+          - "Everything in Essential"
+          - "Pet updates during transit"
+          - "Pre-arrival briefing & checklist"
+        excludes:
+          - "24/7 support line"
+      - name: "Premium"
+        price: "AED 24,000"
+        unit: "from"
+        desc: "Full white-glove service with 24/7 support and insurance, for complex or high-value moves."
+        includes:
+          - "Everything in Standard"
+          - "24/7 support line"
+          - "Real-time tracking & video updates"
+          - "Transit insurance & pet-hotel fallback"
+    note: "Prices are route-dependent. Complex routes (Australia, Singapore) start higher because of titer tests and quarantine. You'll always see the full breakdown before you commit."
+
+  - type: prose
+    variant: section--surface
+    eyebrow: "Why PawRoute"
+    heading: "We show the price. They make you ask."
+    lead: "Of 20 UAE pet-relocation providers, only 2 publish pricing. The market leader has 1,800 reviews — and still hides the cost behind a quote form."
+    paragraphs:
+      - "We do it differently. Every route page shows the real requirements, the timeline and a transparent price range, so you can plan before you ever talk to us."
+      - "We're specialists, not a logistics company with a pet sideline. Pet safety comes before revenue — your pet only flies when it's medically cleared and the paperwork is perfect."
+
+  - type: faq
+    heading: "Quick answers before you start"
+    items:
+      - { q: "How much does it cost to move my pet from the UAE?", a: "Standard routes run roughly AED 13,800–26,000; harder routes (Australia, Singapore) AED 25,000–35,000+. The exact price depends on your pet's size and destination — and we show the full breakdown, not a 'get a quote' wall." }
+      - { q: "How long does it take?", a: "Usually 4–8 weeks for standard routes. Australia and Singapore take months because of the titre test and quarantine. Start as soon as your move date is set." }
+      - { q: "What if my pet's breed is banned?", a: "Some breeds (Pit Bull and Mastiff types) can't be exported, and a few are banned at destinations. We verify your breed before booking — no surprises." }
+      - { q: "Can you guarantee the arrival date?", a: "No — and be wary of anyone who does. Airlines change schedules, especially in the summer heat embargo. We give a realistic timeline and keep you updated." }
+
+  - type: quote_form
+    id: quote
+    eyebrow: "No obligation"
+    heading: "Tell us where your pet needs to go"
+    body: "Send the basics and we'll reply on WhatsApp with a price range and the exact first step for your route."
+    points:
+      - "A transparent price range for your route — not a sales call"
+      - "The real requirements and timeline for your destination"
+      - "Honest guidance on summer heat embargoes and deadlines"
+    destinations: ["UK", "Australia", "USA", "Germany", "France", "Canada", "India", "Singapore", "South Africa", "Netherlands", "Into the UAE", "Somewhere else"]
+
+  - type: cta
+    heading: "Your pet's journey starts with one message."
+    body: "Transparent pricing. No hidden fees. We handle everything."
+    ctas:
+      - { label: "Get my quote", url: "#quote", style: "btn-gold" }
+      - { label: "Chat on WhatsApp", url: "https://wa.me/971500000000", style: "btn-ghost" }

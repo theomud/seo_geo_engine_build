@@ -1,0 +1,79 @@
+<!DOCTYPE html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Content Architecture — Learner Manual</title><style>body{font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:#1f2937;
+line-height:1.6;background:#f7f8fb;margin:0}.wrap{max-width:860px;margin:0 auto;padding:28px}
+h1{color:#1a3a5c}h2{color:#1a3a5c;border-top:2px solid #e5e7eb;padding-top:14px;margin-top:26px}
+h3{color:#2c5282}code{background:#f1f5f9;padding:1px 5px;border-radius:4px}
+table{border-collapse:collapse;width:100%}th,td{border:1px solid #e5e7eb;padding:7px 10px;text-align:left;vertical-align:top}
+th{background:#2c5282;color:#fff}tr:nth-child(even) td{background:#f9fafb}
+.hd{background:linear-gradient(135deg,#1a3a5c,#2c5282);color:#fff;padding:22px 28px;border-radius:0 0 14px 14px}
+.hd h1{color:#fff;margin:0}.hd p{color:#cfe0f5;margin:6px 0 0}</style></head><body><div class='hd'><h1>Content Architecture — Learner Manual</h1><p>Is the site's structure deliberate — clean URLs, internal links, navigable, no dead ends?</p></div><div class='wrap'><h1>Content Architecture — Learner Manual</h1>
+<p>Sites built one page at a time sprawl: messy URLs, orphan pages, buried value. This engine scores structural signals on a page — clean URL, internal linking, navigation, breadcrumbs, descriptive anchors and shallow depth — the architecture that lets every page be found.</p>
+<h2>How to run the engine</h2>
+<ul>
+<li>Score a page: <code>python skill-engines/content-architecture/engine.py --url &lt;URL&gt; --report out.html</code></li>
+<li>Web checker: <code>python skill-engines/content-architecture/engine.py --serve 8097</code></li>
+<li>These docs: <code>python skill-engines/content-architecture/engine.py --docs</code></li>
+</ul>
+<h2>The measurements (each one, with why and how)</h2>
+<h2>1. Clean URL</h2>
+<p><strong>How we measure it:</strong> We check the URL for params/uppercase/IDs/extensions.</p>
+<p><strong>Why it works:</strong> Clean keyword URLs are readable, shareable, and a deliberate-architecture signal.</p>
+<p><strong>What to do:</strong> Use a clean lowercase, hyphenated, keyword URL (no params/IDs).</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: /page.php?id=12345&amp;cat=3</li>
+<li>DO: /routes/dubai-to-uk</li>
+</ul>
+<h2>2. Shallow click depth</h2>
+<p><strong>How we measure it:</strong> We measure URL path depth.</p>
+<p><strong>Why it works:</strong> Pages within ~3 levels of home get crawled and found; deep pages get buried.</p>
+<p><strong>What to do:</strong> Bring the page within 3 clicks of the homepage.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: /a/b/c/d/e/page (5+ levels)</li>
+<li>DO: /routes/dubai-to-uk (≤3 levels)</li>
+</ul>
+<h2>3. Internal linking</h2>
+<p><strong>How we measure it:</strong> We count same-domain internal links.</p>
+<p><strong>Why it works:</strong> Internal links distribute authority and stop pages becoming orphans.</p>
+<p><strong>What to do:</strong> Add internal links to related pages (and link to this page from others).</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: No links to other pages.</li>
+<li>DO: Links to related route, cost and fear pages.</li>
+</ul>
+<h2>4. Descriptive anchors</h2>
+<p><strong>How we measure it:</strong> We measure the share of internal anchors that are descriptive vs 'click here'.</p>
+<p><strong>Why it works:</strong> Descriptive anchor text carries topical signal and helps users and engines navigate.</p>
+<p><strong>What to do:</strong> Replace 'click here' with descriptive anchor text.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: click here</li>
+<li>DO: Dubai to UK pet import rules</li>
+</ul>
+<h2>5. Semantic navigation</h2>
+<p><strong>How we measure it:</strong> We look for a <nav> element.</p>
+<p><strong>Why it works:</strong> A clear nav is the backbone of a navigable architecture.</p>
+<p><strong>What to do:</strong> Add a semantic <nav> with the main sections.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: Links loose in a <div>.</li>
+<li>DO: A semantic <nav> with the main sections.</li>
+</ul>
+<h2>6. Breadcrumbs</h2>
+<p><strong>How we measure it:</strong> We look for breadcrumb markup.</p>
+<p><strong>Why it works:</strong> Breadcrumbs show the page's place in the hierarchy — for users and for search.</p>
+<p><strong>What to do:</strong> Add breadcrumb navigation (+ BreadcrumbList schema).</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: (no breadcrumbs)</li>
+<li>DO: Home › Routes › Dubai to UK</li>
+</ul>
+<h2>7. Heading structure</h2>
+<p><strong>How we measure it:</strong> We count H2 sections.</p>
+<p><strong>Why it works:</strong> A heading tree is the page-level architecture that makes content scannable and extractable.</p>
+<p><strong>What to do:</strong> Break the page into clear H2 sections.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: One long block of text.</li>
+<li>DO: H2: Requirements / Timeline / Costs.</li>
+</ul></div></body></html>

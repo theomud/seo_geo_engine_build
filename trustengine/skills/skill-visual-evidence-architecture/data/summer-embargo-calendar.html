@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Dubai Pet Summer Embargo Calendar | The Trust Engine</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#14110d;--panel:#1d1812;--ink:#f3ece0;--soft:#b9ab95;--line:#352c20;--gold:#d8a84b;--red:#e06a4e;--amber:#e0a64e;--green:#7bbf6a}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--ink);font-family:'JetBrains Mono',monospace;font-size:13px;line-height:1.5;padding:16px;max-width:430px;margin:0 auto}
+  header{border-bottom:2px solid var(--gold);padding-bottom:10px;margin-bottom:12px}
+  .k{color:var(--gold);font-size:11px;letter-spacing:.1em}
+  h1{font-family:'Bebas Neue',sans-serif;font-size:28px;letter-spacing:.02em;line-height:1.05}
+  h2{font-family:'Bebas Neue',sans-serif;font-size:17px;color:var(--gold);letter-spacing:.03em;margin:16px 0 7px;border-bottom:1px solid var(--line);padding-bottom:3px}
+  .why{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:10px 12px;margin:8px 0;font-size:12px;color:var(--soft)}
+  .why b{color:var(--ink)}
+  .mrow{display:flex;align-items:center;gap:8px;margin:4px 0}
+  .mon{width:34px;flex-shrink:0;color:var(--gold);font-weight:700}
+  .track{flex:1;background:#251e16;border-radius:4px;height:18px;position:relative;overflow:hidden}
+  .fill{height:100%;border-radius:4px}
+  .temp{width:46px;flex-shrink:0;text-align:right;font-size:12px}
+  .risk{width:64px;flex-shrink:0;font-size:10px;text-align:right;font-weight:700}
+  .r-open{color:var(--green)}.r-check{color:var(--amber)}.r-emb{color:var(--red)}
+  .legend{display:flex;gap:12px;flex-wrap:wrap;font-size:11px;margin:8px 0}
+  .legend span{display:flex;align-items:center;gap:4px}
+  .dot{width:10px;height:10px;border-radius:2px;display:inline-block}
+  table{width:100%;border-collapse:collapse;margin:8px 0;font-size:11.5px}
+  th,td{text-align:left;padding:6px 7px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{color:var(--gold);text-transform:uppercase;font-size:10px}
+  .src{font-size:11px;color:var(--soft);border-top:1px solid var(--line);margin-top:12px;padding-top:9px}
+  .hedge{color:var(--amber)}
+</style>
+</head>
+<body>
+<header>
+  <div class="k">THE TRUST ENGINE · DUBAI PET RELOCATION</div>
+  <h1>Summer Embargo Calendar</h1>
+  <div class="k" style="color:var(--soft)">when airlines stop carrying pets — plan around it, not into it</div>
+</header>
+
+<div class="why">
+  <b>Why there's an embargo.</b> It isn't a sales tactic. Airlines restrict or refuse
+  live animals in cargo when ground temperatures are too high to be safe — commonly
+  around <b>29.4°C (85°F)</b> at any point in the journey. Dubai's summer routinely
+  hits <b>40°C+</b>, so pet cargo is widely restricted. The calendar below maps that
+  risk to Dubai's actual monthly temperatures.
+</div>
+
+<h2>The year at a glance</h2>
+<div class="legend">
+  <span><i class="dot" style="background:var(--green)"></i> generally open</span>
+  <span><i class="dot" style="background:var(--amber)"></i> check first</span>
+  <span><i class="dot" style="background:var(--red)"></i> embargo likely</span>
+</div>
+
+<div id="cal"></div>
+
+<h2>By airline (confirm before booking)</h2>
+<table>
+  <tr><th>Airline</th><th>Summer pet cargo</th></tr>
+  <tr><td>Emirates</td><td class="hedge">Heat-embargo policy applies in summer — confirm dates direct</td></tr>
+  <tr><td>Etihad</td><td class="hedge">Restrictions in peak heat — confirm direct (fee USD 399, C-015)</td></tr>
+  <tr><td>Qatar / Turkish (transit)</td><td class="hedge">Transit-point heat counts too — confirm whole route</td></tr>
+  <tr><td>Cabin (small pets)</td><td class="hedge">Cabin travel is less heat-restricted — ask if your pet qualifies</td></tr>
+</table>
+
+<div class="src">
+  <b>Sources.</b> Monthly temperatures = Dubai climate normals (average daily highs).
+  The ~29.4°C / 85°F cargo threshold and the airline rows are <span class="hedge">general
+  live-animal policy — HEDGE: confirm exact embargo dates with each airline before you
+  book</span>. Etihad fee USD 399 = C-015 (official). This calendar is planning
+  guidance, not a booking guarantee. · The Trust Engine · captured 2026-05-30
+</div>
+
+<script>
+  // Dubai average daily high temps (climate normals, °C) — the hard data
+  const months=[["Jan",24],["Feb",25],["Mar",28],["Apr",33],["May",38],["Jun",39],
+    ["Jul",41],["Aug",42],["Sep",39],["Oct",35],["Nov",30],["Dec",26]];
+  const max=44;
+  function band(t){ if(t>=37) return ["var(--red)","r-emb","EMBARGO"];
+    if(t>=29.4) return ["var(--amber)","r-check","CHECK"];
+    return ["var(--green)","r-open","OPEN"]; }
+  document.getElementById('cal').innerHTML = months.map(([m,t])=>{
+    const [col,cls,label]=band(t); const w=Math.round(t/max*100);
+    return `<div class="mrow"><div class="mon">${m}</div>
+      <div class="track"><div class="fill" style="width:${w}%;background:${col}"></div></div>
+      <div class="temp">${t}°C</div><div class="risk ${cls}">${label}</div></div>`;
+  }).join('');
+</script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+url: /moving-to-dubai/dog-taken-at-airport/
+title: "What happens if your dog is taken at Dubai airport — and the 3 steps that prevent it | PawRoute"
+title_suffix: ""
+meta_description: "Worried your dog could be held at Dubai airport? It happens when paperwork is incomplete. Here are the verified MOCCAE rules and the 3 steps that prevent a hold."
+og_title: "What happens if your dog is taken at Dubai airport?"
+schema: service
+service:
+  name: Pet import to the UAE — avoiding a customs hold
+  area_served: ["United Arab Emirates"]
+
+blocks:
+  # L1 — Fear acknowledgement (Customer Fear Intelligence → fear-led hero)
+  - type: hero
+    eyebrow: "Moving to Dubai · import"
+    heading: "What happens if your dog is taken at Dubai airport?"
+    subheading: >
+      That fear is real — and it has happened to people. The good news: a hold is
+      almost always caused by one fixable thing — incomplete paperwork. Here's
+      exactly what triggers it, what it costs, and the three steps that prevent it.
+    ctas:
+      - { label: "See the 3 steps", url: "#steps", style: "btn-gold" }
+      - { label: "Talk to someone who can help", url: "#quote", style: "btn-ghost" }
+
+  # L1 continued — a real, attributed account (Authority Assets → documented case)
+  - type: callout
+    style: warn
+    heading: "Why this fear exists"
+    body: >
+      A pet owner in a UAE group described it plainly: “without it your dog will be
+      taken away in airport and never give back… still when I remember I crying.”
+      A real account — and exactly the outcome the steps below are designed to prevent.
+
+  # L2 — The verified answer (AI Citation → extractable quick answer; Source Research → facts)
+  - type: key_facts
+    heading: "Quick answer"
+    answer: >
+      A pet is held at the UAE border when its paperwork is incomplete — most often
+      a missing import permit or an invalid rabies record. The requirements are
+      published by the regulator, MOCCAE, and they are specific: apply for the import
+      permit online before travel, keep it inside its 90-day validity, and make sure
+      the rabies vaccination is at least 21 days old.
+    stats:
+      - { label: "Import permit", value: "Apply online, before travel" }
+      - { label: "Permit valid", value: "90 days" }
+      - { label: "Rabies", value: "≥ 21 days before" }
+      - { label: "Release fee if held", value: "AED 500 / dog" }
+    verified: "June 2026"
+    source_authority: "UAE MOCCAE"
+
+  # L2 — The 3 steps (Content Structure → process; Conversion is help-first)
+  - type: steps
+    id: steps
+    eyebrow: "Do these and a hold won't happen"
+    heading: "The 3 steps that prevent a hold"
+    items:
+      - { title: "Apply for the MOCCAE import permit online — before you fly", text: "No pet may enter without it. It's issued by MOCCAE, the only body that issues the permit." }
+      - { title: "Time the 90-day permit window to your flight", text: "The permit is valid for 90 days from issue. Line it up with your travel date so it's still valid on arrival." }
+      - { title: "Make sure the rabies vaccination is ≥21 days old and recorded", text: "Microchip must be implanted before the vaccine, or the record is invalid. Bring the documented batch numbers." }
+
+  # L3 — Evidence (Visual Evidence → screenshot slot; Source Research → official link)
+  - type: figure
+    placeholder_label: "MOCCAE import-of-pets page — the AED 500 release fee"
+    caption: "The published release fee and permit rules, on MOCCAE's official import-of-pets page."
+    source_label: "UAE MOCCAE"
+    source_url: "https://www.moccae.gov.ae/en/services/import-permit-pets"
+    captured: "June 2026"
+
+  - type: callout
+    heading: "On the titer-test cost — we won't guess"
+    body: >
+      MOCCAE publishes no official figure for the rabies titer test. Community reports
+      put it around AED 700–1,300 — treat that as community-sourced, not official, and
+      confirm with the lab. We'd rather say “we don't know exactly” than invent a number.
+
+  # L3 — Official sources (Source Research)
+  - type: sources
+    eyebrow: "Don't take our word for it"
+    heading: "Official sources"
+    items:
+      - { authority: "UAE MOCCAE", title: "Import permit for pets (cats / dogs)", url: "https://www.moccae.gov.ae/en/services/import-permit-pets", note: "Permit, release fee, validity" }
+      - { authority: "IATA", title: "Live Animals Regulations", url: "https://www.iata.org/en/programs/cargo/live-animals/", note: "Travel crate standards" }
+
+  # L4 — Related fears (Content Architecture → internal links)
+  - type: card_grid
+    variant: section--surface
+    eyebrow: "Related worries"
+    heading: "Worried about something else?"
+    cards:
+      - { flag: "🛂", title: "Will my pet be quarantined?", meta: "What UAE entry actually involves", url: "/moving-to-dubai/quarantine/", arrow: "Read" }
+      - { flag: "☀️", title: "Can I fly my pet in summer?", meta: "The May–September heat embargo", url: "/moving-to-dubai/summer-travel/", arrow: "Read" }
+      - { flag: "🌍", title: "Leaving the UAE instead?", meta: "Export routes + pricing", url: "/destinations/", arrow: "See routes" }
+
+  # L5 — Help-first CTA (Conversion Copy)
+  - type: quote_form
+    id: quote
+    eyebrow: "No obligation"
+    heading: "Want us to check your paperwork before you fly?"
+    body: "Send your arrival date and your pet's details. We'll confirm exactly what you need, in order, so there's no risk of a hold."
+    destinations: ["Into the UAE (Dubai)", "Into the UAE (Abu Dhabi)", "Somewhere else"]
+    points:
+      - "A document checklist verified against MOCCAE"
+      - "The permit-timing rule that prevents a hold"
+      - "An honest answer on anything that isn't published"
+
+  - type: cta
+    heading: "Your pet doesn't have to be a story that ends at the airport."
+    body: "Get the paperwork right, in the right order. We'll help you do exactly that."
+    ctas:
+      - { label: "Get my checklist", url: "#quote", style: "btn-gold" }
+      - { label: "Moving to Dubai — start here", url: "/moving-to-dubai/", style: "btn-ghost" }

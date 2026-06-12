@@ -1,0 +1,32 @@
+qa_checklist:
+  strategy:
+    page_has_business_goal: false
+    opportunity_scored: false
+    not_duplicate: false
+  truth:
+    no_invented_facts: false
+    claims_have_sources: false
+    evidence_tiers_added: false
+  seo:
+    intent_matched: false
+    title_tag_written: false
+    meta_description_written: false
+    h1_clear: false
+    internal_links_added: false
+    entities_covered: false
+  geo:
+    citable_passages_added: false
+    statistics_added_where_relevant: false
+    sources_cited_where_relevant: false
+    faq_added: false
+  conversion:
+    cta_added: false
+    objections_answered: false
+  risk:
+    no_keyword_stuffing: false
+    no_doorway_page_pattern: false
+    no_fake_schema: false
+    no_scraped_content: false
+  tracking:
+    tracker_updated: false
+    review_date_set: false

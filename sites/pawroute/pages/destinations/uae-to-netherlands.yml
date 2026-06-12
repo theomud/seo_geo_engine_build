@@ -1,0 +1,159 @@
+title: "Pet Relocation Dubai to Netherlands — Requirements & Pricing | PawRoute"
+title_suffix: ""
+meta_description: "Move your pet from Dubai to the Netherlands under EU rules. Transparent pricing from AED 10,000, 4–6 weeks, no quarantine. Microchip, rabies and health certificate explained."
+og_title: "Moving your pet from Dubai to the Netherlands?"
+schema: service
+service:
+  name: Pet relocation from the UAE to the Netherlands
+  area_served: ["Netherlands", "United Arab Emirates"]
+
+blocks:
+  - type: hero
+    eyebrow: "Route · UAE → Netherlands (EU rules)"
+    heading: "Moving your pet from Dubai to the Netherlands?"
+    subheading: >
+      The Netherlands follows the EU pet-import framework — straightforward, no
+      quarantine, and often one of the most affordable European routes. Here's the
+      cost, timeline and the order to do things in.
+    ctas:
+      - { label: "See pricing", url: "#pricing", style: "btn-gold" }
+      - { label: "Get my quote", url: "#quote", style: "btn-ghost" }
+    card:
+      heading: "Dubai → Netherlands at a glance"
+      rows:
+        - { label: "Timeline", value: "4–8 weeks*" }
+        - { label: "Cost range", value: "AED 10,000–16,000" }
+        - { label: "Quarantine", value: "None (EU rules)" }
+        - { label: "Difficulty", value: "Easy*" }
+      note: "Same EU framework as Germany and France, often a little cheaper. *Add time if a rabies titre test is required."
+
+  - type: key_facts
+    heading: "Quick answer"
+    answer: "Moving a pet from Dubai to the Netherlands follows the EU import framework — no quarantine, and often the most affordable European route at roughly AED 10,000–16,000. You'll need a microchip, a rabies vaccine given 21+ days before travel and an EU animal health certificate. Important: pets entering the EU from a non-listed country can also need a rabies antibody (titre) test, taken at least 30 days after vaccination and 90+ days before travel — we confirm whether the UAE requires it, because it can add months to the timeline."
+    stats:
+      - { label: "Timeline", value: "4–8 weeks*" }
+      - { label: "Cost", value: "AED 10,000–16,000" }
+      - { label: "Quarantine", value: "None" }
+      - { label: "Titre test", value: "May be required*" }
+    verified: "June 2026"
+    source_authority: "European Commission"
+
+  - type: callout
+    style: warn
+    heading: "Check the rabies titre test early"
+    body: >
+      EU rules require a rabies antibody (titre) test for pets arriving from
+      non-listed countries. Whether the UAE counts as listed decides if your pet
+      needs it — and because the blood sample must be taken 90+ days before travel,
+      it's the one thing that can turn a 4–8 week move into a multi-month one. We
+      confirm your status with the official source before you commit.
+
+  - type: checklist
+    eyebrow: "EU pet-import rules"
+    heading: "Requirements for the Netherlands"
+    body: "The Netherlands applies the EU framework for pets arriving from outside the bloc. We confirm the current detail before booking."
+    items:
+      - { title: "ISO microchip first", text: "15-digit 11784/11785 chip, implanted before the rabies vaccine." }
+      - { title: "Rabies vaccine", text: "At least 21 days before travel, with batch numbers documented." }
+      - { title: "EU animal health certificate", text: "The third-country entry certificate (or an EU pet passport once established), completed correctly." }
+      - { title: "Export health certificate + MOCCAE", text: "UAE export certificate (valid 30 days) and the MOCCAE export process." }
+      - { title: "IATA crate", text: "Rigid, ventilated and sized to your pet." }
+
+  - type: steps
+    eyebrow: "The right order"
+    heading: "How the Dubai → Netherlands move works"
+    items:
+      - { title: "Confirm address & date", text: "We confirm the current EU entry requirements for your pet." }
+      - { title: "Microchip, then rabies vaccine", text: "Chip first — order matters." }
+      - { title: "Health certificates + MOCCAE export", text: "EU entry certificate plus the UAE export paperwork." }
+      - { title: "Book crate & flight", text: "IATA crate and cargo space — Amsterdam Schiphol is well set up for pets." }
+      - { title: "Fly & clear customs", text: "Your pet clears at a Dutch entry point and comes to you. No quarantine when documents are correct." }
+
+  - type: pricing_tiers
+    id: pricing
+    eyebrow: "No hidden fees"
+    heading: "Dubai → Netherlands pricing"
+    body: "Where you land in the range depends on your pet's size and the airline. Full breakdown before you commit."
+    tiers:
+      - name: "Essential"
+        price: "AED 10,000"
+        unit: "from"
+        desc: "The full regulated EU move, handled correctly."
+        includes:
+          - "Vet protocol + EU health certificate"
+          - "MOCCAE export + airport inspection"
+          - "IATA crate + cargo booking"
+          - "Customs clearance"
+        excludes:
+          - "Transit updates"
+          - "24/7 support"
+      - name: "Standard"
+        price: "AED 13,500"
+        unit: "from"
+        featured: true
+        badge: "Most popular"
+        desc: "Everything handled, with updates and a pre-arrival briefing."
+        includes:
+          - "Everything in Essential"
+          - "Transit updates + pre-arrival briefing"
+        excludes:
+          - "24/7 support"
+      - name: "Premium"
+        price: "AED 16,000"
+        unit: "from"
+        desc: "White-glove handling with insurance and a fallback plan."
+        includes:
+          - "Everything in Standard"
+          - "24/7 support line"
+          - "Transit insurance + pet-hotel fallback"
+    note: "Often the most affordable European route. You'll see every line before you decide."
+
+  - type: faq
+    heading: "Dubai → Netherlands: your questions"
+    items:
+      - { q: "Is there quarantine for the Netherlands?", a: "No quarantine when your pet meets the EU rules and the paperwork is correct." }
+      - { q: "Why is it cheaper than some EU routes?", a: "Amsterdam Schiphol is a major, pet-friendly cargo hub with frequent Dubai connections, which helps keep freight costs competitive." }
+      - { q: "Will my pet need a rabies titre test?", a: "It depends on whether the UAE is an EU-listed country. Pets from non-listed countries need a rabies antibody (titre) test taken at least 30 days after vaccination and 90+ days before travel. We confirm your status against the official EU guidance before you commit, because it materially changes the timeline." }
+      - { q: "How long does it take?", a: "Usually 4–8 weeks when no titre test is required — driven mainly by the 21-day minimum after the rabies vaccine and cargo availability. If a titre test is needed, allow several months." }
+      - { q: "Can you guarantee the arrival date?", a: "No. Airlines change schedules. We give you a realistic timeline and keep you updated, but never guarantee a delivery date." }
+
+  - type: sources
+    eyebrow: "Don't take our word for it"
+    heading: "Official sources"
+    items:
+      - { authority: "European Commission", title: "Bringing a pet into the EU from a non-EU country", url: "https://food.ec.europa.eu/animals/live-animal-movements/dogs-cats-and-ferrets/bringing-pet-eu-non-eu-country_en", note: "Microchip, rabies, titre, health certificate" }
+      - { authority: "UAE MOCCAE", title: "Pet export & import permits", url: "https://www.moccae.gov.ae/en/services/import-permit-pets", note: "UAE export process" }
+      - { authority: "IATA", title: "Live Animals Regulations", url: "https://www.iata.org/en/programs/cargo/live-animals/", note: "Travel crate standards" }
+
+  - type: card_grid
+    variant: section--surface
+    eyebrow: "Related routes"
+    heading: "Comparing destinations?"
+    cards:
+      - { flag: "🇩🇪", title: "Dubai → Germany", meta: "EU rules · 4–8 weeks", url: "/destinations/uae-to-germany/", arrow: "View" }
+      - { flag: "🇫🇷", title: "Dubai → France", meta: "EU rules · 4–8 weeks", url: "/destinations/uae-to-france/", arrow: "View" }
+      - { flag: "🇬🇧", title: "Dubai → UK", meta: "4–8 weeks · no quarantine", url: "/destinations/uae-to-uk/", arrow: "View" }
+      - { flag: "🌍", title: "All destinations", meta: "Every route + pricing", url: "/destinations/", arrow: "See all" }
+
+  - type: related
+    label: "📖 Read the guide"
+    items:
+      - { title: "Dubai → EU: the health certificate and the titre-test question", url: "/blog/dubai-to-eu-pet-rules/", note: "the EU framework, explained" }
+
+  - type: quote_form
+    id: quote
+    eyebrow: "No obligation"
+    heading: "Get your Dubai → Netherlands quote"
+    body: "Tell us your pet and timing. We'll reply on WhatsApp with a transparent price and the first step."
+    destinations: ["Netherlands"]
+    points:
+      - "A transparent EU-route price for your pet"
+      - "The correct certificate sequence"
+      - "A deadline-safe timeline"
+
+  - type: cta
+    heading: "Ready to get your pet to the Netherlands?"
+    body: "A straightforward, affordable EU route. Transparent pricing, every step handled."
+    ctas:
+      - { label: "Get my quote", url: "#quote", style: "btn-gold" }
+      - { label: "See all destinations", url: "/destinations/", style: "btn-ghost" }

@@ -1,0 +1,18 @@
+{
+  "_meta": {
+    "produced_by": "gen_route_briefs.py (route money-page brief)",
+    "blog_objective": "lead_generation",
+    "funnel_stage": "MOFU→BOFU (commercial-investigation → transactional)",
+    "page_type": "service (route money page)",
+    "target_keyword": "pet relocation dubai to usa",
+    "intent": "commercial",
+    "primary_fear": "I'm afraid that the new CDC dog-import rules will trip me up",
+    "monetization": "lead_generation (route enquiry → WhatsApp quote)"
+  },
+  "seo": {
+    "title": "Pet Relocation Dubai to USA — Requirements, Pricing & Process | PawRoute",
+    "meta_description": "Move your pet from Dubai to the USA. Transparent pricing from AED 13,800, 4–12 week timeline. UAE export handled; current US/CDC rules confirmed for your route.",
+    "canonical_path": "/destinations/uae-to-usa/"
+  },
+  "_note": "Route brief for Dubai → Usa. Content lives in the page YAML; this brief lets the registry track question/funnel/monetization."
+}

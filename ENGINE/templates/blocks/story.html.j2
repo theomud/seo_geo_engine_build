@@ -1,0 +1,21 @@
+<section class="section--article" id="{{ block.id | default('story') }}">
+  <div class="container container--article">
+    {% if block.heading %}<h2>{{ block.heading }}</h2>{% endif %}
+    <div class="story">
+      <div class="story-tag">{{ block.tag | default('A real example') }}</div>
+      {% if block.lead %}<p class="story-lead">{{ block.lead | safe }}</p>{% endif %}
+      {% set steps = [
+        ('Problem', block.problem),
+        ('The mistake', block.mistake),
+        ('What changed it', block.discovery),
+        ('The result', block.result),
+        ('The lesson', block.lesson)
+      ] %}
+      <ol class="story-arc">
+        {% for label, text in steps %}{% if text %}
+        <li><span class="arc-label">{{ label }}</span><span class="arc-text">{{ text | safe }}</span></li>
+        {% endif %}{% endfor %}
+      </ol>
+    </div>
+  </div>
+</section>

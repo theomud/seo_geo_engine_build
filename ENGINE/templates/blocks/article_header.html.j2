@@ -1,0 +1,16 @@
+<header class="article-head">
+  <div class="container container--article">
+    {% if block.category %}<a class="cat" href="{{ block.category_url | default('/blog/') }}">{{ block.category }}</a>{% endif %}
+    <h1>{{ block.h1 }}</h1>
+    {% if block.standfirst %}<p class="standfirst">{{ block.standfirst }}</p>{% endif %}
+    <div class="byline">
+      {% if block.author %}<span class="by">By <a href="{{ site.author.url | default('/about/') }}">{{ block.author }}</a></span>{% endif %}
+      {% if block.date %}<span>· {{ block.date }}</span>{% endif %}
+      {% if block.reading_time %}<span>· {{ block.reading_time }} min read</span>{% endif %}
+      {% if block.reviewed %}<span>· {{ block.reviewed }}</span>{% endif %}
+    </div>
+  </div>
+  {% if block.image %}
+  <div class="container container--article"><img class="article-hero" src="{{ block.image }}" alt="{{ block.image_alt | default(block.h1) }}" loading="eager"></div>
+  {% endif %}
+</header>

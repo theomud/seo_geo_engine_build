@@ -1,0 +1,93 @@
+url: /moving-to-dubai/summer-travel/
+title: "Can I fly my pet to or from Dubai in summer? The heat embargo explained | PawRoute"
+title_suffix: ""
+meta_description: "From roughly May to September, airlines restrict or refuse pet cargo in extreme UAE heat. Here's how the summer embargo works and how to plan around it safely."
+og_title: "Can I fly my pet in the Dubai summer?"
+schema: service
+service:
+  name: Pet travel and the UAE summer heat embargo
+  area_served: ["United Arab Emirates"]
+
+blocks:
+  - type: hero
+    eyebrow: "Moving to/from Dubai · timing"
+    heading: "Can I fly my pet in the Dubai summer?"
+    subheading: >
+      If you're worried about flying your pet in the Dubai heat, that fear is well-founded —
+      and it's the catch that surprises people most. From roughly May to September, airlines
+      restrict or refuse pet cargo when it's too hot, for your pet's safety. It doesn't make a
+      move impossible; it means you plan around it. Here's exactly how.
+    ctas:
+      - { label: "How to plan around it", url: "#plan", style: "btn-gold" }
+      - { label: "Ask about your dates", url: "#quote", style: "btn-ghost" }
+
+  - type: key_facts
+    heading: "Quick answer"
+    answer: >
+      Many airlines restrict or ban pet cargo when ground temperatures exceed about
+      30°C, which in the UAE means high risk from roughly May to September — peaking
+      June to August. A summer move isn't impossible, but it can be delayed by weeks,
+      so timing and airline choice matter. We never put a pet on a flight that isn't
+      safe for the conditions.
+    stats:
+      - { label: "High-risk months", value: "May–September" }
+      - { label: "Typical trigger", value: "Ground temp > 30°C" }
+      - { label: "Impact", value: "Delays, limited flights" }
+      - { label: "Delivery dates", value: "Never guaranteed" }
+    verified: "June 2026"
+    source_authority: "Airline + IATA policy"
+
+  - type: steps
+    id: plan
+    eyebrow: "Move safely in summer"
+    heading: "How to plan around the heat embargo"
+    items:
+      - { title: "Start early and stay flexible on dates", text: "Build slack into your timeline so a heat delay doesn't derail your move." }
+      - { title: "Choose airlines and routes that handle summer pets", text: "Some carriers and routings have temperature-controlled handling and cooler transit hubs. We match you to one." }
+      - { title: "Fly at the coolest possible times", text: "Night and early-morning departures reduce the heat risk on the ground." }
+      - { title: "Get an honest go / no-go call", text: "If conditions aren't safe, we say so. Your pet only flies when it's safe — no exceptions." }
+
+  - type: callout
+    heading: "Why we won't promise a date in summer"
+    body: >
+      Airlines change or cancel pet cargo at short notice when temperatures spike.
+      We give you a realistic plan and keep you updated — but we never guarantee a
+      summer delivery date, and we never give veterinary advice about heat fitness.
+      That's a conversation for you and your vet.
+
+  - type: sources
+    eyebrow: "Where this comes from"
+    heading: "Official sources"
+    items:
+      - { authority: "IATA", title: "Live Animals Regulations — temperature & welfare", url: "https://www.iata.org/en/programs/cargo/live-animals/", note: "Carrier welfare standards" }
+      - { authority: "UAE MOCCAE", title: "Import permit for pets (cats / dogs)", url: "https://www.moccae.gov.ae/en/services/import-permit-pets", note: "UAE entry process" }
+
+  - type: card_grid
+    variant: section--surface
+    eyebrow: "Related worries"
+    heading: "Worried about something else?"
+    cards:
+      - { flag: "🛂", title: "Could my dog be held at the airport?", meta: "The 3 steps that prevent it", url: "/moving-to-dubai/dog-taken-at-airport/", arrow: "Read" }
+      - { flag: "🏠", title: "Will my pet be quarantined?", meta: "What arrival really involves", url: "/moving-to-dubai/quarantine/", arrow: "Read" }
+      - { flag: "🌍", title: "Leaving the UAE?", meta: "Export routes + pricing", url: "/destinations/", arrow: "See routes" }
+
+  - type: faq
+    heading: "Summer travel: your questions"
+    items:
+      - { q: "Can pets fly at all in the Dubai summer?", a: "Often yes, but with restrictions. Many airlines refuse pet cargo when ground temperatures exceed about 30°C, which is common May–September — so timing and airline choice matter." }
+      - { q: "What if my flight gets cancelled for heat?", a: "It can happen at short notice. That's why we build slack into the timeline and never guarantee a summer delivery date." }
+      - { q: "Is it safe for my pet?", a: "We only fly a pet when conditions are safe; we won't put one on a flight that isn't. We never give veterinary heat-fitness advice — that's between you and your vet." }
+
+  - type: quote_form
+    id: quote
+    eyebrow: "No obligation"
+    heading: "Moving in summer? Send us your dates"
+    body: "We'll tell you honestly whether your timing is workable and the safest way to do it."
+    destinations: ["Into the UAE (Dubai)", "Out of the UAE", "Somewhere else"]
+
+  - type: cta
+    heading: "Summer makes it trickier — not impossible."
+    body: "With the right timing and airline, your pet travels safely. We'll plan it with you."
+    ctas:
+      - { label: "Plan my summer move", url: "#quote", style: "btn-gold" }
+      - { label: "Moving to Dubai — start here", url: "/moving-to-dubai/", style: "btn-ghost" }

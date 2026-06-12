@@ -1,0 +1,130 @@
+url: /destinations/uae-pet-import-permit/
+title: "UAE Pet Import Permit (MOCCAE): Valid 90 Days, Not 30 | PawRoute"
+title_suffix: ""
+meta_description: "The UAE (MOCCAE) pet import permit is valid for 90 days and costs AED 200 — not the 30 days widely repeated online. The accurate, regulator-verified guide to the permit that controls your pet's move into the UAE."
+og_title: "The UAE pet import permit is valid 90 days — not 30"
+schema: service
+published: "2026-06-09"
+updated: "2026-06-09"
+breadcrumb: "The UAE pet import permit (MOCCAE)"
+service:
+  name: UAE pet import permit (MOCCAE) guidance
+  area_served: ["United Arab Emirates"]
+
+# G06 CORRECTIVE SPECIMEN #2 — MOCCAE permit "30 vs 90 days". Unlike the CDC page, this one is
+# ANCHORED to our own screenshot evidence (audit/evidence/uae-import-export/moccae-pets-full.png,
+# 2026-06-09): permit valid 90 days, AED 200. The web widely says 30; the regulator says 90.
+# Clear to publish — we hold the proof. Targets "MOCCAE pet import permit" / permit-validity queries.
+
+blocks:
+  - type: hero
+    eyebrow: "UAE import · The controlling permit"
+    heading: "The UAE pet import permit: valid 90 days, not 30"
+    subheading: >
+      A lot of websites say the UAE (MOCCAE) pet import permit lasts 30 days. The
+      regulator says 90. That difference can decide whether your timing works — so
+      here's the accurate picture, with the source.
+    ctas:
+      - { label: "See the facts", url: "#facts", style: "btn-gold" }
+      - { label: "Get my quote", url: "#quote", style: "btn-ghost" }
+    card:
+      heading: "The MOCCAE import permit"
+      rows:
+        - { label: "Validity", value: "90 days" }
+        - { label: "Fee", value: "AED 200" }
+        - { label: "When", value: "Before travel" }
+        - { label: "Quarantine", value: "None if compliant" }
+      note: "Verified against MOCCAE, June 2026. The 30-day figure usually comes from confusing the permit with the health certificate."
+
+  - type: key_facts
+    id: facts
+    heading: "The accurate answer"
+    answer: "The UAE pet import permit, issued by MOCCAE (the Ministry of Climate Change and Environment), is valid for 90 days and costs AED 200. It must be arranged before travel and is the controlling document for bringing a pet into the UAE. The widely repeated '30 days' is incorrect for the permit — it usually comes from confusing the permit with the separate veterinary/health certificate, which has a much shorter validity. With a valid permit, microchip and rabies vaccination, compliant pets are not quarantined on arrival."
+    stats:
+      - { label: "Permit validity", value: "90 days" }
+      - { label: "Permit fee", value: "AED 200" }
+      - { label: "Release fee", value: "AED 500 dog / 250 cat" }
+      - { label: "Quarantine", value: "None if compliant" }
+    verified: "June 2026"
+    source_authority: "UAE MOCCAE"
+
+  - type: callout
+    style: warn
+    heading: "Myth vs fact: 'the permit is valid 30 days'"
+    body: >
+      The UAE import permit is valid for 90 days, not 30 — confirmed against MOCCAE. The
+      30-day figure circulates widely online, but it almost always comes from confusing two
+      different documents: the import permit (valid 90 days) and the veterinary/health
+      certificate, which is a separate document with a much shorter validity that must be
+      issued close to travel. They are not the same thing, and mixing them up is what
+      causes people to mis-time the whole move.
+
+  - type: prose
+    id: what-it-is
+    eyebrow: "The document that controls the move"
+    heading: "What the MOCCAE import permit actually is"
+    paragraphs:
+      - "The MOCCAE import permit is the <strong>controlling document</strong> for bringing a cat or dog into the UAE. It is applied for online, costs <strong>AED 200</strong>, must be arranged <strong>before travel</strong>, and is <strong>valid for 90 days</strong> from issue. Airlines need the permit in place to accept the booking, so it is the anchor the rest of the timeline is built around."
+      - "Because it lasts 90 days, the permit is rarely the tight constraint on a move. The tight constraint is usually the <em>health certificate</em> — a separate document issued close to travel with a short validity window. Treating the two as one (and assuming the permit also lasts only ~30 days) is the most common timing mistake on UAE imports."
+
+  - type: checklist
+    eyebrow: "The verified picture"
+    heading: "The MOCCAE import requirements (verified June 2026)"
+    body: "Confirmed against MOCCAE. The permit is one part; here's how it sits with the rest."
+    items:
+      - { title: "Import permit — 90 days, AED 200", text: "Applied for online before travel; the controlling document." }
+      - { title: "Permanent ISO microchip", text: "Must match the certificate and be implanted before the rabies vaccine." }
+      - { title: "Rabies vaccination", text: "At least 21 days before travel for a first or lapsed dose (none needed for a valid booster)." }
+      - { title: "Rabies titre — high-risk origins only", text: "Required from high-risk-for-rabies origins: ≥0.5 IU/ml, valid 365 days." }
+      - { title: "Parasite treatment", text: "Internal and external doses within 14 days of travel." }
+      - { title: "Limits & fees", text: "Max 2 pets per person per year; release fee AED 500 per dog, AED 250 per cat. No quarantine when compliant." }
+
+  - type: prose
+    id: why-wrong
+    eyebrow: "Why the wrong number spreads"
+    heading: "Why so much advice says '30 days'"
+    paragraphs:
+      - "Two reasons. First, the <strong>document confusion</strong> above — the short-lived health certificate gets mistaken for the permit. Second, regulatory pages are dense and rarely quoted directly, so secondary sites paraphrase each other, and an early mistake propagates. The result is a web (and the AI answers that learn from it) repeating '30 days' for a permit the regulator says lasts 90."
+      - "We date and cite this page, and check the permit detail against MOCCAE before every move, so your timing is built on the regulator's figure — not a number copied between blogs."
+
+  - type: faq
+    id: faq
+    heading: "The UAE import permit: your questions"
+    items:
+      - { q: "Is the UAE pet import permit valid for 30 days or 90 days?", a: "90 days, confirmed against MOCCAE. The 30-day figure is incorrect for the permit and usually comes from confusing it with the separate veterinary/health certificate, which has a much shorter validity." }
+      - { q: "How much does the MOCCAE import permit cost?", a: "AED 200. A release fee also applies on arrival — AED 500 per dog and AED 250 per cat." }
+      - { q: "When do I need to apply for the permit?", a: "Before travel — it's the controlling document and airlines need it in place to accept the booking. Because it's valid 90 days, it's rarely the tightest part of the timeline; the health certificate usually is." }
+      - { q: "Will my pet be quarantined in the UAE?", a: "No — with a valid MOCCAE import permit, microchip and rabies vaccination (plus a titre if your origin is high-risk), compliant pets are not quarantined on arrival." }
+      - { q: "What's the difference between the import permit and the health certificate?", a: "The import permit (valid 90 days) authorises the import; the veterinary/health certificate is a separate document issued close to travel with a much shorter validity, confirming your pet's health and vaccinations. You need both — and they are not interchangeable." }
+
+  - type: sources
+    eyebrow: "Verified against the source"
+    heading: "Official sources"
+    items:
+      - { authority: "UAE MOCCAE", title: "Pet import permits", url: "https://www.moccae.gov.ae/en/services/import-permit-pets", note: "The controlling permit — validity, fees, requirements" }
+      - { authority: "IATA", title: "Live Animals Regulations", url: "https://www.iata.org/en/programs/cargo/live-animals/", note: "Crate + cargo standards" }
+
+  - type: related
+    label: "📖 Related"
+    items:
+      - { title: "Moving to Dubai — full UAE import guide", url: "/moving-to-dubai/", note: "everything for the UAE side" }
+      - { title: "Pakistan → Dubai (a high-risk origin)", url: "/destinations/pakistan-to-dubai/", note: "the permit in practice" }
+      - { title: "All destinations", url: "/destinations/", note: "every route + pricing" }
+
+  - type: quote_form
+    id: quote
+    eyebrow: "No obligation"
+    heading: "Bringing a pet into the UAE?"
+    body: "Tell us your pet and timing. We'll arrange the MOCCAE permit and time the health certificate correctly — so the 90-day and short-validity documents line up with your flight."
+    destinations: ["Into the UAE"]
+    points:
+      - "The MOCCAE import permit, arranged before travel"
+      - "The health certificate timed to your flight (not mistimed)"
+      - "A clear, regulator-verified import plan"
+
+  - type: cta
+    heading: "Importing your pet to the UAE?"
+    body: "We build the move on MOCCAE's actual figures — the 90-day permit, the correctly-timed certificate, and the full requirements — verified against the source, so your timing isn't based on a number copied between blogs."
+    ctas:
+      - { label: "Get my quote", url: "#quote", style: "btn-gold" }
+      - { label: "See all routes", url: "/destinations/", style: "btn-ghost" }

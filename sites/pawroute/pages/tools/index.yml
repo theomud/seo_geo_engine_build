@@ -1,0 +1,96 @@
+url: /tools/
+title: "Pet Relocation Tools — Cost, Timeline & Eligibility | PawRoute"
+title_suffix: ""
+meta_description: "Free pet relocation tools: estimate your cost, plan your timeline backward from your travel date, and check if your pet can fly — for any route out of Dubai."
+og_title: "Free pet relocation tools — cost, timeline & 'can my pet fly?'"
+updated: "2026-06-09"
+layout: article
+
+blocks:
+  - type: article_header
+    category: "Free tools"
+    category_url: "/tools/"
+    h1: "Pet relocation tools: cost, timeline & eligibility"
+    standfirst: "Three quick tools to plan your move from Dubai — estimate the cost, work the timeline backward from your travel date, and check whether your pet can fly. Each is built on the official rules."
+    author: "the PawRoute relocation team"
+    date: "9 June 2026"
+    reading_time: 3
+    reviewed: "based on official government & IATA rules"
+    image: /assets/blog/cost-2026-hero.png
+    image_alt: "Tools to plan a pet relocation from Dubai"
+
+  - type: prose
+    id: intro
+    paragraphs:
+      - "These tools give you an honest, instant starting point — then we confirm the exact details for your route. They won't guess: the timeline tool uses the real waiting periods, and the eligibility checker flags breed and quarantine rules up front."
+
+  - type: cost_calc
+    id: cost-calculator
+    eyebrow: "Tool 1"
+    heading: "What will it cost?"
+    body: "Pick your destination and pet size for an indicative all-in range."
+
+  - type: timeline_calc
+    id: timeline-calculator
+    eyebrow: "Tool 2"
+    heading: "When do I need to start?"
+    body: "Enter your travel date and route — we'll work backward to show when each step must happen. The rabies clock can't be shortened, so timing matters."
+
+  - type: decision_tree
+    id: can-my-pet-fly
+    eyebrow: "Tool 3"
+    heading: "Can my pet fly?"
+    body: "A 10-second check for breed bans, snub-nosed restrictions and the waiting periods that apply to your route."
+
+  - type: crate_calc
+    id: crate-calculator
+    eyebrow: "Tool 4"
+    heading: "What size crate do I need?"
+    body: "Measure your pet and we'll size the IATA-compliant travel crate — the question airlines ask first."
+
+  - type: checklist_print
+    id: checklist
+    eyebrow: "Tool 5"
+    heading: "Your pet relocation checklist"
+    body: "Every document and step, in order. Print it or save it as a PDF and tick as you go."
+    groups:
+      - title: "Before you book"
+        items:
+          - "Confirm your pet's breed is allowed at the destination"
+          - "Check the season (UAE summer heat embargo runs ~May–Sep)"
+          - "Confirm your vet for the destination is approved (e.g. APHA-approved for the UK)"
+      - title: "Health & documents"
+        items:
+          - "ISO microchip implanted <strong>first</strong>"
+          - "Rabies vaccination — at least 21 full days before travel"
+          - "Rabies titre blood test (Australia, Singapore, non-listed EU only)"
+          - "Destination health certificate from the approved vet"
+          - "Tapeworm treatment 24–120h before arrival (UK, dogs only)"
+      - title: "Export & travel"
+        items:
+          - "MOCCAE export permit"
+          - "Destination import permit (where required)"
+          - "IATA-compliant travel crate, correctly sized"
+          - "Airline cargo booking (book early — capacity is limited)"
+      - title: "Arrival"
+        items:
+          - "Customs clearance at destination"
+          - "Quarantine booking (Australia, Singapore)"
+          - "Collection / onward transport home"
+    source_note: "Steps reflect official rules (UK GOV.UK, EU Commission, UAE MOCCAE, IATA). Requirements vary by route — confirm your exact case with us before relying on this list."
+
+  - type: lead_form
+    id: quote
+    eyebrow: "Ready for the exact answer?"
+    heading: "Get your route-specific quote"
+    body: "Tell us the basics and we'll reply on WhatsApp with a firm range, a realistic timeline, and the exact steps — no obligation, no 'get a quote' wall."
+    points:
+      - "A firm price range for your pet's size and route"
+      - "An honest timeline (including the summer heat embargo)"
+      - "Confirmation of breed rules and the right travel method"
+
+  - type: related
+    label: "📖 Read next"
+    items:
+      - { title: "How much it really costs to relocate a pet from Dubai (2026 data)", url: "/blog/pet-relocation-cost-from-dubai-2026/", note: "the full cost picture" }
+      - { title: "Need to move fast? What's actually possible", url: "/blog/move-pet-from-dubai-fast/", note: "the urgency guide" }

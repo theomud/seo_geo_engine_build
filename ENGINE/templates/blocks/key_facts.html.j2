@@ -1,0 +1,18 @@
+{# Self-contained, extractable quick-answer summary. Designed to be quotable by
+   answer engines (AIO/Perplexity/ChatGPT) — one clear paragraph + key stats. #}
+<section class="section {{ block.variant | default('') }}" style="padding-bottom:0">
+  <div class="container">
+    {% if block.heading %}<h2>{{ block.heading }}</h2>{% endif %}
+    <div class="key-facts">
+      {% if block.answer %}<p class="kf-answer">{{ block.answer }}</p>{% endif %}
+      {% if block.stats %}
+      <ul class="kf-stats">
+        {% for s in block.stats %}
+        <li><span class="kf-label">{{ s.label }}</span><span class="kf-value">{{ s.value }}</span></li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+      {% if block.verified %}<p class="kf-verified">Requirements verified {{ block.verified }}{% if block.source_authority %} against {{ block.source_authority }}{% endif %}.</p>{% endif %}
+    </div>
+  </div>
+</section>

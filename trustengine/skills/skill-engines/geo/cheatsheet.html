@@ -1,0 +1,124 @@
+<!DOCTYPE html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>GEO Engine — Cheatsheet</title><style>body{font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:#1f2937;
+line-height:1.6;background:#f7f8fb;margin:0}.wrap{max-width:860px;margin:0 auto;padding:28px}
+h1{color:#1a3a5c}h2{color:#1a3a5c;border-top:2px solid #e5e7eb;padding-top:14px;margin-top:26px}
+h3{color:#2c5282}code{background:#f1f5f9;padding:1px 5px;border-radius:4px}
+table{border-collapse:collapse;width:100%}th,td{border:1px solid #e5e7eb;padding:7px 10px;text-align:left;vertical-align:top}
+th{background:#2c5282;color:#fff}tr:nth-child(even) td{background:#f9fafb}
+.hd{background:linear-gradient(135deg,#1a3a5c,#2c5282);color:#fff;padding:22px 28px;border-radius:0 0 14px 14px}
+.hd h1{color:#fff;margin:0}.hd p{color:#cfe0f5;margin:6px 0 0}</style></head><body><div class='hd'><h1>GEO Engine — Cheatsheet</h1><p>AI-citation readiness — Citation, Extractability, Entity corroboration (the AI-answer axis).</p></div><div class='wrap'><h1>GEO Engine — Cheatsheet</h1>
+<p><em>AI-citation readiness — Citation, Extractability, Entity corroboration (the AI-answer axis).</em></p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Measurement</th>
+<th>What to do</th>
+<th>Example (don't &rarr; do)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Citation Readiness · statistics</td>
+<td>Add specific statistics (numbers, %, dated figures).</td>
+<td>DON'T: 'Many pets travel.' &rarr; DO: '38,000 pets entered the UAE in 2025.'</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Citation Readiness · source citations</td>
+<td>Cite authoritative sources inline.</td>
+<td>DON'T: Unsourced claims. &rarr; DO: Cited to MOCCAE / IATA inline.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Citation Readiness · quotations</td>
+<td>Add direct quotes from named authorities.</td>
+<td>DON'T: No quotes. &rarr; DO: A direct quote from a named authority.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Citation Readiness · quotable facts</td>
+<td>Write self-contained factual sentences AI can lift verbatim.</td>
+<td>DON'T: Facts tangled in prose. &rarr; DO: Self-contained sentences AI can lift verbatim.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Citation Readiness · freshness</td>
+<td>Add a date and refresh facts on volatile topics.</td>
+<td>DON'T: (no date) &rarr; DO: Updated June 2026, recent facts.</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Extractability &amp; Structure · passage self contained</td>
+<td>Make each section stand alone as a complete answer.</td>
+<td>DON'T: Sections depend on each other. &rarr; DO: Each section answers fully on its own.</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Extractability &amp; Structure · heading answer</td>
+<td>Use question headings with the answer immediately under them.</td>
+<td>DON'T: Vague heading. &rarr; DO: Question heading + answer right under it.</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Extractability &amp; Structure · answer first</td>
+<td>Put the direct answer in the first ~200 words.</td>
+<td>DON'T: Answer buried at the bottom. &rarr; DO: Answer in the first 200 words.</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Extractability &amp; Structure · scannable facts</td>
+<td>Add lists/tables of the key facts.</td>
+<td>DON'T: Wall of prose. &rarr; DO: A list/table of liftable data points.</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Entity &amp; Corroboration · entity coverage</td>
+<td>Cover the related entities and sub-topics.</td>
+<td>—</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Entity &amp; Corroboration · subquestion cover</td>
+<td>Answer the related sub-questions on the page.</td>
+<td>—</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Entity &amp; Corroboration · external corrob</td>
+<td>(off-page — earn mentions on third-party sources)</td>
+<td>—</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Entity &amp; Corroboration · entity schema</td>
+<td>Add sameAs / Organization / Person schema.</td>
+<td>DON'T: No entity markup. &rarr; DO: sameAs / Organization / Person schema.</td>
+</tr>
+<tr>
+<td>–</td>
+<td>G4 · cited in aio (human-judged)</td>
+<td>reviewed by a person</td>
+<td>—</td>
+</tr>
+<tr>
+<td>–</td>
+<td>G4 · citation breadth (human-judged)</td>
+<td>reviewed by a person</td>
+<td>—</td>
+</tr>
+<tr>
+<td>–</td>
+<td>G4 · ugc presence (human-judged)</td>
+<td>reviewed by a person</td>
+<td>—</td>
+</tr>
+<tr>
+<td>–</td>
+<td>G4 · decoupling diag (human-judged)</td>
+<td>reviewed by a person</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Run:</strong> <code>python skill-engines/geo/engine.py --url &lt;URL&gt;</code> or <code>--serve 8111</code> (web checker).</p></div></body></html>

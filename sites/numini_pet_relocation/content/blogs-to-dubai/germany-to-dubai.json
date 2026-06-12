@@ -1,0 +1,184 @@
+{
+  "_meta": {
+    "produced_by": "Numini AI Writer — official sources + recurring research patterns (SOURCING-METHOD.md)",
+    "produced": "2026-06-09",
+    "content_format": "blog (inbound route, cluster under /moving-to-dubai/)",
+    "blog_objective": "lead_generation",
+    "funnel_stage": "TOFU→MOFU",
+    "target_keyword": "moving a pet from Germany to Dubai",
+    "secondary_keywords": [
+      "EU to Dubai pet relocation",
+      "Germany to UAE pet import",
+      "pet passport to Dubai"
+    ],
+    "intent": "informational/commercial",
+    "primary_fear": "I don't know whether the EU pet passport is enough for the UAE",
+    "author_byline": "By the PawRoute relocation team · reviewed by our IPATA-certified specialists · updated June 2026"
+  },
+  "seo": {
+    "title": "Moving a Pet From Germany (EU) to Dubai: The Honest Guide",
+    "meta_description": "From Germany or the EU to Dubai: your EU pet passport and microchip help, but you still need an EU export health certificate and a MOCCAE import permit. No UAE quarantine when compliant.",
+    "og_title": "Germany / EU to Dubai with a pet — is the pet passport enough?",
+    "canonical_path": "/blog/germany-to-dubai-pet-relocation/"
+  },
+  "hero": {
+    "eyebrow": "Route guide · Germany / EU → Dubai",
+    "h1": "Moving your pet from Germany (or the EU) to Dubai",
+    "standfirst": "Your EU pet passport gives you a head start — but it isn't the whole story for the UAE. Here's what the passport covers and what you still need.",
+    "image": "images/pawroute/to-dubai/germany-to-dubai-hero.png",
+    "image_alt": "A pet with an EU pet passport ready to travel from Germany to Dubai"
+  },
+  "byline": "By the PawRoute relocation team · reviewed by our IPATA-certified specialists · updated June 2026.",
+  "key_facts": {
+    "answer": "From the EU to the UAE you need an ISO microchip and a valid rabies vaccination (both recorded in your EU pet passport), an EU export health certificate for the UAE, and a MOCCAE import permit arranged before travel. Compliant pets are not quarantined in the UAE.",
+    "stats": [
+      {
+        "label": "EU pet passport",
+        "value": "Helps, but not sufficient alone"
+      },
+      {
+        "label": "UAE quarantine",
+        "value": "None (if compliant)"
+      },
+      {
+        "label": "Flight",
+        "value": "Cargo or baggage (Emirates)"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "type": "prose",
+      "heading": "What the EU pet passport covers — and doesn't",
+      "paragraphs": [
+        "The EU pet passport records your pet's microchip and rabies vaccination, which is most of the groundwork. But it's an intra-EU document — for a non-EU destination like the UAE you still need an export health certificate issued for that route. Confirm the current EU export process with your official vet before booking."
+      ]
+    },
+    {
+      "type": "prose",
+      "heading": "The UAE side — the import permit",
+      "paragraphs": [
+        "The UAE requires a MOCCAE import permit (before travel), the microchip and a valid rabies vaccination; compliant pets aren't quarantined. Confirm permit timing and your breed against the UAE restricted list — full detail on the Moving to Dubai hub. (Germany, France and the Netherlands share the same EU framework.)"
+      ]
+    }
+  ],
+  "story": {
+    "tag": "A common scenario",
+    "lead": "On EU → Dubai, the trap is assuming the pet passport is all you need.",
+    "problem": "An owner with a valid EU pet passport books the flight, thinking they're set.",
+    "mistake": "They don't arrange the separate EU export health certificate or the UAE import permit.",
+    "discovery": "The passport covers intra-EU travel, not a UAE import.",
+    "result": "A rushed export certificate and permit before the flight.",
+    "lesson": "The passport is a head start, not the finish line — add the export certificate and the MOCCAE permit early."
+  },
+  "faqs": [
+    {
+      "q": "Is my EU pet passport enough for the UAE?",
+      "a": "It's a strong head start (microchip + rabies recorded), but for the UAE you also need an EU export health certificate and a MOCCAE import permit. Confirm the current process with your official vet."
+    },
+    {
+      "q": "Will my pet be quarantined in the UAE?",
+      "a": "No — with a valid MOCCAE import permit, microchip and rabies vaccination, pets aren't quarantined on arrival. Confirm current MOCCAE rules."
+    },
+    {
+      "q": "Is the process the same from France or the Netherlands?",
+      "a": "Largely yes — they share the EU framework. Local export-point details can differ, so we confirm per country."
+    }
+  ],
+  "sources": [
+    {
+      "authority": "European Commission",
+      "title": "Movement of pets (EU pet passport / non-EU travel)",
+      "url": "https://food.ec.europa.eu/animals/live-animal-movements/dogs-cats-and-ferrets_en",
+      "note": "EU export side"
+    },
+    {
+      "authority": "UAE MOCCAE",
+      "title": "Pet import permits",
+      "url": "https://www.moccae.gov.ae/en/services/import-permit-pets",
+      "note": "UAE import side"
+    },
+    {
+      "authority": "Emirates",
+      "title": "Travelling with animals",
+      "url": "https://www.emirates.com/english/help/faqs/what-are-the-rules-and-charges-for-travelling-with-animals/",
+      "note": "Cabin/baggage/cargo"
+    },
+    {
+      "authority": "IATA",
+      "title": "Live Animals Regulations",
+      "url": "https://www.iata.org/en/programs/cargo/live-animals/",
+      "note": "Crate + cargo"
+    }
+  ],
+  "cta": {
+    "heading": "Moving from Germany or the EU to Dubai?",
+    "body": "We turn your pet passport into a complete UAE-ready file — export certificate + MOCCAE permit handled.",
+    "primary": {
+      "label": "Get my EU → Dubai quote",
+      "url": "/#quote"
+    }
+  },
+  "internal_links": [
+    {
+      "anchor": "Moving to Dubai — full UAE import guide",
+      "url": "/moving-to-dubai/"
+    },
+    {
+      "anchor": "The reverse route: Dubai → EU",
+      "url": "/destinations/uae-to-germany/"
+    }
+  ],
+  "images": [
+    {
+      "role": "hero",
+      "file": "images/pawroute/to-dubai/germany-to-dubai-hero.png",
+      "alt": "A pet with an EU pet passport ready to travel from Germany to Dubai",
+      "prompt": "A calm dog beside a labelled IATA crate at a bright European airport, EU pet passport on the table, warm light, photorealistic, no text",
+      "width": 768,
+      "height": 512,
+      "status": "to-render (low-res)"
+    }
+  ],
+  "sourcing": {
+    "how_we_derived_this": "Recurring research patterns (SOURCING-METHOD.md). Distinct angle: correct the false belief that the EU pet passport alone suffices for the UAE (15 Principles: address the false belief).",
+    "recurring_principles": [
+      "Correct the false belief / answer the fear",
+      "Front-load the answer",
+      "Official sources only",
+      "Original story",
+      "Funnel link + single CTA"
+    ],
+    "verified_100pct": [
+      {
+        "fact": "Emirates pet travel methods + 17h rule",
+        "source": "emirates.com",
+        "evidence": "audit/evidence/travel-methods/emirates-animals-faq.png",
+        "as_of": "2026-06-09"
+      },
+      {
+        "fact": "IATA Live Animals Regulations",
+        "source": "iata.org",
+        "evidence": "audit/evidence/travel-methods/skycargo-emirates-pets.png",
+        "as_of": "2026-06-09"
+      },
+      {
+        "fact": "UAE import (MOCCAE): permit valid 90 days; permanent microchip matching the cert; rabies ≥21 days (first/lapsed dose, none for a valid booster); titre only from high-risk countries (≥0.5 IU/ml, valid 365d); min age 12wk (low-risk)/15wk (high-risk); internal+external parasite doses within 14 days; max 2 pets/person/year; fees AED 200 permit, AED 500/dog & AED 250/cat release; no quarantine if compliant",
+        "source": "moccae.gov.ae",
+        "evidence": "audit/evidence/uae-import-export/moccae-pets-full.png",
+        "as_of": "2026-06-09"
+      }
+    ],
+    "stated_but_unverified": [
+      {
+        "claim": "EU export-to-UAE certificate process + that the passport isn't sufficient alone",
+        "action": "Confirm + screenshot on the European Commission pet-movement pages"
+      },
+      {
+        "claim": "UAE specific banned-breed list",
+        "action": "Confirm via Federal Law 22/2016 executive regulations + Dubai Municipality (legal basis named on MOCCAE; list not yet captured)"
+      }
+    ],
+    "confidence": "100% sure of: Emirates/IATA flight mechanics AND the UAE import requirements (MOCCAE, screenshot-verified 2026-06-09 — permit 90d, microchip, rabies 21d, titre high-risk only, fees, 2-pet limit, no quarantine). Still to confirm: the specific UAE banned-breed list + this route's origin-export specifics. NOT sure of: ranking/citation (unproven until the site is live, indexed and measured)."
+  }
+}

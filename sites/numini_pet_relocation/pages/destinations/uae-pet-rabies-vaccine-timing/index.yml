@@ -1,0 +1,120 @@
+url: /destinations/uae-pet-rabies-vaccine-timing/
+title: "Rabies Vaccine Timing for UAE Pet Import: 21 Days, Not 30 | PawRoute"
+title_suffix: ""
+meta_description: "For UAE pet import the rabies vaccine must be given at least 21 days before travel for a first or lapsed dose — and there's no waiting period for a valid booster. The accurate, MOCCAE-verified timing rule (not the '30 days' many sites repeat)."
+og_title: "UAE rabies vaccine timing: 21 days — and zero wait for a valid booster"
+schema: service
+published: "2026-06-09"
+updated: "2026-06-09"
+breadcrumb: "UAE rabies vaccine timing"
+service:
+  name: UAE pet import rabies-vaccine timing guidance
+  area_served: ["United Arab Emirates"]
+
+# G06 CORRECTIVE SPECIMEN #3 — rabies vaccine "21 vs 30 days" + the booster nuance.
+# ANCHORED to audit/evidence/uae-import-export/moccae-pets-full.png (2026-06-09):
+# rabies >=21 days (first/lapsed dose), none for a valid booster; microchip before vaccine.
+# Clear to publish — every fact screenshot-verified. Not in claim-audit.
+
+blocks:
+  - type: hero
+    eyebrow: "UAE import · Rabies vaccine timing"
+    heading: "UAE rabies vaccine timing: 21 days — not 30"
+    subheading: >
+      Plenty of advice says you must vaccinate 30 days before flying to the UAE. The
+      regulator's rule is 21 days for a new or lapsed dose — and there's no waiting
+      period at all if your pet's booster is already valid. The timing detail that
+      can save you weeks.
+    ctas:
+      - { label: "See the rule", url: "#rule", style: "btn-gold" }
+      - { label: "Get my quote", url: "#quote", style: "btn-ghost" }
+    card:
+      heading: "Rabies timing for UAE import"
+      rows:
+        - { label: "New / lapsed dose", value: "≥ 21 days before travel" }
+        - { label: "Valid booster", value: "No waiting period" }
+        - { label: "Order", value: "Microchip first, then vaccine" }
+        - { label: "Quarantine", value: "None if compliant" }
+      note: "Verified against MOCCAE, June 2026."
+
+  - type: key_facts
+    id: rule
+    heading: "The accurate timing rule"
+    answer: "For bringing a pet into the UAE, the rabies vaccine must be given at least 21 days before travel when it is a first or lapsed (expired) vaccination — not the 30 days many websites repeat. Crucially, there is no waiting period at all if your pet already has a valid booster (a vaccination given while the previous one was still in date). The microchip must be implanted before the rabies vaccine, or the vaccination may not be accepted. With this in order, compliant pets are not quarantined in the UAE."
+    stats:
+      - { label: "First / lapsed dose", value: "≥ 21 days" }
+      - { label: "Valid booster", value: "0-day wait" }
+      - { label: "Microchip", value: "Before the vaccine" }
+      - { label: "Source", value: "MOCCAE" }
+    verified: "June 2026"
+    source_authority: "UAE MOCCAE"
+
+  - type: callout
+    style: warn
+    heading: "Myth vs fact: 'vaccinate 30 days before'"
+    body: >
+      The UAE rule is at least 21 days before travel for a first or lapsed rabies dose —
+      and zero days for a valid booster. The 30-day figure is widely repeated but isn't the
+      permit rule; it often gets confused with the separate rabies titre-test timing (which
+      involves a wait after vaccination for high-risk origins only). If your pet's booster is
+      already current, you do not have to re-vaccinate and wait — a detail that can save you
+      weeks.
+
+  - type: prose
+    id: detail
+    eyebrow: "The part that saves time"
+    heading: "First dose vs valid booster"
+    paragraphs:
+      - "The 21-day waiting period exists so a <em>new</em> rabies vaccination has time to take effect. It applies to a <strong>first vaccination</strong> or one that was allowed to <strong>lapse</strong> (expire). If your pet's vaccination is already valid and you give the next booster <strong>before the current one expires</strong>, there is <strong>no waiting period</strong> — the protection is treated as continuous."
+      - "This is the detail most owners (and most websites) miss. Assuming you always need a fresh 21-or-30-day wait can push a move back by weeks for no reason. The sequence also matters: the <strong>microchip must be implanted before the rabies vaccine</strong>, or the vaccination record may not be accepted."
+
+  - type: checklist
+    eyebrow: "Get it right"
+    heading: "The rabies timing checklist (MOCCAE-verified)"
+    body: "Confirmed against MOCCAE, June 2026."
+    items:
+      - { title: "Microchip first", text: "ISO microchip implanted before the rabies vaccine — order matters." }
+      - { title: "First / lapsed dose: ≥ 21 days", text: "A new or expired-then-renewed vaccination must be given at least 21 days before travel." }
+      - { title: "Valid booster: no wait", text: "A booster given while the previous vaccination is still valid has no waiting period." }
+      - { title: "Keep continuity", text: "Don't let the vaccination lapse — an unbroken record is what removes the wait." }
+
+  - type: faq
+    id: faq
+    heading: "UAE rabies vaccine timing: your questions"
+    items:
+      - { q: "Is it 21 days or 30 days before travel for the UAE?", a: "At least 21 days before travel for a first or lapsed rabies dose, confirmed against MOCCAE. The 30-day figure is incorrect for the vaccine — it's usually confused with the rabies titre-test timing, which only applies to high-risk origins." }
+      - { q: "Do I need to wait 21 days if my dog's booster is already valid?", a: "No. If you give the booster before the previous vaccination expires, there is no waiting period — protection is treated as continuous. The 21-day wait only applies to a first or lapsed dose." }
+      - { q: "Does the microchip have to come before the rabies vaccine?", a: "Yes. The ISO microchip must be implanted before the rabies vaccine, or the vaccination record may not be accepted. It's the most common sequencing mistake." }
+      - { q: "Will my pet be quarantined in the UAE?", a: "No — with a valid import permit, microchip and correctly-timed rabies vaccination (plus a titre if your origin is high-risk), compliant pets are not quarantined on arrival." }
+
+  - type: sources
+    eyebrow: "Verified against the source"
+    heading: "Official sources"
+    items:
+      - { authority: "UAE MOCCAE", title: "Pet import permits", url: "https://www.moccae.gov.ae/en/services/import-permit-pets", note: "Import requirements incl. rabies timing" }
+      - { authority: "IATA", title: "Live Animals Regulations", url: "https://www.iata.org/en/programs/cargo/live-animals/", note: "Crate + cargo standards" }
+
+  - type: related
+    label: "📖 Related"
+    items:
+      - { title: "The UAE import permit (90 days, not 30)", url: "/destinations/uae-pet-import-permit/", note: "the controlling document" }
+      - { title: "Does my pet need a rabies titre test?", url: "/destinations/uae-pet-rabies-titre-test/", note: "high-risk origins only" }
+      - { title: "Moving to Dubai — full UAE import guide", url: "/moving-to-dubai/", note: "everything for the UAE side" }
+
+  - type: quote_form
+    id: quote
+    eyebrow: "No obligation"
+    heading: "Bringing a pet into the UAE?"
+    body: "Tell us your pet and timing. We'll check your rabies record and tell you exactly whether the 21-day wait applies — or whether your booster already clears you."
+    destinations: ["Into the UAE"]
+    points:
+      - "Whether the 21-day wait applies to your pet (or not)"
+      - "The correct microchip-then-vaccine sequence"
+      - "A timing plan built on MOCCAE's actual rule"
+
+  - type: cta
+    heading: "Importing your pet to the UAE?"
+    body: "We build the timeline on MOCCAE's real rabies rule — 21 days for a new dose, no wait for a valid booster — so you don't lose weeks to a number copied between blogs."
+    ctas:
+      - { label: "Get my quote", url: "#quote", style: "btn-gold" }
+      - { label: "See all routes", url: "/destinations/", style: "btn-ghost" }

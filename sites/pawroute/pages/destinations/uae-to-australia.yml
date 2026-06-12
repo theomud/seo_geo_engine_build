@@ -1,0 +1,171 @@
+title: "Pet Relocation Dubai to Australia — Requirements, Pricing & Timeline | PawRoute"
+title_suffix: ""
+meta_description: "Move your pet from Dubai to Australia. The hardest route: rabies titer test, a long wait, then 10 days quarantine on arrival. Transparent pricing from AED 25,000."
+og_title: "Moving your pet from Dubai to Australia?"
+schema: service
+service:
+  name: Pet relocation from the UAE to Australia
+  area_served: ["Australia", "United Arab Emirates"]
+
+blocks:
+  - type: hero
+    eyebrow: "Route · UAE → Australia"
+    heading: "Moving your pet to Australia? Start early."
+    subheading: >
+      Australia is the hardest route in the world — not because it can't be done,
+      but because the timeline is long and every step has to be perfect. If you're
+      relocating in the next 6–12 months, the clock starts now.
+    ctas:
+      - { label: "See pricing", url: "#pricing", style: "btn-gold" }
+      - { label: "Start my timeline", url: "#quote", style: "btn-ghost" }
+    card:
+      heading: "Dubai → Australia at a glance"
+      rows:
+        - { label: "Timeline", value: "Up to 6 months" }
+        - { label: "Cost range", value: "AED 25,000–35,000+" }
+        - { label: "Quarantine", value: "10–30 days on arrival" }
+        - { label: "Difficulty", value: "Hardest route" }
+      note: "The long pole is the rabies titre test and the 180-day wait that follows it."
+
+  - type: key_facts
+    heading: "Quick answer"
+    answer: "Moving a pet from Dubai to Australia is the world's strictest route and takes up to 6 months end to end, costing roughly AED 25,000–35,000+. It requires a rabies titre (RNATT) test, a 180-day wait after the test sample reaches the lab, an import permit, and quarantine on arrival (minimum 10 days with an identity check, otherwise 30)."
+    stats:
+      - { label: "Timeline", value: "Up to 6 months" }
+      - { label: "Cost", value: "AED 25,000–35,000+" }
+      - { label: "Wait after titre", value: "180 days" }
+      - { label: "Quarantine", value: "10–30 days" }
+    verified: "June 2026"
+    source_authority: "Australia DAFF"
+
+  - type: callout
+    style: warn
+    heading: "Why Australia takes months, not weeks"
+    body: >
+      Australia requires a rabies titer (RNAT) test at an approved lab, then a
+      mandatory waiting period after you pass, and finally a 10-day government
+      quarantine when your pet lands. Miss the sequence and the clock resets.
+      This is why we map your exact dates before anything else.
+
+  - type: checklist
+    eyebrow: "What it takes"
+    heading: "The Australia requirements"
+    body: "These are the headline steps. We confirm the current detail with the Australian Department of Agriculture for your specific pet and dates before you commit to anything."
+    items:
+      - { title: "ISO microchip first", text: "15-digit 11784/11785 chip, implanted before any vaccination." }
+      - { title: "Rabies vaccine + titer test", text: "A rabies neutralising antibody titer test at an approved laboratory." }
+      - { title: "180-day waiting period", text: "Your pet can't be exported to Australia for 180 days after the RNATT sample reaches the lab — this is what makes the route take months. (It's a wait, not quarantine; your pet stays with you.)" }
+      - { title: "Import permit", text: "Issued by the Australian Department of Agriculture (DAFF) before travel; assessment typically takes 10–20 business days." }
+      - { title: "Quarantine on arrival", text: "Minimum 10 days at a government facility if the optional identity check is done beforehand — otherwise a minimum of 30 days. Non-negotiable." }
+
+  - type: steps
+    eyebrow: "The right order"
+    heading: "How the Dubai → Australia move works"
+    items:
+      - { title: "Map the timeline (do this first)", text: "We work backwards from your move date to confirm whether it's achievable, and book the titer test window." }
+      - { title: "Microchip + rabies vaccine", text: "Chip first, then vaccinate — order is everything on this route." }
+      - { title: "Rabies titer test", text: "At an approved lab. The mandatory wait starts when it passes." }
+      - { title: "Import permit + export paperwork", text: "Australian import permit plus the UAE MOCCAE export process." }
+      - { title: "Book crate & flight", text: "IATA crate sized to your pet, on an airline and route approved for Australia." }
+      - { title: "Fly, quarantine, reunite", text: "10 days in government quarantine on arrival, then home to you." }
+
+  - type: pricing_tiers
+    id: pricing
+    eyebrow: "No hidden fees"
+    heading: "Dubai → Australia pricing"
+    body: "Australia costs more than standard routes because of the titer test, the permit and the mandatory quarantine. We show the range upfront and the full breakdown before you commit."
+    tiers:
+      - name: "Essential"
+        price: "AED 25,000"
+        unit: "from"
+        desc: "The full regulated move with quarantine booking handled."
+        includes:
+          - "Titer test coordination"
+          - "Import permit + MOCCAE export"
+          - "IATA crate + cargo booking"
+          - "Quarantine booking & clearance"
+        excludes:
+          - "Transit updates"
+          - "24/7 support"
+      - name: "Standard"
+        price: "AED 30,000"
+        unit: "from"
+        featured: true
+        badge: "Most popular"
+        desc: "Everything handled with timeline management and updates through the long wait."
+        includes:
+          - "Everything in Essential"
+          - "Full timeline management"
+          - "Transit updates + quarantine liaison"
+        excludes:
+          - "24/7 support"
+      - name: "Premium"
+        price: "AED 35,000"
+        unit: "from"
+        desc: "White-glove handling for a complex, high-stakes move."
+        includes:
+          - "Everything in Standard"
+          - "24/7 support line"
+          - "Insurance + contingency planning"
+    note: "Final price depends on your pet's size, the airline route and quarantine fees. You'll see every line before you decide."
+
+  - type: story
+    id: story
+    heading: "Why starting early is everything"
+    tag: "A common scenario"
+    lead: "Australia isn't expensive because it's far — it's the timeline that catches people out."
+    problem: "A family gets an Australian job offer and wants their dog over within six weeks."
+    mistake: "They assume it works like the UK and book a vet appointment for the rabies titre test late."
+    discovery: "Australia requires a 180-day wait after the titre test, plus a 10-day quarantine on arrival — there's no shortcut."
+    result: "The dog can't travel with them; it follows months later, with extra boarding and a second set of flights."
+    lesson: "For Australia, the calendar is the cost. Start the titre test the day the move is even possible — everything else waits on it."
+
+  - type: faq
+    heading: "Dubai → Australia: your questions"
+    items:
+      - { q: "Why does Australia take so long?", a: "Because of the rabies titre (RNATT) test and the 180-day waiting period that follows it, plus quarantine on arrival. If you're moving in 6–12 months, start now." }
+      - { q: "How long is quarantine?", a: "A minimum of 10 days if the optional identity check is completed before the RNATT, otherwise a minimum of 30 days. It's a government requirement at an approved facility — every pet goes through it." }
+      - { q: "What happens if a step is done out of order?", a: "On this route, an out-of-order step (for example vaccinating before microchipping) can reset the clock and cost you months. That's exactly what the service is for — getting the sequence right." }
+      - { q: "Can you guarantee the arrival date?", a: "No — and be wary of anyone who does. Airlines and quarantine slots move. We give you a realistic timeline and keep you updated, but we never guarantee a delivery date." }
+
+  - type: sources
+    eyebrow: "Don't take our word for it"
+    heading: "Official sources"
+    items:
+      - { authority: "Australia DAFF", title: "Bringing cats and dogs to Australia", url: "https://www.agriculture.gov.au/biosecurity-trade/cats-dogs", note: "Step-by-step import rules" }
+      - { authority: "Australia DAFF", title: "Rabies vaccination & RNATT testing", url: "https://www.agriculture.gov.au/biosecurity-trade/cats-dogs/rabies-neutralising-antibody", note: "Titre test + 180-day wait" }
+      - { authority: "UAE MOCCAE", title: "Pet export & import permits", url: "https://www.moccae.gov.ae/en/services/import-permit-pets", note: "UAE export process" }
+      - { authority: "IATA", title: "Live Animals Regulations", url: "https://www.iata.org/en/programs/cargo/live-animals/", note: "Travel crate standards" }
+
+  - type: card_grid
+    variant: section--surface
+    eyebrow: "Related routes"
+    heading: "Comparing destinations?"
+    cards:
+      - { flag: "🇸🇬", title: "Dubai → Singapore", meta: "Also strict · 4–8 months", url: "/destinations/uae-to-singapore/", arrow: "View" }
+      - { flag: "🇬🇧", title: "Dubai → UK", meta: "4–8 weeks · no quarantine", url: "/destinations/uae-to-uk/", arrow: "View" }
+      - { flag: "🇿🇦", title: "Dubai → South Africa", meta: "4–8 weeks", url: "/destinations/uae-to-south-africa/", arrow: "View" }
+      - { flag: "🌍", title: "All destinations", meta: "Every route + pricing", url: "/destinations/", arrow: "See all" }
+
+  - type: related
+    label: "📖 Read the guide"
+    items:
+      - { title: "Dubai → Australia: why it takes six months, not six weeks", url: "/blog/dubai-to-australia-pet-why-six-months/", note: "titre + 180-day wait + quarantine" }
+
+  - type: quote_form
+    id: quote
+    eyebrow: "Start the clock"
+    heading: "Map your Australia timeline"
+    body: "Send your move date and pet details. We'll tell you honestly whether it's achievable and what to do first."
+    destinations: ["Australia"]
+    points:
+      - "An honest yes/no on your timeline"
+      - "Your titer-test and quarantine sequence"
+      - "A transparent total, broken down"
+
+  - type: cta
+    heading: "Australia is hard. We've mapped it."
+    body: "The sooner you start, the more options you have. Let's get your timeline right."
+    ctas:
+      - { label: "Get my quote", url: "#quote", style: "btn-gold" }
+      - { label: "See all destinations", url: "/destinations/", style: "btn-ghost" }

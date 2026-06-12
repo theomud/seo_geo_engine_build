@@ -1,0 +1,10 @@
+<section class="section--article" id="{{ block.id | default('takeaways') }}">
+  <div class="container container--article">
+    <aside class="takeaways">
+      <h2>{{ block.heading | default('Key takeaways') }}</h2>
+      <ul>
+        {% for t in block['items'] %}<li>{{ t | safe }}</li>{% endfor %}
+      </ul>
+    </aside>
+  </div>
+</section>

@@ -1,0 +1,108 @@
+# ---------------------------------------------------------------------------
+# Numini Pet Relocation — Numini-operated pet relocation service.
+# Powered by the Numini SEO+GEO engine. Content drawn from the verified
+# knowledge base at skills/copy_and_image_sciences/.
+# ---------------------------------------------------------------------------
+name: Numini Pet Relocation
+lang: en
+url: https://numini.ai/pet-relocation   # update when domain is confirmed
+
+business:
+  name: Numini Pet Relocation
+  mark: "🐾"
+  schema_type: LocalBusiness
+  tagline: Verified pet relocation from the UAE.
+  description: >
+    Specialist pet relocation from the UAE, operated by Numini. We handle
+    every document, vaccine, permit, IATA crate, cargo flight and customs
+    checkpoint — with all requirements verified against official sources and
+    prices shown upfront on every route.
+  area_served: ["United Arab Emirates", "United Kingdom", "Australia", "United States", "Germany", "France", "Canada", "India", "Singapore", "South Africa", "Netherlands"]
+  address:
+    addressLocality: Dubai
+    addressRegion: Dubai
+    addressCountry: AE
+  price_range: "AED 8,000–35,000+"
+  knows_about:
+    - "International pet relocation"
+    - "Pet import and export regulations"
+    - "IATA Live Animals Regulations"
+    - "MOCCAE pet export process"
+    - "Pet travel crates and cargo"
+    - "UAE to UK pet relocation"
+    - "Expat pet relocation Dubai"
+  same_as: []   # add LinkedIn, Instagram, Google Business when live
+  disclaimer: >
+    Numini Pet Relocation coordinates regulated pet relocation. We never
+    guarantee airline delivery dates and never give veterinary medical advice.
+    All regulatory requirements are verified against official sources (MOCCAE,
+    IATA, and each destination authority). Requirements are subject to change —
+    always confirm with the relevant authority before travel.
+
+theme:
+  primary: "#1a365d"
+  primary_dark: "#11233f"
+  accent: "#d4a853"
+  accent_dark: "#b8893a"
+  surface: "#f6f8fb"
+  text: "#1f2733"
+  muted: "#5b6776"
+  success: "#1f8a5b"
+  font_body: "'Inter', system-ui, -apple-system, Segoe UI, Roboto, sans-serif"
+  font_head: "'Plus Jakarta Sans', 'Inter', system-ui, sans-serif"
+
+fonts:
+  google: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
+
+assets:
+  favicon: ""
+
+contact:
+  whatsapp: "971500000000"        # replace with real WhatsApp number
+  telegram: ""
+  email: "pets@numini.ai"         # update when confirmed
+  phone: "+971 50 000 0000"       # replace with real number
+  cta_label: "Get a free assessment"
+  cta_url: "#quote"
+
+# Author / E-E-A-T. Fill `person` with a REAL named specialist when available.
+# Do NOT invent credentials — breaks truth policy and Google penalises fake authorship.
+author:
+  name: "the Numini pet relocation team"
+  role: "Verified UAE pet relocation specialists"
+  url: "/about/"
+
+analytics:
+  ga_measurement_id: ""           # add GA4 ID at launch
+
+nav:
+  - { label: "Moving to Dubai", url: "/moving-to-dubai/" }
+  - { label: "Destinations", url: "/destinations/" }
+  - { label: "How it works", url: "/how-it-works/" }
+  - { label: "Guides", url: "/blog/" }
+  - { label: "Tools", url: "/tools/" }
+  - { label: "Pricing", url: "/pricing/" }
+  - { label: "FAQ", url: "/faq/" }
+
+footer:
+  legal: "Numini Pet Relocation is a pet relocation coordinator. Regulations verified against official sources; subject to change. Not veterinary or legal advice."
+  columns:
+    - heading: "Popular routes"
+      links:
+        - { label: "Dubai to UK", url: "/destinations/uae-to-uk/" }
+        - { label: "Dubai to Australia", url: "/destinations/uae-to-australia/" }
+        - { label: "Dubai to USA", url: "/destinations/uae-to-usa/" }
+        - { label: "Dubai to India", url: "/destinations/uae-to-india/" }
+    - heading: "Company"
+      links:
+        - { label: "About us", url: "/about/" }
+        - { label: "How it works", url: "/how-it-works/" }
+        - { label: "Guides", url: "/blog/" }
+        - { label: "FAQ", url: "/faq/" }
+
+# Content configuration — points to the verified knowledge base
+content:
+  copy_science: "../../skills/copy_and_image_sciences/THE_WRITING_SYSTEM.md"
+  image_science: "../../skills/copy_and_image_sciences/MASTER_FRAMEWORK.md"
+  claim_bank: "../../skills/copy_and_image_sciences/claim_bank.csv"
+  knowledge_base: "../../skills/copy_and_image_sciences/Web_Persuasion_Knowledge_Base.md"

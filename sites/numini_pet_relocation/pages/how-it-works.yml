@@ -1,0 +1,84 @@
+url: /how-it-works/
+title: "How Pet Relocation from the UAE Works — Step by Step | PawRoute"
+title_suffix: ""
+meta_description: "The step-by-step pet relocation process from the UAE: microchip, rabies, MOCCAE export, IATA crate, cargo flight and customs. Done in the right order, no quarantine surprises."
+og_title: "How pet relocation from the UAE works"
+
+blocks:
+  - type: hero
+    eyebrow: "The process, explained simply"
+    heading: "How your pet's relocation works"
+    subheading: >
+      Most problems happen because steps are done out of order. Here's the exact
+      sequence — from microchip to arrival — and the deadlines that actually matter.
+    ctas:
+      - { label: "Get my quote", url: "#quote", style: "btn-gold" }
+      - { label: "See destinations", url: "/destinations/", style: "btn-ghost" }
+    card:
+      heading: "The non-negotiables"
+      rows:
+        - { label: "Microchip", value: "Before any vaccination" }
+        - { label: "Rabies vaccine", value: "21+ days before departure" }
+        - { label: "Export certificate", value: "Valid 30 days" }
+        - { label: "Cargo booking", value: "Fills 30–60 days ahead" }
+      note: "Get the order wrong and you start over — that's what the service prevents."
+
+  - type: steps
+    eyebrow: "Step by step"
+    heading: "The relocation sequence"
+    items:
+      - { title: "Tell us the destination and date", text: "We confirm exactly what your route needs and flag anything urgent — summer heat embargoes, long titer-test waits, or breed restrictions." }
+      - { title: "Microchip first", text: "An ISO 11784/11785 15-digit chip. It has to go in before the rabies vaccine, or the vaccine won't count." }
+      - { title: "Rabies vaccine", text: "At least 21 days before departure for a first vaccination, with batch numbers documented." }
+      - { title: "Destination paperwork", text: "Import permit, titer test or health certificate — whatever your specific country requires. We line this up against your dates." }
+      - { title: "MOCCAE export process", text: "The UAE export application plus the airport cargo-terminal inspection and government-vet sign-off." }
+      - { title: "IATA crate, sized to your pet", text: "A rigid, ventilated crate measured to your pet using the IATA formula. The right size matters for safety and for volumetric pricing." }
+      - { title: "Book the cargo flight", text: "On an airline approved for your route. Cargo space fills 30–60 days ahead, so we book early." }
+      - { title: "Fly and clear customs", text: "Your pet travels in a pressurised, temperature-controlled hold, clears customs at the other end, and is handed over to you (or a pet hotel if you're not ready)." }
+
+  - type: checklist
+    variant: section--surface
+    eyebrow: "Before you book"
+    heading: "Things people wish they'd known earlier"
+    items:
+      - { title: "Summer heat embargo", text: "From roughly May to September, airlines restrict or refuse pet cargo in extreme UAE heat. Plan around it." }
+      - { title: "Volumetric weight", text: "Airlines charge by crate size or actual weight, whichever is higher. A big crate can add over AED 1,500." }
+      - { title: "Max 2 pets per person per year", text: "This limit applies for import into the UAE." }
+      - { title: "Banned breeds", text: "Several breeds (Pit Bull and Mastiff types) can't be exported or are banned at destinations. We verify yours upfront." }
+      - { title: "Older pets", text: "For pets over about 10 years, a fit-to-fly check is wise. We never give medical advice — that's between you and your vet." }
+      - { title: "No delivery-date guarantees", text: "Airlines change schedules. We give realistic timelines and keep you updated, but never promise an exact arrival time." }
+
+  - type: prose
+    eyebrow: "Where we fit in"
+    heading: "What PawRoute actually does"
+    paragraphs:
+      - "We coordinate the whole sequence — vets, paperwork, MOCCAE, crate, airline and customs — so the steps happen in the right order, on time."
+      - "We confirm every regulatory requirement against official sources (MOCCAE, IATA and each destination authority) for your specific pet and route. Pet safety comes before revenue: your pet only flies when it's medically cleared and the paperwork is perfect."
+
+  - type: sources
+    eyebrow: "Verified against the source"
+    heading: "Official sources"
+    items:
+      - { authority: "UAE MOCCAE", title: "Pet export & import permits", url: "https://www.moccae.gov.ae/en/services/import-permit-pets", note: "The UAE export/import process" }
+      - { authority: "IATA", title: "Live Animals Regulations", url: "https://www.iata.org/en/programs/cargo/live-animals/", note: "Crate sizing + welfare standards" }
+
+  - type: faq
+    heading: "Common questions about the process"
+    items:
+      - { q: "How early should I start?", a: "As soon as your move date is set. Standard routes take 4–8 weeks, and the rabies vaccine alone needs a 21-day minimum before travel — so there's no benefit to waiting." }
+      - { q: "What's the very first step?", a: "An ISO microchip, implanted before the rabies vaccine. Vaccinate first and the record is invalid, so the order matters." }
+      - { q: "Can you guarantee the arrival date?", a: "No — and be cautious of anyone who does. Airlines change schedules, especially during the May–September heat embargo. We give a realistic timeline and keep you updated, but never guarantee a delivery date." }
+
+  - type: quote_form
+    id: quote
+    eyebrow: "No obligation"
+    heading: "Ready to start? Tell us the basics"
+    body: "Send your destination and timing and we'll reply on WhatsApp with the exact first step for your route."
+    destinations: ["UK", "Australia", "USA", "Germany", "France", "Netherlands", "Canada", "India", "Singapore", "South Africa", "Into the UAE", "Somewhere else"]
+
+  - type: cta
+    heading: "One message, and we take it from here."
+    body: "Transparent pricing. No hidden fees. We handle everything."
+    ctas:
+      - { label: "Get my quote", url: "#quote", style: "btn-gold" }
+      - { label: "See pricing", url: "/pricing/", style: "btn-ghost" }

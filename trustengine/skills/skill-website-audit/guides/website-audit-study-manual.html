@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Website Audit — Study Manual | The Trust Engine</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#14110d;--panel:#1d1812;--ink:#f3ece0;--soft:#b9ab95;--line:#352c20;--gold:#d8a84b;--red:#e06a4e;--green:#7bbf6a;--accent:#c98a3a}
+  *{box-sizing:border-box}html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:'Crimson Pro',Georgia,serif;font-size:19px;line-height:1.6}
+  #bar{position:fixed;top:0;left:0;height:4px;width:0;background:linear-gradient(90deg,var(--gold),var(--accent));z-index:100;transition:width .1s}
+  .layout{display:flex;max-width:1180px;margin:0 auto}
+  nav.side{position:sticky;top:0;height:100vh;width:250px;flex-shrink:0;padding:30px 20px;background:var(--panel);border-right:1px solid var(--line);overflow-y:auto;font-family:'JetBrains Mono',monospace}
+  nav.side .brand{font-family:'Bebas Neue',sans-serif;letter-spacing:.08em;color:var(--gold);font-size:22px}
+  nav.side a{display:block;color:var(--soft);text-decoration:none;font-size:12px;padding:7px 9px;border-radius:6px;margin-bottom:2px}
+  nav.side a:hover{background:#251e16;color:var(--ink)}nav.side a.active{background:var(--gold);color:#14110d;font-weight:700}
+  main{flex:1;min-width:0;padding:46px 52px 120px;max-width:820px}
+  h1{font-family:'Bebas Neue',sans-serif;font-size:52px;line-height:1;margin:0 0 6px}
+  h2{font-family:'Bebas Neue',sans-serif;font-size:33px;letter-spacing:.02em;margin:50px 0 12px;color:var(--gold)}
+  h3{font-size:21px;margin:24px 0 6px;color:var(--accent)}
+  .lead{font-size:22px;color:var(--soft)}
+  .badge{font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:700;letter-spacing:.05em;color:var(--gold);text-transform:uppercase}
+  .ex{background:#251e16;border-radius:8px;padding:10px 14px;margin:8px 0;font-style:italic;color:var(--soft)}
+  .cite{font-family:'JetBrains Mono',monospace;font-size:12px;padding:1px 7px;border-radius:5px;background:#251e16}
+  .v{color:var(--green);font-weight:700}.u{color:var(--gold);font-weight:700}.c{color:var(--red);font-weight:700}
+  table{width:100%;border-collapse:collapse;margin:14px 0;font-family:'JetBrains Mono',monospace;font-size:13px;table-layout:fixed}
+  th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top;word-break:break-word;overflow-wrap:anywhere}
+  th{color:var(--gold);text-transform:uppercase;font-size:11px}
+  pre{background:#251e16;border:1px solid var(--line);border-radius:8px;padding:12px 14px;overflow-x:auto;font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--soft)}
+  .warn{background:#2a1a14;border:1px solid #4a2c20;border-radius:10px;padding:13px 17px;margin:14px 0}
+  .good{background:#1a2417;border:1px solid #2f4327;border-radius:10px;padding:13px 17px;margin:14px 0}
+  .ba{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:10px 0}
+  .ba>div{border-radius:8px;padding:10px 13px;font-size:15px}
+  .bad{background:#2a1a14;border:1px solid #4a2c20}.goodc{background:#1a2417;border:1px solid #2f4327}
+  code{font-family:'JetBrains Mono',monospace;background:#251e16;padding:2px 6px;border-radius:5px;font-size:.82em;color:var(--gold);word-break:break-word}
+  footer{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--soft);border-top:1px solid var(--line);margin-top:60px;padding-top:18px}
+  @media(max-width:880px){nav.side{display:none}main{padding:28px 20px 80px;font-size:18px}h1{font-size:40px}.ba{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+<div class="layout">
+  <nav class="side">
+    <div class="brand">Website Audit</div>
+    <div style="font-family:'Crimson Pro',serif;color:var(--soft);font-size:13px;margin:4px 0 16px">Score trust, with evidence · 22/25</div>
+    <a href="#why" class="active">Why this skill</a>
+    <a href="#evidence">Score by evidence not opinion</a>
+    <a href="#dimensions">The 13 dimensions</a>
+    <a href="#proofbar">The proof bar</a>
+    <a href="#dkc">The DKC audit</a>
+    <a href="#rice">The RICE action plan</a>
+    <a href="#honest">Keeping it honest</a>
+  </nav>
+  <main>
+    <span class="badge">Website Audit · 22/25</span>
+    <h1>Website Audit</h1>
+    <p class="lead">Score any website on all 13 Trust Engine skills — 130 points, every score backed by evidence quoted from the live site, ending in a RICE-ranked action plan a business owner can act on.</p>
+
+    <section id="why">
+      <h2>Why this skill</h2>
+      <p>Ask the usual tools "is my website any good?" and they answer the wrong question. Lighthouse grades page speed. An SEO crawler counts meta tags. A heatmap shows clicks. None answers the question that decides whether the site makes money: <b>does a frightened, high-stakes visitor trust this enough to act — and if not, what is the single highest-leverage thing to fix first?</b></p>
+      <div class="ex">"Every website says something different — I don't know who to trust." — the customer a trust audit is built to win back.</div>
+      <p>This skill turns the <b class="u">entire 13-skill Trust Engine into one scoring instrument</b>: 13 dimensions, each scored /10 with evidence quoted from the live site, totalling /130 — then a RICE-ranked plan and a ready-to-execute content brief for the top gap. It's the F-11 audit discipline pointed outward at a real site, with Trust at the centre <span class="cite">M-24</span> <span class="cite">P-22</span>.</p>
+    </section>
+
+    <section id="evidence">
+      <h2>Score by evidence not opinion</h2>
+      <p>A trust audit is not a checklist a script can tick — it's <b>evidenced judgement</b>. Three rules keep it rigorous instead of opinion <span class="cite">P-03</span> <span class="cite">P-07</span>:</p>
+      <div class="ba">
+        <div class="bad"><b class="c">Opinion</b><br>"Dimension 1: 3/10 — the homepage could name its fears better." (a vibe; the owner can't act on it)</div>
+        <div class="goodc"><b class="v">Evidence</b><br>"Dimension 1: 3/10 — the homepage opens <i>'Animal Care. Animal Relocations. By Animal People'</i> and never names the confiscation fear." (a finding, with a quote)</div>
+      </div>
+      <p><b>1. Calibrate the proof bar first (M-04).</b> <b>2. Every score carries a quote from the live site (P-03).</b> <b>3. Rank the fixes by consequence, not ease (M-27).</b> No quote → no score. If you didn't see it on the page, it doesn't count.</p>
+    </section>
+
+    <section id="dimensions">
+      <h2>The 13 dimensions</h2>
+      <p>One per Trust Engine skill, each /10, totalling /130. The bands: <b class="c">0–3 weak</b> · <b class="u">4–6 partial</b> · <b class="v">7–10 strong</b>.</p>
+      <table>
+        <tr><th>#</th><th>Dimension</th><th>Scores whether the site…</th></tr>
+        <tr><td>1</td><td>Fear Intelligence</td><td>names its market's real fears in the customer's language <span class="cite">P-04</span></td></tr>
+        <tr><td>2</td><td>Trust Gap Score</td><td>clears the 10-point page trust score <span class="cite">M-05</span></td></tr>
+        <tr><td>3</td><td>Source Verification</td><td>cites every claim to an official source <span class="cite">P-02</span></td></tr>
+        <tr><td>4</td><td>Content Structure</td><td>runs fear → answer → proof → related → help-CTA <span class="cite">F-08</span></td></tr>
+        <tr><td>5</td><td>Editorial Quality</td><td>clears the 10 criteria; no weak-AI patterns <span class="cite">M-10</span></td></tr>
+        <tr><td>6</td><td>Conversion Copy</td><td>acknowledges fear without exploiting it <span class="cite">P-04</span></td></tr>
+        <tr><td>7</td><td>Visual Evidence</td><td>shows real screenshots / photography / data <span class="cite">M-13</span></td></tr>
+        <tr><td>8</td><td>Site Architecture</td><td>is navigable, ≤3 clicks, clean URLs</td></tr>
+        <tr><td>9</td><td>Authority Assets</td><td>carries assets that pass the Hormozi test <span class="cite">P-13</span></td></tr>
+        <tr><td>10</td><td>Email Nurture</td><td>captures email and nurtures fear-first</td></tr>
+        <tr><td>11</td><td>AI Citation</td><td>is answer-first with schema — the page an AI cites <span class="cite">M-22</span></td></tr>
+        <tr><td>12</td><td>Monitoring Evidence</td><td>shows freshness / accuracy signals</td></tr>
+        <tr><td>13</td><td>Market Position</td><td>is differentiated and AI-visible <span class="cite">M-24</span></td></tr>
+      </table>
+    </section>
+
+    <section id="proofbar">
+      <h2>The proof bar</h2>
+      <p>Calibrate the risk level <span class="cite">M-04</span> <b>before</b> scoring — it sets the bar every claim must clear. The same uncited fee is a footnote on a low-risk site and a scored failure on a maximum-risk one.</p>
+      <div class="warn"><b>DKC is maximum-risk (YMYL):</b> wrong information means a pet denied entry <span class="cite">P-02</span>. So every claim DKC makes about permits, vaccinations, or fees must be cited to an official source — or it loses points on Dimension 3. Score against the right bar, or the whole audit is miscalibrated.</p>
+    </section>
+
+    <section id="dkc">
+      <h2>The DKC audit</h2>
+      <p>The proof run audited <b>DKC (Dubai Kennels &amp; Cattery — dkc.ae)</b>, the market benchmark, live. It scored <b class="u">67/130</b> — which reconciles exactly with its prior <b>8.0/10</b> Trust Score: <i>the best operator in a weak market (3.9/10 average), with real absolute gaps.</i></p>
+      <pre>DKC — dkc.ae — 67/130  "market leader by brand and breadth, mid-tier on trust-content"
+ 1 Fear Intelligence    3/10   8 Site Architecture   8/10
+ 2 Trust Gap Score      5/10   9 Authority Assets     3/10
+ 3 Source Verification  7/10  10 Email Nurture        2/10
+ 4 Content Structure    5/10  11 AI Citation          5/10
+ 5 Editorial Quality    7/10  12 Monitoring Evidence  3/10
+ 6 Conversion Copy      6/10  13 Market Position      7/10
+ 7 Visual Evidence      6/10  ───────────────────────────
+                              TOTAL                  67/130</pre>
+      <div class="ba">
+        <div class="goodc"><b class="v">What DKC does well (evidenced)</b><br>Links the <b>real</b> MOCCAE/DEFRA/MAF government portals; states the <b>90-day permit rule correctly</b> (matches verified C-010); distinctive human voice — <i>"study, study, study our documents"</i>; 30+ FAQ; real facility photography.</div>
+        <div class="bad"><b class="c">The market-deepest hole</b><br>Across every page, airport confiscation is <b>NONE FOUND</b>. The market leader never names its customers' worst fear (the Muze Gu scenario) — the gap missing on 9/9 competitors and the #1 action.</div>
+      </div>
+      <p><b>The surprise:</b> a surface audit would have called DKC's site "clean and professional" and stopped. The trust audit found the single page — the confiscation page — that would move the entire market, precisely because the leader left it open.</p>
+    </section>
+
+    <section id="rice">
+      <h2>The RICE action plan</h2>
+      <p>Thirteen dimensions surface more gaps than anyone can fix at once. RICE <span class="cite">M-27</span> turns them into one ordered queue, so the highest-leverage fix is unambiguous <span class="cite">F-05</span> — the report ends in actions, not observations.</p>
+      <pre>RICE = (Reach × Impact × Confidence) ÷ Effort        (top 3 of DKC's plan)
+1  Publish the airport-confiscation page   (9×3×0.9)/2 = 12.15   ← single most important
+2  Put cost ranges on the page (not a PDF) (7×2×0.8)/1 = 11.2
+3  Add "last verified" dates to reg facts  (6×2×0.9)/1 = 10.8</pre>
+      <p>The #1 action ships with a complete <b>9-element content brief</b> — Inputs filled with the real audit data: the verbatim fear quote, and the verified facts (90-day permit C-010, 500 AED release fee C-003, 21-day rabies rule C-007, online permit C-019, honest titer hedge C-001). It's runnable as-is.</p>
+    </section>
+
+    <section id="honest">
+      <h2>Keeping it honest</h2>
+      <p>An audit fails in the way hardest to catch: it <i>looks</i> authoritative. Four defences keep it real:</p>
+      <ul>
+        <li><b>Every score has a quote from the live site</b> — re-open the page and confirm the quote is actually there. A quote that isn't on the site is fabricated evidence and voids the dimension.</li>
+        <li><b>The proof bar matches the risk level</b> — a maximum-risk site held to "official source for every claim."</li>
+        <li><b>A second auditor re-scores blind</b> and lands within ±1, or the scoring is opinion, not evidence <span class="cite">P-07</span>.</li>
+        <li><b>The executive summary passes the client-ready test</b> — a business owner could act on it without the framework explained.</li>
+      </ul>
+      <p>On the DKC run this discipline showed: the FAQ schema (Dimension 11) <b>couldn't be confirmed</b> from the fetch, so it was flagged <i>needs Rich Results Test</i> — not asserted. The audit never claims what it didn't see.</p>
+    </section>
+
+    <footer>The Trust Engine · Website Audit · Study Manual · real output from the 2026-06-01 live DKC audit (dkc.ae → 67/130; 13 dimensions evidenced from quoted on-site text; top RICE action 12.15 = the confiscation page; C-001/003/007/010/019). Score trust with evidence · calibrate the proof bar · rank by consequence · pass the client-ready test.</footer>
+  </main>
+</div>
+<script>
+  const bar=document.getElementById('bar');
+  addEventListener('scroll',()=>{const h=document.documentElement;bar.style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%';});
+  const links=[...document.querySelectorAll('nav.side a')];const secs=links.map(a=>document.querySelector(a.getAttribute('href')));
+  addEventListener('scroll',()=>{let i=0;for(let k=0;k<secs.length;k++){if(secs[k]&&secs[k].getBoundingClientRect().top<140)i=k;}links.forEach(l=>l.classList.remove('active'));if(links[i])links[i].classList.add('active');});
+</script>
+</body>
+</html>

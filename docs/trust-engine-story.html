@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Midnight Search — watch the engine build a page, live</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#16335c;--navy2:#0e2240;--gold:#d9a94e;--gold2:#c08f33;--ink:#212a36;--muted:#5d6a78;
+    --paper:#fbf8f2;--line:#ece3d2;--up:#2e8b57;--down:#2563c4;--warm:#c0392b;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:'Inter',system-ui,Segoe UI,Roboto,sans-serif;line-height:1.62;-webkit-font-smoothing:antialiased;}
+
+  /* progress + pipeline + dots */
+  #progress{position:fixed;top:0;left:0;height:4px;width:0;z-index:80;
+    background:linear-gradient(90deg,var(--up),var(--gold),var(--down));box-shadow:0 0 12px rgba(217,169,78,.6);transition:width .1s linear;}
+  #pipeline{position:fixed;top:14px;left:50%;transform:translate(-50%,-14px);z-index:75;opacity:0;
+    display:flex;gap:4px;align-items:center;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);
+    border:1px solid var(--line);border-radius:999px;padding:5px 7px;box-shadow:0 10px 28px -14px rgba(16,33,60,.4);transition:.35s;}
+  #pipeline.show{opacity:1;transform:translate(-50%,0)}
+  #pipeline .stg{display:flex;align-items:center;gap:6px;padding:5px 12px;border-radius:999px;
+    font:600 .8rem 'Plus Jakarta Sans',sans-serif;color:var(--muted);transition:.3s;white-space:nowrap}
+  #pipeline .stg .ic{filter:grayscale(.7);transition:.3s}
+  #pipeline .stg.on{color:#fff} #pipeline .stg.on .ic{filter:none}
+  #pipeline .stg[data-s=brain].on{background:var(--up)}
+  #pipeline .stg[data-s=render].on{background:var(--gold);color:#241a00}
+  #pipeline .stg[data-s=eyes].on{background:var(--down)}
+  #pipeline .sep{color:#cdc3ad}
+  #dots{position:fixed;right:20px;top:50%;transform:translateY(-50%);z-index:75;display:flex;flex-direction:column;gap:13px}
+  #dots button{width:12px;height:12px;border-radius:50%;border:2px solid #cabfa9;background:transparent;cursor:pointer;padding:0;position:relative;transition:.25s}
+  #dots button:hover{border-color:var(--navy)}
+  #dots button.active{background:var(--gold);border-color:var(--gold);transform:scale(1.35)}
+  #dots .lbl{position:absolute;right:22px;top:50%;transform:translateY(-50%);white-space:nowrap;
+    background:var(--navy);color:#fff;font-size:.72rem;padding:3px 8px;border-radius:6px;opacity:0;pointer-events:none;transition:.2s}
+  #dots button:hover .lbl{opacity:1}
+
+  /* cover */
+  .cover{min-height:92vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;
+    color:#fff;padding:40px 28px 60px;border-radius:0 0 32px 32px;position:relative;overflow:hidden;
+    background:linear-gradient(160deg,var(--navy),var(--navy2));}
+  .cover::before{content:"";position:absolute;inset:0;background:
+    radial-gradient(700px 320px at 78% 8%,rgba(217,169,78,.34),transparent 60%),
+    radial-gradient(520px 320px at 12% 96%,rgba(37,99,196,.26),transparent 60%);animation:drift 14s ease-in-out infinite alternate}
+  @keyframes drift{to{transform:translateY(-18px) scale(1.05)}}
+  .cover>*{position:relative;z-index:1}
+  .cover .tag{text-transform:uppercase;letter-spacing:.22em;font-size:.72rem;color:var(--gold);font-weight:700}
+  .cover .moon{font-size:3.4rem;display:block;margin:.3rem 0;animation:float 4s ease-in-out infinite}
+  .cover h1{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:clamp(2.4rem,7vw,4rem);line-height:1.04;margin:.2rem 0 .5rem;letter-spacing:-.01em;max-width:15ch}
+  .cover p{color:rgba(255,255,255,.88);font-size:1.16rem;max-width:48ch;margin:0 auto}
+  .scrollcue{margin-top:36px;color:rgba(255,255,255,.72);font-size:.82rem;animation:bob 1.8s ease-in-out infinite}
+  @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+  @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(8px)}}
+
+  /* layout: narrative + sticky stage */
+  .layout{max-width:1200px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:minmax(0,1fr) 420px;gap:48px;align-items:start}
+  .narrative{padding-top:48px}
+  .stagecol{position:sticky;top:84px;height:calc(100vh - 110px);display:flex;align-items:center;justify-content:center}
+
+  /* story spine */
+  .story{position:relative;padding-left:58px}
+  .spine{position:absolute;left:24px;top:6px;width:3px;height:calc(100% - 40px);background:var(--line);border-radius:3px;overflow:hidden}
+  .spine i{position:absolute;top:0;left:0;width:100%;height:0;background:linear-gradient(var(--up),var(--gold) 50%,var(--down));transition:height .15s linear}
+  .scene{position:relative;margin:0 0 14vh;opacity:0;transform:translateY(26px);transition:opacity .6s,transform .6s}
+  .scene:last-of-type{margin-bottom:8vh}
+  .scene.visible{opacity:1;transform:none}
+  .bubble{position:absolute;left:-58px;top:-2px;width:50px;height:50px;border-radius:50%;background:#fff;border:3px solid var(--gold);
+    display:grid;place-items:center;font-size:1.4rem;box-shadow:0 8px 20px -8px rgba(16,33,60,.4);transition:.3s;z-index:2}
+  .scene[data-stage=brain] .bubble{border-color:var(--up)} .scene[data-stage=eyes] .bubble{border-color:var(--down)}
+  .scene.active .bubble{transform:scale(1.14);box-shadow:0 0 0 7px rgba(217,169,78,.22),0 8px 20px -8px rgba(16,33,60,.5)}
+  .card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px 22px 20px;box-shadow:0 14px 32px -20px rgba(16,33,60,.32)}
+  .chapter{font:700 .72rem 'Plus Jakarta Sans',sans-serif;text-transform:uppercase;letter-spacing:.13em;color:var(--gold2);margin:0 0 3px}
+  .scene h2{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:1.5rem;color:var(--navy);margin:0 0 9px;line-height:1.2}
+  .scene p{margin:0 0 10px;font-size:1.04rem}.scene p:last-child{margin-bottom:0}
+  blockquote{margin:12px 0;padding:10px 16px;border-left:4px solid var(--warm);background:#fdf0ee;border-radius:0 10px 10px 0;color:#7a2820;font-style:italic;font-size:.97rem}
+  .facts{margin:10px 0 0;padding:0;list-style:none;display:grid;gap:6px}
+  .facts li{font-size:.95rem;padding-left:23px;position:relative}.facts li::before{content:"✓";position:absolute;left:0;color:var(--up);font-weight:700}
+  .behind{margin-top:14px}
+  .behind summary{list-style:none;cursor:pointer;font-size:.81rem;color:var(--navy);font-weight:600;display:inline-flex;align-items:center;gap:7px;
+    background:#f4efe4;border:1px dashed #e0d6c2;border-radius:999px;padding:6px 13px;transition:.2s;user-select:none}
+  .behind summary::-webkit-details-marker{display:none}.behind summary:hover{background:#ede6d6}
+  .behind .chev{font-size:.7rem;transition:transform .2s}.behind[open] .chev{transform:rotate(90deg)}
+  .behind .body{font-size:.85rem;color:var(--muted);padding:10px 13px 0}
+  .behind .body code{background:#eef1f4;border-radius:4px;padding:1px 5px;font-size:.82em}
+  .scene[data-stage=brain] .behind summary{color:var(--up)}.scene[data-stage=eyes] .behind summary{color:var(--down)}
+
+  /* ===== DEVICE MOCKUP ===== */
+  .device{width:100%;max-width:380px;background:#fff;border-radius:22px;border:1px solid var(--line);
+    box-shadow:0 30px 70px -30px rgba(16,33,60,.5);overflow:hidden}
+  .bar{display:flex;align-items:center;gap:8px;padding:10px 12px;background:#f1ece1;border-bottom:1px solid var(--line)}
+  .bar .dot{width:10px;height:10px;border-radius:50%;background:#d9cdb6}.bar .dot:nth-child(2){background:#e6dcc4}.bar .dot:nth-child(3){background:#efe7d4}
+  .bar .url{flex:1;background:#fff;border:1px solid var(--line);border-radius:7px;font:500 .72rem 'Inter',monospace;color:var(--muted);padding:5px 9px;margin-left:4px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+  .bar .url b{color:var(--up)}
+  .screen{position:relative;height:520px;background:#fff;overflow:hidden}
+  .layer{position:absolute;inset:0;padding:20px;display:flex;flex-direction:column;gap:12px;opacity:0;transform:translateY(10px);
+    transition:opacity .4s,transform .4s;pointer-events:none}
+  .device[data-mode=search] .l-search,
+  .device[data-mode=classify] .l-classify,
+  .device[data-mode=verify] .l-verify,
+  .device[data-mode=lead] .l-lead,
+  .device[data-mode=learn] .l-learn{opacity:1;transform:none}
+  /* page layers visible during build/live/lead/learn */
+  .device[data-mode=build] .l-page,
+  .device[data-mode=live] .l-page,
+  .device[data-mode=lead] .l-page,
+  .device[data-mode=learn] .l-page{opacity:1;transform:none}
+
+  /* search layer */
+  .l-search{justify-content:center;align-items:center;text-align:center;background:#fff}
+  .gbox{width:100%;display:flex;align-items:center;gap:9px;border:1px solid var(--line);border-radius:999px;padding:11px 15px;box-shadow:0 6px 18px -10px rgba(16,33,60,.3)}
+  .gbox .mag{color:var(--muted)}
+  .gbox .q{font-size:.92rem;color:var(--ink);text-align:left;flex:1}
+  .gbox .caret{display:inline-block;width:1px;height:1.05em;background:var(--navy);vertical-align:-2px;animation:blink 1s step-end infinite}
+  @keyframes blink{50%{opacity:0}}
+  .l-search .hint{margin-top:16px;font-size:.8rem;color:var(--muted)}
+
+  /* classify layer */
+  .l-classify{justify-content:center;gap:14px}
+  .clab{font:700 .7rem 'Plus Jakarta Sans';letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+  .chip-fear{align-self:flex-start;background:#fdece9;border:1px solid #f3c9c0;color:#9c2a18;border-radius:10px;padding:10px 14px;font-weight:600;
+    transform:scale(.9);opacity:0;animation:pop .5s .15s forwards}
+  .chip-page{align-self:flex-start;background:#eaf6ee;border:1px solid #bfe3c8;color:#1d6b3b;border-radius:10px;padding:10px 14px;font-weight:600;
+    transform:scale(.9);opacity:0;animation:pop .5s .45s forwards}
+  @keyframes pop{to{opacity:1;transform:scale(1)}}
+
+  /* verify layer */
+  .l-verify{gap:9px}
+  .vrow{display:flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:10px;padding:9px 12px;font-size:.84rem;opacity:0;transform:translateX(-8px);animation:vin .45s forwards}
+  .vrow:nth-child(2){animation-delay:.1s}.vrow:nth-child(3){animation-delay:.25s}.vrow:nth-child(4){animation-delay:.4s}.vrow:nth-child(5){animation-delay:.55s}
+  @keyframes vin{to{opacity:1;transform:none}}
+  .vrow .tick{width:20px;height:20px;border-radius:50%;background:var(--up);color:#fff;display:grid;place-items:center;font-size:.7rem;flex:none}
+  .vrow.warn .tick{background:var(--gold2)}
+  .vrow .shot{width:34px;height:26px;border-radius:5px;background:linear-gradient(135deg,#d7e3f2,#eef3fa);border:1px solid #c6d6ec;flex:none}
+  .vrow small{color:var(--muted)}
+
+  /* PAGE layers (the assembled product) */
+  .l-page{padding:0;gap:0;display:block;overflow-y:auto}
+  .mk{opacity:0;transform:translateY(14px) scale(.985);transition:opacity .5s,transform .5s}
+  .mk.in{opacity:1;transform:none}
+  .mk.hero{background:linear-gradient(155deg,var(--navy),var(--navy2));color:#fff;padding:20px 18px}
+  .mk.hero .eye{font:700 .62rem 'Plus Jakarta Sans';letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+  .mk.hero h3{font-family:'Fraunces',serif;font-weight:600;font-size:1.15rem;margin:6px 0 6px;line-height:1.2}
+  .mk.hero p{margin:0;font-size:.82rem;color:rgba(255,255,255,.85)}
+  .mk.facts{padding:16px 18px;background:#f7f9fc;border-bottom:1px solid var(--line)}
+  .mk.facts .qa{font-weight:600;color:var(--navy);font-size:.86rem;margin-bottom:9px}
+  .mk.facts .stats{display:flex;gap:7px;flex-wrap:wrap}
+  .mk.facts .st{background:#fff;border:1px solid var(--line);border-radius:8px;padding:6px 9px;font-size:.72rem;color:var(--navy);font-weight:600}
+  .mk.sources{padding:14px 18px}
+  .mk.sources .hd{font:700 .62rem 'Plus Jakarta Sans';letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+  .mk.sources .src{display:flex;align-items:center;gap:9px;font-size:.76rem;color:var(--ink);padding:6px 0;border-bottom:1px solid var(--line)}
+  .mk.sources .src .ss{width:30px;height:22px;border-radius:4px;background:linear-gradient(135deg,#d7e3f2,#eef3fa);border:1px solid #c6d6ec;flex:none}
+  .mk.sources .src a{color:var(--down);text-decoration:underline}
+  .mk.cta{padding:16px 18px 20px;text-align:center}
+  .mk.cta button{background:var(--gold);color:#241a00;border:none;border-radius:999px;padding:11px 18px;font:700 .85rem 'Plus Jakarta Sans';cursor:pointer;transition:.3s;width:100%}
+  .device[data-mode=live] .mk.cta button,.device[data-mode=lead] .mk.cta button{box-shadow:0 0 0 0 rgba(217,169,78,.6);animation:glow 1.6s ease-out infinite}
+  @keyframes glow{0%{box-shadow:0 0 0 0 rgba(217,169,78,.55)}100%{box-shadow:0 0 0 16px rgba(217,169,78,0)}}
+
+  /* lead toast */
+  .l-lead{justify-content:flex-end;pointer-events:none;background:transparent}
+  .toast{background:var(--navy);color:#fff;border-radius:12px;padding:12px 14px;font-size:.84rem;display:flex;align-items:center;gap:10px;
+    box-shadow:0 14px 30px -12px rgba(16,33,60,.6);transform:translateY(14px);opacity:0;animation:toastin .5s .1s forwards}
+  .toast .ok{width:22px;height:22px;border-radius:50%;background:var(--up);display:grid;place-items:center;flex:none}
+  @keyframes toastin{to{opacity:1;transform:none}}
+
+  /* learn overlay */
+  .l-learn{justify-content:flex-end;background:transparent;pointer-events:none}
+  .analytics{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px;box-shadow:0 14px 30px -16px rgba(16,33,60,.45)}
+  .analytics .bars{display:flex;align-items:flex-end;gap:6px;height:54px;margin-bottom:8px}
+  .analytics .bars i{flex:1;background:linear-gradient(var(--down),#7fb0ef);border-radius:3px 3px 0 0;animation:grow .8s ease-out backwards}
+  .analytics .bars i:nth-child(1){height:30%;animation-delay:.05s}.analytics .bars i:nth-child(2){height:55%;animation-delay:.15s}
+  .analytics .bars i:nth-child(3){height:42%;animation-delay:.25s}.analytics .bars i:nth-child(4){height:78%;animation-delay:.35s}
+  .analytics .bars i:nth-child(5){height:64%;animation-delay:.45s}.analytics .bars i:nth-child(6){height:92%;animation-delay:.55s}
+  @keyframes grow{from{height:0}}
+  .analytics .loop{font-size:.78rem;color:var(--down);font-weight:600;display:flex;align-items:center;gap:7px}
+
+  .vizcap{position:absolute;bottom:10px;left:0;right:0;text-align:center;font-size:.72rem;color:var(--muted)}
+
+  /* ending */
+  .loopnote{text-align:center;margin:2vh 0 30px}
+  .loopnote span{display:inline-block;background:#e8f1fb;border:1px solid #c2d8f3;border-radius:999px;padding:7px 18px;color:var(--down);font-weight:600;font-size:.95rem}
+  .end{max-width:760px;margin:0 auto;background:linear-gradient(160deg,#23477b,var(--navy2));color:#fff;border-radius:22px;padding:36px 28px;text-align:center}
+  .end h2{font-family:'Fraunces',serif;font-weight:600;color:#fff;font-size:1.7rem;margin:0 0 8px}
+  .end p{color:rgba(255,255,255,.88);max-width:50ch;margin:0 auto}
+  .end .wins{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:18px}
+  .end .win{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:12px;padding:9px 15px;font-size:.9rem}
+  .end .win b{color:var(--gold)}
+  .restart{margin-top:20px;display:inline-block;background:var(--gold);color:#241a00;font-weight:700;border:none;border-radius:999px;padding:11px 22px;cursor:pointer;font-size:.95rem;text-decoration:none}
+
+  @media(max-width:980px){
+    .layout{grid-template-columns:1fr;gap:0}
+    .stagecol{position:sticky;top:60px;height:auto;order:-1;padding:12px 0;background:linear-gradient(180deg,var(--paper),rgba(251,248,242,0));z-index:40}
+    .device{max-width:300px}.screen{height:380px}
+    .narrative{padding-top:20px}
+  }
+  @media(max-width:680px){#dots{display:none}}
+  @media(prefers-reduced-motion:reduce){*{animation-duration:.001s!important;transition:none!important}.scene{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div id="progress"></div>
+<nav id="pipeline" aria-label="Pipeline">
+  <span class="stg" data-s="brain"><span class="ic">🧠</span>Brain</span><span class="sep">→</span>
+  <span class="stg" data-s="render"><span class="ic">🏗️</span>Renderer</span><span class="sep">→</span>
+  <span class="stg" data-s="eyes"><span class="ic">🔁</span>Eyes</span>
+</nav>
+<div id="dots"></div>
+
+<header class="cover">
+  <span class="tag">An interactive story · watch the engine build a page</span>
+  <span class="moon">🌙</span>
+  <h1>The Midnight Search</h1>
+  <p>A scared pet owner's 11&nbsp;p.m. question becomes a page she can trust. Scroll — and watch the page build itself on the right.</p>
+  <div class="scrollcue">↓ scroll to begin</div>
+</header>
+
+<div class="layout">
+  <!-- NARRATIVE -->
+  <main class="narrative">
+    <div class="story">
+      <div class="spine"><i id="spinefill"></i></div>
+
+      <section class="scene" data-stage="brain" data-mode="search" data-title="The fear">
+        <div class="bubble">🌙</div>
+        <div class="card">
+          <p class="chapter">Chapter 1 · The fear</p>
+          <h2>11 p.m. A question she's scared to ask</h2>
+          <p>Sarah's Dubai contract is ending. In three months she's moving home to London — with Biscuit, her dog. Tonight she reads a post in a pet group and her stomach drops:</p>
+          <blockquote>"without it your dog will be taken away in airport and never give back from you… still when I remember I crying."</blockquote>
+          <p>Hands shaking, she types into Google: <b>"what happens if your dog is taken at Dubai airport."</b></p>
+          <details class="behind"><summary><span class="chev">▶</span> under the hood</summary><div class="body">The human behind the keyword. The engine starts with the fear, not the search volume.</div></details>
+        </div>
+      </section>
+
+      <section class="scene" data-stage="brain" data-mode="classify" data-title="The brain listens">
+        <div class="bubble">🧠</div>
+        <div class="card">
+          <p class="chapter">Chapter 2 · The brain listens</p>
+          <h2>It doesn't hear a keyword. It hears a fear.</h2>
+          <p>The engine reads Sarah's words and recognises the emotion underneath: <b>confiscation</b> — the number-one fear pet owners carry. That insight decides everything.</p>
+          <p>It picks the right <em>kind</em> of page — not a sales pitch, but a calm reassurance that names the fear and answers it.</p>
+          <details class="behind"><summary><span class="chev">▶</span> under the hood</summary><div class="body"><b>Customer Fear Intelligence</b> → picks the page + writes the fear-led opening line.</div></details>
+        </div>
+      </section>
+
+      <section class="scene" data-stage="brain" data-mode="verify" data-title="It checks the truth">
+        <div class="bubble">🔍</div>
+        <div class="card">
+          <p class="chapter">Chapter 3 · It checks the truth</p>
+          <h2>Before it promises anything, it proves it.</h2>
+          <p>The engine goes to the regulator's own site — MOCCAE — reads the rules and screenshots them as proof. The titer-test cost? MOCCAE publishes none, so the engine <b>refuses to invent one</b> and says so. An editor checks every line.</p>
+          <details class="behind"><summary><span class="chev">▶</span> under the hood</summary><div class="body"><b>Official Source Research</b> + the <b>Editorial</b> gate → the verified <code>sources</code>.</div></details>
+        </div>
+      </section>
+
+      <section class="scene" data-stage="render" data-mode="build" data-title="The hands build it">
+        <div class="bubble">🏗️</div>
+        <div class="card">
+          <p class="chapter">Chapter 4 · The hands build the page</p>
+          <h2>Now it becomes something real. →</h2>
+          <p>This is <b>our engine</b>. Watch the page assemble on the right, block by block: it <b>opens by naming the fear</b>, gives the verified answer, shows the official sources, and ends with a quiet offer of help. Schema and sitemap, added automatically.</p>
+          <details class="behind"><summary><span class="chev">▶</span> under the hood</summary><div class="body">Our block renderer → <code>hero · key_facts · sources · cta</code> + JSON-LD. The step the Trust Engine never had.</div></details>
+        </div>
+      </section>
+
+      <section class="scene" data-stage="render" data-mode="live" data-title="Sarah finds it">
+        <div class="bubble">💛</div>
+        <div class="card">
+          <p class="chapter">Chapter 5 · Sarah finds it</p>
+          <h2>The first line was written for her.</h2>
+          <p>A week later she searches again — and the page is there. The opening line reads: <em>"That fear is real — and here's exactly how to prevent it."</em></p>
+          <p>She exhales, reads the three steps, and taps <b>"talk to someone who can help."</b></p>
+          <details class="behind"><summary><span class="chev">▶</span> under the hood</summary><div class="body"><b>Conversion Copy</b> wrote that calm, help-first call to action.</div></details>
+        </div>
+      </section>
+
+      <section class="scene" data-stage="eyes" data-mode="lead" data-title="A connection">
+        <div class="bubble">🤝</div>
+        <div class="card">
+          <p class="chapter">Chapter 6 · A connection</p>
+          <h2>The page becomes a lead — and everybody wins.</h2>
+          <p>Sarah's enquiry goes to a vetted relocation company. She gets a trustworthy expert. They get a real, qualified lead. We get paid for the introduction.</p>
+          <details class="behind"><summary><span class="chev">▶</span> under the hood</summary><div class="body"><b>Email Nurture</b> keeps Sarah informed afterwards — gently, never pushy.</div></details>
+        </div>
+      </section>
+
+      <section class="scene" data-stage="eyes" data-mode="learn" data-title="The engine learns">
+        <div class="bubble">🔁</div>
+        <div class="card">
+          <p class="chapter">Chapter 7 · The engine learns</p>
+          <h2>It watches, and it gets smarter.</h2>
+          <p>The audit grades the page. Monitoring sees people read to the end and ask for help, and reports back: <em>this worked — build the next fear.</em></p>
+          <p>Somewhere, another owner is about to type <b>"will my dog need quarantine in Dubai?"</b> — and the page will already be waiting.</p>
+          <details class="behind"><summary><span class="chev">▶</span> under the hood</summary><div class="body"><b>Website Audit</b> + <b>Content Monitoring</b> → the feedback loop back to Chapter 1.</div></details>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- STICKY STAGE -->
+  <aside class="stagecol">
+    <div class="device" id="device" data-mode="search">
+      <div class="bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+        <span class="url" id="url">google.com</span></div>
+      <div class="screen">
+        <!-- search -->
+        <div class="layer l-search">
+          <div class="gbox"><span class="mag">🔍</span><span class="q"><span id="typed"></span><span class="caret"></span></span></div>
+          <div class="hint">11:02 PM · one scared owner, one honest question</div>
+        </div>
+        <!-- classify -->
+        <div class="layer l-classify">
+          <div class="clab">Engine · reading the emotion</div>
+          <div class="chip-fear">😟 Fear detected — <b>Confiscation</b> · the #1 fear</div>
+          <div class="chip-page">📄 Page type → <b>Reassurance</b>, not a sales pitch</div>
+        </div>
+        <!-- verify -->
+        <div class="layer l-verify">
+          <div class="vrow"><span class="tick">✓</span><span class="shot"></span><div><b>Permit valid 90 days</b><br><small>MOCCAE · verified</small></div></div>
+          <div class="vrow"><span class="tick">✓</span><span class="shot"></span><div><b>Rabies ≥ 21 days</b><br><small>MOCCAE · verified</small></div></div>
+          <div class="vrow"><span class="tick">✓</span><span class="shot"></span><div><b>Release fee AED 500</b><br><small>MOCCAE · verified</small></div></div>
+          <div class="vrow warn"><span class="tick">!</span><div><b>Titer-test cost</b><br><small>not published → hedged, never invented</small></div></div>
+        </div>
+        <!-- assembled page -->
+        <div class="layer l-page" id="page">
+          <div class="mk hero" data-b="1"><span class="eye">UAE · pet import</span><h3>What happens if your dog is taken at Dubai airport?</h3><p>That fear is real — and here's exactly how to prevent it.</p></div>
+          <div class="mk facts" data-b="2"><div class="qa">Quick answer</div><div class="stats"><span class="st">Release AED 500</span><span class="st">Permit 90 days</span><span class="st">Rabies ≥21d</span></div></div>
+          <div class="mk sources" data-b="3"><div class="hd">Official sources</div><div class="src"><span class="ss"></span>MOCCAE — import of pets · <a>link</a></div><div class="src"><span class="ss"></span>MOCCAE — permit validity · <a>link</a></div></div>
+          <div class="mk cta" data-b="4"><button>Talk to someone who can help →</button></div>
+        </div>
+        <!-- lead -->
+        <div class="layer l-lead"><div class="toast"><span class="ok">✓</span><div><b>Lead sent</b><br><small style="opacity:.8">routed to a vetted relocation provider</small></div></div></div>
+        <!-- learn -->
+        <div class="layer l-learn"><div class="analytics"><div class="bars"><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="loop">↩ build the next fear: “quarantine in Dubai?”</div></div></div>
+
+        <div class="vizcap" id="vizcap">a real question</div>
+      </div>
+    </div>
+  </aside>
+</div>
+
+<div class="loopnote"><span>↩ and the loop begins again — one fear at a time</span></div>
+<div class="end">
+  <h2>One fear at a time</h2>
+  <p>The engine turns midnight panic into pages people trust — and turns that trust into a business where nobody loses.</p>
+  <div class="wins"><div class="win"><b>Customer</b> · a safe move, a trusted expert</div><div class="win"><b>Provider</b> · a qualified lead</div><div class="win"><b>Us</b> · paid for the connection</div></div>
+  <a class="restart" href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">↑ Read it again</a>
+</div>
+
+<script>
+(function(){
+  const scenes=[...document.querySelectorAll('.scene')];
+  const bar=document.getElementById('progress');
+  const fill=document.getElementById('spinefill');
+  const pipeline=document.getElementById('pipeline');
+  const stages={brain:pipeline.querySelector('[data-s=brain]'),render:pipeline.querySelector('[data-s=render]'),eyes:pipeline.querySelector('[data-s=eyes]')};
+  const dotsWrap=document.getElementById('dots');
+  const story=document.querySelector('.story');
+  const device=document.getElementById('device');
+  const urlEl=document.getElementById('url');
+  const typed=document.getElementById('typed');
+  const cap=document.getElementById('vizcap');
+  const pageBlocks=[...document.querySelectorAll('#page .mk')];
+
+  const URLS={search:'google.com/search?q=…',classify:'engine · analysing intent',verify:'<b>moccae.gov.ae</b> ✓ verified',
+    build:'building page…',live:'<b>pawroute.ae</b>/dubai-airport-pet-hold',lead:'<b>pawroute.ae</b>/dubai-airport-pet-hold',learn:'analytics · what to build next'};
+  const CAPS={search:'a real question',classify:'the brain reads the fear',verify:'every fact, proven',build:'our engine assembles the page',
+    live:'live — and written for her',lead:'a connection, everybody wins',learn:'it learns, then loops'};
+
+  // chapter dots
+  const dots=scenes.map((s,i)=>{const b=document.createElement('button');
+    b.innerHTML='<span class="lbl">'+(i+1)+'. '+s.dataset.title+'</span>';
+    b.onclick=()=>s.scrollIntoView({behavior:'smooth',block:'center'});dotsWrap.appendChild(b);return b;});
+
+  const QUERY='what happens if your dog is taken at Dubai airport';
+  let typeTimer=null;
+  function typeQuery(){clearTimeout(typeTimer);typed.textContent='';let i=0;
+    (function step(){if(device.dataset.mode!=='search')return;typed.textContent=QUERY.slice(0,i);
+      if(i++<QUERY.length)typeTimer=setTimeout(step,38);})();}
+
+  let built=false;
+  function buildPage(stagger){
+    if(stagger){pageBlocks.forEach((b,i)=>setTimeout(()=>b.classList.add('in'),180*i+120));}
+    else pageBlocks.forEach(b=>b.classList.add('in'));
+    built=true;
+  }
+  function resetPage(){pageBlocks.forEach(b=>b.classList.remove('in'));built=false;}
+
+  function setMode(m){
+    if(device.dataset.mode===m)return;
+    device.dataset.mode=m;
+    urlEl.innerHTML=URLS[m]||'pawroute.ae';
+    cap.textContent=CAPS[m]||'';
+    if(m==='search')typeQuery();
+    if(m==='build'){ if(!built) buildPage(true); }
+    else if(m==='live'||m==='lead'||m==='learn'){ buildPage(false); }
+    else { resetPage(); }            // search/classify/verify → page hidden & reset
+  }
+
+  function setStage(role){for(const k in stages)stages[k].classList.toggle('on',k===role);}
+
+  function onScroll(){
+    const st=window.scrollY,h=document.documentElement.scrollHeight-window.innerHeight;
+    bar.style.width=(h>0?st/h*100:0)+'%';
+    const r=story.getBoundingClientRect(),total=story.offsetHeight;
+    const passed=Math.min(Math.max(window.innerHeight*0.5-r.top,0),total);
+    fill.style.height=(passed/total*100)+'%';
+    pipeline.classList.toggle('show',st>window.innerHeight*0.55);
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.18});
+  scenes.forEach(s=>io.observe(s));
+
+  const ioA=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){
+      const i=scenes.indexOf(e.target);
+      scenes.forEach(s=>s.classList.remove('active'));e.target.classList.add('active');
+      dots.forEach((d,di)=>d.classList.toggle('active',di===i));
+      setStage(e.target.dataset.stage);setMode(e.target.dataset.mode);
+    }}),{rootMargin:'-45% 0px -45% 0px'});
+  scenes.forEach(s=>ioA.observe(s));
+
+  typeQuery();
+})();
+</script>
+</body>
+</html>

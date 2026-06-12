@@ -1,0 +1,183 @@
+url: /destinations/philippines-to-dubai/
+title: "Philippines to Dubai Pet Relocation — The Complete Guide (2026) | PawRoute"
+title_suffix: ""
+meta_description: "The complete guide to bringing a dog or cat from the Philippines to the UAE: MOCCAE import permit, microchip, rabies vaccine and titre test, export clearance, flights, summer heat rules and costs. No quarantine when compliant."
+og_title: "Philippines → Dubai with a pet: the complete 2026 guide"
+schema: service
+published: "2026-06-09"
+updated: "2026-06-09"
+service:
+  name: Pet relocation from the Philippines to the UAE
+  area_served: ["United Arab Emirates", "Philippines"]
+
+# FRAMEWORK B — Comprehensive Definitive Guide. Topical authority via exhaustiveness:
+# every intent on the route covered in depth. Test specimen for B07-Variant-L (Gemini's
+# "comprehensive beats concise" thesis). Contrast against the concise Pakistan page.
+
+blocks:
+  - type: hero
+    eyebrow: "Route · Philippines → UAE (import)"
+    heading: "Moving your pet from the Philippines to Dubai"
+    subheading: >
+      A well-travelled corridor for Filipino families relocating to the UAE. It is
+      very manageable — but it has one timeline-defining step (the rabies titre test)
+      that you plan months ahead. Here is the whole route, in depth.
+    ctas:
+      - { label: "See requirements", url: "#requirements", style: "btn-gold" }
+      - { label: "Get my quote", url: "#quote", style: "btn-ghost" }
+    card:
+      heading: "Philippines → Dubai at a glance"
+      rows:
+        - { label: "Quarantine", value: "None (if compliant)" }
+        - { label: "Permit", value: "MOCCAE, AED 200, 90 days" }
+        - { label: "Titre test", value: "Usually required" }
+        - { label: "Min age", value: "15 weeks" }
+      note: "The Philippines is a rabies high-risk origin, so the titre test is the step that decides your timeline."
+
+  - type: key_facts
+    heading: "Quick answer"
+    answer: "To bring a pet from the Philippines to the UAE you need an ISO microchip, a rabies vaccination given at least 21 days before travel, a rabies antibody (titre) test of ≥0.5 IU/ml valid for 365 days (the Philippines is a rabies high-risk origin), a Philippine government export/veterinary health certificate, and a MOCCAE import permit (AED 200, valid 90 days) arranged before travel. The minimum travel age is 15 weeks. Compliant pets are not quarantined in the UAE."
+    stats:
+      - { label: "MOCCAE permit", value: "AED 200, valid 90 days" }
+      - { label: "Titre", value: "≥0.5 IU/ml, 365 days" }
+      - { label: "Quarantine", value: "None if compliant" }
+      - { label: "Release fee", value: "AED 500 dog / 250 cat" }
+    verified: "June 2026"
+    source_authority: "UAE MOCCAE"
+
+  - type: callout
+    style: warn
+    heading: "Plan the titre test first — it defines your timeline"
+    body: >
+      Because the Philippines is classed as a rabies high-risk origin, the UAE requires
+      a rabies antibody (titre) test. The blood sample is taken after the rabies
+      vaccination and the result is valid for 365 days — but arranging the test, the lab
+      turnaround and aligning it with the 90-day permit window is what turns a smooth move
+      into a slow one if left late. Confirm this step before you commit to a travel date.
+
+  - type: prose
+    id: uae-framework
+    eyebrow: "The part we can anchor exactly"
+    heading: "The UAE import side — the controlling rules"
+    paragraphs:
+      - "The UAE import requirements are set by MOCCAE (the Ministry of Climate Change and Environment) and are the same regardless of origin. They are the part of this route we can confirm precisely: a <strong>MOCCAE import permit</strong> (AED 200, valid 90 days, arranged before travel), a <strong>permanent ISO microchip</strong> that matches every document, a <strong>valid rabies vaccination</strong> given at least 21 days before travel, internal and external <strong>parasite treatment within 14 days</strong> of travel, and — for a high-risk origin like the Philippines — a <strong>rabies titre test (≥0.5 IU/ml, valid 365 days)</strong>."
+      - "Two further MOCCAE rules matter for planning: the <strong>minimum travel age is 15 weeks</strong> for a high-risk origin, and there is a limit of <strong>two pets per person per year</strong>. On arrival, a release fee applies (AED 500 per dog, AED 250 per cat). When every requirement is met, <strong>there is no quarantine</strong> — your pet clears and comes home to you."
+
+  - type: prose
+    id: titre
+    eyebrow: "The timeline-defining step"
+    heading: "The rabies titre test, explained"
+    paragraphs:
+      - "A rabies titre (antibody) test proves the rabies vaccine produced enough immunity. The blood sample is drawn after vaccination and must return a result of at least <strong>0.5 IU/ml</strong>; that result is then valid for <strong>365 days</strong>. For pets from high-risk origins, the UAE relies on this test as the assurance that the rabies vaccination is genuinely protective."
+      - "The reason it dominates the timeline is sequencing: microchip first, then the rabies vaccine, then — after the vaccine — the titre blood draw, then the lab turnaround, all of which has to land inside the 90-day validity of your MOCCAE permit. Get the order or the timing wrong and the move slips. This is the single step we confirm first on this route."
+
+  - type: prose
+    id: philippine-side
+    eyebrow: "The origin side"
+    heading: "The Philippine export side"
+    paragraphs:
+      - "Leaving the Philippines requires a government export/veterinary health certificate alongside the microchip and rabies records. The exact issuing authority and the current process should be <strong>confirmed with the relevant Philippine veterinary/quarantine authority before booking</strong> — we verify this per case rather than guess, because origin-side procedures change and a wrong assumption here is what causes delays."
+
+  - type: prose
+    id: flights
+    eyebrow: "How your pet actually flies"
+    heading: "Flights: cabin, baggage or cargo"
+    paragraphs:
+      - "On Emirates, pets are not carried in the cabin (only guide dogs and falcons are). They travel either as <strong>checked baggage</strong> when the total journey is under 17 hours, or as <strong>manifested cargo</strong> on longer or connecting itineraries. The right choice depends on routing and your pet's size and crate — we confirm it before booking so nothing is decided at the airport. The crate itself must meet <strong>IATA Live Animals Regulations</strong>: rigid, ventilated and correctly sized."
+
+  - type: prose
+    id: heat
+    eyebrow: "A seasonal trap"
+    heading: "Summer heat restrictions"
+    paragraphs:
+      - "From roughly June to September, airlines restrict live-animal carriage when ground temperatures exceed safe limits — this is an <strong>airline and IATA welfare rule, not a government one</strong>, which is why owners often discover it only after booking. Snub-nosed (brachycephalic) breeds face the tightest restrictions. On a hot-season move we plan around night flights and routing; it is a real constraint to design for, not a surprise to absorb."
+
+  - type: checklist
+    id: requirements
+    eyebrow: "What you need"
+    heading: "Full requirements checklist"
+    body: "The UAE import side is exact; the Philippine export side we confirm per case before booking."
+    items:
+      - { title: "ISO microchip (first)", text: "15-digit chip implanted before the rabies vaccine and matching every document." }
+      - { title: "Rabies vaccination", text: "At least 21 days before travel; minimum travel age 15 weeks." }
+      - { title: "Rabies titre test", text: "≥0.5 IU/ml, valid 365 days — required from a high-risk origin." }
+      - { title: "Parasite treatment", text: "Internal and external doses within 14 days of travel." }
+      - { title: "MOCCAE import permit", text: "AED 200, valid 90 days, arranged before travel." }
+      - { title: "Philippine export health certificate", text: "Government/veterinary certificate; authority and process confirmed per case." }
+      - { title: "IATA travel crate", text: "Rigid, ventilated, correctly sized to your pet." }
+
+  - type: steps
+    eyebrow: "The execution pipeline"
+    heading: "How the move runs, step by step"
+    items:
+      - { title: "Confirm titre + permit window", text: "We confirm the titre requirement and map the 90-day permit window to your date." }
+      - { title: "Microchip → rabies → titre", text: "In strict sequence, with the titre blood draw timed after vaccination." }
+      - { title: "Parasite treatment", text: "Internal and external doses inside the 14-day window before travel." }
+      - { title: "Philippine export certificate", text: "Confirmed and issued through the correct authority." }
+      - { title: "MOCCAE permit + flight", text: "Permit lodged, crate and cargo/baggage space booked." }
+      - { title: "Fly & clear", text: "Cleared in the UAE with the release fee paid; no quarantine when compliant." }
+
+  - type: story
+    id: story
+    heading: "What going wrong actually looks like"
+    tag: "A common scenario"
+    lead: "On this route, the trap is almost always the titre timing — not carelessness."
+    problem: "A family books their flights early and gets the microchip and rabies vaccine done, feeling organised."
+    mistake: "No one schedules the rabies titre test early enough for the result to be valid and inside the permit window."
+    discovery: "At planning review the gap surfaces: the titre can't be completed in time for the booked date."
+    result: "The flight is rebooked and the move slips by weeks while the titre and permit are aligned."
+    lesson: "Confirm the titre and the 90-day permit window first, then book the flight around them — never the other way round."
+
+  - type: takeaways
+    heading: "Key takeaways"
+    items:
+      - "Core UAE requirements: <strong>microchip, rabies ≥21 days, titre ≥0.5 IU/ml, MOCCAE permit (AED 200, 90 days)</strong>."
+      - "The Philippines is a <strong>high-risk origin</strong>, so the titre test applies and minimum age is 15 weeks."
+      - "The <strong>titre test defines the timeline</strong> — plan it first."
+      - "<strong>No quarantine</strong> when fully compliant; the risk is documentation and timing."
+      - "Summer (Jun–Sep) heat rules are an <strong>airline rule</strong> — plan routing around them."
+
+  - type: faq
+    id: faq
+    heading: "Philippines → Dubai: your questions answered"
+    items:
+      - { q: "Does my pet need a rabies titre test from the Philippines?", a: "Yes, in almost all cases. The Philippines is a rabies high-risk origin, so the UAE requires a rabies antibody (titre) test of ≥0.5 IU/ml, valid for 365 days. We confirm your exact status before you commit, because it is the biggest timeline variable on this route." }
+      - { q: "Will my pet be quarantined in the UAE?", a: "No — with a valid MOCCAE import permit, microchip, rabies vaccination and titre, pets are not quarantined on arrival. A release fee applies (AED 500 per dog, AED 250 per cat)." }
+      - { q: "How much is the MOCCAE import permit?", a: "AED 200, and it is valid for 90 days. It must be arranged before travel and is the controlling document for the move." }
+      - { q: "What is the minimum age my pet can travel?", a: "For a high-risk origin like the Philippines, the minimum travel age is 15 weeks, because the rabies vaccine and titre timeline cannot be completed any earlier." }
+      - { q: "Can my pet travel in the cabin?", a: "Not on Emirates — pets travel as checked baggage (journey under 17 hours) or as cargo. Only guide dogs and falcons are carried in the cabin." }
+      - { q: "How many pets can I bring?", a: "MOCCAE allows up to two pets per person per year. For more, we plan the move accordingly." }
+      - { q: "Is summer a problem for flying my pet?", a: "It can be. From roughly June to September, airlines restrict live-animal carriage in extreme ground heat, and snub-nosed breeds face the tightest limits. We plan routing and timing around it." }
+      - { q: "What documents do I need from the Philippine side?", a: "A government/veterinary export health certificate alongside the microchip and rabies records. We confirm the exact authority and current process per case before booking." }
+
+  - type: sources
+    eyebrow: "Verified against the source"
+    heading: "Official sources"
+    items:
+      - { authority: "UAE MOCCAE", title: "Pet import permits", url: "https://www.moccae.gov.ae/en/services/import-permit-pets", note: "The controlling permit + import rules" }
+      - { authority: "Emirates", title: "Travelling with animals", url: "https://www.emirates.com/english/help/faqs/what-are-the-rules-and-charges-for-travelling-with-animals/", note: "Cabin/baggage/cargo + 17h rule" }
+      - { authority: "IATA", title: "Live Animals Regulations", url: "https://www.iata.org/en/programs/cargo/live-animals/", note: "Crate + welfare standards" }
+
+  - type: related
+    label: "📖 Related"
+    items:
+      - { title: "Moving to Dubai — full UAE import guide", url: "/moving-to-dubai/", note: "everything for the UAE side" }
+      - { title: "Pakistan → Dubai (the short version)", url: "/destinations/pakistan-to-dubai/", note: "another high-risk origin, concise" }
+
+  - type: quote_form
+    id: quote
+    eyebrow: "No obligation"
+    heading: "Get your Philippines → Dubai quote"
+    body: "Tell us your pet and timing. We'll confirm the titre step and reply on WhatsApp with a transparent plan and the first move."
+    destinations: ["Into the UAE"]
+    points:
+      - "Whether the titre test applies and the timeline it adds"
+      - "The correct microchip → rabies → titre sequence"
+      - "A permit-safe, heat-aware travel plan"
+
+  - type: cta
+    heading: "Bringing your pet from the Philippines to Dubai?"
+    body: "A manageable route, done right — we confirm the titre, time the permit, and handle the paperwork so your pet arrives safely, with no surprises."
+    ctas:
+      - { label: "Get my quote", url: "#quote", style: "btn-gold" }
+      - { label: "See all routes", url: "/destinations/", style: "btn-ghost" }

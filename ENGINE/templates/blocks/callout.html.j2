@@ -1,0 +1,8 @@
+<section class="section" style="padding-top:0;padding-bottom:0">
+  <div class="container">
+    <div class="callout {{ block.style | default('') }}">
+      {% if block.heading %}<h4>{{ block.heading }}</h4>{% endif %}
+      <p>{{ block.body }}</p>
+    </div>
+  </div>
+</section>

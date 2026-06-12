@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Content Structure for Trust — Cheatsheet</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#14110d;--panel:#1d1812;--ink:#f3ece0;--soft:#b9ab95;--line:#352c20;--gold:#d8a84b;--red:#e06a4e;--green:#7bbf6a}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--ink);font-family:'JetBrains Mono',monospace;font-size:13px;line-height:1.5;padding:16px;max-width:540px;margin:0 auto}
+  header{border-bottom:2px solid var(--gold);padding-bottom:10px;margin-bottom:14px}
+  .k{color:var(--gold);font-size:12px;letter-spacing:.1em}
+  h1{font-family:'Bebas Neue',sans-serif;font-size:30px;letter-spacing:.02em;line-height:1}
+  h2{font-family:'Bebas Neue',sans-serif;font-size:19px;color:var(--gold);letter-spacing:.03em;margin:18px 0 7px;border-bottom:1px solid var(--line);padding-bottom:3px}
+  .row{background:var(--panel);border:1px solid var(--line);border-radius:7px;padding:8px 11px;margin:6px 0}
+  .row b{color:var(--gold)}
+  .ex{color:var(--soft);font-size:12px;font-style:italic;display:block;margin-top:3px}
+  .v{color:var(--green);font-weight:700}.u{color:var(--gold);font-weight:700}.c{color:var(--red);font-weight:700}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+  .pill{display:inline-block;background:#251e16;border-radius:4px;padding:1px 6px;font-size:12px;color:var(--gold)}
+  .note{color:var(--soft);font-size:12px;border-top:1px solid var(--line);margin-top:16px;padding-top:10px}
+</style>
+</head>
+<body>
+<header>
+  <div class="k">THE TRUST ENGINE · CHEATSHEET</div>
+  <h1>Content Structure for Trust</h1>
+  <div class="k" style="color:var(--soft)">5 layers · 9 page types · cite every claim by C-ID</div>
+</header>
+
+<h2>The 5 layers — every page</h2>
+<div class="row"><b>1 · Fear acknowledgement</b> (first 100 words) — the fear in their words.<span class="ex">"…your dog will be taken away in airport and never give back" — Muze Gu</span></div>
+<div class="row"><b>2 · Verified answer</b> — every claim cites a Verified row.<span class="ex">"permit valid 90 days" <span class="v">Verified</span> C-010 · "release 500 AED/dog" C-003</span></div>
+<div class="row"><b>3 · Process / evidence</b> — official screenshot beside the claim.<span class="ex">MOCCAE page embedded = proof (silence on titer cost = proof too, C-001)</span></div>
+<div class="row"><b>4 · Related fears</b> — link 2–3 neighbour pages.<span class="ex">confiscation → checklist · titer cost · summer embargo</span></div>
+<div class="row"><b>5 · Help-first CTA</b> — useful, not a sales ask.<span class="ex"><span class="v">"Download the MOCCAE-verified checklist"</span> not <span class="c">"Get a Quote"</span></span></div>
+
+<h2>The 9 page types</h2>
+<div class="grid">
+  <div class="row">Fear Resolution <span class="ex">Fear → confiscation</span></div>
+  <div class="row">Process Guide <span class="ex">Informational → overwhelm</span></div>
+  <div class="row">Cost Transparency <span class="ex">Commercial → price gouging</span></div>
+  <div class="row">Comparison <span class="ex">Research → wrong choice</span></div>
+  <div class="row">Route/Variant <span class="ex">Commercial → doc mistake</span></div>
+  <div class="row">Urgency <span class="ex">Urgency → deadline</span></div>
+  <div class="row">Emergency <span class="ex">Emergency → crisis now</span></div>
+  <div class="row">Case Study <span class="ex">Problem → "works for me?"</span></div>
+  <div class="row">Trust Page <span class="ex">Research → "trust them?"</span></div>
+</div>
+
+<h2>The opening formula</h2>
+<div class="row"><b>[Fear in their words] + [reassurance bridge] + [what this page gives them]</b><span class="ex">"If you've been told your dog could be taken at Dubai airport — that fear is real, and it has happened. This page explains what triggers it and the 3 steps that prevent it."</span></div>
+
+<h2>Source Bank — 3 handlings</h2>
+<div class="row"><span class="v">Verified</span> → assert it + cite C-ID.<span class="ex">"valid 90 days" C-010</span></div>
+<div class="row"><span class="u">Unverifiable</span> → hedge, never assert.<span class="ex">titer cost: "no official figure; community 700–1,300 AED" C-001</span></div>
+<div class="row"><span class="c">Conflicting</span> → lead with official, name it.<span class="ex">Etihad: official USD 399, not the community's USD 1,500 — C-015</span></div>
+
+<h2>The Hormozi 3 questions</h2>
+<div class="row">1 · Would you put your <b>name</b> on it?</div>
+<div class="row">2 · Is the proof <b>undeniable & real-world</b>? (dated official screenshot)</div>
+<div class="row">3 · Could <b>AI alone</b> have written it? If yes → add real specifics.</div>
+
+<h2>Proof density rule</h2>
+<div class="row">Higher risk = more proof. Dubai pet relocation = <b>maximum risk</b> → every claim traces to an official source <span class="u">or is openly hedged</span>. Proof goes <b>beside each claim</b>, never one testimonials block.</div>
+
+<div class="note">The Trust Engine · Content Structure for Trust · cheatsheet · real examples from the 2026-05-29 Dubai proof run (4 pages built, avg competitor 3.9/10). One fear per page. Verified before published.</div>
+</body>
+</html>

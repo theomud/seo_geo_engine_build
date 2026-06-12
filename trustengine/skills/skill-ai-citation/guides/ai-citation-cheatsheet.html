@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>AI Citation &amp; GEO — Cheatsheet</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#14110d;--panel:#1d1812;--ink:#f3ece0;--soft:#b9ab95;--line:#352c20;--gold:#d8a84b;--red:#e06a4e;--green:#7bbf6a}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--ink);font-family:'JetBrains Mono',monospace;font-size:13px;line-height:1.5;padding:16px;max-width:540px;margin:0 auto}
+  header{border-bottom:2px solid var(--gold);padding-bottom:10px;margin-bottom:14px}
+  .k{color:var(--gold);font-size:12px;letter-spacing:.1em}
+  h1{font-family:'Bebas Neue',sans-serif;font-size:30px;letter-spacing:.02em;line-height:1}
+  h2{font-family:'Bebas Neue',sans-serif;font-size:19px;color:var(--gold);letter-spacing:.03em;margin:18px 0 7px;border-bottom:1px solid var(--line);padding-bottom:3px}
+  .row{background:var(--panel);border:1px solid var(--line);border-radius:7px;padding:8px 11px;margin:6px 0}
+  .row b{color:var(--gold)}
+  .ex{color:var(--soft);font-size:12px;display:block;margin-top:3px}
+  .v{color:var(--green);font-weight:700}.c{color:var(--red);font-weight:700}
+  .ba{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:6px 0}
+  .ba div{border-radius:7px;padding:8px 10px;font-size:12px;word-break:break-word}
+  .bad{background:#2a1a14;border:1px solid #4a2c20}.good{background:#1a2417;border:1px solid #2f4327}
+  ol{margin:0 0 0 18px}li{margin:2px 0}
+  code{background:#251e16;padding:1px 5px;border-radius:4px;color:var(--gold);font-size:11px}
+  .note{color:var(--soft);font-size:12px;border-top:1px solid var(--line);margin-top:16px;padding-top:10px}
+  @media(max-width:560px){body{max-width:360px;margin:0;font-size:12.5px}.ba{grid-template-columns:1fr}h1{font-size:27px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="k">THE TRUST ENGINE · CHEATSHEET</div>
+  <h1>AI Citation &amp; GEO</h1>
+  <div class="k" style="color:var(--soft)">be cited not ranked · answer first · stats + sources + schema · one entity</div>
+</header>
+
+<h2>The rule</h2>
+<div class="row"><b>Optimise for citation, not ranking.</b> Make the page the AI quotes: answer first, a stat + a source in every claim, FAQ schema it can lift, one entity it can trust. <span class="ex">M-22 GEO · KDD 2024: stats + sources + structure = up to 40% more citations</span></div>
+
+<h2>The 40% trifecta</h2>
+<div class="row"><b>Statistic + source citation + structured formatting.</b> All three, every page. <span class="ex">P-18 · surprise: an honest "no official price (C-001)" out-cites a confident number — engines trust disclosed sources</span></div>
+
+<h2>Direct-answer-first</h2>
+<div class="ba">
+  <div class="bad"><span class="c">BURIED</span><br>"Relocating a pet is an emotional journey…" (no answer for 400w)</div>
+  <div class="good"><span class="v">ANSWER-FIRST</span><br>"Held only if paperwork incomplete. 500 AED/dog (C-003), permit 90 days (C-010)." (sentence 1)</div>
+</div>
+<div class="row"><span class="ex">P-17 · the engine lifts the first 100 words — answer the query there, with a stat + a C-ID inside.</span></div>
+
+<h2>The entity home</h2>
+<div class="ba">
+  <div class="bad"><span class="c">FRAGMENTED</span><br>3 different names across the site → no entity → no citation</div>
+  <div class="good"><span class="v">ONE HOME</span><br>1 name + 1 description + sameAs + LocalBusiness schema, everywhere identical</div>
+</div>
+<div class="row"><span class="ex">M-23 entity home · P-29 dedicated page not homepage · P-30 identical naming · F-28 sameAs · P-47 validate schema</span></div>
+
+<h2>Monitor weekly (10 queries × 4 engines)</h2>
+<div class="row">ChatGPT · Perplexity · Google AI Overview · Gemini. Record who's cited; <b>action loop:</b> lose a query → strengthen answer + FAQ → re-check. <span class="ex">P-48 · F-21 · record the pre-publish baseline first (it's the gap)</span></div>
+
+<h2>Never</h2>
+<div class="row"><span class="c">✗</span> bury the answer · <span class="c">✗</span> let a figure float (cite or hedge) · <span class="c">✗</span> assert an unverified number · <span class="c">✗</span> ship invalid schema · <span class="c">✗</span> fragment the entity name · <span class="c">✗</span> let an AI write the answer</div>
+
+<h2>Real result (Dubai proof run)</h2>
+<div class="row">4 gap pages optimised: <b class="v">4/4</b> answer-first · <b class="v">4/4</b> stat+C-ID · <b class="v">4/4</b> FAQ schema (20 Q&A) · <b class="v">4/4</b> entity link. C-019/010/007/003/022/015/001. <span class="ex">Live citation NOT YET CONFIRMED — requires publication (the monitor's job). Gap: 9/9 competitors omit these answers.</span></div>
+
+<div class="note">The Trust Engine · AI Citation &amp; GEO · cheatsheet · real output from the 2026-06-01 Dubai proof run. Be cited not ranked · answer first · stats + sources + structure · one entity home · monitor weekly.</div>
+</body>
+</html>

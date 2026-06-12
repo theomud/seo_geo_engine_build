@@ -1,0 +1,61 @@
+{
+  "competitor_name": "K9 Jets",
+  "url": "https://k9jets.com",
+  "total_score": 5.5,
+  "scores": {
+    "fear_in_first_100_words": {
+      "score": 0.0,
+      "evidence": "Where family flies together. The original private jet pay-by-seat pet travel service.",
+      "gap": "No mention of airport confiscation, cargo hold rejection, or pet being separated from owner — the core fear is completely absent"
+    },
+    "official_source_cited": {
+      "score": 0.5,
+      "evidence": "ATOL scheme protection mentioned in footer disclaimer",
+      "gap": "No citation of UAE MOCCAE, Dubai Municipality, or specific import permit requirements for Dubai-bound pets"
+    },
+    "specific_route_named": {
+      "score": 1.0,
+      "evidence": "Dubai from $9,925; London $8,925; Los Angeles $13,850 — routes explicitly listed",
+      "gap": "Routes named but no detail on what makes Dubai specifically complex vs other destinations"
+    },
+    "step_by_step_process": {
+      "score": 0.5,
+      "evidence": "'How it Works' navigation link exists; 'No-Stress Documentation' section referenced",
+      "gap": "No visible step-by-step process on homepage — steps are buried behind a click, not shown inline"
+    },
+    "timeline_included": {
+      "score": 0.0,
+      "evidence": "No timeline language found anywhere on homepage or about page",
+      "gap": "No mention of how many weeks in advance to book, documentation lead times, or Dubai quarantine timelines"
+    },
+    "cost_ranges_shown": {
+      "score": 1.0,
+      "evidence": "Dubai from $9,925; Dublin from $7,925; Frankfurt from $9,250 — per-seat prices shown",
+      "gap": "Prices shown are seat costs only — no breakdown of documentation fees, vet costs, or government permit fees"
+    },
+    "common_mistakes": {
+      "score": 0.0,
+      "evidence": "No mention of mistakes, rejections, failed documentation, or common pitfalls anywhere on the page",
+      "gap": "No warning about breed restrictions, microchip timing errors, or rabies titer test windows for UAE entry"
+    },
+    "original_visuals": {
+      "score": 0.5,
+      "evidence": "Instagram feed embedded showing pets on flights; active social content referenced",
+      "gap": "No original infographics, route maps, process diagrams, or Dubai-specific visual content on the page itself"
+    },
+    "cta_feels_like_help": {
+      "score": 1.0,
+      "evidence": "Free Consultation: Book a call to assist with your flights — Request a Callback",
+      "gap": "CTA is helpful but generic — no Dubai-specific consultation offer or urgency tied to documentation deadlines"
+    },
+    "would_you_trust_this": {
+      "score": 1.0,
+      "evidence": "Over 7000 pets flown; 95% flights confirmed; ATOL protected; Trustpilot reviews cited",
+      "gap": "Trust signals are strong globally but no Dubai-specific social proof, testimonials, or UAE regulatory credibility markers"
+    }
+  },
+  "strongest_asset": "Transparent per-seat pricing with named routes including Dubai, combined with 7000+ pets flown and ATOL financial protection — rare credibility in this market",
+  "biggest_gap": "Completely ignores the deepest fear in the market — pet confiscation or rejection at the airport — and provides zero Dubai-specific documentation guidance, timelines, or UAE regulatory citations",
+  "content_opportunity": "Flying Your Pet to Dubai: What Happens at the Airport If Your Documents Are Wrong (And How to Guarantee They're Not)",
+  "content_brief": "Dubai pet owners fear their dog will be seized at the airport and never returned — unlike K9 Jets, we show you the exact UAE MOCCAE documentation checklist, breed restrictions, and timeline so your pet clears customs the first time, every time."
+}

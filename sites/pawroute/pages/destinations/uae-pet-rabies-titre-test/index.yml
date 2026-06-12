@@ -1,0 +1,120 @@
+url: /destinations/uae-pet-rabies-titre-test/
+title: "Does My Pet Need a Rabies Titre Test for the UAE? (High-Risk Only) | PawRoute"
+title_suffix: ""
+meta_description: "Not every pet needs a rabies titre test for the UAE. MOCCAE requires it only from high-risk-for-rabies origins — result ≥0.5 IU/ml, valid 365 days. The accurate, regulator-verified answer (many sites get this wrong)."
+og_title: "UAE rabies titre test: only from high-risk origins — not everyone"
+schema: service
+published: "2026-06-09"
+updated: "2026-06-09"
+breadcrumb: "UAE rabies titre test"
+service:
+  name: UAE pet import rabies-titre guidance
+  area_served: ["United Arab Emirates"]
+
+# G06 CORRECTIVE SPECIMEN #4 — titre "everyone needs one" / wrong windows.
+# ANCHORED to audit/evidence/uae-import-export/moccae-pets-full.png (2026-06-09):
+# titre ONLY from high-risk countries, >=0.5 IU/ml, valid 365 days. Clear to publish.
+# The specific high-risk country LIST is NOT asserted (confirm-per-case) — not held as a screenshot.
+
+blocks:
+  - type: hero
+    eyebrow: "UAE import · Rabies titre test"
+    heading: "Does my pet need a rabies titre test for the UAE?"
+    subheading: >
+      Often, no. Many sites imply every pet needs a rabies blood test to enter the UAE —
+      but MOCCAE requires it only from high-risk-for-rabies origins. Whether it applies to
+      you depends on where your pet is coming from, and it's the single biggest timeline
+      variable when it does.
+    ctas:
+      - { label: "See the rule", url: "#rule", style: "btn-gold" }
+      - { label: "Get my quote", url: "#quote", style: "btn-ghost" }
+    card:
+      heading: "UAE rabies titre, at a glance"
+      rows:
+        - { label: "Required?", value: "High-risk origins only" }
+        - { label: "Result needed", value: "≥ 0.5 IU/ml" }
+        - { label: "Validity", value: "365 days" }
+        - { label: "Low-risk origin", value: "Usually not needed" }
+      note: "Verified against MOCCAE, June 2026. We confirm your origin's classification before you commit."
+
+  - type: key_facts
+    id: rule
+    heading: "The accurate answer"
+    answer: "Not every pet needs a rabies titre test to enter the UAE. MOCCAE requires the rabies antibody (titre) test only for pets coming from origins it classifies as high-risk for rabies — in which case the result must be at least 0.5 IU/ml and is valid for 365 days. From a low-risk origin, the titre test is usually not required. Because it depends on your origin's classification, we confirm your status against MOCCAE before you commit — when a titre is required, it's the single biggest variable in your timeline."
+    stats:
+      - { label: "When required", value: "High-risk origins" }
+      - { label: "Result", value: "≥ 0.5 IU/ml" }
+      - { label: "Valid", value: "365 days" }
+      - { label: "Source", value: "MOCCAE" }
+    verified: "June 2026"
+    source_authority: "UAE MOCCAE"
+
+  - type: callout
+    style: warn
+    heading: "Myth vs fact: 'every pet needs a rabies blood test'"
+    body: >
+      Many relocation guides imply a rabies titre test is always required for the UAE. It
+      isn't — MOCCAE requires it only from high-risk-for-rabies origins. If your pet is
+      coming from a low-risk origin, you usually don't need it at all, which removes the
+      longest wait from the process. The deciding factor is your origin's classification, so
+      we confirm it against the regulator before planning dates — rather than assuming a test
+      you may not need (or skipping one you do).
+
+  - type: prose
+    id: detail
+    eyebrow: "Why it matters so much"
+    heading: "When the titre test applies — and why it's the timeline driver"
+    paragraphs:
+      - "The rabies titre (antibody) test proves a vaccination produced enough immunity. The UAE relies on it as extra assurance for pets from <strong>high-risk-for-rabies origins</strong>. From those origins the result must be <strong>≥0.5 IU/ml</strong> and is then valid for <strong>365 days</strong>. From a <strong>low-risk origin</strong>, it's generally not required."
+      - "When it does apply, it dominates the schedule: the blood sample is drawn <em>after</em> vaccination, then there's a lab turnaround, and the whole sequence has to fit inside the 90-day import-permit window. That's why getting a clear answer on your origin's classification <strong>first</strong> matters more than any other single step — it's the difference between a few weeks and a few months."
+
+  - type: checklist
+    eyebrow: "If a titre is required"
+    heading: "The titre rule (MOCCAE-verified)"
+    body: "Confirmed against MOCCAE, June 2026. Applies to high-risk origins."
+    items:
+      - { title: "High-risk origins only", text: "Required only when your origin is classified high-risk for rabies — we confirm your status." }
+      - { title: "Result ≥ 0.5 IU/ml", text: "The antibody level must meet or exceed this threshold." }
+      - { title: "Valid 365 days", text: "Once passed, the result is valid for a year." }
+      - { title: "After vaccination, before travel", text: "Drawn after the rabies vaccine, with lab turnaround timed inside the 90-day permit window." }
+
+  - type: faq
+    id: faq
+    heading: "UAE rabies titre test: your questions"
+    items:
+      - { q: "Does every pet need a rabies titre test for the UAE?", a: "No. MOCCAE requires it only from origins classified as high-risk for rabies. From a low-risk origin it's usually not needed. We confirm your origin's current classification against MOCCAE before planning dates." }
+      - { q: "What result does the titre test need?", a: "At least 0.5 IU/ml, and the result is then valid for 365 days — confirmed against MOCCAE." }
+      - { q: "How do I know if my origin is high-risk?", a: "It depends on MOCCAE's current classification of your origin country. We confirm it against the regulator before you commit, because it decides whether a titre test (and its multi-week wait) applies to you." }
+      - { q: "Why does the titre test take so long when it's required?", a: "The blood sample is drawn after vaccination, then there's a lab turnaround, and the result has to be valid and sit inside the 90-day permit window. That sequencing is why it's the biggest timeline variable on the routes where it applies." }
+
+  - type: sources
+    eyebrow: "Verified against the source"
+    heading: "Official sources"
+    items:
+      - { authority: "UAE MOCCAE", title: "Pet import permits", url: "https://www.moccae.gov.ae/en/services/import-permit-pets", note: "Import requirements incl. titre rule" }
+      - { authority: "IATA", title: "Live Animals Regulations", url: "https://www.iata.org/en/programs/cargo/live-animals/", note: "Crate + cargo standards" }
+
+  - type: related
+    label: "📖 Related"
+    items:
+      - { title: "UAE rabies vaccine timing (21 days, not 30)", url: "/destinations/uae-pet-rabies-vaccine-timing/", note: "and the booster nuance" }
+      - { title: "The UAE import permit (90 days, not 30)", url: "/destinations/uae-pet-import-permit/", note: "the controlling document" }
+      - { title: "Pakistan → Dubai (a high-risk origin)", url: "/destinations/pakistan-to-dubai/", note: "the titre in practice" }
+
+  - type: quote_form
+    id: quote
+    eyebrow: "No obligation"
+    heading: "Not sure if your pet needs a titre test?"
+    body: "Tell us where your pet is coming from. We'll confirm your origin's MOCCAE classification and tell you whether a titre test applies — before you plan any dates."
+    destinations: ["Into the UAE"]
+    points:
+      - "Whether a titre test applies to your origin"
+      - "The timeline it adds when it does"
+      - "A plan built on MOCCAE's actual rule"
+
+  - type: cta
+    heading: "Importing your pet to the UAE?"
+    body: "We confirm whether a titre test applies to your origin before anything else — so you neither wait months for a test you don't need, nor get caught out by one you do."
+    ctas:
+      - { label: "Get my quote", url: "#quote", style: "btn-gold" }
+      - { label: "See all routes", url: "/destinations/", style: "btn-ghost" }

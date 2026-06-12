@@ -1,0 +1,97 @@
+title: "Northside Coffee Roasters — Small-Batch Coffee in Manchester"
+title_suffix: ""
+meta_description: "Neighbourhood coffee roastery and café in Manchester. Single-origin beans, roasted in small batches, poured fresh daily since 2014. See the menu and visit us."
+og_title: "Coffee worth slowing down for."
+
+blocks:
+  - type: hero
+    eyebrow: "Small-batch · roasted on the Northside"
+    heading: "Coffee worth slowing down for."
+    subheading: >
+      We source single-origin beans, roast them in small batches out the back,
+      and pour them fresh all day. Pull up a chair — or take a bag home.
+    ctas:
+      - { label: "See the menu", url: "/menu/", style: "btn-gold" }
+      - { label: "Visit us", url: "/visit/", style: "btn-ghost" }
+    card:
+      heading: "Today on the Northside"
+      rows:
+        - { label: "Open", value: "7am – 5pm" }
+        - { label: "House espresso", value: "Brazil · Cerrado" }
+        - { label: "Guest pour-over", value: "Ethiopia · Yirgacheffe" }
+      note: "Fresh batch roasted every Tuesday & Friday."
+
+  - type: trust_bar
+    heading: "A neighbourhood fixture"
+    items:
+      - { num: "2014", label: "roasting since" }
+      - { num: "12", label: "single origins on rotation" }
+      - { num: "Small", label: "batch, every batch" }
+      - { label: "Beans to take home" }
+
+  - type: card_grid
+    eyebrow: "What we pour"
+    heading: "House favourites"
+    body: "Dialled in daily. However you take it, we've got you."
+    cards:
+      - { flag: "☕", title: "Flat white", meta: "Our house Brazil, velvety and sweet", arrow: "On the menu", url: "/menu/" }
+      - { flag: "🫖", title: "Filter & pour-over", meta: "A rotating single origin, brewed to order", arrow: "On the menu", url: "/menu/" }
+      - { flag: "🧊", title: "Cold brew", meta: "18-hour steep, smooth and low-acid", arrow: "On the menu", url: "/menu/" }
+      - { flag: "🛍️", title: "Beans to take home", meta: "Whole or ground, roasted this week", arrow: "Our coffee", url: "/about/" }
+
+  - type: steps
+    eyebrow: "Bean to cup"
+    heading: "How your coffee gets made"
+    items:
+      - { title: "Sourced", text: "We buy single-origin green beans from growers we know, a sack at a time." }
+      - { title: "Roasted", text: "Small batches on our drum roaster, twice a week, so nothing sits on a shelf." }
+      - { title: "Brewed", text: "Dialled in fresh each morning and poured the moment you order." }
+
+  - type: pricing_tiers
+    id: subscriptions
+    eyebrow: "Never run out"
+    heading: "Beans by subscription"
+    body: "Freshly roasted beans through your door. Pause or cancel anytime."
+    tiers:
+      - name: "Solo"
+        price: "£9"
+        unit: "/ 250g, monthly"
+        desc: "One bag a month for the home brewer."
+        includes: ["250g, roasted this week", "Free local delivery", "Pause anytime"]
+        excludes: ["Multiple origins"]
+      - name: "House"
+        price: "£16"
+        unit: "/ 500g, fortnightly"
+        featured: true
+        badge: "Most popular"
+        desc: "Enough to keep a household going."
+        includes: ["500g every two weeks", "Rotating single origins", "Free local delivery", "Pause anytime"]
+      - name: "Office"
+        price: "£42"
+        unit: "/ 1.5kg, weekly"
+        desc: "Keep the whole team caffeinated."
+        includes: ["1.5kg every week", "Your pick of origins", "Free delivery + loan grinder"]
+    note: "Prices include local delivery within Manchester. Nationwide shipping at cost."
+
+  - type: prose
+    variant: section--surface
+    eyebrow: "Our story"
+    heading: "Started with one roaster and a lot of opinions about coffee."
+    paragraphs:
+      - "Northside began in 2014 in a unit off Mill Lane, with a second-hand drum roaster and a stubborn belief that good coffee shouldn't be complicated."
+      - "We still roast in small batches, still know the people who grow our beans, and still think the best cup is the one poured for someone sitting across the counter."
+
+  - type: faq
+    heading: "Good to know"
+    items:
+      - { q: "Do you have oat / non-dairy milk?", a: "Always. Oat, soy and almond, no extra charge." }
+      - { q: "Can I buy the beans you brew in the café?", a: "Yes — whatever's in the hopper is on the retail shelf, roasted that week. Whole or ground to your kit." }
+      - { q: "Do you have food?", a: "Pastries from the bakery two doors down each morning, plus toasties till 3pm. Full list on the menu." }
+      - { q: "Is there wifi / space to work?", a: "Free wifi and plenty of plug sockets — though we keep a couple of laptop-free tables for the regulars." }
+
+  - type: cta
+    heading: "Come say hello."
+    body: "We're on Mill Lane, open 7 till 5. First coffee's the hardest decision you'll make all day."
+    ctas:
+      - { label: "Find us", url: "/visit/", style: "btn-gold" }
+      - { label: "See the menu", url: "/menu/", style: "btn-ghost" }

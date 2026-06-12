@@ -1,0 +1,148 @@
+title: "Pet Relocation Dubai to Canada — Requirements & Pricing | PawRoute"
+title_suffix: ""
+meta_description: "Move your pet from Dubai to Canada. Transparent pricing from AED 14,000, 4–6 weeks, no quarantine when CFIA rules are met. Microchip, rabies and health certificate explained."
+og_title: "Moving your pet from Dubai to Canada?"
+schema: service
+service:
+  name: Pet relocation from the UAE to Canada
+  area_served: ["Canada", "United Arab Emirates"]
+
+blocks:
+  - type: hero
+    eyebrow: "Route · UAE → Canada"
+    heading: "Moving your pet from Dubai to Canada?"
+    subheading: >
+      Canada is a medium-difficulty route with no quarantine when you meet the
+      CFIA rules. Some requirements vary by province, so we confirm the detail for
+      your destination before booking. Here's the cost and timeline.
+    ctas:
+      - { label: "See pricing", url: "#pricing", style: "btn-gold" }
+      - { label: "Get my quote", url: "#quote", style: "btn-ghost" }
+    card:
+      heading: "Dubai → Canada at a glance"
+      rows:
+        - { label: "Timeline", value: "4–6 weeks" }
+        - { label: "Cost range", value: "AED 14,000–20,000" }
+        - { label: "Quarantine", value: "None (if CFIA rules met)" }
+        - { label: "Difficulty", value: "Medium" }
+      note: "Banned-breed rules can be province-specific — we verify yours."
+
+  - type: key_facts
+    heading: "Quick answer"
+    answer: "Moving a pet from Dubai to Canada takes about 4–6 weeks and costs roughly AED 14,000–20,000, with no quarantine when the CFIA requirements are met. You'll need a microchip, a current rabies vaccination and a health certificate. Some breed rules are set by province rather than nationally, so we confirm both for your destination before booking."
+    stats:
+      - { label: "Timeline", value: "4–6 weeks" }
+      - { label: "Cost", value: "AED 14,000–20,000" }
+      - { label: "Quarantine", value: "None (CFIA rules met)" }
+      - { label: "Import permit", value: "No pre-permit needed" }
+    verified: "June 2026"
+    source_authority: "Canada CFIA"
+
+  - type: checklist
+    eyebrow: "What you'll need"
+    heading: "Requirements for Canada"
+    body: "Canada's federal rules come from the CFIA (Canadian Food Inspection Agency); some breed rules are provincial. We confirm both before booking."
+    items:
+      - { title: "ISO microchip first", text: "15-digit chip, implanted before the rabies vaccine." }
+      - { title: "Current rabies vaccination", text: "Documented and current, with batch numbers on the certificate." }
+      - { title: "Health certificate", text: "Issued within 10 days of arrival." }
+      - { title: "CFIA entry rules", text: "No pre-import permit needed for pets, but CFIA conditions must be met on arrival." }
+      - { title: "MOCCAE export + IATA crate", text: "UAE export process and a crate sized to your pet." }
+
+  - type: steps
+    eyebrow: "The right order"
+    heading: "How the Dubai → Canada move works"
+    items:
+      - { title: "Confirm province, date & breed rules", text: "We check CFIA conditions and any provincial breed rules for your destination." }
+      - { title: "Microchip, then rabies vaccine", text: "Chip first — order matters." }
+      - { title: "Health certificate + MOCCAE export", text: "Health certificate within 10 days of arrival, plus the UAE export paperwork." }
+      - { title: "Book crate & flight", text: "IATA crate and cargo space, booked early." }
+      - { title: "Fly & clear customs", text: "Your pet clears CFIA inspection and comes to you. No quarantine when the rules are met." }
+
+  - type: pricing_tiers
+    id: pricing
+    eyebrow: "No hidden fees"
+    heading: "Dubai → Canada pricing"
+    body: "Where you land in the range depends on your pet's size, the airline and the entry city. Full breakdown before you commit."
+    tiers:
+      - name: "Essential"
+        price: "AED 14,000"
+        unit: "from"
+        desc: "The full regulated move, handled correctly."
+        includes:
+          - "Vet protocol + health certificate"
+          - "MOCCAE export + airport inspection"
+          - "IATA crate + cargo booking"
+          - "CFIA clearance"
+        excludes:
+          - "Transit updates"
+          - "24/7 support"
+      - name: "Standard"
+        price: "AED 17,000"
+        unit: "from"
+        featured: true
+        badge: "Most popular"
+        desc: "Everything handled, with updates and a pre-arrival briefing."
+        includes:
+          - "Everything in Essential"
+          - "Transit updates + pre-arrival briefing"
+        excludes:
+          - "24/7 support"
+      - name: "Premium"
+        price: "AED 20,000"
+        unit: "from"
+        desc: "White-glove handling with insurance and a fallback plan."
+        includes:
+          - "Everything in Standard"
+          - "24/7 support line"
+          - "Transit insurance + pet-hotel fallback"
+    note: "Long-haul freight to Canada sits at the higher end for large dogs. You'll see every line before you decide."
+
+  - type: faq
+    heading: "Dubai → Canada: your questions"
+    items:
+      - { q: "Is there quarantine for Canada?", a: "No quarantine when your pet meets the CFIA requirements and the paperwork is correct." }
+      - { q: "Do I need an import permit?", a: "Canada doesn't require a pre-import permit for pet cats and dogs, but CFIA conditions must be satisfied on arrival. We confirm the current detail for your case." }
+      - { q: "Are some breeds restricted?", a: "Breed rules can be provincial rather than national. We verify the rules for your specific destination before booking." }
+      - { q: "Can you guarantee the arrival date?", a: "No. Airlines change schedules. We give you a realistic timeline and keep you updated, but never guarantee a delivery date." }
+
+  - type: sources
+    eyebrow: "Don't take our word for it"
+    heading: "Official sources"
+    items:
+      - { authority: "Canada CFIA", title: "Importing and travelling with pets", url: "https://inspection.canada.ca/en/importing-food-plants-animals/pets", note: "CFIA entry requirements" }
+      - { authority: "UAE MOCCAE", title: "Pet export & import permits", url: "https://www.moccae.gov.ae/en/services/import-permit-pets", note: "UAE export process" }
+      - { authority: "IATA", title: "Live Animals Regulations", url: "https://www.iata.org/en/programs/cargo/live-animals/", note: "Travel crate standards" }
+
+  - type: card_grid
+    variant: section--surface
+    eyebrow: "Related routes"
+    heading: "Comparing destinations?"
+    cards:
+      - { flag: "🇺🇸", title: "Dubai → USA", meta: "4–12 weeks", url: "/destinations/uae-to-usa/", arrow: "View" }
+      - { flag: "🇬🇧", title: "Dubai → UK", meta: "4–8 weeks · no quarantine", url: "/destinations/uae-to-uk/", arrow: "View" }
+      - { flag: "🇿🇦", title: "Dubai → South Africa", meta: "4–8 weeks", url: "/destinations/uae-to-south-africa/", arrow: "View" }
+      - { flag: "🌍", title: "All destinations", meta: "Every route + pricing", url: "/destinations/", arrow: "See all" }
+
+  - type: related
+    label: "📖 Read the guide"
+    items:
+      - { title: "Dubai → Canada: no quarantine, but the rabies certificate must be exact", url: "/blog/dubai-to-canada-pet-rules/", note: "CFIA rules" }
+
+  - type: quote_form
+    id: quote
+    eyebrow: "No obligation"
+    heading: "Get your Dubai → Canada quote"
+    body: "Tell us your destination province and timing. We'll confirm the rules and reply with a transparent price."
+    destinations: ["Canada"]
+    points:
+      - "CFIA + provincial rules for your destination"
+      - "A transparent price range for your pet"
+      - "A deadline-safe timeline"
+
+  - type: cta
+    heading: "Ready to get your pet to Canada?"
+    body: "We confirm the federal and provincial rules so nothing surprises you. Transparent pricing, every step handled."
+    ctas:
+      - { label: "Get my quote", url: "#quote", style: "btn-gold" }
+      - { label: "See all destinations", url: "/destinations/", style: "btn-ghost" }

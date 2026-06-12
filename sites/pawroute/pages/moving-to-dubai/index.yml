@@ -1,0 +1,102 @@
+url: /moving-to-dubai/
+title: "Moving to Dubai with a Pet — Verified Rules, Costs & Real Answers | PawRoute"
+title_suffix: ""
+meta_description: "Bringing a pet to the UAE? Start here. The MOCCAE import rules in plain English, the fears owners actually have, and honest answers — every fact verified against the source."
+og_title: "Moving to Dubai with your pet — start here"
+schema: service
+service:
+  name: Pet import to the UAE
+  area_served: ["United Arab Emirates"]
+
+blocks:
+  - type: hero
+    eyebrow: "Bringing a pet to the UAE"
+    heading: "Moving to Dubai with your pet? Start here."
+    subheading: >
+      Bringing a pet into the UAE comes with real worries — a hold at the airport,
+      quarantine, the summer heat. We answer the fears owners actually have, in plain
+      English, with every fact checked against the regulator. No sales pitch.
+    ctas:
+      - { label: "See the common worries", url: "#worries", style: "btn-gold" }
+      - { label: "Get a checklist", url: "#quote", style: "btn-ghost" }
+    card:
+      heading: "UAE import — the essentials"
+      rows:
+        - { label: "Import permit", value: "MOCCAE, online, before travel" }
+        - { label: "Permit valid", value: "90 days" }
+        - { label: "Microchip", value: "ISO, before rabies vaccine" }
+        - { label: "Rabies", value: "≥ 21 days before travel" }
+        - { label: "Quarantine", value: "None if compliant" }
+      note: "Max 2 pets per person per year. Some breeds are restricted — we verify yours."
+
+  - type: card_grid
+    id: worries
+    eyebrow: "What owners actually worry about"
+    heading: "Pick the worry that's keeping you up"
+    body: "We built a page for each — fear named first, then the verified answer."
+    cards:
+      - { flag: "🛂", title: "“Could my dog be taken at the airport?”", meta: "What triggers a hold + the 3 steps that prevent it", url: "/moving-to-dubai/dog-taken-at-airport/", arrow: "Read" }
+      - { flag: "🏠", title: "“Will my pet be quarantined?”", meta: "With correct papers — no. Here's arrival, step by step", url: "/moving-to-dubai/quarantine/", arrow: "Read" }
+      - { flag: "☀️", title: "“Can I fly in the summer heat?”", meta: "The May–September embargo, and how to plan around it", url: "/moving-to-dubai/summer-travel/", arrow: "Read" }
+
+  - type: table
+    id: rules
+    variant: section--surface
+    eyebrow: "Verified against MOCCAE — June 2026"
+    heading: "What the UAE actually requires"
+    body: "Every line is from MOCCAE's own pet-import page. For a high-risk (rabies) origin, add the titre test; from a rabies-free country you don't need it."
+    columns: ["Requirement", "Detail"]
+    rows:
+      - ["Import permit", "MOCCAE, online, before travel — valid 90 days"]
+      - ["Microchip", "Permanent ISO chip; the number must match the health certificate"]
+      - ["Rabies vaccination", "≥21 days before travel (first/lapsed dose; no wait for a valid booster); vaccinate at ≥12 weeks"]
+      - ["Rabies titre test", "High-risk countries only — ≥0.5 IU/ml, certificate valid 365 days"]
+      - ["Minimum age", "12 weeks (low-risk countries) / ≥15 weeks (high-risk)"]
+      - ["Parasite treatment", "Internal + external doses within 14 days before shipment"]
+      - ["At release", "Certified origin health certificate + vaccination record/passport + customs declaration"]
+      - ["Quarantine", "None on arrival if compliant"]
+      - ["Max pets", "2 per person per year (resident pets returning are exempt)"]
+      - ["Fees", "Permit AED 200/head · release AED 500/dog, AED 250/cat"]
+    note: "Restricted breeds are governed by UAE Federal Law 22/2016 (Possession of Dangerous Animals) — confirm your breed before booking. Source: MOCCAE 'Import of pets (cats/dogs)', verified 9 June 2026."
+
+  - type: comparison
+    eyebrow: "Why owners trust us"
+    heading: "Most providers make you ask. We just tell you."
+    body: "Most UAE pet-relocation providers hide pricing behind a quote form. Here's how we're different — measured on what actually matters to a worried owner."
+    us_label: "PawRoute"
+    them_label: "Typical provider"
+    rows:
+      - { feature: "Pricing shown upfront", us_yes: true, us: "On every page", them_no: true, them: "“Get a quote” only" }
+      - { feature: "Official sources cited", us_yes: true, us: "Every regulatory claim linked", them_no: true, them: "Rarely" }
+      - { feature: "Names the risks honestly", us_yes: true, us: "Heat embargo, breed bans, holds", them_no: true, them: "Often glossed over" }
+      - { feature: "Unknowns admitted", us_yes: true, us: "We hedge what isn't published", them_no: true, them: "Vague reassurance" }
+      - { feature: "Delivery-date guarantees", us: "Never — airlines change", them: "Sometimes promised" }
+    note: "We'd rather earn trust with transparency than win a click with a promise we can't keep."
+
+  - type: sources
+    eyebrow: "Don't take our word for it"
+    heading: "Official sources"
+    items:
+      - { authority: "UAE MOCCAE", title: "Import permit for pets (cats / dogs)", url: "https://www.moccae.gov.ae/en/services/import-permit-pets", note: "The UAE import process" }
+      - { authority: "IATA", title: "Live Animals Regulations", url: "https://www.iata.org/en/programs/cargo/live-animals/", note: "Travel crate + welfare standards" }
+
+  - type: faq
+    heading: "Bringing a pet to Dubai: your questions"
+    items:
+      - { q: "What does it cost to bring a pet to the UAE?", a: "The UAE-side fees are modest and fixed by MOCCAE: an import permit at AED 200 per head, plus clearance of AED 500 per dog or AED 250 per cat. The bigger cost is the outbound side from your origin country — we show the full breakdown for your route." }
+      - { q: "Will my pet be quarantined?", a: "No — with a valid MOCCAE import permit, microchip and current rabies vaccination, cats and dogs are not quarantined on arrival in the UAE." }
+      - { q: "What if my dog could be held at the airport?", a: "A hold is almost always caused by incomplete paperwork. Our checklist lists every document in order, so it doesn't happen." }
+
+  - type: quote_form
+    id: quote
+    eyebrow: "No obligation"
+    heading: "Get your UAE import checklist"
+    body: "Send your arrival details and your pet's info. We'll reply with a checklist verified against MOCCAE — in the right order, with the timing that prevents a hold."
+    destinations: ["Into the UAE (Dubai)", "Into the UAE (Abu Dhabi)", "Somewhere else"]
+
+  - type: cta
+    heading: "Bringing your pet to Dubai, done right."
+    body: "Verified rules, honest answers, no hidden fees. Let's get your pet home safely."
+    ctas:
+      - { label: "Get my checklist", url: "#quote", style: "btn-gold" }
+      - { label: "Leaving the UAE instead?", url: "/destinations/", style: "btn-ghost" }

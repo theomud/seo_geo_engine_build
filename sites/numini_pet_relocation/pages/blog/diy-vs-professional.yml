@@ -1,0 +1,103 @@
+url: /blog/diy-vs-professional-pet-relocation-dubai/
+title: "DIY vs a Pet Relocation Company From Dubai: Which Is Right?"
+title_suffix: ""
+meta_description: "Can you relocate your pet from Dubai yourself? Yes — and it's usually cheaper. Here's the honest trade-off: when DIY makes sense, and when a company earns its fee."
+og_title: "DIY vs hiring a pet relocation company from Dubai — the honest comparison"
+updated: "2026-06-09"
+layout: article
+
+blocks:
+  - type: article_header
+    category: "Compare · DIY vs pro"
+    category_url: "/blog/"
+    h1: "DIY vs a pet relocation company: which is right for you?"
+    standfirst: "You can absolutely move your pet from Dubai yourself, and it's usually cheaper. The real question is whether you want to carry the risk of a paperwork error — because that's what a company actually sells."
+    author: "the PawRoute relocation team"
+    date: "9 June 2026"
+    reading_time: 6
+    reviewed: "reviewed by our IPATA-certified specialists"
+    image: /assets/blog/cost-2026-hero.png
+    image_alt: "Comparing doing pet relocation yourself versus hiring a company in Dubai"
+
+  - type: prose
+    id: answer
+    heading: "The honest answer"
+    paragraphs:
+      - "<strong>DIY is genuinely possible</strong>, and because you're not paying a service fee, it usually costs less. For a simple, no-quarantine route (say Dubai → UK) with plenty of time and an already-vaccinated pet, a careful owner can handle it."
+      - "<strong>A company earns its fee on risk and complexity.</strong> One mistimed treatment or a certificate from the wrong vet can mean a rejected entry and far more cost than you saved. On hard routes (Australia, Singapore), tight timelines, or summer travel, that risk is where a professional pays for itself."
+
+  - type: takeaways
+    heading: "Key takeaways"
+    items:
+      - "<strong>DIY = cheaper</strong> (no service fee) but <strong>you carry the risk</strong> of a costly error."
+      - "The <strong>rules and waiting periods are identical</strong> either way — a company doesn't get shortcuts."
+      - "DIY suits <strong>simple routes + time + an already-vaccinated pet</strong>."
+      - "A pro is worth it for <strong>hard routes, tight deadlines, summer travel, or restricted breeds</strong>."
+      - "A rejected entry from a paperwork slip can cost <strong>more than the fee you saved</strong>."
+
+  - type: toc
+    heading: "In this article"
+    items:
+      - { label: "DIY vs professional, side by side", anchor: "compare" }
+      - { label: "When DIY makes sense — and when it doesn't", anchor: "when" }
+      - { label: "What going wrong looks like", anchor: "story" }
+      - { label: "Frequently asked questions", anchor: "faq" }
+
+  - type: comparison
+    id: compare
+    eyebrow: "Side by side"
+    heading: "DIY vs a relocation company"
+    body: "The honest trade-off — money saved against risk carried."
+    us_label: "With a company"
+    them_label: "Doing it yourself"
+    rows:
+      - { feature: "Cost", us: "Higher (service fee)", them: "Lower (no fee)" }
+      - { feature: "Your time & admin", us_yes: true, us: "Minimal — they handle it", them: "Significant — you coordinate everything" }
+      - { feature: "Risk of a paperwork error", us_yes: true, us: "Carried by the company", them: "Carried by you" }
+      - { feature: "Vet-approval & timing checks", us_yes: true, us: "Verified for you", them: "Your responsibility to confirm" }
+      - { feature: "Airline cargo booking", us_yes: true, us: "Arranged + capacity secured", them: "You book and chase" }
+      - { feature: "If something goes wrong", us_yes: true, us: "They fix it", them: "You fix it, often under time pressure" }
+
+  - type: prose
+    id: when
+    eyebrow: "Be honest with yourself"
+    heading: "When DIY makes sense — and when it doesn't"
+    bullets:
+      - "<strong>DIY can work if:</strong> the route has no quarantine, your pet is already microchipped and rabies-valid, you have weeks of buffer, and you're comfortable reading official requirements carefully."
+      - "<strong>Hire a professional if:</strong> the route needs a titre test or quarantine (Australia, Singapore), your timeline is tight, you're travelling in the summer heat embargo, your breed is restricted, or you simply can't afford a mistake."
+      - "<strong>Either way, the regulations are the same.</strong> The choice isn't about easier rules — it's about who carries the work and the risk."
+
+  - type: story
+    id: story
+    heading: "What going wrong actually looks like"
+    tag: "A common scenario"
+    lead: "Most DIY moves are fine. The ones that aren't usually fail on a single detail."
+    problem: "An owner does a Dubai → UK move themselves to save the fee — sensible on paper."
+    mistake: "They use a vet who isn't APHA-approved and time the tapeworm treatment a day too early."
+    discovery: "At check-in the certificate is rejected and the tapeworm window has lapsed."
+    result: "A rebooked flight, a fresh certificate and boarding wipe out the saving — and then some."
+    lesson: "DIY isn't wrong; an un-checked detail is. If you go it alone, treat the APHA vet and the timing windows as non-negotiable."
+
+  - type: faq
+    id: faq
+    heading: "Frequently asked questions"
+    items:
+      - { q: "Can I really move my pet from Dubai myself?", a: "Yes. Owners do it, especially on simple no-quarantine routes with an already-vaccinated pet and enough time. The rules are public — the work and the risk are yours to manage." }
+      - { q: "Is DIY cheaper?", a: "Usually, because you're not paying a service fee. Just weigh that saving against the cost of a rejected entry if a document or timing window is wrong — that can cost more than the fee." }
+      - { q: "Can a company make it faster or skip steps?", a: "No. The rabies waiting period, titre tests and permits are legal requirements — identical for everyone. A company manages and de-risks the process; it doesn't get shortcuts." }
+      - { q: "When is hiring a company clearly worth it?", a: "Hard routes (Australia, Singapore), tight deadlines, summer travel, restricted breeds, or when you simply can't risk a mistake with your pet's entry." }
+
+  - type: sources
+    eyebrow: "The rules are the same either way"
+    heading: "Official sources"
+    items:
+      - { authority: "UK GOV.UK", title: "Bringing your pet to Great Britain", url: "https://www.gov.uk/bring-pet-to-great-britain", note: "What the rules require" }
+      - { authority: "UAE MOCCAE", title: "Pet export permits", url: "https://www.moccae.gov.ae/en/services/import-permit-pets", note: "UAE export side" }
+      - { authority: "IATA", title: "Live Animals Regulations", url: "https://www.iata.org/en/programs/cargo/live-animals/", note: "Crate + cargo standards" }
+
+  - type: cta
+    heading: "Want us to carry the risk?"
+    body: "Tell us your route and timeline — we'll give you an honest view of whether DIY is realistic for your case, and a firm quote if you'd rather we handle it. No pressure either way."
+    ctas:
+      - { label: "Get my honest assessment", url: "/#quote", style: "btn-gold" }
+      - { label: "Estimate the cost first", url: "/tools/", style: "btn-ghost" }

@@ -1,0 +1,45 @@
+url: /destinations/australia/
+title: "Moving a Pet to Australia from Dubai — Cost, Timeline & Guides"
+title_suffix: ""
+breadcrumb: "Australia"
+meta_description: "Moving a pet from Dubai to Australia: AED 25,000–35,000+, around 6 months because of the rabies titre test, 180-day wait and quarantine. Verified guides + tools."
+og_title: "Dubai → Australia pet relocation hub"
+updated: "2026-06-09"
+
+blocks:
+  - type: hero
+    eyebrow: "Destination hub · Australia"
+    heading: "Moving your pet to Australia from Dubai"
+    subheading: >
+      Australia is the strictest common route — about six months and AED 25,000–35,000+, driven by
+      the rabies titre test, a 180-day wait, and mandatory quarantine. The earlier you start, the better.
+    ctas:
+      - { label: "Get my Australia quote", url: "#quote", style: "btn-gold" }
+
+  - type: key_facts
+    heading: "Dubai → Australia at a glance"
+    answer: "Plan for ~6 months: rabies titre (RNAT) test, a 180-day waiting period, an import permit, and government quarantine on arrival. The titre test is the step to book first — everything depends on it."
+    stats:
+      - { label: "Cost", value: "AED 25,000–35,000+" }
+      - { label: "Timeline", value: "~6 months" }
+      - { label: "Quarantine", value: "Mandatory" }
+      - { label: "Verified", value: "June 2026" }
+
+  - type: card_grid
+    eyebrow: "Everything for this route"
+    heading: "Australia pages & guides"
+    cards:
+      - { flag: "📋", title: "Full requirements & process", meta: "Documents, steps, timeline", url: "/destinations/uae-to-australia/", arrow: "Open" }
+      - { flag: "🇦🇺", title: "Why it takes 6 months", meta: "Titre + 180-day wait + quarantine", url: "/blog/dubai-to-australia-pet-why-six-months/", arrow: "Read" }
+      - { flag: "⏱️", title: "Timeline calculator", meta: "Plan backward from your date", url: "/tools/", arrow: "Use" }
+      - { flag: "🌍", title: "All destinations", meta: "Compare every route", url: "/destinations/", arrow: "See all" }
+
+  - type: cost_calc
+    eyebrow: "Estimate it"
+    heading: "Estimate your Dubai → Australia cost"
+
+  - type: lead_form
+    id: quote
+    eyebrow: "No obligation"
+    heading: "Get your exact Australia quote"
+    body: "The earlier we start the titre clock, the smoother it is. Send your details for a realistic timeline and a firm range."

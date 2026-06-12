@@ -1,0 +1,88 @@
+<!DOCTYPE html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Content Structure for Trust — Learner Manual</title><style>body{font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:#1f2937;
+line-height:1.6;background:#f7f8fb;margin:0}.wrap{max-width:860px;margin:0 auto;padding:28px}
+h1{color:#1a3a5c}h2{color:#1a3a5c;border-top:2px solid #e5e7eb;padding-top:14px;margin-top:26px}
+h3{color:#2c5282}code{background:#f1f5f9;padding:1px 5px;border-radius:4px}
+table{border-collapse:collapse;width:100%}th,td{border:1px solid #e5e7eb;padding:7px 10px;text-align:left;vertical-align:top}
+th{background:#2c5282;color:#fff}tr:nth-child(even) td{background:#f9fafb}
+.hd{background:linear-gradient(135deg,#1a3a5c,#2c5282);color:#fff;padding:22px 28px;border-radius:0 0 14px 14px}
+.hd h1{color:#fff;margin:0}.hd p{color:#cfe0f5;margin:6px 0 0}</style></head><body><div class='hd'><h1>Content Structure for Trust — Learner Manual</h1><p>Is the page built around the visitor's fear, in the 5 layers that convert?</p></div><div class='wrap'><h1>Content Structure for Trust — Learner Manual</h1>
+<p>In high-stakes markets people arrive afraid. A page that opens with 'Welcome to our company' loses them in the first sentence. This skill checks the 5-layer fear-first structure: (1) acknowledge the fear in the first 100 words, (2) give the verified answer immediately, (3) show the process/proof, (4) link the related fears, (5) end with a help-first call-to-action — with clear layered headings throughout. It measures structure, not prose.</p>
+<h2>How to run the engine</h2>
+<ul>
+<li>Score a page: <code>python skill-engines/content-structure/engine.py --url &lt;URL&gt; --report out.html</code></li>
+<li>Web checker: <code>python skill-engines/content-structure/engine.py --serve 8093</code></li>
+<li>These docs: <code>python skill-engines/content-structure/engine.py --docs</code></li>
+</ul>
+<h2>The measurements (each one, with why and how)</h2>
+<h2>1. Layer 1 — fear acknowledged first</h2>
+<p><strong>How we measure it:</strong> We scan the first ~120 words for the visitor's fear in their language.</p>
+<p><strong>Why it works:</strong> A frightened visitor decides in seconds whether you understand them. Naming the fear first earns the read.</p>
+<p><strong>What to do:</strong> Open the first 100 words on the customer's fear, in their words.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: About our company.</li>
+<li>DO: If you've been told your dog could be taken at Dubai airport — that fear is real. Here's how to prevent it.</li>
+</ul>
+<h2>2. Layer 2 — direct answer in the opening</h2>
+<p><strong>How we measure it:</strong> We check the opening for a direct answer (a number, a definition, a yes/no).</p>
+<p><strong>Why it works:</strong> After the fear, the page must resolve it immediately. A buried answer loses the anxious reader.</p>
+<p><strong>What to do:</strong> Give the direct answer immediately after naming the fear.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: A long company intro before any answer.</li>
+<li>DO: Yes, pets can enter Dubai year-round, but airlines suspend cargo in summer heat.</li>
+</ul>
+<h2>3. Layer 2 — verified fact early</h2>
+<p><strong>How we measure it:</strong> We look for a number AND a citation/source within the first ~250 words.</p>
+<p><strong>Why it works:</strong> The reassurance only works if it's backed. A cited fact near the top is what turns fear into trust.</p>
+<p><strong>What to do:</strong> Add a verified, cited fact near the top.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: It costs a lot.</li>
+<li>DO: The release fee is 500 AED per dog (MOCCAE, verified 2026).</li>
+</ul>
+<h2>4. Layer 3 — process / steps</h2>
+<p><strong>How we measure it:</strong> We detect ordered lists and step language.</p>
+<p><strong>Why it works:</strong> Uncertainty is what blocks action. A clear step-by-step removes it.</p>
+<p><strong>What to do:</strong> Add the step-by-step process.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: We take care of the whole process.</li>
+<li>DO: Step 1 microchip … Step 5 fly.</li>
+</ul>
+<h2>5. Layer 3 — proof / evidence</h2>
+<p><strong>How we measure it:</strong> We count images and proof references (official sources).</p>
+<p><strong>Why it works:</strong> Proof beside the claim is believed; an unbacked claim is not — especially in high-stakes niches.</p>
+<p><strong>What to do:</strong> Add proof (official-source screenshot / real images) beside claims.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: A stock image.</li>
+<li>DO: A MOCCAE screenshot beside the rule it proves.</li>
+</ul>
+<h2>6. Layer 4 — related fears linked</h2>
+<p><strong>How we measure it:</strong> We count internal links to other pages.</p>
+<p><strong>Why it works:</strong> A worried visitor has several fears. Linking the related ones keeps them on-site and builds the cluster.</p>
+<p><strong>What to do:</strong> Link 2–3 related-fear pages internally.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: A dead-end page with no links.</li>
+<li>DO: Links to the 'summer embargo' and 'documentation mistakes' pages.</li>
+</ul>
+<h2>7. Layer 5 — help-first CTA</h2>
+<p><strong>How we measure it:</strong> We compare help-first offers (download/checklist/guide) against pure asks (get a quote).</p>
+<p><strong>Why it works:</strong> Offering value before asking lowers the guard; 'Get a quote' asks the scared visitor to take a risk first.</p>
+<p><strong>What to do:</strong> End with a help-first CTA (checklist/guide), not 'get a quote'.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: Request a consultation.</li>
+<li>DO: Get the one-page airport checklist.</li>
+</ul>
+<h2>8. Layered heading structure</h2>
+<p><strong>How we measure it:</strong> We count H2/H3 sectioning headings.</p>
+<p><strong>Why it works:</strong> The 5 layers need visible structure; a wall of text hides the answer and the path.</p>
+<p><strong>What to do:</strong> Add H2/H3 headings to segment the page into the 5 layers.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: A wall of text.</li>
+<li>DO: H2: 'What triggers confiscation' → 'The 3 steps that prevent it'.</li>
+</ul></div></body></html>

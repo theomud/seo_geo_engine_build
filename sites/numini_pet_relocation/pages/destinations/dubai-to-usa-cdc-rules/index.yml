@@ -1,0 +1,141 @@
+url: /destinations/dubai-to-usa-cdc-rules/
+title: "Dubai to USA Pet Relocation: the Current CDC Dog Rules (2026) | PawRoute"
+title_suffix: ""
+meta_description: "There is no general 'CDC dog import permit' and no fee for the typical Dubai→USA move. The current CDC rules (since 1 Aug 2024): healthy dog, 6 months old, ISO microchip, and a free CDC Dog Import Form. The accurate, source-cited guide."
+og_title: "Dubai → USA: the real CDC dog rules (no 'permit' myth)"
+schema: service
+published: "2026-06-09"
+updated: "2026-06-09"
+breadcrumb: "Dubai → USA: the current CDC rules"
+service:
+  name: Pet relocation from the UAE to the United States
+  area_served: ["United States", "United Arab Emirates"]
+
+# G06 CORRECTIVE SPECIMEN — built to replace the misinformation AI currently grounds on for
+# "Dubai to USA pet relocation requirements" (opsmatters.com #1 repeats a defunct "CDC import
+# permit"; CDC.gov not cited). Strategy: be the accurate, DATED, CDC-cited source. Every CDC
+# fact below must be screenshot-verified against cdc.gov before go-live (claim-audit).
+
+blocks:
+  - type: hero
+    eyebrow: "Route · UAE → USA · Current CDC rules"
+    heading: "Dubai to the USA: the real CDC dog rules"
+    subheading: >
+      A lot of advice online is out of date. There is no general "CDC dog import permit"
+      and no fee for the typical move from the UAE. Here are the current rules — the ones
+      that took effect on 1 August 2024 — straight from the CDC.
+    ctas:
+      - { label: "See the current rules", url: "#rules", style: "btn-gold" }
+      - { label: "Get my quote", url: "#quote", style: "btn-ghost" }
+    card:
+      heading: "Dubai → USA at a glance"
+      rows:
+        - { label: "CDC Dog Import Form", value: "Free, online" }
+        - { label: "Minimum age", value: "6 months" }
+        - { label: "Microchip", value: "ISO-compatible, required" }
+        - { label: "A 'permit'?", value: "No — for the typical case" }
+      note: "Rules in force since 1 Aug 2024. We confirm the UAE's current CDC rabies classification before you travel."
+
+  - type: key_facts
+    id: rules
+    heading: "The current answer (corrected)"
+    answer: "Bringing a dog from the UAE to the United States follows the CDC rules in force since 1 August 2024. Contrary to widely repeated online advice, there is no general 'CDC dog import permit' and no fee for the typical case: every dog must appear healthy on arrival, be at least 6 months old, have an ISO-compatible microchip, and have a free CDC Dog Import Form receipt submitted online before travel. Additional steps apply only if the dog has been in a country the CDC classifies as high-risk for dog rabies in the previous 6 months — we confirm the UAE's current classification against the CDC list before you commit."
+    stats:
+      - { label: "Rules effective", value: "1 Aug 2024" }
+      - { label: "Import form", value: "Free (CDC)" }
+      - { label: "Min age", value: "6 months" }
+      - { label: "General permit", value: "Not required*" }
+    verified: "June 2026"
+    source_authority: "the US CDC"
+
+  - type: callout
+    style: warn
+    heading: "Myth vs fact: the 'CDC dog import permit'"
+    body: >
+      You may have read that you must "apply for a CDC dog import permit about six weeks
+      before travel." For a typical dog coming from the UAE, that is not the current rule —
+      it is out-of-date advice still circulating online. The everyday requirement is the
+      free CDC Dog Import Form, completed online before travel. A CDC import permit exists
+      only for specific high-risk situations (for example, certain dogs that have been in a
+      high-risk dog-rabies country and were vaccinated abroad) — which is where the
+      confusion comes from. We confirm which path applies to your dog before you book.
+
+  - type: prose
+    id: what-changed
+    eyebrow: "Why the advice online is wrong"
+    heading: "What changed on 1 August 2024"
+    paragraphs:
+      - "On <strong>1 August 2024</strong> the CDC replaced its earlier dog-import process with a single new framework. The headline change: <strong>every dog</strong> entering the US — from anywhere — now needs a <strong>CDC Dog Import Form</strong> receipt, and every dog must be at least <strong>6 months old</strong> with an <strong>ISO-compatible microchip</strong>. The older, narrower 'permit' process that much online content still describes was folded into this new system."
+      - "That is why so many guides (and the AI answers that learn from them) are wrong: they describe the pre-August-2024 world. This page is dated and cited so you can see exactly which rules are current — and we re-verify against the CDC before every move."
+
+  - type: checklist
+    eyebrow: "The current rules"
+    heading: "What every dog needs (CDC, since 1 Aug 2024)"
+    body: "These apply to all dogs entering the US regardless of origin. We confirm the exact current detail against the CDC before booking."
+    items:
+      - { title: "Appears healthy on arrival", text: "The dog must look healthy when it arrives at the US port of entry." }
+      - { title: "At least 6 months old", text: "A firm minimum age for all dogs entering the US." }
+      - { title: "ISO-compatible microchip", text: "A 15-digit ISO microchip that can be read at the border, recorded on the form." }
+      - { title: "CDC Dog Import Form receipt", text: "Completed online before travel — free. The receipt is valid for six months and covers multiple entries." }
+
+  - type: prose
+    id: high-risk
+    eyebrow: "The branch that decides the rest"
+    heading: "The high-risk-country question"
+    paragraphs:
+      - "Beyond the four universal rules, what (if anything) else is required depends on a single question: <strong>has the dog been in a country the CDC classifies as high-risk for dog rabies in the previous 6 months?</strong> If yes, additional steps can apply — a foreign rabies vaccination certificate, arrival at a port with a CDC-registered animal-care facility, and in some cases a CDC import permit. If no, the four universal rules above are the whole CDC requirement."
+      - "So the deciding fact for your move is the <strong>UAE's current classification on the CDC high-risk list</strong>. We confirm it against the official CDC list before you commit — we do not assume it — because it determines whether your route is the simple path or the extended one."
+
+  - type: steps
+    eyebrow: "The right order"
+    heading: "How a Dubai → USA move runs"
+    items:
+      - { title: "Confirm the CDC classification", text: "We check the UAE's current standing on the CDC high-risk dog-rabies list — this decides your path." }
+      - { title: "Microchip + age check", text: "ISO microchip in place and recorded; confirm the dog meets the 6-month minimum." }
+      - { title: "UAE export (MOCCAE)", text: "Complete the UAE export health certificate and clearance on the Dubai side." }
+      - { title: "CDC Dog Import Form", text: "Submit the free form online before travel and keep the receipt." }
+      - { title: "Fly & enter", text: "Checked baggage (journey under 17h) or cargo on Emirates; cleared at a US port of entry." }
+
+  - type: faq
+    id: faq
+    heading: "Dubai → USA: your questions, answered correctly"
+    items:
+      - { q: "Do I need a CDC dog import permit to bring my dog from Dubai?", a: "Not for the typical case. Since 1 August 2024 the everyday requirement is the free CDC Dog Import Form, completed online before travel — not a paid permit. A CDC import permit exists only for specific high-risk situations. We confirm which applies to your dog before booking." }
+      - { q: "Is there a fee for the CDC Dog Import Form?", a: "No — the CDC Dog Import Form is free. Advice describing a paid 'permit' applied for weeks in advance is out of date for the typical move." }
+      - { q: "How old does my dog have to be?", a: "At least 6 months. This is a firm CDC minimum for all dogs entering the US, in force since 1 August 2024." }
+      - { q: "Does my dog need a rabies vaccination for the US?", a: "It depends on the high-risk-country branch. The four universal rules (healthy, 6 months, microchip, CDC Dog Import Form) always apply; rabies-vaccination documentation requirements depend on whether the dog has been in a CDC high-risk dog-rabies country in the past 6 months. We confirm the UAE's current classification against the CDC list before you travel." }
+      - { q: "Why does other advice online say something different?", a: "Most of it describes the pre-August-2024 process. The CDC overhauled dog-import rules on 1 August 2024, and a lot of content (and the AI answers trained on it) hasn't caught up. We date and cite this page, and re-verify against the CDC before every move." }
+      - { q: "Can my dog travel in the cabin from Dubai?", a: "Not on Emirates — pets travel as checked baggage (journey under 17 hours) or as cargo. Only guide dogs and falcons are carried in the cabin." }
+
+  - type: sources
+    eyebrow: "Verified against the source"
+    heading: "Official sources"
+    items:
+      - { authority: "US CDC", title: "Bringing an animal into the United States", url: "https://www.cdc.gov/importation/bringing-an-animal-into-the-us/index.html", note: "The controlling US entry rules" }
+      - { authority: "US CDC", title: "CDC Dog Import Form — instructions", url: "https://www.cdc.gov/importation/dogs/dog-import-form-instructions.html", note: "The free form (not a paid permit)" }
+      - { authority: "UAE MOCCAE", title: "Pet export & import permits", url: "https://www.moccae.gov.ae/en/services/import-permit-pets", note: "UAE export side" }
+      - { authority: "Emirates", title: "Travelling with animals", url: "https://www.emirates.com/english/help/faqs/what-are-the-rules-and-charges-for-travelling-with-animals/", note: "Cabin/baggage/cargo + 17h rule" }
+
+  - type: related
+    label: "📖 Related"
+    items:
+      - { title: "Dubai → USA: full route, cost & timeline", url: "/destinations/uae-to-usa/", note: "the complete route page" }
+      - { title: "All destinations", url: "/destinations/", note: "every route + pricing" }
+
+  - type: quote_form
+    id: quote
+    eyebrow: "No obligation"
+    heading: "Get your Dubai → USA quote"
+    body: "Tell us your pet and timing. We'll confirm the current CDC classification for your route and reply on WhatsApp with the correct steps — no out-of-date permit myths."
+    destinations: ["United States"]
+    points:
+      - "Whether your dog is on the simple CDC path or the extended one"
+      - "The correct microchip, age and form sequence"
+      - "A plan built on the current (post-Aug-2024) CDC rules"
+
+  - type: cta
+    heading: "Moving your dog from Dubai to the USA?"
+    body: "We build the move on the current CDC rules — the free Dog Import Form, the 6-month and microchip checks, and the UAE export side — verified against the source, so nothing is based on out-of-date advice."
+    ctas:
+      - { label: "Get my quote", url: "#quote", style: "btn-gold" }
+      - { label: "See all routes", url: "/destinations/", style: "btn-ghost" }

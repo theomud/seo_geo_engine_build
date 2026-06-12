@@ -1,0 +1,150 @@
+title: "Pet Relocation Dubai to India — Requirements & Pricing | PawRoute"
+title_suffix: ""
+meta_description: "Move your pet from Dubai to India. Transparent pricing from AED 8,000, 3–5 weeks, no quarantine. AQCS NOC, rabies and health certificate explained."
+og_title: "Moving your pet from Dubai to India?"
+schema: service
+service:
+  name: Pet relocation from the UAE to India
+  area_served: ["India", "United Arab Emirates"]
+
+blocks:
+  - type: hero
+    eyebrow: "Route · UAE → India"
+    heading: "Moving your pet from Dubai to India?"
+    subheading: >
+      India is one of the easier and more affordable routes from the UAE — short
+      timeline, no quarantine. The key step is the AQCS clearance. Here's the cost
+      and the order to do things in.
+    ctas:
+      - { label: "See pricing", url: "#pricing", style: "btn-gold" }
+      - { label: "Get my quote", url: "#quote", style: "btn-ghost" }
+    card:
+      heading: "Dubai → India at a glance"
+      rows:
+        - { label: "Timeline", value: "3–5 weeks" }
+        - { label: "Cost range", value: "AED 8,000–14,000" }
+        - { label: "Quarantine", value: "None" }
+        - { label: "Difficulty", value: "Easy" }
+      note: "One of the shortest, cheapest routes from the UAE."
+
+  - type: key_facts
+    heading: "Quick answer"
+    answer: "Moving a pet from Dubai to India takes about 3–5 weeks and costs roughly AED 8,000–14,000 — one of the cheapest routes. India requires an AQCS No-Objection Certificate (NOC) and, for most pets, a DGFT import licence (allow about a month). Pets brought with correct documentation by returning residents usually avoid quarantine, but a 15-day quarantine can apply in some cases, so we confirm your situation first."
+    stats:
+      - { label: "Timeline", value: "3–5 weeks*" }
+      - { label: "Cost", value: "AED 8,000–14,000" }
+      - { label: "Quarantine", value: "Usually none*" }
+      - { label: "Clearance", value: "AQCS NOC + DGFT" }
+    verified: "June 2026"
+    source_authority: "India AQCS / DGFT"
+
+  - type: checklist
+    eyebrow: "What you'll need"
+    heading: "Requirements for India"
+    body: "India's entry is handled through the Animal Quarantine and Certification Services (AQCS). We confirm the current detail before booking."
+    items:
+      - { title: "ISO microchip first", text: "15-digit chip, implanted before the rabies vaccine." }
+      - { title: "Current rabies vaccination", text: "Documented and current, with batch numbers on the certificate." }
+      - { title: "AQCS NOC", text: "No-Objection Certificate / clearance from Animal Quarantine and Certification Services, required before landing." }
+      - { title: "DGFT import licence", text: "Most pets need a licence from the Directorate General of Foreign Trade — allow about a month to process." }
+      - { title: "Health certificate", text: "From an approved vet." }
+      - { title: "MOCCAE export + IATA crate", text: "UAE export process and a crate sized to your pet." }
+
+  - type: steps
+    eyebrow: "The right order"
+    heading: "How the Dubai → India move works"
+    items:
+      - { title: "Confirm city & date", text: "We confirm AQCS requirements for your entry city." }
+      - { title: "Microchip, then rabies vaccine", text: "Chip first — order matters." }
+      - { title: "AQCS NOC + health certificate", text: "Arrange the clearance and the export health certificate." }
+      - { title: "MOCCAE export + book flight", text: "UAE export paperwork, IATA crate and cargo space." }
+      - { title: "Fly & clear customs", text: "Your pet clears AQCS and comes to you. No quarantine." }
+
+  - type: pricing_tiers
+    id: pricing
+    eyebrow: "No hidden fees"
+    heading: "Dubai → India pricing"
+    body: "One of the most affordable routes. Where you land in the range depends on your pet's size and the airline. Full breakdown before you commit."
+    tiers:
+      - name: "Essential"
+        price: "AED 8,000"
+        unit: "from"
+        desc: "The full regulated move, handled correctly."
+        includes:
+          - "Vet protocol + health certificate"
+          - "AQCS NOC coordination"
+          - "MOCCAE export + IATA crate"
+          - "Cargo booking & clearance"
+        excludes:
+          - "Transit updates"
+          - "24/7 support"
+      - name: "Standard"
+        price: "AED 11,000"
+        unit: "from"
+        featured: true
+        badge: "Most popular"
+        desc: "Everything handled, with updates and a pre-arrival briefing."
+        includes:
+          - "Everything in Essential"
+          - "Transit updates + pre-arrival briefing"
+        excludes:
+          - "24/7 support"
+      - name: "Premium"
+        price: "AED 14,000"
+        unit: "from"
+        desc: "White-glove handling with insurance and a fallback plan."
+        includes:
+          - "Everything in Standard"
+          - "24/7 support line"
+          - "Transit insurance + pet-hotel fallback"
+    note: "Short freight legs keep this route affordable. You'll see every line before you decide."
+
+  - type: faq
+    heading: "Dubai → India: your questions"
+    items:
+      - { q: "Is there quarantine for India?", a: "Usually not for pets brought with correct documentation — especially returning residents transferring residence. But a 15-day quarantine can apply in some cases, so we confirm your specific situation before booking." }
+      - { q: "What's the AQCS NOC and DGFT licence?", a: "The AQCS NOC is a clearance from India's Animal Quarantine and Certification Services, required before your pet lands. Most pets also need a DGFT import licence, which can take about a month — so we start both early." }
+      - { q: "Why is India cheaper than most routes?", a: "It's a short flight from the UAE with frequent cargo capacity, which keeps freight costs down." }
+      - { q: "Can you guarantee the arrival date?", a: "No. Airlines change schedules. We give you a realistic timeline and keep you updated, but never guarantee a delivery date." }
+
+  - type: sources
+    eyebrow: "Don't take our word for it"
+    heading: "Official sources"
+    items:
+      - { authority: "India AQCS", title: "Import / export procedures", url: "https://aqcsindia.gov.in/Home/ImportExportProcedures", note: "NOC and inspection" }
+      - { authority: "India DGFT", title: "Import of dogs/cats — general information (PDF)", url: "https://content.dgft.gov.in/Website/FAQ_IMPORT_PET.pdf", note: "Pet import licence" }
+      - { authority: "UAE MOCCAE", title: "Pet export & import permits", url: "https://www.moccae.gov.ae/en/services/import-permit-pets", note: "UAE export process" }
+      - { authority: "IATA", title: "Live Animals Regulations", url: "https://www.iata.org/en/programs/cargo/live-animals/", note: "Travel crate standards" }
+
+  - type: card_grid
+    variant: section--surface
+    eyebrow: "Related routes"
+    heading: "Comparing destinations?"
+    cards:
+      - { flag: "🇬🇧", title: "Dubai → UK", meta: "4–8 weeks · no quarantine", url: "/destinations/uae-to-uk/", arrow: "View" }
+      - { flag: "🇿🇦", title: "Dubai → South Africa", meta: "4–8 weeks", url: "/destinations/uae-to-south-africa/", arrow: "View" }
+      - { flag: "🇸🇬", title: "Dubai → Singapore", meta: "4–8 months", url: "/destinations/uae-to-singapore/", arrow: "View" }
+      - { flag: "🌍", title: "All destinations", meta: "Every route + pricing", url: "/destinations/", arrow: "See all" }
+
+  - type: related
+    label: "📖 Read the guide"
+    items:
+      - { title: "Returning to India with your pet: the NOC that makes or breaks it", url: "/blog/dubai-to-india-pet-return/", note: "AQCS permit + documentation" }
+
+  - type: quote_form
+    id: quote
+    eyebrow: "No obligation"
+    heading: "Get your Dubai → India quote"
+    body: "Tell us your destination city and timing. We'll reply on WhatsApp with a transparent price and the first step."
+    destinations: ["India"]
+    points:
+      - "AQCS requirements for your entry city"
+      - "A transparent price range for your pet"
+      - "A deadline-safe timeline"
+
+  - type: cta
+    heading: "Ready to get your pet to India?"
+    body: "A short, affordable route, done right. Transparent pricing, every step handled."
+    ctas:
+      - { label: "Get my quote", url: "#quote", style: "btn-gold" }
+      - { label: "See all destinations", url: "/destinations/", style: "btn-ghost" }

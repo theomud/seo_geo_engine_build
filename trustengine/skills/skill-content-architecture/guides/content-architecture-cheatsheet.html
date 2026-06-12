@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Content Architecture — Cheatsheet</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#14110d;--panel:#1d1812;--ink:#f3ece0;--soft:#b9ab95;--line:#352c20;--gold:#d8a84b;--red:#e06a4e;--green:#7bbf6a}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--ink);font-family:'JetBrains Mono',monospace;font-size:13px;line-height:1.5;padding:16px;max-width:540px;margin:0 auto}
+  header{border-bottom:2px solid var(--gold);padding-bottom:10px;margin-bottom:14px}
+  .k{color:var(--gold);font-size:12px;letter-spacing:.1em}
+  h1{font-family:'Bebas Neue',sans-serif;font-size:30px;letter-spacing:.02em;line-height:1}
+  h2{font-family:'Bebas Neue',sans-serif;font-size:19px;color:var(--gold);letter-spacing:.03em;margin:18px 0 7px;border-bottom:1px solid var(--line);padding-bottom:3px}
+  .row{background:var(--panel);border:1px solid var(--line);border-radius:7px;padding:8px 11px;margin:6px 0}
+  .row b{color:var(--gold)}
+  .ex{color:var(--soft);font-size:12px;display:block;margin-top:3px}
+  .v{color:var(--green);font-weight:700}.c{color:var(--red);font-weight:700}
+  .ba{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:6px 0}
+  .ba div{border-radius:7px;padding:8px 10px;font-size:12px;word-break:break-word}
+  .bad{background:#2a1a14;border:1px solid #4a2c20}.good{background:#1a2417;border:1px solid #2f4327}
+  ol{margin:0 0 0 18px}li{margin:2px 0}
+  code{background:#251e16;padding:1px 5px;border-radius:4px;color:var(--gold);font-size:11px;word-break:break-word}
+  .note{color:var(--soft);font-size:12px;border-top:1px solid var(--line);margin-top:16px;padding-top:10px}
+</style>
+</head>
+<body>
+<header>
+  <div class="k">THE TRUST ENGINE · CHEATSHEET</div>
+  <h1>Content Architecture</h1>
+  <div class="k" style="color:var(--soft)">hubs and spokes · three clicks deep · one URL rule</div>
+</header>
+
+<h2>The blueprint, before page 11</h2>
+<div class="row">Design the whole site first: <b>sitemap · URL rule · navigation · conversion paths</b>. Build page-by-page and structure happens by accident — cannibalisation, buried pages, orphans.</div>
+
+<h2>The 3 gates (every page, no exceptions)</h2>
+<div class="row"><ol>
+  <li><b>≤3 clicks</b> from home (BFS depth) — F-33</li>
+  <li><b>0 orphans</b> — every page has ≥1 inbound link — P-37</li>
+  <li><b>100% URL consistent</b> — one rule per type — P-36</li>
+</ol></div>
+<div class="row">+ human gate: <b>one page per intent</b> (P-23) — merge two pages chasing one query. <span class="ex">No "95% consistent" — one exception breaks the rule.</span></div>
+
+<h2>Hub-and-spoke</h2>
+<div class="ba">
+  <div class="bad"><span class="c">PILE</span><br>40 flat pages fighting for the same rankings</div>
+  <div class="good"><span class="v">SITE</span><br>6 hubs, each with spokes; every page has a parent + link</div>
+</div>
+
+<h2>The URL rule</h2>
+<div class="ba">
+  <div class="bad"><span class="c">GUESSED</span><br><code>/page?id=7</code><br><code>/AirportComparison</code></div>
+  <div class="good"><span class="v">ONE RULE</span><br><code>/routes/sharjah-vs-dubai-vs-abu-dhabi</code></div>
+</div>
+<div class="row"><span class="ex">lowercase · hyphenated · keyword-bearing · no IDs/query strings · one pattern per page type</span></div>
+
+<h2>Click depth is counter-intuitive</h2>
+<div class="row"><b>A page that "feels" 2 clicks can be 4</b> — if it's linked only from a sibling, not its hub. Eyeballing misses it; only the <b>BFS count</b> catches it. Link every page from its hub.</div>
+
+<h2>Real result (Dubai proof run)</h2>
+<div class="row"><b>43-page architecture</b>, validated by the engine: <b class="v">100%</b> ≤3 clicks · <b class="v">0</b> orphans · <b class="v">100%</b> URL-consistent · <b class="v">0</b> cannibalisation → <b class="v">PASS</b>. Max depth 3 (distribution 1 / 10 / 29 / 3).</div>
+
+<div class="note">The Trust Engine · Content Architecture · cheatsheet · real output from the 2026-05-30 Dubai proof run. Hubs and spokes · 3 clicks · one URL rule · prove the structure by measurement (BFS + inbound scan + regex), not by eye.</div>
+</body>
+</html>

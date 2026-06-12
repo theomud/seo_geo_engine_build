@@ -1,0 +1,105 @@
+<!DOCTYPE html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Editorial Quality — Learner Manual</title><style>body{font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:#1f2937;
+line-height:1.6;background:#f7f8fb;margin:0}.wrap{max-width:860px;margin:0 auto;padding:28px}
+h1{color:#1a3a5c}h2{color:#1a3a5c;border-top:2px solid #e5e7eb;padding-top:14px;margin-top:26px}
+h3{color:#2c5282}code{background:#f1f5f9;padding:1px 5px;border-radius:4px}
+table{border-collapse:collapse;width:100%}th,td{border:1px solid #e5e7eb;padding:7px 10px;text-align:left;vertical-align:top}
+th{background:#2c5282;color:#fff}tr:nth-child(even) td{background:#f9fafb}
+.hd{background:linear-gradient(135deg,#1a3a5c,#2c5282);color:#fff;padding:22px 28px;border-radius:0 0 14px 14px}
+.hd h1{color:#fff;margin:0}.hd p{color:#cfe0f5;margin:6px 0 0}</style></head><body><div class='hd'><h1>Editorial Quality — Learner Manual</h1><p>Is this page publish-ready, or generic AI mush? The quality gate, automated.</p></div><div class='wrap'><h1>Editorial Quality — Learner Manual</h1>
+<p>AI writes content at about 60% quality — competent, complete, and forgettable. This skill is the gate that decides whether a page is strong enough to publish. It rewards the things that make content rank and convert (specificity, clarity, proof, a real call-to-action) and flags the 7 weak patterns that mark generic filler. Some judgements (is it true? is it on-brand? is it better than competitors?) need a human or your sources — those are shown as Not Measurable, never guessed.</p>
+<h2>How to run the engine</h2>
+<ul>
+<li>Score a page: <code>python skill-engines/editorial/engine.py --url &lt;URL&gt; --report out.html</code></li>
+<li>Web checker: <code>python skill-engines/editorial/engine.py --serve 8092</code></li>
+<li>These docs: <code>python skill-engines/editorial/engine.py --docs</code></li>
+</ul>
+<h2>The measurements (each one, with why and how)</h2>
+<h2>1. Specific (real numbers &amp; names)</h2>
+<p><strong>How we measure it:</strong> We count concrete numbers and named entities per 500 words.</p>
+<p><strong>Why it works:</strong> Specifics are what make content credible and un-generic. 'We deliver results' applies to anyone; '256,114 pets moved in 2021' could only come from someone who did the work.</p>
+<p><strong>What to do:</strong> Add real numbers and named examples; cut generic claims.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: We deliver exceptional results.</li>
+<li>DO: We completed 450 moves in 2025 with a 99.6% on-time rate.</li>
+</ul>
+<h2>2. Clear &amp; scannable</h2>
+<p><strong>How we measure it:</strong> We count subheadings, lists and tables, and flag over-long paragraphs.</p>
+<p><strong>Why it works:</strong> A reader decides in ~10 seconds. Structure lets them find the answer; a wall of text loses them.</p>
+<p><strong>What to do:</strong> Break into subheadings and lists; shorten over-long paragraphs.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: One 400-word paragraph.</li>
+<li>DO: Three H2 sections + a 5-step list.</li>
+</ul>
+<h2>3. Proof / trustworthy</h2>
+<p><strong>How we measure it:</strong> We count proof phrases and links to authoritative sources.</p>
+<p><strong>Why it works:</strong> Every claim needs backing. Show, don't tell — proof beside a claim is believed; a bare assertion isn't.</p>
+<p><strong>What to do:</strong> Back each claim with a number, source, or citation.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: We are the best provider.</li>
+<li>DO: Rated 4.8/5 across 283 reviews.</li>
+</ul>
+<h2>4. Clear call-to-action</h2>
+<p><strong>How we measure it:</strong> We check for a clear next step / call-to-action.</p>
+<p><strong>Why it works:</strong> Content with no next step is a dead end. One clear action turns a reader into a lead.</p>
+<p><strong>What to do:</strong> Add one clear call-to-action.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: (no call-to-action)</li>
+<li>DO: Download the checklist.</li>
+</ul>
+<h2>5. No filler opening</h2>
+<p><strong>How we measure it:</strong> We scan the first 60 words for stock openers ('In today's fast-paced world…').</p>
+<p><strong>Why it works:</strong> Filler openings signal AI-generated boilerplate and waste the most valuable real estate on the page.</p>
+<p><strong>What to do:</strong> Delete the filler opening; start with the reader's problem or a fact.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: In today's fast-paced world, pet travel is complex.</li>
+<li>DO: Moving a pet to Dubai takes 3–6 months. Here's the timeline.</li>
+</ul>
+<h2>6. No unsupported superlatives</h2>
+<p><strong>How we measure it:</strong> We look for 'leading / best / #1 / world-class' without nearby proof.</p>
+<p><strong>Why it works:</strong> An unbacked 'the leading provider' reads as empty marketing and erodes trust. Prove it or cut it.</p>
+<p><strong>What to do:</strong> Replace 'leading/best' superlatives with a proof point, or cut them.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: The leading pet relocation company.</li>
+<li>DO: IPATA-accredited since 2018 (member #1234).</li>
+</ul>
+<h2>7. No vague jargon</h2>
+<p><strong>How we measure it:</strong> We detect generic buzzwords ('innovative solutions', 'synergy', 'seamless', 'leverage').</p>
+<p><strong>Why it works:</strong> Jargon is the language of pages that have nothing specific to say — it's the opposite of credibility.</p>
+<p><strong>What to do:</strong> Cut buzzwords (innovative solutions, synergy, leverage, seamless).</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: We leverage innovative solutions for seamless relocations.</li>
+<li>DO: We handle the permit, the titer test and the flight booking.</li>
+</ul>
+<h2>8. No fake enthusiasm</h2>
+<p><strong>How we measure it:</strong> We flag hype words ('passionate', 'amazing', 'exceptional') and exclamation-mark overuse.</p>
+<p><strong>Why it works:</strong> Manufactured excitement reads as insincere. Show passion through specifics, not adjectives.</p>
+<p><strong>What to do:</strong> Remove hype words and excess exclamation marks; show, don't gush.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: We are absolutely passionate about amazing results!!!</li>
+<li>DO: We've moved 450 pets; here's how the process works.</li>
+</ul>
+<h2>9. Strong ending (no dead end)</h2>
+<p><strong>How we measure it:</strong> We check the last 60 words for a real next step vs. a dead-end ('thanks for visiting!').</p>
+<p><strong>Why it works:</strong> The ending is where conversion happens. 'Thanks for reading' wastes it; a clear action captures it.</p>
+<p><strong>What to do:</strong> End with a clear next step, not 'thanks for visiting'.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: Thanks for visiting!</li>
+<li>DO: Next step: download the checklist and send us your flight date.</li>
+</ul>
+<h2>Factually true (human-judged)</h2>
+<p>Needs source verification against official sources (the Source Bank).</p>
+<h2>On-brand voice (human-judged)</h2>
+<p>Needs the brand's own voice/style to compare against.</p>
+<h2>Speaks to the right buyer (human-judged)</h2>
+<p>Needs the customer persona to judge fit.</p>
+<h2>Better than competitors (human-judged)</h2>
+<p>Needs a competitor comparison for the same query.</p></div></body></html>

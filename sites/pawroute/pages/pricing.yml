@@ -1,0 +1,150 @@
+url: /pricing/
+title: "Pet Relocation Pricing from the UAE — Transparent, Upfront | PawRoute"
+title_suffix: ""
+meta_description: "Transparent pet relocation pricing from the UAE. Three packages from AED 12,500, plus a full cost breakdown and price ranges by destination. No hidden fees."
+og_title: "Transparent pet relocation pricing"
+
+blocks:
+  - type: hero
+    eyebrow: "No hidden fees"
+    heading: "Transparent pricing. Shown upfront."
+    subheading: >
+      Most UAE pet-relocation providers hide pricing behind a quote form. We don't.
+      Here's what it costs, where the money goes, and the price range for every
+      route — so you can budget with confidence before you ever call.
+    ctas:
+      - { label: "See packages", url: "#pricing", style: "btn-gold" }
+      - { label: "Get my quote", url: "#quote", style: "btn-ghost" }
+    card:
+      heading: "What drives your price"
+      rows:
+        - { label: "Pet size", value: "Volumetric crate weight" }
+        - { label: "Destination", value: "Permits, titer tests, quarantine" }
+        - { label: "Airline & season", value: "Fuel + heat embargoes" }
+        - { label: "Support level", value: "Essential → Premium" }
+      note: "Same pet, different countries = very different totals. We show the breakdown."
+
+  - type: pricing_tiers
+    id: pricing
+    eyebrow: "Three packages"
+    heading: "Pick your level of support"
+    body: "Every package includes the full regulated move. The difference is how much we hold your hand along the way. Prices are route-dependent — these are typical starting points for standard routes."
+    tiers:
+      - name: "Essential"
+        price: "AED 12,500"
+        unit: "from"
+        desc: "The complete regulated move, handled correctly. For confident owners on a budget."
+        includes:
+          - "Vet protocol + MOCCAE export"
+          - "IATA crate sourcing"
+          - "Cargo booking & customs clearance"
+        excludes:
+          - "Live transit updates"
+          - "24/7 support line"
+      - name: "Standard"
+        price: "AED 18,000"
+        unit: "from"
+        featured: true
+        badge: "Most popular"
+        desc: "Everything in Essential, plus updates and a pre-arrival briefing. What most families choose."
+        includes:
+          - "Everything in Essential"
+          - "Pet updates during transit"
+          - "Pre-arrival briefing & checklist"
+        excludes:
+          - "24/7 support line"
+      - name: "Premium"
+        price: "AED 24,000"
+        unit: "from"
+        desc: "Full white-glove service with 24/7 support and insurance, for complex or high-value moves."
+        includes:
+          - "Everything in Standard"
+          - "24/7 support line"
+          - "Real-time tracking & video updates"
+          - "Transit insurance & pet-hotel fallback"
+    note: "Complex routes (Australia, Singapore) start higher because of titer tests and quarantine. You'll always see the full breakdown before you commit."
+
+  - type: table
+    variant: section--surface
+    eyebrow: "Where the money goes"
+    heading: "A typical cost breakdown"
+    body: "These are the real components behind a standard-route move. Exact figures depend on your pet and destination."
+    columns: ["Component", "Cost (AED)"]
+    rows:
+      - ["Vet protocol (microchip, vaccines, certificate)", "800–2,500"]
+      - ["MOCCAE export admin", "700"]
+      - ["IATA crate", "800–1,500"]
+      - ["Air freight cargo (volumetric)", "6,000–12,000"]
+      - ["Destination clearance", "2,500–4,000"]
+      - ["PawRoute service fee", "3,000–6,000"]
+      - ["Typical total (standard route)", "13,800–26,000"]
+
+  - type: table
+    eyebrow: "By destination"
+    heading: "Price ranges by route"
+    body: "A quick comparison. Tap a route for the full requirements and breakdown."
+    columns: ["Route", "Timeline", "Typical range (AED)"]
+    rows:
+      - ["Dubai → India", "3–5 weeks", "8,000–14,000"]
+      - ["Dubai → Netherlands", "4–6 weeks", "10,000–16,000"]
+      - ["Dubai → UK", "4–8 weeks", "12,000–18,000"]
+      - ["Dubai → Germany / France", "4–6 weeks", "13,800–18,000"]
+      - ["Dubai → USA", "4–12 weeks", "13,800–22,000"]
+      - ["Dubai → Canada", "4–6 weeks", "14,000–20,000"]
+      - ["Dubai → South Africa", "4–8 weeks", "14,000–22,000"]
+      - ["Dubai → Singapore", "4–8 months", "18,000–28,000"]
+      - ["Dubai → Australia", "Up to 6 months", "25,000–35,000+"]
+    note: "Ranges reflect pet size, airline and season. The titer test and quarantine on Australia and Singapore are what push them higher."
+
+  - type: callout
+    heading: "Why volumetric weight matters"
+    body: >
+      Airlines charge by actual weight or crate volume — whichever is higher. A
+      crate of 80 × 60 × 60 cm counts as about 48 kg even if your dog is 20 kg.
+      Sizing the crate correctly is part of what we do, so you're not surprised at
+      the cargo desk.
+
+  - type: cost_calc
+    eyebrow: "Estimate by route"
+    heading: "Estimate your cost in 10 seconds"
+    body: "Pick your destination and pet size for an indicative range — then get the firm breakdown from us."
+
+  - type: story
+    id: story
+    heading: "Why we price this way"
+    tag: "What we kept seeing"
+    lead: "We started showing prices because of conversations like this one — repeated dozens of times."
+    problem: "An owner calls three companies for a Dubai move. Every one says 'we'll need to send you a quote'."
+    mistake: "Two weeks pass chasing callbacks. The quotes finally arrive — and they're wildly different, with no breakdown to compare."
+    discovery: "The owner has no way to tell what's fair, so they pick on gut feel — and worry they overpaid the whole way home."
+    result: "That uncertainty is the real cost. So we put the numbers on the page: the range, the breakdown, the reason for each line."
+    lesson: "You shouldn't have to hand over your details just to learn what something costs. Transparency isn't a tactic here — it's the point."
+
+  - type: faq
+    heading: "Pricing questions"
+    items:
+      - { q: "Why do you show prices when competitors don't?", a: "Because hiding the price behind a quote form wastes your time and ours. You deserve to plan before you call. We'd rather earn your trust with transparency." }
+      - { q: "Is the price fixed?", a: "We give you a transparent range upfront and a firm breakdown once we know your pet's size, destination and dates. No surprise fees added later." }
+      - { q: "Why is Australia so much more expensive?", a: "The rabies titer test, the import permit and the mandatory 10-day quarantine all add cost and time. Singapore is similar." }
+      - { q: "Do you offer payment plans?", a: "Tell us what you need when you message us. We'll be straight with you about what's possible." }
+
+  - type: sources
+    eyebrow: "Where the numbers come from"
+    heading: "Official sources"
+    items:
+      - { authority: "UAE MOCCAE", title: "Pet export & import permits / fees", url: "https://www.moccae.gov.ae/en/services/import-permit-pets", note: "Government admin + permit fees" }
+      - { authority: "IATA", title: "Live Animals Regulations", url: "https://www.iata.org/en/programs/cargo/live-animals/", note: "Crate sizing → volumetric air-freight cost" }
+
+  - type: quote_form
+    id: quote
+    eyebrow: "No obligation"
+    heading: "Get your exact price"
+    body: "Send your pet's details and destination and we'll reply on WhatsApp with a firm range and the full breakdown."
+    destinations: ["UK", "Australia", "USA", "Germany", "France", "Netherlands", "Canada", "India", "Singapore", "South Africa", "Into the UAE", "Somewhere else"]
+
+  - type: cta
+    heading: "No hidden fees. Ever."
+    body: "See the price, see the breakdown, then decide. That's the whole idea."
+    ctas:
+      - { label: "Get my quote", url: "#quote", style: "btn-gold" }
+      - { label: "See destinations", url: "/destinations/", style: "btn-ghost" }

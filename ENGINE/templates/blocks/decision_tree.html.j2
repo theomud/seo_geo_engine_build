@@ -1,0 +1,59 @@
+<section class="section {{ block.variant | default('') }}" id="{{ block.id | default('can-my-pet-fly') }}">
+  <div class="container container--article">
+    {% if block.eyebrow %}<p class="eyebrow">{{ block.eyebrow }}</p>{% endif %}
+    <h2>{{ block.heading | default('Can my pet fly? Quick check') }}</h2>
+    {% if block.body %}<p>{{ block.body }}</p>{% endif %}
+    <div class="tool" data-tool="canfly">
+      <div class="tool-row">
+        <label>Destination
+          <select id="cf-dest">
+            <option value="uk">United Kingdom</option>
+            <option value="usa">USA</option>
+            <option value="canada">Canada</option>
+            <option value="eu">EU (Germany/France/Netherlands)</option>
+            <option value="australia">Australia</option>
+            <option value="singapore">Singapore</option>
+            <option value="other">Somewhere else</option>
+          </select>
+        </label>
+        <label>Breed type
+          <select id="cf-breed">
+            <option value="standard">Standard breed</option>
+            <option value="snub">Snub-nosed (Bulldog, Pug, Boxer, Persian…)</option>
+            <option value="banned">Pit Bull / XL Bully / Tosa / Dogo / Fila type</option>
+          </select>
+        </label>
+        <label>Rabies vaccination
+          <select id="cf-vax">
+            <option value="valid">Already valid (≥21 days ago)</option>
+            <option value="recent">Done, but under 21 days ago</option>
+            <option value="none">Not yet vaccinated</option>
+          </select>
+        </label>
+        <button type="button" class="btn btn-gold" id="cf-go">Check my pet</button>
+      </div>
+      <div id="cf-out" class="tool-out" hidden></div>
+      <p class="tool-note">A quick guide, not a guarantee. Breed bans, airline rules and waiting periods are verified per route — we confirm your exact case before booking.</p>
+    </div>
+  </div>
+</section>
+<script>
+(function(){
+  var go=document.getElementById('cf-go'); if(!go) return;
+  go.addEventListener('click',function(){
+    var dest=document.getElementById('cf-dest').value,
+        breed=document.getElementById('cf-breed').value,
+        vax=document.getElementById('cf-vax').value, msgs=[], blocked=false;
+    if(breed==='banned' && dest==='uk'){blocked=true;msgs.push(['bad','✗ These breeds (Pit Bull, XL Bully, Tosa, Dogo Argentino, Fila) are banned from the UK under the Dangerous Dogs Act and cannot enter. Other destinations differ — check with us.']);}
+    else if(breed==='banned'){msgs.push(['warn','⚠ Your breed type is restricted in some countries. We must verify it against your destination before anything else.']);}
+    if(breed==='snub'){msgs.push(['warn','⚠ Snub-nosed (brachycephalic) breeds can usually travel, but face airline restrictions and the UAE summer heat embargo (May–Sep). Route and timing are critical.']);}
+    if(dest==='australia'||dest==='singapore'){msgs.push(['warn','⏳ This route needs a rabies titre test and a waiting period (Australia: 180 days + quarantine). Plan for months, not weeks.']);}
+    if(vax==='none'){msgs.push(['warn','📅 Not vaccinated yet: add the rabies waiting period — about 3 weeks minimum for rabies-only routes, longer where a titre test applies. The clock can\'t be shortened.']);}
+    else if(vax==='recent'){msgs.push(['warn','📅 Rabies done but under 21 days: most routes require ≥21 full days after the vaccination before travel. Count from the jab date.']);}
+    if(!blocked && msgs.length===0){msgs.push(['ok','✓ No obvious blockers — this looks like a standard route. Use the timeline calculator to plan your dates, and we\'ll confirm the details.']);}
+    else if(!blocked){msgs.push(['ok','✓ Likely possible with the right planning. Tell us your travel date and we\'ll map the exact steps.']);}
+    var html=msgs.map(function(m){return '<p class="tool-'+m[0]+'">'+m[1]+'</p>';}).join('');
+    var o=document.getElementById('cf-out'); o.hidden=false; o.innerHTML=html;
+  });
+})();
+</script>

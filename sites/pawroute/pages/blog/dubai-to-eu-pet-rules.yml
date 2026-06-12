@@ -1,0 +1,95 @@
+url: /blog/dubai-to-eu-pet-rules/
+title: "Dubai to the EU Pet Move: Health Certificate & Titre Test"
+title_suffix: ""
+meta_description: "Bringing a pet into the EU from Dubai needs a microchip, rabies vaccination and an EU animal health certificate — and possibly a rabies titre test. Here's the framework."
+og_title: "The EU pet rules from Dubai — and the titre-test question"
+updated: "2026-06-09"
+layout: article
+
+blocks:
+  - type: article_header
+    category: "Route guide · EU (Germany, France, Netherlands)"
+    category_url: "/blog/"
+    h1: "Dubai to the EU: the health certificate and the titre-test question"
+    standfirst: "Bringing a pet into the EU from Dubai needs a microchip, a rabies vaccination and an EU animal health certificate — and one variable decides your timeline: whether a rabies titre test is required."
+    author: "the PawRoute relocation team"
+    date: "9 June 2026"
+    reading_time: 6
+    reviewed: "reviewed by our IPATA-certified specialists"
+    image: /assets/blog/cost-2026-hero.png
+    image_alt: "A pet ready to travel from Dubai to the EU"
+
+  - type: prose
+    id: answer
+    heading: "The short answer"
+    paragraphs:
+      - "To bring a cat or dog into the EU from Dubai you need an <strong>ISO microchip</strong>, a <strong>rabies vaccination given at least 21 days before travel</strong>, and an <strong>EU animal health certificate</strong> issued close to your travel date by an authorised vet."
+      - "The one thing that changes the timeline is the <strong>rabies titre (antibody) test</strong>: the EU requires it for pets arriving from <em>non-listed</em> third countries, with a waiting period after the blood draw. Whether it applies to you depends on the UAE's current EU listing status — so confirm that first, because it can add months."
+
+  - type: takeaways
+    heading: "Key takeaways"
+    items:
+      - "Core requirements: <strong>ISO microchip</strong>, <strong>rabies vaccine ≥21 days</strong> before travel, <strong>EU animal health certificate</strong>."
+      - "The EU certificate is issued close to travel and is <strong>time-limited</strong> for entry and onward movement."
+      - "A <strong>rabies titre test</strong> applies for non-listed origins and adds a waiting period — confirm whether it applies to the UAE."
+      - "No quarantine when fully compliant; the risk is paperwork and timing."
+      - "Typical cost Dubai → EU: roughly <strong>AED 10,000–18,000</strong>, about 4–8 weeks (longer if a titre test is required)."
+
+  - type: toc
+    heading: "In this article"
+    items:
+      - { label: "The EU framework", anchor: "framework" }
+      - { label: "The titre-test variable", anchor: "titre" }
+      - { label: "What going wrong looks like", anchor: "story" }
+      - { label: "Frequently asked questions", anchor: "faq" }
+
+  - type: prose
+    id: framework
+    eyebrow: "What's the same everywhere in the EU"
+    heading: "The EU framework"
+    paragraphs:
+      - "The EU runs a single framework for pet entry, so Germany, France and the Netherlands share the same backbone: microchip, valid rabies vaccination, and an EU animal health certificate completed by an authorised vet shortly before travel."
+      - "Because that certificate has a tight validity window for entry, it's one of the last steps — planned backwards from your flight, not done early."
+
+  - type: prose
+    id: titre
+    eyebrow: "The part that changes the timeline"
+    heading: "The titre-test variable"
+    paragraphs:
+      - "For pets coming from countries the EU classifies as <em>non-listed</em>, a rabies antibody (titre) test is required. The blood sample must be taken <strong>at least 30 days after the rabies vaccination</strong>, and <strong>at least 90 days (three months) before</strong> the EU animal health certificate is issued — so for a non-listed origin it adds roughly three months. For <em>listed</em> origins the test isn't needed at all."
+      - "The EU animal health certificate itself is <strong>valid for 10 days to enter the EU</strong>, then up to <strong>6 months for onward travel</strong> within the EU. The one fact that decides which path you're on — listed or non-listed — is the UAE's classification in Annex I to the EU's pet-movement regulation, so confirm that with the official source below before you commit to dates."
+
+  - type: story
+    id: story
+    heading: "What going wrong actually looks like"
+    tag: "A common scenario"
+    lead: "On the EU route, the trap is the certificate's tight validity window."
+    problem: "An owner gets the EU animal health certificate done weeks ahead, to feel organised."
+    mistake: "By the travel date the certificate's entry-validity window has passed."
+    discovery: "The certificate has to be issued close to travel — too early is as bad as missing it."
+    result: "A repeat vet visit and a re-issued certificate, plus a rushed re-book around the new dates."
+    lesson: "On the EU route, sequence beats speed: confirm the titre question first, then time the certificate to the flight — last, not first."
+
+  - type: faq
+    id: faq
+    heading: "Frequently asked questions"
+    items:
+      - { q: "Do I need a rabies titre test for the EU from Dubai?", a: "It depends on the UAE's EU listing. For non-listed third countries the EU requires a titre test — sample taken at least 30 days after vaccination and at least 90 days before the health certificate, adding about three months. For listed origins it isn't needed. Confirm the UAE's current status (Annex I) before booking — it's the biggest timeline variable." }
+      - { q: "Is the process the same for Germany, France and the Netherlands?", a: "Largely yes — they share the EU framework (microchip, rabies, EU animal health certificate). Local entry-point details can differ, so we confirm per country." }
+      - { q: "Will my pet be quarantined in the EU?", a: "No quarantine when you're fully compliant. The real risk is a documentation or certificate-timing error." }
+      - { q: "How much does Dubai → EU cost?", a: "Typically AED 10,000–18,000 depending on your pet's size and the country, and longer/dearer if a titre test is required." }
+
+  - type: sources
+    eyebrow: "Verified against the source"
+    heading: "Official sources"
+    items:
+      - { authority: "European Commission", title: "Bringing a pet to the EU from a non-EU country", url: "https://food.ec.europa.eu/animals/live-animal-movements/dogs-cats-and-ferrets/bringing-pet-eu-non-eu-country_en", note: "EU framework + titre rule" }
+      - { authority: "UAE MOCCAE", title: "Pet export permits", url: "https://www.moccae.gov.ae/en/services/import-permit-pets", note: "UAE export side" }
+      - { authority: "IATA", title: "Live Animals Regulations", url: "https://www.iata.org/en/programs/cargo/live-animals/", note: "Crate + cargo standards" }
+
+  - type: cta
+    heading: "Planning a Dubai → EU move?"
+    body: "We confirm the titre question for your destination, time the EU certificate to your flight, and handle the export side — so you can plan with confidence and get your pet home safely, no surprises."
+    ctas:
+      - { label: "See Dubai → Germany cost & process", url: "/destinations/uae-to-germany/", style: "btn-gold" }
+      - { label: "Compare all destinations", url: "/destinations/", style: "btn-ghost" }

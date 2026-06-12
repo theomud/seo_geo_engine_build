@@ -1,0 +1,26 @@
+<section class="section {{ block.variant | default('') }}" id="{{ block.id | default('checklist') }}">
+  <div class="container container--article">
+    {% if block.eyebrow %}<p class="eyebrow">{{ block.eyebrow }}</p>{% endif %}
+    <h2>{{ block.heading | default('Pet relocation checklist') }}</h2>
+    {% if block.body %}<p>{{ block.body }}</p>{% endif %}
+    <div class="printable" id="{{ block.print_id | default('print-checklist') }}">
+      {% for group in block.groups %}
+      <div class="pc-group">
+        <h3>{{ group.title }}</h3>
+        <ul class="pc-list">
+          {% for item in group['items'] %}<li><span class="pc-box" aria-hidden="true"></span>{{ item | safe }}</li>{% endfor %}
+        </ul>
+      </div>
+      {% endfor %}
+      {% if block.source_note %}<p class="pc-source">{{ block.source_note }}</p>{% endif %}
+    </div>
+    <button type="button" class="btn btn-gold print-btn" data-print="{{ block.print_id | default('print-checklist') }}">🖨 Print / Save as PDF</button>
+  </div>
+</section>
+<script>
+(function(){
+  document.querySelectorAll('.print-btn').forEach(function(b){
+    b.addEventListener('click',function(){ window.print(); });
+  });
+})();
+</script>

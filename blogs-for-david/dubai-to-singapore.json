@@ -1,0 +1,165 @@
+{
+  "_meta": {
+    "content_format": "blog",
+    "direction": "outbound (Dubai -> destination)",
+    "target_keyword": "Dubai to Singapore Pet Move",
+    "note": "De-branded content asset for site build. Render images from the images/ folder."
+  },
+  "seo": {
+    "title": "Dubai to Singapore Pet Move: Titre Test + Quarantine",
+    "meta_description": "Moving a pet from Dubai to Singapore means a licence, a rabies titre test and a quarantine stay. Here's the process, the timeline and what it costs.",
+    "og_title": "What Singapore really requires to bring your pet from Dubai",
+    "canonical_path": "/blog/dubai-to-singapore-pet-quarantine/"
+  },
+  "hero": {
+    "eyebrow": "Route guide · Singapore",
+    "h1": "Dubai to Singapore: the licence, titre test and quarantine",
+    "standfirst": "Singapore is one of the stricter routes — a controlled, licence-led process with a titre test and a quarantine stay. Plan it and it's smooth; wing it and you wait.",
+    "image": "images/dubai-to-singapore-hero.png",
+    "image_alt": "A pet ready to travel from Dubai to Singapore"
+  },
+  "byline": "By our relocation specialists · 9 June 2026 · reviewed by our IPATA-certified specialists",
+  "key_facts": {},
+  "takeaways": [
+    "An <strong>AVS import licence</strong> is mandatory and time-limited — apply in the correct window.",
+    "A <strong>rabies titre test</strong> is required; results take weeks, so book early.",
+    "Expect a <strong>quarantine stay</strong> on arrival (the Sembawang facility) — book the slot ahead.",
+    "Typical cost: <strong>AED 18,000–28,000</strong>, several months end to end.",
+    "Singapore restricts certain breeds — confirm yours before booking."
+  ],
+  "sections": [
+    {
+      "type": "prose",
+      "heading": "The short answer",
+      "paragraphs": [
+        "To move a pet from Dubai to Singapore you need an <strong>import licence</strong> from Singapore's Animal & Veterinary Service (AVS), an ISO microchip, rabies vaccination and a <strong>rabies titre test</strong>, plus a <strong>quarantine stay</strong> on arrival for pets from the UAE's risk category.",
+        "It typically costs <strong>AED 18,000–28,000</strong> and runs several months end to end, because the titre test and quarantine booking set the pace."
+      ]
+    },
+    {
+      "type": "flow",
+      "heading": "The process, step by step",
+      "body": "Singapore is licence-led — the permit and quarantine slot anchor everything.",
+      "steps": [
+        "ISO microchip + rabies vaccination",
+        "Rabies titre test (results take weeks)",
+        "Apply for the AVS import licence",
+        "Book the quarantine slot + flight",
+        "Arrival, quarantine stay, then home"
+      ]
+    },
+    {
+      "type": "prose",
+      "eyebrow": "Why it isn't quick",
+      "heading": "Why the timeline runs long",
+      "paragraphs": [
+        "Two things stretch the Singapore timeline: the <strong>titre test</strong>, whose lab results take weeks, and the <strong>quarantine slot</strong>, which must be reserved in advance and can be limited. Neither can be rushed at the last minute.",
+        "Because the licence is time-limited and tied to your travel window, the sequence has to be planned backwards from the flight — get that wrong and the licence can lapse before you fly."
+      ]
+    }
+  ],
+  "story": {
+    "tag": "A common scenario",
+    "lead": "On the Singapore route, the usual trap is leaving the titre test and quarantine slot too late.",
+    "problem": "An owner relocating for work wants their cat in Singapore within a month.",
+    "mistake": "They start the rabies titre test late and assume quarantine can be sorted on arrival.",
+    "discovery": "The titre results take weeks and quarantine slots must be pre-booked — the timeline doesn't fit.",
+    "result": "The cat travels later than planned, with extra boarding in Dubai while the licence and slot line up.",
+    "lesson": "Singapore rewards early planning. Book the titre test and quarantine slot first; the flight comes last."
+  },
+  "faqs": [
+    {
+      "q": "Does my pet need a rabies titre test for Singapore?",
+      "a": "Yes — a rabies titre test is part of Singapore's requirements for pets from the UAE's risk category, and the lab results take weeks, so book it early."
+    },
+    {
+      "q": "Will my pet be quarantined in Singapore?",
+      "a": "Expect a quarantine stay on arrival for pets in the UAE's category. The slot must be booked in advance, so plan it before the flight."
+    },
+    {
+      "q": "How much does Dubai → Singapore cost?",
+      "a": "Typically AED 18,000–28,000, depending on your pet's size, the airline and quarantine fees."
+    },
+    {
+      "q": "What's the first thing I should do?",
+      "a": "Microchip and vaccinate, then book the rabies titre test — its result timing sets the whole schedule."
+    }
+  ],
+  "sources": [
+    {
+      "authority": "Singapore AVS (NParks)",
+      "title": "Importing dogs and cats",
+      "url": "https://avs.nparks.gov.sg/pets/importing-exporting-a-pet/import/dogs-and-cats/",
+      "note": "Licence, titre, quarantine"
+    },
+    {
+      "authority": "UAE MOCCAE",
+      "title": "Pet export permits",
+      "url": "https://www.moccae.gov.ae/en/services/import-permit-pets",
+      "note": "UAE export side"
+    },
+    {
+      "authority": "IATA",
+      "title": "Live Animals Regulations",
+      "url": "https://www.iata.org/en/programs/cargo/live-animals/",
+      "note": "Crate + cargo standards"
+    }
+  ],
+  "cta": {
+    "heading": "Planning a Dubai → Singapore move?",
+    "body": "We line up the titre test, the AVS licence and the quarantine slot in the right order — so your pet travels on schedule, not weeks behind you.",
+    "ctas": [
+      {
+        "label": "See Dubai → Singapore cost & process",
+        "url": "/destinations/uae-to-singapore/",
+        "style": "btn-gold"
+      },
+      {
+        "label": "Compare all destinations",
+        "url": "/destinations/",
+        "style": "btn-ghost"
+      }
+    ],
+    "help_cta": "Not ready to enquire? Download the free pet-relocation checklist — every required document for your route, in order, so nothing is missed."
+  },
+  "images": [
+    {
+      "role": "hero",
+      "file": "images/dubai-to-singapore-hero.png",
+      "alt": "A pet ready to travel from Dubai to Singapore",
+      "status": "rendered (low-res)"
+    }
+  ],
+  "method": {
+    "structure_logic": "2026 article anatomy: headline (curiosity/result) -> answer-first opening (the liftable answer in the first lines) -> key takeaways -> table of contents -> scannable H2/H3 -> a visual (data table or flow) -> original insight or a story -> FAQ -> official sources -> one help-first CTA. Why: web readers scan ~20-28% of words (Nielsen Norman Group), so the answer is front-loaded; a story is remembered where bare facts are forgotten; one page = one job + a single CTA converts. These choices recur across every source in our research (see SOURCING-METHOD.md).",
+    "geo_seo_rationale": "What we believe helps. GEO (being cited by AI answer engines): answer-first self-contained chunks, cited statistics, official-source citations, consistent entities, FAQ schema -- and citation is decoupled from ranking (~66% of AI-Overview citations come from outside the top-20), so strong content can be cited even before it ranks. SEO: intent-matched title+H1, topical depth, internal links into the money page, visible freshness dates, structured data (Article/FAQ/Breadcrumb/LocalBusiness). HONEST CAVEAT: these are evidence-based best practices, NOT guaranteed results -- ranking also needs off-page authority/backlinks/indexing not built here, and GEO citation is plausible but unproven until measured with a live AI-citation test.",
+    "how_and_why_we_audit": "Each page is scored by a 5-lens auditor -- Website, SEO, GEO, Lead-gen/Trust, Quality -- which together cover the 7-category QA (Helpful, Human, Original, Trustworthy, SEO, GEO, Conversion). Why this way: (1) page-type profiles judge a page against ITS job (a reassurance page is weighted differently from a money page); (2) every check carries an evidence tier (T1 sworn -> T6 practitioner) and a verified-vs-heuristic tag; (3) not-measurable checks are excluded, never zeroed (a coverage->confidence label); (4) risk caps catch keyword-stuffing, thin content, fake schema, no-CTA. The score is an on-page QUALITY PROXY, not a measured ranking/citation outcome.",
+    "what_we_are_sure_of": "100% sure = a fact screenshot-verified against its official source as of a date (see sourcing.verified_100pct) + that the method was applied. NOT sure = that it ranks or gets cited (unproven until the site is live, indexed and measured).",
+    "how_we_verify": "Every factual/regulatory claim is verified against an OFFICIAL source only -- government bodies, recognised standards bodies (IATA), or the operator's own site (e.g. the airline). Never blogs, forums, competitors, or AI. Each verified claim is captured as a full-page SCREENSHOT and logged in a regulatory register with: source, URL, date verified, version, reviewer, and a re-verify-by date (because regulations change). Anything we could not confirm from an official source is HEDGED or flagged 'confirm with [authority]', never asserted (see sourcing.stated_but_unverified). Tooling: a Playwright screenshot verifier with an official-domain allowlist + the regulatory register. Facts are kept separate from advice ('the authority requires X' vs 'we recommend X'). AI never makes the final call -- a human reviews and signs off before publish."
+  },
+  "sourcing": {
+    "how_we_derived_this": "Built from recurring patterns across our research corpus (SOURCING-METHOD.md): answer the fear not the keyword, front-load the answer, official sources only, a route-specific story, single help-first CTA into the money page.",
+    "verified_100pct": [
+      {
+        "fact": "Where this route's facts were screenshot-verified, the evidence is in audit/evidence/* and the regulatory register (e.g. UK tapeworm + XL Bully ban, US CDC dog rules, EU titre timing, IATA, Emirates travel methods).",
+        "source": "see regulatory register",
+        "as_of": "2026-06-09"
+      }
+    ],
+    "stated_but_unverified": [
+      {
+        "claim": "Route-specific cost ranges are a model estimate (stated as ranges)",
+        "action": "Re-validate quarterly vs live airline cargo quotes"
+      },
+      {
+        "claim": "Any specific not screenshot-verified (e.g. Australia DAFF, South Africa DALRRD, India AQCS detail)",
+        "action": "Confirm + screenshot the official source before publish"
+      }
+    ],
+    "confidence": "100% sure of: the screenshot-verified facts (regulatory register) + that the method was applied. NOT sure of: ranking/citation -- unproven until the site is live, indexed and measured."
+  },
+  "lead_magnet": {
+    "label": "Free pet-relocation checklist",
+    "description": "Every document + step for your route, in order, verified against official sources."
+  }
+}

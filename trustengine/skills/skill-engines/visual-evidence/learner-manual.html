@@ -1,0 +1,79 @@
+<!DOCTYPE html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Visual Evidence Architecture — Learner Manual</title><style>body{font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:#1f2937;
+line-height:1.6;background:#f7f8fb;margin:0}.wrap{max-width:860px;margin:0 auto;padding:28px}
+h1{color:#1a3a5c}h2{color:#1a3a5c;border-top:2px solid #e5e7eb;padding-top:14px;margin-top:26px}
+h3{color:#2c5282}code{background:#f1f5f9;padding:1px 5px;border-radius:4px}
+table{border-collapse:collapse;width:100%}th,td{border:1px solid #e5e7eb;padding:7px 10px;text-align:left;vertical-align:top}
+th{background:#2c5282;color:#fff}tr:nth-child(even) td{background:#f9fafb}
+.hd{background:linear-gradient(135deg,#1a3a5c,#2c5282);color:#fff;padding:22px 28px;border-radius:0 0 14px 14px}
+.hd h1{color:#fff;margin:0}.hd p{color:#cfe0f5;margin:6px 0 0}</style></head><body><div class='hd'><h1>Visual Evidence Architecture — Learner Manual</h1><p>Does the page SHOW proof — real photos, dated screenshots, data visuals — beside its claims?</p></div><div class='wrap'><h1>Visual Evidence Architecture — Learner Manual</h1>
+<p>A frightened, high-stakes visitor believes what they can see proven, not what the text asserts. This engine scores whether a page backs its claims with visible evidence: real photos (not stock), official-source screenshots, captions, and phone-readable data visuals — instead of decoration.</p>
+<h2>How to run the engine</h2>
+<ul>
+<li>Score a page: <code>python skill-engines/visual-evidence/engine.py --url &lt;URL&gt; --report out.html</code></li>
+<li>Web checker: <code>python skill-engines/visual-evidence/engine.py --serve 8094</code></li>
+<li>These docs: <code>python skill-engines/visual-evidence/engine.py --docs</code></li>
+</ul>
+<h2>The measurements (each one, with why and how)</h2>
+<h2>1. Images present</h2>
+<p><strong>How we measure it:</strong> We count images on the page.</p>
+<p><strong>Why it works:</strong> A page of pure text gives a wary visitor nothing to believe; visuals carry proof.</p>
+<p><strong>What to do:</strong> Add real images that show the work/proof.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: A wall of text, no images.</li>
+<li>DO: Real photos of the crate prep, vet check and airport handover.</li>
+</ul>
+<h2>2. Alt text coverage</h2>
+<p><strong>How we measure it:</strong> We measure the share of images with alt text.</p>
+<p><strong>Why it works:</strong> Alt text makes images accessible and machine-readable — and signals real, described evidence.</p>
+<p><strong>What to do:</strong> Add descriptive alt text to every image.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: <img> with no alt attribute.</li>
+<li>DO: alt="MOCCAE import-fee page, captured 2026-06".</li>
+</ul>
+<h2>3. Real (non-stock) images</h2>
+<p><strong>How we measure it:</strong> We flag images whose source looks like a stock library.</p>
+<p><strong>Why it works:</strong> Stock 'happy customer' photos are tuned out; a real photo of the actual work is proof.</p>
+<p><strong>What to do:</strong> Replace stock photos with real photos of the actual work.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: A stock smiling-dog photo.</li>
+<li>DO: Your own photo of the actual handover.</li>
+</ul>
+<h2>4. Data visuals (tables/charts)</h2>
+<p><strong>How we measure it:</strong> We count tables, SVG/canvas, and infographic terms.</p>
+<p><strong>Why it works:</strong> Numbers shown as a table or chart are lifted and believed more than numbers buried in prose.</p>
+<p><strong>What to do:</strong> Turn key numbers into a table or simple chart/infographic.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: Costs written in a paragraph.</li>
+<li>DO: A cost table or a simple bar chart.</li>
+</ul>
+<h2>5. Video / rich media</h2>
+<p><strong>How we measure it:</strong> We detect video tags and YouTube/Vimeo embeds.</p>
+<p><strong>Why it works:</strong> Video is a strong trust + citation surface, especially for process/how-to content.</p>
+<p><strong>What to do:</strong> Add a short video (process/explainer) or transcript-backed embed.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: No video.</li>
+<li>DO: A 60-second process video with its transcript on the page.</li>
+</ul>
+<h2>6. Captions / figure context</h2>
+<p><strong>How we measure it:</strong> We count figure/figcaption elements.</p>
+<p><strong>Why it works:</strong> A caption tells the reader what they're looking at and why it proves the claim.</p>
+<p><strong>What to do:</strong> Wrap images in <figure> with a <figcaption> explaining what it proves.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: A bare image.</li>
+<li>DO: <figure><figcaption>MOCCAE 500 AED release fee, 2026</figcaption></figure>.</li>
+</ul>
+<h2>7. Visual density</h2>
+<p><strong>How we measure it:</strong> We compute images per 500 words.</p>
+<p><strong>Why it works:</strong> Proof should sit beside claims throughout, not appear once — density signals evidence-led content.</p>
+<p><strong>What to do:</strong> Add a proof image beside each major claim, not just one at the top.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: One hero image only.</li>
+<li>DO: A proof image beside each major claim.</li>
+</ul></div></body></html>

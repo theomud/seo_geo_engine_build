@@ -1,0 +1,82 @@
+<!DOCTYPE html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>AI Citation Readiness — Cheatsheet</title><style>body{font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:#1f2937;
+line-height:1.6;background:#f7f8fb;margin:0}.wrap{max-width:860px;margin:0 auto;padding:28px}
+h1{color:#1a3a5c}h2{color:#1a3a5c;border-top:2px solid #e5e7eb;padding-top:14px;margin-top:26px}
+h3{color:#2c5282}code{background:#f1f5f9;padding:1px 5px;border-radius:4px}
+table{border-collapse:collapse;width:100%}th,td{border:1px solid #e5e7eb;padding:7px 10px;text-align:left;vertical-align:top}
+th{background:#2c5282;color:#fff}tr:nth-child(even) td{background:#f9fafb}
+.hd{background:linear-gradient(135deg,#1a3a5c,#2c5282);color:#fff;padding:22px 28px;border-radius:0 0 14px 14px}
+.hd h1{color:#fff;margin:0}.hd p{color:#cfe0f5;margin:6px 0 0}</style></head><body><div class='hd'><h1>AI Citation Readiness — Cheatsheet</h1><p>How likely AI answer engines are to quote this page — and exactly what to fix.</p></div><div class='wrap'><h1>AI Citation Readiness — Cheatsheet</h1>
+<p><em>How likely AI answer engines are to quote this page — and exactly what to fix.</em></p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Measurement</th>
+<th>What to do</th>
+<th>Example (don't &rarr; do)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Answer-first opening</td>
+<td>Put a direct answer (a number or definition) in the first 100 words.</td>
+<td>DON'T: Welcome to our pet relocation company. &rarr; DO: A dog is held at Dubai airport when its rabies titer paperwork is incomplete; the release fee is 500 AED.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Statistics &amp; specific numbers</td>
+<td>Add specific numbers, %, prices and dated figures to the page.</td>
+<td>DON'T: We move many pets safely. &rarr; DO: 256,114 pets were transported in 2021, with an incident rate below 1 in 10,000.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Cited sources</td>
+<td>Cite authoritative sources (link .gov/.edu/official pages; use 'according to…').</td>
+<td>DON'T: Pets need vaccinations. &rarr; DO: Per MOCCAE, pets need a microchip, rabies vaccination and import permit (moccae.gov.ae).</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Direct quotations</td>
+<td>Add a direct quote from a named authority.</td>
+<td>DON'T: Our service is trusted. &rarr; DO: “The route is the product,” says a relocation specialist quoted by Reuters (2025).</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Quotable standalone facts</td>
+<td>Write short, self-contained factual sentences that can be lifted verbatim.</td>
+<td>DON'T: There are many requirements to consider. &rarr; DO: The export health certificate is valid for 10 days from the date of issue.</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Question-style headings</td>
+<td>Use question-style H2/H3 headings (How…/What…) with the answer underneath.</td>
+<td>DON'T: Our Services &rarr; DO: How much does the rabies titer test cost in Dubai?</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Scannable lists &amp; tables</td>
+<td>Add lists and a comparison table for the key facts.</td>
+<td>DON'T: We cover the EU, Australia and more. &rarr; DO: A table: EU — 30 days</td>
+</tr>
+<tr>
+<td>8</td>
+<td>FAQ structured data</td>
+<td>Add 5+ FAQ Q&amp;A as FAQPage JSON-LD (validate with Rich Results Test).</td>
+<td>DON'T: (no FAQ on the page) &rarr; DO: Add FAQPage schema with 5 Q&amp;A, e.g. “Can pets fly to Dubai in summer?”</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Clear, consistent entity</td>
+<td>Add Organization/Person schema with a sameAs to your verified profiles.</td>
+<td>DON'T: Names vary: PetCo / Pet Co. / petco dubai &rarr; DO: One Organization schema, one name, sameAs linking LinkedIn + IPATA profile.</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Freshness &amp; dating</td>
+<td>Add a visible published/updated date and a recent year.</td>
+<td>DON'T: © 2019 (or no date) &rarr; DO: Updated June 2026 — verified against current MOCCAE rules.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Run:</strong> <code>python skill-engines/ai-citation/engine.py --url &lt;URL&gt;</code> or <code>--serve 8090</code> (web checker).</p></div></body></html>

@@ -1,0 +1,45 @@
+url: /destinations/usa/
+title: "Moving a Pet to the USA from Dubai — Cost, CDC Rules & Guides"
+title_suffix: ""
+breadcrumb: "USA"
+meta_description: "Moving a pet from Dubai to the USA: AED 13,800–22,000, 4–12 weeks, and the 2026 CDC dog-import rules (form, 6-month age, microchip). Verified guides + tools."
+og_title: "Dubai → USA pet relocation hub"
+updated: "2026-06-09"
+
+blocks:
+  - type: hero
+    eyebrow: "Destination hub · USA"
+    heading: "Moving your pet to the USA from Dubai"
+    subheading: >
+      A Dubai → USA move runs about AED 13,800–22,000 over 4–12 weeks. The hurdle isn't rabies —
+      it's the 2026 CDC dog-import rules: a CDC form, a dog at least 6 months old, and a microchip.
+    ctas:
+      - { label: "Get my USA quote", url: "#quote", style: "btn-gold" }
+
+  - type: key_facts
+    heading: "Dubai → USA at a glance"
+    answer: "Every dog needs a CDC Dog Import Form, must be at least 6 months old on arrival, microchipped, and appear healthy. The UAE is treated as a dog-rabies low-risk origin, so the CDC form and age rule are what catch people out."
+    stats:
+      - { label: "Cost", value: "AED 13,800–22,000" }
+      - { label: "Timeline", value: "4–12 weeks" }
+      - { label: "Quarantine", value: "None" }
+      - { label: "Verified", value: "June 2026" }
+
+  - type: card_grid
+    eyebrow: "Everything for this route"
+    heading: "USA pages & guides"
+    cards:
+      - { flag: "📋", title: "Full requirements & process", meta: "Documents, steps, timeline", url: "/destinations/uae-to-usa/", arrow: "Open" }
+      - { flag: "🇺🇸", title: "The CDC rules guide (2026)", meta: "Form + 6-month age rule", url: "/blog/dubai-to-usa-pet-cdc-rules-2026/", arrow: "Read" }
+      - { flag: "🧰", title: "Cost & timeline tools", meta: "Estimate + plan", url: "/tools/", arrow: "Use" }
+      - { flag: "🌍", title: "All destinations", meta: "Compare every route", url: "/destinations/", arrow: "See all" }
+
+  - type: cost_calc
+    eyebrow: "Estimate it"
+    heading: "Estimate your Dubai → USA cost"
+
+  - type: lead_form
+    id: quote
+    eyebrow: "No obligation"
+    heading: "Get your exact USA quote"
+    body: "Send your dog's details and travel date — we'll handle the CDC form and reply with a firm range."

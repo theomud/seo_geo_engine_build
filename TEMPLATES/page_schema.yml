@@ -1,0 +1,23 @@
+page:
+  page_type:
+  url:
+  target_keyword:
+  secondary_keywords: []
+  search_intent:
+  audience:
+  business_goal:
+  service:
+  location:
+  primary_entity:
+  secondary_entities: []
+  competitors: []
+  evidence:
+    - claim:
+      source:
+      evidence_tier:
+  conversion_goal:
+  call_to_action:
+  internal_links: []
+  external_sources: []
+  geo_prompts_to_test: []
+  review_due:

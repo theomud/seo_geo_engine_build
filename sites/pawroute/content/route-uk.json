@@ -1,0 +1,18 @@
+{
+  "_meta": {
+    "produced_by": "gen_route_briefs.py (route money-page brief)",
+    "blog_objective": "lead_generation",
+    "funnel_stage": "MOFU→BOFU (commercial-investigation → transactional)",
+    "page_type": "service (route money page)",
+    "target_keyword": "pet relocation dubai to uk",
+    "intent": "commercial",
+    "primary_fear": "I'm afraid that the UK's strict rules (tapeworm timing, APHA vet) mean I'll get it wrong",
+    "monetization": "lead_generation (route enquiry → WhatsApp quote)"
+  },
+  "seo": {
+    "title": "Pet Relocation Dubai to UK — Requirements, Pricing & Process | PawRoute",
+    "meta_description": "Move your pet from Dubai to the UK. Transparent pricing from AED 12,000, 4–8 week timeline, no quarantine if paperwork is perfect. APHA rules explained.",
+    "canonical_path": "/destinations/uae-to-uk/"
+  },
+  "_note": "Route brief for Dubai → Uk. Content lives in the page YAML; this brief lets the registry track question/funnel/monetization."
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Email Nurture (capture readiness) — Learner Manual</title><style>body{font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:#1f2937;
+line-height:1.6;background:#f7f8fb;margin:0}.wrap{max-width:860px;margin:0 auto;padding:28px}
+h1{color:#1a3a5c}h2{color:#1a3a5c;border-top:2px solid #e5e7eb;padding-top:14px;margin-top:26px}
+h3{color:#2c5282}code{background:#f1f5f9;padding:1px 5px;border-radius:4px}
+table{border-collapse:collapse;width:100%}th,td{border:1px solid #e5e7eb;padding:7px 10px;text-align:left;vertical-align:top}
+th{background:#2c5282;color:#fff}tr:nth-child(even) td{background:#f9fafb}
+.hd{background:linear-gradient(135deg,#1a3a5c,#2c5282);color:#fff;padding:22px 28px;border-radius:0 0 14px 14px}
+.hd h1{color:#fff;margin:0}.hd p{color:#cfe0f5;margin:6px 0 0}</style></head><body><div class='hd'><h1>Email Nurture (capture readiness) — Learner Manual</h1><p>Can the page even start a nurture relationship — capture the lead with a value-first offer?</p></div><div class='wrap'><h1>Email Nurture (capture readiness) — Learner Manual</h1>
+<p>Most visitors don't buy on the first visit; a nurture sequence keeps you present while they decide. The sequence itself is off-page, but it can only run if the page CAPTURES the lead with a value-first offer. This engine scores that on-page capture readiness; the sequence, cadence and personalisation are shown as Not Measurable.</p>
+<h2>How to run the engine</h2>
+<ul>
+<li>Score a page: <code>python skill-engines/email-nurture/engine.py --url &lt;URL&gt; --report out.html</code></li>
+<li>Web checker: <code>python skill-engines/email-nurture/engine.py --serve 8101</code></li>
+<li>These docs: <code>python skill-engines/email-nurture/engine.py --docs</code></li>
+</ul>
+<h2>The measurements (each one, with why and how)</h2>
+<h2>1. Lead-capture form</h2>
+<p><strong>How we measure it:</strong> We look for a form with an email field.</p>
+<p><strong>Why it works:</strong> No capture = no nurture; the sequence can't start without an email.</p>
+<p><strong>What to do:</strong> Add a simple email-capture form.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: No form anywhere.</li>
+<li>DO: A simple email-capture form.</li>
+</ul>
+<h2>2. Lead magnet</h2>
+<p><strong>How we measure it:</strong> We look for a downloadable free offer.</p>
+<p><strong>Why it works:</strong> A useful free thing is what makes a worried visitor hand over their email.</p>
+<p><strong>What to do:</strong> Offer a free checklist/guide in exchange for an email.</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: Nothing to download.</li>
+<li>DO: Free Dubai pet-import checklist (email to get it).</li>
+</ul>
+<h2>3. Value-first signup</h2>
+<p><strong>How we measure it:</strong> We look for newsletter/updates/tips signups.</p>
+<p><strong>Why it works:</strong> Offering ongoing value (not just 'subscribe') earns the opt-in.</p>
+<p><strong>What to do:</strong> Add a value-first signup ('get the corridor updates').</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: (no signup)</li>
+<li>DO: Join for corridor rule updates.</li>
+</ul>
+<h2>4. Contact options</h2>
+<p><strong>How we measure it:</strong> We look for email/phone/WhatsApp/contact.</p>
+<p><strong>Why it works:</strong> A direct line is the simplest nurture entry point for high-intent visitors.</p>
+<p><strong>What to do:</strong> Add clear contact options (email/WhatsApp).</p>
+<h2>Example (what NOT to do -&gt; what to do)</h2>
+<ul>
+<li>DON'T: (no contact)</li>
+<li>DO: WhatsApp + email shown.</li>
+</ul>
+<h2>The nurture sequence itself (human-judged)</h2>
+<p>Off-page — the 7-email fear-to-booking sequence isn't on the page.</p>
+<h2>Send cadence &amp; timing (human-judged)</h2>
+<p>Off-page — when/how emails send isn't observable here.</p>
+<h2>Personalisation tokens (human-judged)</h2>
+<p>Off-page — handled by the sending system.</p></div></body></html>

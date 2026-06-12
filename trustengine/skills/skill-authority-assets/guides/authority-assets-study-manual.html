@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Authority Asset Creation — Study Manual | The Trust Engine</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#14110d;--panel:#1d1812;--ink:#f3ece0;--soft:#b9ab95;--line:#352c20;--gold:#d8a84b;--red:#e06a4e;--green:#7bbf6a;--accent:#c98a3a}
+  *{box-sizing:border-box}html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:'Crimson Pro',Georgia,serif;font-size:19px;line-height:1.6}
+  #bar{position:fixed;top:0;left:0;height:4px;width:0;background:linear-gradient(90deg,var(--gold),var(--accent));z-index:100;transition:width .1s}
+  .layout{display:flex;max-width:1180px;margin:0 auto}
+  nav.side{position:sticky;top:0;height:100vh;width:250px;flex-shrink:0;padding:30px 20px;background:var(--panel);border-right:1px solid var(--line);overflow-y:auto;font-family:'JetBrains Mono',monospace}
+  nav.side .brand{font-family:'Bebas Neue',sans-serif;letter-spacing:.08em;color:var(--gold);font-size:22px}
+  nav.side a{display:block;color:var(--soft);text-decoration:none;font-size:12px;padding:7px 9px;border-radius:6px;margin-bottom:2px}
+  nav.side a:hover{background:#251e16;color:var(--ink)}nav.side a.active{background:var(--gold);color:#14110d;font-weight:700}
+  main{flex:1;min-width:0;padding:46px 52px 120px;max-width:820px}
+  h1{font-family:'Bebas Neue',sans-serif;font-size:52px;line-height:1;margin:0 0 6px}
+  h2{font-family:'Bebas Neue',sans-serif;font-size:33px;letter-spacing:.02em;margin:50px 0 12px;color:var(--gold)}
+  h3{font-size:21px;margin:24px 0 6px;color:var(--accent)}
+  .lead{font-size:22px;color:var(--soft)}
+  .badge{font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:700;letter-spacing:.05em;color:var(--gold);text-transform:uppercase}
+  .ex{background:#251e16;border-radius:8px;padding:10px 14px;margin:8px 0;font-style:italic;color:var(--soft)}
+  .cite{font-family:'JetBrains Mono',monospace;font-size:12px;padding:1px 7px;border-radius:5px;background:#251e16}
+  .v{color:var(--green);font-weight:700}.u{color:var(--gold);font-weight:700}.c{color:var(--red);font-weight:700}
+  table{width:100%;border-collapse:collapse;margin:14px 0;font-family:'JetBrains Mono',monospace;font-size:13px;table-layout:fixed}
+  th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top;word-break:break-word;overflow-wrap:anywhere}
+  th{color:var(--gold);text-transform:uppercase;font-size:11px}
+  pre{background:#251e16;border:1px solid var(--line);border-radius:8px;padding:12px 14px;overflow-x:auto;font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--soft)}
+  .warn{background:#2a1a14;border:1px solid #4a2c20;border-radius:10px;padding:13px 17px;margin:14px 0}
+  .good{background:#1a2417;border:1px solid #2f4327;border-radius:10px;padding:13px 17px;margin:14px 0}
+  .ba{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:10px 0}
+  .ba>div{border-radius:8px;padding:10px 13px;font-size:15px}
+  .bad{background:#2a1a14;border:1px solid #4a2c20}.goodc{background:#1a2417;border:1px solid #2f4327}
+  code{font-family:'JetBrains Mono',monospace;background:#251e16;padding:2px 6px;border-radius:5px;font-size:.82em;color:var(--gold);word-break:break-word}
+  footer{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--soft);border-top:1px solid var(--line);margin-top:60px;padding-top:18px}
+  @media(max-width:880px){nav.side{display:none}main{padding:28px 20px 80px;font-size:18px}h1{font-size:40px}.ba{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+<div class="layout">
+  <nav class="side">
+    <div class="brand">Authority Assets</div>
+    <div style="font-family:'Crimson Pro',serif;color:var(--soft);font-size:13px;margin:4px 0 16px">Documentation over creation · 17/25</div>
+    <a href="#why" class="active">Why this skill</a>
+    <a href="#document">Document, don't create</a>
+    <a href="#hormozi">The Hormozi test</a>
+    <a href="#density">Proof density</a>
+    <a href="#beats">The five beats</a>
+    <a href="#case">The case study</a>
+    <a href="#bootstrap">The free-work bootstrap</a>
+    <a href="#verify">Keeping it un-fakeable</a>
+  </nav>
+  <main>
+    <span class="badge">Authority Asset Creation · 17/25</span>
+    <h1>Authority Asset Creation</h1>
+    <p class="lead">The documented resource AI cannot replicate and competitors cannot copy — because they did not do the work. Real case, real failure, real proof, beside every claim.</p>
+
+    <section id="why">
+      <h2>Why this skill</h2>
+      <p>Type "write a definitive guide to moving a pet to Dubai" into any AI and you get a competent, complete, useless page — the same one every competitor generated from the same prompt, trained on the same averages. It ranks nowhere and earns no links, because nothing in it could only have come from someone who did the work.</p>
+      <div class="ex">"Every website says something different — I don't know who to trust." — the reader who has read ten generic guides and believes none of them.</div>
+      <div class="warn"><b>The governing principle is Hormozi's: documentation over creation.</b> You don't invent a guide — you document what actually happened, with proof beside every claim. Delivery becomes marketing.</div>
+    </section>
+
+    <section id="document">
+      <h2>Document, don't create</h2>
+      <p>The loop: do real work → document it with proof → surface the failures → publish → it attracts the next client → repeat. <span class="cite">F-07</span> The work comes first; documenting work that didn't happen is fabrication. <span class="cite">P-15</span></p>
+      <table>
+        <tr><th>Type</th><th>Length</th><th>Documents</th></tr>
+        <tr><td>1 · Case Study</td><td>1,500–3,000w</td><td>one real case, start to finish</td></tr>
+        <tr><td>2 · Definitive Guide</td><td>3,000–6,000w</td><td>the most complete resource on a topic</td></tr>
+        <tr><td>3 · Field Notes</td><td>800–1,500w monthly</td><td>real work as it happens — compounds</td></tr>
+      </table>
+    </section>
+
+    <section id="hormozi">
+      <h2>The Hormozi test</h2>
+      <p>One question decides whether an asset is authority or mush: <b>could a basic AI prompt reproduce this?</b> <span class="cite">P-13</span> You verify it by <b>actually running the prompt</b> and listing what your case has that the generic version can't.</p>
+      <div class="ba">
+        <div class="bad"><b class="c">The AI foil</b><br>"ensure all documentation is in order, including the rabies titer, to avoid your pet being held."</div>
+        <div class="goodc"><b class="v">The documented case</b><br>the C-019/C-003/C-010 citations · the no-official-price hedge (C-001) · the turnaround that wasn't real · the one-day-to-spare outcome</div>
+      </div>
+      <p>The AI can't produce the right column — it has no access to the sources, the failure, or the lived margin. <b>That gap is the asset.</b></p>
+    </section>
+
+    <section id="density">
+      <h2>Proof density</h2>
+      <p>"Authority" is countable: <b>≥1 verifiable proof item per 200 words</b> <span class="cite">M-13</span> — a C-ID citation, a named figure, a dated fact, a documented failure. Under that, it's prose an AI could generate; over it, it's mostly evidence. The count is run by regex, not eyeballed.</p>
+    </section>
+
+    <section id="beats">
+      <h2>The five beats</h2>
+      <p>A documented case is structured in five beats, the fourth being the one that matters most:</p>
+      <table>
+        <tr><th>Beat</th><th>Carries</th></tr>
+        <tr><td>1 · The fear</td><td>the named fear in real customer words</td></tr>
+        <tr><td>2 · What happened</td><td>the real situation, dated, specific</td></tr>
+        <tr><td>3 · The proof</td><td>documents + figures, each cited by C-ID</td></tr>
+        <tr><td>4 · The failure</td><td><span class="u">the surprise no AI can fabricate</span></td></tr>
+        <tr><td>5 · The outcome</td><td>what actually resulted, not a hypothetical</td></tr>
+      </table>
+    </section>
+
+    <section id="case">
+      <h2>The case study</h2>
+      <p>The real output — "The Titer That Nearly Cost a Dog Its Flight" (<code>data/case-study-airport-confiscation.md</code>), a composite documented case from real cited facts + real community-reported experiences. The proof density was counted by the engine's regex, not by hand:</p>
+      <pre>WORDS (Beats 1-5): 782
+C-ID citations: 13  (C-001, C-003, C-010, C-019)
+Named figures:  6   + documented failure (+1) = 20 items
+PROOF DENSITY: 5.12 per 200 words   (floor is 1)   -> PASS
+HORMOZI TEST: PASS  (5 specifics the generic AI foil cannot produce)</pre>
+      <div class="good"><b>The documented failure (Beat 4):</b> the lab's quoted titer turnaround was <b>not the real one</b>. The margin lived in the gap between the test date and the 90-day permit window (C-010); a document review four days out caught it; the re-test came back <b>with one day to spare</b>. A generic guide says "ensure your paperwork is valid" — it cannot know any of that.</div>
+    </section>
+
+    <section id="bootstrap">
+      <h2>The free-work bootstrap</h2>
+      <p>Where the cases come from before paying clients exist: do real work <b>in public</b> — a free audit, a free walk-through — document every step, publish it as a case study. <span class="cite">F-14</span> Each documented piece becomes an asset and attracts the next case. The loop runs itself.</p>
+    </section>
+
+    <section id="verify">
+      <h2>Keeping it un-fakeable</h2>
+      <p>The failure mode is an asset that <i>looks</i> authoritative but is dressed-up mush. Three defences:</p>
+      <ul>
+        <li><b>A real failure must be documented</b> — no surprise = a hypothetical = fails the Hormozi test.</li>
+        <li><b>Re-count proof density from the text</b> — the regex count must reproduce ≥1 per 200 words.</li>
+        <li><b>Re-run the Hormozi test for real</b> — generate the generic version; if it covers everything the asset says, the asset is mush.</li>
+      </ul>
+      <p>A missing failure or an asset a generic prompt reproduces is a <b>hard fail</b> — no density score rescues it.</p>
+    </section>
+
+    <footer>The Trust Engine · Authority Asset Creation · Study Manual · real output from the 2026-05-30 Dubai proof run (one documented case study, proof density 5.12/200w engine-counted, Hormozi test PASS, one documented failure). Document don't create · proof beside every claim · the failure is the asset · run the AI against it.</footer>
+  </main>
+</div>
+<script>
+  const bar=document.getElementById('bar');
+  addEventListener('scroll',()=>{const h=document.documentElement;bar.style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%';});
+  const links=[...document.querySelectorAll('nav.side a')];const secs=links.map(a=>document.querySelector(a.getAttribute('href')));
+  addEventListener('scroll',()=>{let i=0;for(let k=0;k<secs.length;k++){if(secs[k]&&secs[k].getBoundingClientRect().top<140)i=k;}links.forEach(l=>l.classList.remove('active'));if(links[i])links[i].classList.add('active');});
+</script>
+</body>
+</html>

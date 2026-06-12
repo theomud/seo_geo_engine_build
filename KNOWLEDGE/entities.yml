@@ -1,0 +1,38 @@
+# Reusable entity library
+
+business:
+  name:
+  services: []
+  locations: []
+  target_customers: []
+
+core_entities:
+  seo:
+    related:
+      - search intent
+      - topical authority
+      - internal links
+      - structured data
+      - page speed
+      - indexing
+  geo:
+    related:
+      - AI Overviews
+      - AI citations
+      - answer engines
+      - extractable passages
+      - corroborated facts
+      - entity coverage
+  content_quality:
+    related:
+      - usefulness
+      - evidence
+      - expertise
+      - trust
+      - readability
+      - conversion
+
+page_entities:
+  primary_entity:
+  secondary_entities: []
+  missing_entities: []

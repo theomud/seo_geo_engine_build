@@ -1,0 +1,52 @@
+url: /about/
+title: "Our Coffee — Northside Coffee Roasters"
+title_suffix: ""
+meta_description: "How Northside roasts: single-origin beans bought a sack at a time, roasted in small batches twice a week in Manchester. Meet the coffee behind the café."
+og_title: "Our coffee, and how we roast it"
+
+blocks:
+  - type: hero
+    eyebrow: "Our coffee"
+    heading: "We roast it ourselves, out the back."
+    subheading: "Single origins, small batches, twice a week. Here's how the coffee in your cup gets there."
+    ctas:
+      - { label: "See the menu", url: "/menu/", style: "btn-gold" }
+      - { label: "Subscribe to beans", url: "/#subscriptions", style: "btn-ghost" }
+    card:
+      heading: "The roastery"
+      rows:
+        - { label: "Roaster", value: "12kg drum" }
+        - { label: "Roast days", value: "Tuesday & Friday" }
+        - { label: "Origins", value: "12 on rotation" }
+      note: "Nothing sits on a shelf — we roast to what the café and subscriptions need."
+
+  - type: prose
+    eyebrow: "Since 2014"
+    heading: "One roaster, one neighbourhood."
+    paragraphs:
+      - "Northside started in a small unit off Mill Lane with a second-hand drum roaster and a simple idea: source good beans, roast them carefully, and pour them for the people next door."
+      - "A decade on, we've kept it small on purpose. We buy single-origin coffee a sack at a time from growers and importers we actually know, and we roast in batches we can taste through — not tonnes we can't."
+
+  - type: steps
+    variant: section--surface
+    eyebrow: "How we roast"
+    heading: "From green bean to your bag"
+    items:
+      - { title: "Source", text: "Single-origin green beans, bought a sack at a time from growers and importers we trust." }
+      - { title: "Profile", text: "We sample-roast and cup each new origin to find the roast that shows off its character." }
+      - { title: "Roast", text: "Small batches on the drum roaster, twice a week, logged so every batch tastes like the last." }
+      - { title: "Rest & bag", text: "Beans rest a few days to settle, then go straight to the café hopper, the shelf and subscriptions." }
+
+  - type: trust_bar
+    items:
+      - { num: "10 yrs", label: "roasting on the Northside" }
+      - { num: "Sack", label: "at a time — small by choice" }
+      - { num: "2×", label: "fresh roasts a week" }
+      - { label: "We know our growers" }
+
+  - type: cta
+    heading: "Taste the difference fresh makes."
+    body: "Grab a bag in the café, or have it delivered fortnightly."
+    ctas:
+      - { label: "Set up a subscription", url: "/#subscriptions", style: "btn-gold" }
+      - { label: "Visit the café", url: "/visit/", style: "btn-ghost" }

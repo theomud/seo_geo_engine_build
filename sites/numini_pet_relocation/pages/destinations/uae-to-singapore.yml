@@ -1,0 +1,150 @@
+title: "Pet Relocation Dubai to Singapore — Requirements & Pricing | PawRoute"
+title_suffix: ""
+meta_description: "Move your pet from Dubai to Singapore. Strict route: RNATT titer test, AVS import licence, a 90-day wait and 30 days quarantine. Transparent pricing from AED 18,000."
+og_title: "Moving your pet from Dubai to Singapore?"
+schema: service
+service:
+  name: Pet relocation from the UAE to Singapore
+  area_served: ["Singapore", "United Arab Emirates"]
+
+blocks:
+  - type: hero
+    eyebrow: "Route · UAE → Singapore"
+    heading: "Moving your pet to Singapore?"
+    subheading: >
+      Singapore is strict — close to Australia in difficulty. There's a titer test,
+      an import licence, a 90-day wait and quarantine on arrival. It's very doable,
+      but only if you start early and do every step in order.
+    ctas:
+      - { label: "See pricing", url: "#pricing", style: "btn-gold" }
+      - { label: "Plan my move", url: "#quote", style: "btn-ghost" }
+    card:
+      heading: "Dubai → Singapore at a glance"
+      rows:
+        - { label: "Timeline", value: "4–8 months" }
+        - { label: "Cost range", value: "AED 18,000–28,000" }
+        - { label: "Quarantine", value: "30 days at Sembawang" }
+        - { label: "Difficulty", value: "Hard" }
+      note: "The 90-day wait after the titer test is shorter than Australia's, but still the main driver of the timeline."
+
+  - type: key_facts
+    heading: "Quick answer"
+    answer: "Moving a pet from Dubai to Singapore takes about 4–8 months and costs roughly AED 18,000–28,000. It needs an RNATT rabies titre test (≥0.5 IU/ml), an AVS import licence, a 90-day wait after the titre passes, and 30 days of quarantine at the Sembawang facility on arrival."
+    stats:
+      - { label: "Timeline", value: "4–8 months" }
+      - { label: "Cost", value: "AED 18,000–28,000" }
+      - { label: "Wait after titre", value: "90 days" }
+      - { label: "Quarantine", value: "30 days (Sembawang)" }
+    verified: "June 2026"
+    source_authority: "Singapore AVS (NParks)"
+
+  - type: checklist
+    eyebrow: "What it takes"
+    heading: "The Singapore requirements"
+    body: "The headline steps below come from Singapore's Animal & Veterinary Service (AVS). We confirm the current detail for your pet and dates before you commit."
+    items:
+      - { title: "ISO microchip first", text: "15-digit chip, implanted before vaccination." }
+      - { title: "RNATT titer test", text: "Rabies Neutralising Antibody Titre Test — must read at least 0.5 IU/ml." }
+      - { title: "90-day wait", text: "After the titer passes — less strict than Australia's 180 days, but still months." }
+      - { title: "AVS import licence", text: "Required from Singapore's Animal & Veterinary Service before travel." }
+      - { title: "30-day quarantine", text: "On arrival, at the Sembawang quarantine facility." }
+
+  - type: steps
+    eyebrow: "The right order"
+    heading: "How the Dubai → Singapore move works"
+    items:
+      - { title: "Map the timeline first", text: "We work back from your move date and book the titer-test window." }
+      - { title: "Microchip + rabies vaccine", text: "Chip first, then vaccinate." }
+      - { title: "RNATT titer test", text: "At an approved lab. The 90-day wait begins when it passes." }
+      - { title: "AVS import licence + MOCCAE export", text: "The Singapore licence plus the UAE export paperwork." }
+      - { title: "Book crate & flight", text: "IATA crate and an approved airline route to Singapore." }
+      - { title: "Fly, quarantine, reunite", text: "30 days at Sembawang, then home to you." }
+
+  - type: pricing_tiers
+    id: pricing
+    eyebrow: "No hidden fees"
+    heading: "Dubai → Singapore pricing"
+    body: "Singapore sits above standard routes because of the titer test, the licence and quarantine. Transparent range now; full breakdown before you commit."
+    tiers:
+      - name: "Essential"
+        price: "AED 18,000"
+        unit: "from"
+        desc: "The full regulated move with quarantine booking handled."
+        includes:
+          - "RNATT coordination"
+          - "AVS licence + MOCCAE export"
+          - "IATA crate + cargo booking"
+          - "Quarantine booking & clearance"
+        excludes:
+          - "Transit updates"
+          - "24/7 support"
+      - name: "Standard"
+        price: "AED 23,000"
+        unit: "from"
+        featured: true
+        badge: "Most popular"
+        desc: "Everything handled with timeline management and updates."
+        includes:
+          - "Everything in Essential"
+          - "Full timeline management"
+          - "Transit updates + quarantine liaison"
+        excludes:
+          - "24/7 support"
+      - name: "Premium"
+        price: "AED 28,000"
+        unit: "from"
+        desc: "White-glove handling for a complex move."
+        includes:
+          - "Everything in Standard"
+          - "24/7 support line"
+          - "Insurance + contingency planning"
+    note: "Final price depends on your pet's size, airline route and quarantine fees. Every line shown before you decide."
+
+  - type: faq
+    heading: "Dubai → Singapore: your questions"
+    items:
+      - { q: "What's the RNATT test?", a: "The Rabies Neutralising Antibody Titre Test. Your pet's result must be at least 0.5 IU/ml, and it sets off a 90-day waiting period before travel." }
+      - { q: "How long is quarantine?", a: "30 days at the Sembawang facility. It's a government requirement." }
+      - { q: "Is Singapore as hard as Australia?", a: "Close. The 90-day wait is shorter than Australia's 180 days, but the licence, titer test and quarantine make it one of the strictest routes." }
+      - { q: "Can you guarantee the arrival date?", a: "No. Airline and quarantine slots change. We give you a realistic timeline and keep you informed, but we never guarantee a delivery date." }
+
+  - type: sources
+    eyebrow: "Don't take our word for it"
+    heading: "Official sources"
+    items:
+      - { authority: "Singapore AVS", title: "Importing dogs and cats", url: "https://avs.nparks.gov.sg/pets/importing-exporting-a-pet/import/dogs-and-cats/", note: "Licence, RNATT, quarantine" }
+      - { authority: "UAE MOCCAE", title: "Pet export & import permits", url: "https://www.moccae.gov.ae/en/services/import-permit-pets", note: "UAE export process" }
+      - { authority: "IATA", title: "Live Animals Regulations", url: "https://www.iata.org/en/programs/cargo/live-animals/", note: "Travel crate standards" }
+
+  - type: card_grid
+    variant: section--surface
+    eyebrow: "Related routes"
+    heading: "Comparing destinations?"
+    cards:
+      - { flag: "🇦🇺", title: "Dubai → Australia", meta: "Also strict · up to 6 months", url: "/destinations/uae-to-australia/", arrow: "View" }
+      - { flag: "🇬🇧", title: "Dubai → UK", meta: "4–8 weeks · no quarantine", url: "/destinations/uae-to-uk/", arrow: "View" }
+      - { flag: "🇮🇳", title: "Dubai → India", meta: "3–5 weeks", url: "/destinations/uae-to-india/", arrow: "View" }
+      - { flag: "🌍", title: "All destinations", meta: "Every route + pricing", url: "/destinations/", arrow: "See all" }
+
+  - type: related
+    label: "📖 Read the guide"
+    items:
+      - { title: "Dubai → Singapore: the licence, titre test and quarantine", url: "/blog/dubai-to-singapore-pet-quarantine/", note: "a licence-led process" }
+
+  - type: quote_form
+    id: quote
+    eyebrow: "Start early"
+    heading: "Plan your Singapore move"
+    body: "Send your move date and pet details and we'll map the sequence and the cost."
+    destinations: ["Singapore"]
+    points:
+      - "An honest read on your timeline"
+      - "Your RNATT and quarantine sequence"
+      - "A transparent total, broken down"
+
+  - type: cta
+    heading: "Singapore is strict. We know the steps."
+    body: "Start early and the route is straightforward. Let's plan it."
+    ctas:
+      - { label: "Get my quote", url: "#quote", style: "btn-gold" }
+      - { label: "See all destinations", url: "/destinations/", style: "btn-ghost" }
