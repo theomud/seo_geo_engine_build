@@ -44,6 +44,15 @@
       ]
     },
     {
+      "type": "callout",
+      "variant": "trust",
+      "heading": "How we verified this guide",
+      "body": "Every regulatory requirement on this page is checked against its official source and dated — India's AQCS for the import permit / NOC, UAE MOCCAE for the export side, and IATA for crate and cargo standards. We never take rules from blogs, forums, or AI. Where a detail still needs confirming for your specific pet or route, we flag it rather than guess.",
+      "verified_against": ["India AQCS", "UAE MOCCAE", "IATA"],
+      "last_verified": "June 2026",
+      "sources_note": "Full official-source links are listed at the foot of this guide."
+    },
+    {
       "type": "prose",
       "eyebrow": "Where the route is won or lost",
       "heading": "The documentation that matters",

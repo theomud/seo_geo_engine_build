@@ -44,6 +44,15 @@
       ]
     },
     {
+      "type": "callout",
+      "variant": "trust",
+      "heading": "How we verified this guide",
+      "body": "Every regulatory requirement on this page — the EU framework and titre rule from the European Commission, the UAE export side from MOCCAE, and the crate and cargo standards from IATA — is checked against its official source and dated. We never take rules from blogs, forums or AI. Where a detail still needs confirming for your specific pet or route — most of all the UAE's current EU listing status, which decides the titre test — we flag it for you rather than guess.",
+      "verified_against": ["European Commission", "UAE MOCCAE", "IATA"],
+      "last_verified": "June 2026",
+      "sources_note": "Full official-source links are listed at the foot of this guide."
+    },
+    {
       "type": "prose",
       "eyebrow": "What's the same everywhere in the EU",
       "heading": "The EU framework",

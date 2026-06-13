@@ -44,6 +44,15 @@
       ]
     },
     {
+      "type": "callout",
+      "variant": "trust",
+      "heading": "How we verified this guide",
+      "body": "Every regulatory requirement on this page — the tapeworm window, the rabies and microchip rules, the no-quarantine clearance and the banned-breed list — is checked against UK GOV.UK, and the UAE export side against UAE MOCCAE, then dated. We never take rules from blogs, forums, or AI. Where a detail still needs confirming for your specific pet or route — your exact flight date, your vet's APHA approval, or a live cost — we flag it for you to confirm rather than guess.",
+      "verified_against": ["UK GOV.UK", "UAE MOCCAE"],
+      "last_verified": "June 2026",
+      "sources_note": "Full official-source links are listed at the foot of this guide."
+    },
+    {
       "type": "prose",
       "eyebrow": "The detail that matters most",
       "heading": "The tapeworm window, exactly",

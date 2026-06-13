@@ -55,6 +55,20 @@
       ]
     },
     {
+      "type": "callout",
+      "variant": "trust",
+      "heading": "How we verified this guide",
+      "body": "Every regulatory requirement on this page is checked against its official source — South Africa's DALRRD for the export side, UAE MOCCAE for the import permit and pet rules, and Emirates and IATA for the flight and crate side — and dated. We never take rules from blogs, forums, or AI. Where a detail still needs confirming for your specific pet or route, we flag it rather than guess.",
+      "verified_against": [
+        "South Africa DALRRD",
+        "UAE MOCCAE",
+        "Emirates",
+        "IATA"
+      ],
+      "last_verified": "June 2026",
+      "sources_note": "Full official-source links are listed at the foot of this guide."
+    },
+    {
       "type": "table",
       "heading": "UAE requirements at a glance (verified)",
       "columns": [

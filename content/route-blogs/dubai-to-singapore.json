@@ -44,6 +44,15 @@
       ]
     },
     {
+      "type": "callout",
+      "variant": "trust",
+      "heading": "How we verified this guide",
+      "body": "Every regulatory requirement on this page is checked against its official source and dated — Singapore's Animal & Veterinary Service (AVS, NParks) for the import licence, titre test and quarantine; UAE MOCCAE for the export side; and IATA for crate and cargo standards. We never take rules from blogs, forums or AI. Where a detail still needs confirming for your specific pet or route, we flag it rather than guess.",
+      "verified_against": ["Singapore AVS (NParks)", "UAE MOCCAE", "IATA"],
+      "last_verified": "June 2026",
+      "sources_note": "Full official-source links are listed at the foot of this guide."
+    },
+    {
       "type": "flow",
       "heading": "The process, step by step",
       "body": "Singapore is licence-led — the permit and quarantine slot anchor everything.",

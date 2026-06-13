@@ -56,6 +56,20 @@
       ]
     },
     {
+      "type": "callout",
+      "variant": "trust",
+      "heading": "How we verified this guide",
+      "body": "Every regulatory requirement on this page is checked against its official source — GOV.UK for the UK export side, MOCCAE for the UAE import rules, and Emirates and IATA for how your pet flies — and dated as of the verification below. We never take rules from blogs, forums, or AI. Where a detail still needs confirming for your specific pet or route — such as your dog's breed against the UAE restricted list — we flag it rather than guess.",
+      "verified_against": [
+        "UK GOV.UK",
+        "UAE MOCCAE",
+        "Emirates",
+        "IATA"
+      ],
+      "last_verified": "June 2026",
+      "sources_note": "Full official-source links are listed at the foot of this guide."
+    },
+    {
       "type": "table",
       "heading": "UAE requirements at a glance (verified)",
       "columns": [

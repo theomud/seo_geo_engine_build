@@ -44,6 +44,15 @@
       ]
     },
     {
+      "type": "callout",
+      "variant": "trust",
+      "heading": "How we verified this guide",
+      "body": "Every regulatory requirement on this page — the rabies titre rule, the 180-day wait, the import permit and quarantine — is checked against its official source (Australia DAFF for the import and biosecurity rules, UAE MOCCAE for the export side) and dated. We never take rules from blogs, forums, or AI. Where a detail still needs confirming for your specific pet or route, we flag it rather than guess.",
+      "verified_against": ["Australia DAFF", "UAE MOCCAE"],
+      "last_verified": "June 2026",
+      "sources_note": "Full official-source links are listed at the foot of this guide."
+    },
+    {
       "type": "flow",
       "heading": "The six-month timeline",
       "body": "Each step gates the next — which is why starting early is the whole game.",
