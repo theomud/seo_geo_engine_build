@@ -8,6 +8,11 @@ from the route-blog YAMLs, + 8 inbound (X → Dubai) from the content JSONs. Eve
   - enriched with a `method` block (structure logic, GEO/SEO rationale, how+why we audit)
   - carries its `sourcing` block (verified-100% vs to-verify vs not-sure)
 Content + images only — NOT live pages.
+
+Workflow:
+  1. Screenshot every official source first via `py audit/verify_claims.py audit/claims/<x>.json`
+  2. Run the page audit next via `py audit/audit.py <page-or-dist> [--site]`
+  3. Engineer the final de-branded JSON output from the library with `py build_blogs_for_david.py`
 """
 import json, re, glob
 from pathlib import Path

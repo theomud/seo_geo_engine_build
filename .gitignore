@@ -26,3 +26,6 @@ desktop.ini
 
 # === graphify regenerable AST cache (keep graph.json / GRAPH_REPORT.md) ===
 graphify-out/cache/
+
+# Reverse-engineering screenshot dataset (generated, large binaries)
+content/reverse-eng-data/

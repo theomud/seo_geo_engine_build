@@ -173,6 +173,12 @@ was applied — nothing else. See `SOURCING-METHOD.md`.
 ---
 
 ## 5. How to run it
+
+Recommended pipeline:
+  1. Screenshot every official-source claim first with `audit/verify_claims.py`
+  2. Audit the page quality next with `audit/audit.py`
+  3. Engineer the final output from the library with `build_blogs_for_david.py`
+
 ```
 py engine/build.py sites/numini_pet_relocation [--serve]  # render Numini site (primary)
 py engine/build.py sites/pawroute [--serve]               # render PawRoute brand build

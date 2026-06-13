@@ -195,6 +195,20 @@ The Workflow tool supports per-agent model override for exactly this.
 
 ---
 
+## Final objective
+
+**Do not copy articles. Extract systems.** The purpose of every analysis is to discover the
+**repeatable mechanisms** that reliably create:
+
+- **Rankings** · **Citations** · **Trust** · **Leads** · **Authority**
+
+The output is always **reusable frameworks, not article summaries.** A breakdown that ends with "here
+is what this article says" has failed; a breakdown that ends with "here is the transferable mechanism,
+and here is how to deploy it on our content" has succeeded. The article is disposable; the system is
+the asset.
+
+---
+
 ## How this connects to what already exists
 
 - **Output side** is already built: `content-os.md` (the universal content formula + DNA blend),
