@@ -7,6 +7,37 @@
 > plus one genuine one-skill-two-jobs case (`marketingskills/image`).
 >
 > **Fix-pass 2 completed 2026-06-12 (commit 8aa9900) — all 8 flags resolved.**
+>
+> **7 new skills added 2026-06-13 (commit 21f3457) — built to spec, conform on creation.**
+
+## New skills 2026-06-13 — book-extraction pack (7 skills)
+
+Seven skills authored directly to the 5-part Anatomy from the six ingested books
+(`17-TEMPLATES/cheatsheets/books/`). Built conformant — not retrofitted — so no fix-pass needed.
+
+| Skill | Source book | Face <1k | 7-section spine | Dial | Real example | Known gaps |
+|-------|-------------|:-:|:-:|------|:-:|:-:|
+| `marketingskills/offer-architecture` | Hormozi, $100M Offers | ✅ | ✅ | MIXED | ✅ PawRoute | ✅ |
+| `marketingskills/money-models` | Hormozi, $100M Money Models | ✅ | ✅ | MIXED | ✅ PawRoute | ✅ |
+| `marketingskills/bfd-brief` | Bly / Masterson | ✅ | ✅ | HIGH | ✅ PawRoute + Bly IT | ✅ |
+| `marketingskills/headline-scoring` | Bly, Copywriter's Handbook | ✅ | ✅ | MIXED | ✅ PawRoute walk-through | ✅ |
+| `marketingskills/motivating-sequence` | Bly, Copywriter's Handbook | ✅ | ✅ | MIXED | ✅ PawRoute service page | ✅ |
+| `marketingskills/pillar-strategy` | Starak, Blog Profits Blueprint | ✅ | ✅ | MIXED | ✅ PawRoute 6-pillar map | ✅ |
+| `marketingskills/blog-taxonomy` | Hostinger/Surfer, Blog Writing | ✅ | ✅ | HIGH | ✅ PawRoute classification | ✅ |
+
+**Conformance checks (all 7):**
+- **Face <1,000 chars:** ✅ all pass (range ~590–810). Each Face has when-to-load + trigger phrases + sibling defer-note.
+- **File <500 lines:** ✅ all pass (range 269–387). No Memory-extraction needed yet.
+- **7-section spine in order:** ✅ How-to-use → North Star → Freedom Dial → Before Starting → core → Output Format → Anti-patterns → Real examples → Self-check → Known gaps → Related Skills.
+- **Freedom Dial set correctly:** ✅ — judgment skills (`bfd-brief`, `blog-taxonomy`) are HIGH; the scoring/sequencing skills are MIXED (LOW on the mechanical part: Value Equation, 4 U's rubric, 30-day math, step order).
+- **Real examples concrete:** ✅ all use the PawRoute/Maya pet-relocation domain with worked input/output (not abstract description).
+- **Cross-links resolve:** ✅ every Related Skills pointer targets an existing sibling in the pack.
+
+**Also upgraded:** `marketingskills/programmatic-seo` v2.0 → v2.1 — added pSEO 2.0 (JSON-schema/AI),
+batch-publishing strategy, tech-stacks table, 4 case studies (Zapier/Flyhomes/KrispCall/Jake Ward),
+the "useful-without-search-engines" test, and the no-feedback-loop anti-pattern. Spine preserved; still conformant.
+
+> **Pack total after this addition: 37 SKILL.md files** (30 original conformed + 7 new).
 
 ## Fix-pass 2 — all 8 flags resolved
 
