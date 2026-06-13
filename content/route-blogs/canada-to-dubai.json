@@ -95,9 +95,52 @@
     },
     {
       "type": "prose",
+      "heading": "Moving from Canada to Dubai?",
+      "paragraphs": [
+        "If you'd rather not project-manage the certificate timing yourself, we can check your route end-to-end. Get my Canada → Dubai quote: /#quote"
+      ]
+    },
+    {
+      "type": "table",
+      "heading": "Indicative cost",
+      "columns": [
+        "Item",
+        "Fee"
+      ],
+      "rows": [
+        [
+          "MOCCAE import permit",
+          "AED 200/head"
+        ],
+        [
+          "Release — dog",
+          "AED 500/dog"
+        ],
+        [
+          "Release — cat",
+          "AED 250/cat"
+        ]
+      ],
+      "note": "Indicative estimate — confirm with a live quote; not an official figure."
+    },
+    {
+      "type": "prose",
       "heading": "The UAE side — the import permit",
       "paragraphs": [
         "The UAE requires a MOCCAE import permit (before travel), the microchip and a valid rabies vaccination; compliant pets aren't quarantined. Confirm permit timing and your breed against the UAE restricted list — full detail on the Moving to Dubai hub."
+      ]
+    },
+    {
+      "type": "prose",
+      "heading": "Your documents, in order",
+      "paragraphs": [
+        "Working through the requirements in the order they actually happen keeps the dates lined up:",
+        "1. Microchip — a permanent ISO chip, in place first so its number can be carried onto every later document.",
+        "2. Rabies vaccination — given at 12 weeks or older; for a first or lapsed dose, allow at least 21 days before travel.",
+        "3. Rabies titre — only if you're travelling from a high-risk origin (≥0.5 IU/ml, valid 365 days); skip this step otherwise.",
+        "4. Export health certificate — the CFIA-aligned certificate, with the microchip number and rabies dates matching exactly.",
+        "5. MOCCAE import permit — arranged before travel and valid 90 days.",
+        "6. Flight booking — long-haul, usually as manifest cargo on Emirates."
       ]
     }
   ],

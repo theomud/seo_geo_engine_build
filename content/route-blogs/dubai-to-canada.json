@@ -19,7 +19,14 @@
     "image_alt": "A pet ready to travel from Dubai to Canada"
   },
   "byline": "By our relocation specialists · 9 June 2026 · reviewed by our IPATA-certified specialists",
-  "key_facts": {},
+  "key_facts": {
+    "answer": "Moving a pet from Dubai to Canada means meeting the CFIA import requirements — for dogs the central document is a valid rabies vaccination certificate matched to the pet's microchip, plus the standard UAE export documents. There is no quarantine; the real risk is an inexact certificate flagged at the CFIA inspection on arrival.",
+    "stats": [
+      { "label": "Quarantine", "value": "None — CFIA inspection on arrival instead" },
+      { "label": "Typical cost", "value": "Roughly AED 14,000–20,000 (an estimate)" },
+      { "label": "Typical timeline", "value": "About 4–6 weeks" }
+    ]
+  },
   "takeaways": [
     "Meet the <strong>CFIA import requirements</strong>; for dogs the key document is a <strong>valid rabies vaccination certificate</strong>.",
     "<strong>No quarantine</strong> — the risk is an inexact certificate, not a holding period.",
@@ -43,6 +50,34 @@
       "paragraphs": [
         "The Canadian Food Inspection Agency (CFIA) sets the import requirements, and an inspection happens on arrival. For dogs from the UAE, the central requirement is a valid rabies vaccination certificate that matches your pet's microchip and shows the right dates and vet details.",
         "Because requirements vary by pet type and by whether the move is personal or commercial, confirm your exact category with CFIA before booking — that one check prevents almost every Canada-route problem."
+      ]
+    },
+    {
+      "type": "prose",
+      "heading": "Quick route check",
+      "paragraphs": [
+        "Want the cost and process laid out for your exact pet and category? <a href=\"/destinations/uae-to-canada/\">See the Dubai → Canada cost & process</a> — it's the fastest way to know what your move involves before you book."
+      ]
+    },
+    {
+      "type": "table",
+      "heading": "Indicative cost",
+      "note": "Indicative estimate — confirm with a live quote; not an official figure.",
+      "columns": ["Item", "Indicative range"],
+      "rows": [
+        ["Dubai → Canada pet move (size- and airline-dependent)", "AED 14,000–20,000"],
+        ["Typical timeline", "About 4–6 weeks"]
+      ]
+    },
+    {
+      "type": "prose",
+      "heading": "Your documents, in order",
+      "paragraphs": [
+        "Sequenced chronologically, the requirements already named for this route fall into a clear order:",
+        "1. <strong>ISO microchip</strong> — implanted first, because it ties every later record to your pet.",
+        "2. <strong>Rabies vaccination certificate</strong> — recorded after the microchip, with dates, the microchip number and vet details all exact.",
+        "3. <strong>Veterinary health certificate</strong> — the standard UAE export document from the origin's competent authority.",
+        "4. <strong>UAE export permit / booking</strong> — arrange the export side and flight, then arrive for the CFIA import inspection in Canada."
       ]
     }
   ],

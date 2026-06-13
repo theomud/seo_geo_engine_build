@@ -19,12 +19,19 @@
     "image_alt": "A pet ready to travel from Dubai to Singapore"
   },
   "byline": "By our relocation specialists · 9 June 2026 · reviewed by our IPATA-certified specialists",
-  "key_facts": {},
+  "key_facts": {
+    "answer": "To move a pet from Dubai to Singapore you need an import licence from Singapore's Animal & Veterinary Service (AVS), an ISO microchip, rabies vaccination and a rabies titre test, plus a quarantine stay on arrival for pets from the UAE's risk category. It typically costs AED 18,000–28,000 and runs several months end to end, because the titre test and quarantine booking set the pace.",
+    "stats": [
+      { "label": "Typical cost", "value": "AED 18,000–28,000" },
+      { "label": "Titre test results", "value": "Take weeks" },
+      { "label": "Quarantine on arrival", "value": "Yes (Sembawang), book the slot ahead" }
+    ]
+  },
   "takeaways": [
     "An <strong>AVS import licence</strong> is mandatory and time-limited — apply in the correct window.",
     "A <strong>rabies titre test</strong> is required; results take weeks, so book early.",
     "Expect a <strong>quarantine stay</strong> on arrival (the Sembawang facility) — book the slot ahead.",
-    "Typical cost: <strong>AED 18,000–28,000</strong>, several months end to end.",
+    "Typical cost: <strong>AED 18,000–28,000</strong> (an estimate), roughly several months end to end.",
     "Singapore restricts certain breeds — confirm yours before booking."
   ],
   "sections": [
@@ -49,12 +56,40 @@
       ]
     },
     {
+      "type": "table",
+      "heading": "Indicative cost",
+      "columns": ["Item", "Indicative figure"],
+      "rows": [
+        ["Dubai → Singapore, end to end", "AED 18,000–28,000"]
+      ],
+      "note": "Indicative estimate — confirm with a live quote; not an official figure."
+    },
+    {
+      "type": "prose",
+      "heading": "Get matched to your route",
+      "paragraphs": [
+        "Want this sequenced for your pet and travel dates? <a href=\"/destinations/uae-to-singapore/\">See the Dubai → Singapore cost & process</a> — the titre test, AVS licence and quarantine slot lined up in the right order."
+      ]
+    },
+    {
       "type": "prose",
       "eyebrow": "Why it isn't quick",
       "heading": "Why the timeline runs long",
       "paragraphs": [
         "Two things stretch the Singapore timeline: the <strong>titre test</strong>, whose lab results take weeks, and the <strong>quarantine slot</strong>, which must be reserved in advance and can be limited. Neither can be rushed at the last minute.",
         "Because the licence is time-limited and tied to your travel window, the sequence has to be planned backwards from the flight — get that wrong and the licence can lapse before you fly."
+      ]
+    },
+    {
+      "type": "prose",
+      "heading": "Your documents, in order",
+      "body": "The Singapore route in chronological sequence — each step gates the next, so work top to bottom:",
+      "steps": [
+        "ISO microchip",
+        "Rabies vaccination",
+        "Rabies titre test (results take weeks)",
+        "AVS import licence (time-limited — apply in the correct window)",
+        "Quarantine slot booking + flight"
       ]
     }
   ],
@@ -78,7 +113,7 @@
     },
     {
       "q": "How much does Dubai → Singapore cost?",
-      "a": "Typically AED 18,000–28,000, depending on your pet's size, the airline and quarantine fees."
+      "a": "Typically AED 18,000–28,000 as an estimate, depending on your pet's size, the airline and quarantine fees — confirm with a live quote."
     },
     {
       "q": "What's the first thing I should do?",

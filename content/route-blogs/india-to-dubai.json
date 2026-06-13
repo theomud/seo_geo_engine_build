@@ -51,7 +51,7 @@
       "type": "prose",
       "heading": "The India side — the AQCS NOC",
       "paragraphs": [
-        "Exporting a pet from India runs through the Animal Quarantine & Certification Service (AQCS), which issues the export NOC, alongside your pet's microchip and rabies records. The NOC has its own lead time — confirm the current AQCS process before booking."
+        "Exporting a pet from India runs through the Animal Quarantine & Certification Service (AQCS), which issues the export NOC, alongside your pet's microchip and rabies records. The NOC has its own lead time — typically allow for it as an estimate and confirm the current AQCS process before booking."
       ]
     },
     {
@@ -92,6 +92,43 @@
         ]
       ],
       "note": "Verified against MOCCAE (June 2026). Restricted breeds under UAE Federal Law 22/2016 include Pit Bull, American Staffordshire Terrier, Fila Brasileiro, Dogo Argentino and Mastiff types — confirm your breed."
+    },
+    {
+      "type": "table",
+      "heading": "Indicative cost",
+      "columns": [
+        "Line item",
+        "Fee"
+      ],
+      "rows": [
+        [
+          "MOCCAE import permit",
+          "AED 200/head"
+        ],
+        [
+          "Release — dog",
+          "AED 500/dog"
+        ],
+        [
+          "Release — cat",
+          "AED 250/cat"
+        ]
+      ],
+      "note": "Indicative estimate — confirm with a live quote; not an official figure."
+    },
+    {
+      "type": "prose",
+      "heading": "Your documents, in order",
+      "paragraphs": [
+        "Sequence the requirements above chronologically so nothing blocks the next step: 1) microchip (a permanent ISO chip implanted first, so every later record carries the same number); 2) rabies vaccination at ≥12 weeks, ≥21 days before travel for a first or lapsed dose; 3) rabies titre — only if you're exporting from a high-risk origin (≥0.5 IU/ml, valid 365 days); 4) the certified veterinary health certificate with the chip number matching; 5) the AQCS export NOC on the India side and the MOCCAE import permit on the UAE side (valid 90 days), both arranged before travel; 6) the flight booking, set around the paperwork rather than the other way round."
+      ]
+    },
+    {
+      "type": "prose",
+      "heading": "Quick route",
+      "paragraphs": [
+        "Want both permits sequenced for your dates? Get my India → Dubai quote at /#quote — it's the fastest way to check your timeline before you book."
+      ]
     },
     {
       "type": "prose",

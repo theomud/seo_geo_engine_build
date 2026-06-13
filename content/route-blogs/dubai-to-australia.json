@@ -19,7 +19,14 @@
     "image_alt": "A pet ready to travel from Dubai to Australia"
   },
   "byline": "By our relocation specialists · 9 June 2026 · reviewed by our IPATA-certified specialists",
-  "key_facts": {},
+  "key_facts": {
+    "answer": "Moving a pet from Dubai to Australia takes around six months and costs roughly AED 25,000–35,000+ — not because Australia is far, but because of three non-negotiable steps: a rabies titre (RNAT) test, a 180-day wait after it, and mandatory government quarantine on arrival. There is no shortcut, so the single most important decision is starting the titre test as early as possible.",
+    "stats": [
+      { "label": "End-to-end timeline", "value": "~6 months" },
+      { "label": "Waiting period after the rabies titre test", "value": "180 days" },
+      { "label": "Typical cost", "value": "AED 25,000–35,000+" }
+    ]
+  },
   "takeaways": [
     "Plan for <strong>~6 months</strong> end to end — Australia is timeline-driven, not distance-driven.",
     "A <strong>rabies titre (RNAT) test</strong> is required, followed by a <strong>180-day waiting period</strong>.",
@@ -51,11 +58,41 @@
     },
     {
       "type": "prose",
+      "heading": "Map your six-month timeline to your dates",
+      "paragraphs": [
+        "Working out where the 180-day clock lands for your move? You can <a href=\"/destinations/uae-to-australia/\">see the full Dubai → Australia cost &amp; process</a> and we'll map the timeline to your dates."
+      ]
+    },
+    {
+      "type": "prose",
       "eyebrow": "Where the money goes",
       "heading": "Why Australia costs more",
       "paragraphs": [
-        "The higher cost isn't the airfare — it's the extra steps. The titre test, the import permit, and the mandatory quarantine stay all add fees that other routes simply don't have, which is why Australia runs AED 25,000–35,000+ versus AED 12,000–18,000 for the UK.",
+        "The higher cost isn't the airfare — it's the extra steps. The titre test, the import permit, and the mandatory quarantine stay all add fees that other routes simply don't have, which is why Australia runs roughly AED 25,000–35,000+ versus an estimated AED 12,000–18,000 for the UK.",
         "Because the 180-day clock can't be compressed, an attempt to rush usually just adds boarding costs while you wait. Time spent planning early is the cheapest part of the whole move."
+      ]
+    },
+    {
+      "type": "table",
+      "heading": "Indicative cost",
+      "columns": ["Route", "Indicative cost (AED)"],
+      "rows": [
+        ["Dubai → Australia", "25,000–35,000+"],
+        ["Dubai → UK (for comparison)", "12,000–18,000"]
+      ],
+      "note": "Indicative estimate — confirm with a live quote; not an official figure."
+    },
+    {
+      "type": "prose",
+      "heading": "Your documents, in order",
+      "paragraphs": [
+        "Here is the same set of requirements from the timeline above, re-sequenced into the order you actually complete them:",
+        "1. <strong>ISO microchip</strong> — implanted first, because every later record is tied to the chip number.",
+        "2. <strong>Rabies vaccination</strong> — given after the microchip.",
+        "3. <strong>Rabies titre (RNAT) blood test</strong> — booked as early as possible; it starts the clock.",
+        "4. <strong>180-day waiting period</strong> — begins from the titre test and can't be shortened.",
+        "5. <strong>Australian import permit</strong> — applied for during the wait.",
+        "6. <strong>Flight + government quarantine booking</strong> — arranged last, once the permit and dates line up."
       ]
     }
   ],
@@ -71,7 +108,7 @@
   "faqs": [
     {
       "q": "Why is Australia so much more expensive?",
-      "a": "The rabies titre test, the import permit and the mandatory quarantine all add cost and months of time. It's the rules, not the distance, that make it AED 25,000–35,000+."
+      "a": "The rabies titre test, the import permit and the mandatory quarantine all add cost and months of time. It's the rules, not the distance, that make it roughly AED 25,000–35,000+ (an estimate — confirm with a live quote)."
     },
     {
       "q": "How long does the whole process take?",

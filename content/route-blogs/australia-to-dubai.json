@@ -93,6 +93,43 @@
       "note": "Verified against MOCCAE (June 2026). Restricted breeds under UAE Federal Law 22/2016 include Pit Bull, American Staffordshire Terrier, Fila Brasileiro, Dogo Argentino and Mastiff types — confirm your breed."
     },
     {
+      "type": "table",
+      "heading": "Indicative cost",
+      "columns": [
+        "Line item",
+        "Fee"
+      ],
+      "rows": [
+        [
+          "MOCCAE import permit",
+          "AED 200/head"
+        ],
+        [
+          "Release — dog",
+          "AED 500/dog"
+        ],
+        [
+          "Release — cat",
+          "AED 250/cat"
+        ]
+      ],
+      "note": "Indicative estimate — confirm with a live quote; not an official figure."
+    },
+    {
+      "type": "prose",
+      "heading": "A quick word before you go further",
+      "paragraphs": [
+        "If you'd rather not piece this together yourself, we can confirm the light export side and handle the MOCCAE permit for you — get my Australia → Dubai quote: /#quote"
+      ]
+    },
+    {
+      "type": "prose",
+      "heading": "Your documents, in order",
+      "paragraphs": [
+        "Done in the right sequence, the timeline takes care of itself. Work through it in this order: 1) Microchip — a permanent ISO chip, fitted first so its number can be recorded on everything that follows. 2) Rabies — vaccinate at ≥12 weeks of age, and at least 21 days before travel for a first or lapsed dose. 3) Rabies titre — only if your origin is treated as high-risk (Australia is rabies-free, so this is normally not required on this route). 4) Export health certificate — issued by Australia's agriculture department; confirm its current process before booking. 5) MOCCAE import permit — arranged before travel and valid 90 days. 6) Booking — long-haul to Dubai, usually as Emirates manifest cargo."
+      ]
+    },
+    {
       "type": "prose",
       "heading": "The UAE side — the import permit",
       "paragraphs": [

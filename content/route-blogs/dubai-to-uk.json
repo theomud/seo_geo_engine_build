@@ -19,7 +19,14 @@
     "image_alt": "A dog ready to travel from Dubai to the UK"
   },
   "byline": "By our relocation specialists · 9 June 2026 · reviewed by our IPATA-certified specialists",
-  "key_facts": {},
+  "key_facts": {
+    "answer": "To bring a dog into the UK from Dubai, a vet must treat it for tapeworm no less than 24 hours and no more than 120 hours (5 days) before arrival — not earlier, not later. Get the ISO microchip, rabies vaccine (at least 21 days before travel), an APHA-approved health certificate and that tapeworm window right, and there is no quarantine: your dog clears and comes home the same day. Cats are exempt from the tapeworm rule.",
+    "stats": [
+      { "label": "Tapeworm treatment window (dogs)", "value": "24–120 hours before arrival" },
+      { "label": "Rabies vaccine lead time", "value": "at least 21 days before travel" },
+      { "label": "Quarantine if compliant", "value": "None" }
+    ]
+  },
   "takeaways": [
     "Tapeworm treatment for dogs: <strong>24–120 hours before arrival</strong>. Cats don't need it.",
     "The UK health certificate must come from an <strong>APHA-approved</strong> vet — most Dubai vets aren't on that list.",
@@ -47,11 +54,44 @@
     },
     {
       "type": "prose",
+      "heading": "Next step",
+      "paragraphs": [
+        "If you'd rather not plan the window backwards from your flight yourself, the <a href=\"/destinations/uae-to-uk/\">Dubai → UK cost &amp; process page</a> lays out the full timeline and the fees so you can see what your move involves."
+      ]
+    },
+    {
+      "type": "prose",
       "eyebrow": "The other thing people miss",
       "heading": "Why your normal Dubai vet may not work",
       "paragraphs": [
         "The UK health certificate for a pet arriving from the UAE must be issued by an <strong>APHA-approved</strong> (official) veterinarian. Many Dubai clinics aren't on that list, and a certificate from the wrong vet is rejected at the UK border.",
         "Confirm your vet's approval <strong>before</strong> you book any appointment. This one check — vet approval plus the tapeworm timing — is what separates a smooth arrival from an expensive hold."
+      ]
+    },
+    {
+      "type": "prose",
+      "eyebrow": "Get the sequence right",
+      "heading": "Your documents, in order",
+      "paragraphs": [
+        "The steps only work in one order, because each one depends on the last. Sequenced for a Dubai → UK move, that is:",
+        "<strong>1. ISO microchip</strong> — implanted first, so every later record ties to the same chip number.",
+        "<strong>2. Rabies vaccine</strong> — given after the chip, and <strong>at least 21 days before travel</strong>.",
+        "<strong>3. Rabies titre test — not required.</strong> The UAE is a 'listed' country for the UK, so there's no titre test and no three-month wait.",
+        "<strong>4. UK health certificate</strong> — issued by an <strong>APHA-approved</strong> vet, close to travel.",
+        "<strong>5. UAE export permit</strong> — the MOCCAE export permit, valid 30 days from issue.",
+        "<strong>6. Flight booking &amp; tapeworm window</strong> — booked so the tapeworm treatment lands inside the <strong>24–120 hour</strong> window before arrival (dogs only)."
+      ]
+    },
+    {
+      "type": "table",
+      "heading": "Indicative cost",
+      "note": "Indicative estimate — confirm with a live quote; not an official figure.",
+      "columns": ["Line item", "Indicative figure (AED)"],
+      "rows": [
+        ["UAE export permit (MOCCAE)", "—"],
+        ["Release fee, per dog (UAE side)", "500"],
+        ["Release fee, per cat (UAE side)", "250"],
+        ["Typical cost of one mistimed move (rebooked flight + fresh certificate + boarding)", "roughly 6,000"]
       ]
     }
   ],

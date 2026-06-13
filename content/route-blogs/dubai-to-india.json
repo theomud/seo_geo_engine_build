@@ -19,7 +19,14 @@
     "image_alt": "A pet ready to travel from Dubai to India"
   },
   "byline": "By our relocation specialists · 9 June 2026 · reviewed by our IPATA-certified specialists",
-  "key_facts": {},
+  "key_facts": {
+    "answer": "Moving a pet from Dubai to India needs an AQCS import permit (NOC) from India's Animal Quarantine and Certification Service, plus an ISO microchip and valid rabies records and the standard UAE export documents. Returning residents must document their time abroad, and India limits how many pets a passenger can import.",
+    "stats": [
+      { "label": "Typical cost Dubai → India", "value": "roughly AED 8,000–14,000" },
+      { "label": "Typical timeline", "value": "about 3–5 weeks" },
+      { "label": "Pivotal document", "value": "AQCS import permit / NOC" }
+    ]
+  },
   "takeaways": [
     "The pivotal document is the <strong>AQCS import permit / NOC</strong> — without it, your pet can be refused or held.",
     "Core records: <strong>ISO microchip</strong> and a valid <strong>rabies vaccination</strong>.",
@@ -43,6 +50,36 @@
       "paragraphs": [
         "India's process hinges on the import permit / NOC from the AQCS. Around it sit the microchip, the rabies record, and — for returning residents — evidence of your time abroad, which can affect what you're allowed to bring.",
         "Because the specifics (permit timing, pet limits, any titre requirement) are set by the authorities and can change, confirm the current AQCS requirements before committing to a date. Getting the NOC right is the whole game on this route."
+      ]
+    },
+    {
+      "type": "prose",
+      "heading": "Want this handled for you?",
+      "paragraphs": [
+        "Prefer not to manage the AQCS NOC and timeline yourself? <a href=\"/destinations/uae-to-india/\">See the full Dubai → India cost & process</a> and we can start the permit early on your behalf."
+      ]
+    },
+    {
+      "type": "table",
+      "heading": "Indicative cost",
+      "note": "Indicative estimate — confirm with a live quote; not an official figure.",
+      "columns": ["Item", "Indicative figure"],
+      "rows": [
+        ["Typical cost Dubai → India", "roughly AED 8,000–14,000"],
+        ["Typical timeline", "about 3–5 weeks"]
+      ]
+    },
+    {
+      "type": "prose",
+      "heading": "Your documents, in order",
+      "paragraphs": [
+        "Sequencing matters on this route — each step enables the next. Work through them in this order:",
+        "1. <strong>ISO microchip</strong> — implanted first, so every later record ties to the chip number.",
+        "2. <strong>Rabies vaccination</strong> — recorded against the microchip.",
+        "3. <strong>UAE export documents</strong> — the standard UAE export paperwork on the Dubai side.",
+        "4. <strong>AQCS import permit / NOC</strong> — the pivotal document; start it early, as it has its own lead time.",
+        "5. <strong>Residence documentation (returning residents)</strong> — evidence of your time abroad, gathered up front to support the NOC.",
+        "6. <strong>Flight booking</strong> — set the travel date around the permit, not before it."
       ]
     }
   ],

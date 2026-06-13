@@ -102,6 +102,49 @@
     },
     {
       "type": "prose",
+      "heading": "Ready to hand this off?",
+      "paragraphs": [
+        "If you'd rather not track the USDA endorsement window and the MOCCAE permit yourself, we can take it from here — [get your USA → Dubai quote](/#quote)."
+      ]
+    },
+    {
+      "type": "table",
+      "heading": "Indicative cost",
+      "columns": [
+        "Line item",
+        "Fee"
+      ],
+      "rows": [
+        [
+          "MOCCAE import permit",
+          "AED 200/head"
+        ],
+        [
+          "Release — dog",
+          "AED 500/dog"
+        ],
+        [
+          "Release — cat",
+          "AED 250/cat"
+        ]
+      ],
+      "note": "Indicative estimate — confirm with a live quote; not an official figure."
+    },
+    {
+      "type": "prose",
+      "heading": "Your documents, in order",
+      "paragraphs": [
+        "Work through these in sequence so nothing blocks a later step:",
+        "1. ISO microchip — implanted first; the number must match every later document.",
+        "2. Rabies vaccination — at ≥12 weeks, and ≥21 days before travel for a first or lapsed dose.",
+        "3. Rabies titre — only if exporting from a high-risk origin (≥0.5 IU/ml, valid 365 days).",
+        "4. Health certificate — issued by your vet, then endorsed by USDA APHIS in the required window.",
+        "5. MOCCAE import permit — arranged before travel (valid 90 days).",
+        "6. Flight booking — the Emirates cargo booking, last, once the documents are lined up."
+      ]
+    },
+    {
+      "type": "prose",
       "heading": "How your pet flies in",
       "paragraphs": [
         "A US→Dubai journey is long, so on Emirates your pet usually travels as manifest cargo (Emirates Pets) rather than checked baggage, because the total journey typically exceeds the 17-hour baggage limit."

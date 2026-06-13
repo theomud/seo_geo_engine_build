@@ -94,6 +94,49 @@
       "note": "Verified against MOCCAE (June 2026). Restricted breeds under UAE Federal Law 22/2016 include Pit Bull, American Staffordshire Terrier, Fila Brasileiro, Dogo Argentino and Mastiff types — confirm your breed."
     },
     {
+      "type": "table",
+      "heading": "Indicative cost",
+      "columns": [
+        "Line item",
+        "Fee"
+      ],
+      "rows": [
+        [
+          "MOCCAE import permit",
+          "AED 200/head"
+        ],
+        [
+          "Release — dog",
+          "AED 500/dog"
+        ],
+        [
+          "Release — cat",
+          "AED 250/cat"
+        ]
+      ],
+      "note": "Indicative estimate — confirm with a live quote; not an official figure."
+    },
+    {
+      "type": "prose",
+      "heading": "Confirm both sides before you book",
+      "paragraphs": [
+        "Not sure which step you're on? We confirm the exact Pakistan export requirements and arrange the MOCCAE permit for you — start your Pakistan → Dubai quote (/#quote)."
+      ]
+    },
+    {
+      "type": "prose",
+      "heading": "Your documents, in order",
+      "paragraphs": [
+        "Work through the requirements in the order they're actually needed, so nothing blocks a later step:",
+        "1. ISO microchip — implanted first; its number must match every later document.",
+        "2. Rabies vaccination — given at ≥12 weeks of age, ≥21 days before travel for a first or lapsed dose.",
+        "3. Rabies titre test — only if travelling from a high-risk origin (≥0.5 IU/ml, valid 365 days).",
+        "4. Export health certificate — the government/veterinary export certificate from the Pakistan side.",
+        "5. MOCCAE import permit — arranged before travel, valid 90 days.",
+        "6. Flight booking — as checked baggage or cargo with Emirates, once the documents above are in order."
+      ]
+    },
+    {
       "type": "prose",
       "heading": "The UAE side — the import permit",
       "paragraphs": [

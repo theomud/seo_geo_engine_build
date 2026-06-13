@@ -19,7 +19,14 @@
     "image_alt": "A pet ready to travel from Dubai to the EU"
   },
   "byline": "By our relocation specialists · 9 June 2026 · reviewed by our IPATA-certified specialists",
-  "key_facts": {},
+  "key_facts": {
+    "answer": "Bringing a cat or dog into the EU from Dubai needs an ISO microchip, a rabies vaccination given at least 21 days before travel, and an EU animal health certificate issued close to your travel date by an authorised vet. The one variable that can change the timeline is the rabies titre (antibody) test, required for pets arriving from non-listed third countries — so confirm the UAE's EU listing status first.",
+    "stats": [
+      {"label": "Typical cost Dubai → EU", "value": "roughly AED 10,000–18,000"},
+      {"label": "Typical timeline", "value": "about 4–8 weeks (longer if a titre test is required)"},
+      {"label": "EU health certificate validity", "value": "10 days to enter, then up to 6 months for onward EU travel"}
+    ]
+  },
   "takeaways": [
     "Core requirements: <strong>ISO microchip</strong>, <strong>rabies vaccine ≥21 days</strong> before travel, <strong>EU animal health certificate</strong>.",
     "The EU certificate is issued close to travel and is <strong>time-limited</strong> for entry and onward movement.",
@@ -47,11 +54,39 @@
     },
     {
       "type": "prose",
+      "heading": "Want the cost and process for your destination?",
+      "paragraphs": [
+        "If you already know which country you're heading to, you can skip ahead to the full cost and process breakdown: <a href=\"/destinations/uae-to-germany/\">see Dubai → Germany cost &amp; process</a>."
+      ]
+    },
+    {
+      "type": "prose",
       "eyebrow": "The part that changes the timeline",
       "heading": "The titre-test variable",
       "paragraphs": [
         "For pets coming from countries the EU classifies as <em>non-listed</em>, a rabies antibody (titre) test is required. The blood sample must be taken <strong>at least 30 days after the rabies vaccination</strong>, and <strong>at least 90 days (three months) before</strong> the EU animal health certificate is issued — so for a non-listed origin it adds roughly three months. For <em>listed</em> origins the test isn't needed at all.",
         "The EU animal health certificate itself is <strong>valid for 10 days to enter the EU</strong>, then up to <strong>6 months for onward travel</strong> within the EU. The one fact that decides which path you're on — listed or non-listed — is the UAE's classification in Annex I to the EU's pet-movement regulation, so confirm that with the official source below before you commit to dates."
+      ]
+    },
+    {
+      "type": "table",
+      "heading": "Indicative cost",
+      "columns": ["Item", "Indicative range"],
+      "rows": [
+        ["Dubai → EU pet move (typical, all-in)", "roughly AED 10,000–18,000"]
+      ],
+      "note": "Indicative estimate — confirm with a live quote; not an official figure. Varies with your pet's size and the destination country, and runs longer/dearer if a titre test is required."
+    },
+    {
+      "type": "prose",
+      "heading": "Your documents, in order",
+      "paragraphs": [
+        "The EU requirements above fall into a natural sequence — get them in this order and the tight certificate window takes care of itself:",
+        "<strong>1. ISO microchip</strong> — fitted first, because every later document references this chip number.",
+        "<strong>2. Rabies vaccination</strong> — given after the microchip, at least 21 days before travel.",
+        "<strong>3. Rabies titre (antibody) test — only if the UAE is non-listed</strong> — blood sample taken at least 30 days after the rabies vaccination, and at least 90 days (three months) before the health certificate is issued. Confirm whether it applies before you set dates.",
+        "<strong>4. EU animal health certificate</strong> — issued by an authorised vet close to travel; valid 10 days to enter the EU, then up to 6 months for onward EU travel.",
+        "<strong>5. Export permit / booking</strong> — handle the UAE export side and lock the flight last, timed to the certificate's validity window, with crate and cargo to IATA standards."
       ]
     }
   ],

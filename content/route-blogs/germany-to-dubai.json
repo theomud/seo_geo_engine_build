@@ -94,6 +94,44 @@
       "note": "Verified against MOCCAE (June 2026). Restricted breeds under UAE Federal Law 22/2016 include Pit Bull, American Staffordshire Terrier, Fila Brasileiro, Dogo Argentino and Mastiff types — confirm your breed."
     },
     {
+      "type": "table",
+      "heading": "Indicative cost",
+      "columns": [
+        "Line item",
+        "Fee"
+      ],
+      "rows": [
+        [
+          "MOCCAE import permit",
+          "AED 200/head"
+        ],
+        [
+          "Release — dog",
+          "AED 500/dog"
+        ],
+        [
+          "Release — cat",
+          "AED 250/cat"
+        ]
+      ],
+      "note": "Indicative estimate — confirm with a live quote; not an official figure."
+    },
+    {
+      "type": "prose",
+      "heading": "Your documents, in order",
+      "paragraphs": [
+        "Working in sequence keeps the file clean and avoids the last-minute scramble:",
+        "1. Microchip — a permanent ISO chip goes in first; every later document references this number. 2. Rabies vaccination — given at ≥12 weeks and ≥21 days before travel for a first or lapsed dose (already recorded in your EU pet passport). 3. Rabies titre — only if you're travelling from a high-risk origin (≥0.5 IU/ml). 4. EU export health certificate — issued for the UAE route by your official vet. 5. MOCCAE import permit — arranged before travel (valid 90 days). 6. Flight booking — cargo or baggage with Emirates, once the paperwork above is lined up."
+      ]
+    },
+    {
+      "type": "prose",
+      "heading": "Not sure where you stand?",
+      "paragraphs": [
+        "If you'd rather not piece this together alone, we can check your route and turn your pet passport into a UAE-ready file — [get my EU → Dubai quote](/#quote)."
+      ]
+    },
+    {
       "type": "prose",
       "heading": "The UAE side — the import permit",
       "paragraphs": [

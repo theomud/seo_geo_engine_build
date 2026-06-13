@@ -95,6 +95,29 @@
       "note": "Verified against MOCCAE (June 2026). Restricted breeds under UAE Federal Law 22/2016 include Pit Bull, American Staffordshire Terrier, Fila Brasileiro, Dogo Argentino and Mastiff types — confirm your breed."
     },
     {
+      "type": "table",
+      "heading": "Indicative cost",
+      "columns": [
+        "Line item",
+        "Fee"
+      ],
+      "rows": [
+        [
+          "MOCCAE import permit",
+          "AED 200/head"
+        ],
+        [
+          "Release fee — dog",
+          "AED 500/dog"
+        ],
+        [
+          "Release fee — cat",
+          "AED 250/cat"
+        ]
+      ],
+      "note": "Indicative estimate — confirm with a live quote; not an official figure."
+    },
+    {
       "type": "prose",
       "heading": "The UAE side — the import permit",
       "paragraphs": [
@@ -102,10 +125,28 @@
       ]
     },
     {
+      "type": "cta_inline",
+      "text": "Want us to handle the MOCCAE permit and breed check for you? Get a UK → Dubai quote.",
+      "url": "/#quote"
+    },
+    {
       "type": "prose",
       "heading": "How your pet flies in",
       "paragraphs": [
         "On Emirates, pets aren't allowed in the cabin (only falcons to Pakistan and guide dogs). They travel as checked baggage on your flight if the journey is under 17 hours, or as manifest cargo (Emirates Pets) otherwise — London to Dubai is well within the baggage window, but the method depends on your routing."
+      ]
+    },
+    {
+      "type": "prose",
+      "heading": "Your documents, in order",
+      "paragraphs": [
+        "Tackling the requirements in the right sequence is what keeps the timeline on track. For a UK → Dubai move they fall in this order:",
+        "1. Microchip — your pet needs a permanent ISO microchip first, because every later document references that chip number.",
+        "2. Rabies vaccination — given after the microchip, and (for a first or lapsed dose) typically allowing roughly 21 days before travel.",
+        "3. Rabies titre test — only if you're travelling from a high-risk origin; coming from the rabies-free UK this step does not apply.",
+        "4. UK export health certificate — the GOV.UK certificate for travel to the UAE, supported by the microchip and rabies records.",
+        "5. MOCCAE import permit — arranged before travel and valid 90 days.",
+        "6. Flight booking — confirm the Emirates baggage-or-cargo method for your routing once the paperwork is in motion."
       ]
     }
   ],

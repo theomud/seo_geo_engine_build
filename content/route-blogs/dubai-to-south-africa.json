@@ -19,7 +19,14 @@
     "image_alt": "A pet ready to travel from Dubai to South Africa"
   },
   "byline": "By our relocation specialists · 9 June 2026 · reviewed by our IPATA-certified specialists",
-  "key_facts": {},
+  "key_facts": {
+    "answer": "Moving a pet from Dubai to South Africa needs a state veterinary import permit, a rabies titre test and a veterinary health certificate, plus (for dogs) additional disease testing — on top of the usual ISO microchip and rabies vaccination. The timeline is driven by the time-limited permit and the titre/test lab results, which take weeks, so confirm the current test list with the South African authority and sequence the work backwards from the flight.",
+    "stats": [
+      { "label": "Typical cost Dubai → South Africa", "value": "roughly AED 14,000–22,000" },
+      { "label": "Pivotal document", "value": "state veterinary import permit (time-limited)" },
+      { "label": "Lead time driver", "value": "rabies titre + disease test results take weeks" }
+    ]
+  },
   "takeaways": [
     "A <strong>state veterinary import permit</strong> is mandatory and time-limited — apply in the right window.",
     "A <strong>rabies titre test</strong> is required; results take weeks, so book it early.",
@@ -43,6 +50,36 @@
       "paragraphs": [
         "Two things drive the South Africa timeline: the <strong>import permit</strong>, which is time-limited and must align with your travel window, and the <strong>titre test plus any disease tests</strong>, whose lab results take weeks.",
         "Because the permit is dated, the sequence has to be planned backwards from the flight — apply too early and it can lapse; too late and you can't travel. Confirm the exact, current test requirements with the official source first."
+      ]
+    },
+    {
+      "type": "prose",
+      "heading": "Need the cost and process for this route?",
+      "paragraphs": [
+        "If you'd rather see the full Dubai → South Africa cost and process in one place, here it is: <a href=\"/destinations/uae-to-south-africa/\">See Dubai → South Africa cost &amp; process</a>. We confirm the current test list and time the permit to your flight."
+      ]
+    },
+    {
+      "type": "table",
+      "heading": "Indicative cost",
+      "note": "Indicative estimate — confirm with a live quote; not an official figure.",
+      "columns": ["Item", "Indicative figure (AED)"],
+      "rows": [
+        ["Typical Dubai → South Africa pet move (size, tests required and airline dependent)", "14,000–22,000"]
+      ]
+    },
+    {
+      "type": "prose",
+      "heading": "Your documents, in order",
+      "paragraphs": [
+        "Sequence matters on this route. Work through the requirements already named above in this chronological order:",
+        "1. <strong>ISO microchip</strong> — implanted first, as every later record must match the chip number.",
+        "2. <strong>Rabies vaccination</strong> — a valid vaccination on record.",
+        "3. <strong>Rabies titre test</strong> — booked early, because the lab result takes weeks.",
+        "4. <strong>Additional disease testing (dogs)</strong> — confirm the current list with the South African authority, as it can change.",
+        "5. <strong>Veterinary health certificate</strong> — the state-veterinary export certificate.",
+        "6. <strong>State veterinary import permit</strong> — time-limited, so timed to the flight, not applied for too early.",
+        "7. <strong>Flight booking</strong> — aligned to the permit window once the tests have cleared."
       ]
     }
   ],

@@ -19,13 +19,20 @@
     "image_alt": "A dog ready to travel from Dubai to the USA"
   },
   "byline": "By our relocation specialists · 9 June 2026 · reviewed by our IPATA-certified specialists",
-  "key_facts": {},
+  "key_facts": {
+    "answer": "Moving a dog from Dubai to the USA needs a USDA-endorsed health certificate, a CDC Dog Import Form receipt, a microchip and rabies cover. The dog must be at least 6 months old on arrival and appear healthy at the port of entry. Because the UAE is a dog-rabies low-risk origin, the CDC form and the 6-month age rule are what catch people out, not a rabies titre test.",
+    "stats": [
+      { "label": "Minimum age on arrival", "value": "6 months" },
+      { "label": "Typical cost Dubai → USA", "value": "roughly AED 13,800–22,000" },
+      { "label": "Typical timeline", "value": "about 4–12 weeks" }
+    ]
+  },
   "takeaways": [
     "Every dog needs a <strong>CDC Dog Import Form</strong> receipt — fill it out online before travel.",
     "The dog must be <strong>at least 6 months old</strong> on arrival.",
     "A <strong>microchip</strong> readable by a universal scanner is mandatory and must be recorded before the form.",
     "The dog must <strong>appear healthy</strong> at entry.",
-    "Typical cost Dubai → USA: roughly <strong>AED 13,800–22,000</strong>, about 4–12 weeks."
+    "Typical cost Dubai → USA: an estimate of roughly <strong>AED 13,800–22,000</strong>, typically about 4–12 weeks."
   ],
   "sections": [
     {
@@ -47,6 +54,13 @@
     },
     {
       "type": "prose",
+      "heading": "Quick route help",
+      "paragraphs": [
+        "Want the full cost and process for this route in one place? See our <a href=\"/destinations/uae-to-usa/\">Dubai → USA cost &amp; process page</a> — no obligation."
+      ]
+    },
+    {
+      "type": "prose",
       "eyebrow": "Sequence matters",
       "heading": "The order that keeps you compliant",
       "bullets": [
@@ -54,6 +68,32 @@
         "<strong>Confirm the dog will be 6 months old</strong> on the travel date before booking anything.",
         "<strong>Submit the CDC Dog Import Form</strong> in the window the CDC specifies before arrival and keep the receipt.",
         "<strong>UAE export side</strong> — MOCCAE export permit and a fit-to-fly health certificate."
+      ]
+    },
+    {
+      "type": "prose",
+      "eyebrow": "Checklist",
+      "heading": "Your documents, in order",
+      "paragraphs": [
+        "Working through the requirements already covered above in the order they need to happen:"
+      ],
+      "bullets": [
+        "<strong>1. Microchip</strong> — implant a chip readable by a universal scanner first; it ties every later document together.",
+        "<strong>2. Confirm the 6-month age rule</strong> — check the dog will be at least 6 months old on the arrival date before booking.",
+        "<strong>3. Health certificate</strong> — a USDA-endorsed, fit-to-fly health certificate.",
+        "<strong>4. MOCCAE export permit</strong> — the UAE export-side permit.",
+        "<strong>5. CDC Dog Import Form</strong> — submit it in the window the CDC specifies before arrival and keep the receipt.",
+        "<strong>6. Booking</strong> — arrange the flight once the above are in hand."
+      ]
+    },
+    {
+      "type": "table",
+      "heading": "Indicative cost",
+      "note": "Indicative estimate — confirm with a live quote; not an official figure.",
+      "columns": ["Item", "Indicative figure"],
+      "rows": [
+        ["Typical cost Dubai → USA", "roughly AED 13,800–22,000"],
+        ["Typical timeline", "about 4–12 weeks"]
       ]
     }
   ],
