@@ -1,0 +1,168 @@
+{
+  "_meta": {
+    "content_format": "blog",
+    "direction": "outbound (Dubai -> destination)",
+    "target_keyword": "Dubai to UK Pet Move",
+    "note": "De-branded content asset for site build. Render images from the images/ folder."
+  },
+  "seo": {
+    "title": "Dubai to UK Pet Move: The Tapeworm Window That Decides It",
+    "meta_description": "The single detail that gets dogs refused entry to the UK from Dubai: the tapeworm treatment must be given 24–120 hours before arrival. Here's how to get it right.",
+    "og_title": "The one timing rule that decides if your dog enters the UK",
+    "canonical_path": "/blog/dubai-to-uk-pet-tapeworm-window/"
+  },
+  "hero": {
+    "eyebrow": "Route guide · UK",
+    "h1": "Dubai to the UK: the tapeworm window that decides if your dog flies",
+    "standfirst": "One mistimed treatment is the most common reason a Dubai → UK pet move fails. The fix is free — if you know the rule.",
+    "image": "images/dubai-to-uk-hero.png",
+    "image_alt": "A dog ready to travel from Dubai to the UK"
+  },
+  "byline": "By our relocation specialists · 9 June 2026 · reviewed by our IPATA-certified specialists",
+  "key_facts": {},
+  "takeaways": [
+    "Tapeworm treatment for dogs: <strong>24–120 hours before arrival</strong>. Cats don't need it.",
+    "The UK health certificate must come from an <strong>APHA-approved</strong> vet — most Dubai vets aren't on that list.",
+    "Order matters: <strong>ISO microchip first, then the rabies vaccine</strong> (≥21 days before travel).",
+    "Banned breeds can't enter: Pit Bull, <strong>XL Bully (since 1 Feb 2024)</strong>, Tosa, Dogo Argentino, Fila Brasileiro.",
+    "Do it right and there is <strong>no quarantine</strong> — the risk is paperwork, not quarantine."
+  ],
+  "sections": [
+    {
+      "type": "prose",
+      "heading": "The short answer",
+      "paragraphs": [
+        "To bring a dog into the UK from Dubai, a vet must treat it for tapeworm <strong>no less than 24 hours and no more than 120 hours (5 days) before arrival</strong> — not earlier, not later. Miss that window and your dog is refused entry or held. Cats are exempt.",
+        "Get the microchip, rabies vaccine, APHA-approved health certificate and that tapeworm window right, and there's <strong>no quarantine</strong> — your dog clears and comes home the same day."
+      ]
+    },
+    {
+      "type": "prose",
+      "eyebrow": "The detail that matters most",
+      "heading": "The tapeworm window, exactly",
+      "paragraphs": [
+        "The UK requires a vet to treat your dog with an approved tapeworm product (containing praziquantel) and record it, <strong>no less than 24 hours and no more than 5 days before you enter Great Britain</strong>. Treat too early and the record is invalid; too late and your dog can't board or is held at the border.",
+        "Because the window is so tight, it has to be planned backwards from your exact flight — which is why the treatment is the last clinical step, not the first. Cats and ferrets are exempt; this is a dog-only rule."
+      ]
+    },
+    {
+      "type": "prose",
+      "eyebrow": "The other thing people miss",
+      "heading": "Why your normal Dubai vet may not work",
+      "paragraphs": [
+        "The UK health certificate for a pet arriving from the UAE must be issued by an <strong>APHA-approved</strong> (official) veterinarian. Many Dubai clinics aren't on that list, and a certificate from the wrong vet is rejected at the UK border.",
+        "Confirm your vet's approval <strong>before</strong> you book any appointment. This one check — vet approval plus the tapeworm timing — is what separates a smooth arrival from an expensive hold."
+      ]
+    }
+  ],
+  "story": {
+    "tag": "A common scenario",
+    "lead": "The biggest cost on a Dubai → UK move is almost never the airline — it's one mistimed detail.",
+    "problem": "An owner takes the cheapest quote for their Labrador, flying in three weeks.",
+    "mistake": "The provider uses a vet who isn't APHA-approved and gives the tapeworm treatment a week early to 'be safe'.",
+    "discovery": "At check-in the UK health certificate is rejected and the 24–120 hour window has lapsed — the dog can't board.",
+    "result": "A rebooked flight, a fresh certificate and a few days of boarding add roughly AED 6,000 and over a week.",
+    "lesson": "The cheapest quote cost the most. The APHA vet and the tapeworm window aren't details — they decide whether your dog flies."
+  },
+  "faqs": [
+    {
+      "q": "Will my pet be quarantined when arriving in the UK?",
+      "a": "No — pets that arrive with correct paperwork are not quarantined. The risk is a documentation or timing error, not routine quarantine."
+    },
+    {
+      "q": "Do I need a rabies blood test (titre) for the UK?",
+      "a": "No. The UAE is a 'listed' country for the UK, so there's no rabies titre test or three-month wait — just a valid rabies vaccination at least 21 days before travel."
+    },
+    {
+      "q": "Does my cat need the tapeworm treatment?",
+      "a": "No. The tapeworm rule applies to dogs only."
+    },
+    {
+      "q": "Can my XL Bully come to the UK?",
+      "a": "No. The XL Bully has been banned since 1 February 2024, alongside Pit Bull, Japanese Tosa, Dogo Argentino and Fila Brasileiro. We verify your breed before booking."
+    }
+  ],
+  "sources": [
+    {
+      "authority": "UK GOV.UK",
+      "title": "Tapeworm treatment for dogs (24–120h)",
+      "url": "https://www.gov.uk/bring-pet-to-great-britain/tapeworm-treatment-dogs",
+      "note": "The exact window"
+    },
+    {
+      "authority": "UK GOV.UK",
+      "title": "Bringing your pet to Great Britain",
+      "url": "https://www.gov.uk/bring-pet-to-great-britain",
+      "note": "Microchip, rabies, no quarantine"
+    },
+    {
+      "authority": "UK GOV.UK",
+      "title": "Ban on XL Bully dogs",
+      "url": "https://www.gov.uk/guidance/ban-on-xl-bully-dogs",
+      "note": "Banned breeds"
+    },
+    {
+      "authority": "UAE MOCCAE",
+      "title": "Pet export permits",
+      "url": "https://www.moccae.gov.ae/en/services/import-permit-pets",
+      "note": "UAE export side"
+    }
+  ],
+  "cta": {
+    "heading": "Moving your pet from Dubai to the UK?",
+    "body": "We schedule the tapeworm window to your flight, confirm an APHA-approved vet, and handle the paperwork — so your dog comes home safely, with no surprises at the border.",
+    "ctas": [
+      {
+        "label": "See Dubai → UK cost & process",
+        "url": "/destinations/uae-to-uk/",
+        "style": "btn-gold"
+      },
+      {
+        "label": "The full cost breakdown",
+        "url": "/destinations/uae-to-uk-cost/",
+        "style": "btn-ghost"
+      }
+    ],
+    "help_cta": "Not ready to enquire? Download the free pet-relocation checklist — every required document for your route, in order, so nothing is missed."
+  },
+  "images": [
+    {
+      "role": "hero",
+      "file": "images/dubai-to-uk-hero.png",
+      "alt": "A dog ready to travel from Dubai to the UK",
+      "status": "rendered (low-res)"
+    }
+  ],
+  "method": {
+    "structure_logic": "2026 article anatomy: headline (curiosity/result) -> answer-first opening (the liftable answer in the first lines) -> key takeaways -> table of contents -> scannable H2/H3 -> a visual (data table or flow) -> original insight or a story -> FAQ -> official sources -> one help-first CTA. Why: web readers scan ~20-28% of words (Nielsen Norman Group), so the answer is front-loaded; a story is remembered where bare facts are forgotten; one page = one job + a single CTA converts. These choices recur across every source in our research (see SOURCING-METHOD.md).",
+    "geo_seo_rationale": "What we believe helps. GEO (being cited by AI answer engines): answer-first self-contained chunks, cited statistics, official-source citations, consistent entities, FAQ schema -- and citation is decoupled from ranking (~66% of AI-Overview citations come from outside the top-20), so strong content can be cited even before it ranks. SEO: intent-matched title+H1, topical depth, internal links into the money page, visible freshness dates, structured data (Article/FAQ/Breadcrumb/LocalBusiness). HONEST CAVEAT: these are evidence-based best practices, NOT guaranteed results -- ranking also needs off-page authority/backlinks/indexing not built here, and GEO citation is plausible but unproven until measured with a live AI-citation test.",
+    "how_and_why_we_audit": "Each page is scored by a 5-lens auditor -- Website, SEO, GEO, Lead-gen/Trust, Quality -- which together cover the 7-category QA (Helpful, Human, Original, Trustworthy, SEO, GEO, Conversion). Why this way: (1) page-type profiles judge a page against ITS job (a reassurance page is weighted differently from a money page); (2) every check carries an evidence tier (T1 sworn -> T6 practitioner) and a verified-vs-heuristic tag; (3) not-measurable checks are excluded, never zeroed (a coverage->confidence label); (4) risk caps catch keyword-stuffing, thin content, fake schema, no-CTA. The score is an on-page QUALITY PROXY, not a measured ranking/citation outcome.",
+    "what_we_are_sure_of": "100% sure = a fact screenshot-verified against its official source as of a date (see sourcing.verified_100pct) + that the method was applied. NOT sure = that it ranks or gets cited (unproven until the site is live, indexed and measured).",
+    "how_we_verify": "Every factual/regulatory claim is verified against an OFFICIAL source only -- government bodies, recognised standards bodies (IATA), or the operator's own site (e.g. the airline). Never blogs, forums, competitors, or AI. Each verified claim is captured as a full-page SCREENSHOT and logged in a regulatory register with: source, URL, date verified, version, reviewer, and a re-verify-by date (because regulations change). Anything we could not confirm from an official source is HEDGED or flagged 'confirm with [authority]', never asserted (see sourcing.stated_but_unverified). Tooling: a Playwright screenshot verifier with an official-domain allowlist + the regulatory register. Facts are kept separate from advice ('the authority requires X' vs 'we recommend X'). AI never makes the final call -- a human reviews and signs off before publish."
+  },
+  "sourcing": {
+    "how_we_derived_this": "Built from recurring patterns across our research corpus (SOURCING-METHOD.md): answer the fear not the keyword, front-load the answer, official sources only, a route-specific story, single help-first CTA into the money page.",
+    "verified_100pct": [
+      {
+        "fact": "Where this route's facts were screenshot-verified, the evidence is in audit/evidence/* and the regulatory register (e.g. UK tapeworm + XL Bully ban, US CDC dog rules, EU titre timing, IATA, Emirates travel methods).",
+        "source": "see regulatory register",
+        "as_of": "2026-06-09"
+      }
+    ],
+    "stated_but_unverified": [
+      {
+        "claim": "Route-specific cost ranges are a model estimate (stated as ranges)",
+        "action": "Re-validate quarterly vs live airline cargo quotes"
+      },
+      {
+        "claim": "Any specific not screenshot-verified (e.g. Australia DAFF, South Africa DALRRD, India AQCS detail)",
+        "action": "Confirm + screenshot the official source before publish"
+      }
+    ],
+    "confidence": "100% sure of: the screenshot-verified facts (regulatory register) + that the method was applied. NOT sure of: ranking/citation -- unproven until the site is live, indexed and measured."
+  },
+  "lead_magnet": {
+    "label": "Free pet-relocation checklist",
+    "description": "Every document + step for your route, in order, verified against official sources."
+  }
+}

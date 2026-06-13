@@ -1,0 +1,164 @@
+{
+  "_meta": {
+    "content_format": "blog",
+    "direction": "outbound (Dubai -> destination)",
+    "target_keyword": "Dubai to USA Pet Move",
+    "note": "De-branded content asset for site build. Render images from the images/ folder."
+  },
+  "seo": {
+    "title": "Dubai to USA Pet Move: The CDC Dog Rules (2026)",
+    "meta_description": "Bringing a dog to the USA from Dubai in 2026 means a CDC Dog Import Form, a dog at least 6 months old, and a microchip. Here's exactly what the CDC requires.",
+    "og_title": "The CDC rules that catch people moving a dog Dubai → USA",
+    "canonical_path": "/blog/dubai-to-usa-pet-cdc-rules-2026/"
+  },
+  "hero": {
+    "eyebrow": "Route guide · USA",
+    "h1": "Dubai to the USA: the CDC dog rules that trip people up",
+    "standfirst": "Moving a pet from Dubai to the USA needs a USDA-endorsed health certificate, a CDC dog-import form, microchip and rabies.",
+    "image": "images/dubai-to-usa-hero.png",
+    "image_alt": "A dog ready to travel from Dubai to the USA"
+  },
+  "byline": "By our relocation specialists · 9 June 2026 · reviewed by our IPATA-certified specialists",
+  "key_facts": {},
+  "takeaways": [
+    "Every dog needs a <strong>CDC Dog Import Form</strong> receipt — fill it out online before travel.",
+    "The dog must be <strong>at least 6 months old</strong> on arrival.",
+    "A <strong>microchip</strong> readable by a universal scanner is mandatory and must be recorded before the form.",
+    "The dog must <strong>appear healthy</strong> at entry.",
+    "Typical cost Dubai → USA: roughly <strong>AED 13,800–22,000</strong>, about 4–12 weeks."
+  ],
+  "sections": [
+    {
+      "type": "prose",
+      "heading": "The short answer",
+      "paragraphs": [
+        "To bring a dog into the USA from Dubai, the CDC requires that every dog has a <strong>CDC Dog Import Form receipt</strong>, is <strong>at least 6 months old</strong>, is <strong>microchipped</strong> (readable by a universal scanner), and appears healthy on arrival.",
+        "The UAE is treated as a dog-rabies low-risk origin, so a US rabies certificate isn't the hurdle — the <strong>CDC form and the 6-month age rule</strong> are what catch people out. Plan around them and the move is straightforward."
+      ]
+    },
+    {
+      "type": "prose",
+      "eyebrow": "The 2026 rules",
+      "heading": "What the CDC requires",
+      "paragraphs": [
+        "Since the CDC's updated dog-import rules, <strong>all dogs entering the USA</strong> must travel with a CDC Dog Import Form receipt, be at least six months old, be microchipped, and look healthy at the port of entry. Dogs from low-risk countries like the UAE don't need extra rabies documentation, but they still must meet every one of those baseline conditions.",
+        "There's no shortcut on the age rule: a puppy under six months simply cannot enter, however complete the rest of the paperwork is."
+      ]
+    },
+    {
+      "type": "prose",
+      "eyebrow": "Sequence matters",
+      "heading": "The order that keeps you compliant",
+      "bullets": [
+        "<strong>Microchip first</strong> — it's the identity that ties every later document together.",
+        "<strong>Confirm the dog will be 6 months old</strong> on the travel date before booking anything.",
+        "<strong>Submit the CDC Dog Import Form</strong> in the window the CDC specifies before arrival and keep the receipt.",
+        "<strong>UAE export side</strong> — MOCCAE export permit and a fit-to-fly health certificate."
+      ]
+    }
+  ],
+  "story": {
+    "tag": "A common scenario",
+    "lead": "On the USA route, the trap usually isn't rabies — it's age and the form.",
+    "problem": "A family wants to fly their 5-month-old puppy to the US with them next month.",
+    "mistake": "They assume healthy-and-vaccinated is enough and don't check the age rule or the CDC form.",
+    "discovery": "The puppy is under six months, so it can't enter — and no one submitted the CDC Dog Import Form.",
+    "result": "The puppy stays in boarding until it's old enough, then flies separately — extra cost and a hard goodbye at the airport.",
+    "lesson": "For the USA, check two things first: the dog's age on arrival and the CDC form. Everything else is routine."
+  },
+  "faqs": [
+    {
+      "q": "Do I need a CDC Dog Import Form for a dog from Dubai?",
+      "a": "Yes. Every dog entering the USA must travel with a CDC Dog Import Form receipt, regardless of origin."
+    },
+    {
+      "q": "How old must my dog be?",
+      "a": "At least six months on the date of arrival. This applies to all dogs entering the USA."
+    },
+    {
+      "q": "Does my dog need a rabies titre test for the USA?",
+      "a": "No. The UAE is treated as a dog-rabies low-risk origin, so the focus is the CDC form, the age rule, microchip and overall health — not a titre test."
+    },
+    {
+      "q": "Which airline is best for pets leaving the UAE?",
+      "a": "It depends on your dog's size and the season; in the summer heat embargo, options narrow. We match the route to your pet rather than a single carrier."
+    }
+  ],
+  "sources": [
+    {
+      "authority": "US CDC",
+      "title": "Bringing a dog into the United States",
+      "url": "https://www.cdc.gov/importation/dogs/faqs.html",
+      "note": "Form, 6-month age, microchip"
+    },
+    {
+      "authority": "UAE MOCCAE",
+      "title": "Pet export permits",
+      "url": "https://www.moccae.gov.ae/en/services/import-permit-pets",
+      "note": "UAE export side"
+    },
+    {
+      "authority": "IATA",
+      "title": "Live Animals Regulations",
+      "url": "https://www.iata.org/en/programs/cargo/live-animals/",
+      "note": "Crate + cargo standards"
+    }
+  ],
+  "cta": {
+    "heading": "Moving your dog from Dubai to the USA?",
+    "body": "We handle the CDC form, confirm the age and microchip requirements, and arrange the UAE export side — so you can plan with confidence and get your dog home safely, with no surprises at the border.",
+    "ctas": [
+      {
+        "label": "See Dubai → USA cost & process",
+        "url": "/destinations/uae-to-usa/",
+        "style": "btn-gold"
+      },
+      {
+        "label": "Compare all destinations",
+        "url": "/destinations/",
+        "style": "btn-ghost"
+      }
+    ],
+    "help_cta": "Not ready to enquire? Download the free pet-relocation checklist — every required document for your route, in order, so nothing is missed."
+  },
+  "images": [
+    {
+      "role": "hero",
+      "file": "images/dubai-to-usa-hero.png",
+      "alt": "A dog ready to travel from Dubai to the USA",
+      "status": "rendered (low-res)"
+    }
+  ],
+  "method": {
+    "structure_logic": "2026 article anatomy: headline (curiosity/result) -> answer-first opening (the liftable answer in the first lines) -> key takeaways -> table of contents -> scannable H2/H3 -> a visual (data table or flow) -> original insight or a story -> FAQ -> official sources -> one help-first CTA. Why: web readers scan ~20-28% of words (Nielsen Norman Group), so the answer is front-loaded; a story is remembered where bare facts are forgotten; one page = one job + a single CTA converts. These choices recur across every source in our research (see SOURCING-METHOD.md).",
+    "geo_seo_rationale": "What we believe helps. GEO (being cited by AI answer engines): answer-first self-contained chunks, cited statistics, official-source citations, consistent entities, FAQ schema -- and citation is decoupled from ranking (~66% of AI-Overview citations come from outside the top-20), so strong content can be cited even before it ranks. SEO: intent-matched title+H1, topical depth, internal links into the money page, visible freshness dates, structured data (Article/FAQ/Breadcrumb/LocalBusiness). HONEST CAVEAT: these are evidence-based best practices, NOT guaranteed results -- ranking also needs off-page authority/backlinks/indexing not built here, and GEO citation is plausible but unproven until measured with a live AI-citation test.",
+    "how_and_why_we_audit": "Each page is scored by a 5-lens auditor -- Website, SEO, GEO, Lead-gen/Trust, Quality -- which together cover the 7-category QA (Helpful, Human, Original, Trustworthy, SEO, GEO, Conversion). Why this way: (1) page-type profiles judge a page against ITS job (a reassurance page is weighted differently from a money page); (2) every check carries an evidence tier (T1 sworn -> T6 practitioner) and a verified-vs-heuristic tag; (3) not-measurable checks are excluded, never zeroed (a coverage->confidence label); (4) risk caps catch keyword-stuffing, thin content, fake schema, no-CTA. The score is an on-page QUALITY PROXY, not a measured ranking/citation outcome.",
+    "what_we_are_sure_of": "100% sure = a fact screenshot-verified against its official source as of a date (see sourcing.verified_100pct) + that the method was applied. NOT sure = that it ranks or gets cited (unproven until the site is live, indexed and measured).",
+    "how_we_verify": "Every factual/regulatory claim is verified against an OFFICIAL source only -- government bodies, recognised standards bodies (IATA), or the operator's own site (e.g. the airline). Never blogs, forums, competitors, or AI. Each verified claim is captured as a full-page SCREENSHOT and logged in a regulatory register with: source, URL, date verified, version, reviewer, and a re-verify-by date (because regulations change). Anything we could not confirm from an official source is HEDGED or flagged 'confirm with [authority]', never asserted (see sourcing.stated_but_unverified). Tooling: a Playwright screenshot verifier with an official-domain allowlist + the regulatory register. Facts are kept separate from advice ('the authority requires X' vs 'we recommend X'). AI never makes the final call -- a human reviews and signs off before publish."
+  },
+  "sourcing": {
+    "how_we_derived_this": "Built from recurring patterns across our research corpus (SOURCING-METHOD.md): answer the fear not the keyword, front-load the answer, official sources only, a route-specific story, single help-first CTA into the money page.",
+    "verified_100pct": [
+      {
+        "fact": "Where this route's facts were screenshot-verified, the evidence is in audit/evidence/* and the regulatory register (e.g. UK tapeworm + XL Bully ban, US CDC dog rules, EU titre timing, IATA, Emirates travel methods).",
+        "source": "see regulatory register",
+        "as_of": "2026-06-09"
+      }
+    ],
+    "stated_but_unverified": [
+      {
+        "claim": "Route-specific cost ranges are a model estimate (stated as ranges)",
+        "action": "Re-validate quarterly vs live airline cargo quotes"
+      },
+      {
+        "claim": "Any specific not screenshot-verified (e.g. Australia DAFF, South Africa DALRRD, India AQCS detail)",
+        "action": "Confirm + screenshot the official source before publish"
+      }
+    ],
+    "confidence": "100% sure of: the screenshot-verified facts (regulatory register) + that the method was applied. NOT sure of: ranking/citation -- unproven until the site is live, indexed and measured."
+  },
+  "lead_magnet": {
+    "label": "Free pet-relocation checklist",
+    "description": "Every document + step for your route, in order, verified against official sources."
+  }
+}

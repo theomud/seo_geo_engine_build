@@ -1,0 +1,44 @@
+{
+  "_meta": {
+    "title": "UAE pet import/export — verified reference",
+    "purpose": "Shared, official-source-verified facts for all the X-to-Dubai (inbound) blogs. Use these as the authoritative UAE-side data.",
+    "verified": "2026-06-09",
+    "primary_source": "MOCCAE (moccae.gov.ae) 'Import of pets (cats/dogs)' service page",
+    "evidence_screenshots": ["audit/evidence/uae-import-export/moccae-pets.png", "audit/evidence/uae-import-export/moccae-pets-full.png"]
+  },
+  "import_into_uae": {
+    "import_permit_validity_days": 90,
+    "microchip": "Permanent ISO microchip required; the chip number on the health certificate must match the implanted chip.",
+    "rabies": "Vaccination at age >=12 weeks; for a first or lapsed dose, >=21 days must pass before travel; no 21-day wait for a valid booster.",
+    "titre_test": "Required ONLY when importing from a high-risk (rabies) country: rabies antibody titration >=0.5 IU/ml, from an accredited lab, certificate valid 365 days (may be recorded in the health certificate). Rabies-free origins (e.g. UK, Australia): not required.",
+    "minimum_age": "12 weeks from low-risk countries; >=15 weeks from high-risk countries.",
+    "parasite_treatment": "Internal + external parasite doses within 14 days before shipment, noted on the health certificate/passport.",
+    "max_pets_per_person_per_year": 2,
+    "max_pets_note": "2 cats, or 2 dogs, or one of each, per person per year; resident pets returning are exempt.",
+    "documents_at_release": ["Customs declaration / bill of lading", "Vaccination record or passport (with chip no., description, vaccine details)", "Certified veterinary health certificate from the origin's competent authority"],
+    "quarantine": "None on arrival if compliant.",
+    "transport": "Per IATA Live Animals Regulations; shipped directly, not mixed with other pets in transit.",
+    "service_or_support_dogs": "Service / emotional-support / medical dogs require extra docs (training certificate, owner medical report, ownership pledge).",
+    "special_breeds_note": "Bengal and Serval cats require a 5th-generation pedigree certificate.",
+    "fees_aed": {"import_permit_per_head": 200, "release_per_dog": 500, "release_per_cat": 250},
+    "entry_points": "Released via veterinary-quarantine centres at approved ports (Dubai Airport Cargo Village, Al Maktoum, Khalifa Port, Sharjah Airport, etc.); release permit issued electronically."
+  },
+  "export_from_uae": {
+    "export_permit_validity_days": 30,
+    "note": "The MOCCAE export permit is valid 30 days from electronic issuance (distinct from the 90-day import permit)."
+  },
+  "banned_dog_breeds_uae": {
+    "legal_basis": "UAE Federal Law No. 22 of 2016 (Possession of Dangerous Animals) + Ministerial Resolution 379/2022; UAE Government portal u.ae.",
+    "breeds": ["Staffordshire Bull Terrier", "American Pit Bull Terrier", "American Staffordshire Terrier", "American Bully", "Brazilian Mastiff (Fila Brasileiro)", "Argentinian Mastiff (Dogo Argentino)", "Tibetan Mastiff", "Neapolitan Mastiff", "French Mastiff (Dogue de Bordeaux)", "Boerboel", "Bullmastiff", "Cane Corso (Italian Mastiff)", "Bully Kutta", "Perro de Presa Canario"],
+    "penalty": "Non-compliance fines AED 10,000-700,000, possible jail and confiscation.",
+    "verification_status": "List obtained from UAE Government sources (u.ae + the law). NOTE: the official law/resolution PDF was WAF-blocked to our automated tool -- capture a manual screenshot of the law/resolution annex to mark this 100%."
+  },
+  "sources": [
+    {"authority": "UAE MOCCAE", "title": "Import of pets (cats/dogs)", "url": "https://www.moccae.gov.ae/en/services/import-permit-pets"},
+    {"authority": "UAE Government", "title": "Banning private ownership of dangerous animals", "url": "https://u.ae/en/information-and-services/environment-and-energy/animal-welfare/banning-private-ownership-of-dangerous-animals"},
+    {"authority": "UAE Federal Law", "title": "Federal Law No. 22 of 2016 (PDF)", "url": "https://moccae.gov.ae/assets/download/ea834864/L22-16%20Eng.pdf.aspx"},
+    {"authority": "IATA", "title": "Live Animals Regulations", "url": "https://www.iata.org/en/programs/cargo/live-animals/"},
+    {"authority": "Emirates", "title": "Travelling with animals", "url": "https://www.emirates.com/english/help/faqs/what-are-the-rules-and-charges-for-travelling-with-animals/"}
+  ],
+  "confidence": "Import/export facts + fees are screenshot-verified against MOCCAE (9 Jun 2026). Banned-breed list is from UAE-government sources with the law PDF still to be manually screenshotted. Each origin country's EXPORT side is verified per route (or hedged). These are facts as-of the verify date; regulations change -- re-verify before publish."
+}

@@ -1,0 +1,153 @@
+{
+  "_meta": {
+    "content_format": "blog",
+    "direction": "outbound (Dubai -> destination)",
+    "target_keyword": "Dubai to South Africa Pet Move",
+    "note": "De-branded content asset for site build. Render images from the images/ folder."
+  },
+  "seo": {
+    "title": "Dubai to South Africa Pet Move: Permit + the Tests",
+    "meta_description": "Moving a pet from Dubai to South Africa needs a state veterinary import permit, a rabies titre test and disease testing. Here's what sets the timeline.",
+    "og_title": "Dubai → South Africa: the import permit and tests that catch people",
+    "canonical_path": "/blog/dubai-to-south-africa-pet-permit/"
+  },
+  "hero": {
+    "eyebrow": "Route guide · South Africa",
+    "h1": "Dubai to South Africa: the import permit and the tests that catch people",
+    "standfirst": "Moving a pet from Dubai to South Africa needs a state-veterinary export certificate, a rabies titre test and an import permit.",
+    "image": "images/dubai-to-south-africa-hero.png",
+    "image_alt": "A pet ready to travel from Dubai to South Africa"
+  },
+  "byline": "By our relocation specialists · 9 June 2026 · reviewed by our IPATA-certified specialists",
+  "key_facts": {},
+  "takeaways": [
+    "A <strong>state veterinary import permit</strong> is mandatory and time-limited — apply in the right window.",
+    "A <strong>rabies titre test</strong> is required; results take weeks, so book it early.",
+    "Dogs face <strong>additional disease tests</strong> — confirm the current list, as it can change.",
+    "Core records: <strong>ISO microchip</strong> and valid <strong>rabies vaccination</strong>.",
+    "Typical cost Dubai → South Africa: roughly <strong>AED 14,000–22,000</strong>."
+  ],
+  "sections": [
+    {
+      "type": "prose",
+      "heading": "The short answer",
+      "paragraphs": [
+        "To bring a pet into South Africa from Dubai you need a <strong>state veterinary import permit</strong>, a <strong>rabies titre test</strong>, a veterinary health certificate, and (for dogs) <strong>additional disease testing</strong> — plus the usual ISO microchip and rabies vaccination.",
+        "It typically costs <strong>AED 14,000–22,000</strong>, and the timeline is driven by the permit and the titre/test results, which take weeks. Confirm the current test list with the South African authority before you start."
+      ]
+    },
+    {
+      "type": "prose",
+      "eyebrow": "Why it isn't quick",
+      "heading": "What sets the timeline",
+      "paragraphs": [
+        "Two things drive the South Africa timeline: the <strong>import permit</strong>, which is time-limited and must align with your travel window, and the <strong>titre test plus any disease tests</strong>, whose lab results take weeks.",
+        "Because the permit is dated, the sequence has to be planned backwards from the flight — apply too early and it can lapse; too late and you can't travel. Confirm the exact, current test requirements with the official source first."
+      ]
+    }
+  ],
+  "story": {
+    "tag": "A common scenario",
+    "lead": "On the South Africa route, the trap is mistiming the permit and the lab work.",
+    "problem": "An owner relocating home wants their dog in South Africa within a few weeks.",
+    "mistake": "They book the rabies titre and disease tests late and apply for the permit out of sync with the flight.",
+    "discovery": "The lab results take weeks and the permit is time-limited — the dates don't line up.",
+    "result": "Travel slips while the tests clear and a fresh permit is issued, with boarding in the meantime.",
+    "lesson": "South Africa rewards sequencing: confirm the test list, book the labs early, and time the permit to the flight — not the other way round."
+  },
+  "faqs": [
+    {
+      "q": "Do I need a rabies titre test for South Africa?",
+      "a": "Yes — a rabies titre test is part of the requirements, and results take weeks, so book it early. Confirm the full current test list with the South African authority."
+    },
+    {
+      "q": "What's the pivotal document?",
+      "a": "The state veterinary import permit. It's time-limited, so it must be timed to your flight — apply too early and it can lapse."
+    },
+    {
+      "q": "Will my pet be quarantined in South Africa?",
+      "a": "With the permit, titre and tests in order, the focus is documentation and testing rather than a long quarantine — but confirm current requirements, as they can change."
+    },
+    {
+      "q": "How much does Dubai → South Africa cost?",
+      "a": "Typically AED 14,000–22,000, depending on your pet's size, the tests required and the airline."
+    }
+  ],
+  "sources": [
+    {
+      "authority": "South Africa DALRRD",
+      "title": "Dept. of Agriculture, Land Reform & Rural Development",
+      "url": "https://www.dalrrd.gov.za/",
+      "note": "Veterinary import permit + tests"
+    },
+    {
+      "authority": "UAE MOCCAE",
+      "title": "Pet export permits",
+      "url": "https://www.moccae.gov.ae/en/services/import-permit-pets",
+      "note": "UAE export side"
+    },
+    {
+      "authority": "IATA",
+      "title": "Live Animals Regulations",
+      "url": "https://www.iata.org/en/programs/cargo/live-animals/",
+      "note": "Crate + cargo standards"
+    }
+  ],
+  "cta": {
+    "heading": "Planning a Dubai → South Africa move?",
+    "body": "We confirm the current test list, book the labs early and time the permit to your flight — so you can plan with confidence and your pet travels on schedule.",
+    "ctas": [
+      {
+        "label": "See Dubai → South Africa cost & process",
+        "url": "/destinations/uae-to-south-africa/",
+        "style": "btn-gold"
+      },
+      {
+        "label": "Compare all destinations",
+        "url": "/destinations/",
+        "style": "btn-ghost"
+      }
+    ],
+    "help_cta": "Not ready to enquire? Download the free pet-relocation checklist — every required document for your route, in order, so nothing is missed."
+  },
+  "images": [
+    {
+      "role": "hero",
+      "file": "images/dubai-to-south-africa-hero.png",
+      "alt": "A pet ready to travel from Dubai to South Africa",
+      "status": "rendered (low-res)"
+    }
+  ],
+  "method": {
+    "structure_logic": "2026 article anatomy: headline (curiosity/result) -> answer-first opening (the liftable answer in the first lines) -> key takeaways -> table of contents -> scannable H2/H3 -> a visual (data table or flow) -> original insight or a story -> FAQ -> official sources -> one help-first CTA. Why: web readers scan ~20-28% of words (Nielsen Norman Group), so the answer is front-loaded; a story is remembered where bare facts are forgotten; one page = one job + a single CTA converts. These choices recur across every source in our research (see SOURCING-METHOD.md).",
+    "geo_seo_rationale": "What we believe helps. GEO (being cited by AI answer engines): answer-first self-contained chunks, cited statistics, official-source citations, consistent entities, FAQ schema -- and citation is decoupled from ranking (~66% of AI-Overview citations come from outside the top-20), so strong content can be cited even before it ranks. SEO: intent-matched title+H1, topical depth, internal links into the money page, visible freshness dates, structured data (Article/FAQ/Breadcrumb/LocalBusiness). HONEST CAVEAT: these are evidence-based best practices, NOT guaranteed results -- ranking also needs off-page authority/backlinks/indexing not built here, and GEO citation is plausible but unproven until measured with a live AI-citation test.",
+    "how_and_why_we_audit": "Each page is scored by a 5-lens auditor -- Website, SEO, GEO, Lead-gen/Trust, Quality -- which together cover the 7-category QA (Helpful, Human, Original, Trustworthy, SEO, GEO, Conversion). Why this way: (1) page-type profiles judge a page against ITS job (a reassurance page is weighted differently from a money page); (2) every check carries an evidence tier (T1 sworn -> T6 practitioner) and a verified-vs-heuristic tag; (3) not-measurable checks are excluded, never zeroed (a coverage->confidence label); (4) risk caps catch keyword-stuffing, thin content, fake schema, no-CTA. The score is an on-page QUALITY PROXY, not a measured ranking/citation outcome.",
+    "what_we_are_sure_of": "100% sure = a fact screenshot-verified against its official source as of a date (see sourcing.verified_100pct) + that the method was applied. NOT sure = that it ranks or gets cited (unproven until the site is live, indexed and measured).",
+    "how_we_verify": "Every factual/regulatory claim is verified against an OFFICIAL source only -- government bodies, recognised standards bodies (IATA), or the operator's own site (e.g. the airline). Never blogs, forums, competitors, or AI. Each verified claim is captured as a full-page SCREENSHOT and logged in a regulatory register with: source, URL, date verified, version, reviewer, and a re-verify-by date (because regulations change). Anything we could not confirm from an official source is HEDGED or flagged 'confirm with [authority]', never asserted (see sourcing.stated_but_unverified). Tooling: a Playwright screenshot verifier with an official-domain allowlist + the regulatory register. Facts are kept separate from advice ('the authority requires X' vs 'we recommend X'). AI never makes the final call -- a human reviews and signs off before publish."
+  },
+  "sourcing": {
+    "how_we_derived_this": "Built from recurring patterns across our research corpus (SOURCING-METHOD.md): answer the fear not the keyword, front-load the answer, official sources only, a route-specific story, single help-first CTA into the money page.",
+    "verified_100pct": [
+      {
+        "fact": "Where this route's facts were screenshot-verified, the evidence is in audit/evidence/* and the regulatory register (e.g. UK tapeworm + XL Bully ban, US CDC dog rules, EU titre timing, IATA, Emirates travel methods).",
+        "source": "see regulatory register",
+        "as_of": "2026-06-09"
+      }
+    ],
+    "stated_but_unverified": [
+      {
+        "claim": "Route-specific cost ranges are a model estimate (stated as ranges)",
+        "action": "Re-validate quarterly vs live airline cargo quotes"
+      },
+      {
+        "claim": "Any specific not screenshot-verified (e.g. Australia DAFF, South Africa DALRRD, India AQCS detail)",
+        "action": "Confirm + screenshot the official source before publish"
+      }
+    ],
+    "confidence": "100% sure of: the screenshot-verified facts (regulatory register) + that the method was applied. NOT sure of: ranking/citation -- unproven until the site is live, indexed and measured."
+  },
+  "lead_magnet": {
+    "label": "Free pet-relocation checklist",
+    "description": "Every document + step for your route, in order, verified against official sources."
+  }
+}
